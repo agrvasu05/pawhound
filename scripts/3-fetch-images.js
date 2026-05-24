@@ -9,12 +9,24 @@ if (!PEXELS_KEY) {
   process.exit(1);
 }
 
-const breedsFile = path.join(process.cwd(), 'content', 'breeds.json');
-if (!fs.existsSync(breedsFile)) {
-  console.error('Error: content/breeds.json not found. Run `npm run scrape` first.');
-  process.exit(1);
+function breedToSlug(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
-const breeds = JSON.parse(fs.readFileSync(breedsFile, 'utf-8'));
+
+// Collect all unique breeds from generated articles
+function getBreedsFromArticles() {
+  const articlesDir = path.join(process.cwd(), 'content', 'articles');
+  if (!fs.existsSync(articlesDir)) return [];
+  const breeds = new Map();
+  for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
+    const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
+    for (const pick of article.picks) {
+      const slug = breedToSlug(pick.breed);
+      if (!breeds.has(slug)) breeds.set(slug, pick.breed);
+    }
+  }
+  return [...breeds.entries()].map(([slug, name]) => ({ slug, name }));
+}
 
 async function fetchImagesForBreed(breed) {
   const dir = path.join(process.cwd(), 'public', 'images', 'breeds', breed.slug);
@@ -32,46 +44,26 @@ async function fetchImagesForBreed(breed) {
   if (!data.photos || data.photos.length === 0) return 'no-image';
 
   fs.mkdirSync(dir, { recursive: true });
-
   for (let i = 0; i < data.photos.length; i++) {
-    const imgUrl = data.photos[i].src.large;
-    const imgRes = await fetch(imgUrl);
+    const imgRes = await fetch(data.photos[i].src.large);
     if (!imgRes.ok) continue;
-    const buf = Buffer.from(await imgRes.arrayBuffer());
-    fs.writeFileSync(path.join(dir, `${i + 1}.jpg`), buf);
+    fs.writeFileSync(path.join(dir, `${i + 1}.jpg`), Buffer.from(await imgRes.arrayBuffer()));
   }
 
-  // Save attribution (Pexels license requires credit)
-  const attribution = data.photos.map((p) => ({
-    photographer: p.photographer,
-    url: p.photographer_url,
-  }));
+  const attribution = data.photos.map((p) => ({ photographer: p.photographer, url: p.photographer_url }));
   fs.writeFileSync(path.join(dir, 'attribution.json'), JSON.stringify(attribution, null, 2));
-
   return 'ok';
 }
 
-// If --new-only flag, only fetch breeds used in articles that are missing images
-const newOnly = process.argv.includes('--new-only');
-let targetBreeds = breeds;
-
-if (newOnly) {
-  const articlesDir = path.join(process.cwd(), 'content', 'articles');
-  if (fs.existsSync(articlesDir)) {
-    const usedBreeds = new Set();
-    for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
-      const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
-      for (const pick of article.picks) {
-        usedBreeds.add(pick.breed.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
-      }
-    }
-    targetBreeds = breeds.filter((b) => usedBreeds.has(b.slug));
-  }
-}
-
-const pending = targetBreeds.filter((b) => {
+const allBreeds = getBreedsFromArticles();
+const pending = allBreeds.filter((b) => {
   return !fs.existsSync(path.join(process.cwd(), 'public', 'images', 'breeds', b.slug, '1.jpg'));
 });
+
+if (pending.length === 0) {
+  console.log('All breed images already downloaded.');
+  process.exit(0);
+}
 
 console.log(`Fetching images for ${pending.length} breeds from Pexels...`);
 
@@ -81,13 +73,12 @@ console.log(`Fetching images for ${pending.length} breeds from Pexels...`);
     try {
       const result = await fetchImagesForBreed(breed);
       if (result === 'no-image') skipped++;
-      else done++;
-      process.stdout.write(`\r${done} downloaded, ${skipped} no result — ${breed.name}    `);
+      else if (result === 'ok') done++;
+      process.stdout.write(`\r${done} downloaded, ${skipped} not found — ${breed.name}    `);
     } catch (e) {
       skipped++;
-      process.stdout.write(`\r${done} downloaded, ${skipped} failed — ${breed.name}    `);
     }
-    await new Promise((r) => setTimeout(r, 400)); // Pexels free tier: 200 req/hr
+    await new Promise((r) => setTimeout(r, 400));
   }
   console.log(`\nDone. ${done} images saved, ${skipped} skipped.`);
 })();

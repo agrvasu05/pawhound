@@ -2,46 +2,98 @@ const fs = require('fs');
 const path = require('path');
 
 const WIKI_API = 'https://en.wikipedia.org/w/api.php';
+const HEADERS = {
+  'User-Agent': 'ValueFindsDaily/1.0 (https://valuefindsdaily.com; hello@valuefindsdaily.com) Node.js',
+};
 
-async function getBreedList() {
-  const res = await fetch(
-    `${WIKI_API}?action=query&list=categorymembers&cmtitle=Category:Dog_breeds&cmlimit=500&format=json`
-  );
-  const data = await res.json();
-  return data.query.categorymembers.filter(
-    (b) => !b.title.includes('Category:')
-  );
+async function wikiGet(params) {
+  const url = `${WIKI_API}?${new URLSearchParams({ ...params, format: 'json' })}`;
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    const res = await fetch(url, { headers: HEADERS });
+    const text = await res.text();
+    if (text.startsWith('You are making')) {
+      console.log(`\nRate limited — waiting ${attempt * 10}s...`);
+      await new Promise((r) => setTimeout(r, attempt * 10000));
+      continue;
+    }
+    return JSON.parse(text);
+  }
+  throw new Error('Rate limited after 5 retries');
 }
 
-async function enrichBreed(title) {
-  const res = await fetch(
-    `${WIKI_API}?action=query&prop=extracts|pageimages&titles=${encodeURIComponent(title)}&exintro=true&explaintext=true&piprop=original&format=json`
-  );
-  const data = await res.json();
-  const pages = Object.values(data.query.pages);
-  return pages[0];
+async function getCategoryPages(category) {
+  const pages = [];
+  let cmcontinue = null;
+  do {
+    const data = await wikiGet({
+      action: 'query',
+      list: 'categorymembers',
+      cmtitle: category,
+      cmlimit: '500',
+      cmtype: 'page',
+      ...(cmcontinue && { cmcontinue }),
+    });
+    pages.push(...data.query.categorymembers);
+    cmcontinue = data.continue?.cmcontinue || null;
+    await new Promise((r) => setTimeout(r, 500));
+  } while (cmcontinue);
+  return pages;
+}
+
+async function getCategorySubcats(category) {
+  const data = await wikiGet({
+    action: 'query',
+    list: 'categorymembers',
+    cmtitle: category,
+    cmlimit: '100',
+    cmtype: 'subcat',
+  });
+  return data.query.categorymembers.map((c) => c.title);
+}
+
+function titleToSlug(title) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function isRealBreed(title) {
+  const lower = title.toLowerCase();
+  if (lower.startsWith('list of')) return false;
+  if (lower === 'dog breed') return false;
+  if (lower === 'dog breeds') return false;
+  if (lower.includes('dog breeds by')) return false;
+  if (lower.startsWith('category:')) return false;
+  return true;
 }
 
 (async () => {
-  console.log('Fetching breed list from Wikipedia...');
-  const breeds = await getBreedList();
-  const enriched = [];
+  console.log('Getting subcategories...');
+  const subcats = await getCategorySubcats('Category:Dog_breeds');
+  console.log(`Found ${subcats.length} subcategories`);
 
-  for (const breed of breeds.slice(0, 200)) {
-    try {
-      const info = await enrichBreed(breed.title);
-      enriched.push({
-        name: breed.title,
-        slug: breed.title.toLowerCase().replace(/\s+/g, '-'),
-        extract: info.extract ? info.extract.slice(0, 500) : '',
-        image: info.original?.source,
-      });
-      process.stdout.write(`\r${enriched.length}/${Math.min(breeds.length, 200)} breeds`);
-    } catch (e) {
-      console.error(`\nFailed: ${breed.title}`, e.message);
-    }
-    await new Promise((r) => setTimeout(r, 200));
+  const allBreeds = new Map();
+
+  // Root category pages
+  const rootPages = await getCategoryPages('Category:Dog_breeds');
+  for (const p of rootPages) {
+    if (isRealBreed(p.title)) allBreeds.set(p.title, p);
   }
+
+  // Subcategory pages
+  for (const subcat of subcats) {
+    await new Promise((r) => setTimeout(r, 500)); // polite delay
+    const pages = await getCategoryPages(subcat);
+    for (const p of pages) {
+      if (isRealBreed(p.title)) allBreeds.set(p.title, p);
+    }
+    process.stdout.write(`\r${allBreeds.size} breeds found...`);
+  }
+
+  // Save names and slugs only — GPT knows dog breeds, no descriptions needed
+  const enriched = [...allBreeds.values()].slice(0, 300).map((b) => ({
+    name: b.title,
+    slug: titleToSlug(b.title),
+    extract: '',
+  }));
 
   const outDir = path.join(process.cwd(), 'content');
   fs.mkdirSync(outDir, { recursive: true });
