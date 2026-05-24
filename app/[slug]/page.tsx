@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
+import DirectLinkOnLoad from "@/components/DirectLinkOnLoad";
 
 export async function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.topic_slug }));
@@ -40,8 +41,11 @@ export default async function ArticleHub({
 
   const sortedPicks = [...article.picks].sort((a, b) => b.rank - a.rank);
 
+  const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
+
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
+      {directLink && <DirectLinkOnLoad href={directLink} />}
       <Link
         href="/"
         className="text-sm text-stone-500 hover:text-stone-900 mb-6 inline-block"
