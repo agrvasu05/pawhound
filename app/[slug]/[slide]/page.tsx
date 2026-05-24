@@ -138,10 +138,6 @@ export default async function Slide({
       {/* Third native ad */}
       <AdSlot type="native" className="my-6" />
 
-      {/* In-page push from slide 3 onward */}
-      {currentRank <= article.picks.length - 2 && (
-        <AdSlot type="inpage-push" />
-      )}
     </main>
   );
 }
