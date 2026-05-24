@@ -4,17 +4,19 @@ import { getAllArticles, getBreedImage } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
 
 export default function Home() {
-  const articles = getAllArticles();
+  const articles = getAllArticles().filter((a) => a.picks.length >= 3);
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-10">
+    <main className="max-w-5xl mx-auto px-4 py-10" style={{ background: "#fff", minHeight: "100vh" }}>
       <header className="mb-12 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>
+        <h1
+          className="text-5xl md:text-6xl font-bold mb-3 text-stone-900"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
           Value Finds Daily
         </h1>
-        <p className="text-xl text-stone-600 max-w-2xl mx-auto">
-          Real, honest dog breed guides. No fluff — just the breeds that
-          actually fit your life.
+        <p className="text-xl text-stone-500 max-w-2xl mx-auto">
+          Real, honest dog breed guides. Find the breed that actually fits your life.
         </p>
       </header>
 
@@ -22,35 +24,37 @@ export default function Home() {
 
       {articles.length === 0 ? (
         <div className="text-center py-20 text-stone-400">
-          <p className="text-lg">Content coming soon. Run the generate script to populate articles.</p>
+          <p className="text-lg">Content generating — check back in a few minutes.</p>
         </div>
       ) : (
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article) => {
             const topBreed = article.picks.find((p) => p.rank === 1);
+            const imgSrc = topBreed ? getBreedImage(topBreed.breed) : null;
+
             return (
               <Link
                 key={article.topic_slug}
                 href={`/${article.topic_slug}`}
-                className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition"
+                className="group rounded-2xl overflow-hidden bg-white border border-stone-100 shadow-sm hover:shadow-lg transition-shadow"
               >
-                <div className="aspect-[4/3] relative bg-stone-200">
-                  {topBreed && (
+                <div className="aspect-[4/3] relative overflow-hidden"
+                  style={{ background: "linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%)" }}
+                >
+                  {imgSrc && (
                     <Image
-                      src={getBreedImage(topBreed.breed)}
+                      src={imgSrc}
                       alt={article.topic_title}
                       fill
-                      className="object-cover group-hover:scale-105 transition"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   )}
                 </div>
                 <div className="p-5">
-                  <h2 className="text-lg font-semibold leading-tight mb-2">
+                  <h2 className="text-base font-semibold leading-snug mb-2 text-stone-900">
                     {article.topic_title}
                   </h2>
-                  <p className="text-sm text-stone-500">
-                    {article.picks.length} breeds ranked
-                  </p>
+                  <p className="text-sm text-stone-400">{article.picks.length} breeds ranked</p>
                 </div>
               </Link>
             );
@@ -58,12 +62,12 @@ export default function Home() {
         </section>
       )}
 
-      <footer className="mt-20 pt-8 border-t border-stone-200 text-sm text-stone-500 text-center space-x-4">
-        <Link href="/about">About</Link>
-        <Link href="/privacy">Privacy</Link>
-        <Link href="/terms">Terms</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/attribution">Image Credits</Link>
+      <footer className="mt-20 pt-8 border-t border-stone-200 text-sm text-stone-400 text-center space-x-4">
+        <Link href="/about" className="hover:text-stone-700">About</Link>
+        <Link href="/privacy" className="hover:text-stone-700">Privacy</Link>
+        <Link href="/terms" className="hover:text-stone-700">Terms</Link>
+        <Link href="/contact" className="hover:text-stone-700">Contact</Link>
+        <Link href="/attribution" className="hover:text-stone-700">Image Credits</Link>
       </footer>
     </main>
   );

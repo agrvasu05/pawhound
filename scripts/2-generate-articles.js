@@ -61,13 +61,11 @@ const ARTICLE_SCHEMA = {
 };
 
 async function generateArticle(topic) {
-  // Filter breeds to the relevant pool for this topic
-  let pool = allBreeds.filter(topic.filter);
+  const pool = allBreeds.filter(topic.filter);
 
-  // Fallback: if fewer than 20 match, use all breeds
-  if (pool.length < 20) {
-    console.log(`  (filter returned ${pool.length} breeds, using full list as fallback)`);
-    pool = allBreeds;
+  if (pool.length === 0) {
+    console.log(`  (filter returned 0 breeds, skipping)`);
+    return;
   }
 
   const breedNames = pool.map((b) => b.name).join(', ');
@@ -78,7 +76,7 @@ async function generateArticle(topic) {
       { role: 'system', content: SYSTEM_PROMPT },
       {
         role: 'user',
-        content: `Topic: "${topic.title}"\nCriteria: ${topic.desc}\n\nPick exactly 15 breeds from this list and rank them 15 down to 1 (rank 1 = best fit):\n${breedNames}`,
+        content: `Topic: "${topic.title}"\nCriteria: ${topic.desc}\n\nFrom this list, pick only the breeds that GENUINELY and strongly fit this topic — between 5 and 15 breeds max. Do NOT pad with weak picks. Rank them from worst to best fit (rank 1 = absolute best):\n${breedNames}`,
       },
     ],
     response_format: { type: 'json_schema', json_schema: ARTICLE_SCHEMA },
@@ -87,7 +85,7 @@ async function generateArticle(topic) {
 
   const article = JSON.parse(response.choices[0].message.content);
   article.topic_slug = topic.slug;
-  article.topic_title = topic.title;
+  article.topic_title = `Top ${article.picks.length} ${topic.title}`;
 
   const outDir = path.join(process.cwd(), 'content', 'articles');
   fs.mkdirSync(outDir, { recursive: true });

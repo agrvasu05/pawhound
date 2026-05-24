@@ -1,0 +1,4437 @@
+[
+  {
+    "name": "Golden Retriever",
+    "slug": "golden-retriever",
+    "size": "large",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "medium-length"
+    ],
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "loyal",
+      "friendly",
+      "playful"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Labrador Retriever",
+    "slug": "labrador-retriever",
+    "size": "large",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "short",
+      "double"
+    ],
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "loyal",
+      "friendly",
+      "playful"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "German Shepherd",
+    "slug": "german-shepherd",
+    "size": "large",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "medium-length"
+    ],
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "protective",
+      "alert",
+      "courageous"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 9,
+    "lifespan_max": 13,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "French Bulldog",
+    "slug": "french-bulldog",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "playful",
+      "alert",
+      "stubborn",
+      "friendly"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "low",
+    "hot_tolerance": "low",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Bulldog",
+    "slug": "bulldog",
+    "size": "medium",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "stubborn",
+      "loyal",
+      "calm"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "cold_tolerance": "low",
+    "hot_tolerance": "low",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Standard Poodle",
+    "slug": "standard-poodle",
+    "size": "large",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "curly",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "active",
+      "loyal",
+      "friendly"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Miniature Poodle",
+    "slug": "miniature-poodle",
+    "size": "small",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "curly",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "active",
+      "loyal",
+      "friendly"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Beagle",
+    "slug": "beagle",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "friendly",
+      "curious",
+      "merry",
+      "energetic",
+      "stubborn"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Rottweiler",
+    "slug": "rottweiler",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "confident",
+      "calm",
+      "courageous"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "German Shorthaired Pointer",
+    "slug": "german-shorthaired-pointer",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "friendly",
+      "loyal",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Siberian Husky",
+    "slug": "siberian-husky",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "medium-length"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "energetic",
+      "independent",
+      "playful"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Dachshund",
+    "slug": "dachshund",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "curious",
+      "friendly",
+      "stubborn",
+      "playful",
+      "alert"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Doberman Pinscher",
+    "slug": "doberman-pinscher",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "protective",
+      "alert",
+      "energetic"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Great Dane",
+    "slug": "great-dane",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "calm",
+      "loyal",
+      "courageous"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 7,
+    "lifespan_max": 10,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "low",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Australian Shepherd",
+    "slug": "australian-shepherd",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "double"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "alert",
+      "playful"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Boxer",
+    "slug": "boxer",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "playful",
+      "loyal",
+      "energetic",
+      "friendly",
+      "protective"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Border Collie",
+    "slug": "border-collie",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "double"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "alert",
+      "loyal",
+      "playful"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Cavalier King Charles Spaniel",
+    "slug": "cavalier-king-charles-spaniel",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "silky",
+      "medium-length"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "friendly",
+      "playful",
+      "calm"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 9,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Shih Tzu",
+    "slug": "shih-tzu",
+    "size": "small",
+    "energy": "low",
+    "shedding": "low",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "affectionate",
+      "friendly",
+      "playful",
+      "calm",
+      "stubborn"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Boston Terrier",
+    "slug": "boston-terrier",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "friendly",
+      "intelligent",
+      "playful",
+      "alert",
+      "gentle"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 11,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Pembroke Welsh Corgi",
+    "slug": "pembroke-welsh-corgi",
+    "size": "small",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "medium-length"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "playful",
+      "loyal",
+      "friendly"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Havanese",
+    "slug": "havanese",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "affectionate",
+      "friendly",
+      "playful",
+      "intelligent",
+      "gentle"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 14,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Shetland Sheepdog",
+    "slug": "shetland-sheepdog",
+    "size": "small",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "long"
+    ],
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "alert",
+      "playful",
+      "friendly"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Bernese Mountain Dog",
+    "slug": "bernese-mountain-dog",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "long"
+    ],
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "loyal",
+      "calm",
+      "friendly"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 7,
+    "lifespan_max": 10,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Pomeranian",
+    "slug": "pomeranian",
+    "size": "toy",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "long"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "playful",
+      "intelligent",
+      "stubborn"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Maltese",
+    "slug": "maltese",
+    "size": "toy",
+    "energy": "low",
+    "shedding": "low",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "playful",
+      "friendly",
+      "calm"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Weimaraner",
+    "slug": "weimaraner",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "energetic",
+      "intelligent",
+      "friendly",
+      "loyal",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 11,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Cocker Spaniel",
+    "slug": "cocker-spaniel",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "wavy"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "playful",
+      "friendly",
+      "loyal"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Vizsla",
+    "slug": "vizsla",
+    "size": "large",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "energetic",
+      "intelligent",
+      "loyal",
+      "friendly"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Irish Setter",
+    "slug": "irish-setter",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "playful",
+      "affectionate",
+      "intelligent"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "English Springer Spaniel",
+    "slug": "english-springer-spaniel",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "wavy"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Flat-Coated Retriever",
+    "slug": "flat-coated-retriever",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "straight"
+    ],
+    "temperament": [
+      "friendly",
+      "playful",
+      "intelligent",
+      "loyal",
+      "energetic"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Chesapeake Bay Retriever",
+    "slug": "chesapeake-bay-retriever",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "intelligent",
+      "protective",
+      "energetic",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Nova Scotia Duck Tolling Retriever",
+    "slug": "nova-scotia-duck-tolling-retriever",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "water-resistant"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "friendly",
+      "alert",
+      "playful"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Brittany",
+    "slug": "brittany",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "wavy"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Boykin Spaniel",
+    "slug": "boykin-spaniel",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "wavy"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "intelligent",
+      "loyal",
+      "playful"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Lagotto Romagnolo",
+    "slug": "lagotto-romagnolo",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "curly",
+      "dense"
+    ],
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "loyal",
+      "friendly",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 14,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Spinone Italiano",
+    "slug": "spinone-italiano",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "rough",
+      "dense"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "loyal",
+      "calm",
+      "intelligent"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Bracco Italiano",
+    "slug": "bracco-italiano",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "gentle",
+      "loyal",
+      "intelligent",
+      "friendly",
+      "calm"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Nederlandse Kooikerhondje",
+    "slug": "nederlandse-kooikerhondje",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "dense"
+    ],
+    "temperament": [
+      "alert",
+      "friendly",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Pointer",
+    "slug": "pointer",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "energetic",
+      "intelligent",
+      "friendly",
+      "loyal",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "English Setter",
+    "slug": "english-setter",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Gordon Setter",
+    "slug": "gordon-setter",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "loyal",
+      "intelligent",
+      "friendly",
+      "calm",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Irish Red and White Setter",
+    "slug": "irish-red-and-white-setter",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "friendly",
+      "intelligent",
+      "energetic",
+      "loyal",
+      "playful"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Clumber Spaniel",
+    "slug": "clumber-spaniel",
+    "size": "large",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "dense",
+      "medium-length"
+    ],
+    "temperament": [
+      "gentle",
+      "loyal",
+      "calm",
+      "friendly",
+      "affectionate"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Sussex Spaniel",
+    "slug": "sussex-spaniel",
+    "size": "medium",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "wavy"
+    ],
+    "temperament": [
+      "gentle",
+      "calm",
+      "loyal",
+      "friendly",
+      "affectionate"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 11,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Field Spaniel",
+    "slug": "field-spaniel",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "wavy"
+    ],
+    "temperament": [
+      "friendly",
+      "gentle",
+      "loyal",
+      "playful",
+      "intelligent"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Irish Water Spaniel",
+    "slug": "irish-water-spaniel",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "curly",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "alert",
+      "loyal",
+      "friendly"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "American Water Spaniel",
+    "slug": "american-water-spaniel",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "curly",
+      "medium"
+    ],
+    "temperament": [
+      "friendly",
+      "intelligent",
+      "energetic",
+      "loyal",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Curly-Coated Retriever",
+    "slug": "curly-coated-retriever",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "curly",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "friendly",
+      "loyal",
+      "alert"
+    ],
+    "group": "Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Yorkshire Terrier",
+    "slug": "yorkshire-terrier",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "energetic",
+      "bold"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Jack Russell Terrier",
+    "slug": "jack-russell-terrier",
+    "size": "small",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "smooth",
+      "broken",
+      "rough"
+    ],
+    "temperament": [
+      "energetic",
+      "intelligent",
+      "stubborn",
+      "playful",
+      "alert"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 13,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Bull Terrier",
+    "slug": "bull-terrier",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "playful",
+      "stubborn",
+      "loyal",
+      "courageous",
+      "affectionate"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Airedale Terrier",
+    "slug": "airedale-terrier",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "loyal",
+      "energetic",
+      "playful"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "West Highland White Terrier",
+    "slug": "west-highland-white-terrier",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "double",
+      "rough"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "playful",
+      "independent"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Scottish Terrier",
+    "slug": "scottish-terrier",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "independent",
+      "alert",
+      "loyal",
+      "courageous"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": false,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 11,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Cairn Terrier",
+    "slug": "cairn-terrier",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "double",
+      "rough"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "playful",
+      "intelligent"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Wire Fox Terrier",
+    "slug": "wire-fox-terrier",
+    "size": "small",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "energetic",
+      "alert",
+      "playful",
+      "intelligent"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Miniature Schnauzer",
+    "slug": "miniature-schnauzer",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "friendly",
+      "alert",
+      "energetic"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Standard Schnauzer",
+    "slug": "standard-schnauzer",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "loyal",
+      "energetic"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 13,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Giant Schnauzer",
+    "slug": "giant-schnauzer",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "wire",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "protective",
+      "energetic"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Bloodhound",
+    "slug": "bloodhound",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "friendly",
+      "stubborn"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Greyhound",
+    "slug": "greyhound",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "gentle",
+      "quiet",
+      "intelligent",
+      "affectionate"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "low",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Whippet",
+    "slug": "whippet",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "quiet",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "low",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Basset Hound",
+    "slug": "basset-hound",
+    "size": "medium",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "stubborn",
+      "affectionate"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Afghan Hound",
+    "slug": "afghan-hound",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "independent",
+      "aloof",
+      "dignified",
+      "playful"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Saluki",
+    "slug": "saluki",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "smooth",
+      "feathered"
+    ],
+    "temperament": [
+      "gentle",
+      "independent",
+      "intelligent",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Irish Wolfhound",
+    "slug": "irish-wolfhound",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "rough",
+      "wire"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "calm",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 6,
+    "lifespan_max": 8,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Borzoi",
+    "slug": "borzoi",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky",
+      "wavy"
+    ],
+    "temperament": [
+      "gentle",
+      "quiet",
+      "independent",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Scottish Deerhound",
+    "slug": "scottish-deerhound",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "rough",
+      "wire"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "calm",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 8,
+    "lifespan_max": 11,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Rhodesian Ridgeback",
+    "slug": "rhodesian-ridgeback",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "independent",
+      "loyal",
+      "protective",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Akita",
+    "slug": "akita",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "independent",
+      "courageous"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": false,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Alaskan Malamute",
+    "slug": "alaskan-malamute",
+    "size": "large",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "dense"
+    ],
+    "temperament": [
+      "friendly",
+      "loyal",
+      "energetic",
+      "independent"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Samoyed",
+    "slug": "samoyed",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "double",
+      "dense",
+      "long"
+    ],
+    "temperament": [
+      "friendly",
+      "affectionate",
+      "loyal",
+      "playful"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Chow Chow",
+    "slug": "chow-chow",
+    "size": "medium",
+    "energy": "low",
+    "shedding": "high",
+    "coat": [
+      "thick",
+      "dense",
+      "rough"
+    ],
+    "temperament": [
+      "independent",
+      "aloof",
+      "protective",
+      "loyal"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": false,
+    "good_with_other_dogs": false,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 8,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Saint Bernard",
+    "slug": "saint-bernard",
+    "size": "giant",
+    "energy": "low",
+    "shedding": "high",
+    "coat": [
+      "short",
+      "long"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "calm",
+      "loyal"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Newfoundland",
+    "slug": "newfoundland",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "thick",
+      "water-resistant"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "loyal",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Leonberger",
+    "slug": "leonberger",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "dense"
+    ],
+    "temperament": [
+      "gentle",
+      "friendly",
+      "calm",
+      "loyal"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 8,
+    "lifespan_max": 9,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Greater Swiss Mountain Dog",
+    "slug": "greater-swiss-mountain-dog",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "friendly",
+      "loyal",
+      "calm",
+      "protective"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 8,
+    "lifespan_max": 11,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Mastiff",
+    "slug": "mastiff",
+    "size": "giant",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "gentle",
+      "loyal",
+      "protective",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 6,
+    "lifespan_max": 10,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Bullmastiff",
+    "slug": "bullmastiff",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "calm",
+      "courageous"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 7,
+    "lifespan_max": 9,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Cane Corso",
+    "slug": "cane-corso",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "intelligent",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 9,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Neapolitan Mastiff",
+    "slug": "neapolitan-mastiff",
+    "size": "giant",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "protective",
+      "loyal",
+      "calm",
+      "independent"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": false,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 7,
+    "lifespan_max": 9,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Tibetan Mastiff",
+    "slug": "tibetan-mastiff",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "thick",
+      "double"
+    ],
+    "temperament": [
+      "independent",
+      "protective",
+      "aloof",
+      "loyal"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": false,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Dogue de Bordeaux",
+    "slug": "dogue-de-bordeaux",
+    "size": "giant",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "calm",
+      "affectionate"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 5,
+    "lifespan_max": 8,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Boerboel",
+    "slug": "boerboel",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "calm",
+      "intelligent"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Kangal Shepherd Dog",
+    "slug": "kangal-shepherd-dog",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "protective",
+      "loyal",
+      "calm",
+      "independent"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Anatolian Shepherd",
+    "slug": "anatolian-shepherd",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "protective",
+      "independent",
+      "loyal",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 11,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Great Pyrenees",
+    "slug": "great-pyrenees",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "thick",
+      "double"
+    ],
+    "temperament": [
+      "gentle",
+      "protective",
+      "calm",
+      "loyal"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Komondor",
+    "slug": "komondor",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "corded"
+    ],
+    "temperament": [
+      "protective",
+      "independent",
+      "loyal",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Kuvasz",
+    "slug": "kuvasz",
+    "size": "giant",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "dense"
+    ],
+    "temperament": [
+      "protective",
+      "loyal",
+      "independent",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Belgian Malinois",
+    "slug": "belgian-malinois",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "protective"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Belgian Tervuren",
+    "slug": "belgian-tervuren",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "protective"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Belgian Sheepdog",
+    "slug": "belgian-sheepdog",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "dense"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "protective"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Bouvier des Flandres",
+    "slug": "bouvier-des-flandres",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "rough",
+      "dense"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "intelligent",
+      "calm"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Briard",
+    "slug": "briard",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "wavy"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "intelligent",
+      "calm"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Black Russian Terrier",
+    "slug": "black-russian-terrier",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "thick",
+      "dense",
+      "wavy"
+    ],
+    "temperament": [
+      "loyal",
+      "protective",
+      "intelligent",
+      "calm"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Staffordshire Bull Terrier",
+    "slug": "staffordshire-bull-terrier",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "energetic",
+      "loyal",
+      "courageous"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "American Staffordshire Terrier",
+    "slug": "american-staffordshire-terrier",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "energetic",
+      "loyal",
+      "courageous"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Soft Coated Wheaten Terrier",
+    "slug": "soft-coated-wheaten-terrier",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "soft",
+      "wavy"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "affectionate",
+      "intelligent"
+    ],
+    "group": "Terrier",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Chihuahua",
+    "slug": "chihuahua",
+    "size": "toy",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "short",
+      "long"
+    ],
+    "temperament": [
+      "affectionate",
+      "alert",
+      "loyal",
+      "energetic",
+      "stubborn"
+    ],
+    "group": "Toy",
+    "good_with_kids": false,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 20,
+    "cold_tolerance": "low",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Pug",
+    "slug": "pug",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "affectionate",
+      "playful",
+      "friendly",
+      "stubborn",
+      "calm"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "low",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Toy Poodle",
+    "slug": "toy-poodle",
+    "size": "toy",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "curly"
+    ],
+    "temperament": [
+      "intelligent",
+      "affectionate",
+      "alert",
+      "playful",
+      "friendly"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Bichon Frise",
+    "slug": "bichon-frise",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "curly"
+    ],
+    "temperament": [
+      "affectionate",
+      "playful",
+      "friendly",
+      "gentle",
+      "intelligent"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Papillon",
+    "slug": "papillon",
+    "size": "small",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "intelligent",
+      "friendly",
+      "alert",
+      "playful",
+      "affectionate"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Italian Greyhound",
+    "slug": "italian-greyhound",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "intelligent",
+      "loyal",
+      "quiet"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 13,
+    "lifespan_max": 15,
+    "cold_tolerance": "low",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": false
+  },
+  {
+    "name": "Miniature Pinscher",
+    "slug": "miniature-pinscher",
+    "size": "small",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "alert",
+      "energetic",
+      "independent",
+      "courageous",
+      "stubborn"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Affenpinscher",
+    "slug": "affenpinscher",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "wire"
+    ],
+    "temperament": [
+      "curious",
+      "playful",
+      "alert",
+      "affectionate",
+      "stubborn"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Brussels Griffon",
+    "slug": "brussels-griffon",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "rough",
+      "smooth"
+    ],
+    "temperament": [
+      "affectionate",
+      "alert",
+      "intelligent",
+      "stubborn",
+      "playful"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Chinese Crested",
+    "slug": "chinese-crested",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "hairless",
+      "powderpuff"
+    ],
+    "temperament": [
+      "affectionate",
+      "alert",
+      "playful",
+      "gentle",
+      "intelligent"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 13,
+    "lifespan_max": 15,
+    "cold_tolerance": "low",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Japanese Chin",
+    "slug": "japanese-chin",
+    "size": "small",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "quiet",
+      "intelligent",
+      "loyal"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Pekingese",
+    "slug": "pekingese",
+    "size": "small",
+    "energy": "low",
+    "shedding": "high",
+    "coat": [
+      "long"
+    ],
+    "temperament": [
+      "affectionate",
+      "independent",
+      "loyal",
+      "stubborn",
+      "calm"
+    ],
+    "group": "Toy",
+    "good_with_kids": false,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Silky Terrier",
+    "slug": "silky-terrier",
+    "size": "small",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "silky"
+    ],
+    "temperament": [
+      "alert",
+      "energetic",
+      "affectionate",
+      "intelligent",
+      "playful"
+    ],
+    "group": "Toy",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Australian Cattle Dog",
+    "slug": "australian-cattle-dog",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "protective",
+      "alert"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Collie",
+    "slug": "collie",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "rough"
+    ],
+    "temperament": [
+      "intelligent",
+      "gentle",
+      "loyal",
+      "protective",
+      "affectionate"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Cardigan Welsh Corgi",
+    "slug": "cardigan-welsh-corgi",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "short",
+      "medium"
+    ],
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "affectionate",
+      "alert",
+      "playful"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Old English Sheepdog",
+    "slug": "old-english-sheepdog",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "thick"
+    ],
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Puli",
+    "slug": "puli",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "corded"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "loyal",
+      "alert",
+      "playful"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Pyrenean Shepherd",
+    "slug": "pyrenean-shepherd",
+    "size": "small",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "rough"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "alert",
+      "loyal",
+      "playful"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Swedish Vallhund",
+    "slug": "swedish-vallhund",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "medium"
+    ],
+    "temperament": [
+      "intelligent",
+      "energetic",
+      "alert",
+      "friendly",
+      "loyal"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Finnish Lapphund",
+    "slug": "finnish-lapphund",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "thick"
+    ],
+    "temperament": [
+      "friendly",
+      "intelligent",
+      "calm",
+      "loyal",
+      "affectionate"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "low",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Icelandic Sheepdog",
+    "slug": "icelandic-sheepdog",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "double"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Entlebucher Mountain Dog",
+    "slug": "entlebucher-mountain-dog",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "energetic",
+      "intelligent",
+      "loyal",
+      "protective",
+      "alert"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 11,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Dalmatian",
+    "slug": "dalmatian",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "energetic",
+      "intelligent",
+      "playful",
+      "alert",
+      "stubborn"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Lhasa Apso",
+    "slug": "lhasa-apso",
+    "size": "small",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "long"
+    ],
+    "temperament": [
+      "independent",
+      "alert",
+      "loyal",
+      "affectionate",
+      "stubborn"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Tibetan Terrier",
+    "slug": "tibetan-terrier",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "double"
+    ],
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "playful",
+      "alert",
+      "friendly"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Tibetan Spaniel",
+    "slug": "tibetan-spaniel",
+    "size": "small",
+    "energy": "low",
+    "shedding": "medium",
+    "coat": [
+      "long"
+    ],
+    "temperament": [
+      "affectionate",
+      "alert",
+      "independent",
+      "loyal",
+      "calm"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Keeshond",
+    "slug": "keeshond",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "thick"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "intelligent",
+      "playful",
+      "affectionate"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Finnish Spitz",
+    "slug": "finnish-spitz",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "medium",
+      "double"
+    ],
+    "temperament": [
+      "alert",
+      "independent",
+      "playful",
+      "friendly",
+      "intelligent"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": true
+  },
+  {
+    "name": "American Eskimo Dog",
+    "slug": "american-eskimo-dog",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "long",
+      "thick"
+    ],
+    "temperament": [
+      "alert",
+      "intelligent",
+      "friendly",
+      "playful",
+      "affectionate"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "easy",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Schipperke",
+    "slug": "schipperke",
+    "size": "small",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "thick"
+    ],
+    "temperament": [
+      "alert",
+      "independent",
+      "energetic",
+      "curious",
+      "playful"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 13,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": true
+  },
+  {
+    "name": "Shiba Inu",
+    "slug": "shiba-inu",
+    "size": "small",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "short",
+      "double"
+    ],
+    "temperament": [
+      "independent",
+      "alert",
+      "intelligent",
+      "courageous",
+      "loyal"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Basenji",
+    "slug": "basenji",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "independent",
+      "alert",
+      "intelligent",
+      "curious",
+      "quiet"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 16,
+    "cold_tolerance": "low",
+    "hot_tolerance": "high",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Xoloitzcuintli",
+    "slug": "xoloitzcuintli",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "low",
+    "coat": [
+      "hairless",
+      "short"
+    ],
+    "temperament": [
+      "calm",
+      "alert",
+      "loyal",
+      "intelligent",
+      "affectionate"
+    ],
+    "group": "Non-Sporting",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "low",
+    "hot_tolerance": "high",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Pharaoh Hound",
+    "slug": "pharaoh-hound",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "alert",
+      "energetic",
+      "intelligent",
+      "friendly",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Ibizan Hound",
+    "slug": "ibizan-hound",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "alert",
+      "energetic",
+      "intelligent",
+      "friendly",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Cirneco dell Etna",
+    "slug": "cirneco-dell-etna",
+    "size": "small",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "alert",
+      "energetic",
+      "intelligent",
+      "friendly",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Norwegian Elkhound",
+    "slug": "norwegian-elkhound",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "thick",
+      "double"
+    ],
+    "temperament": [
+      "alert",
+      "friendly",
+      "loyal",
+      "intelligent",
+      "protective"
+    ],
+    "group": "Working",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": false
+  },
+  {
+    "name": "Plott Hound",
+    "slug": "plott-hound",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "courageous",
+      "alert",
+      "loyal",
+      "energetic",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Treeing Walker Coonhound",
+    "slug": "treeing-walker-coonhound",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "energetic",
+      "friendly",
+      "alert",
+      "intelligent",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Black and Tan Coonhound",
+    "slug": "black-and-tan-coonhound",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "loyal",
+      "energetic",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "Redbone Coonhound",
+    "slug": "redbone-coonhound",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "loyal",
+      "energetic",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": false
+  },
+  {
+    "name": "American English Coonhound",
+    "slug": "american-english-coonhound",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "loyal",
+      "energetic",
+      "intelligent"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "high",
+    "rare": true
+  },
+  {
+    "name": "Harrier",
+    "slug": "harrier",
+    "size": "medium",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "friendly",
+      "energetic",
+      "alert",
+      "intelligent",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Otterhound",
+    "slug": "otterhound",
+    "size": "large",
+    "energy": "medium",
+    "shedding": "high",
+    "coat": [
+      "rough",
+      "long"
+    ],
+    "temperament": [
+      "friendly",
+      "gentle",
+      "alert",
+      "playful",
+      "loyal"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "hard",
+    "grooming": "high",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Norwegian Buhund",
+    "slug": "norwegian-buhund",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "short",
+      "double"
+    ],
+    "temperament": [
+      "friendly",
+      "alert",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 15,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Berger Picard",
+    "slug": "berger-picard",
+    "size": "large",
+    "energy": "high",
+    "shedding": "medium",
+    "coat": [
+      "rough",
+      "medium"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "energetic",
+      "loyal",
+      "protective"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "medium",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  },
+  {
+    "name": "Azawakh",
+    "slug": "azawakh",
+    "size": "large",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "independent",
+      "alert",
+      "loyal",
+      "intelligent",
+      "courageous"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "hard",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Sloughi",
+    "slug": "sloughi",
+    "size": "large",
+    "energy": "high",
+    "shedding": "low",
+    "coat": [
+      "short"
+    ],
+    "temperament": [
+      "alert",
+      "loyal",
+      "intelligent",
+      "independent",
+      "calm"
+    ],
+    "group": "Hound",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": false,
+    "trainability": "moderate",
+    "grooming": "low",
+    "lifespan_min": 10,
+    "lifespan_max": 13,
+    "cold_tolerance": "medium",
+    "hot_tolerance": "high",
+    "barking": "low",
+    "rare": true
+  },
+  {
+    "name": "Polish Lowland Sheepdog",
+    "slug": "polish-lowland-sheepdog",
+    "size": "medium",
+    "energy": "medium",
+    "shedding": "medium",
+    "coat": [
+      "long",
+      "rough"
+    ],
+    "temperament": [
+      "intelligent",
+      "alert",
+      "loyal",
+      "playful",
+      "friendly"
+    ],
+    "group": "Herding",
+    "good_with_kids": true,
+    "good_with_other_dogs": true,
+    "good_with_cats": true,
+    "trainability": "moderate",
+    "grooming": "high",
+    "lifespan_min": 12,
+    "lifespan_max": 14,
+    "cold_tolerance": "high",
+    "hot_tolerance": "medium",
+    "barking": "medium",
+    "rare": true
+  }
+]
