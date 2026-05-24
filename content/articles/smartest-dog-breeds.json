@@ -1,0 +1,89 @@
+{
+  "topic_slug": "smartest-dog-breeds",
+  "topic_title": "Top 10 Smartest Dog Breeds",
+  "intro": "When it comes to intelligence in the dog world, some breeds consistently stand out for their quick learning, problem-solving skills, and eagerness to please. These dogs aren’t just book smart—they’re practical, adaptable, and thrive when challenged mentally. Whether you’re looking for a loyal companion who’s easy to train or a canine athlete that masters new tricks effortlessly, these breeds bring brains and heart together in a wonderful package. Here’s a ranked list of the smartest dogs that shine brightest in obedience, agility, and everyday smarts.",
+  "picks": [
+    {
+      "rank": 10,
+      "breed": "Labrador Retriever",
+      "description": "Labrador Retrievers are celebrated for their friendly nature and intelligence. They quickly pick up commands and are known for their willingness to work, which makes training a rewarding experience. Labs have a strong desire to please their owners, and their problem-solving skills help them adapt to a variety of tasks, from retrieving to service work. Their outgoing personality pairs beautifully with their keen minds, making them dependable companions in both family life and more active pursuits.",
+      "best_for": "active families and first-time dog owners",
+      "quirky_fact": "Labradors have a 'soft mouth,' which means they can carry delicate items without damaging them."
+    },
+    {
+      "rank": 9,
+      "breed": "Golden Retriever",
+      "description": "Golden Retrievers are not only beautiful but also remarkably smart and eager to learn. Their intelligence is paired with a gentle temperament, making them excellent therapy dogs and family pets alike. They enjoy challenges and thrive when given jobs to do, whether it’s obedience training or playing fetch with complex commands. Their intuitive nature means they often sense what their humans need, adding an extra layer of connection to their already impressive smarts.",
+      "best_for": "families seeking a loving and trainable dog",
+      "quirky_fact": "Goldens often smile with a distinct grin that melts hearts everywhere."
+    },
+    {
+      "rank": 8,
+      "breed": "Standard Poodle",
+      "description": "The Standard Poodle is a powerhouse of brain and beauty. Known for their quick wit and adaptability, they excel in obedience and dog sports. They’re highly trainable and enjoy mental stimulation, which helps keep their sharp minds engaged. Beyond tricks and agility, Standard Poodles are sensitive and intuitive, responding well to their owner’s emotions. Their hypoallergenic coat is a bonus for those preferring a low-shedding dog who’s also a top-notch thinker.",
+      "best_for": "owners who love mental challenges and elegant companions",
+      "quirky_fact": "Poodles were originally bred as water retrievers and love swimming."
+    },
+    {
+      "rank": 7,
+      "breed": "German Shepherd",
+      "description": "German Shepherds are often the first breed that comes to mind when thinking about intelligence and versatility. Their sharp minds, intense focus, and eagerness to work make them standouts in police and service roles. These dogs thrive on having a job and quickly learn complex tasks, including obedience and protection training. Their loyalty and protective instincts are matched by their brainpower, making them confident problem solvers and affectionate family members when properly trained.",
+      "best_for": "experienced dog owners seeking a dependable and smart companion",
+      "quirky_fact": "German Shepherds can learn hundreds of words and commands, truly understanding context."
+    },
+    {
+      "rank": 6,
+      "breed": "Border Collie",
+      "description": "Border Collies are often hailed as the most intelligent dog breed, and it’s easy to see why. Their ability to understand and respond to new commands is unmatched, and they excel at tasks requiring quick thinking and agility. These dogs are natural problem solvers who love herding and complex challenges, making them ideal for active owners who can provide plenty of mental stimulation. Their intense focus and energy level mean they shine best in homes that keep their minds busy.",
+      "best_for": "high-energy owners who love training and dog sports",
+      "quirky_fact": "Border Collies can learn to recognize and respond to over 1,000 words and signals."
+    },
+    {
+      "rank": 5,
+      "breed": "Australian Shepherd",
+      "description": "Australian Shepherds are smart, energetic, and endlessly curious. They pick up commands quickly and have a keen eye for detail, which makes them excellent herders and agility competitors. Their intelligence is paired with a strong work ethic, and they thrive when given meaningful tasks. Aussies bond deeply with their families and are sensitive to their environment, making them responsive learners who enjoy mental challenges and physical activity in equal measure.",
+      "best_for": "active individuals and families who love outdoor adventures",
+      "quirky_fact": "Australian Shepherds often have striking multicolored eyes, adding to their charm."
+    },
+    {
+      "rank": 4,
+      "breed": "Doberman Pinscher",
+      "description": "Dobermans combine intelligence with an impressive level of focus and determination. They are quick learners who respond well to consistent training and thrive when they have a clear leader. Their alert nature and problem-solving abilities make them excellent working dogs, but they’re also affectionate and loyal family members. Dobermans love mental stimulation and physical exercise, so they're happiest when their sharp minds are engaged regularly.",
+      "best_for": "owners who want a protective and intelligent companion",
+      "quirky_fact": "Dobermans were originally bred by a tax collector seeking protection during his rounds."
+    },
+    {
+      "rank": 3,
+      "breed": "Shetland Sheepdog",
+      "description": "Shetland Sheepdogs, or Shelties, are small but mighty when it comes to brainpower. They’re incredibly responsive to training and eager to please, quickly mastering new commands and tricks. Shelties excel in agility, obedience, and herding, showcasing their sharp minds and nimble bodies. Their affectionate nature and sensitivity make them excellent companions who can read their owner's moods and adjust accordingly, deepening their bond through clever communication.",
+      "best_for": "families wanting a smart, smaller herding dog",
+      "quirky_fact": "Shelties often 'dance' on their hind legs when excited or trying to herd."
+    },
+    {
+      "rank": 2,
+      "breed": "Pembroke Welsh Corgi",
+      "description": "Pembroke Welsh Corgis are clever, quick-witted, and surprisingly versatile. Despite their small stature, they have big brains and an eagerness to learn that makes training fun and fulfilling. Originally bred for herding cattle, their intelligence shines in problem-solving and adapting to new situations. Corgis have lively personalities and strong bonds with their families, often showing a playful streak that complements their smart nature.",
+      "best_for": "owners who want a lively, intelligent, and adaptable dog",
+      "quirky_fact": "Corgis were a favorite breed of British royalty, known for their spirited personalities."
+    },
+    {
+      "rank": 1,
+      "breed": "Belgian Malinois",
+      "description": "The Belgian Malinois tops the list for intelligence, agility, and trainability. This breed is known for its razor-sharp mind and incredible work ethic, excelling in police, military, and search-and-rescue roles worldwide. Belgian Malinois are quick learners who thrive on challenges and have a natural problem-solving ability that’s second to none. Their intense focus and loyalty make them exceptional partners for dedicated owners who can keep up with their mental and physical needs.",
+      "best_for": "active, experienced owners seeking a highly trainable working dog",
+      "quirky_fact": "Belgian Malinois often outperform other breeds in police and military work due to their intelligence and drive."
+    }
+  ],
+  "pin_headlines": [
+    "10 Smartest Dog Breeds You’ll Love Training",
+    "Meet the Most Intelligent Dog Breeds Around",
+    "Smart Dogs That Are Easy to Train",
+    "Top Dog Breeds Known for Brainpower",
+    "Highly Intelligent Dog Breeds Ranked",
+    "Dogs That Love Problem Solving and Learning",
+    "Best Breeds for Mental Agility and Quick Learning",
+    "Smartest Dogs for Active Families",
+    "Trainable and Clever Dog Breeds",
+    "Genius Dogs You Should Know About"
+  ]
+}
