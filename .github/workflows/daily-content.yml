@@ -1,0 +1,40 @@
+name: Daily content generation
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 4am UTC daily
+  workflow_dispatch:      # manual trigger from GitHub Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate 5 new articles
+        run: node scripts/2-generate-articles.js --count=5
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Fetch images for new breeds
+        run: node scripts/3-fetch-images.js --new-only
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+
+      - name: Generate pin images
+        run: node scripts/4-generate-pins.js
+
+      - name: Commit and push new content
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/ public/
+          git diff --cached --quiet || git commit -m "Daily content batch [skip ci]"
+          git push

@@ -6,20 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape": "node scripts/1-scrape-breeds.js",
+    "generate": "node scripts/2-generate-articles.js",
+    "images": "node scripts/3-fetch-images.js",
+    "pins": "node scripts/4-generate-pins.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.0",
     "next": "16.2.6",
+    "openai": "^4.50.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "puppeteer": "^22.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
