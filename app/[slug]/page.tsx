@@ -38,7 +38,15 @@ export default async function ArticleHub({
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const sortedPicks = [...article.picks].sort((a, b) => b.rank - a.rank);
+  const totalBreeds = article.picks.length;
+  // Start countdown from the lowest rank (e.g. #7 in a 7-breed list)
+  const startRank = totalBreeds;
+  // Show breeds in alphabetical order — never reveal the rankings on this page
+  const alphabeticalPicks = [...article.picks].sort((a, b) =>
+    a.breed.localeCompare(b.breed)
+  );
+  // The #1 breed (rank === 1) — we'll tease it but keep its name hidden
+  const topBreed = article.picks.find((p) => p.rank === 1);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
@@ -56,28 +64,52 @@ export default async function ArticleHub({
         {article.topic_title}
       </h1>
 
-      <p className="text-lg text-stone-700 mb-8 leading-relaxed">
+      <p className="text-lg text-stone-700 mb-6 leading-relaxed">
         {article.intro}
       </p>
 
-      <Link
-        href={`/${article.topic_slug}/${sortedPicks[0].rank}`}
-        className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-full font-semibold text-lg mb-12"
-      >
-        Start the countdown from #{sortedPicks[0].rank} →
-      </Link>
+      {/* Curiosity teaser — show #1 image blurred so users must click to find out */}
+      {topBreed && (
+        <div className="relative rounded-2xl overflow-hidden mb-8 border-4 border-emerald-700">
+          <div className="relative h-48 md:h-64">
+            <Image
+              src={getBreedImage(topBreed.breed)}
+              alt="The #1 ranked breed"
+              fill
+              className="object-cover blur-md scale-110"
+            />
+            <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
+              <span className="text-emerald-400 font-bold text-sm uppercase tracking-widest mb-2">
+                🏆 Ranked #1
+              </span>
+              <p className="text-white text-xl md:text-2xl font-bold mb-4">
+                Which breed topped our list?
+              </p>
+              <Link
+                href={`/${article.topic_slug}/${startRank}`}
+                className="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold text-base transition"
+              >
+                Reveal the ranking →
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       <AdSlot type="native" className="my-8" />
 
       <h2
-        className="text-2xl font-bold mb-6"
+        className="text-2xl font-bold mb-2"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        All {sortedPicks.length} breeds
+        {totalBreeds} breeds are ranked — tap to see where each one placed
       </h2>
+      <p className="text-stone-500 text-sm mb-6">
+        Ranked from #{totalBreeds} to #1. Click any breed to jump to its position.
+      </p>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {sortedPicks.map((pick) => (
+        {alphabeticalPicks.map((pick) => (
           <Link
             key={pick.rank}
             href={`/${article.topic_slug}/${pick.rank}`}
@@ -90,13 +122,24 @@ export default async function ArticleHub({
               className="object-cover group-hover:scale-105 transition"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-3 flex flex-col justify-end">
-              <span className="text-white text-xs font-bold">#{pick.rank}</span>
+              <span className="text-white text-xs font-semibold opacity-80">
+                Tap to see rank
+              </span>
               <span className="text-white font-semibold leading-tight">
                 {pick.breed}
               </span>
             </div>
           </Link>
         ))}
+      </div>
+
+      <div className="mt-8 text-center">
+        <Link
+          href={`/${article.topic_slug}/${startRank}`}
+          className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition"
+        >
+          Start from #{startRank} and count down to #1 →
+        </Link>
       </div>
     </main>
   );
