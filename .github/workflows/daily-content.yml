@@ -5,18 +5,28 @@ on:
     - cron: '0 4 * * *'  # 4am UTC daily
   workflow_dispatch:      # manual trigger from GitHub Actions tab
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      - name: Install Puppeteer system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Generate 5 new articles
         run: node scripts/2-generate-articles.js --count=5
@@ -24,12 +34,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Fetch images for new breeds
-        run: node scripts/3-fetch-images.js --new-only
+        run: node scripts/3-fetch-images.js
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
       - name: Generate pin images
         run: node scripts/4-generate-pins.js
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
       - name: Commit and push new content
         run: |
