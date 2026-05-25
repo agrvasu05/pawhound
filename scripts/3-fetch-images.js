@@ -28,29 +28,69 @@ function getBreedsFromArticles() {
   return [...breeds.entries()].map(([slug, name]) => ({ slug, name }));
 }
 
+const DOG_KEYWORDS = ['dog', 'puppy', 'pup', 'canine', 'hound', 'breed', 'pet', 'pooch'];
+
+function isDogPhoto(photo) {
+  const alt = (photo.alt || '').toLowerCase();
+  return DOG_KEYWORDS.some((kw) => alt.includes(kw));
+}
+
+async function searchPexels(query, perPage = 5) {
+  const res = await fetch(
+    `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape`,
+    { headers: { Authorization: PEXELS_KEY } }
+  );
+  if (!res.ok) throw new Error(`Pexels API error ${res.status}`);
+  const data = await res.json();
+  return data.photos || [];
+}
+
 async function fetchImagesForBreed(breed) {
   const dir = path.join(process.cwd(), 'public', 'images', 'breeds', breed.slug);
   if (fs.existsSync(path.join(dir, '1.jpg'))) return 'skip';
 
-  const query = encodeURIComponent(`${breed.name} dog`);
-  const res = await fetch(
-    `https://api.pexels.com/v1/search?query=${query}&per_page=3&orientation=landscape`,
-    { headers: { Authorization: PEXELS_KEY } }
-  );
+  // Try progressively broader queries until we get photos whose alt text
+  // contains a dog-related keyword — prevents wrong images for rare breeds
+  const queries = [
+    `${breed.name} dog`,
+    `${breed.name} dog breed`,
+    `${breed.name}`,
+    `${breed.name} puppy`,
+  ];
 
-  if (!res.ok) throw new Error(`Pexels API error ${res.status}`);
+  let photos = [];
+  for (const q of queries) {
+    const results = await searchPexels(q, 6);
+    // Prefer results that mention dogs in their alt text
+    const dogPhotos = results.filter(isDogPhoto);
+    if (dogPhotos.length >= 3) { photos = dogPhotos.slice(0, 3); break; }
+    if (dogPhotos.length > 0) { photos = dogPhotos; break; }
+    // No dog-tagged results — try next query
+    await new Promise((r) => setTimeout(r, 300));
+  }
 
-  const data = await res.json();
-  if (!data.photos || data.photos.length === 0) return 'no-image';
+  // Last resort: generic dog breed portrait — still filter by isDogPhoto
+  if (photos.length === 0) {
+    const fallback = await searchPexels('purebred dog portrait', 6);
+    photos = fallback.filter(isDogPhoto).slice(0, 3);
+    // If still nothing, just take first 3 from fallback (better than nothing)
+    if (photos.length === 0) photos = fallback.slice(0, 3);
+  }
+
+  if (photos.length === 0) return 'no-image';
 
   fs.mkdirSync(dir, { recursive: true });
-  for (let i = 0; i < data.photos.length; i++) {
-    const imgRes = await fetch(data.photos[i].src.large);
+  for (let i = 0; i < photos.length; i++) {
+    const imgRes = await fetch(photos[i].src.large);
     if (!imgRes.ok) continue;
     fs.writeFileSync(path.join(dir, `${i + 1}.jpg`), Buffer.from(await imgRes.arrayBuffer()));
   }
 
-  const attribution = data.photos.map((p) => ({ photographer: p.photographer, url: p.photographer_url }));
+  const attribution = photos.map((p) => ({
+    photographer: p.photographer,
+    url: p.photographer_url,
+    alt: p.alt,
+  }));
   fs.writeFileSync(path.join(dir, 'attribution.json'), JSON.stringify(attribution, null, 2));
   return 'ok';
 }

@@ -1,14 +1,17 @@
 [
   {
     "photographer": "Engin Akyurt",
-    "url": "https://www.pexels.com/@enginakyurt"
+    "url": "https://www.pexels.com/@enginakyurt",
+    "alt": "Detailed close-up of a carpet python coiled on rock, displaying its distinctive pattern and scales."
   },
   {
     "photographer": "Marina Riijik",
-    "url": "https://www.pexels.com/@marina-riijik-944246039"
+    "url": "https://www.pexels.com/@marina-riijik-944246039",
+    "alt": "A Pharaoh Hound stands alert among vibrant yellow tulips in lush greenery."
   },
   {
-    "photographer": "Strangers and  their dogs by Zack Tu Nan",
-    "url": "https://www.pexels.com/@strangers-and-their-dogs"
+    "photographer": "Marina Riijik",
+    "url": "https://www.pexels.com/@marina-riijik-944246039",
+    "alt": "A Pharaoh Hound blends with nature, surrounded by bright yellow flowers in a lush garden."
   }
 ]
