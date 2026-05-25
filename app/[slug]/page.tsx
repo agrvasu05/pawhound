@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
+import HubCTAButton from "@/components/HubCTAButton";
 
 export async function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.topic_slug }));
@@ -39,10 +40,9 @@ export default async function ArticleHub({
   if (!article) notFound();
 
   const totalBreeds = article.picks.length;
-  // Start countdown from the lowest rank (e.g. #7 in a 7-breed list)
   const startRank = totalBreeds;
-  // The #1 breed (rank === 1) — we'll tease it but keep its name hidden
   const topBreed = article.picks.find((p) => p.rank === 1);
+  const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
@@ -81,12 +81,13 @@ export default async function ArticleHub({
               <p className="text-white text-xl md:text-2xl font-bold mb-4">
                 Which breed topped our list?
               </p>
-              <Link
+              <HubCTAButton
                 href={`/${article.topic_slug}/${startRank}`}
+                directLink={directLink}
                 className="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold text-base transition"
               >
                 Reveal the ranking →
-              </Link>
+              </HubCTAButton>
             </div>
           </div>
         </div>
@@ -95,12 +96,13 @@ export default async function ArticleHub({
       <AdSlot type="native" className="my-8" />
 
       <div className="mt-4 text-center">
-        <Link
+        <HubCTAButton
           href={`/${article.topic_slug}/${startRank}`}
+          directLink={directLink}
           className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition"
         >
           Start from #{startRank} and count down to #1 →
-        </Link>
+        </HubCTAButton>
       </div>
     </main>
   );
