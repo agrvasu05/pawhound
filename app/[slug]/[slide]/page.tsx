@@ -31,8 +31,6 @@ export async function generateMetadata({
   };
 }
 
-const DIRECT_LINK_SLIDES = [8, 11, 14];
-
 export default async function Slide({
   params,
 }: {
@@ -49,7 +47,9 @@ export default async function Slide({
   const nextRank = currentRank - 1;
   const hasNext = nextRank >= 1;
   const isLastSlide = currentRank === 1;
-  const useDirectLink = DIRECT_LINK_SLIDES.includes(currentRank);
+  // Fire on every 3rd slide (positions 3, 6, 9...) but not the last slide
+  const slidePosition = article.picks.length - currentRank + 1;
+  const useDirectLink = !isLastSlide && slidePosition % 3 === 0;
   const nextHref = hasNext ? `/${slug}/${nextRank}` : `/${slug}`;
   const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
 
