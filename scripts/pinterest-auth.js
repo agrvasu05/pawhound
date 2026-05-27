@@ -68,7 +68,7 @@ function pinterestPost(endpoint, body) {
     `?client_id=${CLIENT_ID}` +
     `&redirect_uri=${encodeURIComponent(REDIRECT_URI)}` +
     `&response_type=code` +
-    `&scope=boards:read,boards:write,pins:write,user_accounts:read` +
+    `&scope=boards:read,boards:write,pins:read,pins:write,user_accounts:read` +
     `&state=${state}` +
     `&code_challenge=${codeChallenge}` +
     `&code_challenge_method=S256`;

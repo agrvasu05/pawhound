@@ -19,6 +19,11 @@ const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
 let REFRESH_TOKEN = process.env.PINTEREST_REFRESH_TOKEN;
 let ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN;
 
+// Set PINTEREST_SANDBOX=true in .env.local to use sandbox for demo/testing
+const API_HOST = process.env.PINTEREST_SANDBOX === 'true'
+  ? 'api-sandbox.pinterest.com'
+  : 'api.pinterest.com';
+
 const SITE_URL = 'https://valuefindsdaily.com';
 const PINS_PER_RUN = 3;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
@@ -42,7 +47,7 @@ function api(method, endpoint, body) {
     const ct = isOAuth ? 'application/x-www-form-urlencoded' : 'application/json';
 
     const opts = {
-      hostname: 'api.pinterest.com',
+      hostname: API_HOST,
       path: endpoint,
       method,
       headers: {
@@ -108,8 +113,8 @@ async function getOrCreateBoard(article, boardsTracker) {
   });
 
   if (res.status === 401) {
-    await refreshToken();
-    return getOrCreateBoard(article, boardsTracker);
+    console.error('  Board creation 401:', JSON.stringify(res.body, null, 2));
+    throw new Error('Unauthorized — re-run pinterest-auth.js');
   }
 
   if (res.status !== 201 && res.status !== 200) {
@@ -192,6 +197,7 @@ function getHashtags(slug, title) {
 // ── Post one pin ──────────────────────────────────────────────────────────────
 async function postPin(pin, boardId) {
   const { article, pinFile, slug } = pin;
+
   const res = await api('POST', '/v5/pins', {
     board_id: boardId,
     title: article.topic_title,
@@ -203,13 +209,10 @@ async function postPin(pin, boardId) {
     },
   });
 
-  if (res.status === 401) {
-    await refreshToken();
-    return postPin(pin, boardId);
-  }
-
+  // Log the full response so we can see exactly what Pinterest returns
   if (res.status !== 201) {
-    throw new Error(`Pinterest API ${res.status}: ${JSON.stringify(res.body)}`);
+    console.error(`  Pinterest returned ${res.status}:`, JSON.stringify(res.body, null, 2));
+    throw new Error(`Pinterest API error ${res.status}`);
   }
 
   return res.body;
@@ -217,8 +220,10 @@ async function postPin(pin, boardId) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 (async () => {
-  // Always refresh at start of CI run
-  if (process.env.CI || !ACCESS_TOKEN) await refreshToken();
+  // Refresh token at start (always in CI, or when no access token stored)
+  if (process.env.CI || !ACCESS_TOKEN) {
+    await refreshToken();
+  }
 
   const tracker = fs.existsSync(TRACKER_PATH)
     ? JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))
