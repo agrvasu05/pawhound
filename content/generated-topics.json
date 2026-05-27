@@ -1,0 +1,328 @@
+[
+  {
+    "slug": "best-dogs-for-anxious-owners",
+    "title": "5+ Dog Breeds That Soothe Anxiety and Stress",
+    "desc": "Discover dog breeds known for their calm, comforting nature—perfect for anyone seeking a furry friend to ease anxiety and provide emotional support. These dogs typically have gentle temperaments and low to medium energy levels.",
+    "filter": {
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "affectionate",
+        "gentle",
+        "friendly",
+        "loyal"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-stay-small-forever",
+    "title": "Tiny Dogs That Never Grow Beyond 10 Pounds",
+    "desc": "Meet the tiniest dog breeds that keep their petite size throughout their lives—ideal for small-space living and those who love pocket-sized pets. These toy and small breeds are adorable yet sturdy companions.",
+    "filter": {
+      "size": [
+        "toy",
+        "small"
+      ],
+      "not_size": [
+        "medium",
+        "large",
+        "giant"
+      ],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 10
+    }
+  },
+  {
+    "slug": "most-photogenic-dog-breeds",
+    "title": "10 Most Photogenic Dog Breeds for Instagram-Worthy Pics",
+    "desc": "These dogs naturally steal the spotlight with their striking looks, unique coats, and charming personalities—perfect for pet parents who love sharing beautiful moments on social media.",
+    "filter": {
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "not_size": [
+        "giant"
+      ],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "confident",
+        "friendly",
+        "affectionate",
+        "alert"
+      ],
+      "coat_includes": [
+        "curly",
+        "silky",
+        "long",
+        "wavy",
+        "feathered",
+        "soft"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-love-swimming",
+    "title": "5+ Dog Breeds Who Are Natural Water Lovers",
+    "desc": "From lakes to pools, these breeds adore water and love to swim. Perfect companions for active families who enjoy outdoor water activities or beach days.",
+    "filter": {
+      "size": [
+        "medium",
+        "large",
+        "giant"
+      ],
+      "not_size": [
+        "toy",
+        "small"
+      ],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [
+        "low"
+      ],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [
+        "medium",
+        "high"
+      ],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "energetic",
+        "playful",
+        "friendly",
+        "confident"
+      ],
+      "coat_includes": [
+        "water-resistant",
+        "dense",
+        "double"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "best-dogs-for-night-shift-workers",
+    "title": "5 Dog Breeds That Thrive With Night Shift Schedules",
+    "desc": "These adaptable dog breeds have calm energy and independent temperaments, making them great companions for night shift workers who need a pet that adjusts to unconventional hours.",
+    "filter": {
+      "size": [
+        "small",
+        "medium"
+      ],
+      "not_size": [
+        "large",
+        "giant"
+      ],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "independent",
+        "calm",
+        "alert",
+        "gentle"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "dog-breeds-with-calmest-energy",
+    "title": "Top Dog Breeds With the Calmest Energy Levels",
+    "desc": "These breeds are known for their relaxed demeanor and minimal hyperactivity, ideal for owners seeking a peaceful home environment with a steady, easygoing companion.",
+    "filter": {
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "not_size": [],
+      "energy": [
+        "low"
+      ],
+      "not_energy": [
+        "medium",
+        "high"
+      ],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "gentle",
+        "quiet",
+        "affectionate"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dogs-for-people-who-work-from-home",
+    "title": "Top Dog Breeds That Thrive With Work-From-Home Owners",
+    "desc": "Working from home means more time with your dog, but some breeds are better suited for this lifestyle. These pups balance affectionate attention with independent moments to keep you productive.",
+    "filter": {
+      "size": [
+        "small",
+        "medium"
+      ],
+      "not_size": [
+        "giant"
+      ],
+      "energy": [
+        "medium"
+      ],
+      "not_energy": [
+        "high",
+        "low"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "affectionate",
+        "intelligent",
+        "friendly",
+        "calm",
+        "loyal"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  }
+]

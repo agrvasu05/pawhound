@@ -14,6 +14,50 @@ if (!fs.existsSync(breedsFile)) {
 }
 const allBreeds = JSON.parse(fs.readFileSync(breedsFile, 'utf-8'));
 
+// ── Load AI-generated topics and merge with static ones ───────────────────────
+function filterFromSpec(spec) {
+  return (b) => {
+    if (spec.size?.length && !spec.size.includes(b.size)) return false;
+    if (spec.not_size?.length && spec.not_size.includes(b.size)) return false;
+    if (spec.energy?.length && !spec.energy.includes(b.energy)) return false;
+    if (spec.not_energy?.length && spec.not_energy.includes(b.energy)) return false;
+    if (spec.barking?.length && !spec.barking.includes(b.barking)) return false;
+    if (spec.not_barking?.length && spec.not_barking.includes(b.barking)) return false;
+    if (spec.shedding?.length && !spec.shedding.includes(b.shedding)) return false;
+    if (spec.grooming?.length && !spec.grooming.includes(b.grooming)) return false;
+    if (spec.trainability?.length && !spec.trainability.includes(b.trainability)) return false;
+    if (spec.cold_tolerance?.length && !spec.cold_tolerance.includes(b.cold_tolerance)) return false;
+    if (spec.hot_tolerance?.length && !spec.hot_tolerance.includes(b.hot_tolerance)) return false;
+    if (spec.temperament_includes?.length) {
+      if (!spec.temperament_includes.some((t) => (b.temperament || []).includes(t))) return false;
+    }
+    if (spec.coat_includes?.length) {
+      if (!spec.coat_includes.some((c) => (b.coat || []).includes(c))) return false;
+    }
+    if (spec.good_with_kids != null && b.good_with_kids !== spec.good_with_kids) return false;
+    if (spec.good_with_cats != null && b.good_with_cats !== spec.good_with_cats) return false;
+    if (spec.good_with_other_dogs != null && b.good_with_other_dogs !== spec.good_with_other_dogs) return false;
+    if (spec.rare != null && b.rare !== spec.rare) return false;
+    if (spec.lifespan_min_gte != null && b.lifespan_min < spec.lifespan_min_gte) return false;
+    return true;
+  };
+}
+
+const generatedTopicsPath = path.join(process.cwd(), 'content', 'generated-topics.json');
+const generatedTopics = fs.existsSync(generatedTopicsPath)
+  ? JSON.parse(fs.readFileSync(generatedTopicsPath, 'utf-8')).map((t) => ({
+      ...t,
+      filter: filterFromSpec(t.filter || {}),
+    }))
+  : [];
+
+// Merge: static topics first, then AI-generated ones (deduped by slug)
+const staticSlugs = new Set(TOPICS.map((t) => t.slug));
+const ALL_TOPICS = [
+  ...TOPICS,
+  ...generatedTopics.filter((t) => !staticSlugs.has(t.slug)),
+];
+
 const SYSTEM_PROMPT = `You write Pinterest-style dog breed listicles for US audiences.
 Voice: warm, knowledgeable, conversational American English. Like a friend who knows a lot about dogs.
 Rules:
@@ -100,15 +144,15 @@ async function generateArticle(topic) {
 }
 
 const countArg = process.argv.find((a) => a.startsWith('--count='));
-const count = countArg ? parseInt(countArg.split('=')[1]) : TOPICS.length;
+const count = countArg ? parseInt(countArg.split('=')[1]) : ALL_TOPICS.length;
 
-const pending = TOPICS.filter((t) => {
+const pending = ALL_TOPICS.filter((t) => {
   const file = path.join(process.cwd(), 'content', 'articles', `${t.slug}.json`);
   return !fs.existsSync(file);
 }).slice(0, count);
 
 if (pending.length === 0) {
-  console.log('All topics already generated.');
+  console.log('All topics already generated. Run 1b-generate-topics.js to create new ones.');
   process.exit(0);
 }
 

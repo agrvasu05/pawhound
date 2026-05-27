@@ -28,7 +28,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate 5 new articles
+      - name: Generate new Pinterest-trending topics
+        run: node scripts/1b-generate-topics.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Generate 10 new articles
         run: node scripts/2-generate-articles.js --count=10
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
