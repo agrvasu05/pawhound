@@ -107,9 +107,14 @@ async function getOrCreateBoard(article, boardsTracker) {
   const slug = article.topic_slug;
   if (boardsTracker[slug]) return boardsTracker[slug];
 
-  console.log(`  Creating board: "${article.topic_title}"...`);
+  // Pinterest board names max 50 characters
+  const boardName = article.topic_title.length > 50
+    ? article.topic_title.slice(0, 47) + '...'
+    : article.topic_title;
+
+  console.log(`  Creating board: "${boardName}"...`);
   const res = await api('POST', '/v5/boards', {
-    name: article.topic_title,
+    name: boardName,
     description: article.intro.slice(0, 500),
     privacy: 'PUBLIC',
   });
