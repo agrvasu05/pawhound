@@ -6,12 +6,12 @@ export default function Privacy() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-10 prose prose-stone">
       <h1>Privacy Policy</h1>
-      <p className="text-stone-500 text-sm">Last updated: May 25, 2025</p>
+      <p className="text-stone-500 text-sm">Last updated: May 27, 2026</p>
 
       <p>
         Value Finds Daily (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates
-        valuefindsdaily.com. This page explains how we collect, use, and protect
-        information when you visit our site.
+        valuefindsdaily.com. This page explains how we collect, use, store, protect, and
+        retain information when you visit our site.
       </p>
 
       <h2>Information We Collect</h2>
@@ -20,6 +20,38 @@ export default function Privacy() {
         site, standard server logs may automatically record your IP address,
         browser type, referring page, and pages visited. This data is used solely
         for site analytics and security purposes.
+      </p>
+      <p>
+        If you contact us via email, we collect your email address and any
+        information you voluntarily provide in your message, solely for the
+        purpose of responding to your inquiry.
+      </p>
+
+      <h2>How We Use Your Information</h2>
+      <p>
+        We use the information collected to operate and improve the site, serve
+        relevant advertisements, monitor for security issues, and respond to
+        user inquiries. We do not sell, trade, or transfer your personal
+        information to third parties except as described in this policy.
+      </p>
+
+      <h2>Data Retention</h2>
+      <p>
+        Server log data is retained for a maximum of 90 days and then
+        permanently deleted. Email correspondence is retained for up to 12
+        months and then deleted. We do not retain any personally identifiable
+        information beyond the periods stated above.
+      </p>
+
+      <h2>Data Protection &amp; Security</h2>
+      <p>
+        We take reasonable technical and organizational measures to protect your
+        information against unauthorized access, alteration, disclosure, or
+        destruction. Our site is served exclusively over HTTPS (TLS encryption).
+        Access to server logs is restricted to authorized personnel only.
+        While we implement industry-standard safeguards, no method of
+        transmission over the internet is 100% secure, and we cannot guarantee
+        absolute security.
       </p>
 
       <h2>Advertising</h2>
@@ -59,16 +91,28 @@ export default function Privacy() {
         knowingly collect personal information from children.
       </p>
 
+      <h2>Your Rights</h2>
+      <p>
+        You may request access to, correction of, or deletion of any personal
+        data we hold about you by contacting us at the email address below. We
+        will respond to all requests within 30 days.
+      </p>
+
       <h2>Changes to This Policy</h2>
       <p>
         We may update this Privacy Policy from time to time. Changes will be
-        posted on this page with an updated date.
+        posted on this page with an updated date. Continued use of the site
+        after changes are posted constitutes acceptance of the revised policy.
       </p>
 
       <h2>Contact</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us at{" "}
-        <a href="/contact">our contact page</a>.
+        If you have any questions about this Privacy Policy or wish to exercise
+        your data rights, please contact us directly by email:
+      </p>
+      <p>
+        <strong>Value Finds Daily</strong><br />
+        <a href="mailto:drvipina@gmail.com">drvipina@gmail.com</a>
       </p>
     </main>
   );
