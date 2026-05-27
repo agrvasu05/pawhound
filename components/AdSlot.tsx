@@ -42,7 +42,7 @@ export default function AdSlot({ type, className = "" }: AdSlotProps) {
 </style>
 </head>
 <body>
-<script async="async" data-cfasync="false" src="//pl${zoneId}.profitableratecpm.com/invoke.js"></script>
+<script async="async" data-cfasync="false" src="https://pl${zoneId}.profitableratecpm.com/invoke.js"></script>
 <script>
   setTimeout(function () {
     var filled =

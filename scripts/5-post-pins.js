@@ -220,10 +220,8 @@ async function postPin(pin, boardId) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 (async () => {
-  // Refresh token at start (always in CI, or when no access token stored)
-  if (process.env.CI || !ACCESS_TOKEN) {
-    await refreshToken();
-  }
+  // Always refresh — access tokens expire, refresh token keeps it alive
+  await refreshToken();
 
   const tracker = fs.existsSync(TRACKER_PATH)
     ? JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))

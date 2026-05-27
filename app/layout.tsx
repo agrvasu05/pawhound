@@ -29,7 +29,7 @@ export default function RootLayout({
           <Script
             id="adsterra-social"
             strategy="afterInteractive"
-            src={`//pl${process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_ID}.profitableratecpm.com/invoke.js`}
+            src={`https://pl${process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_ID}.profitableratecpm.com/invoke.js`}
             data-cfasync="false"
           />
         )}
@@ -37,7 +37,7 @@ export default function RootLayout({
           <Script
             id="adsterra-pop"
             strategy="afterInteractive"
-            src={`//pl${process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_ID}.profitableratecpm.com/invoke.js`}
+            src={`https://pl${process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_ID}.profitableratecpm.com/invoke.js`}
             data-cfasync="false"
           />
         )}
