@@ -112,7 +112,7 @@ export default function Privacy() {
       </p>
       <p>
         <strong>Value Finds Daily</strong><br />
-        <a href="mailto:drvipina@gmail.com">drvipina@gmail.com</a>
+        <a href="mailto:agrvasu05@gmail.com">agrvasu05@gmail.com</a>
       </p>
     </main>
   );
