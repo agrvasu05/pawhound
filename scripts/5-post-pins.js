@@ -25,7 +25,7 @@ const API_HOST = process.env.PINTEREST_SANDBOX === 'true'
   : 'api.pinterest.com';
 
 const SITE_URL = 'https://valuefindsdaily.com';
-const PINS_PER_RUN = 3;
+const PINS_PER_RUN = 20;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
 const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 

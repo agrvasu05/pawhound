@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Generate 5 new articles
-        run: node scripts/2-generate-articles.js --count=5
+        run: node scripts/2-generate-articles.js --count=10
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
