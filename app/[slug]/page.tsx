@@ -41,7 +41,7 @@ export default async function ArticleHub({
 
   const totalBreeds = article.picks.length;
   const startRank = totalBreeds;
-  const topBreed = article.picks.find((p) => p.rank === 1);
+  const lastBreed = article.picks.find((p) => p.rank === totalBreeds);
   const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
 
   return (
@@ -64,31 +64,32 @@ export default async function ArticleHub({
         {article.intro}
       </p>
 
-      {/* Curiosity teaser — show #1 image blurred so users must click to find out */}
-      {topBreed && (
-        <div className="relative rounded-2xl overflow-hidden mb-8 border-4 border-emerald-700">
-          <div className="relative h-48 md:h-64">
+      {/* Preview card — shows the last ranked breed clearly to kick off the countdown */}
+      {lastBreed && (
+        <div className="rounded-2xl overflow-hidden mb-8 border border-stone-200 shadow-sm bg-white">
+          <div className="relative h-48 md:h-64 w-full">
             <Image
-              src={getBreedImage(topBreed.breed)}
-              alt="The #1 ranked breed"
+              src={getBreedImage(lastBreed.breed)}
+              alt={lastBreed.breed}
               fill
-              className="object-cover blur-md scale-110"
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
-              <span className="text-emerald-400 font-bold text-sm uppercase tracking-widest mb-2">
-                🏆 Ranked #1
-              </span>
-              <p className="text-white text-xl md:text-2xl font-bold mb-4">
-                Which breed topped our list?
-              </p>
-              <HubCTAButton
-                href={`/${article.topic_slug}/${startRank}`}
-                directLink={directLink}
-                className="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold text-base transition"
-              >
-                Reveal the ranking →
-              </HubCTAButton>
+            <div className="absolute top-3 left-3 bg-stone-800/80 text-white text-xs font-bold px-3 py-1 rounded-full">
+              #{totalBreeds} on our list
             </div>
+          </div>
+          <div className="p-5">
+            <h2 className="text-xl font-bold mb-1">{lastBreed.breed}</h2>
+            <p className="text-stone-600 text-sm leading-relaxed mb-4">
+              {lastBreed.description.slice(0, 120)}…
+            </p>
+            <HubCTAButton
+              href={`/${article.topic_slug}/${startRank}`}
+              directLink={directLink}
+              className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-full font-semibold text-base transition"
+            >
+              See all {totalBreeds} breeds ranked →
+            </HubCTAButton>
           </div>
         </div>
       )}
