@@ -153,14 +153,9 @@ function buildQueue(tracker) {
   const pinsDir = path.join(process.cwd(), 'public', 'pins');
   const queue = [];
 
-  // Find slugs already posted TODAY — Pinterest flags multiple pins to same URL same day
   const today = new Date().toISOString().slice(0, 10); // "2026-05-27"
-  const postedTodaySlugs = new Set(
-    Object.values(tracker)
-      .filter((v) => v.posted_at && v.posted_at.startsWith(today))
-      .map((v) => v.board_id) // we'll track by slug below instead
-  );
-  // Rebuild: slugs posted today from tracker keys
+
+  // Slugs already posted today — Pinterest flags multiple pins to same URL same day
   const slugsPostedToday = new Set(
     Object.keys(tracker)
       .filter((k) => tracker[k].posted_at && tracker[k].posted_at.startsWith(today))
@@ -168,12 +163,18 @@ function buildQueue(tracker) {
   );
 
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
-    const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
+    const filePath = path.join(articlesDir, file);
+    const article = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     const slug = article.topic_slug;
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
 
-    // Skip this article entirely if we already posted from it today
+    // Skip articles generated TODAY — Netlify hasn't deployed them yet.
+    // They'll be live by tomorrow and picked up in the next run.
+    const fileDate = fs.statSync(filePath).mtime.toISOString().slice(0, 10);
+    if (fileDate === today) continue;
+
+    // Skip if we already posted from this article today
     if (slugsPostedToday.has(slug)) continue;
 
     const pinFiles = fs.readdirSync(pinFolder)

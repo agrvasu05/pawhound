@@ -48,6 +48,19 @@ jobs:
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
+      # Deploy new articles FIRST so URLs are live before Pinterest tries to crawl them
+      - name: Commit and push new content
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/ public/
+          git diff --cached --quiet || git commit -m "Daily content [skip ci]"
+          git push
+
+      # Wait 3 minutes for Netlify to finish deploying the new articles
+      - name: Wait for Netlify deploy
+        run: sleep 180
+
       - name: Post pins to Pinterest
         id: pinterest
         run: node scripts/5-post-pins.js
@@ -64,10 +77,9 @@ jobs:
         run: |
           gh secret set PINTEREST_REFRESH_TOKEN --body "${{ steps.pinterest.outputs.new_refresh_token }}" --repo ${{ github.repository }}
 
-      - name: Commit and push new content
+      # Save updated pin tracker (posted-pins.json + pinterest-boards.json)
+      - name: Commit pin tracker
         run: |
-          git config user.name "PawHound Bot"
-          git config user.email "bot@valuefindsdaily.com"
-          git add content/ public/
-          git diff --cached --quiet || git commit -m "Daily content + pins [skip ci]"
+          git add content/posted-pins.json content/pinterest-boards.json
+          git diff --cached --quiet || git commit -m "Update pin tracker [skip ci]"
           git push
