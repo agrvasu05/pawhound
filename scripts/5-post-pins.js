@@ -46,8 +46,10 @@ function api(method, endpoint, body) {
       : body ? JSON.stringify(body) : null;
     const ct = isOAuth ? 'application/x-www-form-urlencoded' : 'application/json';
 
+    // OAuth token refresh always hits production — sandbox has no token store
+    const host = isOAuth ? 'api.pinterest.com' : API_HOST;
     const opts = {
-      hostname: API_HOST,
+      hostname: host,
       path: endpoint,
       method,
       headers: {
