@@ -25,7 +25,7 @@ const API_HOST = process.env.PINTEREST_SANDBOX === 'true'
   : 'api.pinterest.com';
 
 const SITE_URL = 'https://valuefindsdaily.com';
-const PINS_PER_RUN = 20;
+const PINS_PER_RUN = 50;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
 const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 
@@ -264,7 +264,7 @@ async function postPin(pin, boardId) {
       };
       posted++;
       console.log(`  ✓ https://pinterest.com/pin/${result.id}`);
-      await new Promise((r) => setTimeout(r, 2000));
+      await new Promise((r) => setTimeout(r, 5000)); // 5s between pins — avoids spam detection
     } catch (err) {
       console.error(`  ✗ ${pin.key}: ${err.message}`);
     }
