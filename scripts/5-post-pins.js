@@ -1,11 +1,11 @@
 /**
- * 5-post-pins.js — post 3 Pinterest pins per run
+ * 5-post-pins.js — fully automatic Pinterest posting
  *
- * - Reads articles from content/articles/
- * - Picks pins from public/pins/{slug}/pin-N.png  (served at valuefindsdaily.com)
- * - Tracks what has been posted in content/posted-pins.json
- * - Refreshes the access token automatically using the refresh token
- * - In GitHub Actions: outputs the new refresh token so the secret can be updated
+ * Every run:
+ *  1. Refreshes access token
+ *  2. For each article, auto-creates a Pinterest board if one doesn't exist yet
+ *  3. Posts 3 pins (spread across articles) to their matching boards
+ *  4. Tracks everything in content/posted-pins.json & content/pinterest-boards.json
  */
 
 require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env.local') });
@@ -16,47 +16,47 @@ const path = require('path');
 
 const CLIENT_ID = process.env.PINTEREST_CLIENT_ID;
 const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
-const BOARD_ID = process.env.PINTEREST_BOARD_ID;
 let REFRESH_TOKEN = process.env.PINTEREST_REFRESH_TOKEN;
 let ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN;
 
 const SITE_URL = 'https://valuefindsdaily.com';
 const PINS_PER_RUN = 3;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
+const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 
-if (!CLIENT_ID || !CLIENT_SECRET || !BOARD_ID || (!REFRESH_TOKEN && !ACCESS_TOKEN)) {
+if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN) {
   console.error('Missing Pinterest credentials. Run scripts/pinterest-auth.js first.');
   process.exit(1);
 }
 
-// ── API helpers ───────────────────────────────────────────────────────────────
-function apiRequest(method, endpoint, body, token) {
+// ── API ───────────────────────────────────────────────────────────────────────
+function api(method, endpoint, body) {
   return new Promise((resolve, reject) => {
-    const isForm = endpoint === '/v5/oauth/token';
-    const auth = isForm
+    const isOAuth = endpoint === '/v5/oauth/token';
+    const auth = isOAuth
       ? 'Basic ' + Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64')
-      : `Bearer ${token}`;
-    const payload = isForm
+      : `Bearer ${ACCESS_TOKEN}`;
+    const payload = isOAuth
       ? new URLSearchParams(body).toString()
       : body ? JSON.stringify(body) : null;
-    const contentType = isForm ? 'application/x-www-form-urlencoded' : 'application/json';
+    const ct = isOAuth ? 'application/x-www-form-urlencoded' : 'application/json';
 
-    const options = {
+    const opts = {
       hostname: 'api.pinterest.com',
       path: endpoint,
       method,
       headers: {
         Authorization: auth,
-        ...(payload ? { 'Content-Type': contentType, 'Content-Length': Buffer.byteLength(payload) } : {}),
+        ...(payload ? { 'Content-Type': ct, 'Content-Length': Buffer.byteLength(payload) } : {}),
       },
     };
 
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (c) => (data += c));
+    const req = https.request(opts, (res) => {
+      let d = '';
+      res.on('data', (c) => (d += c));
       res.on('end', () => {
-        try { resolve({ status: res.statusCode, body: JSON.parse(data) }); }
-        catch { resolve({ status: res.statusCode, body: data }); }
+        try { resolve({ status: res.statusCode, body: JSON.parse(d) }); }
+        catch { resolve({ status: res.statusCode, body: d }); }
       });
     });
     req.on('error', reject);
@@ -66,28 +66,24 @@ function apiRequest(method, endpoint, body, token) {
 }
 
 // ── Token refresh ─────────────────────────────────────────────────────────────
-async function refreshAccessToken() {
-  console.log('Refreshing Pinterest access token...');
-  const res = await apiRequest('POST', '/v5/oauth/token', {
+async function refreshToken() {
+  console.log('Refreshing access token...');
+  const res = await api('POST', '/v5/oauth/token', {
     grant_type: 'refresh_token',
     refresh_token: REFRESH_TOKEN,
   });
-
   if (!res.body.access_token) {
-    console.error('Token refresh failed:', JSON.stringify(res.body));
+    console.error('Refresh failed:', JSON.stringify(res.body));
     process.exit(1);
   }
-
   ACCESS_TOKEN = res.body.access_token;
   if (res.body.refresh_token) {
     REFRESH_TOKEN = res.body.refresh_token;
-
-    // In GitHub Actions: output new refresh token for secret rotation
+    // Output for GitHub Actions secret rotation
     if (process.env.GITHUB_OUTPUT) {
       fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_refresh_token=${REFRESH_TOKEN}\n`);
     }
-
-    // Locally: update .env.local
+    // Update .env.local locally
     const envPath = path.resolve(process.cwd(), '.env.local');
     if (fs.existsSync(envPath)) {
       let env = fs.readFileSync(envPath, 'utf-8');
@@ -96,100 +92,123 @@ async function refreshAccessToken() {
       fs.writeFileSync(envPath, env);
     }
   }
-
   console.log('✓ Token refreshed.');
 }
 
-// ── Build posting queue ───────────────────────────────────────────────────────
-function buildQueue() {
+// ── Auto-create board for an article ─────────────────────────────────────────
+async function getOrCreateBoard(article, boardsTracker) {
+  const slug = article.topic_slug;
+  if (boardsTracker[slug]) return boardsTracker[slug];
+
+  console.log(`  Creating board: "${article.topic_title}"...`);
+  const res = await api('POST', '/v5/boards', {
+    name: article.topic_title,
+    description: article.intro.slice(0, 500),
+    privacy: 'PUBLIC',
+  });
+
+  if (res.status === 401) {
+    await refreshToken();
+    return getOrCreateBoard(article, boardsTracker);
+  }
+
+  if (res.status !== 201 && res.status !== 200) {
+    // Board might already exist with same name — try to find it
+    console.log(`  Board creation returned ${res.status}, checking existing boards...`);
+    const existing = await api('GET', '/v5/boards?page_size=50');
+    const match = (existing.body.items || []).find(
+      (b) => b.name.toLowerCase() === article.topic_title.toLowerCase()
+    );
+    if (match) {
+      boardsTracker[slug] = match.id;
+      return match.id;
+    }
+    console.error(`  ✗ Could not create or find board for "${article.topic_title}"`);
+    return null;
+  }
+
+  const boardId = res.body.id;
+  boardsTracker[slug] = boardId;
+  console.log(`  ✓ Board created (${boardId})`);
+  await new Promise((r) => setTimeout(r, 1000)); // avoid rate limit
+  return boardId;
+}
+
+// ── Build pin queue ───────────────────────────────────────────────────────────
+function buildQueue(tracker) {
   const articlesDir = path.join(process.cwd(), 'content', 'articles');
   const pinsDir = path.join(process.cwd(), 'public', 'pins');
-
-  const tracker = fs.existsSync(TRACKER_PATH)
-    ? JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))
-    : {};
-
   const queue = [];
 
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
     const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
     const slug = article.topic_slug;
     const pinFolder = path.join(pinsDir, slug);
-
     if (!fs.existsSync(pinFolder)) continue;
 
     const pinFiles = fs.readdirSync(pinFolder)
       .filter((f) => f.endsWith('.png'))
       .sort((a, b) => {
-        const na = parseInt(a.replace('pin-', '').replace('.png', ''));
-        const nb = parseInt(b.replace('pin-', '').replace('.png', ''));
-        return na - nb;
+        const n = (s) => parseInt(s.replace('pin-', '').replace('.png', ''));
+        return n(a) - n(b);
       });
 
     for (const pinFile of pinFiles) {
       const key = `${slug}/${pinFile}`;
-      if (tracker[key]) continue; // already posted
-
-      queue.push({
-        key,
-        slug,
-        title: article.topic_title,
-        description: buildDescription(article),
-        link: `${SITE_URL}/${slug}`,
-        imageUrl: `${SITE_URL}/pins/${slug}/${pinFile}`,
-      });
+      if (tracker[key]) continue;
+      queue.push({ key, slug, article, pinFile });
     }
   }
 
-  // Shuffle slightly so we don't always post from the same article
+  // Spread across articles — don't post 3 pins from the same article
   return queue.sort(() => Math.random() - 0.5);
 }
 
 function buildDescription(article) {
-  const base = article.intro.slice(0, 400);
-  const hashtags = generateHashtags(article.topic_slug, article.topic_title);
-  return `${base}\n\n${hashtags}`;
+  const desc = article.intro.slice(0, 400);
+  const tags = getHashtags(article.topic_slug, article.topic_title);
+  return `${desc}\n\n${tags}`;
 }
 
-function generateHashtags(slug, title) {
+function getHashtags(slug, title) {
   const base = ['#dogs', '#dogbreeds', '#doglovers', '#puppylove', '#dogsofpinterest'];
-  const titleWords = title.toLowerCase().split(/\s+/);
-  const extras = [];
-
-  if (titleWords.some((w) => ['apartment', 'small', 'tiny'].includes(w))) extras.push('#apartmentdogs', '#smalldogs');
-  if (titleWords.some((w) => ['active', 'running', 'energetic'].includes(w))) extras.push('#activedogs', '#runningwithdogs');
-  if (titleWords.some((w) => ['fluffy', 'fluffiest', 'fluffy'].includes(w))) extras.push('#fluffydogs', '#fluffypuppy');
-  if (titleWords.some((w) => ['family', 'kids', 'children'].includes(w))) extras.push('#familydogs', '#dogsandkids');
-  if (titleWords.some((w) => ['smart', 'intelligent', 'smartest'].includes(w))) extras.push('#smartdogs', '#trainabledogs');
-  if (titleWords.some((w) => ['loyal', 'loyal'].includes(w))) extras.push('#loyaldogs');
-  if (titleWords.some((w) => ['emotional', 'support', 'therapy'].includes(w))) extras.push('#emotionalsupportdog', '#therapydog');
-  if (titleWords.some((w) => ['senior', 'seniors', 'elderly'].includes(w))) extras.push('#dogsforseniors');
-  if (titleWords.some((w) => ['guard', 'protection', 'watchdog'].includes(w))) extras.push('#guarddogs');
-  if (titleWords.some((w) => ['rare', 'rarest', 'unusual'].includes(w))) extras.push('#raredogs', '#uniquedogbreeds');
-  if (titleWords.some((w) => ['shed', 'shedding', 'hypoallergenic'].includes(w))) extras.push('#hypoallergenicdogs', '#noshedding');
-
-  return [...base, ...extras].slice(0, 8).join(' ');
+  const t = title.toLowerCase();
+  if (t.includes('apartment') || t.includes('small')) base.push('#apartmentdogs', '#smalldogs');
+  if (t.includes('active') || t.includes('running')) base.push('#activedogs', '#runningwithdogs');
+  if (t.includes('fluffy')) base.push('#fluffydogs', '#fluffypuppy');
+  if (t.includes('family')) base.push('#familydogs', '#dogsandkids');
+  if (t.includes('smart') || t.includes('intellig')) base.push('#smartdogs');
+  if (t.includes('loyal')) base.push('#loyaldogs');
+  if (t.includes('support') || t.includes('therapy')) base.push('#emotionalsupportdog');
+  if (t.includes('senior')) base.push('#dogsforseniors');
+  if (t.includes('guard') || t.includes('watch')) base.push('#guarddogs');
+  if (t.includes('rare')) base.push('#raredogs', '#uniquebreeds');
+  if (t.includes('shed') || t.includes('hypo')) base.push('#hypoallergenicdogs');
+  if (t.includes('cold') || t.includes('weather')) base.push('#coldweatherdogs');
+  if (t.includes('calm') || t.includes('quiet')) base.push('#calmdog', '#quietdogs');
+  return base.slice(0, 8).join(' ');
 }
 
-// ── Post a single pin ─────────────────────────────────────────────────────────
-async function postPin(pin) {
-  const res = await apiRequest('POST', '/v5/pins', {
-    board_id: BOARD_ID,
-    title: pin.title,
-    description: pin.description,
-    link: pin.link,
+// ── Post one pin ──────────────────────────────────────────────────────────────
+async function postPin(pin, boardId) {
+  const { article, pinFile, slug } = pin;
+  const res = await api('POST', '/v5/pins', {
+    board_id: boardId,
+    title: article.topic_title,
+    description: buildDescription(article),
+    link: `${SITE_URL}/${slug}`,
     media_source: {
       source_type: 'image_url',
-      url: pin.imageUrl,
+      url: `${SITE_URL}/pins/${slug}/${pinFile}`,
     },
-  }, ACCESS_TOKEN);
+  });
+
+  if (res.status === 401) {
+    await refreshToken();
+    return postPin(pin, boardId);
+  }
 
   if (res.status !== 201) {
-    // Access token might be expired — refresh and retry once
-    if (res.status === 401) {
-      await refreshAccessToken();
-      return postPin(pin);
-    }
     throw new Error(`Pinterest API ${res.status}: ${JSON.stringify(res.body)}`);
   }
 
@@ -198,43 +217,53 @@ async function postPin(pin) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 (async () => {
-  // Always refresh token at the start of a GitHub Actions run
-  if (process.env.CI && REFRESH_TOKEN) {
-    await refreshAccessToken();
-  }
+  // Always refresh at start of CI run
+  if (process.env.CI || !ACCESS_TOKEN) await refreshToken();
 
-  const queue = buildQueue();
+  const tracker = fs.existsSync(TRACKER_PATH)
+    ? JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))
+    : {};
+  const boardsTracker = fs.existsSync(BOARDS_PATH)
+    ? JSON.parse(fs.readFileSync(BOARDS_PATH, 'utf-8'))
+    : {};
+
+  const queue = buildQueue(tracker);
 
   if (queue.length === 0) {
-    console.log('No new pins to post — all pins have been posted already!');
+    console.log('All pins have been posted!');
     process.exit(0);
   }
 
   const toPost = queue.slice(0, PINS_PER_RUN);
-  const tracker = fs.existsSync(TRACKER_PATH)
-    ? JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))
-    : {};
-
   let posted = 0;
+
   for (const pin of toPost) {
     try {
-      console.log(`Posting: ${pin.title} — ${pin.imageUrl}`);
-      const result = await postPin(pin);
+      // Auto-create board for this article if needed
+      const boardId = await getOrCreateBoard(pin.article, boardsTracker);
+      if (!boardId) continue;
+
+      console.log(`Posting: ${pin.article.topic_title} — ${pin.pinFile}`);
+      const result = await postPin(pin, boardId);
+
       tracker[pin.key] = {
         pin_id: result.id,
+        board_id: boardId,
         posted_at: new Date().toISOString(),
         url: `https://pinterest.com/pin/${result.id}`,
       };
       posted++;
-      console.log(`  ✓ Posted → https://pinterest.com/pin/${result.id}`);
-      // Small delay between posts to avoid rate limiting
+      console.log(`  ✓ https://pinterest.com/pin/${result.id}`);
       await new Promise((r) => setTimeout(r, 2000));
     } catch (err) {
-      console.error(`  ✗ Failed: ${err.message}`);
+      console.error(`  ✗ ${pin.key}: ${err.message}`);
     }
   }
 
+  // Save trackers
   fs.writeFileSync(TRACKER_PATH, JSON.stringify(tracker, null, 2));
-  console.log(`\n✅ Done — ${posted}/${toPost.length} pins posted.`);
-  console.log(`   ${queue.length - posted} pins remaining in queue.`);
+  fs.writeFileSync(BOARDS_PATH, JSON.stringify(boardsTracker, null, 2));
+
+  console.log(`\n✅ ${posted}/${toPost.length} pins posted.`);
+  console.log(`   ${queue.length - PINS_PER_RUN} pins remaining in queue.`);
 })();
