@@ -25,7 +25,8 @@ const API_HOST = process.env.PINTEREST_SANDBOX === 'true'
   : 'api.pinterest.com';
 
 const SITE_URL = 'https://valuefindsdaily.com';
-const PINS_PER_RUN = 50;
+// Safe limits: 5-10/day for new accounts, ramp up after 3 months of good standing
+const PINS_PER_RUN = 10;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
 const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 
@@ -152,11 +153,28 @@ function buildQueue(tracker) {
   const pinsDir = path.join(process.cwd(), 'public', 'pins');
   const queue = [];
 
+  // Find slugs already posted TODAY — Pinterest flags multiple pins to same URL same day
+  const today = new Date().toISOString().slice(0, 10); // "2026-05-27"
+  const postedTodaySlugs = new Set(
+    Object.values(tracker)
+      .filter((v) => v.posted_at && v.posted_at.startsWith(today))
+      .map((v) => v.board_id) // we'll track by slug below instead
+  );
+  // Rebuild: slugs posted today from tracker keys
+  const slugsPostedToday = new Set(
+    Object.keys(tracker)
+      .filter((k) => tracker[k].posted_at && tracker[k].posted_at.startsWith(today))
+      .map((k) => k.split('/')[0])
+  );
+
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
     const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
     const slug = article.topic_slug;
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
+
+    // Skip this article entirely if we already posted from it today
+    if (slugsPostedToday.has(slug)) continue;
 
     const pinFiles = fs.readdirSync(pinFolder)
       .filter((f) => f.endsWith('.png'))
@@ -169,10 +187,11 @@ function buildQueue(tracker) {
       const key = `${slug}/${pinFile}`;
       if (tracker[key]) continue;
       queue.push({ key, slug, article, pinFile });
+      break; // max 1 pin per article per day — prevents same-URL spam flag
     }
   }
 
-  // Spread across articles — don't post 3 pins from the same article
+  // Shuffle so we rotate across different articles each day
   return queue.sort(() => Math.random() - 0.5);
 }
 
