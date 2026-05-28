@@ -324,5 +324,282 @@
       "rare": null,
       "lifespan_min_gte": 8
     }
+  },
+  {
+    "slug": "gentle-giants-dog-breeds-that-look-intimidating-but-are-lovable",
+    "title": "Gentle Giants: Dog Breeds That Look Fierce but Are Lovable",
+    "desc": "Meet the large and giant dog breeds with a tough exterior that are surprisingly gentle and affectionate at heart. Perfect for families who want a protective yet sweet canine companion.",
+    "filter": {
+      "size": [
+        "large",
+        "giant"
+      ],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "gentle",
+        "affectionate",
+        "loyal",
+        "protective"
+      ],
+      "coat_includes": [],
+      "good_with_kids": true,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 6
+    }
+  },
+  {
+    "slug": "best-dogs-for-people-with-anxiety-calming-and-affectionate",
+    "title": "Best Dogs for People With Anxiety: Calming & Affectionate Breeds",
+    "desc": "These dog breeds have calming temperaments and affectionate natures, ideal for helping reduce anxiety and provide emotional support. They tend to be gentle, loyal, and intuitive companions.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "affectionate",
+        "loyal",
+        "gentle",
+        "quiet"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-stay-small-forever-toy-and-small-pups",
+    "title": "Dog Breeds That Stay Small Forever: Tiny Pups for Compact Living",
+    "desc": "Explore the most adorable toy and small dog breeds that remain petite their entire lives. Perfect for those wanting a lifelong tiny companion that's easy to manage and loves to cuddle.",
+    "filter": {
+      "size": [
+        "toy",
+        "small"
+      ],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 10
+    }
+  },
+  {
+    "slug": "most-photogenic-dog-breeds-for-stunning-photos",
+    "title": "Most Photogenic Dog Breeds: Stunning Looks for Perfect Pics",
+    "desc": "These dog breeds have eye-catching coats, charming expressions, and photogenic poses that make Instagram-worthy photos easy to capture. Ideal for dog lovers who want a natural model.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "friendly",
+        "curious",
+        "alert",
+        "confident"
+      ],
+      "coat_includes": [
+        "curly",
+        "silky",
+        "wavy",
+        "feathered",
+        "dense",
+        "long",
+        "powderpuff"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-love-swimming-water-loving-canines",
+    "title": "Dog Breeds That Love Swimming: Water-Loving Canines You’ll Adore",
+    "desc": "Perfect for active water enthusiasts, these breeds naturally love swimming and playing in water. They often have water-resistant coats and energetic temperaments to match.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [
+        "low"
+      ],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "active",
+        "friendly",
+        "intelligent"
+      ],
+      "coat_includes": [
+        "water-resistant",
+        "curly",
+        "dense",
+        "double"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "best-dogs-for-night-shift-workers-low-energy-friendly-breeds",
+    "title": "Best Dogs for Night-Shift Workers: Low-Energy Friendly Breeds",
+    "desc": "Designed for people with unconventional schedules, these breeds require less daytime exercise and are friendly companions during odd hours. They handle irregular routines well and enjoy calm environments.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "quiet",
+        "affectionate",
+        "gentle"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-love-nighttime-walks-and-exploring",
+    "title": "Dog Breeds That Love Nighttime Walks and Exploring",
+    "desc": "Perfect companions for evening strolls, these breeds enjoy nighttime adventures and have calmer energy when the sun goes down. They’re alert, loyal, and love their human’s company after dark.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [
+        "low"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "alert",
+        "loyal",
+        "playful",
+        "curious",
+        "friendly"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
   }
 ]
