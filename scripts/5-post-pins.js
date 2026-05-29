@@ -169,11 +169,6 @@ function buildQueue(tracker) {
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
 
-    // Skip articles generated TODAY — Netlify hasn't deployed them yet.
-    // They'll be live by tomorrow and picked up in the next run.
-    const fileDate = fs.statSync(filePath).mtime.toISOString().slice(0, 10);
-    if (fileDate === today) continue;
-
     // Skip if we already posted from this article today
     if (slugsPostedToday.has(slug)) continue;
 
