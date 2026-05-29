@@ -29,14 +29,31 @@ const existingGenerated = fs.existsSync(GENERATED_TOPICS_PATH)
   ? JSON.parse(fs.readFileSync(GENERATED_TOPICS_PATH, 'utf-8'))
   : [];
 
+// Also read titles from already-generated article files so we never repeat topics
+// even if the slug drifted from the original topic slug
+const articlesDir = path.join(process.cwd(), 'content', 'articles');
+const articleTitles = fs.existsSync(articlesDir)
+  ? fs.readdirSync(articlesDir)
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => {
+        try { return JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8')).topic_title; }
+        catch { return null; }
+      })
+      .filter(Boolean)
+  : [];
+
 const existingSlugs = new Set([
   ...TOPICS.map((t) => t.slug),
   ...existingGenerated.map((t) => t.slug),
 ]);
 
+// Combine all known titles (topics + generated + actual articles) for dedup prompt
 const existingTitles = [
-  ...TOPICS.map((t) => t.title),
-  ...existingGenerated.map((t) => t.title),
+  ...new Set([
+    ...TOPICS.map((t) => t.title),
+    ...existingGenerated.map((t) => t.title),
+    ...articleTitles,
+  ]),
 ];
 
 // ── Filter spec → function ────────────────────────────────────────────────────
