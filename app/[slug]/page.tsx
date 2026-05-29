@@ -56,7 +56,7 @@ export default async function ArticleHub({
 
       <h1
         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-        style={{ fontFamily: "Georgia, serif" }}
+        style={{ fontFamily: "var(--font-display), Georgia, serif" }}
       >
         {article.topic_title}
       </h1>

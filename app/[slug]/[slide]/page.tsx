@@ -83,7 +83,7 @@ export default async function Slide({
       {/* Title */}
       <h1
         className="text-3xl md:text-4xl font-bold mb-2"
-        style={{ fontFamily: "Georgia, serif" }}
+        style={{ fontFamily: "var(--font-display), Georgia, serif" }}
       >
         {pick.breed}
       </h1>

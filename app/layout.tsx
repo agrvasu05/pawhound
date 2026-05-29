@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+
+const display = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "900"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -23,7 +39,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <head>
         {process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_ID && (
           <Script
@@ -42,7 +58,11 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className="bg-stone-50 text-stone-900 antialiased">{children}</body>
+      <body className="flex min-h-screen flex-col bg-white text-stone-900 antialiased">
+        <SiteHeader />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

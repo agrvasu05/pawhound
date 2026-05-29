@@ -162,18 +162,22 @@ function buildQueue(tracker) {
       .map((k) => k.split('/')[0])
   );
 
+  // Optional --only=<substr> filter to post just matching article(s) (manual seeding)
+  const onlyArg = process.argv.find((a) => a.startsWith('--only='))?.split('=')[1];
+
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
     const filePath = path.join(articlesDir, file);
     const article = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     const slug = article.topic_slug;
+    if (onlyArg && !slug.includes(onlyArg)) continue;
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
 
     // Skip if we already posted from this article today
     if (slugsPostedToday.has(slug)) continue;
 
-    const pinFiles = fs.readdirSync(pinFolder)
-      .filter((f) => f.endsWith('.png'))
+    const allPins = fs.readdirSync(pinFolder).filter((f) => f.endsWith('.png'));
+    const pinFiles = allPins
       .sort((a, b) => {
         const n = (s) => parseInt(s.replace('pin-', '').replace('.png', ''));
         return n(a) - n(b);
@@ -182,13 +186,20 @@ function buildQueue(tracker) {
     for (const pinFile of pinFiles) {
       const key = `${slug}/${pinFile}`;
       if (tracker[key]) continue;
-      queue.push({ key, slug, article, pinFile });
+      // brand-new article = none of its pins posted yet → seed these first
+      const isNew = !allPins.some((f) => tracker[`${slug}/${f}`]);
+      queue.push({ key, slug, article, pinFile, isNew });
       break; // max 1 pin per article per day — prevents same-URL spam flag
     }
   }
 
-  // Shuffle so we rotate across different articles each day
-  return queue.sort(() => Math.random() - 0.5);
+  // Prioritize brand-new articles (so fresh topics/niches get seeded fast),
+  // then shuffle within each group to rotate across articles each day.
+  const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+  return [
+    ...shuffle(queue.filter((q) => q.isNew)),
+    ...shuffle(queue.filter((q) => !q.isNew)),
+  ];
 }
 
 function buildDescription(article) {

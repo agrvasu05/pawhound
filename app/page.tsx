@@ -1,75 +1,166 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getAllArticles, getBreedImage } from "@/lib/articles";
+import { getAllArticles, getBreedImage, type Article } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
+import { LogoMark } from "@/components/Logo";
+
+// Display labels + ordering for each niche section.
+const NICHE_META: Record<string, { label: string; blurb: string; order: number }> = {
+  dogs: {
+    label: "Dog Breed Guides",
+    blurb: "Find the breed that actually fits your life.",
+    order: 0,
+  },
+  home: {
+    label: "Home & Cozy Living",
+    blurb: "Small-space wins, cozy corners, and budget makeovers.",
+    order: 1,
+  },
+};
+
+function nicheOf(a: Article) {
+  return a.niche || "dogs";
+}
+
+function ArticleCard({ article }: { article: Article }) {
+  const topBreed = article.picks.find((p) => p.rank === 1);
+  const imgSrc = topBreed ? getBreedImage(topBreed.breed) : null;
+  const itemNoun = article.item_noun ?? "breeds";
+  const meta = NICHE_META[nicheOf(article)];
+
+  return (
+    <Link
+      href={`/${article.topic_slug}`}
+      className="group flex flex-col overflow-hidden rounded-2xl border border-stone-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+    >
+      <div
+        className="relative aspect-[4/3] overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%)" }}
+      >
+        {imgSrc && (
+          <Image
+            src={imgSrc}
+            alt={article.topic_title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        )}
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/45 to-transparent" />
+        {meta && (
+          <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-wide text-emerald-800 shadow-sm backdrop-blur">
+            {meta.label}
+          </span>
+        )}
+        <span className="absolute bottom-3 left-3 rounded-full bg-black/55 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur">
+          {article.picks.length} {itemNoun}
+        </span>
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="mb-2 text-lg font-bold leading-snug text-stone-900">
+          {article.topic_title}
+        </h3>
+        <p className="line-clamp-2 text-sm text-stone-500">{article.intro}</p>
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 transition group-hover:gap-2">
+          See the ranking
+          <span aria-hidden>→</span>
+        </span>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home() {
   const articles = getAllArticles().filter((a) => a.picks.length >= 3);
 
+  // Group by niche, ordered by NICHE_META.
+  const groups = new Map<string, Article[]>();
+  for (const a of articles) {
+    const n = nicheOf(a);
+    if (!groups.has(n)) groups.set(n, []);
+    groups.get(n)!.push(a);
+  }
+  const sections = [...groups.entries()].sort(
+    ([a], [b]) => (NICHE_META[a]?.order ?? 99) - (NICHE_META[b]?.order ?? 99)
+  );
+
   return (
-    <main className="max-w-5xl mx-auto px-4 py-10" style={{ background: "#fff", minHeight: "100vh" }}>
-      <header className="mb-12 text-center">
-        <h1
-          className="text-5xl md:text-6xl font-bold mb-3 text-stone-900"
-          style={{ fontFamily: "Georgia, serif" }}
-        >
-          Value Finds Daily
-        </h1>
-        <p className="text-xl text-stone-500 max-w-2xl mx-auto">
-          Real, honest guides — dog breeds, cozy home ideas, and more. Find what
-          actually fits your life.
-        </p>
-      </header>
-
-      <AdSlot type="native" className="my-8" />
-
-      {articles.length === 0 ? (
-        <div className="text-center py-20 text-stone-400">
-          <p className="text-lg">Content generating — check back in a few minutes.</p>
-        </div>
-      ) : (
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article) => {
-            const topBreed = article.picks.find((p) => p.rank === 1);
-            const imgSrc = topBreed ? getBreedImage(topBreed.breed) : null;
-
-            return (
-              <Link
-                key={article.topic_slug}
-                href={`/${article.topic_slug}`}
-                className="group rounded-2xl overflow-hidden bg-white border border-stone-100 shadow-sm hover:shadow-lg transition-shadow"
+    <main>
+      {/* Hero */}
+      <section className="relative overflow-hidden border-b border-emerald-900/10">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(1200px 400px at 50% -10%, #d7f0e1 0%, #f3faf5 45%, #ffffff 80%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-3xl px-4 py-16 text-center sm:py-20">
+          <div className="mb-6 flex justify-center">
+            <LogoMark className="h-16 w-16" />
+          </div>
+          <h1
+            className="text-4xl font-black leading-tight tracking-tight text-stone-900 sm:text-5xl"
+            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+          >
+            Hand-picked finds,
+            <span className="text-emerald-700"> ranked daily.</span>
+          </h1>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-stone-600">
+            Honest, beautifully simple guides — dog breeds, cozy home ideas, and
+            more. We rank the best so you can skip the guesswork.
+          </p>
+          <div className="mt-7 flex flex-wrap justify-center gap-2">
+            {sections.map(([niche]) => (
+              <a
+                key={niche}
+                href={`#${niche}`}
+                className="rounded-full border border-emerald-200 bg-white/70 px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm transition hover:bg-emerald-700 hover:text-white"
               >
-                <div className="aspect-[4/3] relative overflow-hidden"
-                  style={{ background: "linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%)" }}
-                >
-                  {imgSrc && (
-                    <Image
-                      src={imgSrc}
-                      alt={article.topic_title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  )}
-                </div>
-                <div className="p-5">
-                  <h2 className="text-base font-semibold leading-snug mb-2 text-stone-900">
-                    {article.topic_title}
-                  </h2>
-                  <p className="text-sm text-stone-400">{article.picks.length} {article.item_noun ?? "breeds"} ranked</p>
-                </div>
-              </Link>
-            );
-          })}
-        </section>
-      )}
+                {NICHE_META[niche]?.label ?? niche}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <footer className="mt-20 pt-8 border-t border-stone-200 text-sm text-stone-400 text-center space-x-4">
-        <Link href="/about" className="hover:text-stone-700">About</Link>
-        <Link href="/privacy" className="hover:text-stone-700">Privacy</Link>
-        <Link href="/terms" className="hover:text-stone-700">Terms</Link>
-        <Link href="/contact" className="hover:text-stone-700">Contact</Link>
-        <Link href="/attribution" className="hover:text-stone-700">Image Credits</Link>
-      </footer>
+      <div className="mx-auto max-w-5xl px-4">
+        <AdSlot type="native" className="my-8" />
+
+        {articles.length === 0 ? (
+          <div className="py-20 text-center text-stone-400">
+            <p className="text-lg">Content generating — check back in a few minutes.</p>
+          </div>
+        ) : (
+          sections.map(([niche, items]) => {
+            const meta = NICHE_META[niche];
+            return (
+              <section key={niche} id={niche} className="scroll-mt-20 py-10">
+                <div className="mb-6 flex items-end justify-between border-b border-stone-100 pb-3">
+                  <div>
+                    <h2
+                      className="text-2xl font-bold text-stone-900"
+                      style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+                    >
+                      {meta?.label ?? niche}
+                    </h2>
+                    {meta?.blurb && (
+                      <p className="mt-1 text-sm text-stone-500">{meta.blurb}</p>
+                    )}
+                  </div>
+                  <span className="whitespace-nowrap text-sm font-medium text-stone-400">
+                    {items.length} guide{items.length === 1 ? "" : "s"}
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {items.map((article) => (
+                    <ArticleCard key={article.topic_slug} article={article} />
+                  ))}
+                </div>
+              </section>
+            );
+          })
+        )}
+      </div>
     </main>
   );
 }
