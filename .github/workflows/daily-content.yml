@@ -38,6 +38,16 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
+      - name: Generate new trending topics (home niche)
+        run: node scripts/1c-generate-trending-topics.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Generate 5 new trending articles
+        run: node scripts/2b-generate-trending-articles.js --count=5
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
       - name: Fetch images for new breeds
         run: node scripts/3-fetch-images.js
         env:

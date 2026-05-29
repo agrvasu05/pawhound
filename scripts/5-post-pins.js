@@ -193,13 +193,32 @@ function buildQueue(tracker) {
 
 function buildDescription(article) {
   const desc = article.intro.slice(0, 400);
-  const tags = getHashtags(article.topic_slug, article.topic_title);
+  const tags = getHashtags(article.topic_slug, article.topic_title, article.niche);
   return `${desc}\n\n${tags}`;
 }
 
-function getHashtags(slug, title) {
-  const base = ['#dogs', '#dogbreeds', '#doglovers', '#puppylove', '#dogsofpinterest'];
+function getHashtags(slug, title, niche) {
   const t = title.toLowerCase();
+
+  // Non-dog niches: use niche-appropriate base tags + a few title-derived ones.
+  if (niche && niche !== 'dogs') {
+    if (niche === 'home') {
+      const base = ['#homedecor', '#homeideas', '#interiordesign', '#cozyhome', '#homeinspo'];
+      if (t.includes('small') || t.includes('apartment')) base.push('#smallspaces', '#apartmenttherapy');
+      if (t.includes('organi')) base.push('#homeorganization', '#organizationideas');
+      if (t.includes('budget') || t.includes('cheap') || t.includes('diy')) base.push('#budgetdecor', '#diyhome');
+      if (t.includes('bedroom')) base.push('#bedroomdecor', '#bedroomideas');
+      if (t.includes('kitchen')) base.push('#kitchendecor', '#kitchenideas');
+      if (t.includes('living')) base.push('#livingroomdecor');
+      if (t.includes('cozy') || t.includes('cosy')) base.push('#cozyvibes');
+      if (t.includes('rental') || t.includes('renter')) base.push('#rentaldecor');
+      return base.slice(0, 8).join(' ');
+    }
+    // Generic fallback for any future niche
+    return ['#pinterestideas', '#inspiration', '#trending'].join(' ');
+  }
+
+  const base = ['#dogs', '#dogbreeds', '#doglovers', '#puppylove', '#dogsofpinterest'];
   if (t.includes('apartment') || t.includes('small')) base.push('#apartmentdogs', '#smalldogs');
   if (t.includes('active') || t.includes('running')) base.push('#activedogs', '#runningwithdogs');
   if (t.includes('fluffy')) base.push('#fluffydogs', '#fluffypuppy');

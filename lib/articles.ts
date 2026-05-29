@@ -7,6 +7,7 @@ export type Pick = {
   description: string;
   best_for: string;
   quirky_fact: string;
+  image_query?: string;
 };
 
 export type Article = {
@@ -15,6 +16,9 @@ export type Article = {
   intro: string;
   picks: Pick[];
   pin_headlines: string[];
+  niche?: string;
+  /** Plural noun for the list items, e.g. "breeds" (dogs) or "ideas" (home). */
+  item_noun?: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");

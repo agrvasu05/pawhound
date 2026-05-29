@@ -43,6 +43,7 @@ export default async function ArticleHub({
   const startRank = totalBreeds;
   const lastBreed = article.picks.find((p) => p.rank === totalBreeds);
   const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
+  const itemNoun = article.item_noun ?? "breeds";
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
@@ -88,7 +89,7 @@ export default async function ArticleHub({
               directLink={directLink}
               className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-full font-semibold text-base transition"
             >
-              See all {totalBreeds} breeds ranked →
+              See all {totalBreeds} {itemNoun} ranked →
             </HubCTAButton>
           </div>
         </div>

@@ -14,6 +14,7 @@ const OpenAI = require('openai');
 const fs = require('fs');
 const path = require('path');
 const { TOPICS } = require('./topics');
+const { keywordSet, buildKeywordSets, isSemanticDuplicate } = require('./dedup');
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -57,47 +58,8 @@ const existingTitles = [
 ];
 
 // ── Semantic dedup — reject topics too similar to existing ones ───────────────
-const STOPWORDS = new Set([
-  'dog', 'dogs', 'breed', 'breeds', 'best', 'that', 'with', 'your', 'this',
-  'they', 'who', 'for', 'the', 'and', 'are', 'top', 'most', 'you', 'will',
-  'love', 'loves', 'have', 'from', 'into', 'their', 'what', 'every',
-  // generic Pinterest filler — ignore so only meaningful themes count
-  'living', 'lovers', 'lover', 'owners', 'owner', 'people', 'home', 'homes',
-  'life', 'perfect', 'great', 'good', 'companions', 'companion', 'guide',
-]);
-
-// Light stemming: collapse morphological variants to a 4-char prefix so
-// "anxiety"/"anxious" and "photogenic"/"photogenically" count as the same theme.
-function stem(w) {
-  return w.length > 4 ? w.slice(0, 4) : w;
-}
-
-function keywordSet(title) {
-  return new Set(
-    title
-      .toLowerCase()
-      .replace(/[^a-z ]/g, ' ')
-      .split(/\s+/)
-      .filter((w) => w.length > 3 && !STOPWORDS.has(w))
-      .map(stem)
-  );
-}
-
-// Precompute keyword sets for everything already published
-const existingKeywordSets = existingTitles.map(keywordSet);
-
-// Returns true if `title` shares >= 50% of its keywords with any existing topic
-function isSemanticDuplicate(title) {
-  const kw = keywordSet(title);
-  if (kw.size === 0) return false;
-  for (const ex of existingKeywordSets) {
-    if (ex.size === 0) continue;
-    const overlap = [...kw].filter((w) => ex.has(w)).length;
-    const ratio = overlap / Math.min(kw.size, ex.size);
-    if (ratio >= 0.5) return true;
-  }
-  return false;
-}
+// (logic lives in scripts/dedup.js so the dog + trending pipelines stay in sync)
+const existingKeywordSets = buildKeywordSets(existingTitles);
 
 // ── Filter spec → function ────────────────────────────────────────────────────
 function filterFromSpec(spec) {
@@ -231,7 +193,7 @@ Return a JSON object with this exact structure:
     }
 
     // Skip semantic near-duplicates (e.g. "anxiety" vs "anxious owners")
-    if (isSemanticDuplicate(topic.title)) {
+    if (isSemanticDuplicate(topic.title, existingKeywordSets)) {
       console.log(`  ⏭  Skipping similar topic: "${topic.title}"`);
       continue;
     }

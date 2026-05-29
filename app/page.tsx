@@ -16,7 +16,8 @@ export default function Home() {
           Value Finds Daily
         </h1>
         <p className="text-xl text-stone-500 max-w-2xl mx-auto">
-          Real, honest dog breed guides. Find the breed that actually fits your life.
+          Real, honest guides — dog breeds, cozy home ideas, and more. Find what
+          actually fits your life.
         </p>
       </header>
 
@@ -54,7 +55,7 @@ export default function Home() {
                   <h2 className="text-base font-semibold leading-snug mb-2 text-stone-900">
                     {article.topic_title}
                   </h2>
-                  <p className="text-sm text-stone-400">{article.picks.length} breeds ranked</p>
+                  <p className="text-sm text-stone-400">{article.picks.length} {article.item_noun ?? "breeds"} ranked</p>
                 </div>
               </Link>
             );

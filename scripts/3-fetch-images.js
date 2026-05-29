@@ -13,19 +13,23 @@ function breedToSlug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-// Collect all unique breeds from generated articles
+// Collect all unique list items from generated articles. Each entry carries the
+// niche + an image search query so non-dog niches get relevant photos.
 function getBreedsFromArticles() {
   const articlesDir = path.join(process.cwd(), 'content', 'articles');
   if (!fs.existsSync(articlesDir)) return [];
-  const breeds = new Map();
+  const items = new Map();
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
     const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
+    const niche = article.niche || 'dogs';
     for (const pick of article.picks) {
       const slug = breedToSlug(pick.breed);
-      if (!breeds.has(slug)) breeds.set(slug, pick.breed);
+      if (!items.has(slug)) {
+        items.set(slug, { slug, name: pick.breed, niche, query: pick.image_query || pick.breed });
+      }
     }
   }
-  return [...breeds.entries()].map(([slug, name]) => ({ slug, name }));
+  return [...items.values()];
 }
 
 const DOG_KEYWORDS = ['dog', 'puppy', 'pup', 'canine', 'hound', 'breed', 'pet', 'pooch'];
@@ -49,32 +53,38 @@ async function fetchImagesForBreed(breed) {
   const dir = path.join(process.cwd(), 'public', 'images', 'breeds', breed.slug);
   if (fs.existsSync(path.join(dir, '1.jpg'))) return 'skip';
 
-  // Try progressively broader queries until we get photos whose alt text
-  // contains a dog-related keyword — prevents wrong images for rare breeds
-  const queries = [
-    `${breed.name} dog`,
-    `${breed.name} dog breed`,
-    `${breed.name}`,
-    `${breed.name} puppy`,
-  ];
-
   let photos = [];
-  for (const q of queries) {
-    const results = await searchPexels(q, 6);
-    // Prefer results that mention dogs in their alt text
-    const dogPhotos = results.filter(isDogPhoto);
-    if (dogPhotos.length >= 3) { photos = dogPhotos.slice(0, 3); break; }
-    if (dogPhotos.length > 0) { photos = dogPhotos; break; }
-    // No dog-tagged results — try next query
-    await new Promise((r) => setTimeout(r, 300));
-  }
 
-  // Last resort: generic dog breed portrait — still filter by isDogPhoto
-  if (photos.length === 0) {
-    const fallback = await searchPexels('purebred dog portrait', 6);
-    photos = fallback.filter(isDogPhoto).slice(0, 3);
-    // If still nothing, just take first 3 from fallback (better than nothing)
-    if (photos.length === 0) photos = fallback.slice(0, 3);
+  if ((breed.niche || 'dogs') === 'dogs') {
+    // Dogs: try progressively broader queries, preferring photos whose alt text
+    // mentions a dog keyword — prevents wrong images for rare breeds.
+    const queries = [
+      `${breed.name} dog`,
+      `${breed.name} dog breed`,
+      `${breed.name}`,
+      `${breed.name} puppy`,
+    ];
+    for (const q of queries) {
+      const results = await searchPexels(q, 6);
+      const dogPhotos = results.filter(isDogPhoto);
+      if (dogPhotos.length >= 3) { photos = dogPhotos.slice(0, 3); break; }
+      if (dogPhotos.length > 0) { photos = dogPhotos; break; }
+      await new Promise((r) => setTimeout(r, 300));
+    }
+    // Last resort: generic dog portrait.
+    if (photos.length === 0) {
+      const fallback = await searchPexels('purebred dog portrait', 6);
+      photos = fallback.filter(isDogPhoto).slice(0, 3);
+      if (photos.length === 0) photos = fallback.slice(0, 3);
+    }
+  } else {
+    // Non-dog niches: use the item's image_query directly. No dog filtering.
+    const queries = [breed.query, breed.name].filter(Boolean);
+    for (const q of queries) {
+      const results = await searchPexels(q, 6);
+      if (results.length > 0) { photos = results.slice(0, 3); break; }
+      await new Promise((r) => setTimeout(r, 300));
+    }
   }
 
   if (photos.length === 0) return 'no-image';
