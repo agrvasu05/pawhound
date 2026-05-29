@@ -289,6 +289,19 @@ async function postPin(pin, boardId) {
   fs.writeFileSync(TRACKER_PATH, JSON.stringify(tracker, null, 2));
   fs.writeFileSync(BOARDS_PATH, JSON.stringify(boardsTracker, null, 2));
 
-  console.log(`\n✅ ${posted}/${toPost.length} pins posted.`);
-  console.log(`   ${queue.length - PINS_PER_RUN} pins remaining in queue.`);
+  // Count TOTAL unposted pin images across all articles (queue caps at 1/article)
+  const pinsDir = path.join(process.cwd(), 'public', 'pins');
+  let totalPins = 0;
+  let postedPins = 0;
+  for (const slug of fs.readdirSync(pinsDir)) {
+    const folder = path.join(pinsDir, slug);
+    if (!fs.statSync(folder).isDirectory()) continue;
+    for (const f of fs.readdirSync(folder).filter((x) => x.endsWith('.png'))) {
+      totalPins++;
+      if (tracker[`${slug}/${f}`]) postedPins++;
+    }
+  }
+
+  console.log(`\n✅ ${posted}/${toPost.length} pins posted this run.`);
+  console.log(`   ${postedPins}/${totalPins} total pins posted — ${totalPins - postedPins} remaining.`);
 })();

@@ -129,7 +129,10 @@ async function generateArticle(topic) {
 
   const article = JSON.parse(response.choices[0].message.content);
   article.topic_slug = topic.slug;
-  article.topic_title = `Top ${article.picks.length} ${topic.title}`;
+  // Strip any leading count the AI baked into the title (e.g. "5+ Dog Breeds...",
+  // "10 Most Photogenic...") so we don't get "Top 6 5+ Dog Breeds..."
+  const cleanTitle = topic.title.replace(/^\s*\d+\+?\s+/, '');
+  article.topic_title = `Top ${article.picks.length} ${cleanTitle}`;
 
   const outDir = path.join(process.cwd(), 'content', 'articles');
   fs.mkdirSync(outDir, { recursive: true });
