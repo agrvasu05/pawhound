@@ -64,5 +64,24 @@
     "Choosing a Dog That Gets Along With Cats",
     "Calm Dog Breeds That Accept Cats",
     "Best Dog Breeds for Multi-Pet Homes"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these dog breeds generally good with cats of all ages?",
+      "answer": "Yes, the breeds listed like the English Springer Spaniel and Golden Retriever typically adjust well to cats of various ages. However, individual temperament matters, so early socialization and gradual introductions help ensure peaceful coexistence regardless of the cat's age."
+    },
+    {
+      "question": "What’s the best way to introduce a dog from these breeds to a resident cat?",
+      "answer": "Start with controlled, calm introductions by keeping the dog on a leash and allowing the cat to approach at their own pace. Use positive reinforcement like treats and praise for both pets to build positive associations. Gradually increase their time together while supervising closely until they’re comfortable around each other."
+    },
+    {
+      "question": "Do these dog breeds require special training to live peacefully with cats?",
+      "answer": "While these breeds are known for their friendly nature, basic obedience training is important. Teaching commands like 'leave it' and 'stay' helps manage their behavior around cats. Consistent training combined with socialization from a young age promotes harmony between dogs and cats in the home."
+    },
+    {
+      "question": "Are there any health considerations when having these dog breeds live with cats?",
+      "answer": "No specific health issues arise from these breeds living with cats. Just maintain routine veterinary care for both pets, including vaccinations and parasite prevention, to keep them healthy. Also, monitor for any signs of stress or allergies that might affect either animal in a multi-pet household."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

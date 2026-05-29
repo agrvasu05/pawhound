@@ -85,5 +85,24 @@
     "Cute Dogs That Won’t Cover Your Furniture in Hair",
     "Allergy-Friendly Dogs with Minimal Shedding",
     "Low-Shedding Dog Breeds for Busy Families"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these low-shedding dog breeds also hypoallergenic?",
+      "answer": "Many of these breeds, like the Poodles and Bichon Frise, are considered hypoallergenic because they produce fewer allergens. However, no dog is completely allergen-free. People with allergies should spend time with a breed before adopting to see how they react."
+    },
+    {
+      "question": "How often do dogs that barely shed need grooming?",
+      "answer": "Most low-shedding breeds, such as the Shih Tzu and Miniature Schnauzer, require regular grooming every 4 to 6 weeks to keep their coats healthy and mat-free. Frequent brushing at home also helps prevent tangles and reduces loose hair around the house."
+    },
+    {
+      "question": "Are these breeds suitable for families with kids?",
+      "answer": "Yes, many of these breeds like the Havanese and Yorkshire Terrier are known for their friendly and gentle nature, making them great companions for children. However, it's important to teach kids how to interact respectfully with dogs to ensure a safe and happy relationship."
+    },
+    {
+      "question": "Do low-shedding dogs require special diets or care?",
+      "answer": "Low-shedding dogs don't typically need special diets just because of their coat type. However, a balanced diet rich in omega fatty acids can support healthy skin and hair. Regular vet check-ups and proper grooming are key to keeping their coats in top shape."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

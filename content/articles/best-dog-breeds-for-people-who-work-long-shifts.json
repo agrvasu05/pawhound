@@ -50,5 +50,24 @@
     "Dog Breeds That Thrive with Less Human Interaction",
     "Perfect Pups for Long Hours Away from Home",
     "Calm and Patient Dogs for Busy Owners"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed on this list requires the least daily exercise?",
+      "answer": "The Newfoundland is the best choice if you want a low-exercise dog. They are large, gentle giants who enjoy lounging around and only need moderate daily walks, making them well-suited for people with long work shifts."
+    },
+    {
+      "question": "Are these breeds generally good at being left alone for extended periods?",
+      "answer": "Yes, especially the Greyhound and Whippet are known for being independent and tolerating alone time better than many breeds. However, all dogs need some social interaction daily, so arranging for a dog walker or pet sitter during long shifts is important."
+    },
+    {
+      "question": "Which breed is best for someone with allergies?",
+      "answer": "The Maltese and Bichon Frise are both hypoallergenic breeds that shed very little, making them better options for people with allergies compared to the heavier-shedding Newfoundland or Greyhound."
+    },
+    {
+      "question": "How do the temperaments of these breeds affect their suitability for busy owners?",
+      "answer": "Maltese and Bichon Frise are affectionate and adapt well to indoor living but need mental stimulation. Newfoundland dogs are calm and patient, great for a relaxed environment. Greyhounds and Whippets are quiet and low-key indoors, which helps when you're away often, but they do enjoy short bursts of exercise."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

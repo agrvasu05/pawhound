@@ -113,5 +113,24 @@
     "Active Dogs That Thrive in the Heat",
     "Sun-Loving Dog Breeds for Warm Homes",
     "Cool Climate Dogs? Try These Hot Weather Breeds"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What features make these dog breeds better suited for hot weather?",
+      "answer": "Breeds suited for hot weather typically have short or thin coats, lean bodies, and efficient cooling mechanisms like large ears to dissipate heat. Many on this list have minimal undercoats and lighter skin pigmentation, which helps prevent overheating and sunburn. Their natural origins in warm climates also contribute to their heat tolerance."
+    },
+    {
+      "question": "Are these hot-weather breeds also good family pets?",
+      "answer": "Many of these breeds can make great family pets, but temperaments vary. For example, the Basenji and Australian Cattle Dog are energetic and intelligent, requiring lots of activity and mental stimulation. Some breeds like the Rhodesian Ridgeback are loyal and protective. Research each breed’s personality and activity needs to ensure a good fit for your household."
+    },
+    {
+      "question": "Do these breeds require special care to prevent heatstroke in hot climates?",
+      "answer": "Even heat-tolerant breeds need precautions like access to shade and fresh water, especially during peak heat hours. Avoid rigorous exercise in the heat and watch for signs of overheating like excessive panting or lethargy. Regular grooming helps remove dead hair, improving air circulation through their coats."
+    },
+    {
+      "question": "Can these breeds live comfortably in hot urban environments or do they prefer rural settings?",
+      "answer": "Most of these breeds adapt well to both urban and rural settings as long as their exercise and cooling needs are met. Urban owners should provide regular walks during cooler times and a cool indoor space. Rural environments may offer more shade and space to roam, which many of these active breeds enjoy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

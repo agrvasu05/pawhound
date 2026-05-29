@@ -64,5 +64,24 @@
     "Discover the Charm of Teddy Bear Dog Breeds",
     "Fluffy Dogs That Are Picture-Perfect Teddy Bears",
     "Soft and Sweet: Dogs That Resemble Teddy Bears"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which of these fluffy dog breeds is best for families with kids?",
+      "answer": "The Samoyed and Old English Sheepdog are excellent choices for families with kids. Both breeds are known for their gentle, friendly nature and high energy levels, making them great playmates. However, they require plenty of exercise and grooming. Smaller breeds like the Havanese and Shih Tzu are also good with kids but may be more delicate, so supervision is important."
+    },
+    {
+      "question": "How much grooming do these fluffy dog breeds typically require?",
+      "answer": "Most of these breeds, like the Old English Sheepdog and Samoyed, need regular grooming—often several times a week—to prevent matting and keep their coats healthy. Breeds like the Pomeranian and Lhasa Apso also require frequent brushing and occasional professional trims. Consistent grooming is key to maintaining their teddy bear-like fluff."
+    },
+    {
+      "question": "Are these fluffy breeds suitable for apartment living?",
+      "answer": "Smaller breeds such as the Pomeranian, Havanese, and Shih Tzu adapt well to apartment living due to their size and moderate exercise needs. Larger breeds like the Samoyed and Old English Sheepdog prefer more space and daily physical activity, so they may be less ideal for small apartments unless you can commit to ample outdoor exercise."
+    },
+    {
+      "question": "Do any of these fluffy dog breeds shed heavily?",
+      "answer": "Yes, shedding varies by breed. Samoyeds and Old English Sheepdogs shed quite a bit, especially during seasonal changes. Pomeranians shed year-round but their fine undercoat can be managed with regular grooming. Breeds like the Havanese and Shih Tzu are considered low-shedding, making them better for people concerned about dog hair around the house."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

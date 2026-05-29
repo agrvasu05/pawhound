@@ -85,5 +85,24 @@
     "Smart Dogs Who Thrive in Nature",
     "Durable Dog Breeds for Eco-Conscious Owners",
     "Adventure-Ready Dogs with Stamina"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list requires the most outdoor exercise?",
+      "answer": "Border Collies and Australian Shepherds top the list for high energy and need lots of daily exercise, preferably outdoors. They thrive with activities like hiking, running, or agility training, making them great for active, eco-conscious owners who spend plenty of time in nature."
+    },
+    {
+      "question": "Are any of these breeds particularly low-impact on the environment?",
+      "answer": "Smaller breeds like Miniature Schnauzers and Pembroke Welsh Corgis generally consume less food and produce less waste, which can reduce your environmental footprint. However, all dogs benefit from sustainable pet care practices like using eco-friendly waste bags and natural grooming products."
+    },
+    {
+      "question": "How can I choose a breed from this list that fits my lifestyle as a nature lover?",
+      "answer": "Consider your activity level and outdoor access. If you enjoy long hikes, breeds like German Shorthaired Pointers or Labradors fit well. For moderate activity and companionship, Golden Retrievers or Standard Schnauzers are great. Match the breed’s exercise needs with your outdoor habits to ensure a happy, healthy dog."
+    },
+    {
+      "question": "Is there a breed on this list that is easier to train for outdoor activities?",
+      "answer": "Yes, German Shepherds and Belgian Malinois are known for their intelligence and trainability, making them excellent partners for outdoor tasks like tracking, search and rescue, or advanced obedience. Their eagerness to learn helps eco-conscious owners engage them in meaningful nature-oriented activities."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

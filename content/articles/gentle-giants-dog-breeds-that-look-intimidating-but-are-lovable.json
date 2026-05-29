@@ -50,5 +50,24 @@
     "The Best Gentle Giants for Family Life",
     "Discover Gentle Giants: Mighty Yet Mild Dogs",
     "From Fierce to Friendly: Gentle Giant Dogs"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these large dog breeds good with children?",
+      "answer": "Yes, Bernese Mountain Dogs, Newfoundlands, Great Danes, Saint Bernards, and Mastiffs are known for their gentle and patient nature, making them great companions for kids. Their calm demeanor and protective instincts often make them excellent family dogs, but supervision is always recommended with any large breed around young children."
+    },
+    {
+      "question": "What kind of exercise do these gentle giant breeds need?",
+      "answer": "While these breeds are large, they generally require moderate daily exercise like walks and playtime to stay healthy. They don’t need intense workouts, but regular activity helps prevent obesity and keeps them mentally stimulated. Be mindful of their age and any breed-specific health issues when planning exercise routines."
+    },
+    {
+      "question": "Do these big dogs require special grooming?",
+      "answer": "Grooming needs vary: Bernese Mountain Dogs and Saint Bernards have thick double coats that need regular brushing to avoid mats, while Newfoundlands also require frequent grooming. Great Danes and Mastiffs have shorter coats that are easier to maintain but still benefit from regular brushing to reduce shedding and keep their skin healthy."
+    },
+    {
+      "question": "Are these breeds suitable for apartment living?",
+      "answer": "Generally, these gentle giants are better suited for homes with ample space due to their large size. While some can adapt to apartment living if exercised adequately, they thrive best in environments where they have room to move comfortably. Consider your living space and lifestyle carefully before choosing one of these breeds."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -50,5 +50,24 @@
     "Secretly Rare Dog Breeds to Know About",
     "Discover Dogs With Ancient Lineages",
     "Rare Dog Breeds for Curious Dog Lovers"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are rare dog breeds like the Otterhound and Sloughi good family pets?",
+      "answer": "Many rare breeds can be great family dogs, but it’s important to research their temperament and needs. For example, Otterhounds are friendly and playful but need lots of exercise. Sloughis are gentle but can be reserved. Understanding each breed’s personality helps ensure they fit well with your family lifestyle."
+    },
+    {
+      "question": "Where can I find a reliable breeder or rescue for these rare breeds?",
+      "answer": "Rare breeds often have dedicated breed clubs or rescue organizations. Start by contacting national or regional breed clubs, which can provide breeder referrals or adoption info. Avoid puppy mills by ensuring breeders health test their dogs and prioritize the breed’s welfare. Rescue groups for specific breeds may also have dogs available for adoption."
+    },
+    {
+      "question": "Do these rare breeds have any special health concerns I should be aware of?",
+      "answer": "Yes, many rare breeds have breed-specific health issues. For example, Otterhounds can be prone to hip dysplasia, while Azawakhs may have sensitivity to certain medications. Always ask breeders about health clearances and consult a veterinarian familiar with the breed to manage and prevent potential problems."
+    },
+    {
+      "question": "How much exercise do these rare dog breeds typically require?",
+      "answer": "Exercise needs vary by breed. Otterhounds and Azawakhs are active and require daily vigorous walks or runs. The Nederlandse Kooikerhondje is energetic and enjoys agility activities. Cirneco dell’Etna needs moderate exercise but loves playtime. Meeting their activity levels is key to keeping them healthy and happy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -50,5 +50,24 @@
     "Top Breeds for Low Aggression Pack Life",
     "Breeds That Shine in Multi-Dog Families",
     "Friendly Dogs That Love Doggy Friends"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these dog breeds good with both puppies and adult dogs?",
+      "answer": "Yes, Siberian Huskies, Boxers, Beagles, Labradors, and Golden Retrievers generally get along well with dogs of all ages. They tend to be social and friendly, making them adaptable to households with puppies or adult dogs already present."
+    },
+    {
+      "question": "Which of these breeds requires the most exercise when living with other dogs?",
+      "answer": "Siberian Huskies and Boxers are high-energy breeds that need plenty of daily exercise. When living with other dogs, they benefit from active playtime and long walks to keep them happy and prevent behavioral issues."
+    },
+    {
+      "question": "Can these breeds live peacefully in multi-dog households?",
+      "answer": "Absolutely. All five breeds are known for their sociable nature and usually do well in multi-dog homes. However, proper introductions and ongoing supervision during playtime help ensure everyone gets along smoothly."
+    },
+    {
+      "question": "Are any of these breeds prone to dominance issues around other dogs?",
+      "answer": "Boxers and Siberian Huskies may show some dominant tendencies, but with consistent training and socialization from an early age, they typically learn to coexist peacefully with other dogs."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

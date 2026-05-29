@@ -85,5 +85,24 @@
     "Longevity Champions in the Dog World",
     "Favorite Dogs With Long Lifespans",
     "Discover Dogs That Age Gracefully"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What factors contribute to the long lifespan of these dog breeds?",
+      "answer": "These breeds tend to live longer due to a combination of genetics, smaller size in many cases, and generally good health. Regular exercise, a balanced diet, and proper veterinary care also play major roles in extending their lifespan."
+    },
+    {
+      "question": "Are smaller dog breeds generally longer-lived than larger breeds?",
+      "answer": "Yes, smaller breeds like Chihuahuas and Dachshunds often live longer than larger breeds. Their slower aging process and fewer health problems contribute to their extended lifespan compared to bigger dogs."
+    },
+    {
+      "question": "How can I help my dog live a longer, healthier life regardless of breed?",
+      "answer": "Provide a nutritious diet, regular exercise, routine vet check-ups, dental care, and lots of mental stimulation. Preventive care and early detection of health issues are key to maximizing your dog’s lifespan."
+    },
+    {
+      "question": "Do mixed-breed dogs have longer lifespans than purebreds on this list?",
+      "answer": "Mixed breeds often benefit from genetic diversity, which can reduce the risk of some inherited diseases. While they may live as long or longer than purebreds, lifespan varies widely depending on overall health and care rather than just breed."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

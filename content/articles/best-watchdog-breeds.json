@@ -85,5 +85,24 @@
     "Which Breeds Make Great Watchdogs?",
     "Top Alert Dogs for Homeowners",
     "Best Watchdogs for Peace of Mind"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which watchdog breed is best for families with children?",
+      "answer": "The Bullmastiff and Boxer are known for their gentle and protective nature around kids. While they are strong and alert, they tend to be patient and affectionate with family members, making them excellent choices for homes with children."
+    },
+    {
+      "question": "How much training do these watchdog breeds typically require?",
+      "answer": "Most watchdog breeds like the German Shepherd, Belgian Malinois, and Doberman Pinscher benefit from consistent training starting early. They are intelligent and eager to learn but need firm, positive guidance to channel their protective instincts appropriately."
+    },
+    {
+      "question": "Are these watchdog breeds suitable for apartment living?",
+      "answer": "Some breeds like the Akita and Boxer can adapt to apartment living if they get enough daily exercise and mental stimulation. However, larger breeds such as the Kangal Shepherd Dog or Greater Swiss Mountain Dog usually need more space and a yard to thrive comfortably."
+    },
+    {
+      "question": "Do these watchdog breeds require a lot of grooming?",
+      "answer": "Grooming needs vary: the German Shepherd and Belgian Malinois have double coats requiring regular brushing, while the Boxer and Doberman Pinscher have short coats with minimal grooming. Breeds like the Greater Swiss Mountain Dog may need seasonal shedding care to manage their thick fur."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

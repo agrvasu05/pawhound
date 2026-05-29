@@ -57,5 +57,24 @@
     "Calm Canines for RV and Van Life",
     "Adaptable Dog Breeds for Travelers",
     "Chill Dogs Perfect for Mobile Living"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list is best for someone new to RV living?",
+      "answer": "The Miniature Schnauzer is a great choice for first-time RVers. They’re adaptable, moderately active, and small enough to be comfortable in tight spaces, but still sturdy enough to enjoy outdoor adventures. Plus, their friendly nature makes them easy to train and socialize on the road."
+    },
+    {
+      "question": "How do these breeds handle the limited space and movement in an RV or van?",
+      "answer": "All these breeds are small to medium-sized, which makes them well-suited to the confined spaces of RVs and vans. They generally require moderate exercise, which can be met with regular walks and playtime outside. Breeds like the Whippet and Boston Terrier enjoy lounging in cozy spots, helping them stay calm indoors during travel."
+    },
+    {
+      "question": "Are any of these breeds particularly prone to health issues that RVers should watch for?",
+      "answer": "French Bulldogs and Cavalier King Charles Spaniels can have respiratory and heart issues, so it’s important to monitor them closely, especially when traveling in hot or humid conditions. Regular vet check-ups and avoiding strenuous activity during extreme weather help keep them healthy on the road."
+    },
+    {
+      "question": "What should I consider about grooming and maintenance for these breeds while living in a van or RV?",
+      "answer": "Breeds like the Shih Tzu and Miniature Schnauzer need regular grooming to keep their coats clean and mat-free, which can be a bit challenging on the road but manageable with portable grooming tools. Short-haired breeds like the Boston Terrier and Whippet require less maintenance, making them easier for busy travelers."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -50,5 +50,24 @@
     "Low-Shedding Dogs for Older Adults",
     "Friendly Dogs That Suit Senior Lifestyles",
     "Top Dog Breeds for a Quiet Home Life"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list requires the least grooming?",
+      "answer": "Among these breeds, the French Bulldog requires the least grooming. Their short coat is easy to maintain with regular brushing, and they don’t need frequent baths. In contrast, breeds like the Bichon Frise and Shih Tzu need more regular grooming to prevent matting and maintain their coats."
+    },
+    {
+      "question": "Are these breeds generally good with other pets and visitors?",
+      "answer": "Yes, all five breeds—Boston Terrier, Bichon Frise, French Bulldog, Cavalier King Charles Spaniel, and Shih Tzu—are known for their friendly and sociable nature. They typically get along well with other pets and enjoy meeting new people, making them great companions for seniors who have visitors or other animals at home."
+    },
+    {
+      "question": "Which of these breeds are best suited for smaller living spaces like apartments?",
+      "answer": "The Boston Terrier, French Bulldog, and Shih Tzu adapt very well to apartment living due to their smaller size and moderate energy levels. They don’t require large yards but still benefit from daily walks and playtime. The Bichon Frise and Cavalier King Charles Spaniel also do well indoors but may need a bit more exercise."
+    },
+    {
+      "question": "How active are these breeds, and what kind of exercise do they need?",
+      "answer": "These breeds generally have moderate energy levels. Daily short walks and some indoor playtime are sufficient to keep them healthy and happy. For example, Boston Terriers and French Bulldogs enjoy brief walks, while the Cavalier King Charles Spaniel and Bichon Frise may appreciate slightly longer strolls or gentle play sessions."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

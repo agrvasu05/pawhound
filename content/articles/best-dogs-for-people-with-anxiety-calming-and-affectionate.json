@@ -85,5 +85,24 @@
     "Soothing Dog Breeds for Mental Well-Being",
     "Compassionate Canines for Anxiety Support",
     "Emotional Support Dogs With Calming Temperaments"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list is best for someone living in a small apartment?",
+      "answer": "For small apartments, the Bichon Frise, Maltese, or Boston Terrier are great choices. They are small in size, adapt well to indoor living, and require moderate exercise, making them ideal for limited space while still offering affectionate companionship."
+    },
+    {
+      "question": "How do these breeds typically help reduce anxiety in their owners?",
+      "answer": "These breeds are known for their calm, affectionate temperaments and strong bonds with their owners. Their gentle nature, willingness to cuddle, and intuitive responses to human emotions can provide comfort and lower stress levels, helping owners feel more relaxed and supported."
+    },
+    {
+      "question": "Are any of these breeds hypoallergenic or better for people with allergies?",
+      "answer": "Yes, breeds like the Bichon Frise, Maltese, and Havanese are considered hypoallergenic because they shed very little. This makes them better suited for people with allergies who still want the calming benefits of a dog without excessive dander."
+    },
+    {
+      "question": "What level of exercise do these calming breeds usually need?",
+      "answer": "Most of these breeds require moderate daily exercise, such as short walks and playtime. For example, Whippets need regular running opportunities, while breeds like the Cavalier King Charles Spaniel and Standard Schnauzer enjoy walks and interactive play. Consistent activity helps keep them happy without overstimulation."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -50,5 +50,24 @@
     "Water-Friendly Dog Breeds You’ll Fall For",
     "Active Dogs Who Love To Swim and Play",
     "Best Dog Breeds for Splashy Summer Days"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these water-loving dog breeds good for first-time dog owners?",
+      "answer": "Yes, many of these breeds like Golden Retrievers and Labradors are friendly, intelligent, and eager to please, making them great for first-time owners. However, breeds like Newfoundlands require more space and grooming, so consider your living situation and commitment before choosing."
+    },
+    {
+      "question": "Do water-loving breeds need special grooming because of their swimming habits?",
+      "answer": "Absolutely. Breeds like Standard Poodles and Newfoundlands have thick, water-resistant coats that can trap moisture, so regular drying and brushing are essential to prevent skin issues. Using dog-specific conditioners and checking ears for water buildup help keep them healthy after swims."
+    },
+    {
+      "question": "Can these breeds be trained for water activities like dock diving or water rescue?",
+      "answer": "Yes! Many of these breeds, especially Labrador Retrievers and Nova Scotia Duck Tolling Retrievers, excel in water sports and rescue training. Their natural love for water and strong swimming skills make them ideal candidates for activities like dock diving, water retrieval, and even some rescue work with proper training."
+    },
+    {
+      "question": "Are there any health concerns to watch for in water-loving dog breeds?",
+      "answer": "While generally healthy, some breeds like Newfoundlands are prone to hip dysplasia due to their size, and Labradors can have ear infections if moisture isn’t properly dried. Regular vet checkups, maintaining a healthy weight, and proper grooming after swimming sessions can help prevent common health issues."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -64,5 +64,24 @@
     "Best Dogs for Active Families with Children",
     "Kid-Loving Dog Breeds to Consider",
     "Perfect Dogs for Homes with Children"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed on this list is best for families with very young children?",
+      "answer": "Golden Retrievers and Labrador Retrievers are excellent choices for families with young kids. They are gentle, patient, and tolerant, making them great companions for toddlers and preschoolers. Their friendly nature and eagerness to please help ensure safe and positive interactions with little ones."
+    },
+    {
+      "question": "Are these dog breeds easy to train for a busy family?",
+      "answer": "Yes, most breeds on this list, like the Labrador Retriever, Golden Retriever, and Boxer, are known for their intelligence and trainability. They respond well to consistent, positive reinforcement training methods, which is ideal for busy families who can dedicate regular but manageable training sessions."
+    },
+    {
+      "question": "How much exercise do these family-friendly dogs typically need?",
+      "answer": "Exercise needs vary, but breeds like the Boxer, Labrador Retriever, and Golden Retriever are active and require daily physical activity, such as walks and playtime, to stay healthy and happy. Meanwhile, breeds like the Cavalier King Charles Spaniel and Bernese Mountain Dog need moderate exercise, which can be easier for families with less active lifestyles."
+    },
+    {
+      "question": "Are these breeds suitable for families living in apartments or smaller homes?",
+      "answer": "Some breeds like the Cavalier King Charles Spaniel and Beagle adapt well to apartment living due to their smaller size and moderate energy levels. Larger breeds such as the Bernese Mountain Dog and Boxers need more space and a yard to burn off energy. Regardless of breed, regular daily exercise is essential to keep any dog happy in smaller living spaces."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

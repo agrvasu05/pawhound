@@ -48,6 +48,16 @@ export default async function ArticleHub({
   const ranked = [...article.picks].sort((a, b) => b.rank - a.rank);
   const topPick = article.picks.find((p) => p.rank === 1);
 
+  const author = article.author ?? "the Value Finds Daily Editorial Team";
+  const updatedLabel = article.updated_at
+    ? new Date(`${article.updated_at}T00:00:00`).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
+  const faqs = article.faqs ?? [];
+
   // ItemList structured data — tells search engines this is a real ranked list.
   const jsonLd = {
     "@context": "https://schema.org",
@@ -62,6 +72,20 @@ export default async function ArticleHub({
       name: p.breed,
     })),
   };
+
+  // FAQPage structured data — eligible for rich results, a strong E-E-A-T signal.
+  const faqJsonLd =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }
+      : null;
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-10">
@@ -84,8 +108,13 @@ export default async function ArticleHub({
         {article.topic_title}
       </h1>
 
-      <p className="text-sm font-medium text-emerald-700 mb-6">
+      <p className="text-sm font-medium text-emerald-700 mb-2">
         {total} {itemNoun} ranked · counting down to #1
+      </p>
+
+      <p className="mb-6 text-sm text-stone-500">
+        By <span className="font-medium text-stone-700">{author}</span>
+        {updatedLabel ? <> · Last updated {updatedLabel}</> : null}
       </p>
 
       <p className="text-lg text-stone-700 mb-6 leading-relaxed">
@@ -215,6 +244,37 @@ export default async function ArticleHub({
           </Link>
         </p>
       </section>
+
+      {faqs.length > 0 && (
+        <>
+          {faqJsonLd && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
+          )}
+          <section className="mt-12">
+            <h2
+              className="mb-6 text-2xl md:text-3xl font-bold"
+              style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+            >
+              Frequently asked questions
+            </h2>
+            <dl className="divide-y divide-stone-200 border-t border-stone-200">
+              {faqs.map((faq, i) => (
+                <div key={i} className="py-5">
+                  <dt className="mb-2 text-lg font-semibold text-stone-900">
+                    {faq.question}
+                  </dt>
+                  <dd className="text-stone-700 leading-relaxed">
+                    {faq.answer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        </>
+      )}
 
       <AdSlot className="my-8" />
     </main>

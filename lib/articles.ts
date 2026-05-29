@@ -10,6 +10,11 @@ export type Pick = {
   image_query?: string;
 };
 
+export type Faq = {
+  question: string;
+  answer: string;
+};
+
 export type Article = {
   topic_slug: string;
   topic_title: string;
@@ -19,6 +24,12 @@ export type Article = {
   niche?: string;
   /** Plural noun for the list items, e.g. "breeds" (dogs) or "ideas" (home). */
   item_noun?: string;
+  /** Original Q&A appended to each article; also powers FAQPage structured data. */
+  faqs?: Faq[];
+  /** ISO date (YYYY-MM-DD) the article was last edited. Drives the "Last updated" line. */
+  updated_at?: string;
+  /** Byline shown on the article. Defaults to the editorial team when unset. */
+  author?: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");

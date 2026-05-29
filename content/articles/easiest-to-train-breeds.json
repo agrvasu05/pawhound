@@ -120,5 +120,24 @@
     "Dogs Eager to Please and Learn",
     "Easy-to-Train Dog Breeds for Families",
     "Expert-Recommended Trainable Dogs"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What traits make a dog breed easier to train?",
+      "answer": "Easier-to-train dog breeds typically have high intelligence, eagerness to please, and good focus during training sessions. They often respond well to positive reinforcement and are motivated by treats or praise. Consistency and patience from the owner also play a big role in how smoothly training progresses."
+    },
+    {
+      "question": "Are smaller dog breeds like Toy Poodles really easier to train than larger breeds?",
+      "answer": "Yes, many smaller breeds like Toy Poodles are known for their intelligence and quick learning ability, making them relatively easy to train. However, training success depends on the individual dog’s temperament and the owner’s approach, not just size."
+    },
+    {
+      "question": "How long does it usually take to train one of these easy-to-train breeds?",
+      "answer": "With consistent daily sessions of 10-15 minutes, many of these breeds can learn basic commands like sit, stay, and come within a few weeks. More advanced training or specific skills may take a few months. Early socialization and ongoing practice are key for lasting results."
+    },
+    {
+      "question": "Are these breeds suitable for first-time dog owners wanting an easy training experience?",
+      "answer": "Many breeds on this list, such as Labrador Retrievers, Golden Retrievers, and Shetland Sheepdogs, are great for first-time owners due to their trainability and friendly nature. Still, every dog needs time, patience, and positive training methods regardless of breed."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

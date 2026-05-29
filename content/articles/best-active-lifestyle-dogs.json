@@ -120,5 +120,24 @@
     "Energize Your Life With These Active Dogs",
     "Top Picks for Sporty, Active Dog Lovers",
     "Dogs Built for Movement and Endurance"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list is best for someone who enjoys running long distances?",
+      "answer": "The Border Collie and the German Shorthaired Pointer are excellent choices for long-distance runners. Both breeds have high endurance and love to stay active, making them great companions for daily runs or hikes."
+    },
+    {
+      "question": "Are these active dog breeds suitable for families with children?",
+      "answer": "Yes, many of these breeds like Golden Retrievers, Labrador Retrievers, and Boxers are known for their friendly and gentle nature with kids. However, they require plenty of exercise to stay happy, so active families benefit the most from these breeds."
+    },
+    {
+      "question": "How much daily exercise do these active dog breeds typically need?",
+      "answer": "Most breeds on this list require at least 1 to 2 hours of vigorous exercise daily, including activities like running, hiking, or agility training. This helps keep their energy levels balanced and prevents behavioral issues."
+    },
+    {
+      "question": "Which breed is best suited for someone new to owning an active dog?",
+      "answer": "The Labrador Retriever or Golden Retriever are great for first-time owners. They have a friendly temperament, are relatively easy to train, and enjoy active lifestyles without being overly demanding."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

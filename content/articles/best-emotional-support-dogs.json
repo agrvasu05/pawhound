@@ -64,5 +64,24 @@
     "Breeds Known for Deep Human Connection",
     "Heartwarming Dogs for Emotional Support",
     "Discover Dogs That Feel Your Feelings"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed is best for someone with allergies looking for emotional support?",
+      "answer": "The Soft Coated Wheaten Terrier and Havanese are great choices for allergy sufferers. Both breeds have hair that sheds minimally, reducing allergens. However, no dog is completely hypoallergenic, so spending time with the breed before adopting is a good idea to gauge your reaction."
+    },
+    {
+      "question": "How much daily exercise do these emotional companion breeds typically need?",
+      "answer": "Most breeds on this list require moderate daily exercise—about 30 to 60 minutes. For example, Bernese Mountain Dogs and Soft Coated Wheaten Terriers enjoy longer walks, while Shih Tzus and Pugs need less intense activity. Regular exercise keeps them healthy and happy, which enhances their companionship qualities."
+    },
+    {
+      "question": "Are these breeds generally good with children and other pets?",
+      "answer": "Yes, many of these breeds like the Cavalier King Charles Spaniel and Cocker Spaniel are known for their gentle, friendly nature, making them excellent with children and other pets. However, early socialization and training are important to ensure they adapt well to family life and multi-pet households."
+    },
+    {
+      "question": "What grooming needs should I expect with these companion dogs?",
+      "answer": "Grooming varies: breeds like the Shih Tzu, Havanese, and Soft Coated Wheaten Terrier have longer coats requiring regular brushing and periodic professional grooming. Pugs and Bernese Mountain Dogs have shorter coats but still benefit from weekly brushing to reduce shedding and maintain skin health."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

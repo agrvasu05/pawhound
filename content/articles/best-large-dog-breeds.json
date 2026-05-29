@@ -71,5 +71,24 @@
     "Loving Large Breeds for Roomy Living",
     "Top Dogs for Homes with Lots of Space",
     "Large Dog Breeds That Thrive Indoors and Out"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which large dog breed is best for families with children?",
+      "answer": "Breeds like the Newfoundland and Bernese Mountain Dog are known for their gentle and patient nature, making them excellent companions for children. Their calm demeanor and protective instincts provide a safe and loving environment for families."
+    },
+    {
+      "question": "How much daily exercise do these large dog breeds typically need?",
+      "answer": "Most large breeds like the Great Dane and Doberman Pinscher require at least 1 to 2 hours of exercise daily. This can include walks, playtime, and mental stimulation to keep them healthy and prevent boredom-related behaviors."
+    },
+    {
+      "question": "Are these large breeds prone to any specific health issues I should be aware of?",
+      "answer": "Many large breeds, such as the Saint Bernard and Leonberger, can be prone to hip dysplasia, heart problems, and bloat. Regular veterinary check-ups and a proper diet can help manage these risks. Always research breed-specific health concerns before deciding."
+    },
+    {
+      "question": "What kind of living space is ideal for these large dog breeds?",
+      "answer": "These breeds thrive in spacious homes with large yards where they can move freely. Apartments or small homes may restrict their activity, leading to behavioral issues. A roomy indoor area combined with outdoor space is best to accommodate their size and energy levels."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

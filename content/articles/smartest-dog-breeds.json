@@ -85,5 +85,24 @@
     "Smartest Dogs for Active Families",
     "Trainable and Clever Dog Breeds",
     "Genius Dogs You Should Know About"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What traits make these dog breeds considered the smartest?",
+      "answer": "These breeds are known for their high intelligence because they learn commands quickly, excel in obedience, and can solve problems effectively. They also tend to have strong work ethics and adaptability, which makes training easier and allows them to perform well in tasks like herding, search and rescue, or service work."
+    },
+    {
+      "question": "Are these smart breeds good for first-time dog owners?",
+      "answer": "Some of these breeds, like Golden Retrievers and Labrador Retrievers, are great for first-time owners due to their friendly nature and trainability. However, breeds like Border Collies or Belgian Malinois require lots of mental and physical stimulation and may not be ideal for beginners without experience or time to dedicate to training and exercise."
+    },
+    {
+      "question": "How much exercise do these intelligent breeds typically need?",
+      "answer": "Most of these smart breeds have high energy levels and need daily physical exercise combined with mental challenges. For example, Border Collies and Australian Shepherds thrive with at least 1-2 hours of vigorous activity plus training sessions. Without enough stimulation, they can become bored and develop behavioral issues."
+    },
+    {
+      "question": "Can these breeds adapt well to apartment living?",
+      "answer": "While some, like the Standard Poodle or Pembroke Welsh Corgi, can adapt to apartment life if given enough exercise and mental activity, many of these breeds prefer having space to run and work. German Shepherds and Belgian Malinois especially need room and tasks to stay happy, so apartment living may require a very committed owner to meet their needs."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

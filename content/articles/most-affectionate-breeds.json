@@ -64,5 +64,24 @@
     "Dogs Who Are All About the Hugs",
     "Find Your Next Affectionate Canine Companion",
     "Most Expressive and Loving Dog Breeds"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list is best for families with young children?",
+      "answer": "Golden Retrievers and Labrador Retrievers are excellent choices for families with young kids. They’re known for their gentle nature, patience, and playful energy, making them great companions for children of all ages."
+    },
+    {
+      "question": "Are these affectionate breeds suitable for apartment living?",
+      "answer": "Yes, some breeds like the French Bulldog, Boston Terrier, and Cavalier King Charles Spaniel adapt well to apartment living due to their smaller size and moderate exercise needs. Larger breeds like the Golden Retriever need more space and daily activity to stay happy."
+    },
+    {
+      "question": "How much daily exercise do these affectionate breeds typically require?",
+      "answer": "Exercise needs vary: Vizslas and Retrievers need about an hour or more of daily activity to stay healthy and happy. Smaller breeds like the Havanese and French Bulldog require less intense exercise, around 30 minutes to an hour, including walks and playtime."
+    },
+    {
+      "question": "Do these affectionate breeds tend to have separation anxiety?",
+      "answer": "Many affectionate breeds, especially Vizslas, Havanese, and Cavaliers, can be prone to separation anxiety if left alone too long. They thrive on companionship and benefit from gradual training to build independence or having interactive toys when you’re away."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

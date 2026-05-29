@@ -50,5 +50,24 @@
     "Dogs That Stay Quiet And Calm Indoors",
     "Low-Barking Dog Breeds For Apartment Life",
     "Quiet Dogs That Won’t Disturb Neighbors"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these quiet dog breeds suitable for apartment living?",
+      "answer": "Yes, most of these breeds, like the French Bulldog and Japanese Chin, adapt well to apartment life due to their low barking tendencies and moderate exercise needs. However, Greyhounds, while quiet, do require regular walks to stay healthy, and Clumber Spaniels may need more space and activity. Always consider the dog's energy level along with their barking habits."
+    },
+    {
+      "question": "Do quiet dog breeds still need regular training and socialization?",
+      "answer": "Absolutely. Even breeds that rarely bark benefit from consistent training and socialization. This helps prevent behavioral issues and ensures they are well-adjusted companions. Quiet breeds like the Basenji can be independent, so early socialization and positive reinforcement training are key to a happy, balanced dog."
+    },
+    {
+      "question": "Can quiet dog breeds be effective watchdogs?",
+      "answer": "Generally, these quiet breeds are not known for being alert watchdogs since they rarely bark. For example, Basenjis and Greyhounds tend to be calm and less vocal. If you need a dog primarily for security, these breeds might not be the best choice, but they excel as low-noise, affectionate pets."
+    },
+    {
+      "question": "How do these breeds communicate if they rarely bark?",
+      "answer": "Many quiet breeds use body language and other sounds to communicate. For instance, Basenjis are known for their unique yodel-like sound called a \"barroo\" instead of barking. French Bulldogs and Japanese Chins may use grunts or subtle cues. Understanding their behaviors helps owners respond appropriately without relying on barking."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

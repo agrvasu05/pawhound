@@ -120,5 +120,24 @@
     "Best Small Dog Companions for Limited Space",
     "Small Dogs with Big Personalities Under 25 Pounds",
     "Choosing the Right Small Dog for Your Small Home"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which small dog breeds are best for families with young children?",
+      "answer": "Breeds like the Cavalier King Charles Spaniel, Havanese, and Miniature Poodle tend to be great with kids due to their gentle and friendly nature. They’re patient and sociable, making them excellent companions for families with young children."
+    },
+    {
+      "question": "Are these small dog breeds suitable for apartment living?",
+      "answer": "Yes, many of these breeds adapt well to apartment life, especially those like the French Bulldog, Boston Terrier, and Pomeranian. Their small size and moderate exercise needs make them ideal for smaller spaces, although daily walks and mental stimulation remain important."
+    },
+    {
+      "question": "Which small breeds require the least grooming?",
+      "answer": "Breeds like the Miniature Pinscher, Jack Russell Terrier, and Scottish Terrier have shorter coats that require minimal grooming. In contrast, breeds such as the Maltese and Shih Tzu need regular brushing to prevent mats and tangles."
+    },
+    {
+      "question": "Do small dog breeds generally have health concerns I should be aware of?",
+      "answer": "Yes, small breeds can have specific health issues. For example, French Bulldogs may face breathing problems due to their flat faces, and Miniature Poodles can be prone to dental issues. It's important to choose a reputable breeder and schedule regular vet check-ups to keep your dog healthy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

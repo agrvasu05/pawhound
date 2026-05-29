@@ -50,5 +50,24 @@
     "Evening Walk Lovers: Top Dog Picks",
     "Dogs Who Stay Calm and Curious at Night",
     "Explore the Night with These Loyal Breeds"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these breeds safe for nighttime walks in urban areas?",
+      "answer": "Yes, these breeds are generally safe for nighttime walks, but it's important to keep them on a leash and use reflective gear for both you and your dog to improve visibility. German Shepherds and Dobermans are often protective, which can be a bonus, but always stay alert to your surroundings."
+    },
+    {
+      "question": "Do these breeds require special training for night walks?",
+      "answer": "While they don't require special training just for nighttime walks, it's crucial that they have good leash manners and recall skills. Socializing them well helps prevent anxiety or overexcitement in low-light environments, making your nighttime adventures safer and more enjoyable."
+    },
+    {
+      "question": "Which of these breeds is best for beginners who want to walk at night?",
+      "answer": "Miniature Schnauzers are often a great choice for beginners. They're smaller, adaptable, and generally friendly, making nighttime walks manageable. However, all these breeds need consistent training and daily exercise, so consider your experience with dog handling before choosing."
+    },
+    {
+      "question": "How can I keep my dog mentally stimulated during nighttime walks?",
+      "answer": "Bring along toys like scent games or practice obedience commands during your walk to keep your dog engaged. These breeds are intelligent and enjoy challenges, so incorporating puzzles or varying your walking route can make nighttime exploration both fun and mentally stimulating."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

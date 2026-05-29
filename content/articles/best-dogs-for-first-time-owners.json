@@ -85,5 +85,24 @@
     "Dogs That Are Forgiving for Beginners",
     "Smart and Patient Dogs for First-Time Owners",
     "Top Companion Dogs for Newbies"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from the list is easiest to train for a first-time owner?",
+      "answer": "The Standard Poodle and Labrador Retriever are known for their intelligence and eagerness to please, making them among the easiest breeds to train for first-time owners. Their willingness to learn and respond to commands helps new owners establish good training routines more smoothly."
+    },
+    {
+      "question": "Are these breeds suitable for apartment living?",
+      "answer": "Yes, some breeds on the list like the Havanese, Boston Terrier, and Bichon Frise adapt well to apartment living due to their smaller size and moderate energy levels. However, breeds like the Labrador Retriever or Golden Retriever may require more space and daily exercise to stay happy and healthy."
+    },
+    {
+      "question": "What should I consider about grooming needs for these breeds?",
+      "answer": "Breeds like the Shetland Sheepdog, Miniature Schnauzer, and Poodles require regular grooming, including brushing and professional trims, to prevent matting and keep their coats healthy. On the other hand, breeds such as the Boston Terrier and Labrador Retriever have shorter coats and need less frequent grooming."
+    },
+    {
+      "question": "How do these breeds generally get along with children and other pets?",
+      "answer": "Most breeds listed, including Golden Retrievers, Cavalier King Charles Spaniels, and Bichon Frises, are known for their friendly and gentle nature, making them great companions for children and other pets. However, socialization and supervision are key, especially with smaller breeds like the Miniature Poodle or Havanese."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

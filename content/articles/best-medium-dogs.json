@@ -85,5 +85,24 @@
     "Energetic Medium Dogs for Active Owners",
     "Medium Dog Breeds That Are Easy to Train",
     "Meet Your Next Medium-Sized Best Friend"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What factors should I consider when choosing a medium-sized dog breed from this list?",
+      "answer": "Consider your lifestyle, activity level, grooming preferences, and living space. For example, Australian Shepherds and Australian Cattle Dogs are highly energetic and need lots of exercise, while Beagles are more adaptable but can be vocal. Also, think about grooming needs—Lagotto Romagnolos require regular coat care, whereas Standard Schnauzers have low-shedding coats."
+    },
+    {
+      "question": "Are these medium-sized breeds generally good with children and families?",
+      "answer": "Yes, most breeds on this list are known for being family-friendly. English Springer Spaniels, Brittanys, and Beagles tend to be affectionate and playful with kids. However, some breeds like the Australian Cattle Dog may be more protective or energetic, so early socialization and training are important to ensure a good fit in a family setting."
+    },
+    {
+      "question": "How much daily exercise do these medium-sized dogs typically need?",
+      "answer": "Most medium-sized breeds on this list require at least an hour of exercise daily. High-energy breeds like the Australian Shepherd and Nova Scotia Duck Tolling Retriever benefit from vigorous activities such as running or agility training. Others, like the Field Spaniel and American Water Spaniel, enjoy moderate walks and playtime but still need consistent activity to stay healthy and happy."
+    },
+    {
+      "question": "Which breeds on this list are best for people with mild allergies?",
+      "answer": "While no dog is completely hypoallergenic, breeds like the Lagotto Romagnolo and Standard Schnauzer have coats that shed less and produce fewer allergens. These breeds often suit people with mild allergies better than others like the Beagle or Australian Shepherd, which shed more. Regular grooming and cleaning also help reduce allergens in your home."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

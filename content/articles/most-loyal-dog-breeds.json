@@ -64,5 +64,24 @@
     "Loyal Dog Breeds That Become True Companions",
     "Find Your Forever Loyal Dog Breed",
     "Dogs That Will Always Have Your Back"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed on this list is best for families with children?",
+      "answer": "Golden Retrievers and Labrador Retrievers are often considered the best family dogs because of their friendly, patient, and gentle nature. They bond closely with kids and are known for being protective yet playful, making them great companions in a family setting."
+    },
+    {
+      "question": "How do these loyal breeds typically show their loyalty to their owners?",
+      "answer": "These breeds show loyalty through constant companionship, protective behavior, and strong attachment. For example, German Shepherds are known to guard their owners, while Vizslas often follow their owners around and stay close. They thrive on interaction and can be very attentive and responsive to their owner's moods and needs."
+    },
+    {
+      "question": "Are these breeds generally good for first-time dog owners?",
+      "answer": "Some breeds like Golden Retrievers and Labradors are more beginner-friendly due to their easygoing temperament and trainability. However, breeds like Akitas and Rottweilers require experienced owners who can provide firm, consistent training and socialization to manage their strong protective instincts."
+    },
+    {
+      "question": "What kind of exercise do these loyal dog breeds need to stay happy and healthy?",
+      "answer": "Most of these breeds, such as German Shepherds, Vizslas, and Labradors, are active and need at least an hour of daily exercise that includes walks, playtime, and mental stimulation. Bernese Mountain Dogs and Akitas also benefit from regular activity but may require less intense exercise due to their build. Consistent activity helps maintain their physical health and reinforces the bond with their owner."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

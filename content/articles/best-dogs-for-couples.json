@@ -92,5 +92,24 @@
     "Loyal Dog Breeds for Adult Couples",
     "Playful Dogs Ideal for Couples",
     "Companion Dogs for Couples Living Together"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breeds from this list are best for couples living in small apartments?",
+      "answer": "Breeds like the French Bulldog, Boston Terrier, and Pug are great for apartment living due to their smaller size and lower exercise needs. The Havanese and Bichon Frise also adapt well to indoor spaces, making them ideal for couples without kids in smaller homes."
+    },
+    {
+      "question": "Are these breeds generally good for first-time dog owners?",
+      "answer": "Yes, many breeds on this list, such as the Cavalier King Charles Spaniel, Miniature Schnauzer, and Cardigan Welsh Corgi, are known for their friendly temperaments and moderate training needs. They tend to be manageable for first-time owners committed to consistent care and socialization."
+    },
+    {
+      "question": "Which of these breeds require the least grooming and maintenance?",
+      "answer": "Italian Greyhounds and Whippets have short, smooth coats that require minimal grooming, just occasional brushing. Pugs also have short hair but may need regular cleaning of facial folds. Breeds like the Bichon Frise and Havanese require more frequent grooming to prevent matting."
+    },
+    {
+      "question": "How much daily exercise do these dog breeds typically need?",
+      "answer": "Exercise needs vary: Italian Greyhounds and Whippets enjoy short bursts of high energy but are generally low-key indoors. Miniature Schnauzers and Cardigan Welsh Corgis need moderate daily walks and playtime. French Bulldogs and Pugs require less intense exercise but still benefit from daily activity to stay healthy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

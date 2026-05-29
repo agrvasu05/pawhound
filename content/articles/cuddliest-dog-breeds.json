@@ -85,5 +85,24 @@
     "The Most Affectionate Dogs You'll Meet",
     "Velcro Dogs That Love To Be Near You",
     "Who Needs Blankets When You Have These Dogs?"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are all cuddly dog breeds good for families with kids?",
+      "answer": "Many cuddly breeds like Golden Retrievers and Labradors are excellent with kids due to their gentle and patient nature. However, some breeds like Staffordshire Bull Terriers need proper socialization and supervision around children. Always consider the dog's temperament and your family's lifestyle before choosing a breed."
+    },
+    {
+      "question": "Which cuddly dog breeds require the least grooming?",
+      "answer": "Among these breeds, Pugs and Labradors have shorter coats that need less frequent grooming compared to fluffy breeds like Bichon Frises or Shih Tzus. Regular brushing and occasional baths will keep their coats healthy without too much effort."
+    },
+    {
+      "question": "Do cuddly dog breeds tend to have higher energy levels?",
+      "answer": "It varies by breed. For example, Labrador Retrievers and Bernese Mountain Dogs are playful and energetic, needing daily exercise. On the other hand, breeds like the Shih Tzu and Cavalier King Charles Spaniel are more laid-back and enjoy cozying up indoors. Match the breed's energy to your activity level."
+    },
+    {
+      "question": "Can cuddly dog breeds adapt well to apartment living?",
+      "answer": "Yes, several cuddly breeds such as the Pug, Bichon Frise, and Havanese do well in apartments due to their smaller size and moderate energy levels. However, bigger breeds like Bernese Mountain Dogs or Labradors need more space and regular outdoor exercise to stay happy and healthy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

@@ -120,5 +120,24 @@
     "Dogs That Don’t Bark Much Indoors",
     "Charming Companions for Small Spaces",
     "Easy-Care Dogs for Apartment Residents"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What qualities make these dog breeds good for apartment living?",
+      "answer": "These breeds are generally small to medium-sized, have moderate energy levels, and adapt well to indoor spaces. They tend to be quieter, require less intense exercise, and are often more sociable and less prone to separation anxiety, making them ideal companions in apartments."
+    },
+    {
+      "question": "How much daily exercise do these apartment-friendly dog breeds need?",
+      "answer": "Most breeds on this list need about 20 to 40 minutes of daily exercise. This can include walks, playtime, or mental stimulation. Regular activity helps prevent boredom and behavior issues, even in smaller living spaces."
+    },
+    {
+      "question": "Are these breeds suitable for first-time dog owners living in apartments?",
+      "answer": "Yes, many breeds like the Maltese, Cavalier King Charles Spaniel, and Miniature Schnauzer are known for their friendly nature and ease of training, making them great for first-time owners. However, always consider your lifestyle and willingness to meet their exercise and grooming needs."
+    },
+    {
+      "question": "Do these breeds require a lot of grooming in an apartment setting?",
+      "answer": "Grooming needs vary. Breeds like the Shih Tzu and Bichon Frise require regular brushing and professional grooming, while others like the Italian Greyhound or French Bulldog have minimal grooming needs. Consider your time and budget for grooming when choosing a breed."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

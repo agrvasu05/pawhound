@@ -50,5 +50,24 @@
     "Dogs That Match an Introvert’s Lifestyle",
     "Serene Dogs with Low Noise Levels",
     "Top Dogs for Peace and Quiet"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these dog breeds low-energy and good for small living spaces?",
+      "answer": "Yes, breeds like the Greyhound, Whippet, and French Bulldog are known for their calm indoor demeanor and adapt well to apartments or smaller homes. While they enjoy daily walks, they generally prefer lounging quietly indoors, making them great companions for introverts in cozy settings."
+    },
+    {
+      "question": "Which of these breeds are easiest to groom and maintain?",
+      "answer": "The Xoloitzcuintli and Greyhound have short coats that require minimal grooming—usually just occasional brushing and bathing. Japanese Chins and French Bulldogs also have manageable grooming needs, but Japanese Chins may need a bit more brushing to avoid tangles. Overall, these breeds are relatively low-maintenance in terms of grooming."
+    },
+    {
+      "question": "Do these breeds tend to be quiet and not bark excessively?",
+      "answer": "Yes, all five breeds are known for being relatively quiet compared to others. For example, Greyhounds and Whippets are typically calm and seldom bark. French Bulldogs and Japanese Chins may vocalize but are generally not excessive barkers. Xoloitzcuintlis are also quiet, making any of these breeds suitable for introverts seeking peaceful companions."
+    },
+    {
+      "question": "Are these dog breeds generally good with being left alone for a few hours?",
+      "answer": "Most of these breeds, like the Greyhound, Whippet, and Xoloitzcuintli, handle alone time well if properly trained and exercised beforehand. French Bulldogs can be a bit more prone to separation anxiety, so gradual training helps. Japanese Chins may prefer companionship but can adapt. Overall, these breeds suit introverts who are home part-time but need a dog comfortable with some solitude."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

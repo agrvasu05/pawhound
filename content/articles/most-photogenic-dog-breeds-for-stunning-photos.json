@@ -78,5 +78,24 @@
     "Eye-Catching Dogs for Your Next Photoshoot",
     "Breed Beauties That Shine in Every Photo",
     "Snap Stunning Shots of These Photogenic Dogs"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which dog breed from this list is easiest to groom for photo-ready looks?",
+      "answer": "The Bichon Frise and Miniature Poodle are relatively easier to groom regularly. Their curly coats require consistent brushing but less shedding, helping maintain a neat, fluffy appearance perfect for pictures with manageable effort."
+    },
+    {
+      "question": "Are these photogenic breeds good family pets as well?",
+      "answer": "Yes, most breeds on this list like the Cavalier King Charles Spaniel and Shetland Sheepdog are known for their friendly and gentle temperaments, making them great family companions. Always consider temperament alongside looks when choosing a dog for your home."
+    },
+    {
+      "question": "Can these breeds handle outdoor photo sessions in different weather?",
+      "answer": "Breeds like the Samoyed and Irish Setter have thicker coats suited for cooler climates and outdoor shoots. However, lighter-coated breeds like the Papillon may need protection from extreme weather. Always ensure your dog’s comfort and safety during photo sessions."
+    },
+    {
+      "question": "Which breeds require the most maintenance to keep their coat camera-ready?",
+      "answer": "Afghan Hounds and Standard Poodles typically require more grooming attention. Afghan Hounds have long, silky coats prone to tangles, while Standard Poodles need regular trims. Frequent brushing and professional grooming help keep their coats photogenic."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

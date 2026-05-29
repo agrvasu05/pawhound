@@ -106,5 +106,24 @@
     "Relaxed Dog Breeds for Peaceful Families",
     "Quiet Companions for Calm Households",
     "Mellow Dog Breeds That Fit Quiet Spaces"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are calm dog breeds good for families with children?",
+      "answer": "Many calm dog breeds like the Saint Bernard and Mastiff are gentle and patient, making them great companions for kids. However, their large size means supervision is important to prevent accidental knocks. Smaller calm breeds, like the Shih Tzu or Maltese, can also be good with children if socialized properly. Always consider your family's activity level and the dog's temperament when choosing."
+    },
+    {
+      "question": "Do calm dog breeds require less exercise than other breeds?",
+      "answer": "Generally, calm dog breeds tend to have moderate exercise needs compared to high-energy breeds. For example, Basset Hounds and Clumber Spaniels enjoy leisurely walks and some playtime but don’t require intense activity. Nonetheless, regular daily exercise is essential to keep any dog healthy and prevent boredom-related behaviors, even in calm breeds."
+    },
+    {
+      "question": "Which calm dog breeds are best suited for apartment living?",
+      "answer": "Smaller calm breeds like the Shih Tzu, Maltese, Lhasa Apso, and Japanese Chin adapt well to apartment life due to their size and moderate activity levels. They enjoy indoor companionship and only need moderate outdoor exercise. Larger calm breeds may be less ideal for small spaces due to their size and need for room to move comfortably."
+    },
+    {
+      "question": "Are these calm breeds prone to any specific health issues?",
+      "answer": "Some calm breeds have breed-specific health concerns. For instance, Bulldogs and Dogue de Bordeaux can have respiratory issues due to their short noses. Mastiffs and Saint Bernards may be prone to joint problems like hip dysplasia. Smaller breeds like the Shih Tzu and Lhasa Apso can have eye issues. It's important to research each breed’s health and work with responsible breeders to minimize risks."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

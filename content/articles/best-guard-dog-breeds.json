@@ -92,5 +92,24 @@
     "Strongest Dog Breeds for Security",
     "Dogs That Naturally Guard Their Territory",
     "Trusted Dog Breeds for Guarding Your Home"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which guard dog breed is best for families with children?",
+      "answer": "The German Shepherd and Greater Swiss Mountain Dog are excellent choices for families. They are protective yet typically gentle and good with kids when properly trained and socialized. Breeds like the Bullmastiff also have a calm demeanor around family members but are still protective."
+    },
+    {
+      "question": "How much training do these guard dog breeds usually require?",
+      "answer": "Most guard dog breeds like Rottweilers, Dobermans, and Cane Corsos need consistent, early training and socialization to ensure they are well-behaved protectors. Professional obedience training is often recommended to manage their strength and natural guarding instincts effectively."
+    },
+    {
+      "question": "Are any of these guard dog breeds suitable for apartment living?",
+      "answer": "Guard breeds like the Doberman Pinscher and Giant Schnauzer can adapt to apartment living if they get plenty of daily exercise and mental stimulation. However, larger breeds like the Tibetan Mastiff or Kangal Shepherd Dog usually need more space and are better suited to homes with yards."
+    },
+    {
+      "question": "What health concerns should I be aware of with these guard dog breeds?",
+      "answer": "Many guard breeds are prone to specific health issues; for example, Rottweilers and Dobermans may have hip dysplasia or heart problems, while Bullmastiffs can face breathing difficulties due to their short snouts. Research breed-specific health risks and consider regular vet check-ups to maintain your dog's well-being."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

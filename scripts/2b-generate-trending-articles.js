@@ -66,8 +66,21 @@ const ARTICLE_SCHEMA = {
         items: { type: 'string' },
         description: '10 Pinterest pin headlines, 6-12 words each',
       },
+      faqs: {
+        type: 'array',
+        description: '4 genuinely useful FAQs a reader of this list would ask',
+        items: {
+          type: 'object',
+          properties: {
+            question: { type: 'string', description: 'a natural question a reader would search for' },
+            answer: { type: 'string', description: '40-80 word helpful, specific answer in plain US English' },
+          },
+          required: ['question', 'answer'],
+          additionalProperties: false,
+        },
+      },
     },
-    required: ['intro', 'picks', 'pin_headlines'],
+    required: ['intro', 'picks', 'pin_headlines', 'faqs'],
     additionalProperties: false,
   },
 };
@@ -93,6 +106,7 @@ async function generateArticle(topic) {
   // Strip any leading count GPT baked into the title so we don't double up
   const cleanTitle = topic.title.replace(/^\s*\d+\+?\s+/, '');
   article.topic_title = `Top ${article.picks.length} ${cleanTitle}`;
+  article.updated_at = new Date().toISOString().slice(0, 10);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(path.join(OUT_DIR, `${topic.slug}.json`), JSON.stringify(article, null, 2));

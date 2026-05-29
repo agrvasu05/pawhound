@@ -120,5 +120,24 @@
     "Low-Maintenance Small Dogs That Stay Petite",
     "Small Dog Companions That Love to Cuddle",
     "Discover Your Perfect Tiny Dog Breed"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which small dog breed is best for apartment living with limited space?",
+      "answer": "Breeds like the Chihuahua, Pomeranian, and Toy Poodle are ideal for apartments due to their small size and adaptability. They require less space to move around and can get enough exercise indoors, making them great companions for compact living."
+    },
+    {
+      "question": "Are these tiny dog breeds generally good with children and families?",
+      "answer": "Many small breeds like the Papillon, Havanese, and Boston Terrier are known for being friendly and good with families. However, because of their small size, supervision is important to prevent accidental injury during play with young children."
+    },
+    {
+      "question": "Do small dog breeds require less exercise than larger breeds?",
+      "answer": "While small breeds like the Miniature Pinscher or Affenspinscher need less space to run, they still require daily exercise and mental stimulation. Short walks and indoor play sessions help keep them healthy and happy despite their size."
+    },
+    {
+      "question": "Which small dog breeds are considered low-shedding or hypoallergenic?",
+      "answer": "Breeds like the Toy Poodle and Maltese are known for minimal shedding and are often better for people with allergies. Their coats require regular grooming but produce less dander compared to other small breeds with heavier shedding."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

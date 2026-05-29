@@ -71,5 +71,24 @@
     "Dogs That Love Relaxing and Short Walks",
     "Busy Owner? Try These Low-Maintenance Dogs",
     "Discover Dogs That Fit Your On-the-Go Life"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Are these low-maintenance breeds suitable for apartment living?",
+      "answer": "Yes, many breeds on this list, like the Boston Terrier, French Bulldog, and Italian Greyhound, adapt well to apartment living due to their moderate exercise needs and smaller size. However, breeds like the Bullmastiff may require more space and may not be ideal for small apartments."
+    },
+    {
+      "question": "How much daily exercise do these low-maintenance breeds typically need?",
+      "answer": "Most of these breeds need moderate daily exercise—about 20 to 40 minutes of walks or playtime. For example, Greyhounds and Whippets enjoy short bursts of running but are generally couch-friendly. Consistent, moderate activity helps prevent boredom and keeps them healthy without overwhelming busy owners."
+    },
+    {
+      "question": "Do these breeds require special grooming or coat care?",
+      "answer": "Generally, these breeds have short coats that are easy to maintain with weekly brushing to reduce shedding and keep their fur healthy. French Bulldogs and Bullmastiffs may need occasional skin fold cleaning, but none require extensive grooming like frequent haircuts or baths."
+    },
+    {
+      "question": "Are these dog breeds generally good with children and other pets?",
+      "answer": "Most breeds listed, such as the Boston Terrier and French Bulldog, are known for their friendly and social nature, making them good companions for children and other pets. However, breeds like the Bullmastiff may be more protective and require proper socialization to comfortably interact with kids and other animals."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

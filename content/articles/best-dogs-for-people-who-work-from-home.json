@@ -57,5 +57,24 @@
     "Chill Dog Breeds for Work-at-Home Days",
     "Best Canine Companions for Remote Workers",
     "Dogs Who Match Your Work-From-Home Lifestyle"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "Which of these dog breeds requires the most exercise when working from home?",
+      "answer": "Among the breeds listed, the Whippet usually needs the most exercise due to its high energy and love for running. While they enjoy lounging indoors, daily brisk walks or play sessions in a secure yard are important to keep them healthy and happy when you're home all day."
+    },
+    {
+      "question": "Are any of these breeds particularly good for people with limited space, like apartments?",
+      "answer": "Yes, both the Boston Terrier and Miniature Schnauzer adapt well to apartment living. They are smaller, require moderate exercise, and tend to be content with indoor play and short walks, making them great companions for work-from-home owners in smaller spaces."
+    },
+    {
+      "question": "How do these breeds generally handle being around people during video calls or virtual meetings?",
+      "answer": "Breeds like the Cavalier King Charles Spaniel and Finnish Lapphund are typically calm and sociable, so they usually tolerate household noises well. However, some dogs might bark or seek attention during calls. Training them to understand quiet times and providing interactive toys can help minimize disruptions."
+    },
+    {
+      "question": "Do any of these breeds require special grooming routines that I should plan for while working from home?",
+      "answer": "Yes, the Standard and Miniature Schnauzers have wiry coats that need regular grooming, including brushing a few times a week and periodic professional trims to prevent matting. The Cavalier King Charles Spaniel also benefits from frequent brushing to manage shedding. Planning grooming into your schedule helps keep your dog comfortable and your home tidy."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }

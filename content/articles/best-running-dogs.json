@@ -120,5 +120,24 @@
     "Athletic Dog Breeds for Every Runner",
     "Top Breeds for Endurance and Speed",
     "Find Your Perfect Running Companion"
-  ]
+  ],
+  "faqs": [
+    {
+      "question": "What should I consider when choosing a running dog breed?",
+      "answer": "Focus on a dog’s energy level, endurance, size, and temperament. Breeds with high stamina and a love for exercise, like those listed, are ideal for running. Also consider your running pace and distance to match with a dog’s capabilities, plus their need for socialization and training to ensure a safe, enjoyable experience."
+    },
+    {
+      "question": "Are these dog breeds suitable for beginner runners?",
+      "answer": "Many of these breeds, such as the Labrador Retriever and Golden Retriever, are adaptable and can be great companions for beginner runners. Starting with shorter runs and gradually increasing distance helps build endurance for both you and your dog. Always monitor your dog’s response to exercise and consult your vet if you’re unsure."
+    },
+    {
+      "question": "How do I prepare my dog for running or jogging?",
+      "answer": "Begin with basic obedience training and ensure your dog is in good health by visiting the vet. Start with short, slow runs to build their stamina, and use appropriate gear like a well-fitted harness and leash. Pay attention to weather conditions, and bring water for your dog to prevent overheating or dehydration."
+    },
+    {
+      "question": "Which breeds in this list are best suited for long-distance running?",
+      "answer": "Breeds like the Azawakh, Saluki, and German Shorthaired Pointer excel in long-distance running due to their endurance and lean builds. Siberian Huskies and Vizslas also have great stamina for longer runs. These breeds thrive with consistent training and proper care to maintain their energy levels over extended distances."
+    }
+  ],
+  "updated_at": "2026-05-29"
 }
