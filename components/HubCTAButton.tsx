@@ -1,27 +1,15 @@
-"use client";
+import Link from "next/link";
 
 type Props = {
   href: string;
   children: React.ReactNode;
   className?: string;
-  directLink?: string;
 };
 
-export default function HubCTAButton({
-  href,
-  children,
-  className,
-  directLink,
-}: Props) {
-  const handleClick = () => {
-    if (directLink) {
-      window.open(directLink, "_blank");
-    }
-  };
-
+export default function HubCTAButton({ href, children, className }: Props) {
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <Link href={href} className={className}>
       {children}
-    </a>
+    </Link>
   );
 }

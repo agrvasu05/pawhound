@@ -1,75 +1,54 @@
 "use client";
 
-import { useState, useEffect, useId } from "react";
+import { useEffect, useRef } from "react";
 
 type AdSlotProps = {
-  type: "native" | "inpage-push";
+  /** Kept for backward-compatible call sites; AdSense uses one responsive unit. */
+  type?: "native" | "inpage-push";
   className?: string;
 };
 
-export default function AdSlot({ type, className = "" }: AdSlotProps) {
-  const [visible, setVisible] = useState(false);
-  const uid = useId().replace(/:/g, "");
+declare global {
+  interface Window {
+    adsbygoogle?: unknown[];
+  }
+}
 
-  const zoneId =
-    type === "native"
-      ? process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_ID
-      : process.env.NEXT_PUBLIC_ADSTERRA_INPAGE_PUSH_ID;
+/**
+ * Google AdSense responsive display unit. Renders nothing until both the
+ * publisher client and an ad-unit slot ID are configured via env, so the site
+ * is safe to ship before AdSense approval. Ads also won't fill on localhost or
+ * an unapproved domain — that's expected.
+ */
+export default function AdSlot({ className = "" }: AdSlotProps) {
+  const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const slot = process.env.NEXT_PUBLIC_ADSENSE_SLOT;
+  const insRef = useRef<HTMLModElement>(null);
 
   useEffect(() => {
-    const handler = (e: MessageEvent) => {
-      if (e.data?.adSlotId === uid && e.data?.filled) {
-        setVisible(true);
-      }
-    };
-    window.addEventListener("message", handler);
-    return () => window.removeEventListener("message", handler);
-  }, [uid]);
+    if (!client || !slot) return;
+    const ins = insRef.current;
+    // Guard against React Strict Mode double-invoke / hot reloads pushing twice.
+    if (!ins || ins.getAttribute("data-adsbygoogle-status")) return;
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch {
+      /* loader not ready yet — it will pick this slot up on next pass */
+    }
+  }, [client, slot]);
 
-  if (!zoneId) return null;
-
-  // Each iframe runs in its own JS context — fixes atOptions global conflict
-  // when multiple Adsterra ads are on the same page.
-  // After 2.5s the iframe checks if Adsterra injected content and tells the
-  // parent via postMessage — parent only shows the slot if an ad loaded,
-  // preventing empty 250px gaps when there is no fill.
-  const html = `<!DOCTYPE html>
-<html>
-<head>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: transparent; overflow: hidden; }
-</style>
-</head>
-<body>
-<script async="async" data-cfasync="false" src="https://pl${zoneId}.profitableratecpm.com/invoke.js"></script>
-<script>
-  setTimeout(function () {
-    var filled =
-      document.body.innerText.trim().length > 10 ||
-      document.body.querySelectorAll('img,iframe,ins,div[id]').length > 0;
-    window.parent.postMessage({ adSlotId: '${uid}', filled: filled }, '*');
-  }, 2500);
-</script>
-</body>
-</html>`;
+  if (!client || !slot) return null;
 
   return (
-    <div
-      className={`ad-slot ad-slot-${type} ${className}`}
-      style={{ display: visible ? "block" : "none" }}
-    >
-      <iframe
-        srcDoc={html}
-        style={{
-          width: "100%",
-          minHeight: "250px",
-          border: "none",
-          overflow: "hidden",
-          display: "block",
-        }}
-        scrolling="no"
-        title={`ad-${type}-${uid}`}
+    <div className={`ad-slot ${className}`}>
+      <ins
+        ref={insRef}
+        className="adsbygoogle"
+        style={{ display: "block", textAlign: "center" }}
+        data-ad-client={client}
+        data-ad-slot={slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
       />
     </div>
   );

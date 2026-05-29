@@ -47,11 +47,7 @@ export default async function Slide({
   const nextRank = currentRank - 1;
   const hasNext = nextRank >= 1;
   const isLastSlide = currentRank === 1;
-  // Fire on every 3rd slide (positions 3, 6, 9...) but not the last slide
-  const slidePosition = article.picks.length - currentRank + 1;
-  const useDirectLink = !isLastSlide && slidePosition % 3 === 0;
   const nextHref = hasNext ? `/${slug}/${nextRank}` : `/${slug}`;
-  const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-6">
@@ -119,11 +115,9 @@ export default async function Slide({
         )}
         <NextButton
           href={nextHref}
-          useDirectLink={useDirectLink}
           isLastSlide={isLastSlide}
           nextRank={nextRank}
           hasNext={hasNext}
-          directLink={directLink}
         />
         {!hasNext && (
           <Link

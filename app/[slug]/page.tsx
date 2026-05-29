@@ -42,7 +42,6 @@ export default async function ArticleHub({
   const totalBreeds = article.picks.length;
   const startRank = totalBreeds;
   const lastBreed = article.picks.find((p) => p.rank === totalBreeds);
-  const directLink = process.env.NEXT_PUBLIC_ADSTERRA_DIRECT_LINK;
   const itemNoun = article.item_noun ?? "breeds";
 
   return (
@@ -86,7 +85,6 @@ export default async function ArticleHub({
             </p>
             <HubCTAButton
               href={`/${article.topic_slug}/${startRank}`}
-              directLink={directLink}
               className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-full font-semibold text-base transition"
             >
               See all {totalBreeds} {itemNoun} ranked →
@@ -100,7 +98,6 @@ export default async function ArticleHub({
       <div className="mt-4 text-center">
         <HubCTAButton
           href={`/${article.topic_slug}/${startRank}`}
-          directLink={directLink}
           className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition"
         >
           Start from #{startRank} and count down to #1 →

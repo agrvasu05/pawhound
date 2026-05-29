@@ -6,7 +6,7 @@ export default function Privacy() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-10 prose prose-stone">
       <h1>Privacy Policy</h1>
-      <p className="text-stone-500 text-sm">Last updated: May 27, 2026</p>
+      <p className="text-stone-500 text-sm">Last updated: May 29, 2026</p>
 
       <p>
         Value Finds Daily (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates
@@ -56,15 +56,19 @@ export default function Privacy() {
 
       <h2>Advertising</h2>
       <p>
-        We use Adsterra to display advertisements on this site. Adsterra and its
-        advertising partners may use cookies and similar tracking technologies to
-        serve ads based on your browsing history and interests. This is known as
-        interest-based advertising.
+        We use Google AdSense to display advertisements on this site. Google, as
+        a third-party vendor, uses cookies (including the DoubleClick cookie) to
+        serve ads based on your prior visits to this and other websites. This is
+        known as interest-based advertising.
       </p>
       <p>
-        You can opt out of interest-based advertising by visiting:
+        Google&apos;s use of advertising cookies enables it and its partners to
+        serve ads to you based on your visit to our site and/or other sites on
+        the internet. You can learn more and manage your preferences here:
       </p>
       <ul>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google&apos;s Advertising &amp; Privacy policy</a></li>
+        <li><a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> (opt out of personalized ads)</li>
         <li><a href="https://optout.aboutads.info" target="_blank" rel="noopener noreferrer">aboutads.info</a></li>
         <li><a href="https://optout.networkadvertising.org" target="_blank" rel="noopener noreferrer">networkadvertising.org</a></li>
       </ul>

@@ -41,20 +41,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <head>
-        {process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_ID && (
+        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
           <Script
-            id="adsterra-social"
+            id="adsense-loader"
+            async
             strategy="afterInteractive"
-            src={`https://pl${process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_ID}.profitableratecpm.com/invoke.js`}
-            data-cfasync="false"
-          />
-        )}
-        {process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_ID && (
-          <Script
-            id="adsterra-pop"
-            strategy="afterInteractive"
-            src={`https://pl${process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_ID}.profitableratecpm.com/invoke.js`}
-            data-cfasync="false"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
           />
         )}
       </head>
