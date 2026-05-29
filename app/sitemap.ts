@@ -6,18 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
   const articles = getAllArticles();
 
-  const articleUrls = articles.flatMap((article) => [
-    {
-      url: `${baseUrl}/${article.topic_slug}`,
-      lastModified: new Date(),
-      priority: 0.8,
-    },
-    ...article.picks.map((pick) => ({
-      url: `${baseUrl}/${article.topic_slug}/${pick.rank}`,
-      lastModified: new Date(),
-      priority: 0.6,
-    })),
-  ]);
+  // Only the full hub article is indexable; slideshow slides are noindex
+  // alternates, so they are intentionally excluded from the sitemap.
+  const articleUrls = articles.map((article) => ({
+    url: `${baseUrl}/${article.topic_slug}`,
+    lastModified: new Date(),
+    priority: 0.8,
+  }));
 
   return [
     { url: baseUrl, lastModified: new Date(), priority: 1.0 },

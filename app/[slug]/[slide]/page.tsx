@@ -28,6 +28,10 @@ export async function generateMetadata({
   return {
     title: `#${pick.rank}: ${pick.breed} — ${article.topic_title}`,
     description: pick.description.slice(0, 160),
+    // The full article lives on the hub page; slideshow slides are an
+    // alternate view, so point crawlers there and keep them out of the index.
+    alternates: { canonical: `/${slug}` },
+    robots: { index: false, follow: true },
   };
 }
 
