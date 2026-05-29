@@ -1,30 +1,57 @@
 import Link from "next/link";
 
 /**
- * Value Finds Daily logo — a "spark/find" emblem (a curated-gem sparkle) plus a
- * serif wordmark. Niche-agnostic so it works across dogs, home, and future
- * categories. Uses currentColor where possible so it adapts to dark/light bars.
+ * Value Finds Daily logo — a magnifying glass discovering a gold "find"
+ * (a faceted spark). Ties to the brand ("Finds") and the search feature.
+ * Niche-agnostic so it works across dogs, home, and future categories.
  */
 
 export function LogoMark({ className = "" }: { className?: string }) {
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-xl shadow-sm ${className}`}
+      className={`relative inline-flex items-center justify-center overflow-hidden rounded-2xl shadow-md ring-1 ring-emerald-950/10 ${className}`}
       style={{
-        background: "linear-gradient(135deg, #0f5132 0%, #1f7a4d 60%, #2e9d63 100%)",
+        background:
+          "radial-gradient(125% 125% at 26% 20%, #34a76a 0%, #1f7a4d 46%, #0d4a2d 100%)",
       }}
     >
-      <svg viewBox="0 0 24 24" className="h-[60%] w-[60%]" aria-hidden="true">
-        {/* main sparkle */}
-        <path
-          d="M12 1.5c.3 4.3 3.9 7.9 8.2 8.2v.6c-4.3.3-7.9 3.9-8.2 8.2h-.6c-.3-4.3-3.9-7.9-8.2-8.2v-.6c4.3-.3 7.9-3.9 8.2-8.2h.6Z"
-          fill="#ffffff"
+      {/* top-left sheen for depth */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(58% 48% at 28% 22%, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0) 68%)",
+        }}
+      />
+      <svg
+        viewBox="0 0 48 48"
+        className="relative h-[64%] w-[64%]"
+        aria-hidden="true"
+      >
+        {/* lens */}
+        <circle
+          cx="20"
+          cy="20"
+          r="12.5"
+          fill="rgba(255,255,255,0.10)"
+          stroke="#ffffff"
+          strokeWidth="3.8"
         />
-        {/* small accent sparkle */}
+        {/* handle */}
         <path
-          d="M18.6 14.4c.12 1.7 1.5 3.1 3.2 3.2v.3c-1.7.12-3.1 1.5-3.2 3.2h-.3c-.12-1.7-1.5-3.1-3.2-3.2v-.3c1.7-.12 3.1-1.5 3.2-3.2h.3Z"
+          d="M28.9 28.9 L39 39"
+          stroke="#ffffff"
+          strokeWidth="6"
+          strokeLinecap="round"
+        />
+        {/* gold "find" spark inside the lens */}
+        <path
+          d="M20 12.4c.55 4.3 2.9 6.65 7.2 7.2-4.3.55-6.65 2.9-7.2 7.2-.55-4.3-2.9-6.65-7.2-7.2 4.3-.55 6.65-2.9 7.2-7.2Z"
           fill="#ffd166"
         />
+        {/* tiny secondary glint */}
+        <circle cx="14.6" cy="14.6" r="1.5" fill="#ffffff" opacity="0.85" />
       </svg>
     </span>
   );
@@ -39,7 +66,7 @@ export default function Logo({
 }) {
   return (
     <Link href="/" className={`group inline-flex items-center gap-2.5 ${className}`}>
-      <LogoMark className="h-9 w-9" />
+      <LogoMark className="h-9 w-9 transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105" />
       <span className="flex flex-col leading-none">
         <span
           className={`text-[1.35rem] font-bold tracking-tight ${
