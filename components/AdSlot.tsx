@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { ADSENSE_CLIENT, ADSENSE_SLOT } from "@/lib/ads";
 
 type AdSlotProps = {
   /** Kept for backward-compatible call sites; AdSense uses one responsive unit. */
@@ -21,8 +22,8 @@ declare global {
  * an unapproved domain — that's expected.
  */
 export default function AdSlot({ className = "" }: AdSlotProps) {
-  const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
-  const slot = process.env.NEXT_PUBLIC_ADSENSE_SLOT;
+  const client = ADSENSE_CLIENT;
+  const slot = ADSENSE_SLOT;
   const insRef = useRef<HTMLModElement>(null);
 
   useEffect(() => {
