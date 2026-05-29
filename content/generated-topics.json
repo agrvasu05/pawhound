@@ -601,5 +601,224 @@
       "rare": null,
       "lifespan_min_gte": 7
     }
+  },
+  {
+    "slug": "best-dog-breeds-for-introverts-who-love-quiet-companions",
+    "title": "Best Dog Breeds for Introverts Who Crave Quiet Companions",
+    "desc": "Discover dog breeds that are low-barking, calm, and independent—perfect for introverts who want a peaceful, loving companion without too much noise or attention-seeking behavior.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low"
+      ],
+      "not_barking": [
+        "medium",
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "independent",
+        "quiet",
+        "affectionate"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-with-anxiety-calming-companions",
+    "title": "Best Dog Breeds for People With Anxiety: Calming Companions",
+    "desc": "Find dog breeds known for their gentle, affectionate, and calming natures, ideal for anyone seeking emotional support and stress relief through a furry friend.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "affectionate",
+        "calm",
+        "gentle",
+        "loyal"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "most-photogenic-dog-breeds-that-steal-the-spotlight",
+    "title": "Most Photogenic Dog Breeds That Instantly Steal the Spotlight",
+    "desc": "Showcase breeds with striking looks and unique coat types that naturally make for stunning photos, perfect for pet owners who love snapping and sharing pictures.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "curious",
+        "confident"
+      ],
+      "coat_includes": [
+        "curly",
+        "silky",
+        "feathered",
+        "wavy",
+        "powderpuff",
+        "corded",
+        "long",
+        "medium-length"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-eco-conscious-owners-natural-lovers",
+    "title": "Best Dog Breeds for Eco-Conscious Owners and Nature Lovers",
+    "desc": "Discover breeds that enjoy the outdoors, have water-resistant or durable coats, and healthy temperaments suited for hiking, camping, and green living.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [
+        "low"
+      ],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [
+        "medium",
+        "high"
+      ],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "active",
+        "curious",
+        "intelligent",
+        "friendly"
+      ],
+      "coat_includes": [
+        "dense",
+        "double",
+        "water-resistant",
+        "rough"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": true,
+      "rare": false,
+      "lifespan_min_gte": 9
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-who-work-long-shifts",
+    "title": "Best Dog Breeds for People Who Work Long Shifts",
+    "desc": "These breeds cope well with alone time, have lower energy, and don’t demand constant attention—ideal for owners with demanding jobs or long hours away from home.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "independent",
+        "quiet",
+        "affectionate"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
   }
 ]
