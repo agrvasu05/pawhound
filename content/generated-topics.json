@@ -502,5 +502,185 @@
       "rare": null,
       "lifespan_min_gte": 8
     }
+  },
+  {
+    "slug": "dog-breeds-with-surprisingly-playful-personalities",
+    "title": "Dog Breeds With Surprisingly Playful Personalities (Not Just Puppies!)",
+    "desc": "Explore breeds known for calmness or reserved looks but that actually love to play and bring joyful energy to homes. Perfect for owners who want fun without chaos.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "gentle",
+        "affectionate",
+        "friendly"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-digital-nomads",
+    "title": "Top Dog Breeds for Digital Nomads: Adaptable & Travel-Friendly",
+    "desc": "These adaptable dog breeds are ideal for owners who travel frequently or live a digital nomad lifestyle. They handle change well and tend to be easy to care for on the go.",
+    "filter": {
+      "size": [
+        "small",
+        "medium"
+      ],
+      "not_size": [
+        "giant",
+        "large"
+      ],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "friendly",
+        "intelligent",
+        "affectionate",
+        "curious"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": false,
+      "lifespan_min_gte": 9
+    }
+  },
+  {
+    "slug": "dog-breeds-with-unique-coats-youve-never-seen",
+    "title": "Dog Breeds With Unique Coats You’ve Never Seen Before",
+    "desc": "Highlighting breeds with distinctive coat types like corded, powderpuff, or wire, these dogs stand out in any crowd and are fascinating to dog lovers and photographers alike.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [],
+      "coat_includes": [
+        "corded",
+        "powderpuff",
+        "wire",
+        "broken",
+        "curly"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-nature-lovers-with-hiking-goals",
+    "title": "Best Dog Breeds for Nature Lovers Who Love Hiking Adventures",
+    "desc": "These energetic, outdoorsy dog breeds have high stamina and love exploring trails alongside their active owners. Perfect hiking companions for nature enthusiasts.",
+    "filter": {
+      "size": [
+        "medium",
+        "large",
+        "giant"
+      ],
+      "not_size": [
+        "toy",
+        "small"
+      ],
+      "energy": [
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [
+        "medium",
+        "high"
+      ],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [
+        "medium",
+        "high"
+      ],
+      "hot_tolerance": [
+        "low",
+        "medium"
+      ],
+      "temperament_includes": [
+        "energetic",
+        "friendly",
+        "playful",
+        "intelligent",
+        "curious"
+      ],
+      "coat_includes": [
+        "dense",
+        "double",
+        "water-resistant"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": true,
+      "rare": false,
+      "lifespan_min_gte": 8
+    }
   }
 ]
