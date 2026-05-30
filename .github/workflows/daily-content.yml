@@ -64,12 +64,15 @@ jobs:
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/ public/
-          git diff --cached --quiet || git commit -m "Daily content [skip ci]"
+          git diff --cached --quiet || git commit -m "Daily content"
           git push
 
-      # Wait 3 minutes for Netlify to finish deploying the new articles
+      # Wait for Netlify to finish deploying the new articles before Pinterest
+      # tries to fetch their pin images. A full Next.js build of all pages takes
+      # a few minutes; any pins whose images aren't live yet simply retry on the
+      # next daily run (failed pins are not recorded as posted).
       - name: Wait for Netlify deploy
-        run: sleep 180
+        run: sleep 300
 
       - name: Post pins to Pinterest
         id: pinterest
@@ -91,5 +94,5 @@ jobs:
       - name: Commit pin tracker
         run: |
           git add content/posted-pins.json content/pinterest-boards.json
-          git diff --cached --quiet || git commit -m "Update pin tracker [skip ci]"
+          git diff --cached --quiet || git commit -m "Update pin tracker"
           git push
