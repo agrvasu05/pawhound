@@ -682,5 +682,91 @@
       "rare": false,
       "lifespan_min_gte": 8
     }
+  },
+  {
+    "slug": "dog-breeds-that-make-the-best-anxiety-support-animals",
+    "title": "Dog Breeds That Make the Best Anxiety Support Animals",
+    "desc": "Explore breeds known for their calm and affectionate nature that make excellent emotional support dogs. These breeds soothe anxiety with their loyal and gentle personalities.",
+    "filter": {
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "affectionate",
+        "gentle",
+        "loyal"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "most-photogenic-dog-breeds-for-instagram-star-pups",
+    "title": "Most Photogenic Dog Breeds for Instagram Star Pups",
+    "desc": "These dog breeds naturally pose for the camera with unique looks and expressive personalities. Perfect for owners looking to create viral pet content.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "playful",
+        "curious",
+        "confident",
+        "friendly"
+      ],
+      "coat_includes": [
+        "curly",
+        "wavy",
+        "silky",
+        "long",
+        "feathered",
+        "soft"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
   }
 ]
