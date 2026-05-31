@@ -768,5 +768,125 @@
       "rare": null,
       "lifespan_min_gte": 7
     }
+  },
+  {
+    "slug": "best-dog-breeds-for-minimalist-homes",
+    "title": "Best Dog Breeds for Minimalist Homes and Simple Living",
+    "desc": "Discover dog breeds that require minimal grooming and moderate energy, perfect for clean, clutter-free minimalist homes. These pups keep things simple without sacrificing companionship.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "affectionate",
+        "friendly"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 10
+    }
+  },
+  {
+    "slug": "best-low-energy-dog-breeds-for-calm-living",
+    "title": "Best Low-Energy Dog Breeds for Calm and Peaceful Living",
+    "desc": "Find dog breeds that prefer lounging over constant play, perfect for owners who want a serene, relaxed canine companion. These dogs thrive in calm environments and minimal daily exercise.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "friendly",
+        "gentle"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 9
+    }
+  },
+  {
+    "slug": "best-hypoallergenic-dog-breeds-for-allergies",
+    "title": "Best Hypoallergenic Dog Breeds That Allergy Sufferers Will Love",
+    "desc": "Dog breeds with low shedding and specific coat types that minimize allergens, ideal for people with allergies. Stay sneeze-free while enjoying a loving furry friend.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [
+        "low"
+      ],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "affectionate",
+        "intelligent",
+        "friendly"
+      ],
+      "coat_includes": [
+        "curly",
+        "wavy",
+        "silky",
+        "powderpuff",
+        "corded",
+        "wire"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 10
+    }
   }
 ]
