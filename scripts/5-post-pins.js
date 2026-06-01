@@ -113,10 +113,18 @@ async function getOrCreateBoard(article, boardsTracker) {
     ? article.topic_title.slice(0, 47) + '...'
     : article.topic_title;
 
+  // Keyword-rich board description (boards are themselves searchable on Pinterest).
+  const phrase = corePhrase(article.topic_title);
+  const noun = article.item_noun || 'breeds';
+  const boardDesc = (
+    `${phrase}: our hand-ranked guide to the best ${noun}. ` +
+    firstSentence(article.intro)
+  ).slice(0, 500);
+
   console.log(`  Creating board: "${boardName}"...`);
   const res = await api('POST', '/v5/boards', {
     name: boardName,
-    description: article.intro.slice(0, 500),
+    description: boardDesc,
     privacy: 'PUBLIC',
   });
 
@@ -202,48 +210,88 @@ function buildQueue(tracker) {
   ];
 }
 
+// Strip the "Top N " prefix to recover the core, searchable phrase people type
+// into Pinterest, e.g. "Top 8 Best Apartment Dogs" -> "Best Apartment Dogs".
+function corePhrase(title) {
+  return title.replace(/^top\s+\d+\s+/i, "").trim();
+}
+
+// First complete sentence of a block of text (keeps descriptions specific).
+function firstSentence(text) {
+  const m = text.match(/^[\s\S]*?[.!?](?:\s|$)/);
+  return (m ? m[0] : text).trim();
+}
+
+// Pinterest descriptions: ranked on KEYWORDS in natural prose (not hashtags),
+// and clicks come from an explicit call-to-action. So we front-load the exact
+// search phrase + a benefit, add one specific real sentence, then a clear CTA,
+// and finish with a few targeted hashtags.
 function buildDescription(article) {
-  const desc = article.intro.slice(0, 400);
+  const phrase = corePhrase(article.topic_title); // e.g. "Best Apartment Dogs"
+  const count = article.picks.length;
+  const noun = article.item_noun || "breeds";
+  const isDogs = (article.niche || "dogs") === "dogs";
+
+  // Keyword-rich opener (the first ~60 chars show in feeds, so lead with it).
+  const hook = `${phrase} — we ranked the top ${count} ${noun} to help you choose with confidence.`;
+
+  // One concrete sentence from the article for substance + extra keywords.
+  const detail = firstSentence(article.intro);
+
+  // Explicit CTA — this is the lever that turns impressions into outbound clicks.
+  const cta = isDogs
+    ? `👉 Tap to see the full ranked list with photos and find your perfect match.`
+    : `👉 Tap to see the full list with photos, details, and our top pick.`;
+
   const tags = getHashtags(article.topic_slug, article.topic_title, article.niche);
-  return `${desc}\n\n${tags}`;
+
+  // Cap at Pinterest's 500-char limit, leaving room for the hashtag line.
+  let body = `${hook} ${detail} ${cta}`;
+  const maxBody = 495 - (tags.length + 2);
+  if (body.length > maxBody) body = body.slice(0, maxBody - 1).trimEnd() + "…";
+  return `${body}\n\n${tags}`;
 }
 
 function getHashtags(slug, title, niche) {
   const t = title.toLowerCase();
 
-  // Non-dog niches: use niche-appropriate base tags + a few title-derived ones.
+  // Specific, title-derived tags rank better than generic ones, so they go
+  // FIRST and we keep just ~5 total (Pinterest deprioritizes hashtag spam).
+  const specific = [];
+  const dedupe = (generic) =>
+    [...new Set([...specific, ...generic])].slice(0, 5).join(' ');
+
+  // Non-dog niches: use niche-appropriate tags + a few title-derived ones.
   if (niche && niche !== 'dogs') {
     if (niche === 'home') {
-      const base = ['#homedecor', '#homeideas', '#interiordesign', '#cozyhome', '#homeinspo'];
-      if (t.includes('small') || t.includes('apartment')) base.push('#smallspaces', '#apartmenttherapy');
-      if (t.includes('organi')) base.push('#homeorganization', '#organizationideas');
-      if (t.includes('budget') || t.includes('cheap') || t.includes('diy')) base.push('#budgetdecor', '#diyhome');
-      if (t.includes('bedroom')) base.push('#bedroomdecor', '#bedroomideas');
-      if (t.includes('kitchen')) base.push('#kitchendecor', '#kitchenideas');
-      if (t.includes('living')) base.push('#livingroomdecor');
-      if (t.includes('cozy') || t.includes('cosy')) base.push('#cozyvibes');
-      if (t.includes('rental') || t.includes('renter')) base.push('#rentaldecor');
-      return base.slice(0, 8).join(' ');
+      if (t.includes('small') || t.includes('apartment')) specific.push('#smallspaces', '#apartmenttherapy');
+      if (t.includes('organi')) specific.push('#homeorganization', '#organizationideas');
+      if (t.includes('budget') || t.includes('cheap') || t.includes('diy')) specific.push('#budgetdecor', '#diyhome');
+      if (t.includes('bedroom')) specific.push('#bedroomdecor', '#bedroomideas');
+      if (t.includes('kitchen')) specific.push('#kitchendecor', '#kitchenideas');
+      if (t.includes('living')) specific.push('#livingroomdecor');
+      if (t.includes('cozy') || t.includes('cosy')) specific.push('#cozyhome', '#cozyvibes');
+      if (t.includes('rental') || t.includes('renter')) specific.push('#rentaldecor');
+      return dedupe(['#homedecor', '#homeideas', '#interiordesign', '#homeinspo']);
     }
     // Generic fallback for any future niche
     return ['#pinterestideas', '#inspiration', '#trending'].join(' ');
   }
 
-  const base = ['#dogs', '#dogbreeds', '#doglovers', '#puppylove', '#dogsofpinterest'];
-  if (t.includes('apartment') || t.includes('small')) base.push('#apartmentdogs', '#smalldogs');
-  if (t.includes('active') || t.includes('running')) base.push('#activedogs', '#runningwithdogs');
-  if (t.includes('fluffy')) base.push('#fluffydogs', '#fluffypuppy');
-  if (t.includes('family')) base.push('#familydogs', '#dogsandkids');
-  if (t.includes('smart') || t.includes('intellig')) base.push('#smartdogs');
-  if (t.includes('loyal')) base.push('#loyaldogs');
-  if (t.includes('support') || t.includes('therapy')) base.push('#emotionalsupportdog');
-  if (t.includes('senior')) base.push('#dogsforseniors');
-  if (t.includes('guard') || t.includes('watch')) base.push('#guarddogs');
-  if (t.includes('rare')) base.push('#raredogs', '#uniquebreeds');
-  if (t.includes('shed') || t.includes('hypo')) base.push('#hypoallergenicdogs');
-  if (t.includes('cold') || t.includes('weather')) base.push('#coldweatherdogs');
-  if (t.includes('calm') || t.includes('quiet')) base.push('#calmdog', '#quietdogs');
-  return base.slice(0, 8).join(' ');
+  if (t.includes('apartment') || t.includes('small')) specific.push('#apartmentdogs', '#smalldogs');
+  if (t.includes('active') || t.includes('running')) specific.push('#activedogs', '#runningwithdogs');
+  if (t.includes('fluffy')) specific.push('#fluffydogs', '#fluffypuppy');
+  if (t.includes('family')) specific.push('#familydogs', '#dogsandkids');
+  if (t.includes('smart') || t.includes('intellig')) specific.push('#smartdogs');
+  if (t.includes('loyal')) specific.push('#loyaldogs');
+  if (t.includes('support') || t.includes('therapy')) specific.push('#emotionalsupportdog');
+  if (t.includes('senior')) specific.push('#dogsforseniors');
+  if (t.includes('guard') || t.includes('watch')) specific.push('#guarddogs');
+  if (t.includes('rare')) specific.push('#raredogs', '#uniquebreeds');
+  if (t.includes('shed') || t.includes('hypo')) specific.push('#hypoallergenicdogs');
+  if (t.includes('cold') || t.includes('weather')) specific.push('#coldweatherdogs');
+  if (t.includes('calm') || t.includes('quiet')) specific.push('#calmdog', '#quietdogs');
+  return dedupe(['#dogbreeds', '#dogsofpinterest', '#doglovers']);
 }
 
 // ── Post one pin ──────────────────────────────────────────────────────────────
