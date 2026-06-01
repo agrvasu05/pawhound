@@ -888,5 +888,156 @@
       "rare": null,
       "lifespan_min_gte": 10
     }
+  },
+  {
+    "slug": "dog-breeds-that-look-intimidating-but-are-big-softies",
+    "title": "Dog Breeds That Look Intimidating But Are Big Softies",
+    "desc": "Meet large or giant breeds with bold, fierce looks who actually have gentle, affectionate personalities. Great for families and first-time owners seeking lovable giants.",
+    "filter": {
+      "size": [
+        "large",
+        "giant"
+      ],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "affectionate",
+        "gentle",
+        "calm"
+      ],
+      "coat_includes": [],
+      "good_with_kids": true,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": false,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "dog-breeds-that-change-color-as-they-age",
+    "title": "Dog Breeds That Change Color As They Age (Surprising Transformations!)",
+    "desc": "Discover fascinating dog breeds whose coats evolve through their lifetime, showcasing beautiful and surprising color changes. Perfect for dog lovers who appreciate unique and dynamic looks.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [],
+      "coat_includes": [
+        "curly",
+        "wavy",
+        "double",
+        "dense",
+        "silky"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-with-busy-social-lives",
+    "title": "Best Dog Breeds for People with Busy Social Lives",
+    "desc": "These adaptable, easy-to-train breeds can handle alone time well and adjust to your busy social schedule, making them ideal pets for those often out and about.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "independent",
+        "intelligent",
+        "friendly"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "dog-breeds-that-make-the-best-road-trip-buddies",
+    "title": "Dog Breeds That Make the Best Road Trip Buddies",
+    "desc": "Explore dog breeds with friendly temperaments, moderate energy, and adaptability that thrive on travel and make your adventures more enjoyable and stress-free.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "friendly",
+        "curious",
+        "affectionate",
+        "playful"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": true,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
   }
 ]
