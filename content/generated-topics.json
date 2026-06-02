@@ -1039,5 +1039,125 @@
       "rare": null,
       "lifespan_min_gte": 7
     }
+  },
+  {
+    "slug": "best-dog-breeds-for-minimalist-and-modern-living",
+    "title": "Best Dog Breeds for Minimalist and Modern Living Spaces",
+    "desc": "Explore compact, low-maintenance dog breeds that fit perfectly with minimalist lifestyles. These breeds require minimal grooming and have calm temperaments ideal for clutter-free homes.",
+    "filter": {
+      "size": [
+        "toy",
+        "small",
+        "medium"
+      ],
+      "not_size": [
+        "large",
+        "giant"
+      ],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "independent",
+        "intelligent"
+      ],
+      "coat_includes": [
+        "short",
+        "smooth",
+        "silky"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": null
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-with-anxiety-and-stress",
+    "title": "Best Dog Breeds for People With Anxiety and Stress Relief",
+    "desc": "Calming and affectionate dog breeds that help reduce anxiety and provide emotional support. These companions are gentle, loyal, and tuned to soothing their humans.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "affectionate",
+        "gentle",
+        "loyal"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": null
+    }
+  },
+  {
+    "slug": "most-intelligent-dog-breeds-with-unique-personalities",
+    "title": "Most Intelligent Dog Breeds With Unique Personalities You’ll Love",
+    "desc": "Explore highly smart dogs that stand out for their distinct and striking personalities. Great for owners who want a bright, trainable, and one-of-a-kind furry friend.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "intelligent",
+        "curious",
+        "independent",
+        "confident"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": null
+    }
   }
 ]
