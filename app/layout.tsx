@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { ADSENSE_CLIENT } from "@/lib/ads";
+import { GA_ID } from "@/lib/analytics";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -47,6 +48,19 @@ export default function RootLayout({
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
             crossOrigin="anonymous"
           />
+        )}
+        {GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+              }}
+            />
+          </>
         )}
       </head>
       <body className="flex min-h-screen flex-col bg-white text-stone-900 antialiased">
