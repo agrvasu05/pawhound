@@ -113,9 +113,10 @@ function gumroadCLI(args) {
 }
 function gumroadCreateAndPublish({ title, description, description_html, price, currency = 'usd', tags = [], slug, file, fileName, cover }) {
   const desc = description_html || description || '';
+  // No --custom-permalink: let Gumroad auto-assign a unique one (repeated themes
+  // would otherwise collide and fail). We use the returned short_url regardless.
   const args = ['products', 'create', '--name', title, '--type', 'digital',
     '--price', String(price), '--currency', currency, '--description', desc,
-    '--custom-permalink', slug.replace(/[^a-z0-9]/g, '').slice(0, 30),
     '--file', file, '--file-name', fileName || `${title}.zip`, '--json'];
   if (cover) args.push('--cover-image', cover);
   for (const t of tags) args.push('--tag', t);

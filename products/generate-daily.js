@@ -60,7 +60,9 @@ function loadTracker() { try { return JSON.parse(fs.readFileSync(TRACKER, 'utf-8
       made++;
       await new Promise((r) => setTimeout(r, 4000)); // be gentle on Pinterest
     } catch (e) {
-      console.error(`  ✗ ${type} failed:`, e.message);
+      // For CLI (execFileSync) errors, the real reason is in stdout/stderr.
+      const detail = (e.stdout && e.stdout.toString()) || (e.stderr && e.stderr.toString()) || '';
+      console.error(`  ✗ ${type} failed:`, e.message, detail ? `\n     ${detail.slice(0, 400)}` : '');
     }
   }
   console.log(`\nDone. ${made}/${selected.length} products.`);
