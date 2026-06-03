@@ -103,28 +103,37 @@ async function refreshToken() {
   console.log('✓ Token refreshed.');
 }
 
-// ── Auto-create board for an article ─────────────────────────────────────────
+// One board per NICHE (not per article). All dog pins go to the dog board and
+// all home pins to the home board — fuller, keyword-rich boards rank far better
+// on Pinterest than hundreds of thin single-pin boards.
+const NICHE_BOARDS = {
+  dogs: {
+    name: 'Dog Breeds, Guides & Tips',
+    description:
+      'Honest, hand-ranked dog breed guides for every kind of home — the best apartment dogs, family-friendly breeds, plus the calmest, smartest, and most affectionate pups. Tap any pin to see the full ranked list with photos and find your perfect match.',
+  },
+  home: {
+    name: 'Home Decor & Cozy Living Ideas',
+    description:
+      'Cozy home decor and small-space living ideas you can actually use — budget-friendly makeovers, bedroom and living room inspiration, smart storage, and warm, inviting styling. Tap any pin to see the full list with photos and details.',
+  },
+};
+
+// ── Get (or create once) the single board for an article's niche ─────────────
 async function getOrCreateBoard(article, boardsTracker) {
-  const slug = article.topic_slug;
-  if (boardsTracker[slug]) return boardsTracker[slug];
+  const nicheKey = article.niche === 'home' ? 'home' : article.niche || 'dogs';
+  const board = NICHE_BOARDS[nicheKey] || {
+    name: `${nicheKey[0].toUpperCase()}${nicheKey.slice(1)} Ideas & Guides`,
+    description: `Hand-picked ${nicheKey} ideas and guides. Tap any pin to see the full list with photos.`,
+  };
 
-  // Pinterest board names max 50 characters
-  const boardName = article.topic_title.length > 50
-    ? article.topic_title.slice(0, 47) + '...'
-    : article.topic_title;
+  // Reuse the niche's board if we've already created/found it.
+  if (boardsTracker[nicheKey]) return boardsTracker[nicheKey];
 
-  // Keyword-rich board description (boards are themselves searchable on Pinterest).
-  const phrase = corePhrase(article.topic_title);
-  const noun = article.item_noun || 'breeds';
-  const boardDesc = (
-    `${phrase}: our hand-ranked guide to the best ${noun}. ` +
-    firstSentence(article.intro)
-  ).slice(0, 500);
-
-  console.log(`  Creating board: "${boardName}"...`);
+  console.log(`  Ensuring board: "${board.name}"...`);
   const res = await api('POST', '/v5/boards', {
-    name: boardName,
-    description: boardDesc,
+    name: board.name,
+    description: board.description,
     privacy: 'PUBLIC',
   });
 
@@ -134,23 +143,24 @@ async function getOrCreateBoard(article, boardsTracker) {
   }
 
   if (res.status !== 201 && res.status !== 200) {
-    // Board might already exist with same name — try to find it
-    console.log(`  Board creation returned ${res.status}, checking existing boards...`);
-    const existing = await api('GET', '/v5/boards?page_size=50');
+    // Board likely already exists with this name — find and reuse it.
+    console.log(`  Board creation returned ${res.status}, looking up existing board...`);
+    const existing = await api('GET', '/v5/boards?page_size=250');
     const match = (existing.body.items || []).find(
-      (b) => b.name.toLowerCase() === article.topic_title.toLowerCase()
+      (b) => b.name.toLowerCase() === board.name.toLowerCase()
     );
     if (match) {
-      boardsTracker[slug] = match.id;
+      boardsTracker[nicheKey] = match.id;
+      console.log(`  ✓ Using existing board (${match.id})`);
       return match.id;
     }
-    console.error(`  ✗ Could not create or find board for "${article.topic_title}"`);
+    console.error(`  ✗ Could not create or find board "${board.name}"`);
     return null;
   }
 
   const boardId = res.body.id;
-  boardsTracker[slug] = boardId;
-  console.log(`  ✓ Board created (${boardId})`);
+  boardsTracker[nicheKey] = boardId;
+  console.log(`  ✓ Board ready (${boardId})`);
   await new Promise((r) => setTimeout(r, 1000)); // avoid rate limit
   return boardId;
 }
