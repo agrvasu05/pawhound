@@ -45,7 +45,9 @@ async function htmlToPng(html, outPath, { width = 1000, height = 1500 } = {}) {
   await withBrowser(async (b) => {
     const p = await b.newPage();
     await p.setViewport({ width, height, deviceScaleFactor: 1 });
-    await p.setContent(html, { waitUntil: 'networkidle0' });
+    // Inline data URLs (no network), so 'load' is reliable; 'networkidle0' can hang in CI.
+    await p.setContent(html, { waitUntil: 'load', timeout: 60000 });
+    await new Promise((r) => setTimeout(r, 300)); // let images decode/paint
     await p.screenshot({ path: outPath, type: 'png' });
   });
   return outPath;
@@ -54,7 +56,8 @@ async function htmlToPng(html, outPath, { width = 1000, height = 1500 } = {}) {
 async function htmlToPdf(html, outPath) {
   await withBrowser(async (b) => {
     const p = await b.newPage();
-    await p.setContent(html, { waitUntil: 'networkidle0' });
+    await p.setContent(html, { waitUntil: 'load', timeout: 60000 });
+    await new Promise((r) => setTimeout(r, 300));
     await p.pdf({ path: outPath, format: 'Letter', printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
   });
   return outPath;
@@ -108,9 +111,10 @@ function gumroadCLI(args) {
     encoding: 'utf-8', maxBuffer: 1024 * 1024 * 128,
   });
 }
-function gumroadCreateAndPublish({ title, description, price, currency = 'usd', tags = [], slug, file, fileName, cover }) {
+function gumroadCreateAndPublish({ title, description, description_html, price, currency = 'usd', tags = [], slug, file, fileName, cover }) {
+  const desc = description_html || description || '';
   const args = ['products', 'create', '--name', title, '--type', 'digital',
-    '--price', String(price), '--currency', currency, '--description', description,
+    '--price', String(price), '--currency', currency, '--description', desc,
     '--custom-permalink', slug.replace(/[^a-z0-9]/g, '').slice(0, 30),
     '--file', file, '--file-name', fileName || `${title}.zip`, '--json'];
   if (cover) args.push('--cover-image', cover);
