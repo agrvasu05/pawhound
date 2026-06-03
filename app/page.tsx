@@ -4,18 +4,17 @@ import { getAllArticles, getBreedImage, type Article } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
 import { LogoMark } from "@/components/Logo";
 
-// Display labels + ordering for each niche section.
+// Display labels + ordering for each niche section. New trending niches sit on
+// top; dog guides are pushed to the bottom.
 const NICHE_META: Record<string, { label: string; blurb: string; order: number }> = {
-  dogs: {
-    label: "Dog Breed Guides",
-    blurb: "Find the breed that actually fits your life.",
-    order: 0,
-  },
-  home: {
-    label: "Home & Cozy Living",
-    blurb: "Small-space wins, cozy corners, and budget makeovers.",
-    order: 1,
-  },
+  fashion: { label: "Fashion & Outfit Ideas", blurb: "Trending looks, capsule wardrobes, and styling guides.", order: 0 },
+  beauty: { label: "Beauty & Nails", blurb: "Trending nail, hair, and beauty looks.", order: 1 },
+  "home decor": { label: "Home Decor & Styling", blurb: "Wall art, room ideas, and decor inspiration.", order: 2 },
+  home: { label: "Home & Cozy Living", blurb: "Small-space wins, cozy corners, and budget makeovers.", order: 3 },
+  wellness: { label: "Wellness & Self-Care", blurb: "Routines, planners, and calm-living ideas.", order: 4 },
+  "gifts & occasions": { label: "Gifts & Occasions", blurb: "Graduation, parties, and giftable finds.", order: 5 },
+  "aesthetic art & printables": { label: "Printables & Aesthetic Art", blurb: "Instant-download art and printables.", order: 6 },
+  dogs: { label: "Dog Breed Guides", blurb: "Find the breed that actually fits your life.", order: 90 },
 };
 
 function nicheOf(a: Article) {
@@ -79,8 +78,9 @@ export default function Home() {
     if (!groups.has(n)) groups.set(n, []);
     groups.get(n)!.push(a);
   }
+  // Unknown niches default to 50 — above dog guides (90), below the named new niches.
   const sections = [...groups.entries()].sort(
-    ([a], [b]) => (NICHE_META[a]?.order ?? 99) - (NICHE_META[b]?.order ?? 99)
+    ([a], [b]) => (NICHE_META[a]?.order ?? 50) - (NICHE_META[b]?.order ?? 50)
   );
 
   return (
