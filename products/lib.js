@@ -242,12 +242,17 @@ async function enqueueProductVariants({ slug, type, title, price, board }) {
 async function postQueue({ maxPerRun = 5 } = {}) {
   const q = loadQueue();
   if (!q.length) { console.log('Pin queue empty.'); return; }
-  await pinRefresh();
   const today = new Date().toISOString().slice(0, 10);
+  // Hard DAILY cap (not just per-run): count what was already posted today across
+  // the whole queue, so manual re-triggers can never push the shop over its share.
+  const postedTodayTotal = q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).length;
+  const allowance = Math.max(0, maxPerRun - postedTodayTotal);
+  if (allowance === 0) { console.log(`Daily shop pin cap (${maxPerRun}) already reached — posting 0.`); return; }
+  await pinRefresh();
   const postedTodayBySlug = new Set(q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).map((e) => e.slug));
   let posted = 0;
   for (const e of q) {
-    if (posted >= maxPerRun) break;
+    if (posted >= allowance) break;
     if (e.status !== 'pending' || postedTodayBySlug.has(e.slug)) continue;
     const recPath = path.join(SHOP_DIR, `${e.slug}.json`);
     const assetDir = path.join(PUBLIC_SHOP, e.slug);
