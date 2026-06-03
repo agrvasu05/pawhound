@@ -11,7 +11,9 @@ const { execFileSync, execSync } = require('child_process');
 const OpenAI = require('openai');
 const puppeteer = require('puppeteer');
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+// Only instantiate when a key exists — post-queue.js requires this lib for
+// rendering/posting and must not crash when OPENAI_API_KEY isn't in its env.
+const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
 const BRAND = 'Value Finds Daily';
 
 // ── Image generation (cheap; swap IMAGE_PROVIDER to scale) ───────────────────
