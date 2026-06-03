@@ -172,9 +172,113 @@ async function pinPost({ boardId, title, description, link, pngPath }) {
   return `https://pinterest.com/pin/${res.body.id}`;
 }
 
+// ── Owned shop landing pages + multi-variant pin queue ───────────────────────
+const PUBLIC_SHOP = path.join(process.cwd(), 'public', 'shop-assets');
+const SHOP_DIR = path.join(process.cwd(), 'content', 'shop');
+const PIN_QUEUE = path.join(process.cwd(), 'content', 'pin-queue.json');
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://valuefindsdaily.com';
+const VARIANT_ACCENTS = ['#2d4a3e', '#7a5c3a', '#5b4a8a', '#9a3b4f', '#3a6b7a', '#8a6d2f'];
+
+// Copy a product's images into /public/shop-assets/<slug>/ and write its shop record.
+function persistShopProduct({ slug, type, listing, gumroadUrl, srcImages }) {
+  const dest = path.join(PUBLIC_SHOP, slug);
+  fs.mkdirSync(dest, { recursive: true });
+  const images = [];
+  for (const src of srcImages) {
+    if (!fs.existsSync(src)) continue;
+    const base = path.basename(src);
+    fs.copyFileSync(src, path.join(dest, base));
+    images.push(base);
+  }
+  fs.mkdirSync(SHOP_DIR, { recursive: true });
+  const record = {
+    slug, type, title: listing.title,
+    description_html: listing.description_html || listing.description || '',
+    price: listing.price, currency: listing.currency || 'usd',
+    gumroad_url: gumroadUrl, images, cover: path.basename(listing.cover),
+    created_at: new Date().toISOString(),
+  };
+  fs.writeFileSync(path.join(SHOP_DIR, `${slug}.json`), JSON.stringify(record, null, 2));
+  return record;
+}
+
+// GPT: distinct pin angles for one product (per the strategy doc: 1 product -> many fresh pins).
+async function generateVariantSpecs(title, type, n = 6) {
+  const schema = { name: 'pin_variants', strict: true, schema: { type: 'object', additionalProperties: false, required: ['variants'],
+    properties: { variants: { type: 'array', items: { type: 'object', additionalProperties: false,
+      required: ['headline', 'subhead', 'pin_title', 'pin_description'], properties: {
+        headline: { type: 'string', description: '<=22 char punchy overlay headline' },
+        subhead: { type: 'string', description: '<=34 char benefit line' },
+        pin_title: { type: 'string', description: '<=95 char keyword-rich Pinterest title' },
+        pin_description: { type: 'string', description: '<=480 char keyword + CTA description' },
+      } } } } } };
+  const { variants } = await chatJSON({
+    system: "You write high-CTR Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. US English. No hashtags in the headline.",
+    user: `Product: "${title}" (a printable ${type}). Give ${n} distinct pin-angle variations.`,
+    schema, temperature: 0.9,
+  });
+  return variants.slice(0, n);
+}
+
+function loadQueue() { try { return JSON.parse(fs.readFileSync(PIN_QUEUE, 'utf-8')); } catch { return []; } }
+function saveQueue(q) { fs.mkdirSync(path.dirname(PIN_QUEUE), { recursive: true }); fs.writeFileSync(PIN_QUEUE, JSON.stringify(q, null, 2)); }
+
+// Enqueue N pin variants that link to the product's OWNED landing page (/shop/<slug>).
+async function enqueueProductVariants({ slug, type, title, price, board }) {
+  const specs = await generateVariantSpecs(title, type);
+  const link = `${SITE_URL}/shop/${slug}`;
+  const entries = specs.map((s, i) => ({
+    slug, link, board, price,
+    headline: s.headline, subhead: s.subhead, title: s.pin_title, description: s.pin_description,
+    accent: VARIANT_ACCENTS[i % VARIANT_ACCENTS.length],
+    status: 'pending', created_at: new Date().toISOString(),
+  }));
+  const q = loadQueue(); q.push(...entries); saveQueue(q);
+  return entries.length;
+}
+
+// Drip-post pending pins: up to maxPerRun, at most 1 per product per day.
+// Renders each variant on the fly from the committed shop-asset images (no PNG bloat in git).
+async function postQueue({ maxPerRun = 5 } = {}) {
+  const q = loadQueue();
+  if (!q.length) { console.log('Pin queue empty.'); return; }
+  await pinRefresh();
+  const today = new Date().toISOString().slice(0, 10);
+  const postedTodayBySlug = new Set(q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).map((e) => e.slug));
+  let posted = 0;
+  for (const e of q) {
+    if (posted >= maxPerRun) break;
+    if (e.status !== 'pending' || postedTodayBySlug.has(e.slug)) continue;
+    const recPath = path.join(SHOP_DIR, `${e.slug}.json`);
+    const assetDir = path.join(PUBLIC_SHOP, e.slug);
+    if (!fs.existsSync(recPath) || !fs.existsSync(assetDir)) continue;
+    const rec = JSON.parse(fs.readFileSync(recPath, 'utf-8'));
+    const images = [rec.cover, ...rec.images.filter((f) => f !== rec.cover)]
+      .map((f) => path.join(assetDir, f)).filter((f) => fs.existsSync(f));
+    if (!images.length) continue;
+    const tmpPin = path.join(assetDir, '_pin_tmp.png');
+    try {
+      await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent }, tmpPin);
+      const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
+      const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin });
+      e.status = 'posted'; e.pin_url = url; e.posted_at = new Date().toISOString();
+      postedTodayBySlug.add(e.slug); posted++;
+      console.log(`  ✓ ${e.slug} -> ${url}`);
+      fs.unlinkSync(tmpPin);
+      await new Promise((r) => setTimeout(r, 4000));
+    } catch (err) {
+      console.error(`  ✗ ${e.slug} pin failed:`, err.message);
+    }
+  }
+  saveQueue(q);
+  console.log(`Posted ${posted} pins. Pending remaining: ${q.filter((e) => e.status === 'pending').length}`);
+}
+
 module.exports = {
   BRAND, openai, generateImage, chatJSON,
   htmlToPng, htmlToPdf, dataUrl, zip, renderShopPin, esc,
   gumroadCreateAndPublish,
   pinRefresh, pinGetOrCreateBoard, pinPost,
+  persistShopProduct, enqueueProductVariants, postQueue, loadQueue,
+  PUBLIC_SHOP, SHOP_DIR, PIN_QUEUE, SITE_URL,
 };

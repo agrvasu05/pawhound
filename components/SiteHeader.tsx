@@ -17,6 +17,12 @@ export default function SiteHeader() {
               All Guides
             </Link>
             <Link
+              href="/shop"
+              className="rounded-full px-3 py-1.5 font-semibold text-emerald-700 transition hover:bg-emerald-50"
+            >
+              Shop
+            </Link>
+            <Link
               href="/about"
               className="rounded-full px-3 py-1.5 transition hover:bg-stone-100 hover:text-stone-900"
             >
