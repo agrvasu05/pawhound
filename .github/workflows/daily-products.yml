@@ -31,6 +31,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # 0) Refresh trending keywords/topics (content/trend-briefs.json)
+      - name: Refresh Pinterest trend briefs
+        run: node products/trends-engine.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+
       # 1) Create products + owned landing pages + queue pin variants (no posting yet)
       - name: Generate products + landing pages
         run: node products/generate-daily.js
@@ -45,7 +54,7 @@ jobs:
         run: |
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
-          git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json
+          git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json content/trend-briefs.json
           git diff --cached --quiet || git commit -m "Daily products + landing pages"
           git push
 
