@@ -70,28 +70,57 @@ function zip(dir, zipName, files) { execSync(`cd "${dir}" && zip -q "${zipName}"
 
 // ── The "shop" pin (premium framed look + full-width bottom CTA) ──────────────
 // spec: { images:[paths], headline, subhead, price, accent }
+const SCENES_DIR = path.join(process.cwd(), 'public', 'scenes');
+function pickScene(cat) {
+  try {
+    const files = fs.readdirSync(SCENES_DIR).filter((f) => f.startsWith(`${cat}-`) && f.endsWith('.jpg'));
+    if (!files.length) return null;
+    return path.join(SCENES_DIR, files[Math.floor(Math.random() * files.length)]);
+  } catch { return null; }
+}
+
+// Renders a "lifestyle mockup" pin: the product shown in a real room/desk scene
+// (which earns far more saves than a flat background), title + a full-width
+// bottom CTA bar that lines up with Pinterest's "Visit site". Falls back to a
+// clean gradient if no scene images are available.
 async function renderShopPin(spec, outPath) {
   const accent = spec.accent || '#2d4a3e';
   const imgs = spec.images.map(dataUrl);
   const hero = imgs[0];
-  const framed = (src, w, h, pad) =>
-    `<div style="background:#fff;padding:${pad}px;border:2px solid #e7ddcb;box-shadow:0 16px 40px rgba(60,44,32,0.22);">
+  const sceneCat = spec.scene === 'desk' ? 'desk' : 'wall';
+  const sceneFile = pickScene(sceneCat);
+  const sceneUrl = sceneFile ? dataUrl(sceneFile) : null;
+
+  const framed = (src, w, h, pad, rot = 0) =>
+    `<div style="background:#fff;padding:${pad}px;border:2px solid #efe7d8;box-shadow:0 22px 50px rgba(30,20,10,0.30);transform:rotate(${rot}deg);">
        <img src="${src}" style="width:${w}px;height:${h}px;object-fit:cover;display:block;"/></div>`;
   const thumbs = imgs.length > 1
-    ? `<div style="display:flex;justify-content:center;gap:22px;margin-top:26px;">
-         ${imgs.slice(0, 3).map((t) => framed(t, 150, 200, 12)).join('')}</div>`
+    ? `<div style="display:flex;justify-content:center;gap:18px;margin-top:18px;">
+         ${imgs.slice(0, 3).map((t) => framed(t, 120, 160, 9)).join('')}</div>`
     : '';
+
+  // Scene zone: product composited onto the room/desk photo.
+  const sceneZone = sceneUrl
+    ? `<div style="position:relative;width:100%;height:880px;overflow:hidden;background:#e7dccb;">
+         <img src="${sceneUrl}" style="width:100%;height:100%;object-fit:cover;"/>
+         <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,0.06);"></div>
+         <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
+           ${sceneCat === 'desk' ? framed(hero, 400, 520, 24, -3) : framed(hero, 380, 510, 26, 0)}
+         </div>
+       </div>`
+    : `<div style="height:880px;display:flex;align-items:center;justify-content:center;
+                  background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 460, 620, 28)}</div>`;
+
   const html = `<html><body style="margin:0;">
-   <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;
-               background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);overflow:hidden;">
-     <div style="position:absolute;top:30px;left:30px;background:rgba(255,255,255,0.9);color:#6b5844;
+   <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
+     <div style="position:absolute;top:28px;left:28px;background:rgba(255,255,255,0.92);color:#6b5844;
                  padding:9px 20px;border-radius:30px;font-size:21px;letter-spacing:1px;z-index:3;">${BRAND}</div>
-     <div style="display:flex;justify-content:center;padding-top:120px;">${framed(hero, 520, 700, 30)}</div>
-     <div style="text-align:center;padding:34px 50px 0;">
-       <div style="font-size:62px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
-       <div style="margin-top:12px;font-size:28px;color:#8a7257;">${esc(spec.subhead)}</div>
+     ${sceneZone}
+     <div style="text-align:center;padding:30px 50px 0;">
+       <div style="font-size:58px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
+       <div style="margin-top:10px;font-size:27px;color:#8a7257;">${esc(spec.subhead)}</div>
+       ${thumbs}
      </div>
-     ${thumbs}
      <div style="position:absolute;bottom:0;left:0;right:0;height:150px;background:${accent};color:#fff;
                  display:flex;align-items:center;justify-content:center;gap:20px;">
        <span style="font-size:48px;font-weight:bold;">Tap to shop</span>
@@ -285,7 +314,8 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     if (!images.length) continue;
     const tmpPin = path.join(assetDir, '_pin_tmp.png');
     try {
-      await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent }, tmpPin);
+      const scene = (rec.type === 'wall-art' || rec.type === 'bundle') ? 'wall' : 'desk';
+      await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent, scene }, tmpPin);
       const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
       const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin, altText: e.alt });
       e.status = 'posted'; e.pin_url = url; e.posted_at = new Date().toISOString();
