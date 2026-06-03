@@ -291,18 +291,31 @@ async function enqueueProductVariants({ slug, type, title, price, board, keyword
 // Drip-post pending pins: up to maxPerRun, at most 1 per product per day.
 // Renders each variant on the fly from the committed shop-asset images (no PNG bloat in git).
 async function postQueue({ maxPerRun = 5 } = {}) {
-  const q = loadQueue();
+  let q = loadQueue();
   if (!q.length) { console.log('Pin queue empty.'); return; }
   const today = new Date().toISOString().slice(0, 10);
-  // Hard DAILY cap (not just per-run): count what was already posted today across
-  // the whole queue, so manual re-triggers can never push the shop over its share.
+  const now = Date.now();
+  // Keep the queue lean + current: drop stale PENDING pins (>14d — the trend has
+  // passed, no point posting them) and very old POSTED records (>45d). This stops
+  // the backlog ballooning since we add more variants/day than we post.
+  const before = q.length;
+  q = q.filter((e) => {
+    const ageDays = (now - new Date(e.created_at).getTime()) / 864e5;
+    return e.status === 'pending' ? ageDays <= 14 : ageDays <= 45;
+  });
+  if (before - q.length) console.log(`Pruned ${before - q.length} stale queue entries.`);
+  // Hard DAILY cap (not just per-run) so manual re-triggers can't exceed the shop's share.
   const postedTodayTotal = q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).length;
   const allowance = Math.max(0, maxPerRun - postedTodayTotal);
-  if (allowance === 0) { console.log(`Daily shop pin cap (${maxPerRun}) already reached — posting 0.`); return; }
+  if (allowance === 0) { console.log(`Daily shop pin cap (${maxPerRun}) already reached — posting 0.`); saveQueue(q); return; }
   await pinRefresh();
   const postedTodayBySlug = new Set(q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).map((e) => e.slug));
   let posted = 0;
-  for (const e of q) {
+  // Post NEWEST pending pins first so fresh, in-season trend products get pinned
+  // while the keyword is still trending (not buried behind old backlog).
+  const pending = q.filter((e) => e.status === 'pending')
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  for (const e of pending) {
     if (posted >= allowance) break;
     if (e.status !== 'pending' || postedTodayBySlug.has(e.slug)) continue;
     const recPath = path.join(SHOP_DIR, `${e.slug}.json`);
