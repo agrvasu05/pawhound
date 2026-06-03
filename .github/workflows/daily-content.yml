@@ -28,27 +28,43 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate new Pinterest-trending topics
+      # Refresh trending keywords from the Pinterest Trends API
+      - name: Refresh trend briefs
+        run: node products/trends-engine.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+
+      # Trending fashion/beauty articles (keyword-driven, affiliate-ready) — the lead content now
+      - name: Generate trending articles
+        run: node scripts/2d-generate-trend-articles.js --count=4
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      # Dog content kept limited
+      - name: Generate dog topics
         run: node scripts/1b-generate-topics.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Generate 10 new articles
-        run: node scripts/2-generate-articles.js --count=10
+      - name: Generate 2 dog articles
+        run: node scripts/2-generate-articles.js --count=2
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Generate new trending topics (home niche)
+      - name: Generate home trending topics
         run: node scripts/1c-generate-trending-topics.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Generate 5 new trending articles
-        run: node scripts/2b-generate-trending-articles.js --count=5
+      - name: Generate 2 home articles
+        run: node scripts/2b-generate-trending-articles.js --count=2
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Fetch images for new breeds
+      - name: Fetch images for new articles
         run: node scripts/3-fetch-images.js
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}

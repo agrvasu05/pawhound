@@ -8,6 +8,10 @@ export type Pick = {
   best_for: string;
   quirky_fact: string;
   image_query?: string;
+  /** Shopping search phrase for affiliate matching (trend articles). */
+  shop_query?: string;
+  /** Affiliate deep link, filled in by the affiliate module once Awin is connected. */
+  affiliate_url?: string;
 };
 
 export type Faq = {

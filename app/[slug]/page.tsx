@@ -121,6 +121,13 @@ export default async function ArticleHub({
         {article.intro}
       </p>
 
+      {article.picks.some((p) => p.affiliate_url) && (
+        <p className="-mt-3 mb-6 text-xs text-stone-400">
+          This article contains affiliate links. We may earn a small commission
+          at no extra cost to you.
+        </p>
+      )}
+
       <div className="rounded-xl bg-stone-50 border border-stone-200 px-5 py-4 mb-8 text-sm text-stone-600 leading-relaxed">
         <strong className="text-stone-800">How we ranked these:</strong> every{" "}
         {itemSingular} below was chosen for real-world fit —{" "}
@@ -200,6 +207,18 @@ export default async function ArticleHub({
                   <strong>Did you know?</strong> {pick.quirky_fact}
                 </p>
               </div>
+            )}
+
+            {/* Affiliate CTA — renders only once the affiliate module fills affiliate_url. */}
+            {pick.affiliate_url && (
+              <a
+                href={pick.affiliate_url}
+                target="_blank"
+                rel="nofollow sponsored noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-700"
+              >
+                Shop this {itemSingular} →
+              </a>
             )}
           </article>
 
