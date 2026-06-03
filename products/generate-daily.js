@@ -63,6 +63,8 @@ function loadTracker() { try { return JSON.parse(fs.readFileSync(TRACKER, 'utf-8
       // For CLI (execFileSync) errors, the real reason is in stdout/stderr.
       const detail = (e.stdout && e.stdout.toString()) || (e.stderr && e.stderr.toString()) || '';
       console.error(`  ✗ ${type} failed:`, e.message, detail ? `\n     ${detail.slice(0, 400)}` : '');
+      // Gumroad caps creations at 10/day — stop early so we don't burn image-gen $.
+      if (detail.includes('per day')) { console.error('  Hit Gumroad daily product cap — stopping this run.'); break; }
     }
   }
   console.log(`\nDone. ${made}/${selected.length} products.`);
