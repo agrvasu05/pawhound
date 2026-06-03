@@ -1,0 +1,53 @@
+name: Daily digital products
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 5am UTC daily (offset from the content workflow)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  products:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Install Gumroad CLI
+        run: go install github.com/antiwork/gumroad-cli/cmd/gumroad@latest
+
+      - name: Install Puppeteer system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate, upload, and pin 3 products
+        run: node products/generate-daily.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+          HOME: /home/runner
+
+      - name: Commit product tracker
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/gumroad-products.json
+          git diff --cached --quiet || git commit -m "Daily products tracker"
+          git push
