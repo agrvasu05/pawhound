@@ -1,0 +1,32 @@
+name: Weekly Pinterest report
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 6am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Pull Pinterest analytics + diagnose
+        run: node products/analytics-report.js
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+      - name: Commit report
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/pinterest-report.md
+          git diff --cached --quiet || git commit -m "Weekly Pinterest report"
+          git push
