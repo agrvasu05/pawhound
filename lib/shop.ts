@@ -13,6 +13,9 @@ export type ShopProduct = {
   images: string[];
   cover: string;
   created_at: string;
+  /** Real Gumroad rating data — shown only when there are genuine reviews. */
+  rating?: number;
+  reviews_count?: number;
 };
 
 const SHOP_DIR = path.join(process.cwd(), "content", "shop");

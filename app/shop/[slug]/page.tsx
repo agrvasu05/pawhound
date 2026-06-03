@@ -125,9 +125,24 @@ export default async function ShopProductPage({
           >
             Get it on Gumroad →
           </a>
-          <p className="mt-2 text-center text-xs text-stone-400">
-            Secure checkout · instant download · personal use
-          </p>
+
+          {/* Honest trust signals (all true for a digital download) */}
+          <ul className="mt-4 grid grid-cols-2 gap-y-2 text-sm text-stone-600">
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> Instant download</li>
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> Secure Gumroad checkout</li>
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> High-resolution files</li>
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> Lifetime access</li>
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> Print at home or shop</li>
+            <li className="flex items-center gap-2"><span className="text-emerald-600">✓</span> Personal-use license</li>
+          </ul>
+
+          {/* Real ratings appear automatically once buyers leave them on Gumroad */}
+          {typeof p.reviews_count === "number" && p.reviews_count > 0 && (
+            <p className="mt-3 text-sm font-medium text-stone-700">
+              ★ {p.rating?.toFixed(1)} ({p.reviews_count} review
+              {p.reviews_count === 1 ? "" : "s"} on Gumroad)
+            </p>
+          )}
 
           <div
             className="prose prose-stone mt-6 max-w-none"
