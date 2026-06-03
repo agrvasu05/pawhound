@@ -58,6 +58,18 @@ export default async function ArticleHub({
     : null;
   const faqs = article.faqs ?? [];
 
+  // Related guides — internal links (SEO crawl + ranking) and more pageviews.
+  const relatedAll = getAllArticles().filter(
+    (a) => a.topic_slug !== slug && a.picks.length >= 3
+  );
+  const sameNicheRel = relatedAll.filter(
+    (a) => (a.niche || "dogs") === (article.niche || "dogs")
+  );
+  const related = [
+    ...sameNicheRel,
+    ...relatedAll.filter((a) => (a.niche || "dogs") !== (article.niche || "dogs")),
+  ].slice(0, 4);
+
   // ItemList structured data — tells search engines this is a real ranked list.
   const jsonLd = {
     "@context": "https://schema.org",
@@ -293,6 +305,44 @@ export default async function ArticleHub({
             </dl>
           </section>
         </>
+      )}
+
+      {related.length > 0 && (
+        <section className="mt-14 border-t border-stone-100 pt-8">
+          <h2
+            className="mb-6 text-2xl font-bold"
+            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+          >
+            More guides you&apos;ll love
+          </h2>
+          <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+            {related.map((r) => {
+              const top = r.picks.find((p) => p.rank === 1);
+              return (
+                <Link
+                  key={r.topic_slug}
+                  href={`/${r.topic_slug}`}
+                  className="group block overflow-hidden rounded-xl ring-1 ring-stone-200 transition hover:shadow-lg"
+                >
+                  <div className="relative aspect-[4/3] bg-stone-100">
+                    {top && (
+                      <Image
+                        src={getBreedImage(top.breed)}
+                        alt={r.topic_title}
+                        fill
+                        className="object-cover transition group-hover:scale-105"
+                        sizes="(max-width: 640px) 50vw, 220px"
+                      />
+                    )}
+                  </div>
+                  <p className="line-clamp-2 p-3 text-sm font-medium text-stone-800">
+                    {r.topic_title}
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
       )}
 
       <AdSlot className="my-8" />
