@@ -30,7 +30,12 @@ const TYPE_NICHES = {
 };
 
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
-const selected = argTypes ? argTypes.split('=')[1].split(',') : Object.keys(TYPES);
+const ALL_TYPES = Object.keys(TYPES); // wall-art, coloring, planner
+// Steady output: 2 products/day, rotating evenly through the types (so each type
+// is made ~2 of every 3 days). Matches the ~5 shop-pins/day posting rate.
+const dayIdx = Math.floor(Date.now() / 864e5);
+const defaultSel = [ALL_TYPES[dayIdx % ALL_TYPES.length], ALL_TYPES[(dayIdx + 1) % ALL_TYPES.length]];
+const selected = argTypes ? argTypes.split('=')[1].split(',') : defaultSel;
 const generateOnly = process.argv.includes('--generate-only');
 
 function loadTracker() { try { return JSON.parse(fs.readFileSync(TRACKER, 'utf-8')); } catch { return []; } }
@@ -115,9 +120,10 @@ async function makeBundle(created, tracker) {
     }
   }
 
-  // Bundle the day's products into one higher-value offer.
-  if (!generateOnly && created.length >= 2) {
-    try { console.log('\n=== bundle ==='); await makeBundle(created, tracker); }
+  // Bundle weekly (Sundays only) so output stays even — not a 4th product daily.
+  const isBundleDay = new Date().getUTCDay() === 0;
+  if (!generateOnly && isBundleDay && created.length >= 2) {
+    try { console.log('\n=== weekly bundle ==='); await makeBundle(created, tracker); }
     catch (e) {
       const detail = (e.stdout && e.stdout.toString()) || (e.stderr && e.stderr.toString()) || '';
       console.error('  ✗ bundle failed:', e.message, detail ? `\n     ${detail.slice(0, 300)}` : '');

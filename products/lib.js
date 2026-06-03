@@ -275,7 +275,9 @@ function saveQueue(q) { fs.mkdirSync(path.dirname(PIN_QUEUE), { recursive: true 
 
 // Enqueue N pin variants that link to the product's OWNED landing page (/shop/<slug>).
 async function enqueueProductVariants({ slug, type, title, price, board, keyword = '' }) {
-  const specs = await generateVariantSpecs(title, type, 6, keyword);
+  // 3 variants/product: at 2 products/day that's ~6 produced vs ~5 posted — balanced,
+  // so each product's pins actually go out within a few days instead of piling up.
+  const specs = await generateVariantSpecs(title, type, 3, keyword);
   const link = `${SITE_URL}/shop/${slug}`;
   const entries = specs.map((s, i) => ({
     slug, link, board, price, keyword,
