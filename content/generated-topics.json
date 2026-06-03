@@ -1159,5 +1159,144 @@
       "rare": null,
       "lifespan_min_gte": null
     }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-who-love-calm-and-playful-contrasts",
+    "title": "Best Dog Breeds That Are Calm Yet Playful",
+    "desc": "Discover dog breeds that perfectly balance a calm demeanor with bursts of playful energy. These breeds are great companions for those who want relaxation and fun in one package.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "medium"
+      ],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "playful"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "most-unique-and-surprising-trainability-dog-breeds",
+    "title": "Dog Breeds You Won’t Believe Are So Easy to Train",
+    "desc": "Some dogs defy expectations with their trainability despite unusual looks or temperaments. These breeds will surprise you with how quickly they learn.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "intelligent"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-owners-who-travel-frequently",
+    "title": "Top Dog Breeds That Love Frequent Travel and Adventures",
+    "desc": "If you’re a frequent traveler or digital nomad, these adaptable and easygoing breeds make the perfect travel companions. They adjust well to new environments and love exploring with you.",
+    "filter": {
+      "size": [
+        "small",
+        "medium"
+      ],
+      "not_size": [],
+      "energy": [
+        "medium",
+        "high"
+      ],
+      "not_energy": [],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "friendly",
+        "curious",
+        "playful"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": true,
+      "rare": null,
+      "lifespan_min_gte": 7
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-who-love-distinctive-hair-textures",
+    "title": "Dog Breeds With Stunningly Unique Hair Textures You’ll Admire",
+    "desc": "Celebrate the beauty of diverse coat types with these breeds known for their interesting textures like corded, broken, or powderpuff coats. Perfect for lovers of standout looks and soft fur.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [],
+      "not_energy": [],
+      "barking": [],
+      "not_barking": [],
+      "shedding": [],
+      "grooming": [
+        "medium",
+        "high"
+      ],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [],
+      "coat_includes": [
+        "corded",
+        "broken",
+        "powderpuff",
+        "wire"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": 8
+    }
   }
 ]
