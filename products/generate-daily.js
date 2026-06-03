@@ -21,6 +21,14 @@ const TYPES = {
 const OUT_ROOT = path.join(process.cwd(), 'products', 'output');
 const TRACKER = path.join(process.cwd(), 'content', 'gumroad-products.json');
 
+// Which trend-brief niches each printable type can serve (fashion/beauty briefs
+// are intentionally left for the article+affiliate pipeline, not printables).
+const TYPE_NICHES = {
+  'wall-art': ['home decor', 'aesthetic art & printables'],
+  coloring: ['aesthetic art & printables', 'gifts & occasions', 'home decor'],
+  planner: ['gifts & occasions', 'wellness'],
+};
+
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
 const selected = argTypes ? argTypes.split('=')[1].split(',') : Object.keys(TYPES);
 const generateOnly = process.argv.includes('--generate-only');
@@ -73,7 +81,11 @@ async function makeBundle(created, tracker) {
     if (!mod) { console.error(`Unknown type: ${type}`); continue; }
     try {
       console.log(`\n=== ${type} ===`);
-      const p = await mod.generate(OUT_ROOT);
+      // Pick the top trending keyword for this type (real search demand, not random).
+      const brief = lib.pickBrief(TYPE_NICHES[type]);
+      if (brief) { lib.markBriefUsed(brief.keyword); console.log(`  keyword: "${brief.keyword}" (vol ${brief.pop}, MoM ${brief.mom}%)`); }
+      else console.log('  (no matching trend brief — using fallback theme)');
+      const p = await mod.generate(OUT_ROOT, brief);
       console.log(`  generated: "${p.listing.title}"`);
 
       if (generateOnly) { console.log(`  (generate-only) files in ${p.dir}`); made++; continue; }
@@ -86,7 +98,7 @@ async function makeBundle(created, tracker) {
       lib.persistShopProduct({ slug: p.slug, type: p.type, listing: p.listing, gumroadUrl: product.url, srcImages });
 
       // Queue multiple distinct pin variants (dripped over days by post-queue.js).
-      const n = await lib.enqueueProductVariants({ slug: p.slug, type: p.type, title: p.listing.title, price: p.listing.price, board: p.board });
+      const n = await lib.enqueueProductVariants({ slug: p.slug, type: p.type, title: p.listing.title, price: p.listing.price, board: p.board, keyword: p.keyword || '' });
       console.log(`  ✓ landing page /shop/${p.slug} + ${n} pin variants queued`);
 
       tracker.push({ type, slug: p.slug, title: p.listing.title, price: p.listing.price,

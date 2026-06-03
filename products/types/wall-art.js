@@ -27,11 +27,14 @@ const SCHEMA = {
       pin_subhead: { type: 'string', description: '<=34 chars' },
     } } };
 
-async function generate(outRoot) {
-  const theme = THEMES[Math.floor(Math.random() * THEMES.length)];
+async function generate(outRoot, brief) {
+  const theme = brief
+    ? `the trending Pinterest search "${brief.keyword}"${brief.season && brief.season !== 'evergreen' ? ` (${brief.season} season)` : ''}`
+    : THEMES[Math.floor(Math.random() * THEMES.length)];
+  const kwRule = brief ? ` The product title MUST contain "${brief.keyword}" and the tags must include keyword terms — this targets real Pinterest search demand.` : '';
   const c = await lib.chatJSON({
-    system: 'You create on-trend printable WALL ART sets that sell on Pinterest (home & dog lovers, US women). Lean into proven aesthetics. No text in the art. US English.',
-    user: `Theme: ${theme}. Design a SET of 3 coordinating prints. Give the listing + Pinterest copy.`,
+    system: 'You create on-trend printable WALL ART sets that sell on Pinterest (home & lifestyle, US women). Lean into proven aesthetics. No text in the art. US English.',
+    user: `Theme: ${theme}. Design a SET of 3 coordinating prints. Give the listing + Pinterest copy.${kwRule}`,
     schema: SCHEMA,
   });
   const slug = c.slug.replace(/[^a-z0-9-]/g, '').slice(0, 60);
@@ -46,10 +49,13 @@ async function generate(outRoot) {
   fs.writeFileSync(path.join(dir, 'README.txt'),
     `${c.title}\n\nThank you! Included: 3 high-resolution PNG prints. Print up to 11x14" on matte paper or at a print shop. Personal use only.\n\n— ${lib.BRAND}`);
   const zipFile = lib.zip(dir, `${slug}.zip`, ['print-1.png', 'print-2.png', 'print-3.png', 'README.txt']);
+  const board = brief && brief.boards && brief.boards[0]
+    ? { name: brief.boards[0].slice(0, 50), description: `${brief.keyword} — curated printable wall art & decor, instant downloads.` }
+    : { name: 'Printable Wall Art & Cozy Decor', description: 'Printable wall art and cozy home decor — instant digital downloads for warm, calming spaces.' };
   return {
-    type: 'wall-art', slug, dir,
+    type: 'wall-art', slug, dir, keyword: brief ? brief.keyword : '',
     listing: { title: c.title, description_html: c.description_html, tags: c.tags, price: 5, slug, file: zipFile, fileName: `${c.title}.zip`, cover: path.join(dir, 'cover.png') },
-    board: { name: 'Printable Wall Art & Cozy Decor', description: 'Printable wall art and cozy home decor — instant digital downloads for dog lovers and warm, calming spaces.' },
+    board,
     pin: { images: prints, headline: c.pin_headline, subhead: c.pin_subhead, price: 5, accent: '#2d4a3e', title: c.pin_title, description: c.pin_description },
   };
 }

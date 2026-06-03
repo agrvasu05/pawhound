@@ -62,11 +62,14 @@ function pageHtml(pg) {
   </div>`;
 }
 
-async function generate(outRoot) {
-  const idea = IDEAS[Math.floor(Math.random() * IDEAS.length)];
+async function generate(outRoot, brief) {
+  const idea = brief
+    ? `${brief.keyword} — a printable planner/tracker/checklist for this trending search`
+    : IDEAS[Math.floor(Math.random() * IDEAS.length)];
+  const kwRule = brief ? ` The product title MUST contain "${brief.keyword}"; tags must include keyword terms.` : '';
   const c = await lib.chatJSON({
-    system: 'You design genuinely useful printable PLANNERS/TRACKERS that sell on Pinterest/Etsy. Practical, clean, real fields people use. US English.',
-    user: `Make a printable: "${idea}". Provide 4-6 useful pages (checklist/table/weekly). Give the listing + Pinterest copy. For non-applicable fields use empty arrays.`,
+    system: 'You design genuinely useful printable PLANNERS/TRACKERS/CHECKLISTS that sell on Pinterest/Etsy. Practical, clean, real fields people use. US English.',
+    user: `Make a printable: "${idea}". Provide 4-6 useful pages (checklist/table/weekly). Give the listing + Pinterest copy. For non-applicable fields use empty arrays.${kwRule}`,
     schema: SCHEMA,
   });
   const slug = c.slug.replace(/[^a-z0-9-]/g, '').slice(0, 60);
@@ -77,10 +80,13 @@ async function generate(outRoot) {
   // Cover PNG (portrait) for pin hero + Gumroad cover
   const coverPng = path.join(dir, 'cover.png');
   await lib.htmlToPng(`<html><body style="margin:0;">${coverHtml(c, '800px', '1035px')}</body></html>`, coverPng, { width: 800, height: 1035 });
+  const board = brief && brief.boards && brief.boards[0]
+    ? { name: brief.boards[0].slice(0, 50), description: `${brief.keyword} — printable planners, trackers & checklists, instant downloads.` }
+    : { name: 'Printable Planners & Organizers', description: 'Printable planners, trackers and checklists for a calmer, more organized life — instant digital downloads.' };
   return {
-    type: 'planner', slug, dir,
+    type: 'planner', slug, dir, keyword: brief ? brief.keyword : '',
     listing: { title: c.title, description_html: c.description_html, tags: c.tags, price: 4, slug, file: pdf, fileName: `${c.title}.pdf`, cover: coverPng },
-    board: { name: 'Printable Planners & Organizers', description: 'Printable planners, trackers and checklists for a calmer home and happy pets — instant digital downloads.' },
+    board,
     pin: { images: [coverPng], headline: c.pin_headline, subhead: c.pin_subhead, price: 4, accent: '#7a5c3a', title: c.pin_title, description: c.pin_description },
   };
 }

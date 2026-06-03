@@ -163,9 +163,10 @@ async function pinGetOrCreateBoard(name, description) {
   if (res.status !== 201 && res.status !== 200) throw new Error('Board error: ' + JSON.stringify(res.body));
   return (boardCache[name] = res.body.id);
 }
-async function pinPost({ boardId, title, description, link, pngPath }) {
+async function pinPost({ boardId, title, description, link, pngPath, altText }) {
   const res = await pinApi('POST', '/v5/pins', {
     board_id: boardId, title: title.slice(0, 95), description: description.slice(0, 480), link,
+    alt_text: (altText || title).slice(0, 500), // SEO + accessibility: keyword-rich alt text
     media_source: { source_type: 'image_base64', content_type: 'image/png', data: fs.readFileSync(pngPath).toString('base64') },
   });
   if (res.status !== 201) throw new Error(`Pinterest ${res.status}: ${JSON.stringify(res.body)}`);
@@ -203,33 +204,52 @@ function persistShopProduct({ slug, type, listing, gumroadUrl, srcImages }) {
 }
 
 // GPT: distinct pin angles for one product (per the strategy doc: 1 product -> many fresh pins).
-async function generateVariantSpecs(title, type, n = 6) {
+// `keyword` = the trending Pinterest search term to weave into every pin for SEO.
+async function generateVariantSpecs(title, type, n = 6, keyword = '') {
   const schema = { name: 'pin_variants', strict: true, schema: { type: 'object', additionalProperties: false, required: ['variants'],
     properties: { variants: { type: 'array', items: { type: 'object', additionalProperties: false,
       required: ['headline', 'subhead', 'pin_title', 'pin_description'], properties: {
         headline: { type: 'string', description: '<=22 char punchy overlay headline' },
         subhead: { type: 'string', description: '<=34 char benefit line' },
-        pin_title: { type: 'string', description: '<=95 char keyword-rich Pinterest title' },
-        pin_description: { type: 'string', description: '<=480 char keyword + CTA description' },
+        pin_title: { type: 'string', description: '<=95 char Pinterest title with the target keyword near the front' },
+        pin_description: { type: 'string', description: '<=480 char description: keyword in the first sentence, natural keywords throughout, then a clear CTA' },
       } } } } } };
+  const kwLine = keyword
+    ? ` Target Pinterest search keyword: "${keyword}" — put it (or a close variant) at the FRONT of every pin_title and in the first sentence of every pin_description for SEO.`
+    : '';
   const { variants } = await chatJSON({
-    system: "You write high-CTR Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. US English. No hashtags in the headline.",
+    system: `You write high-CTR, SEO-optimized Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. Pinterest is a search engine — lead with the searchable keyword. US English. No hashtags in the headline.${kwLine}`,
     user: `Product: "${title}" (a printable ${type}). Give ${n} distinct pin-angle variations.`,
     schema, temperature: 0.9,
   });
   return variants.slice(0, n);
 }
 
+// ── Trend-brief picker (feeds generators with real search demand) ────────────
+const TREND_BRIEFS = path.join(process.cwd(), 'content', 'trend-briefs.json');
+const USED_BRIEFS = path.join(process.cwd(), 'content', 'used-briefs.json');
+function loadBriefs() { try { return JSON.parse(fs.readFileSync(TREND_BRIEFS, 'utf-8')).briefs || []; } catch { return []; } }
+function loadUsedBriefs() { try { return new Set(JSON.parse(fs.readFileSync(USED_BRIEFS, 'utf-8'))); } catch { return new Set(); } }
+function markBriefUsed(keyword) { const s = loadUsedBriefs(); s.add(keyword); fs.mkdirSync(path.dirname(USED_BRIEFS), { recursive: true }); fs.writeFileSync(USED_BRIEFS, JSON.stringify([...s], null, 2)); }
+// Highest-scored unused brief whose niche is in `niches` (or any, if null).
+function pickBrief(niches) {
+  const used = loadUsedBriefs();
+  return loadBriefs()
+    .filter((b) => !used.has(b.keyword) && (!niches || niches.includes(b.niche)))
+    .sort((a, b) => (b.score || 0) - (a.score || 0))[0] || null;
+}
+
 function loadQueue() { try { return JSON.parse(fs.readFileSync(PIN_QUEUE, 'utf-8')); } catch { return []; } }
 function saveQueue(q) { fs.mkdirSync(path.dirname(PIN_QUEUE), { recursive: true }); fs.writeFileSync(PIN_QUEUE, JSON.stringify(q, null, 2)); }
 
 // Enqueue N pin variants that link to the product's OWNED landing page (/shop/<slug>).
-async function enqueueProductVariants({ slug, type, title, price, board }) {
-  const specs = await generateVariantSpecs(title, type);
+async function enqueueProductVariants({ slug, type, title, price, board, keyword = '' }) {
+  const specs = await generateVariantSpecs(title, type, 6, keyword);
   const link = `${SITE_URL}/shop/${slug}`;
   const entries = specs.map((s, i) => ({
-    slug, link, board, price,
+    slug, link, board, price, keyword,
     headline: s.headline, subhead: s.subhead, title: s.pin_title, description: s.pin_description,
+    alt: keyword ? `${s.pin_title} — ${keyword}` : s.pin_title,
     accent: VARIANT_ACCENTS[i % VARIANT_ACCENTS.length],
     status: 'pending', created_at: new Date().toISOString(),
   }));
@@ -265,7 +285,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     try {
       await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent }, tmpPin);
       const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
-      const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin });
+      const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin, altText: e.alt });
       e.status = 'posted'; e.pin_url = url; e.posted_at = new Date().toISOString();
       postedTodayBySlug.add(e.slug); posted++;
       console.log(`  ✓ ${e.slug} -> ${url}`);
@@ -285,5 +305,6 @@ module.exports = {
   gumroadCreateAndPublish,
   pinRefresh, pinGetOrCreateBoard, pinPost,
   persistShopProduct, enqueueProductVariants, postQueue, loadQueue,
+  pickBrief, markBriefUsed, loadBriefs,
   PUBLIC_SHOP, SHOP_DIR, PIN_QUEUE, SITE_URL,
 };
