@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
+import { SKIMLINKS_ID, shopHref } from "@/lib/affiliate";
 import AdSlot from "@/components/AdSlot";
 
 export async function generateStaticParams() {
@@ -133,7 +134,7 @@ export default async function ArticleHub({
         {article.intro}
       </p>
 
-      {article.picks.some((p) => p.affiliate_url) && (
+      {article.picks.some((p) => p.affiliate_url || (SKIMLINKS_ID && p.shop_query)) && (
         <p className="-mt-3 mb-6 text-xs text-stone-400">
           This article contains affiliate links. We may earn a small commission
           at no extra cost to you.
@@ -221,17 +222,25 @@ export default async function ArticleHub({
               </div>
             )}
 
-            {/* Affiliate CTA — renders only once the affiliate module fills affiliate_url. */}
-            {pick.affiliate_url && (
-              <a
-                href={pick.affiliate_url}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-700"
-              >
-                Shop this {itemSingular} →
-              </a>
-            )}
+            {/* Affiliate CTA — direct affiliate_url if set, else a Skimlinks-affiliated
+                merchant search for the item (auto-converted by the Skimlinks script). */}
+            {(() => {
+              const href =
+                pick.affiliate_url ||
+                (SKIMLINKS_ID && pick.shop_query
+                  ? shopHref(article.niche, pick.shop_query)
+                  : null);
+              return href ? (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-700"
+                >
+                  Shop {pick.breed} →
+                </a>
+              ) : null;
+            })()}
           </article>
 
           {/* Ad after every 3rd entry (but not right before the conclusion) */}
