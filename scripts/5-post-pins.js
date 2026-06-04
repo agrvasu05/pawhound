@@ -187,6 +187,8 @@ function buildQueue(tracker) {
     const filePath = path.join(articlesDir, file);
     const article = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     const slug = article.topic_slug;
+    // Dogs removed from postings — skip dog/legacy articles (no niche or 'dogs').
+    if (!article.niche || article.niche === 'dogs') continue;
     if (onlyArg && !slug.includes(onlyArg)) continue;
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;

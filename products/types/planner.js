@@ -4,10 +4,10 @@ const path = require('path');
 const lib = require('../lib');
 
 const IDEAS = [
-  'New Puppy Checklist & First-Year Planner', 'Dog Care & Health Tracker',
   'Weekly Meal Planner & Grocery List', 'Cozy Home Cleaning Schedule',
-  'Daily Self-Care & Habit Tracker', 'Pet Feeding & Walk Schedule',
-  'Home Budget & Bill Tracker', 'Dog Training Progress Tracker',
+  'Daily Self-Care & Habit Tracker', 'Monthly Budget & Bill Tracker',
+  'Wedding Planning Checklist', 'Student Study & Revision Planner',
+  'Fitness & Workout Tracker', 'Savings & Money Goals Tracker',
 ];
 
 const SCHEMA = {

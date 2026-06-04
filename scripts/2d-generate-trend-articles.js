@@ -17,7 +17,7 @@ const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
 const BRIEFS = path.join(process.cwd(), 'content', 'trend-briefs.json');
 const USED = path.join(process.cwd(), 'content', 'used-briefs.json');
-const ARTICLE_NICHES = ['fashion', 'beauty']; // affiliate-heavy; products handle the rest
+const ARTICLE_NICHES = ['fashion', 'beauty', 'home decor']; // affiliate-heavy; products handle gifts/wellness/aesthetic
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 function loadBriefs() { try { return JSON.parse(fs.readFileSync(BRIEFS, 'utf-8')).briefs || []; } catch { return []; } }

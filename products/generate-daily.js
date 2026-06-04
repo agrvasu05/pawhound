@@ -12,10 +12,10 @@ const fs = require('fs');
 const path = require('path');
 const lib = require('./lib');
 
+// PDF printables only — these sell on Pinterest. (Wall-art portraits retired.)
 const TYPES = {
-  'wall-art': require('./types/wall-art'),
-  coloring: require('./types/coloring'),
   planner: require('./types/planner'),
+  coloring: require('./types/coloring'),
 };
 
 const OUT_ROOT = path.join(process.cwd(), 'products', 'output');
@@ -24,17 +24,15 @@ const TRACKER = path.join(process.cwd(), 'content', 'gumroad-products.json');
 // Which trend-brief niches each printable type can serve (fashion/beauty briefs
 // are intentionally left for the article+affiliate pipeline, not printables).
 const TYPE_NICHES = {
-  'wall-art': ['home decor', 'aesthetic art & printables'],
-  coloring: ['aesthetic art & printables', 'gifts & occasions', 'home decor'],
-  planner: ['gifts & occasions', 'wellness'],
+  planner: ['wellness', 'gifts & occasions'],
+  coloring: ['aesthetic art & printables', 'gifts & occasions'],
 };
 
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
-const ALL_TYPES = Object.keys(TYPES); // wall-art, coloring, planner
-// Steady output: 2 products/day, rotating evenly through the types (so each type
-// is made ~2 of every 3 days). Matches the ~5 shop-pins/day posting rate.
-const dayIdx = Math.floor(Date.now() / 864e5);
-const defaultSel = [ALL_TYPES[dayIdx % ALL_TYPES.length], ALL_TYPES[(dayIdx + 1) % ALL_TYPES.length]];
+// Default: 2 planner-style PDF printables/day. Planner is HTML->PDF, so ~$0 API
+// cost (no image generation). Coloring stays available via --types=coloring but
+// is OFF by default because it uses ~6 AI images/product (the costly part).
+const defaultSel = ['planner', 'planner'];
 const selected = argTypes ? argTypes.split('=')[1].split(',') : defaultSel;
 const generateOnly = process.argv.includes('--generate-only');
 

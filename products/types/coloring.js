@@ -5,9 +5,9 @@ const lib = require('../lib');
 
 const PAGE_COUNT = 6; // ~$0.06 in image gen
 const THEMES = [
-  'adorable dog breeds in cute poses', 'cozy home scenes with sleeping dogs',
-  'puppies playing in a garden', 'dogs celebrating holidays and seasons',
-  'whimsical dogs with flowers and hearts', 'farmhouse pets and cozy cottage life',
+  'whimsical flowers and botanicals', 'cozy cottage and home scenes',
+  'calming mandalas and patterns', 'seasonal and holiday scenes',
+  'cute kawaii food and treats', 'magical garden and nature',
 ];
 
 const SCHEMA = {
