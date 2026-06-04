@@ -1298,5 +1298,154 @@
       "rare": null,
       "lifespan_min_gte": 8
     }
+  },
+  {
+    "slug": "best-dog-breeds-for-creative-introverts",
+    "title": "Best Dog Breeds for Creative Introverts Who Need Calm",
+    "desc": "Discover dog breeds with calm energy and low barking that match the quiet, thoughtful nature of creative introverts. These breeds provide companionship without overwhelming stimulation.",
+    "filter": {
+      "size": [],
+      "not_size": [],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "not_energy": [
+        "high"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "not_barking": [
+        "high"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "temperament_includes": [
+        "calm",
+        "independent",
+        "intelligent",
+        "quiet"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": null
+    }
+  },
+  {
+    "slug": "dog-breeds-that-are-small-but-brave",
+    "title": "Small Dog Breeds With Surprisingly Bold and Courageous Spirits",
+    "desc": "Tiny dogs with big personalities: these breeds are small in size but known for their bold, confident, and courageous temperaments, making them perfect little watchdogs.",
+    "filter": {
+      "size": [
+        "toy",
+        "small"
+      ],
+      "energy": [],
+      "barking": [
+        "medium",
+        "high"
+      ],
+      "temperament_includes": [
+        "bold",
+        "confident",
+        "courageous",
+        "alert"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": null,
+      "lifespan_min_gte": null
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-urban-gardeners",
+    "title": "Best Dog Breeds for Urban Gardeners Who Need Green Thumb Pals",
+    "desc": "Ideal for city dwellers with gardens or patios, these breeds have low to medium energy, minimal digging tendencies, and gentle temperaments suited for calm outdoor spaces.",
+    "filter": {
+      "size": [
+        "small",
+        "medium"
+      ],
+      "energy": [
+        "low",
+        "medium"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "temperament_includes": [
+        "calm",
+        "gentle",
+        "affectionate",
+        "intelligent"
+      ],
+      "shedding": [],
+      "grooming": [],
+      "trainability": [],
+      "cold_tolerance": [],
+      "hot_tolerance": [
+        "medium",
+        "high"
+      ],
+      "coat_includes": [],
+      "good_with_kids": null,
+      "good_with_cats": true,
+      "good_with_other_dogs": null,
+      "rare": false,
+      "lifespan_min_gte": 8
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-people-with-mild-allergies",
+    "title": "Best Dog Breeds for People With Mild Allergies and Sensitive Noses",
+    "desc": "Not fully hypoallergenic but with low to medium shedding and grooming requirements, these breeds can be a great match for allergy-prone dog lovers.",
+    "filter": {
+      "size": [],
+      "shedding": [
+        "low",
+        "medium"
+      ],
+      "grooming": [
+        "low",
+        "medium"
+      ],
+      "trainability": [
+        "easy",
+        "medium"
+      ],
+      "temperament_includes": [
+        "affectionate",
+        "friendly",
+        "intelligent"
+      ],
+      "barking": [
+        "low",
+        "medium"
+      ],
+      "good_with_kids": null,
+      "good_with_cats": null,
+      "good_with_other_dogs": null,
+      "rare": false,
+      "lifespan_min_gte": 8
+    }
   }
 ]
