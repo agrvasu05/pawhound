@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
-import { SKIMLINKS_ID, shopHref } from "@/lib/affiliate";
+import { shopHref } from "@/lib/affiliate";
 import AdSlot from "@/components/AdSlot";
 
 export async function generateStaticParams() {
@@ -134,7 +134,7 @@ export default async function ArticleHub({
         {article.intro}
       </p>
 
-      {article.picks.some((p) => p.affiliate_url || (SKIMLINKS_ID && p.shop_query)) && (
+      {article.picks.some((p) => p.affiliate_url || p.shop_query) && (
         <p className="-mt-3 mb-6 text-xs text-stone-400">
           This article contains affiliate links. We may earn a small commission
           at no extra cost to you.
@@ -227,9 +227,7 @@ export default async function ArticleHub({
             {(() => {
               const href =
                 pick.affiliate_url ||
-                (SKIMLINKS_ID && pick.shop_query
-                  ? shopHref(article.niche, pick.shop_query)
-                  : null);
+                (pick.shop_query ? shopHref(article.niche, pick.shop_query) : null);
               return href ? (
                 <a
                   href={href}
