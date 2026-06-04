@@ -2,7 +2,9 @@ name: Daily digital products
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # 5am UTC daily (offset from the content workflow)
+    # 01:30 UTC: posting lands ~9:40 PM ET — staggered ~40 min after the content
+    # run so the ~15 pins spread across the 8-11 PM ET evening peak, not all at once.
+    - cron: '30 1 * * *'
   workflow_dispatch:
 
 permissions:

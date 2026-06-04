@@ -2,7 +2,9 @@ name: Daily content generation
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # 4am UTC daily
+    # 00:45 UTC: generation + ~5min deploy wait lands the PIN POSTING at ~9 PM ET
+    # (= 6 PM PT) — Pinterest's US evening peak. (Shifts ~1h in winter/EST; still in peak.)
+    - cron: '45 0 * * *'
   workflow_dispatch:      # manual trigger from GitHub Actions tab
 
 permissions:
