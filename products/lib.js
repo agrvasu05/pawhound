@@ -17,8 +17,11 @@ const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPE
 const BRAND = 'Value Finds Daily';
 
 // ── Image generation (cheap; swap IMAGE_PROVIDER to scale) ───────────────────
-async function generateImage(prompt, { size = '1024x1536', quality = 'low' } = {}) {
-  const r = await openai.images.generate({ model: 'gpt-image-1', prompt, size, quality, n: 1 });
+async function generateImage(prompt, { size = '1024x1536', quality = 'low', background } = {}) {
+  const r = await openai.images.generate({
+    model: 'gpt-image-1', prompt, size, quality, n: 1,
+    ...(background ? { background } : {}), // 'transparent' for clipart PNGs
+  });
   return Buffer.from(r.data[0].b64_json, 'base64');
 }
 

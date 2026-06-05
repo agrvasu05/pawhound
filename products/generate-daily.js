@@ -12,10 +12,12 @@ const fs = require('fs');
 const path = require('path');
 const lib = require('./lib');
 
-// PDF printables only — these sell on Pinterest. (Wall-art portraits retired.)
+// Top-demand digital types (per market research). Wall-art portraits retired.
 const TYPES = {
-  planner: require('./types/planner'),
-  coloring: require('./types/coloring'),
+  clipart: require('./types/clipart'),        // #1 demand (transparent PNG sets)
+  spreadsheet: require('./types/spreadsheet'),// editable trackers (.xlsx, ~$0)
+  planner: require('./types/planner'),        // printable PDFs (~$0)
+  coloring: require('./types/coloring'),       // available, off by default (image cost)
 };
 
 const OUT_ROOT = path.join(process.cwd(), 'products', 'output');
@@ -24,15 +26,19 @@ const TRACKER = path.join(process.cwd(), 'content', 'gumroad-products.json');
 // Which trend-brief niches each printable type can serve (fashion/beauty briefs
 // are intentionally left for the article+affiliate pipeline, not printables).
 const TYPE_NICHES = {
+  clipart: ['aesthetic art & printables', 'home decor', 'gifts & occasions', 'beauty', 'fashion'],
+  spreadsheet: ['wellness', 'gifts & occasions'],
   planner: ['wellness', 'gifts & occasions'],
   coloring: ['aesthetic art & printables', 'gifts & occasions'],
 };
 
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
-// Default: 2 planner-style PDF printables/day. Planner is HTML->PDF, so ~$0 API
-// cost (no image generation). Coloring stays available via --types=coloring but
-// is OFF by default because it uses ~6 AI images/product (the costly part).
-const defaultSel = ['planner', 'planner'];
+// Default: 2 products/day, rotating evenly across the top-demand types
+// (clipart, spreadsheet, planner) so output is steady + varied. Clipart adds a
+// small image cost (~$0.13); spreadsheet/planner are ~$0.
+const ROTATION = ['clipart', 'spreadsheet', 'planner'];
+const dayIdx = Math.floor(Date.now() / 864e5);
+const defaultSel = [ROTATION[dayIdx % 3], ROTATION[(dayIdx + 1) % 3]];
 const selected = argTypes ? argTypes.split('=')[1].split(',') : defaultSel;
 const generateOnly = process.argv.includes('--generate-only');
 
