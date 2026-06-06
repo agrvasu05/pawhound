@@ -1,946 +1,980 @@
 {
-  "generated_at": "2026-06-05T06:04:01.641Z",
+  "generated_at": "2026-06-06T04:43:27.687Z",
   "region": "US",
   "candidates": [
     {
-      "keyword": "michael jackson stickers",
-      "niche": "aesthetic art & printables",
-      "pop": 94,
-      "mom": 300,
-      "yoy": 7000,
-      "rising": true,
-      "score": 204
-    },
-    {
       "keyword": "michael jackson halloween costume",
-      "niche": "fashion",
-      "pop": 93,
+      "niche": "gifts & occasions",
+      "pop": 90,
       "mom": 300,
       "yoy": 1500,
       "rising": true,
-      "score": 203
+      "score": 200
     },
     {
-      "keyword": "uñas para graduacion",
-      "niche": "beauty",
-      "pop": 89,
-      "mom": 300,
-      "yoy": 20,
-      "rising": true,
-      "score": 199
-    },
-    {
-      "keyword": "graduation card",
+      "keyword": "snoopy grad",
       "niche": "gifts & occasions",
-      "pop": 89,
+      "pop": 82,
+      "mom": 300,
+      "yoy": 40,
+      "rising": true,
+      "score": 192
+    },
+    {
+      "keyword": "money graduation gift ideas",
+      "niche": "gifts & occasions",
+      "pop": 81,
+      "mom": 300,
+      "yoy": -50,
+      "rising": true,
+      "score": 191
+    },
+    {
+      "keyword": "graduation drawing ideas",
+      "niche": "aesthetic art & printables",
+      "pop": 81,
       "mom": 300,
       "yoy": 30,
       "rising": true,
-      "score": 199
-    },
-    {
-      "keyword": "graduation doodle",
-      "niche": "aesthetic art & printables",
-      "pop": 89,
-      "mom": 300,
-      "yoy": 30,
-      "rising": true,
-      "score": 199
-    },
-    {
-      "keyword": "grad nail ideas",
-      "niche": "beauty",
-      "pop": 87,
-      "mom": 300,
-      "yoy": -30,
-      "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "tomodachi life clothes ideas",
-      "niche": "aesthetic art & printables",
-      "pop": 87,
-      "mom": 400,
-      "yoy": 10001,
-      "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "grad party guest outfit",
-      "niche": "fashion",
-      "pop": 86,
-      "mom": 400,
-      "yoy": 60,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "tomodachi life house exterior",
-      "niche": "home decor",
-      "pop": 86,
-      "mom": 500,
-      "yoy": 10001,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "tomodachi life eyes tutorial",
-      "niche": "aesthetic art & printables",
-      "pop": 86,
-      "mom": 400,
-      "yoy": 10001,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "graduation party guest outfit",
-      "niche": "fashion",
-      "pop": 85,
-      "mom": 400,
-      "yoy": 10,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "summer capsule wardrobe 2026",
-      "niche": "fashion",
-      "pop": 85,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "graduation card ideas homemade",
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 400,
-      "yoy": 50,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "grad party banner ideas",
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 500,
-      "yoy": 1500,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "birdhouses rustic",
-      "niche": "home decor",
-      "pop": 84,
-      "mom": 400,
-      "yoy": -40,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "last day of school nails",
-      "niche": "beauty",
-      "pop": 84,
-      "mom": 600,
-      "yoy": 100,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "kash doll buns",
-      "niche": "beauty",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "graduation money gift ideas",
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": -10,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "grad poster",
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 40,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "graduation party outfit ideas",
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 40,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "door overhang",
-      "niche": "home decor",
-      "pop": 83,
-      "mom": 500,
-      "yoy": 100,
-      "rising": true,
-      "score": 193
-    },
-    {
-      "keyword": "grad party outfits",
-      "niche": "fashion",
-      "pop": 82,
-      "mom": 400,
-      "yoy": 90,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "guest graduation outfit ideas",
-      "niche": "fashion",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 50,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "von dutch shoes",
-      "niche": "fashion",
-      "pop": 82,
-      "mom": 800,
-      "yoy": 10001,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "off the wall",
-      "niche": "home decor",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 600,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "graduation party outfit",
-      "niche": "gifts & occasions",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 5,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "graduation doodles",
-      "niche": "aesthetic art & printables",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 20,
-      "rising": true,
-      "score": 192
-    },
-    {
-      "keyword": "casual graduation outfit guest",
-      "niche": "fashion",
-      "pop": 81,
-      "mom": 500,
-      "yoy": -8,
-      "rising": true,
       "score": 191
-    },
-    {
-      "keyword": "pitbull concert outfit ideas",
-      "niche": "fashion",
-      "pop": 81,
-      "mom": 300,
-      "yoy": 2500,
-      "rising": true,
-      "score": 191
-    },
-    {
-      "keyword": "don toliver nails",
-      "niche": "beauty",
-      "pop": 81,
-      "mom": 400,
-      "yoy": 10001,
-      "rising": true,
-      "score": 191
-    },
-    {
-      "keyword": "grad hairstyles with cap",
-      "niche": "beauty",
-      "pop": 81,
-      "mom": 300,
-      "yoy": 60,
-      "rising": true,
-      "score": 191
-    },
-    {
-      "keyword": "graduation party outfit ideas guest",
-      "niche": "fashion",
-      "pop": 80,
-      "mom": 500,
-      "yoy": -2,
-      "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "grad party outfit",
-      "niche": "gifts & occasions",
-      "pop": 80,
-      "mom": 300,
-      "yoy": 40,
-      "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "outfits to wear to a graduation",
-      "niche": "fashion",
-      "pop": 79,
-      "mom": 600,
-      "yoy": 200,
-      "rising": true,
-      "score": 189
-    },
-    {
-      "keyword": "michael jackson wallpaper aesthetic",
-      "niche": "aesthetic art & printables",
-      "pop": 79,
-      "mom": 300,
-      "yoy": 1500,
-      "rising": true,
-      "score": 189
     },
     {
       "keyword": "graduation drawings",
       "niche": "aesthetic art & printables",
-      "pop": 79,
+      "pop": 81,
       "mom": 300,
-      "yoy": 9,
+      "yoy": 10,
       "rising": true,
-      "score": 189
+      "score": 191
     },
     {
-      "keyword": "cedar point outfit",
-      "niche": "fashion",
-      "pop": 78,
+      "keyword": "last day of school nails",
+      "niche": "beauty",
+      "pop": 80,
       "mom": 500,
-      "yoy": 4,
+      "yoy": 100,
       "rising": true,
-      "score": 188
+      "score": 190
     },
     {
-      "keyword": "grad party captions",
+      "keyword": "michael jackson drawings",
+      "niche": "aesthetic art & printables",
+      "pop": 80,
+      "mom": 300,
+      "yoy": 700,
+      "rising": true,
+      "score": 190
+    },
+    {
+      "keyword": "grad party banner ideas",
       "niche": "gifts & occasions",
-      "pop": 78,
-      "mom": 1000,
+      "pop": 86,
+      "mom": 500,
+      "yoy": 2000,
+      "rising": false,
+      "score": 186
+    },
+    {
+      "keyword": "money crown graduation",
+      "niche": "gifts & occasions",
+      "pop": 75,
+      "mom": 300,
+      "yoy": 300,
+      "rising": true,
+      "score": 185
+    },
+    {
+      "keyword": "bedazzled light switch cover",
+      "niche": "home decor",
+      "pop": 74,
+      "mom": 300,
+      "yoy": 5500,
+      "rising": true,
+      "score": 184
+    },
+    {
+      "keyword": "summer nails stripes",
+      "niche": "beauty",
+      "pop": 74,
+      "mom": 300,
       "yoy": 200,
       "rising": true,
-      "score": 188
+      "score": 184
     },
     {
-      "keyword": "grad cap drawing",
-      "niche": "gifts & occasions",
-      "pop": 78,
+      "keyword": "michael jackson drawing",
+      "niche": "aesthetic art & printables",
+      "pop": 74,
+      "mom": 400,
+      "yoy": 800,
+      "rising": true,
+      "score": 184
+    },
+    {
+      "keyword": "amazing food hacks",
+      "niche": "wellness",
+      "pop": 71,
       "mom": 300,
       "yoy": 20,
       "rising": true,
-      "score": 188
+      "score": 181
     },
     {
-      "keyword": "graduation party outfit guest",
-      "niche": "fashion",
-      "pop": 77,
-      "mom": 500,
-      "yoy": -20,
+      "keyword": "gemini nails designs",
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 400,
+      "yoy": -50,
       "rising": true,
-      "score": 187
+      "score": 180
+    },
+    {
+      "keyword": "michael jackson art",
+      "niche": "aesthetic art & printables",
+      "pop": 68,
+      "mom": 400,
+      "yoy": 900,
+      "rising": true,
+      "score": 178
+    },
+    {
+      "keyword": "summer routine",
+      "niche": "wellness",
+      "pop": 59,
+      "mom": 500,
+      "yoy": -30,
+      "rising": true,
+      "score": 169
+    },
+    {
+      "keyword": "summer morning routine",
+      "niche": "wellness",
+      "pop": 58,
+      "mom": 500,
+      "yoy": -8,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "grad gift ideas",
+      "niche": "gifts & occasions",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 40,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "grad party gift ideas",
+      "niche": "gifts & occasions",
+      "pop": 88,
+      "mom": 200,
+      "yoy": 60,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "nursing school inspiration",
+      "niche": "wellness",
+      "pop": 53,
+      "mom": 500,
+      "yoy": -50,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "money bouquet graduation",
+      "niche": "gifts & occasions",
+      "pop": 87,
+      "mom": 200,
+      "yoy": -3,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "summer day routine",
+      "niche": "wellness",
+      "pop": 52,
+      "mom": 600,
+      "yoy": 40,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "diy skin care routine",
+      "niche": "wellness",
+      "pop": 51,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "snoopy graduation",
+      "niche": "gifts & occasions",
+      "pop": 84,
+      "mom": 200,
+      "yoy": 0,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "card box graduation",
+      "niche": "gifts & occasions",
+      "pop": 85,
+      "mom": 200,
+      "yoy": -30,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "diploma drawing",
+      "niche": "aesthetic art & printables",
+      "pop": 84,
+      "mom": 200,
+      "yoy": 10,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "summer mani pedi",
+      "niche": "beauty",
+      "pop": 84,
+      "mom": 200,
+      "yoy": 80,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "mgk nails",
+      "niche": "beauty",
+      "pop": 83,
+      "mom": 200,
+      "yoy": 900,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "graduation drawing",
+      "niche": "aesthetic art & printables",
+      "pop": 83,
+      "mom": 200,
+      "yoy": 10,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "michael jackson cartoon",
+      "niche": "aesthetic art & printables",
+      "pop": 83,
+      "mom": 200,
+      "yoy": 400,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "summer drawing ideas",
+      "niche": "aesthetic art & printables",
+      "pop": 49,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "summer toes nails",
+      "niche": "beauty",
+      "pop": 81,
+      "mom": 200,
+      "yoy": 200,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "money bouquet",
+      "niche": "gifts & occasions",
+      "pop": 90,
+      "mom": 200,
+      "yoy": -30,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "june nails",
+      "niche": "beauty",
+      "pop": 46,
+      "mom": 1500,
+      "yoy": 60,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "easy summer nails",
+      "niche": "beauty",
+      "pop": 90,
+      "mom": 200,
+      "yoy": 100,
+      "rising": false,
+      "score": 156
+    },
+    {
+      "keyword": "diy skin care recipes",
+      "niche": "wellness",
+      "pop": 80,
+      "mom": 200,
+      "yoy": 40,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "graduation gift ideas for her",
+      "niche": "gifts & occasions",
+      "pop": 80,
+      "mom": 200,
+      "yoy": 500,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "chrome nails summer",
+      "niche": "beauty",
+      "pop": 79,
+      "mom": 200,
+      "yoy": -10,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "brown summer nails",
+      "niche": "beauty",
+      "pop": 79,
+      "mom": 200,
+      "yoy": 30,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "chin whiteheads",
+      "niche": "wellness",
+      "pop": 79,
+      "mom": 200,
+      "yoy": 1500,
+      "rising": true,
+      "score": 155
     }
   ],
   "briefs": [
     {
-      "keyword": "uñas para graduacion",
+      "keyword": "snoopy grad",
       "keep": true,
       "season": "graduation",
       "intent": "high",
-      "article_topic": "Top 15 Uñas para Graduación 2026: Diseños Elegantes y Fáciles de Hacer",
+      "article_topic": "Creative Snoopy Graduation Gift Ideas for 2026",
       "pin_titles": [
-        "Uñas para Graduación 2026: Tendencias y Estilos",
-        "Ideas de Uñas para Graduación Elegantes 2026",
-        "Diseños de Uñas para Graduación que Encantan 2026"
+        "Unique Snoopy Graduation Gifts 2026",
+        "Celebrate Graduation with Snoopy-Themed Gifts",
+        "Top Snoopy Grad Gifts for 2026"
       ],
       "pin_descriptions": [
-        "Descubre los mejores diseños de uñas para graduación 2026 y luce perfecta en tu día especial. ¡Inspírate y compra productos!",
-        "Explora ideas elegantes de uñas para graduación y encuentra los mejores esmaltes y accesorios. ¡Haz clic para más!"
+        "Find adorable Snoopy graduation gifts to celebrate your grad in 2026. Shop unique and memorable presents now!",
+        "Celebrate your graduate with Snoopy-themed gifts that bring joy and nostalgia. Perfect for 2026 grads!"
       ],
       "boards": [
-        "Belleza para Graduación",
-        "Diseños de Uñas 2026"
+        "Graduation Gifts 2026",
+        "Snoopy and Peanuts Gifts"
       ],
       "product_ideas": [
-        "Plantillas de diseño de uñas para graduación printable",
-        "Guía digital para manicura de graduación paso a paso"
+        "Printable Snoopy graduation cards",
+        "Snoopy-themed digital party invitations"
       ],
       "affiliate_matches": [
-        "Esmaltes de uñas de gel",
-        "Kits de manicura profesional"
-      ],
-      "niche": "beauty",
-      "pop": 89,
-      "mom": 300,
-      "yoy": 20,
-      "rising": true,
-      "score": 199
-    },
-    {
-      "keyword": "graduation card",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "20 Best Graduation Card Ideas 2026: Sentiments & Designs to Celebrate Success",
-      "pin_titles": [
-        "Unique Graduation Card Ideas 2026",
-        "Top Graduation Cards to Celebrate Success 2026",
-        "Handmade Graduation Cards for 2026 Celebrations"
-      ],
-      "pin_descriptions": [
-        "Find the perfect graduation card to celebrate your graduate's achievements. Shop unique and customizable designs!",
-        "Explore heartfelt graduation card ideas for 2026. Personalize your message and make their day unforgettable!"
-      ],
-      "boards": [
-        "Graduation Gifts & Cards",
-        "Occasion Cards Ideas"
-      ],
-      "product_ideas": [
-        "Printable customizable graduation card templates",
-        "Digital calligraphy packs for graduation cards"
-      ],
-      "affiliate_matches": [
-        "Custom card printing services",
-        "Greeting card kits"
+        "Peanuts merchandise",
+        "Graduation gift sets"
       ],
       "niche": "gifts & occasions",
-      "pop": 89,
+      "pop": 82,
       "mom": 300,
-      "yoy": 30,
+      "yoy": 40,
       "rising": true,
-      "score": 199
+      "score": 192
     },
     {
-      "keyword": "graduation doodle",
+      "keyword": "money graduation gift ideas",
+      "keep": true,
+      "season": "graduation",
+      "intent": "high",
+      "article_topic": "Top Money Graduation Gift Ideas for 2026 That Graduates Will Love",
+      "pin_titles": [
+        "Creative Money Graduation Gifts 2026",
+        "Best Money Gift Ideas for Graduates",
+        "Unique Ways to Give Money for Graduation 2026"
+      ],
+      "pin_descriptions": [
+        "Explore creative money graduation gift ideas for 2026 that make giving cash special and memorable. Shop now!",
+        "Looking for perfect money gift ideas for grads? Discover unique ways to gift cash for 2026 graduations!"
+      ],
+      "boards": [
+        "Graduation Gifts 2026",
+        "Money Gift Ideas"
+      ],
+      "product_ideas": [
+        "Printable money gift card templates",
+        "Digital money bouquet tutorials"
+      ],
+      "affiliate_matches": [
+        "Cash gift cards",
+        "Money bouquet supplies"
+      ],
+      "niche": "gifts & occasions",
+      "pop": 81,
+      "mom": 300,
+      "yoy": -50,
+      "rising": true,
+      "score": 191
+    },
+    {
+      "keyword": "graduation drawing ideas",
       "keep": true,
       "season": "graduation",
       "intent": "medium",
-      "article_topic": "Creative Graduation Doodle Ideas for Cards and Gifts in 2026",
+      "article_topic": "20 Inspiring Graduation Drawing Ideas for 2026 Celebrations",
       "pin_titles": [
-        "Cute Graduation Doodle Ideas 2026",
-        "How to Create Graduation Doodles for Cards 2026",
-        "Graduation Doodle Art for Gifts 2026"
+        "Creative Graduation Drawing Ideas 2026",
+        "How to Draw Graduation-Themed Art",
+        "Graduation Drawing Inspiration for 2026"
       ],
       "pin_descriptions": [
-        "Get inspired with creative graduation doodle ideas perfect for cards and gifts. Download printable doodles now!",
-        "Add charm to your graduation cards with unique doodles. Explore designs and create personalized gifts today!"
+        "Get inspired with 20 creative graduation drawing ideas perfect for 2026 celebrations and gifts. Download printable guides!",
+        "Learn how to create stunning graduation drawings with these artistic ideas for 2026. Perfect for gifts and decor!"
       ],
       "boards": [
-        "Aesthetic Graduation Art",
-        "Printable Doodles & Designs"
+        "Graduation Art Ideas",
+        "Printable Graduation Gifts"
       ],
       "product_ideas": [
-        "Graduation-themed doodle clipart pack",
-        "Digital doodle tutorial for graduation crafts"
+        "Graduation drawing printable templates",
+        "Digital art tutorials for graduation themes"
       ],
       "affiliate_matches": [
-        "Digital drawing tablets",
-        "Printable art supplies"
+        "Art supplies",
+        "Printable art kits"
       ],
       "niche": "aesthetic art & printables",
-      "pop": 89,
+      "pop": 81,
       "mom": 300,
       "yoy": 30,
       "rising": true,
-      "score": 199
+      "score": 191
     },
     {
-      "keyword": "grad nail ideas",
+      "keyword": "graduation drawings",
       "keep": true,
       "season": "graduation",
-      "intent": "high",
-      "article_topic": "25 Stunning Grad Nail Ideas for Graduation Season 2026",
+      "intent": "medium",
+      "article_topic": "Beautiful Graduation Drawings to Celebrate Your 2026 Grad",
       "pin_titles": [
-        "Elegant Grad Nail Ideas 2026",
-        "Top Nail Designs for Graduation 2026",
-        "Trendy Graduation Nails You’ll Love 2026"
+        "Graduation Drawings for 2026",
+        "Artistic Graduation Celebration Ideas",
+        "Unique Graduation Drawing Prints 2026"
       ],
       "pin_descriptions": [
-        "Discover elegant and trendy grad nail ideas perfect for your 2026 graduation look. Shop nail art supplies now!",
-        "Get inspired with the latest grad nail designs for 2026. Find tools and tutorials to create your perfect manicure!"
+        "Discover beautiful graduation drawings perfect for 2026 celebrations. Download printable art or create your own!",
+        "Celebrate your graduate with unique graduation drawings and art prints for 2026. Shop digital downloads today!"
       ],
       "boards": [
-        "Graduation Beauty Looks",
-        "Nail Art Trends 2026"
+        "Graduation Art",
+        "Printable Graduation Cards"
       ],
       "product_ideas": [
-        "Printable grad nail art stencils",
-        "Digital grad nail design lookbook"
+        "Graduation drawing printable sets",
+        "Customizable digital graduation cards"
       ],
       "affiliate_matches": [
-        "Nail polish sets",
-        "UV nail lamps"
+        "Art printables",
+        "Custom greeting cards"
       ],
-      "niche": "beauty",
-      "pop": 87,
+      "niche": "aesthetic art & printables",
+      "pop": 81,
       "mom": 300,
-      "yoy": -30,
-      "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "grad party guest outfit",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "10 Perfect Grad Party Guest Outfits for Graduation Season 2026",
-      "pin_titles": [
-        "Stylish Grad Party Guest Outfits 2026",
-        "What to Wear to a Graduation Party 2026",
-        "Top Graduation Party Guest Looks 2026"
-      ],
-      "pin_descriptions": [
-        "Find stylish and comfortable grad party guest outfits for 2026. Shop the latest fashion trends today!",
-        "Get inspired with perfect outfit ideas for graduation parties. Click to shop dresses, shoes, and accessories!"
-      ],
-      "boards": [
-        "Graduation Party Fashion",
-        "Party Outfits 2026"
-      ],
-      "product_ideas": [
-        "Graduation party outfit styling guide eBook",
-        "Printable outfit planner for graduation events"
-      ],
-      "affiliate_matches": [
-        "Dresses for graduation parties",
-        "Statement jewelry"
-      ],
-      "niche": "fashion",
-      "pop": 86,
-      "mom": 400,
-      "yoy": 60,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "graduation party guest outfit",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "Top 10 Graduation Party Guest Outfit Ideas for 2026 Celebrations",
-      "pin_titles": [
-        "Graduation Party Guest Outfit Ideas 2026",
-        "What to Wear to Graduation Parties 2026",
-        "Stylish Graduation Party Outfits for Guests 2026"
-      ],
-      "pin_descriptions": [
-        "Looking for the perfect outfit for a graduation party? Discover stylish 2026 looks and shop today!",
-        "Find inspiration for graduation party guest outfits that stand out. Click for fashion tips and products!"
-      ],
-      "boards": [
-        "Graduation Fashion Trends",
-        "Party Outfit Ideas"
-      ],
-      "product_ideas": [
-        "Graduation party outfit lookbook PDF",
-        "Printable style guide for party guests"
-      ],
-      "affiliate_matches": [
-        "Cocktail dresses",
-        "Chic accessories"
-      ],
-      "niche": "fashion",
-      "pop": 85,
-      "mom": 400,
       "yoy": 10,
       "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "summer capsule wardrobe 2026",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "Build Your Summer Capsule Wardrobe 2026: Essential Pieces & Styling Tips",
-      "pin_titles": [
-        "Summer Capsule Wardrobe 2026 Essentials",
-        "How to Create a Summer Capsule Wardrobe 2026",
-        "Top Summer Capsule Fashion Looks 2026"
-      ],
-      "pin_descriptions": [
-        "Create a stylish summer capsule wardrobe for 2026 with essential versatile pieces. Shop minimalist fashion now!",
-        "Discover how to build a summer capsule wardrobe with timeless styles. Get your 2026 summer fashion guide!"
-      ],
-      "boards": [
-        "Capsule Wardrobes 2026",
-        "Summer Fashion Essentials"
-      ],
-      "product_ideas": [
-        "Summer capsule wardrobe planner PDF",
-        "Digital styling guide for capsule wardrobes"
-      ],
-      "affiliate_matches": [
-        "Minimalist clothing brands",
-        "Versatile fashion accessories"
-      ],
-      "niche": "fashion",
-      "pop": 85,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "graduation card ideas homemade",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "15 Homemade Graduation Card Ideas to Celebrate Class of 2026",
-      "pin_titles": [
-        "Homemade Graduation Card Ideas 2026",
-        "DIY Graduation Cards for 2026",
-        "Creative Graduation Card Ideas Homemade"
-      ],
-      "pin_descriptions": [
-        "Make your own graduation cards with these creative homemade ideas. Download printable templates now!",
-        "Personalize your graduation wishes with DIY cards. Explore easy 2026 designs and craft your card today!"
-      ],
-      "boards": [
-        "DIY Graduation Gifts",
-        "Handmade Card Ideas"
-      ],
-      "product_ideas": [
-        "Printable DIY graduation card templates",
-        "Digital crafting tutorial for homemade cards"
-      ],
-      "affiliate_matches": [
-        "Craft paper sets",
-        "Card making kits"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 400,
-      "yoy": 50,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "grad party banner ideas",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "Top Grad Party Banner Ideas for Celebrations in 2026",
-      "pin_titles": [
-        "Creative Grad Party Banner Ideas 2026",
-        "DIY Graduation Party Banners 2026",
-        "Best Grad Party Banner Designs 2026"
-      ],
-      "pin_descriptions": [
-        "Decorate your graduation party with unique banner ideas. Download printable templates and shop supplies!",
-        "Find DIY grad party banner ideas perfect for 2026 celebrations. Click to create vibrant party decor!"
-      ],
-      "boards": [
-        "Graduation Party Decor",
-        "DIY Party Banners"
-      ],
-      "product_ideas": [
-        "Printable graduation party banner templates",
-        "Digital design kits for party decor"
-      ],
-      "affiliate_matches": [
-        "Party decoration kits",
-        "Banner printing services"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 500,
-      "yoy": 1500,
-      "rising": true,
-      "score": 195
-    },
-    {
-      "keyword": "birdhouses rustic",
-      "keep": true,
-      "season": "spring",
-      "intent": "medium",
-      "article_topic": "10 Charming Rustic Birdhouses to Enhance Your Spring Garden 2026",
-      "pin_titles": [
-        "Rustic Birdhouses for Spring 2026",
-        "Handcrafted Rustic Birdhouses Ideas",
-        "Top Rustic Birdhouse Designs 2026"
-      ],
-      "pin_descriptions": [
-        "Add charm to your garden with rustic birdhouses this spring. Shop handmade and printable design guides!",
-        "Explore rustic birdhouse ideas perfect for your outdoor decor. Click to buy or DIY with printables!"
-      ],
-      "boards": [
-        "Rustic Home Decor",
-        "Garden & Outdoor Ideas"
-      ],
-      "product_ideas": [
-        "Rustic birdhouse building plans printable",
-        "Digital guide to rustic garden decor"
-      ],
-      "affiliate_matches": [
-        "Woodworking kits",
-        "Outdoor home decor"
-      ],
-      "niche": "home decor",
-      "pop": 84,
-      "mom": 400,
-      "yoy": -40,
-      "rising": true,
-      "score": 194
+      "score": 191
     },
     {
       "keyword": "last day of school nails",
       "keep": true,
       "season": "spring",
       "intent": "high",
-      "article_topic": "15 Fun Last Day of School Nail Designs for 2026",
+      "article_topic": "Trendy Last Day of School Nails Designs for 2026",
       "pin_titles": [
-        "Last Day of School Nails 2026",
-        "Creative Nail Art for Last Day of School",
-        "Trendy Nails to Celebrate School's End 2026"
+        "Best Last Day of School Nails 2026",
+        "Creative Nail Art for End of School Year",
+        "Last Day of School Nail Ideas 2026"
       ],
       "pin_descriptions": [
-        "Celebrate the last day of school with fun nail art. Discover 2026 designs and shop nail supplies today!",
-        "Get creative with last day of school nails. Find tutorials and products to make your manicure pop!"
+        "Celebrate the last day of school with trendy nail designs for 2026. Get inspired and find nail art kits now!",
+        "Explore creative last day of school nails ideas for 2026. Perfect for students and teachers celebrating!"
       ],
       "boards": [
-        "Back to School Beauty",
-        "Fun Nail Art Ideas"
+        "Nail Art Ideas 2026",
+        "Back to School Beauty"
       ],
       "product_ideas": [
-        "Printable nail art decals for school themes",
-        "Digital nail design tutorial"
+        "Last day of school nail art tutorial",
+        "Printable nail art decals"
       ],
       "affiliate_matches": [
-        "Nail art stickers",
-        "Manicure kits"
+        "Nail polish sets",
+        "Nail art tools"
       ],
       "niche": "beauty",
-      "pop": 84,
-      "mom": 600,
-      "yoy": 100,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "kash doll buns",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "How to Style Kash Doll Buns: Step-by-Step Guide for 2026",
-      "pin_titles": [
-        "Kash Doll Buns Hairstyle Guide 2026",
-        "Easy Kash Doll Buns Tutorial",
-        "Trendy Kash Doll Buns for 2026"
-      ],
-      "pin_descriptions": [
-        "Learn to style Kash Doll buns with our easy 2026 guide. Shop hair accessories and styling tools now!",
-        "Get the perfect Kash Doll buns hairstyle. Follow our step-by-step tutorial and buy recommended products!"
-      ],
-      "boards": [
-        "Hairstyles & Beauty Trends",
-        "Hair Tutorials 2026"
-      ],
-      "product_ideas": [
-        "Kash Doll buns styling guide eBook",
-        "Printable hair accessory planner"
-      ],
-      "affiliate_matches": [
-        "Hair bun makers",
-        "Styling gels and sprays"
-      ],
-      "niche": "beauty",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "graduation money gift ideas",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "Creative Graduation Money Gift Ideas for Class of 2026",
-      "pin_titles": [
-        "Unique Graduation Money Gift Ideas 2026",
-        "How to Gift Money for Graduation 2026",
-        "Creative Ways to Present Graduation Money Gifts"
-      ],
-      "pin_descriptions": [
-        "Find creative ways to gift money for graduation in 2026. Shop gift cards and packaging ideas now!",
-        "Make your graduation money gift memorable with unique presentation ideas. Download printable templates!"
-      ],
-      "boards": [
-        "Graduation Gifts",
-        "Money Gift Presentation Ideas"
-      ],
-      "product_ideas": [
-        "Printable money gift card holders",
-        "Digital guide to creative money gifts"
-      ],
-      "affiliate_matches": [
-        "Gift card holders",
-        "Money gift envelopes"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": -10,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "grad poster",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "Top Grad Poster Ideas for Celebrating Graduation 2026",
-      "pin_titles": [
-        "Creative Grad Poster Ideas 2026",
-        "DIY Graduation Posters for 2026",
-        "Best Graduation Poster Designs 2026"
-      ],
-      "pin_descriptions": [
-        "Celebrate with custom grad posters. Download printable templates and shop poster supplies today!",
-        "Make your grad party special with unique posters. Explore 2026 ideas and create your own now!"
-      ],
-      "boards": [
-        "Graduation Party Decor",
-        "DIY Celebration Posters"
-      ],
-      "product_ideas": [
-        "Printable grad poster templates",
-        "Digital design kits for party posters"
-      ],
-      "affiliate_matches": [
-        "Poster printing services",
-        "DIY poster kits"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 40,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "graduation party outfit ideas",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "Top Graduation Party Outfit Ideas for 2026: Stylish Looks for Every Guest",
-      "pin_titles": [
-        "Stylish Graduation Party Outfit Ideas 2026",
-        "What to Wear to Graduation Parties 2026",
-        "Fashion Tips for Graduation Party Guests"
-      ],
-      "pin_descriptions": [
-        "Discover stylish graduation party outfit ideas for 2026. Shop dresses, shoes, and accessories today!",
-        "Get inspired with trendy graduation party looks. Click to see outfit ideas and buy now!"
-      ],
-      "boards": [
-        "Graduation Fashion",
-        "Party Outfit Inspiration"
-      ],
-      "product_ideas": [
-        "Graduation party outfit lookbook PDF",
-        "Printable style guide for party outfits"
-      ],
-      "affiliate_matches": [
-        "Cocktail dresses",
-        "Fashion accessories"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 40,
-      "rising": true,
-      "score": 194
-    },
-    {
-      "keyword": "door overhang",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "How to Choose and Style Door Overhangs for Your Home in 2026",
-      "pin_titles": [
-        "Door Overhang Ideas for 2026",
-        "Stylish Door Overhang Designs",
-        "Choosing the Perfect Door Overhang"
-      ],
-      "pin_descriptions": [
-        "Enhance your home’s entrance with stylish door overhangs. Explore 2026 design ideas and shop now!",
-        "Learn how to select and style door overhangs for curb appeal. Download design guides and tips!"
-      ],
-      "boards": [
-        "Home Exterior Ideas",
-        "Outdoor Home Decor"
-      ],
-      "product_ideas": [
-        "Door overhang design planner printable",
-        "Digital home exterior styling guide"
-      ],
-      "affiliate_matches": [
-        "Outdoor awnings",
-        "Door canopy kits"
-      ],
-      "niche": "home decor",
-      "pop": 83,
+      "pop": 80,
       "mom": 500,
       "yoy": 100,
       "rising": true,
-      "score": 193
+      "score": 190
     },
     {
-      "keyword": "grad party outfits",
+      "keyword": "grad party banner ideas",
       "keep": true,
       "season": "graduation",
       "intent": "high",
-      "article_topic": "Best Grad Party Outfits for 2026 Graduates and Guests",
+      "article_topic": "25 Festive Grad Party Banner Ideas for 2026 Celebrations",
       "pin_titles": [
-        "Trendy Grad Party Outfits 2026",
-        "What to Wear to Graduation Parties 2026",
-        "Fashionable Grad Party Looks 2026"
+        "Creative Grad Party Banner Ideas 2026",
+        "DIY Graduation Banners for Parties",
+        "Top Graduation Banner Designs 2026"
       ],
       "pin_descriptions": [
-        "Find the best grad party outfits for 2026 graduates and guests. Shop dresses, suits, and accessories!",
-        "Explore fashion trends for graduation parties. Click for outfit ideas and buy your perfect look!"
+        "Make your 2026 grad party unforgettable with these festive banner ideas. Download printables and DIY kits!",
+        "Celebrate with style using creative grad party banners. Perfect for 2026 graduation parties and events."
       ],
       "boards": [
-        "Graduation Party Fashion",
-        "Event Outfit Ideas"
+        "Graduation Party Ideas",
+        "DIY Graduation Decorations"
       ],
       "product_ideas": [
-        "Grad party outfit styling guide eBook",
-        "Printable outfit planner for graduation events"
+        "Printable grad party banner templates",
+        "Digital party decoration kits"
       ],
       "affiliate_matches": [
-        "Formal dresses",
-        "Statement accessories"
+        "Party supplies",
+        "Banner crafting kits"
       ],
-      "niche": "fashion",
-      "pop": 82,
-      "mom": 400,
-      "yoy": 90,
+      "niche": "gifts & occasions",
+      "pop": 86,
+      "mom": 500,
+      "yoy": 2000,
+      "rising": false,
+      "score": 186
+    },
+    {
+      "keyword": "money crown graduation",
+      "keep": true,
+      "season": "graduation",
+      "intent": "high",
+      "article_topic": "How to Make a Stunning Money Crown for Graduation 2026",
+      "pin_titles": [
+        "DIY Money Crown for Graduation 2026",
+        "Creative Graduation Money Crowns",
+        "Money Crown Gift Ideas for Grads"
+      ],
+      "pin_descriptions": [
+        "Learn how to create a beautiful money crown for your 2026 graduate. Step-by-step guide and printable templates!",
+        "Give a unique money crown gift for graduation 2026. Find materials and ideas to make it special today."
+      ],
+      "boards": [
+        "Graduation Gifts",
+        "DIY Money Gifts"
+      ],
+      "product_ideas": [
+        "Printable money crown templates",
+        "Digital money bouquet tutorials"
+      ],
+      "affiliate_matches": [
+        "Craft supplies",
+        "Money clip holders"
+      ],
+      "niche": "gifts & occasions",
+      "pop": 75,
+      "mom": 300,
+      "yoy": 300,
       "rising": true,
-      "score": 192
+      "score": 185
+    },
+    {
+      "keyword": "bedazzled light switch cover",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "How to Make Bedazzled Light Switch Covers for Chic Home Decor in 2026",
+      "pin_titles": [
+        "DIY Bedazzled Light Switch Covers 2026",
+        "Chic Bedazzled Switch Cover Ideas",
+        "Decorate Your Home with Bedazzled Switch Covers"
+      ],
+      "pin_descriptions": [
+        "Add sparkle to your room with DIY bedazzled light switch covers. Easy 2026 decorating ideas and tutorials!",
+        "Transform your home decor with stylish bedazzled light switch covers. Get creative with our step-by-step guide."
+      ],
+      "boards": [
+        "Home Decor DIY",
+        "Sparkling Room Accessories"
+      ],
+      "product_ideas": [
+        "Bedazzled light switch cover patterns",
+        "DIY home decor digital guides"
+      ],
+      "affiliate_matches": [
+        "Craft rhinestones",
+        "Light switch cover kits"
+      ],
+      "niche": "home decor",
+      "pop": 74,
+      "mom": 300,
+      "yoy": 5500,
+      "rising": true,
+      "score": 184
+    },
+    {
+      "keyword": "summer nails stripes",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "Fresh Summer Nails with Stripes Designs for 2026",
+      "pin_titles": [
+        "Striped Summer Nail Designs 2026",
+        "Trendy Summer Nails with Stripes",
+        "Easy Stripe Nail Art for Summer 2026"
+      ],
+      "pin_descriptions": [
+        "Try fresh striped nail designs perfect for summer 2026. Step-by-step tutorials and nail art kits available!",
+        "Get trendy summer nails with stripes for 2026. Find inspiration and supplies to create your perfect look."
+      ],
+      "boards": [
+        "Summer Nail Art",
+        "Trendy Nail Designs 2026"
+      ],
+      "product_ideas": [
+        "Striped nail art decal sets",
+        "Summer nail art tutorial ebooks"
+      ],
+      "affiliate_matches": [
+        "Nail polish sets",
+        "Nail art brushes"
+      ],
+      "niche": "beauty",
+      "pop": 74,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 184
+    },
+    {
+      "keyword": "amazing food hacks",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "10 Amazing Food Hacks to Simplify Your Life in 2026",
+      "pin_titles": [
+        "Best Food Hacks 2026",
+        "Amazing Kitchen Hacks You Need",
+        "Easy Food Hacks for Busy People"
+      ],
+      "pin_descriptions": [
+        "Discover 10 amazing food hacks that make cooking easier in 2026. Try them today for a simpler kitchen routine!",
+        "Simplify your cooking with these amazing food hacks. Perfect for busy home cooks looking to save time in 2026."
+      ],
+      "boards": [
+        "Kitchen Hacks",
+        "Food Tips and Tricks"
+      ],
+      "product_ideas": [
+        "Digital food hack recipe cards",
+        "Printable kitchen organization planners"
+      ],
+      "affiliate_matches": [
+        "Kitchen gadgets",
+        "Cooking tools"
+      ],
+      "niche": "wellness",
+      "pop": 71,
+      "mom": 300,
+      "yoy": 20,
+      "rising": true,
+      "score": 181
+    },
+    {
+      "keyword": "gemini nails designs",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "Stunning Gemini Nails Designs for 2026 Astrology Lovers",
+      "pin_titles": [
+        "Gemini Nail Art Ideas 2026",
+        "Astrology-Inspired Gemini Nails",
+        "Unique Gemini Nail Designs"
+      ],
+      "pin_descriptions": [
+        "Show off your zodiac style with stunning Gemini nail designs for 2026. Get inspired and shop nail art kits!",
+        "Express your Gemini personality with unique nail designs. Perfect for astrology fans in 2026."
+      ],
+      "boards": [
+        "Zodiac Nail Art",
+        "Astrology Beauty Trends"
+      ],
+      "product_ideas": [
+        "Gemini nail decal sets",
+        "Astrology-themed nail art tutorials"
+      ],
+      "affiliate_matches": [
+        "Nail polish",
+        "Nail art tools"
+      ],
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 400,
+      "yoy": -50,
+      "rising": true,
+      "score": 180
+    },
+    {
+      "keyword": "summer routine",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "Create Your Perfect Summer Routine for 2026 Wellness",
+      "pin_titles": [
+        "2026 Summer Wellness Routine",
+        "Healthy Summer Routine Ideas",
+        "Daily Summer Routine Tips"
+      ],
+      "pin_descriptions": [
+        "Build a balanced summer routine for wellness in 2026. Tips, habits, and digital planners to help you thrive!",
+        "Optimize your summer days with a refreshing 2026 routine focused on health and happiness. Download guides!"
+      ],
+      "boards": [
+        "Wellness Routines",
+        "Summer Health Tips"
+      ],
+      "product_ideas": [
+        "Summer wellness planner",
+        "Digital self-care routine worksheets"
+      ],
+      "affiliate_matches": [
+        "Wellness journals",
+        "Fitness trackers"
+      ],
+      "niche": "wellness",
+      "pop": 59,
+      "mom": 500,
+      "yoy": -30,
+      "rising": true,
+      "score": 169
+    },
+    {
+      "keyword": "summer morning routine",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "Refreshing Summer Morning Routine Ideas for 2026",
+      "pin_titles": [
+        "Best Summer Morning Routines 2026",
+        "Healthy Morning Habits for Summer",
+        "Start Your Summer Day Right 2026"
+      ],
+      "pin_descriptions": [
+        "Discover refreshing summer morning routines for 2026 to boost your energy and mood. Download planners!",
+        "Start your day the right way with these healthy summer morning routines for 2026. Get inspired and organized!"
+      ],
+      "boards": [
+        "Morning Routines",
+        "Summer Wellness Tips"
+      ],
+      "product_ideas": [
+        "Morning routine digital planners",
+        "Printable wellness checklists"
+      ],
+      "affiliate_matches": [
+        "Aromatherapy diffusers",
+        "Morning skincare kits"
+      ],
+      "niche": "wellness",
+      "pop": 58,
+      "mom": 500,
+      "yoy": -8,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "grad gift ideas",
+      "keep": true,
+      "season": "graduation",
+      "intent": "high",
+      "article_topic": "Top Graduation Gift Ideas for 2026 to Impress Every Grad",
+      "pin_titles": [
+        "Best Graduation Gifts 2026",
+        "Unique Grad Gift Ideas",
+        "Perfect Presents for Graduates 2026"
+      ],
+      "pin_descriptions": [
+        "Find the perfect graduation gift ideas for 2026 that every grad will love. Shop unique and thoughtful presents!",
+        "Explore top grad gift ideas for 2026 to celebrate your graduate in style. Click to find the best gifts now!"
+      ],
+      "boards": [
+        "Graduation Gifts 2026",
+        "Gift Ideas for Graduates"
+      ],
+      "product_ideas": [
+        "Printable graduation gift tags",
+        "Digital gift guides"
+      ],
+      "affiliate_matches": [
+        "Personalized gifts",
+        "Gift card sets"
+      ],
+      "niche": "gifts & occasions",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 40,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "grad party gift ideas",
+      "keep": true,
+      "season": "graduation",
+      "intent": "high",
+      "article_topic": "Unique Grad Party Gift Ideas for 2026 Celebrations",
+      "pin_titles": [
+        "Creative Grad Party Gifts 2026",
+        "Best Gifts for Graduation Parties",
+        "Unique Presents for Grads 2026"
+      ],
+      "pin_descriptions": [
+        "Discover unique grad party gift ideas for 2026 that guests and grads will love. Shop now for party-ready gifts!",
+        "Make your grad party special with creative gift ideas for 2026. Find perfect presents for graduates easily!"
+      ],
+      "boards": [
+        "Graduation Party Ideas",
+        "Grad Gift Inspirations"
+      ],
+      "product_ideas": [
+        "Printable party favor tags",
+        "Digital thank-you card templates"
+      ],
+      "affiliate_matches": [
+        "Party favor gifts",
+        "Gift baskets"
+      ],
+      "niche": "gifts & occasions",
+      "pop": 88,
+      "mom": 200,
+      "yoy": 60,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "nursing school inspiration",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "Top Nursing School Inspiration Ideas for 2026 Success",
+      "pin_titles": [
+        "Nursing School Motivation 2026",
+        "Inspirational Quotes for Nursing Students",
+        "Study Tips for Nursing School"
+      ],
+      "pin_descriptions": [
+        "Stay motivated with top nursing school inspiration ideas for 2026. Download planners and printable quotes!",
+        "Find inspiration and study tips for nursing school success in 2026. Perfect for students and future nurses."
+      ],
+      "boards": [
+        "Nursing School Motivation",
+        "Student Inspiration 2026"
+      ],
+      "product_ideas": [
+        "Printable inspirational posters",
+        "Digital study planners"
+      ],
+      "affiliate_matches": [
+        "Study supplies",
+        "Motivational journals"
+      ],
+      "niche": "wellness",
+      "pop": 53,
+      "mom": 500,
+      "yoy": -50,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "money bouquet graduation",
+      "keep": true,
+      "season": "graduation",
+      "intent": "high",
+      "article_topic": "How to Create a Beautiful Money Bouquet for Graduation 2026",
+      "pin_titles": [
+        "DIY Money Bouquet for Graduation 2026",
+        "Creative Money Bouquet Ideas",
+        "Money Bouquet Gift Tutorial"
+      ],
+      "pin_descriptions": [
+        "Learn how to make a beautiful and unique money bouquet for your 2026 graduate. Step-by-step guide included!",
+        "Give a memorable graduation gift with a money bouquet. Find all materials and ideas for 2026 celebrations."
+      ],
+      "boards": [
+        "Graduation Gifts",
+        "DIY Money Gifts"
+      ],
+      "product_ideas": [
+        "Printable money bouquet templates",
+        "Digital crafting guides"
+      ],
+      "affiliate_matches": [
+        "Craft supplies",
+        "Money clip holders"
+      ],
+      "niche": "gifts & occasions",
+      "pop": 87,
+      "mom": 200,
+      "yoy": -3,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "summer day routine",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "Essential Summer Day Routine Tips for 2026 Wellness",
+      "pin_titles": [
+        "2026 Summer Day Routine Ideas",
+        "Healthy Summer Daily Routine",
+        "Optimize Your Summer Days 2026"
+      ],
+      "pin_descriptions": [
+        "Create an essential summer day routine for wellness in 2026. Tips and digital planners to organize your day!",
+        "Stay healthy and energized with a summer day routine designed for 2026. Download your wellness planner now!"
+      ],
+      "boards": [
+        "Summer Wellness",
+        "Daily Routine Tips"
+      ],
+      "product_ideas": [
+        "Summer day routine digital planner",
+        "Printable wellness trackers"
+      ],
+      "affiliate_matches": [
+        "Fitness gear",
+        "Healthy snacks"
+      ],
+      "niche": "wellness",
+      "pop": 52,
+      "mom": 600,
+      "yoy": 40,
+      "rising": true,
+      "score": 162
     }
   ]
 }
