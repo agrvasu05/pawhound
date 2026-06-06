@@ -2,9 +2,11 @@ name: Daily content generation
 
 on:
   schedule:
-    # 00:45 UTC: generation + ~5min deploy wait lands the PIN POSTING at ~9 PM ET
-    # (= 6 PM PT) — Pinterest's US evening peak. (Shifts ~1h in winter/EST; still in peak.)
-    - cron: '45 0 * * *'
+    # 14:00 UTC = ~10 AM ET. GENERATION ONLY — builds + deploys articles during the
+    # day so they're live well before the evening. POSTING happens separately in
+    # post-pins.yml at 9 PM ET (triggered by cron-job.org), which is why the exact
+    # firing time here doesn't matter (a GitHub cron delay is harmless for generation).
+    - cron: '0 14 * * *'
   workflow_dispatch:      # manual trigger from GitHub Actions tab
 
 permissions:
@@ -56,41 +58,13 @@ jobs:
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
-      # Deploy new articles FIRST so URLs are live before Pinterest tries to crawl them
+      # Deploy new articles so URLs + pin images are live long before the evening
+      # posting run (post-pins.yml). No posting happens here.
       - name: Commit and push new content
         run: |
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/ public/
           git diff --cached --quiet || git commit -m "Daily content"
-          git push
-
-      # Wait for Netlify to finish deploying the new articles before Pinterest
-      # tries to fetch their pin images. A full Next.js build of all pages takes
-      # a few minutes; any pins whose images aren't live yet simply retry on the
-      # next daily run (failed pins are not recorded as posted).
-      - name: Wait for Netlify deploy
-        run: sleep 300
-
-      - name: Post pins to Pinterest
-        id: pinterest
-        run: node scripts/5-post-pins.js
-        env:
-          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
-          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
-          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
-
-      - name: Rotate Pinterest refresh token
-        if: steps.pinterest.outputs.new_refresh_token != ''
-        env:
-          GH_TOKEN: ${{ secrets.PINTEREST_PAT }}
-        run: |
-          gh secret set PINTEREST_REFRESH_TOKEN --body "${{ steps.pinterest.outputs.new_refresh_token }}" --repo ${{ github.repository }}
-
-      # Save updated pin tracker (posted-pins.json + pinterest-boards.json)
-      - name: Commit pin tracker
-        run: |
-          git add content/posted-pins.json content/pinterest-boards.json
-          git diff --cached --quiet || git commit -m "Update pin tracker"
+          git pull --rebase --autostash || true
           git push

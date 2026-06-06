@@ -2,9 +2,10 @@ name: Daily digital products
 
 on:
   schedule:
-    # 01:30 UTC: posting lands ~9:40 PM ET — staggered ~40 min after the content
-    # run so the ~15 pins spread across the 8-11 PM ET evening peak, not all at once.
-    - cron: '30 1 * * *'
+    # 15:00 UTC = ~11 AM ET. GENERATION ONLY — creates products + landing pages and
+    # queues pin variants during the day. The queued pins are POSTED separately in
+    # post-pins.yml at 9 PM ET (cron-job.org trigger), so exact timing here is moot.
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 permissions:
@@ -51,29 +52,13 @@ jobs:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           HOME: /home/runner
 
-      # 2) Deploy landing pages FIRST so Pinterest links resolve + Rich Pins enrich
+      # 2) Deploy landing pages + queue so links resolve + Rich Pins enrich long
+      # before the evening posting run (post-pins.yml). No posting happens here.
       - name: Commit landing pages + queue
         run: |
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json content/trend-briefs.json
           git diff --cached --quiet || git commit -m "Daily products + landing pages"
-          git push
-
-      - name: Wait for Netlify deploy
-        run: sleep 300
-
-      # 3) Drip-post pin variants to Pinterest, linking to the owned landing pages
-      - name: Post pin variants
-        run: node products/post-queue.js --max=5
-        env:
-          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
-          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
-          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
-
-      - name: Commit updated pin queue
-        run: |
-          git add content/pin-queue.json
-          git diff --cached --quiet || git commit -m "Update pin queue"
+          git pull --rebase --autostash || true
           git push

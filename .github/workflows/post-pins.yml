@@ -1,0 +1,102 @@
+name: Post pins (US evening peak)
+
+# Posting is DECOUPLED from generation. Content + products are generated earlier
+# in the day (see daily-content.yml / daily-products.yml) and are already live on
+# the site by now. This workflow ONLY posts the already-queued pins, and it is
+# triggered by an EXTERNAL precise scheduler (cron-job.org) via workflow_dispatch
+# at 01:00 UTC = 9:00 PM ET — Pinterest's US evening peak.
+#
+# Why external trigger: GitHub's own `schedule:` (cron) events get delayed by
+# hours under load, especially near midnight UTC (our target window). A
+# workflow_dispatch call runs within ~30-60s, so cron-job.org gives us precise
+# timing while GitHub just does the work on demand.
+
+on:
+  workflow_dispatch:   # fired by cron-job.org (and usable as a manual button)
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Safety guard: only post during the US evening peak (6-11 PM Eastern).
+      # If something ever fires this off-schedule, we SKIP rather than dump pins
+      # at a bad hour. Handles EST/EDT automatically via the TZ database.
+      - name: Guard — only post 6-11 PM ET
+        id: guard
+        run: |
+          H=$(TZ=America/New_York date +%H)
+          echo "Eastern hour: $H"
+          if [ "$H" -ge 18 ] && [ "$H" -le 23 ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "Outside 6-11 PM ET window — skipping this run."
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.guard.outputs.ok == 'true'
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer system dependencies
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Install dependencies
+        if: steps.guard.outputs.ok == 'true'
+        run: npm install
+
+      # Pull any commits the daytime generation runs pushed, so we post the
+      # freshest queue/content.
+      - name: Sync latest content
+        if: steps.guard.outputs.ok == 'true'
+        run: git pull --rebase --autostash || true
+
+      # 1) Post article/content pins (up to 10/run; skips dog articles internally)
+      - name: Post content pins
+        id: pinterest
+        if: steps.guard.outputs.ok == 'true'
+        run: node scripts/5-post-pins.js
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+
+      # Rotate the Pinterest refresh token if the poster returned a new one
+      - name: Rotate Pinterest refresh token
+        if: steps.guard.outputs.ok == 'true' && steps.pinterest.outputs.new_refresh_token != ''
+        env:
+          GH_TOKEN: ${{ secrets.PINTEREST_PAT }}
+        run: |
+          gh secret set PINTEREST_REFRESH_TOKEN --body "${{ steps.pinterest.outputs.new_refresh_token }}" --repo ${{ github.repository }}
+
+      # 2) Drip-post product (shop landing page) pin variants (up to 5/run)
+      - name: Post product pins
+        if: steps.guard.outputs.ok == 'true'
+        run: node products/post-queue.js --max=5
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+
+      # Save updated trackers (posted-pins, boards, pin-queue)
+      - name: Commit trackers
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json
+          git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify]"
+          git pull --rebase --autostash || true
+          git push
