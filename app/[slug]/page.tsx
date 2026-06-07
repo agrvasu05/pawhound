@@ -24,9 +24,13 @@ export async function generateMetadata({
     description: article.intro.slice(0, 160),
     alternates: { canonical: `/${slug}` },
     openGraph: {
+      type: "article",
       title: article.topic_title,
       description: article.intro.slice(0, 160),
       images: topBreed ? [getBreedImage(topBreed.breed)] : [],
+      ...(article.updated_at
+        ? { modifiedTime: `${article.updated_at}T00:00:00Z` }
+        : {}),
     },
   };
 }

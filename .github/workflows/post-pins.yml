@@ -80,10 +80,11 @@ jobs:
         run: |
           gh secret set PINTEREST_REFRESH_TOKEN --body "${{ steps.pinterest.outputs.new_refresh_token }}" --repo ${{ github.repository }}
 
-      # 2) Drip-post product (shop landing page) pin variants (up to 5/run)
+      # 2) Drip-post product (shop landing page) pin variants (up to 3/run while
+      #    the account is young; 6 content + 3 product = ~9/day total)
       - name: Post product pins
         if: steps.guard.outputs.ok == 'true'
-        run: node products/post-queue.js --max=5
+        run: node products/post-queue.js --max=3
         env:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
