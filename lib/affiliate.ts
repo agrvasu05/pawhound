@@ -1,10 +1,9 @@
-// Affiliate config. Both IDs are public by design (they appear in page source),
-// so they're safe in the repo — same as the AdSense client ID.
-
-// Skimlinks auto-affiliation script ID (converts supported-merchant links once
-// Skimlinks finishes approval). Set NEXT_PUBLIC_SKIMLINKS_ID to override.
-export const SKIMLINKS_ID =
-  process.env.NEXT_PUBLIC_SKIMLINKS_ID || "304164X1792325";
+// Affiliate config. The ID is public by design (it appears in page source),
+// so it's safe in the repo — same as the AdSense client ID.
+//
+// (Skimlinks was removed after rejection — every shop link points straight to
+// Amazon below, so the catch-all script was just dead weight. Reapply to
+// Skimlinks once the site has real traffic, then re-add its script.)
 
 // Amazon Associates tag — LIVE immediately (no approval wait). Tagged links earn
 // from day one, which also drives the 3 sales needed to unlock the Amazon API.

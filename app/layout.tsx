@@ -5,7 +5,6 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { ADSENSE_CLIENT } from "@/lib/ads";
 import { GA_ID } from "@/lib/analytics";
-import { SKIMLINKS_ID } from "@/lib/affiliate";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -62,12 +61,6 @@ export default function RootLayout({
               }}
             />
           </>
-        )}
-        {SKIMLINKS_ID && (
-          <script
-            async
-            src={`https://s.skimresources.com/js/${SKIMLINKS_ID}.skimlinks.js`}
-          />
         )}
       </head>
       <body className="flex min-h-screen flex-col bg-white text-stone-900 antialiased">
