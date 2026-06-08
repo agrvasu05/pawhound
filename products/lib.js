@@ -16,6 +16,50 @@ const puppeteer = require('puppeteer');
 const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
 const BRAND = 'Value Finds Daily';
 
+// ── Gemini (primary text model when GEMINI_API_KEY is set) ───────────────────
+// Best-quality content via Google's flagship model; OpenAI stays as fallback.
+const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+
+// Convert an OpenAI json_schema ({name,strict,schema}) into the subset Gemini's
+// responseSchema accepts: drop additionalProperties/strict, uppercase type names.
+function toGeminiSchema(s) {
+  if (Array.isArray(s)) return s.map(toGeminiSchema);
+  if (s && typeof s === 'object') {
+    const out = {};
+    for (const [k, v] of Object.entries(s)) {
+      if (k === 'additionalProperties' || k === 'strict' || k === '$schema' || k === 'name') continue;
+      if (k === 'type' && typeof v === 'string') { out.type = v.toUpperCase(); continue; }
+      out[k] = toGeminiSchema(v);
+    }
+    return out;
+  }
+  return s;
+}
+
+async function geminiJSON({ system, user, schema, temperature }) {
+  const inner = schema && schema.schema ? schema.schema : schema;
+  const body = {
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: 'user', parts: [{ text: user }] }],
+    generationConfig: {
+      responseMimeType: 'application/json',
+      responseSchema: toGeminiSchema(inner),
+      temperature,
+    },
+  };
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_KEY}`,
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+  );
+  const data = await res.json();
+  if (!res.ok) throw new Error(`Gemini ${res.status}: ${JSON.stringify(data).slice(0, 300)}`);
+  const cand = data.candidates && data.candidates[0];
+  if (!cand) throw new Error(`Gemini: no candidate (${JSON.stringify(data).slice(0, 200)})`);
+  const text = (cand.content && cand.content.parts || []).map((p) => p.text || '').join('');
+  return JSON.parse(text);
+}
+
 // ── Image generation (cheap; swap IMAGE_PROVIDER to scale) ───────────────────
 async function generateImage(prompt, { size = '1024x1536', quality = 'low', background } = {}) {
   const r = await openai.images.generate({
@@ -25,8 +69,16 @@ async function generateImage(prompt, { size = '1024x1536', quality = 'low', back
   return Buffer.from(r.data[0].b64_json, 'base64');
 }
 
-// ── OpenAI chat JSON helper ──────────────────────────────────────────────────
+// ── Chat JSON helper — Gemini 2.5 Pro primary, OpenAI fallback ───────────────
 async function chatJSON({ system, user, schema, temperature = 0.8 }) {
+  if (GEMINI_KEY) {
+    try { return await geminiJSON({ system, user, schema, temperature }); }
+    catch (e) {
+      if (!openai) throw e;
+      console.error('  Gemini failed, falling back to OpenAI:', e.message);
+    }
+  }
+  if (!openai) throw new Error('No GEMINI_API_KEY or OPENAI_API_KEY configured');
   const r = await openai.chat.completions.create({
     model: 'gpt-4.1-mini',
     messages: [{ role: 'system', content: system }, { role: 'user', content: user }],

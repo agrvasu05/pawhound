@@ -9,11 +9,10 @@
  * Usage: node scripts/2d-generate-trend-articles.js [--count=2]
  */
 require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env.local') });
-const OpenAI = require('openai');
 const fs = require('fs');
 const path = require('path');
+const lib = require('../products/lib'); // chatJSON: Gemini 2.5 Pro primary, OpenAI fallback
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
 const BRIEFS = path.join(process.cwd(), 'content', 'trend-briefs.json');
 const USED = path.join(process.cwd(), 'content', 'used-briefs.json');
@@ -50,16 +49,12 @@ const SCHEMA = {
     } } };
 
 async function generate(brief) {
-  const r = await client.chat.completions.create({
-    model: 'gpt-4.1-mini',
-    messages: [
-      { role: 'system', content: 'You write genuinely useful, SEO-friendly listicle articles for a US Pinterest+blog audience (fashion, beauty, lifestyle). Each item is concrete and shoppable. Warm, specific, US English. No medical/financial guarantees, no celebrity endorsements.' },
-      { role: 'user', content: `Write the article "${brief.article_topic}" targeting the trending Pinterest search "${brief.keyword}". Use the keyword in the first sentence. Give 9-12 specific, shoppable items with a precise shop_query for each.` },
-    ],
-    response_format: { type: 'json_schema', json_schema: SCHEMA },
+  const a = await lib.chatJSON({
+    system: 'You write genuinely useful, SEO-friendly listicle articles for a US Pinterest+blog audience (fashion, beauty, lifestyle). Each item is concrete and shoppable. Warm, specific, US English. No medical/financial guarantees, no celebrity endorsements.',
+    user: `Write the article "${brief.article_topic}" targeting the trending Pinterest search "${brief.keyword}". Use the keyword in the first sentence. Give 9-12 specific, shoppable items with a precise shop_query for each.`,
+    schema: SCHEMA,
     temperature: 0.75,
   });
-  const a = JSON.parse(r.choices[0].message.content);
   a.topic_slug = slugify(brief.keyword) || slugify(brief.article_topic);
   a.topic_title = brief.article_topic;
   a.niche = brief.niche;
@@ -67,9 +62,7 @@ async function generate(brief) {
   a.boards = (brief.boards || []).filter(Boolean); // keyword-named boards for the poster
   a.author = 'the Value Finds Daily Editorial Team';
   a.updated_at = new Date().toISOString().slice(0, 10);
-  const { prompt_tokens, completion_tokens } = r.usage;
-  const cost = ((prompt_tokens * 0.4 + completion_tokens * 1.6) / 1e6).toFixed(4);
-  return { article: a, cost };
+  return { article: a, cost: '~' };
 }
 
 (async () => {
