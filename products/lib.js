@@ -16,10 +16,19 @@ const puppeteer = require('puppeteer');
 const openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
 const BRAND = 'Value Finds Daily';
 
-// ── Gemini (primary text model when GEMINI_API_KEY is set) ───────────────────
-// Best-quality content via Google's flagship model; OpenAI stays as fallback.
-const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
+// ── Gemini (primary text model; OpenAI stays as fallback) ────────────────────
+// Two backends:
+//   • Vertex AI  — when a service-account key is provided (GCP_SA_FILE / GCP_SA_KEY).
+//     Uses the $300 Google Cloud credits; required for org-managed projects that
+//     block plain Gemini keys. Highest rate limits.
+//   • Developer API — when only GEMINI_API_KEY is set (simple key).
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
+const GCP_SA_FILE = process.env.GCP_SA_FILE || '';
+const GCP_SA_KEY = process.env.GCP_SA_KEY || '';
+const GCP_LOCATION = process.env.GCP_LOCATION || 'global';
+const USE_VERTEX = !!(GCP_SA_FILE || GCP_SA_KEY);
+const GEMINI_ON = USE_VERTEX || !!GEMINI_KEY;
 
 // Convert an OpenAI json_schema ({name,strict,schema}) into the subset Gemini's
 // responseSchema accepts: drop additionalProperties/strict, uppercase type names.
@@ -37,6 +46,23 @@ function toGeminiSchema(s) {
   return s;
 }
 
+// Lazy Vertex auth (only loads google-auth-library when a SA key is configured,
+// so post-queue.js etc. never need it).
+let _vertexAuth = null, _vertexProject = null;
+async function vertexAuth() {
+  if (!_vertexAuth) {
+    const { GoogleAuth } = require('google-auth-library');
+    const opts = { scopes: 'https://www.googleapis.com/auth/cloud-platform' };
+    if (GCP_SA_FILE) opts.keyFile = GCP_SA_FILE;
+    else opts.credentials = JSON.parse(GCP_SA_KEY);
+    _vertexAuth = new GoogleAuth(opts);
+    _vertexProject = process.env.GCP_PROJECT_ID || (await _vertexAuth.getProjectId());
+  }
+  const client = await _vertexAuth.getClient();
+  const t = await client.getAccessToken();
+  return typeof t === 'string' ? t : t.token;
+}
+
 async function geminiJSON({ system, user, schema, temperature }) {
   const inner = schema && schema.schema ? schema.schema : schema;
   const body = {
@@ -48,10 +74,15 @@ async function geminiJSON({ system, user, schema, temperature }) {
       temperature,
     },
   };
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_KEY}`,
-    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
-  );
+  let url; const headers = { 'Content-Type': 'application/json' };
+  if (USE_VERTEX) {
+    headers.Authorization = `Bearer ${await vertexAuth()}`;
+    const host = GCP_LOCATION === 'global' ? 'aiplatform.googleapis.com' : `${GCP_LOCATION}-aiplatform.googleapis.com`;
+    url = `https://${host}/v1/projects/${_vertexProject}/locations/${GCP_LOCATION}/publishers/google/models/${GEMINI_MODEL}:generateContent`;
+  } else {
+    url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_KEY}`;
+  }
+  const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
   const data = await res.json();
   if (!res.ok) throw new Error(`Gemini ${res.status}: ${JSON.stringify(data).slice(0, 300)}`);
   const cand = data.candidates && data.candidates[0];
@@ -71,7 +102,7 @@ async function generateImage(prompt, { size = '1024x1536', quality = 'low', back
 
 // ── Chat JSON helper — Gemini 2.5 Pro primary, OpenAI fallback ───────────────
 async function chatJSON({ system, user, schema, temperature = 0.8 }) {
-  if (GEMINI_KEY) {
+  if (GEMINI_ON) {
     try { return await geminiJSON({ system, user, schema, temperature }); }
     catch (e) {
       if (!openai) throw e;

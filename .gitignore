@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Generated digital-product assets (large binaries)
 products/output/
+
+# Google Cloud service-account key (Vertex AI) — NEVER commit
+gcp-sa.json

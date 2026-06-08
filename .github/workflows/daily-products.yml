@@ -39,7 +39,7 @@ jobs:
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
         run: node products/generate-daily.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           HOME: /home/runner
