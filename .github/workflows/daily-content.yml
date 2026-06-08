@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write   # required for keyless Google Cloud auth (Workload Identity)
 
 jobs:
   generate:
@@ -23,6 +24,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      # Keyless auth to Google Cloud for Vertex AI (Gemini). No SA key file —
+      # GitHub's OIDC token is exchanged for short-lived GCP credentials.
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: project-394cd8b9-b7dd-48a6-930
+          workload_identity_provider: projects/1010009979038/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: vertex-gemini@project-394cd8b9-b7dd-48a6-930.iam.gserviceaccount.com
 
       - name: Install Puppeteer system dependencies
         run: |
@@ -37,7 +47,7 @@ jobs:
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
@@ -48,7 +58,7 @@ jobs:
         run: node scripts/2d-generate-trend-articles.js --count=6
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
 
       - name: Fetch images for new articles
         run: node scripts/3-fetch-images.js

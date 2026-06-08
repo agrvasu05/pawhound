@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write   # required for keyless Google Cloud auth (Workload Identity)
 
 jobs:
   products:
@@ -22,6 +23,14 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.22'
+
+      # Keyless auth to Google Cloud for Vertex AI (Gemini).
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: project-394cd8b9-b7dd-48a6-930
+          workload_identity_provider: projects/1010009979038/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: vertex-gemini@project-394cd8b9-b7dd-48a6-930.iam.gserviceaccount.com
 
       - name: Install Gumroad CLI
         run: go install github.com/antiwork/gumroad-cli/cmd/gumroad@latest
@@ -39,7 +48,7 @@ jobs:
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
@@ -49,7 +58,7 @@ jobs:
         run: node products/generate-daily.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           HOME: /home/runner
