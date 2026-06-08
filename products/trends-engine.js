@@ -29,15 +29,13 @@ function api(method, endpoint) {
   });
 }
 
-// Pinterest interest -> our niche label
+// Pinterest interest -> our niche label.
+// FOCUSED on home decor + beauty/skincare only — a young account needs ONE clear
+// identity for Pinterest to build topical authority and distribute pins. (Fashion,
+// wellness, gifts, aesthetic, design were dropped to stop confusing the algorithm.)
 const INTERESTS = {
-  womens_fashion: 'fashion',
   home_decor: 'home decor',
   beauty: 'beauty',
-  health: 'wellness',
-  event_planning: 'gifts & occasions',
-  art: 'aesthetic art & printables',
-  design: 'digital products & templates',
 };
 const DOG_RE = /\b(dog|dogs|puppy|puppies|pet|pets|cat|cats|kitten)\b/i;
 
@@ -98,7 +96,7 @@ async function buildBriefs(top) {
   const year = new Date().getFullYear();
   const list = top.map((t) => `- "${t.keyword}" [niche: ${t.niche}; volume ${t.pop}/100; MoM ${t.mom}%${t.rising ? '; RISING' : ''}]`).join('\n');
   const { briefs } = await lib.chatJSON({
-    system: `You turn real Pinterest search keywords into actionable content briefs for a US Pinterest+blog+shop business (fashion, home decor, beauty, wellness, gifts, aesthetic art, digital products). Be specific and buyer-focused. The current year is ${year}; use ${year} in any dated titles (the season is happening now) — never a past or future year. Set keep=false for non-commercial fads (specific video games, fan art, celebrity/brand IP, anything we cannot legally sell or recommend products for). US English.`,
+    system: `You turn real Pinterest search keywords into actionable content briefs for a US Pinterest+blog+shop business focused on TWO niches only: home decor (cozy living, small-space, organization, styling) and beauty/skincare. Be specific and buyer-focused. The current year is ${year}; use ${year} in any dated titles (the season is happening now) — never a past or future year. Set keep=false for anything off-niche (not home decor or beauty/skincare) and for non-commercial fads (video games, fan art, celebrity/brand IP, anything we cannot legally sell or recommend products for). US English.`,
     user: `For EACH keyword below, produce a content brief. Favor strong buying intent and seasonal timing.\n\n${list}`,
     schema: BRIEF_SCHEMA, temperature: 0.7,
   });

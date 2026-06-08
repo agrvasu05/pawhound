@@ -23,13 +23,14 @@ const TYPES = {
 const OUT_ROOT = path.join(process.cwd(), 'products', 'output');
 const TRACKER = path.join(process.cwd(), 'content', 'gumroad-products.json');
 
-// Which trend-brief niches each printable type can serve (fashion/beauty briefs
-// are intentionally left for the article+affiliate pipeline, not printables).
+// Focused niche: every product is themed to a home-decor or beauty/skincare trend
+// keyword (e.g. "skincare routine tracker", "home organization planner", "bedroom
+// decor clipart") so the shop stays on-brand with the rest of the account.
 const TYPE_NICHES = {
-  clipart: ['aesthetic art & printables', 'home decor', 'gifts & occasions', 'beauty', 'fashion'],
-  spreadsheet: ['wellness', 'gifts & occasions'],
-  planner: ['wellness', 'gifts & occasions'],
-  coloring: ['aesthetic art & printables', 'gifts & occasions'],
+  clipart: ['home decor', 'beauty'],
+  spreadsheet: ['home decor', 'beauty'],
+  planner: ['home decor', 'beauty'],
+  coloring: ['home decor', 'beauty'],
 };
 
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
