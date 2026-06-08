@@ -22,7 +22,7 @@ const BRAND = 'Value Finds Daily';
 //     Uses the $300 Google Cloud credits; required for org-managed projects that
 //     block plain Gemini keys. Highest rate limits.
 //   • Developer API — when only GEMINI_API_KEY is set (simple key).
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.1-pro-preview';
 const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
 const GCP_SA_FILE = process.env.GCP_SA_FILE || '';
 const GCP_SA_KEY = process.env.GCP_SA_KEY || '';
