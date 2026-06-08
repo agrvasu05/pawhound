@@ -276,14 +276,24 @@ function pickBrief(niches) {
 function loadQueue() { try { return JSON.parse(fs.readFileSync(PIN_QUEUE, 'utf-8')); } catch { return []; } }
 function saveQueue(q) { fs.mkdirSync(path.dirname(PIN_QUEUE), { recursive: true }); fs.writeFileSync(PIN_QUEUE, JSON.stringify(q, null, 2)); }
 
+// SEO board description for a keyword-named board (Megan strategy).
+function kwBoardDesc(name) {
+  return `${name} — curated finds, printables and ideas for inspiration. Tap any pin for instant downloads and the full details.`.slice(0, 480);
+}
+
 // Enqueue N pin variants that link to the product's OWNED landing page (/shop/<slug>).
-async function enqueueProductVariants({ slug, type, title, price, board, keyword = '' }) {
-  // 3 variants/product: at 2 products/day that's ~6 produced vs ~5 posted — balanced,
-  // so each product's pins actually go out within a few days instead of piling up.
+async function enqueueProductVariants({ slug, type, title, price, board, boards = null, keyword = '' }) {
+  // 3 variants/product. Each variant is pinned to a DIFFERENT keyword-named board
+  // (from the trend brief) so the same URL reaches several keyword audiences over
+  // the weeks it drips out. Falls back to the generator's single niche board when
+  // the brief has no keyword boards.
   const specs = await generateVariantSpecs(title, type, 3, keyword);
   const link = `${SITE_URL}/shop/${slug}`;
+  const boardList = (boards && boards.length)
+    ? boards.filter(Boolean).map((name) => ({ name: name.slice(0, 50), description: kwBoardDesc(name) }))
+    : [board];
   const entries = specs.map((s, i) => ({
-    slug, link, board, price, keyword,
+    slug, link, board: boardList[i % boardList.length], price, keyword,
     headline: s.headline, subhead: s.subhead, title: s.pin_title, description: s.pin_description,
     alt: keyword ? `${s.pin_title} — ${keyword}` : s.pin_title,
     accent: VARIANT_ACCENTS[i % VARIANT_ACCENTS.length],
@@ -306,7 +316,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
   const before = q.length;
   q = q.filter((e) => {
     const ageDays = (now - new Date(e.created_at).getTime()) / 864e5;
-    return e.status === 'pending' ? ageDays <= 14 : ageDays <= 45;
+    return e.status === 'pending' ? ageDays <= 21 : ageDays <= 45;
   });
   if (before - q.length) console.log(`Pruned ${before - q.length} stale queue entries.`);
   // Hard DAILY cap (not just per-run) so manual re-triggers can't exceed the shop's share.
@@ -314,7 +324,13 @@ async function postQueue({ maxPerRun = 5 } = {}) {
   const allowance = Math.max(0, maxPerRun - postedTodayTotal);
   if (allowance === 0) { console.log(`Daily shop pin cap (${maxPerRun}) already reached — posting 0.`); saveQueue(q); return; }
   await pinRefresh();
-  const postedTodayBySlug = new Set(q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).map((e) => e.slug));
+  // Megan-strategy: don't post another pin for a product whose pin went out within
+  // the last ~7 days, so each product's variants drip ~a week apart (Pinterest
+  // tests each one; avoids same-URL self-competition / spam signals).
+  const SPACING_DAYS = 7;
+  const recentlyPostedSlugs = new Set(
+    q.filter((e) => e.status === 'posted' && e.posted_at && (now - new Date(e.posted_at).getTime()) / 864e5 < SPACING_DAYS).map((e) => e.slug)
+  );
   let posted = 0;
   // Post NEWEST pending pins first so fresh, in-season trend products get pinned
   // while the keyword is still trending (not buried behind old backlog).
@@ -322,7 +338,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
   for (const e of pending) {
     if (posted >= allowance) break;
-    if (e.status !== 'pending' || postedTodayBySlug.has(e.slug)) continue;
+    if (e.status !== 'pending' || recentlyPostedSlugs.has(e.slug)) continue;
     const recPath = path.join(SHOP_DIR, `${e.slug}.json`);
     const assetDir = path.join(PUBLIC_SHOP, e.slug);
     if (!fs.existsSync(recPath) || !fs.existsSync(assetDir)) continue;
@@ -337,7 +353,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
       const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
       const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin, altText: e.alt });
       e.status = 'posted'; e.pin_url = url; e.posted_at = new Date().toISOString();
-      postedTodayBySlug.add(e.slug); posted++;
+      recentlyPostedSlugs.add(e.slug); posted++;
       console.log(`  ✓ ${e.slug} -> ${url}`);
       fs.unlinkSync(tmpPin);
       await new Promise((r) => setTimeout(r, 4000));

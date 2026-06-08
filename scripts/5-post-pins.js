@@ -121,50 +121,56 @@ const NICHE_BOARDS = {
   },
 };
 
-// ── Get (or create once) the single board for an article's niche ─────────────
-async function getOrCreateBoard(article, boardsTracker) {
-  const nicheKey = article.niche === 'home' ? 'home' : article.niche || 'dogs';
-  const board = NICHE_BOARDS[nicheKey] || {
-    name: `${nicheKey[0].toUpperCase()}${nicheKey.slice(1)} Ideas & Guides`,
-    description: `Hand-picked ${nicheKey} ideas and guides. Tap any pin to see the full list with photos.`,
-  };
+// ── Ensure a board exists (create or reuse), cached by `key` ─────────────────
+async function ensureBoard(name, description, key, boardsTracker) {
+  if (boardsTracker[key]) return boardsTracker[key];
 
-  // Reuse the niche's board if we've already created/found it.
-  if (boardsTracker[nicheKey]) return boardsTracker[nicheKey];
-
-  console.log(`  Ensuring board: "${board.name}"...`);
-  const res = await api('POST', '/v5/boards', {
-    name: board.name,
-    description: board.description,
-    privacy: 'PUBLIC',
-  });
+  console.log(`  Ensuring board: "${name}"...`);
+  const res = await api('POST', '/v5/boards', { name, description, privacy: 'PUBLIC' });
 
   if (res.status === 401) {
     console.error('  Board creation 401:', JSON.stringify(res.body, null, 2));
     throw new Error('Unauthorized — re-run pinterest-auth.js');
   }
-
   if (res.status !== 201 && res.status !== 200) {
     // Board likely already exists with this name — find and reuse it.
     console.log(`  Board creation returned ${res.status}, looking up existing board...`);
     const existing = await api('GET', '/v5/boards?page_size=250');
-    const match = (existing.body.items || []).find(
-      (b) => b.name.toLowerCase() === board.name.toLowerCase()
-    );
+    const match = (existing.body.items || []).find((b) => b.name.toLowerCase() === name.toLowerCase());
     if (match) {
-      boardsTracker[nicheKey] = match.id;
+      boardsTracker[key] = match.id;
       console.log(`  ✓ Using existing board (${match.id})`);
       return match.id;
     }
-    console.error(`  ✗ Could not create or find board "${board.name}"`);
+    console.error(`  ✗ Could not create or find board "${name}"`);
     return null;
   }
-
   const boardId = res.body.id;
-  boardsTracker[nicheKey] = boardId;
+  boardsTracker[key] = boardId;
   console.log(`  ✓ Board ready (${boardId})`);
   await new Promise((r) => setTimeout(r, 1000)); // avoid rate limit
   return boardId;
+}
+
+// Megan-strategy board picker: pin each article's pins to its KEYWORD-named boards
+// (from the trend brief), rotating across them so the same URL reaches several
+// keyword audiences over time. Falls back to the broad niche board for legacy
+// articles that have no keyword boards (avoids thin single-pin boards).
+async function getOrCreateBoard(article, boardsTracker, rotationIdx = 0) {
+  const kwBoards = (article.boards || []).filter(Boolean);
+  if (kwBoards.length) {
+    const name = kwBoards[rotationIdx % kwBoards.length].slice(0, 50);
+    const phrase = corePhrase(article.topic_title);
+    const desc = `${name} — hand-picked ${article.niche || ''} ideas and guides. ${phrase}: tap any pin for the full list with photos and details.`
+      .replace(/\s+/g, ' ').trim().slice(0, 480);
+    return ensureBoard(name, desc, `kw:${name.toLowerCase()}`, boardsTracker);
+  }
+  const nicheKey = article.niche === 'home' ? 'home' : article.niche || 'dogs';
+  const board = NICHE_BOARDS[nicheKey] || {
+    name: `${nicheKey[0].toUpperCase()}${nicheKey.slice(1)} Ideas & Guides`,
+    description: `Hand-picked ${nicheKey} ideas and guides. Tap any pin to see the full list with photos.`,
+  };
+  return ensureBoard(board.name, board.description, nicheKey, boardsTracker);
 }
 
 // ── Build pin queue ───────────────────────────────────────────────────────────
@@ -173,12 +179,14 @@ function buildQueue(tracker) {
   const pinsDir = path.join(process.cwd(), 'public', 'pins');
   const queue = [];
 
-  const today = new Date().toISOString().slice(0, 10); // "2026-05-27"
-
-  // Slugs already posted today — Pinterest flags multiple pins to same URL same day
-  const slugsPostedToday = new Set(
+  // Megan-strategy: don't re-pin the same article URL more than once per ~week.
+  // Its pins drip out spaced ~7 days apart so Pinterest tests each one and we
+  // never compete with ourselves / look spammy on a young account.
+  const SPACING_DAYS = 7;
+  const cutoff = Date.now() - SPACING_DAYS * 864e5;
+  const slugsPostedRecently = new Set(
     Object.keys(tracker)
-      .filter((k) => tracker[k].posted_at && tracker[k].posted_at.startsWith(today))
+      .filter((k) => tracker[k].posted_at && new Date(tracker[k].posted_at).getTime() >= cutoff)
       .map((k) => k.split('/')[0])
   );
 
@@ -195,8 +203,8 @@ function buildQueue(tracker) {
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
 
-    // Skip if we already posted from this article today
-    if (slugsPostedToday.has(slug)) continue;
+    // Skip if we posted from this article within the last ~7 days
+    if (slugsPostedRecently.has(slug)) continue;
 
     const allPins = fs.readdirSync(pinFolder).filter((f) => f.endsWith('.png'));
     const pinFiles = allPins
@@ -356,8 +364,11 @@ async function postPin(pin, boardId) {
 
   for (const pin of toPost) {
     try {
-      // Auto-create board for this article if needed
-      const boardId = await getOrCreateBoard(pin.article, boardsTracker);
+      // Rotate this article's pins across its keyword boards (Megan strategy).
+      const postedCount = Object.keys(tracker).filter(
+        (k) => k.startsWith(pin.slug + '/') && tracker[k].posted_at
+      ).length;
+      const boardId = await getOrCreateBoard(pin.article, boardsTracker, postedCount);
       if (!boardId) continue;
 
       console.log(`Posting: ${pin.article.topic_title} — ${pin.pinFile}`);

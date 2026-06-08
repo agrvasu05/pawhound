@@ -64,6 +64,7 @@ async function generate(brief) {
   a.topic_title = brief.article_topic;
   a.niche = brief.niche;
   a.keyword = brief.keyword;
+  a.boards = (brief.boards || []).filter(Boolean); // keyword-named boards for the poster
   a.author = 'the Value Finds Daily Editorial Team';
   a.updated_at = new Date().toISOString().slice(0, 10);
   const { prompt_tokens, completion_tokens } = r.usage;

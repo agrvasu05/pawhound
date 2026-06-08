@@ -107,7 +107,7 @@ async function makeBundle(created, tracker) {
       lib.persistShopProduct({ slug: p.slug, type: p.type, listing: p.listing, gumroadUrl: product.url, srcImages });
 
       // Queue multiple distinct pin variants (dripped over days by post-queue.js).
-      const n = await lib.enqueueProductVariants({ slug: p.slug, type: p.type, title: p.listing.title, price: p.listing.price, board: p.board, keyword: p.keyword || '' });
+      const n = await lib.enqueueProductVariants({ slug: p.slug, type: p.type, title: p.listing.title, price: p.listing.price, board: p.board, boards: (brief && brief.boards) || null, keyword: p.keyword || '' });
       console.log(`  ✓ landing page /shop/${p.slug} + ${n} pin variants queued`);
 
       tracker.push({ type, slug: p.slug, title: p.listing.title, price: p.listing.price,
