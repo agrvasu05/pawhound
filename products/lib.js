@@ -26,8 +26,12 @@ const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
 const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
 const GCP_SA_FILE = process.env.GCP_SA_FILE || '';
 const GCP_SA_KEY = process.env.GCP_SA_KEY || '';
+const GCP_PROJECT_ID = process.env.GCP_PROJECT_ID || '';
 const GCP_LOCATION = process.env.GCP_LOCATION || 'global';
-const USE_VERTEX = !!(GCP_SA_FILE || GCP_SA_KEY);
+// Use Vertex when a SA key is given OR a project id is set (the latter relies on
+// Application Default Credentials: `gcloud auth application-default login` locally,
+// or Workload Identity Federation in CI — both keyless, org-policy friendly).
+const USE_VERTEX = !!(GCP_SA_FILE || GCP_SA_KEY || GCP_PROJECT_ID);
 const GEMINI_ON = USE_VERTEX || !!GEMINI_KEY;
 
 // Convert an OpenAI json_schema ({name,strict,schema}) into the subset Gemini's
@@ -37,7 +41,10 @@ function toGeminiSchema(s) {
   if (s && typeof s === 'object') {
     const out = {};
     for (const [k, v] of Object.entries(s)) {
-      if (k === 'additionalProperties' || k === 'strict' || k === '$schema' || k === 'name') continue;
+      // Only drop JSON-Schema keywords Gemini rejects. (Do NOT drop "name"/"strict"
+      // blindly — those can be legit property NAMES; the wrapper's name/strict are
+      // already excluded by passing schema.schema into this function.)
+      if (k === 'additionalProperties' || k === '$schema') continue;
       if (k === 'type' && typeof v === 'string') { out.type = v.toUpperCase(); continue; }
       out[k] = toGeminiSchema(v);
     }
@@ -54,9 +61,10 @@ async function vertexAuth() {
     const { GoogleAuth } = require('google-auth-library');
     const opts = { scopes: 'https://www.googleapis.com/auth/cloud-platform' };
     if (GCP_SA_FILE) opts.keyFile = GCP_SA_FILE;
-    else opts.credentials = JSON.parse(GCP_SA_KEY);
+    else if (GCP_SA_KEY) opts.credentials = JSON.parse(GCP_SA_KEY);
+    // else: Application Default Credentials (gcloud ADC locally / WIF in CI)
     _vertexAuth = new GoogleAuth(opts);
-    _vertexProject = process.env.GCP_PROJECT_ID || (await _vertexAuth.getProjectId());
+    _vertexProject = GCP_PROJECT_ID || (await _vertexAuth.getProjectId());
   }
   const client = await _vertexAuth.getClient();
   const t = await client.getAccessToken();
