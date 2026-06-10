@@ -1,52 +1,7 @@
 {
-  "generated_at": "2026-06-08T06:20:56.224Z",
+  "generated_at": "2026-06-10T16:57:17.193Z",
   "region": "US",
   "candidates": [
-    {
-      "keyword": "graduation drawing ideas",
-      "niche": "aesthetic art & printables",
-      "pop": 86,
-      "mom": 300,
-      "yoy": 30,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "michael jackson drawing",
-      "niche": "aesthetic art & printables",
-      "pop": 81,
-      "mom": 300,
-      "yoy": 800,
-      "rising": true,
-      "score": 191
-    },
-    {
-      "keyword": "money crown graduation",
-      "niche": "gifts & occasions",
-      "pop": 80,
-      "mom": 300,
-      "yoy": 300,
-      "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "bedazzled light switch cover",
-      "niche": "home decor",
-      "pop": 79,
-      "mom": 300,
-      "yoy": 5500,
-      "rising": true,
-      "score": 189
-    },
-    {
-      "keyword": "last day of school nails",
-      "niche": "beauty",
-      "pop": 76,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 186
-    },
     {
       "keyword": "summer nails stripes",
       "niche": "beauty",
@@ -55,42 +10,6 @@
       "yoy": 200,
       "rising": true,
       "score": 185
-    },
-    {
-      "keyword": "grad party banner ideas",
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 300,
-      "yoy": 2000,
-      "rising": false,
-      "score": 185
-    },
-    {
-      "keyword": "kids summer nails",
-      "niche": "beauty",
-      "pop": 73,
-      "mom": 300,
-      "yoy": 20,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "coconut water",
-      "niche": "wellness",
-      "pop": 73,
-      "mom": 300,
-      "yoy": 100,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "last day of school hairstyles",
-      "niche": "beauty",
-      "pop": 72,
-      "mom": 4000,
-      "yoy": 6,
-      "rising": true,
-      "score": 182
     },
     {
       "keyword": "fridge wallpaper",
@@ -111,47 +30,56 @@
       "score": 179
     },
     {
-      "keyword": "ombre summer nails",
+      "keyword": "pool day hairstyles",
       "niche": "beauty",
-      "pop": 69,
-      "mom": 300,
-      "yoy": -20,
-      "rising": true,
-      "score": 179
-    },
-    {
-      "keyword": "gemini birthday cake",
-      "niche": "gifts & occasions",
-      "pop": 69,
-      "mom": 300,
-      "yoy": -20,
-      "rising": true,
-      "score": 179
-    },
-    {
-      "keyword": "summer routine",
-      "niche": "wellness",
-      "pop": 68,
-      "mom": 600,
-      "yoy": -30,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "summer morning routine",
-      "niche": "wellness",
       "pop": 66,
-      "mom": 600,
-      "yoy": -8,
+      "mom": 300,
+      "yoy": 90,
       "rising": true,
       "score": 176
     },
     {
-      "keyword": "michael jackson art",
-      "niche": "aesthetic art & printables",
+      "keyword": "back to school hairstyles black women",
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "pedicure ideas summer",
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "swimming hairstyles",
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "summer neutral nails",
+      "niche": "beauty",
+      "pop": 64,
+      "mom": 400,
+      "yoy": 40,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "pool hairstyles",
+      "niche": "beauty",
       "pop": 63,
       "mom": 300,
-      "yoy": 1000,
+      "yoy": 30,
       "rising": true,
       "score": 173
     },
@@ -165,20 +93,11 @@
       "score": 172
     },
     {
-      "keyword": "summer day routine",
-      "niche": "wellness",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 40,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "summer drawing ideas",
-      "niche": "aesthetic art & printables",
+      "keyword": "summer nail colors 2026",
+      "niche": "beauty",
       "pop": 59,
-      "mom": 400,
-      "yoy": 200,
+      "mom": 1000,
+      "yoy": 10001,
       "rising": true,
       "score": 169
     },
@@ -192,24 +111,6 @@
       "score": 168
     },
     {
-      "keyword": "michael jackson halloween costume",
-      "niche": "gifts & occasions",
-      "pop": 92,
-      "mom": 200,
-      "yoy": 2000,
-      "rising": true,
-      "score": 168
-    },
-    {
-      "keyword": "stocking outfits winter",
-      "niche": "fashion",
-      "pop": 57,
-      "mom": 300,
-      "yoy": 100,
-      "rising": true,
-      "score": 167
-    },
-    {
       "keyword": "june nails",
       "niche": "beauty",
       "pop": 57,
@@ -219,313 +120,276 @@
       "score": 167
     },
     {
-      "keyword": "diy skin care routine",
-      "niche": "wellness",
-      "pop": 56,
-      "mom": 400,
-      "yoy": 1,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "nursing school inspiration",
-      "niche": "wellness",
-      "pop": 56,
-      "mom": 500,
-      "yoy": -50,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "graduation shadow box ideas",
-      "niche": "gifts & occasions",
-      "pop": 89,
-      "mom": 200,
-      "yoy": -8,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "summer mani pedi",
+      "keyword": "june nail colors",
       "niche": "beauty",
-      "pop": 87,
-      "mom": 200,
-      "yoy": 80,
-      "rising": true,
-      "score": 164
-    },
-    {
-      "keyword": "anti inflammation food list",
-      "niche": "wellness",
       "pop": 54,
-      "mom": 300,
-      "yoy": 300,
+      "mom": 6000,
+      "yoy": 60,
       "rising": true,
       "score": 164
     },
     {
-      "keyword": "senior jeans 2027",
-      "niche": "fashion",
-      "pop": 53,
-      "mom": 600,
-      "yoy": 10001,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "snoopy grad",
-      "niche": "gifts & occasions",
-      "pop": 87,
-      "mom": 200,
-      "yoy": 40,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "graduation gift ideas for boys",
-      "niche": "gifts & occasions",
-      "pop": 86,
-      "mom": 200,
-      "yoy": -70,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "card box graduation",
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 200,
-      "yoy": -30,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "anime drawing books",
-      "niche": "aesthetic art & printables",
-      "pop": 52,
-      "mom": 1000,
-      "yoy": -70,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "chrome nails summer",
+      "keyword": "nails for june",
       "niche": "beauty",
-      "pop": 85,
-      "mom": 200,
-      "yoy": -10,
+      "pop": 53,
+      "mom": 2000,
+      "yoy": 70,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "pool hair",
+      "niche": "beauty",
+      "pop": 51,
+      "mom": 300,
+      "yoy": 10,
       "rising": true,
       "score": 161
     },
     {
-      "keyword": "money bouquet graduation",
-      "niche": "gifts & occasions",
-      "pop": 83,
-      "mom": 200,
-      "yoy": -2,
+      "keyword": "headbands hairstyles",
+      "niche": "beauty",
+      "pop": 50,
+      "mom": 400,
+      "yoy": 200,
       "rising": true,
       "score": 160
     },
     {
-      "keyword": "squad dynamics 4 people",
-      "niche": "aesthetic art & printables",
-      "pop": 84,
-      "mom": 200,
-      "yoy": 400,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "striped summer nails",
+      "keyword": "summer chrome nails",
       "niche": "beauty",
-      "pop": 81,
-      "mom": 200,
-      "yoy": 500,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "nail color summer",
-      "niche": "beauty",
-      "pop": 81,
-      "mom": 200,
-      "yoy": 1,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "clean summer nails",
-      "niche": "beauty",
-      "pop": 47,
+      "pop": 46,
       "mom": 300,
       "yoy": -20,
       "rising": true,
-      "score": 157
+      "score": 156
+    },
+    {
+      "keyword": "hairstyles for the pool",
+      "niche": "beauty",
+      "pop": 44,
+      "mom": 300,
+      "yoy": -7,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "summer stripe nails",
+      "niche": "beauty",
+      "pop": 78,
+      "mom": 200,
+      "yoy": 300,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "uncanny valley makeup",
+      "niche": "beauty",
+      "pop": 42,
+      "mom": 300,
+      "yoy": 100,
+      "rising": true,
+      "score": 152
+    },
+    {
+      "keyword": "summer nails and toes",
+      "niche": "beauty",
+      "pop": 75,
+      "mom": 200,
+      "yoy": 80,
+      "rising": true,
+      "score": 151
+    },
+    {
+      "keyword": "easy summer nails",
+      "niche": "beauty",
+      "pop": 85,
+      "mom": 200,
+      "yoy": 100,
+      "rising": false,
+      "score": 151
+    },
+    {
+      "keyword": "chrome summer nails",
+      "niche": "beauty",
+      "pop": 73,
+      "mom": 200,
+      "yoy": 5,
+      "rising": true,
+      "score": 150
+    },
+    {
+      "keyword": "میکاپ",
+      "niche": "beauty",
+      "pop": 38,
+      "mom": 2500,
+      "yoy": -60,
+      "rising": true,
+      "score": 148
+    },
+    {
+      "keyword": "mermaid nails design",
+      "niche": "beauty",
+      "pop": 37,
+      "mom": 400,
+      "yoy": 20,
+      "rising": true,
+      "score": 147
+    },
+    {
+      "keyword": "memorial day nails",
+      "niche": "beauty",
+      "pop": 47,
+      "mom": 700,
+      "yoy": 70,
+      "rising": false,
+      "score": 147
+    },
+    {
+      "keyword": "pride nail",
+      "niche": "beauty",
+      "pop": 36,
+      "mom": 9000,
+      "yoy": -7,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "june birthday nails",
+      "niche": "beauty",
+      "pop": 36,
+      "mom": 1500,
+      "yoy": 200,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "hairline tattoo",
+      "niche": "beauty",
+      "pop": 36,
+      "mom": 1000,
+      "yoy": 400,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "camp hairstyles",
+      "niche": "beauty",
+      "pop": 36,
+      "mom": 400,
+      "yoy": -6,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "summer pedicure",
+      "niche": "beauty",
+      "pop": 79,
+      "mom": 200,
+      "yoy": 20,
+      "rising": false,
+      "score": 146
+    },
+    {
+      "keyword": "summer cat eye nails",
+      "niche": "beauty",
+      "pop": 68,
+      "mom": 200,
+      "yoy": 30,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "pride month nails",
+      "niche": "beauty",
+      "pop": 34,
+      "mom": 2000,
+      "yoy": -30,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "lesbian pride nails",
+      "niche": "beauty",
+      "pop": 34,
+      "mom": 1500,
+      "yoy": 100,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "pool party hairstyles",
+      "niche": "beauty",
+      "pop": 68,
+      "mom": 200,
+      "yoy": 4,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "amusement park hairstyles",
+      "niche": "beauty",
+      "pop": 66,
+      "mom": 200,
+      "yoy": 10,
+      "rising": true,
+      "score": 143
+    },
+    {
+      "keyword": "gyaru nail inspo",
+      "niche": "beauty",
+      "pop": 66,
+      "mom": 200,
+      "yoy": 3000,
+      "rising": true,
+      "score": 143
+    },
+    {
+      "keyword": "wig hairstyle",
+      "niche": "beauty",
+      "pop": 64,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 141
+    },
+    {
+      "keyword": "nail colors for summer",
+      "niche": "beauty",
+      "pop": 29,
+      "mom": 1500,
+      "yoy": 50,
+      "rising": true,
+      "score": 139
     }
   ],
   "briefs": [
     {
-      "keyword": "graduation drawing ideas",
-      "keep": true,
-      "season": "graduation",
-      "intent": "medium",
-      "article_topic": "35+ Aesthetic Graduation Drawing Ideas for Your 2026 Cap & Card",
-      "pin_titles": [
-        "Cute graduation drawing ideas to celebrate your big day!",
-        "Easy graduation cap drawing ideas and inspiration for 2026.",
-        "Aesthetic grad drawing ideas for cards, gifts, and more."
-      ],
-      "pin_descriptions": [
-        "Find the perfect graduation drawing ideas for your celebration! From simple doodles to detailed art. Click to get inspired and download our drawing prompt sheets!",
-        "Celebrate the class of 2026 with these unique graduation drawing ideas. Perfect for custom gifts and cards. Shop our printable art guides now!"
-      ],
-      "boards": [
-        "Graduation Drawing Ideas & Art",
-        "DIY Graduation Gifts & Cards"
-      ],
-      "product_ideas": [
-        "Printable graduation-themed drawing prompt workbook",
-        "Digital stencil pack for graduation cap decoration"
-      ],
-      "affiliate_matches": [
-        "Fine-tip permanent markers for fabric (cap decorating)",
-        "Watercolor paper and paint sets for card making"
-      ],
-      "niche": "aesthetic art & printables",
-      "pop": 86,
-      "mom": 300,
-      "yoy": 30,
-      "rising": true,
-      "score": 196
-    },
-    {
-      "keyword": "money crown graduation",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "How to Make a Money Crown for Graduation (Easy DIY Tutorial!)",
-      "pin_titles": [
-        "DIY Money Crown for Graduation: The Ultimate Grad Gift!",
-        "How to make a graduation money crown step-by-step.",
-        "The best graduation gift idea for 2026: a stunning money crown."
-      ],
-      "pin_descriptions": [
-        "Want to give the best graduation gift? Learn how to make an incredible money crown with our easy tutorial. Get the step-by-step instructions on the blog!",
-        "This DIY money crown is the perfect way to celebrate your 2026 grad. Fun to make and even more fun to receive! Click for the full guide."
-      ],
-      "boards": [
-        "Graduation Money Gift Ideas",
-        "DIY Graduation Party & Decor"
-      ],
-      "product_ideas": [
-        "Printable 'Congrats Grad' centerpiece for the crown",
-        "Digital guide with 5 different money folding techniques for crowns"
-      ],
-      "affiliate_matches": [
-        "Floral wire and floral tape",
-        "Headbands and ribbon for the crown base"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 80,
-      "mom": 300,
-      "yoy": 300,
-      "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "bedazzled light switch cover",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "high",
-      "article_topic": "DIY Bedazzled Light Switch Cover: Add Sparkle to Your Room!",
-      "pin_titles": [
-        "DIY Bedazzled Light Switch Cover Tutorial. So easy!",
-        "How to bedazzle a light switch cover for a glam room decor upgrade.",
-        "Aesthetic room decor idea: bedazzled light switch covers."
-      ],
-      "pin_descriptions": [
-        "Upgrade your room with this super glam DIY bedazzled light switch cover. It's an easy and affordable way to add sparkle! Get the tutorial now.",
-        "Ready for a fun DIY project? Learn how to make a custom bedazzled light switch cover. Click to see the supplies and steps!"
-      ],
-      "boards": [
-        "DIY Room Decor Aesthetics",
-        "Glam Home Decor Ideas"
-      ],
-      "product_ideas": [
-        "Printable gem placement pattern guides (e.g., celestial, floral)",
-        "Curated digital shopping list with links to the best gems and glue"
-      ],
-      "affiliate_matches": [
-        "Self-adhesive rhinestone sheets",
-        "Gem-setting tools and craft glue"
-      ],
-      "niche": "home decor",
-      "pop": 79,
-      "mom": 300,
-      "yoy": 5500,
-      "rising": true,
-      "score": 189
-    },
-    {
-      "keyword": "last day of school nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "40+ Fun Last Day of School Nails to Kick Off Summer 2026",
-      "pin_titles": [
-        "Cute last day of school nails you HAVE to try!",
-        "The best nail art ideas for the last day of school 2026.",
-        "Celebrate summer break with these last day of school nails."
-      ],
-      "pin_descriptions": [
-        "School's out! Celebrate with these adorable last day of school nail ideas. From bright colors to fun designs, find your perfect mani. Click for inspiration!",
-        "Find your perfect 'schools out for summer' manicure. Check out our favorite last day of school nails for 2026. Shop the best press-on nails on our site!"
-      ],
-      "boards": [
-        "Summer Nail Art Ideas",
-        "Last Day of School Ideas"
-      ],
-      "product_ideas": [
-        "Digital nail art sticker guide with 'School's Out' theme",
-        "Printable nail art planner to design your summer manicures"
-      ],
-      "affiliate_matches": [
-        "Pastel and neon nail polish sets",
-        "Fine-liner nail art brushes"
-      ],
-      "niche": "beauty",
-      "pop": 76,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 186
-    },
-    {
       "keyword": "summer nails stripes",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "30 Chic Summer Nails with Stripes to Try in 2026",
+      "intent": "medium",
+      "article_topic": "15 Summer Nails Stripes Designs to Try in 2026",
       "pin_titles": [
-        "The cutest summer nails with stripes for your next manicure.",
-        "Nautical & nice: stripey summer nail art ideas.",
-        "Rainbow, pastel, and neon: The best striped summer nails of 2026."
+        "Summer Nails Stripes You Need to Try",
+        "Cute Striped Summer Nail Designs 2026",
+        "Trending Summer Nails Stripes for Vacation"
       ],
       "pin_descriptions": [
-        "Looking for your next summer manicure? These summer nails with stripes are trending! From classic nautical to colorful rainbows. Click for endless inspiration.",
-        "Get the perfect beach-ready look with these striped summer nails. Easy enough to DIY! Find your favorite style and shop the look."
+        "Looking for the perfect summer nails stripes? Check out these gorgeous striped nail art ideas for your next manicure. Click to shop our favorite nail tools!",
+        "Upgrade your manicure with these summer nails stripes! Discover the best colors and patterns for 2026. Read the blog for full tutorials."
       ],
       "boards": [
-        "Summer Nail Art Inspo 2026",
-        "Striped Nails & Pattern Nail Art"
+        "Summer Nail Ideas",
+        "Striped Nail Art"
       ],
       "product_ideas": [
-        "Digital color palette guide for summer stripe combinations",
-        "Printable nail decal designs featuring minimalist stripes"
+        "Striped Nail Art Practice Sheets",
+        "Summer Nail Polish Color Palette Guide"
       ],
       "affiliate_matches": [
-        "Nail striping tape",
-        "Gel nail polish kits with summer colors"
+        "Striping tape for nails",
+        "Summer nail polish sets"
       ],
       "niche": "beauty",
       "pop": 75,
@@ -535,167 +399,31 @@
       "score": 185
     },
     {
-      "keyword": "grad party banner ideas",
-      "keep": true,
-      "season": "graduation",
-      "intent": "high",
-      "article_topic": "25 Best Grad Party Banner Ideas for Your 2026 Celebration",
-      "pin_titles": [
-        "The best grad party banner ideas for an unforgettable party.",
-        "DIY & printable graduation party banner ideas for 2026.",
-        "Creative grad party banner ideas your graduate will love."
-      ],
-      "pin_descriptions": [
-        "Planning a graduation party? Don't forget the banner! Find tons of creative and easy grad party banner ideas here. Shop our printables now!",
-        "From funny to heartfelt, get the best grad party banner ideas for the class of 2026. Click to download our instant printable banners!"
-      ],
-      "boards": [
-        "Graduation Party Decor Ideas",
-        "Printable Party Banners"
-      ],
-      "product_ideas": [
-        "Customizable printable graduation banner (edit name and year)",
-        "Photo banner template (drag and drop photos)"
-      ],
-      "affiliate_matches": [
-        "Cardstock paper in various colors",
-        "String, twine, and mini clothespins for hanging banners"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 85,
-      "mom": 300,
-      "yoy": 2000,
-      "rising": false,
-      "score": 185
-    },
-    {
-      "keyword": "kids summer nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "35 Cute & Easy Kids Summer Nails Ideas for 2026",
-      "pin_titles": [
-        "The cutest kids summer nails! Easy and fun ideas.",
-        "Kid-friendly summer nail art your little one will love.",
-        "Easy DIY summer nails for kids: fruits, animals, and more!"
-      ],
-      "pin_descriptions": [
-        "Looking for fun summer activities? Try these adorable kids summer nails! Easy, safe, and super cute ideas. Click to see them all!",
-        "Get inspired with these cute kids summer nail designs for 2026. Perfect for a rainy day or party activity. Shop kid-safe polishes and stickers here."
-      ],
-      "boards": [
-        "Kids Summer Activities",
-        "Cute Nail Art for Kids"
-      ],
-      "product_ideas": [
-        "Printable summer-themed nail sticker sheet (fruits, sea creatures)",
-        "Kids' summer activity book including a 'design your own nails' page"
-      ],
-      "affiliate_matches": [
-        "Non-toxic, water-based nail polish for kids",
-        "Cute nail decal sticker sets"
-      ],
-      "niche": "beauty",
-      "pop": 73,
-      "mom": 300,
-      "yoy": 20,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "coconut water",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "Is Coconut Water Good For You? Benefits, Myths & Best Brands",
-      "pin_titles": [
-        "The Surprising Health Benefits of Coconut Water.",
-        "Coconut Water: Your Ultimate Hydration Drink for Summer.",
-        "How to Choose the Best Coconut Water (and what to avoid)."
-      ],
-      "pin_descriptions": [
-        "Wondering about the hype? Discover the real health benefits of coconut water and find out why it's a wellness staple. Click to learn more!",
-        "Stay hydrated and healthy! We're breaking down the benefits of coconut water and sharing our favorite ways to enjoy it. Read the post for wellness tips."
-      ],
-      "boards": [
-        "Healthy Drinks & Wellness Tips",
-        "Summer Wellness Routine"
-      ],
-      "product_ideas": [
-        "Digital 'Hydration Challenge' tracker",
-        "Printable recipe card set for smoothies using coconut water"
-      ],
-      "affiliate_matches": [
-        "Organic, no-sugar-added coconut water brands",
-        "Reusable glass straws and tumblers"
-      ],
-      "niche": "wellness",
-      "pop": 73,
-      "mom": 300,
-      "yoy": 100,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "last day of school hairstyles",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "25 Easy Last Day of School Hairstyles to Celebrate Summer",
-      "pin_titles": [
-        "Cute and easy hairstyles for the last day of school.",
-        "Last day of school hairstyles that will last through the party!",
-        "Celebrate summer break with these fun last day of school hairstyles."
-      ],
-      "pin_descriptions": [
-        "School's out! Find the perfect fun and easy hairstyle to celebrate the last day of school. Braids, buns, and more! Click for tutorials and ideas.",
-        "End the school year in style! These last day of school hairstyles are cute, simple, and perfect for kicking off summer vacation. Get inspired now!"
-      ],
-      "boards": [
-        "Cute Hairstyles for School",
-        "Summer Hair & Beauty"
-      ],
-      "product_ideas": [
-        "Printable 'Hair Style A Day' calendar for the first week of summer",
-        "Digital guide to creating perfect heatless curls overnight"
-      ],
-      "affiliate_matches": [
-        "Colorful hair clips and barrettes",
-        "Temporary hair color spray or hair chalk"
-      ],
-      "niche": "beauty",
-      "pop": 72,
-      "mom": 4000,
-      "yoy": 6,
-      "rising": true,
-      "score": 182
-    },
-    {
       "keyword": "fridge wallpaper",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "Fridge Wallpaper: The Ultimate Guide to a Chic Kitchen Makeover",
+      "article_topic": "10 Renter-Friendly Fridge Wallpaper Ideas for a Kitchen Upgrade",
       "pin_titles": [
-        "Give your kitchen an instant upgrade with fridge wallpaper!",
-        "How to apply fridge wallpaper: A step-by-step DIY tutorial.",
-        "The best removable wallpaper for your fridge. So aesthetic!"
+        "Genius Fridge Wallpaper Hacks for Renters",
+        "How to Apply Fridge Wallpaper Like a Pro",
+        "Transform Your Kitchen with Fridge Wallpaper"
       ],
       "pin_descriptions": [
-        "Tired of your boring fridge? Fridge wallpaper is the answer! See how easy it is to transform your kitchen with this renter-friendly DIY. Click to learn more!",
-        "Get an aesthetic kitchen on a budget. This guide to fridge wallpaper shows you how. Find inspiration and shop the best peel-and-stick papers now."
+        "Give your kitchen a budget-friendly makeover with fridge wallpaper! See our top peel and stick wallpaper picks for appliances. Click to shop!",
+        "Tired of your boring refrigerator? Try fridge wallpaper! These peel and stick designs will completely transform your space. Shop the look now."
       ],
       "boards": [
-        "DIY Home Decor on a Budget",
-        "Aesthetic Kitchen Ideas"
+        "Renter Friendly Kitchen Decor",
+        "DIY Home Projects"
       ],
       "product_ideas": [
-        "Printable abstract pattern for custom-printed wallpaper",
-        "Digital kitchen makeover planner"
+        "Appliance Measurement and Wrapping Guide",
+        "Kitchen Color Palette Planner"
       ],
       "affiliate_matches": [
-        "Peel-and-stick removable wallpaper in various patterns",
-        "DIY application kits (squeegee, craft knife)"
+        "Peel and stick wallpaper",
+        "Wallpaper smoothing tools"
       ],
       "niche": "home decor",
       "pop": 70,
@@ -708,28 +436,28 @@
       "keyword": "gemini birthday nails",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "30 Must-Try Gemini Birthday Nails for Your Zodiac Season",
+      "intent": "medium",
+      "article_topic": "20 Stunning Gemini Birthday Nails for Your 2026 Celebration",
       "pin_titles": [
-        "The best Gemini birthday nails to celebrate your sign.",
-        "Zodiac nail art: stunning Gemini birthday nail ideas.",
-        "It's Gemini season! Time for the perfect birthday nails."
+        "The Best Gemini Birthday Nails for 2026",
+        "Zodiac Nail Art: Gemini Birthday Nails",
+        "Cute Gemini Birthday Nails to Try This June"
       ],
       "pin_descriptions": [
-        "Happy Gemini season! Celebrate your birthday with a manicure that shows off your zodiac sign. Click for the best Gemini birthday nail inspiration.",
-        "Show off your twin energy with these creative Gemini birthday nails. Find your perfect zodiac-inspired look and shop the press-ons!"
+        "Celebrate your season with these stunning Gemini birthday nails! From twin motifs to vibrant colors, find your perfect set. Click for inspiration!",
+        "Looking for Gemini birthday nails? We rounded up the best zodiac-inspired manicures for your special day. Read the post to see them all!"
       ],
       "boards": [
-        "Zodiac Birthday Ideas",
-        "Birthday Nail Art Inspo"
+        "Zodiac Nail Art",
+        "Birthday Manicure Ideas"
       ],
       "product_ideas": [
-        "Printable nail decal sheet with Gemini symbols and constellations",
-        "Digital zodiac color palette guide for a Gemini-inspired manicure"
+        "Zodiac Nail Art Decal Printables",
+        "Astrology Beauty Guide Ebook"
       ],
       "affiliate_matches": [
-        "Press-on nails with zodiac designs",
-        "Iridescent and chrome nail powders"
+        "Gemini nail decals",
+        "Rhinestone nail art kits"
       ],
       "niche": "beauty",
       "pop": 69,
@@ -739,167 +467,235 @@
       "score": 179
     },
     {
-      "keyword": "ombre summer nails",
+      "keyword": "pool day hairstyles",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "45 Gorgeous Ombre Summer Nails to Inspire Your Next Manicure",
+      "intent": "medium",
+      "article_topic": "12 Easy Pool Day Hairstyles That Actually Look Good",
       "pin_titles": [
-        "The hottest ombre summer nails for 2026: sunset, neon, & more!",
-        "How to do ombre summer nails at home: easy DIY tutorial.",
-        "Stunning ombre nail ideas for your summer vacation."
+        "Cute and Easy Pool Day Hairstyles",
+        "How to Style Your Hair for a Pool Day",
+        "Waterproof Pool Day Hairstyles for Summer 2026"
       ],
       "pin_descriptions": [
-        "Ready for a fresh summer look? These ombre summer nails are absolutely stunning. Find your perfect color combo and get inspired. Click to see them all!",
-        "From sunset hues to ocean blues, ombre summer nails are the perfect trend. Get tons of inspo and learn how to DIY the look. Shop our nail kits now!"
+        "Keep your hair out of your face with these cute pool day hairstyles! Perfect for swimming and lounging. Click to read the step-by-step tutorials.",
+        "Need ideas for pool day hairstyles? Discover our favorite braids, buns, and accessories for a chic summer look. Shop our favorite hair ties!"
       ],
       "boards": [
-        "Ombre Nail Designs",
-        "Summer Manicure Ideas 2026"
+        "Summer Hairstyles",
+        "Vacation Hair Ideas"
       ],
       "product_ideas": [
-        "Digital guide to 'Perfect Ombre Color Pairings'",
-        "Printable nail art planner for designing ombre looks"
+        "Summer Haircare Routine Tracker",
+        "Vacation Packing List Printable"
       ],
       "affiliate_matches": [
-        "Makeup sponges for DIY ombre application",
-        "Multi-color gel polish sets"
+        "Waterproof hair ties",
+        "UV protection hair spray"
       ],
       "niche": "beauty",
-      "pop": 69,
-      "mom": 300,
-      "yoy": -20,
-      "rising": true,
-      "score": 179
-    },
-    {
-      "keyword": "gemini birthday cake",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "25 Amazing Gemini Birthday Cake Ideas for the Zodiac Lover",
-      "pin_titles": [
-        "The best Gemini birthday cake ideas for 2026.",
-        "Stunning zodiac cakes: Gemini birthday cake inspiration.",
-        "Creative and aesthetic cake ideas for a Gemini's birthday."
-      ],
-      "pin_descriptions": [
-        "Celebrating a Gemini? These Gemini birthday cake ideas are out of this world! From constellation designs to twin themes. Click for inspiration.",
-        "Find the perfect cake for your Gemini birthday party. These designs are creative, beautiful, and totally on-theme. Get our printable cake toppers now!"
-      ],
-      "boards": [
-        "Zodiac Birthday Party Ideas",
-        "Aesthetic Cake Decorating"
-      ],
-      "product_ideas": [
-        "Printable Gemini constellation cake topper template",
-        "Customizable 'Happy Birthday Gemini' digital cake art stencil"
-      ],
-      "affiliate_matches": [
-        "Zodiac-themed cake decorating kits",
-        "Edible glitter and metallic food paint"
-      ],
-      "niche": "gifts & occasions",
-      "pop": 69,
-      "mom": 300,
-      "yoy": -20,
-      "rising": true,
-      "score": 179
-    },
-    {
-      "keyword": "summer routine",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "How to Create an Aesthetic & Productive Summer Routine for 2026",
-      "pin_titles": [
-        "The perfect daily summer routine to feel your best.",
-        "How to build a healthy and productive summer routine.",
-        "Aesthetic summer routine ideas for a balanced life."
-      ],
-      "pin_descriptions": [
-        "Want to make the most of your summer? Create a simple routine that balances productivity and fun. Get our tips and a free planner printable on the blog!",
-        "Build your dream summer routine with these easy tips. From morning rituals to evening wind-downs, we've got you covered. Download our digital summer planner today!"
-      ],
-      "boards": [
-        "Summer Routine & Wellness",
-        "Productivity Planners & Tips"
-      ],
-      "product_ideas": [
-        "Digital 'Aesthetic Summer' daily/weekly planner",
-        "Printable summer bucket list and routine tracker"
-      ],
-      "affiliate_matches": [
-        "Aesthetic journals and pens",
-        "High-quality glass water bottles with time markers"
-      ],
-      "niche": "wellness",
-      "pop": 68,
-      "mom": 600,
-      "yoy": -30,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "summer morning routine",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "10 Steps to an Ideal Summer Morning Routine (2026 Edition)",
-      "pin_titles": [
-        "My aesthetic summer morning routine for a productive day.",
-        "How to create a healthy summer morning routine.",
-        "The best summer morning routine to start your day right."
-      ],
-      "pin_descriptions": [
-        "Start your summer days with intention. Our guide helps you build the perfect summer morning routine for wellness and productivity. Get the checklist on our blog!",
-        "Transform your summer with a refreshing morning routine. Learn our 10 simple steps for a healthier, happier start to your day. Click for the full guide."
-      ],
-      "boards": [
-        "Morning Routine Inspiration",
-        "Summer Wellness Habits"
-      ],
-      "product_ideas": [
-        "Printable morning routine checklist",
-        "Digital 'Summer Glow Up' 30-day challenge guide"
-      ],
-      "affiliate_matches": [
-        "Light therapy alarm clocks",
-        "Yoga mats and light activewear"
-      ],
-      "niche": "wellness",
       "pop": 66,
-      "mom": 600,
-      "yoy": -8,
+      "mom": 300,
+      "yoy": 90,
       "rising": true,
       "score": 176
+    },
+    {
+      "keyword": "back to school hairstyles black women",
+      "keep": true,
+      "season": "fall",
+      "intent": "high",
+      "article_topic": "15 Back to School Hairstyles for Black Women in 2026",
+      "pin_titles": [
+        "Easy Back to School Hairstyles Black Women",
+        "Natural Hair Back to School Hairstyles",
+        "Protective Styles for Back to School 2026"
+      ],
+      "pin_descriptions": [
+        "Start the semester right with these gorgeous back to school hairstyles for black women! Quick, easy, and protective styles. Click to see the looks!",
+        "Looking for back to school hairstyles black women will love? Check out these trendy braids, twists, and wash-and-go routines. Shop the hair products!"
+      ],
+      "boards": [
+        "Natural Hair Styles",
+        "Back to School Beauty"
+      ],
+      "product_ideas": [
+        "Natural Hair Wash Day Schedule",
+        "Back to School Beauty Planner"
+      ],
+      "affiliate_matches": [
+        "Edge control gel",
+        "Silk bonnets and scrunchies"
+      ],
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "pedicure ideas summer",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "25 Pedicure Ideas Summer 2026: The Ultimate Toe Nail Trends",
+      "pin_titles": [
+        "Cute Pedicure Ideas Summer 2026",
+        "Trending Pedicure Ideas Summer Vacation",
+        "The Best Pedicure Ideas Summer Edition"
+      ],
+      "pin_descriptions": [
+        "Get sandal-ready with these gorgeous pedicure ideas summer edition! Discover the hottest colors and toe nail art. Click for inspiration!",
+        "Looking for fresh pedicure ideas summer 2026? We have the best bright colors, french tips, and floral designs. Shop our favorite foot care products!"
+      ],
+      "boards": [
+        "Summer Pedicures",
+        "At-Home Spa Days"
+      ],
+      "product_ideas": [
+        "At-Home Pedicure Step-by-Step Guide",
+        "Summer Sandal and Polish Pairing Guide"
+      ],
+      "affiliate_matches": [
+        "At-home pedicure kits",
+        "Callus remover gel"
+      ],
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "swimming hairstyles",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "10 Swimming Hairstyles That Protect Your Hair from Chlorine",
+      "pin_titles": [
+        "Protective Swimming Hairstyles You Need",
+        "Cute Swimming Hairstyles for Long Hair",
+        "How to Do Easy Swimming Hairstyles"
+      ],
+      "pin_descriptions": [
+        "Protect your hair from damage with these practical and cute swimming hairstyles! Perfect for the beach or pool. Click to read the guide.",
+        "Looking for the best swimming hairstyles? Discover braids and buns that stay put while you swim. Shop our favorite leave-in conditioners!"
+      ],
+      "boards": [
+        "Summer Hairstyles",
+        "Hair Protection Tips"
+      ],
+      "product_ideas": [
+        "Swimmers Hair Care Routine Guide",
+        "Summer Hair Detox Recipe Ebook"
+      ],
+      "affiliate_matches": [
+        "Swim caps",
+        "Leave-in conditioner spray"
+      ],
+      "niche": "beauty",
+      "pop": 65,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "summer neutral nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "20 Chic Summer Neutral Nails for a Minimalist Aesthetic",
+      "pin_titles": [
+        "Elegant Summer Neutral Nails 2026",
+        "Minimalist Summer Neutral Nails",
+        "The Best Summer Neutral Nails for Work and Play"
+      ],
+      "pin_descriptions": [
+        "Love a minimalist look? Check out these gorgeous summer neutral nails! Perfect for every occasion this season. Click to find your shade.",
+        "Upgrade your manicure with these chic summer neutral nails. Discover the best sheer pinks, milky whites, and beige tones. Shop the polishes!"
+      ],
+      "boards": [
+        "Minimalist Nail Art",
+        "Neutral Aesthetic Beauty"
+      ],
+      "product_ideas": [
+        "Minimalist Beauty Wardrobe Checklist",
+        "Neutral Nail Polish Directory"
+      ],
+      "affiliate_matches": [
+        "Sheer neutral nail polish",
+        "Cuticle oil pens"
+      ],
+      "niche": "beauty",
+      "pop": 64,
+      "mom": 400,
+      "yoy": 40,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "pool hairstyles",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "15 Effortless Pool Hairstyles to Beat the Summer Heat",
+      "pin_titles": [
+        "Easy Pool Hairstyles for Summer 2026",
+        "Cute Pool Hairstyles to Try Today",
+        "How to Master Simple Pool Hairstyles"
+      ],
+      "pin_descriptions": [
+        "Keep cool and look cute with these effortless pool hairstyles! Find the best braids and top knots for your next swim. Click to see the tutorials.",
+        "Searching for quick pool hairstyles? We rounded up the best looks to keep your hair protected and stylish. Shop our favorite claw clips!"
+      ],
+      "boards": [
+        "Pool Day Essentials",
+        "Summer Hair Ideas"
+      ],
+      "product_ideas": [
+        "Summer Hair Accessories Guide",
+        "5-Minute Vacation Hairstyles Ebook"
+      ],
+      "affiliate_matches": [
+        "Large claw clips",
+        "Detangling wet brushes"
+      ],
+      "niche": "beauty",
+      "pop": 63,
+      "mom": 300,
+      "yoy": 30,
+      "rising": true,
+      "score": 173
     },
     {
       "keyword": "june nails 2026",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "50+ Hottest June Nails for 2026: Your Ultimate Summer Manicure Guide",
+      "article_topic": "Top June Nails 2026: The Hottest Trends to Try This Month",
       "pin_titles": [
-        "The trendiest June nails for 2026 are here!",
-        "Your ultimate guide to the best June nail designs of 2026.",
-        "Cute nail art ideas to try this June. Welcome, summer!"
+        "Trending June Nails 2026",
+        "Must-Try June Nails 2026 Ideas",
+        "The Best June Nails 2026 Manicures"
       ],
       "pin_descriptions": [
-        "Hello, June! It's time for a fresh manicure. Get inspired by the hottest colors and designs for June nails 2026. Click to find your new favorite look!",
-        "From bright florals to chic pastels, we've rounded up the best June nail ideas for 2026. Find your perfect summer manicure here. Shop the looks on our site!"
+        "Kick off the summer with these trending June nails 2026! From neon tips to subtle chrome, find your next manicure here. Click to read!",
+        "Looking for fresh nail inspiration? Check out the top June nails 2026! Discover the hottest colors and designs of the month. Shop the look!"
       ],
       "boards": [
-        "June Nails & Summer Manicures",
-        "Nail Art Trends 2026"
+        "Summer Nail Trends",
+        "Monthly Manicure Ideas"
       ],
       "product_ideas": [
-        "Digital '30 Days of June Nails' inspiration calendar",
-        "Printable nail decal sheet with summer florals and fruits"
+        "2026 Nail Trend Forecast Ebook",
+        "Monthly Manicure Planner Printable"
       ],
       "affiliate_matches": [
-        "Press-on nails with summery designs",
-        "At-home gel manicure kits"
+        "Trending summer nail polish sets",
+        "UV LED nail lamps"
       ],
       "niche": "beauty",
       "pop": 62,
@@ -909,70 +705,36 @@
       "score": 172
     },
     {
-      "keyword": "summer day routine",
+      "keyword": "summer nail colors 2026",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "The Perfect 'That Girl' Summer Day Routine for 2026",
+      "intent": "high",
+      "article_topic": "The Best Summer Nail Colors 2026 to Brighten Your Manicure",
       "pin_titles": [
-        "My aesthetic summer day routine for wellness & fun.",
-        "How to plan the perfect summer day routine.",
-        "Productive and relaxing summer day routine ideas."
+        "Hottest Summer Nail Colors 2026",
+        "Trending Summer Nail Colors 2026",
+        "What Summer Nail Colors 2026 Are In?"
       ],
       "pin_descriptions": [
-        "Make every summer day count! Here's a template for the perfect summer day routine that balances work, wellness, and fun. Get our free printable planner!",
-        "Want to have the best summer ever? It all starts with a good routine. Click to get ideas for your ideal summer day routine and download our planner."
+        "Discover the must-have summer nail colors 2026! From vibrant corals to soft pastels, find your perfect summer shade. Click to shop the polishes!",
+        "Upgrade your DIY mani with the best summer nail colors 2026! See the top trending shades of the season. Read the post to find your favorite."
       ],
       "boards": [
-        "Summer Routine Ideas",
-        "Daily Planner & Organization"
+        "Nail Polish Colors",
+        "Summer Beauty Trends"
       ],
       "product_ideas": [
-        "Digital 'Ideal Summer Day' planner template",
-        "Printable hourly schedule for summer"
+        "Seasonal Color Analysis Guide for Beauty",
+        "Nail Polish Collection Tracker"
       ],
       "affiliate_matches": [
-        "Insulated tumblers for cold drinks",
-        "Lightweight tote bags for daily essentials"
+        "Gel polish starter kits",
+        "Trending summer nail polishes"
       ],
-      "niche": "wellness",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 40,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "summer drawing ideas",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "50+ Cute Summer Drawing Ideas to Spark Your Creativity",
-      "pin_titles": [
-        "Easy and aesthetic summer drawing ideas.",
-        "Fun things to draw this summer! (For your journal or sketchbook).",
-        "The ultimate list of summer drawing ideas for 2026."
-      ],
-      "pin_descriptions": [
-        "Feeling creative? Here are 50+ fun summer drawing ideas to try. Perfect for artists of all levels. Get our printable drawing prompt list on the blog!",
-        "From beach scenes to popsicles, find your next masterpiece with these cute summer drawing ideas. Click for inspiration and to shop our digital art guides."
-      ],
-      "boards": [
-        "Summer Drawing & Art Ideas",
-        "Sketchbook & Journaling Prompts"
-      ],
-      "product_ideas": [
-        "30-day summer drawing challenge printable",
-        "Digital summer-themed Procreate brush and color palette set"
-      ],
-      "affiliate_matches": [
-        "Travel watercolor kits",
-        "Aesthetic sketchbooks and drawing pens"
-      ],
-      "niche": "aesthetic art & printables",
+      "niche": "beauty",
       "pop": 59,
-      "mom": 400,
-      "yoy": 200,
+      "mom": 1000,
+      "yoy": 10001,
       "rising": true,
       "score": 169
     },
@@ -980,28 +742,28 @@
       "keyword": "summer ombre nails",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "45 Gorgeous Summer Ombre Nails to Inspire Your Next Manicure",
+      "intent": "medium",
+      "article_topic": "15 Stunning Summer Ombre Nails You Can Do at Home",
       "pin_titles": [
-        "The hottest summer ombre nails for 2026: sunset, neon, & more!",
-        "How to do summer ombre nails at home: easy DIY tutorial.",
-        "Stunning ombre nail ideas for your summer vacation."
+        "Gorgeous Summer Ombre Nails",
+        "How to Do Summer Ombre Nails",
+        "Bright Summer Ombre Nails Ideas"
       ],
       "pin_descriptions": [
-        "Ready for a fresh summer look? These summer ombre nails are absolutely stunning. Find your perfect color combo and get inspired. Click to see them all!",
-        "From sunset hues to ocean blues, summer ombre nails are the perfect trend. Get tons of inspo and learn how to DIY the look. Shop our nail kits now!"
+        "Blend your favorite shades with these gorgeous summer ombre nails! Perfect for a tropical vacation vibe. Click to see the step-by-step tutorial.",
+        "Looking for vibrant nail art? Try these summer ombre nails! Discover the best color combinations for 2026. Shop our favorite makeup sponges for blending!"
       ],
       "boards": [
-        "Summer Ombre Nail Designs",
-        "Summer Manicure Ideas 2026"
+        "Ombre Nail Art",
+        "Summer Vacation Nails"
       ],
       "product_ideas": [
-        "Digital guide to 'Perfect Summer Ombre Color Pairings'",
-        "Printable nail art planner for designing ombre looks"
+        "DIY Ombre Nail Art Tutorial Video",
+        "Nail Art Color Blending Guide"
       ],
       "affiliate_matches": [
-        "Makeup sponges for DIY ombre application",
-        "Multi-color gel polish sets"
+        "Nail art sponges",
+        "Liquid latex peel off tape"
       ],
       "niche": "beauty",
       "pop": 58,
@@ -1009,6 +771,312 @@
       "yoy": -70,
       "rising": true,
       "score": 168
+    },
+    {
+      "keyword": "june nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "20 June Nails That Scream Summer Vacation",
+      "pin_titles": [
+        "Cute June Nails to Try",
+        "The Best June Nails for Summer",
+        "Trending June Nails Inspiration"
+      ],
+      "pin_descriptions": [
+        "Get ready for warm weather with these stunning June nails! Discover bright colors, floral designs, and more. Click for the ultimate inspiration list.",
+        "Searching for the perfect June nails? We have you covered with the top trending manicures for early summer. Shop our favorite nail stickers!"
+      ],
+      "boards": [
+        "Summer Nail Ideas",
+        "Cute Manicures"
+      ],
+      "product_ideas": [
+        "Summer Beauty Prep Checklist",
+        "Nail Care Routine Guide"
+      ],
+      "affiliate_matches": [
+        "Summer nail stickers",
+        "Top coat nail polish"
+      ],
+      "niche": "beauty",
+      "pop": 57,
+      "mom": 1500,
+      "yoy": 60,
+      "rising": true,
+      "score": 167
+    },
+    {
+      "keyword": "june nail colors",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "10 June Nail Colors You Need in Your Collection This Year",
+      "pin_titles": [
+        "Must-Have June Nail Colors",
+        "Trending June Nail Colors 2026",
+        "The Best June Nail Colors to Try Now"
+      ],
+      "pin_descriptions": [
+        "Refresh your polish collection with these must-have June nail colors! From bright neons to ocean blues, find your shade. Click to shop!",
+        "Wondering what to paint your nails? Check out the hottest June nail colors of the season! Read the blog post for our top polish recommendations."
+      ],
+      "boards": [
+        "Nail Polish Swatches",
+        "Summer Beauty Must-Haves"
+      ],
+      "product_ideas": [
+        "Nail Polish Inventory Tracker",
+        "Summer Color Palette Ebook"
+      ],
+      "affiliate_matches": [
+        "Neon nail polish sets",
+        "Base coat polish"
+      ],
+      "niche": "beauty",
+      "pop": 54,
+      "mom": 6000,
+      "yoy": 60,
+      "rising": true,
+      "score": 164
+    },
+    {
+      "keyword": "nails for june",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "25 Gorgeous Nails for June to Kick Off Your Summer",
+      "pin_titles": [
+        "Beautiful Nails for June",
+        "Trending Nails for June 2026",
+        "Cute Nails for June Vacations"
+      ],
+      "pin_descriptions": [
+        "Start the summer right with these gorgeous nails for June! See our favorite bright and fun designs. Click to get inspired for your next salon visit.",
+        "Looking for the best nails for June? Discover trendy french tips, abstract art, and solid colors perfect for the season. Shop the look!"
+      ],
+      "boards": [
+        "Summer Manicures",
+        "Vacation Nail Ideas"
+      ],
+      "product_ideas": [
+        "At-Home Manicure Guide",
+        "Vacation Prep Beauty Planner"
+      ],
+      "affiliate_matches": [
+        "Press-on summer nails",
+        "Nail glue"
+      ],
+      "niche": "beauty",
+      "pop": 53,
+      "mom": 2000,
+      "yoy": 70,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "pool hair",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "The Ultimate Pool Hair Care Guide: Prevention and Repair",
+      "pin_titles": [
+        "How to Protect Your Pool Hair",
+        "Fixing Damaged Pool Hair",
+        "The Best Products for Pool Hair"
+      ],
+      "pin_descriptions": [
+        "Don't let chlorine ruin your locks! Learn how to protect and repair your pool hair with our ultimate summer guide. Click to read the tips.",
+        "Struggling with dry, green pool hair? Discover the best clarifying shampoos and deep conditioners to save your strands. Shop our top picks!"
+      ],
+      "boards": [
+        "Hair Care Tips",
+        "Summer Beauty Secrets"
+      ],
+      "product_ideas": [
+        "DIY Hair Mask Recipe Book",
+        "Summer Hair Rescue Guide"
+      ],
+      "affiliate_matches": [
+        "Clarifying shampoo for swimmers",
+        "Deep conditioning hair masks"
+      ],
+      "niche": "beauty",
+      "pop": 51,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "headbands hairstyles",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "15 Chic Headbands Hairstyles for Second-Day Hair",
+      "pin_titles": [
+        "Cute Headbands Hairstyles to Try",
+        "Easy Headbands Hairstyles for Busy Mornings",
+        "Trending Headbands Hairstyles 2026"
+      ],
+      "pin_descriptions": [
+        "Elevate your look instantly with these chic headbands hairstyles! Perfect for hiding greasy roots or adding a pop of color. Click to see the looks.",
+        "Looking for easy headbands hairstyles? Discover how to style knotted, padded, and silk headbands effortlessly. Shop our favorite hair accessories!"
+      ],
+      "boards": [
+        "Hair Accessories",
+        "Everyday Hairstyles"
+      ],
+      "product_ideas": [
+        "Capsule Hair Accessory Guide",
+        "5-Minute Morning Routine Planner"
+      ],
+      "affiliate_matches": [
+        "Knotted fabric headbands",
+        "Dry shampoo"
+      ],
+      "niche": "beauty",
+      "pop": 50,
+      "mom": 400,
+      "yoy": 200,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "summer chrome nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "12 Glazed and Glowing Summer Chrome Nails for 2026",
+      "pin_titles": [
+        "Stunning Summer Chrome Nails",
+        "How to Do Summer Chrome Nails at Home",
+        "Trending Summer Chrome Nails 2026"
+      ],
+      "pin_descriptions": [
+        "Get that viral glazed donut look with these stunning summer chrome nails! Perfect for catching the sun at the beach. Click for the tutorial.",
+        "Obsessed with the metallic trend? Try these gorgeous summer chrome nails! Learn how to apply chrome powder flawlessly at home. Shop the supplies!"
+      ],
+      "boards": [
+        "Chrome Nail Art",
+        "Trending Summer Nails"
+      ],
+      "product_ideas": [
+        "Chrome Nail Art Step-by-Step Ebook",
+        "Nail Trend Masterclass Video"
+      ],
+      "affiliate_matches": [
+        "Chrome nail powder palettes",
+        "No-wipe gel top coat"
+      ],
+      "niche": "beauty",
+      "pop": 46,
+      "mom": 300,
+      "yoy": -20,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "hairstyles for the pool",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "10 Cute Hairstyles for the Pool That Won't Get Ruined",
+      "pin_titles": [
+        "Easy Hairstyles for the Pool",
+        "Protective Hairstyles for the Pool",
+        "Cute Hairstyles for the Pool 2026"
+      ],
+      "pin_descriptions": [
+        "Keep your hair tangle-free with these easy hairstyles for the pool! Perfect for swimming laps or lounging. Click to read the guide.",
+        "Need cute hairstyles for the pool? Check out our favorite waterproof braids and secure buns for your next swim. Shop our favorite snag-free elastics!"
+      ],
+      "boards": [
+        "Summer Hair Care",
+        "Vacation Beauty Ideas"
+      ],
+      "product_ideas": [
+        "Summer Beauty Essentials Checklist",
+        "Pool Bag Packing List Printable"
+      ],
+      "affiliate_matches": [
+        "Snag-free hair elastics",
+        "Hair sunscreen spray"
+      ],
+      "niche": "beauty",
+      "pop": 44,
+      "mom": 300,
+      "yoy": -7,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "summer stripe nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "15 Fun Summer Stripe Nails to Brighten Your Look",
+      "pin_titles": [
+        "Cute Summer Stripe Nails",
+        "Trending Summer Stripe Nails 2026",
+        "How to Paint Summer Stripe Nails"
+      ],
+      "pin_descriptions": [
+        "Add a pop of pattern to your manicure with these summer stripe nails! Discover colorful and nautical designs. Click to see them all.",
+        "Looking for easy nail art? Try these summer stripe nails! Learn the best techniques for painting perfect lines. Shop our favorite striping brushes!"
+      ],
+      "boards": [
+        "Striped Manicures",
+        "Summer Nail Designs"
+      ],
+      "product_ideas": [
+        "Nail Art Practice Templates",
+        "Summer Manicure Moodboard"
+      ],
+      "affiliate_matches": [
+        "Fine tip nail art brushes",
+        "Striping tape"
+      ],
+      "niche": "beauty",
+      "pop": 78,
+      "mom": 200,
+      "yoy": 300,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "summer nails and toes",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "20 Matching Summer Nails and Toes Sets for 2026",
+      "pin_titles": [
+        "Matching Summer Nails and Toes",
+        "Cute Summer Nails and Toes Combos",
+        "The Best Summer Nails and Toes Ideas"
+      ],
+      "pin_descriptions": [
+        "Coordinate your look with these matching summer nails and toes! Discover the best polish combinations for your hands and feet. Click to shop!",
+        "Looking for the perfect mani-pedi duo? Check out these gorgeous summer nails and toes ideas for your next vacation. Read the blog post for details."
+      ],
+      "boards": [
+        "Mani Pedi Combos",
+        "Summer Beauty Prep"
+      ],
+      "product_ideas": [
+        "Mani-Pedi Color Pairing Guide",
+        "At-Home Spa Day Planner"
+      ],
+      "affiliate_matches": [
+        "Matching nail polish sets",
+        "Foot spa bath massager"
+      ],
+      "niche": "beauty",
+      "pop": 75,
+      "mom": 200,
+      "yoy": 80,
+      "rising": true,
+      "score": 151
     }
   ]
 }
