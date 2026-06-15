@@ -1,6 +1,8 @@
 export const metadata = {
   title: "Contact",
-  description: "Get in touch with Value Finds Daily.",
+  description:
+    "Questions, corrections, or partnership inquiries — how to reach the Value Finds Daily editorial team.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function Contact() {

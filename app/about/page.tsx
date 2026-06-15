@@ -2,6 +2,7 @@ export const metadata = {
   title: "About Value Finds Daily",
   description:
     "Who we are, how we research and rank our guides, and the editorial standards behind every list on Value Finds Daily.",
+  alternates: { canonical: "/about" },
 };
 
 export default function About() {

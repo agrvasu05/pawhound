@@ -1,5 +1,8 @@
 export const metadata = {
   title: "Terms of Service",
+  description:
+    "The terms of service for using valuefindsdaily.com, including content usage, affiliate disclosure, and liability limits.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function Terms() {

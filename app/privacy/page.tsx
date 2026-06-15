@@ -1,5 +1,8 @@
 export const metadata = {
   title: "Privacy Policy",
+  description:
+    "How Value Finds Daily collects, uses, and protects your data, including our advertising cookies and opt-out options.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function Privacy() {

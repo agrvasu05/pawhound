@@ -4,6 +4,10 @@ import { getAllArticles, getBreedImage, type Article } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
 import { LogoMark } from "@/components/Logo";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 // Display labels + ordering for each niche section. New trending niches sit on
 // top; dog guides are pushed to the bottom.
 const NICHE_META: Record<string, { label: string; blurb: string; order: number }> = {
