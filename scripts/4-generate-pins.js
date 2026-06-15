@@ -14,12 +14,12 @@ function breedToSlug(s) {
 const TEMPLATES = [
   ({ headline, image }) => `
     <div style="width:1000px;height:1500px;font-family:'Georgia',serif;position:relative;">
-      <div style="position:absolute;top:0;left:0;right:0;height:45%;background:linear-gradient(135deg,#2d4a3e,#456b54);color:#fff;padding:90px 70px;box-sizing:border-box;">
+      <div style="position:absolute;top:0;left:0;right:0;height:45%;background:linear-gradient(135deg,#b05a3c,#d98a63);color:#fff;padding:90px 70px;box-sizing:border-box;">
         <div style="font-size:24px;opacity:0.85;margin-bottom:20px;">${BRAND}</div>
         <div style="font-size:78px;font-weight:bold;line-height:1.05;letter-spacing:-1px;">${headline}</div>
       </div>
       <img src="${image}" style="position:absolute;bottom:0;width:100%;height:60%;object-fit:cover;"/>
-      <div style="position:absolute;bottom:50px;right:50px;background:#fff;color:#2d4a3e;padding:24px 44px;border-radius:60px;font-weight:bold;font-size:30px;">Tap to see →</div>
+      <div style="position:absolute;bottom:50px;right:50px;background:#fff;color:#b05a3c;padding:24px 44px;border-radius:60px;font-weight:bold;font-size:30px;">Tap to see →</div>
     </div>`,
 
   ({ headline, image }) => `

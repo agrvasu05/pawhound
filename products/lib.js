@@ -303,7 +303,9 @@ const PUBLIC_SHOP = path.join(process.cwd(), 'public', 'shop-assets');
 const SHOP_DIR = path.join(process.cwd(), 'content', 'shop');
 const PIN_QUEUE = path.join(process.cwd(), 'content', 'pin-queue.json');
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://valuefindsdaily.com';
-const VARIANT_ACCENTS = ['#2d4a3e', '#7a5c3a', '#5b4a8a', '#9a3b4f', '#3a6b7a', '#8a6d2f'];
+// Warm/earthy palette — research shows warm tones (terracotta, rust, clay, caramel)
+// out-save + out-click cool blues/greens on Pinterest. Each variant rotates a shade.
+const VARIANT_ACCENTS = ['#b05a3c', '#a8503a', '#9c6b4f', '#c08552', '#b5797a', '#8a5a3f'];
 
 // Copy a product's images into /public/shop-assets/<slug>/ and write its shop record.
 function persistShopProduct({ slug, type, listing, gumroadUrl, srcImages }) {
@@ -336,7 +338,7 @@ async function generateVariantSpecs(title, type, n = 6, keyword = '') {
       required: ['headline', 'subhead', 'pin_title', 'pin_description'], properties: {
         headline: { type: 'string', description: '<=22 char punchy overlay headline' },
         subhead: { type: 'string', description: '<=34 char benefit line' },
-        pin_title: { type: 'string', description: '<=95 char Pinterest title with the target keyword near the front' },
+        pin_title: { type: 'string', description: '<=95 char Pinterest title: target keyword near the front + a SPECIFIC, save-worthy promise (number, concrete outcome, or use-case). Never vague.' },
         pin_description: { type: 'string', description: '<=480 char description: keyword in the first sentence, natural keywords throughout, then a clear CTA' },
       } } } } } };
   const kwLine = keyword

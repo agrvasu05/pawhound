@@ -25,10 +25,10 @@ const API_HOST = process.env.PINTEREST_SANDBOX === 'true'
   : 'api.pinterest.com';
 
 const SITE_URL = 'https://valuefindsdaily.com';
-// Safe limits: 5-10/day for new accounts, ramp up after 3 months of good standing.
-// Kept low (6) while the account is young + building trust; +3 product pins from
-// post-queue.js = ~9/day total. Quality > volume for a new account.
-const PINS_PER_RUN = 6;
+// 2026 research consensus: a young account should pin ~10-15 FRESH pins per WEEK,
+// not per day — spiking volume triggers spam throttling. 2 content + 1 product
+// = ~3/day (~21/week). Quality + save rate matter far more than raw volume.
+const PINS_PER_RUN = 2;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
 const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 

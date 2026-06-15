@@ -42,7 +42,7 @@ const SCHEMA = {
             quirky_fact: { type: 'string', description: 'one styling tip or useful detail' },
             shop_query: { type: 'string', description: 'a precise shopping search phrase to find this product to buy (for affiliate matching)' },
           } } },
-      pin_headlines: { type: 'array', items: { type: 'string' }, description: '10 Pinterest pin headlines, 6-12 words' },
+      pin_headlines: { type: 'array', items: { type: 'string' }, description: '10 on-pin headlines (6-12 words). Each must make a SPECIFIC, save-worthy promise — a number, a concrete outcome, or "for [who/where]" — keyword near the front, short + punchy (it overlays the image). Never vague like "Great ideas".' },
       faqs: { type: 'array', description: '4 useful FAQs',
         items: { type: 'object', additionalProperties: false, required: ['question', 'answer'],
           properties: { question: { type: 'string' }, answer: { type: 'string', description: '40-80 word answer' } } } },
