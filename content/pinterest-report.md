@@ -1,10 +1,10 @@
-# Pinterest weekly report — 2026-06-08
+# Pinterest weekly report — 2026-06-15
 
 **Last 30 days**
 
 | Impressions | Saves | Pin clicks | Outbound clicks | Save rate | Outbound CTR |
 |---|---|---|---|---|---|
-| 3113 | 3 | 69 | 42 | 0.10% | 1.35% |
+| 4167 | 3 | 94 | 42 | 0.07% | 1.01% |
 
 **Diagnosis (strategy decision rules)**
 
