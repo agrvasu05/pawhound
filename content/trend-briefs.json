@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T17:53:52.578Z",
+  "generated_at": "2026-06-18T16:52:07.338Z",
   "region": "US",
   "candidates": [
     {
@@ -12,40 +12,49 @@
       "score": 193
     },
     {
-      "keyword": "americana porch decor",
-      "niche": "home decor",
-      "pop": 77,
-      "mom": 300,
-      "yoy": 500,
+      "keyword": "pool hairstyles",
+      "niche": "beauty",
+      "pop": 76,
+      "mom": 400,
+      "yoy": 30,
       "rising": true,
-      "score": 187
+      "score": 186
     },
     {
-      "keyword": "pool hairstyles",
+      "keyword": "pool day hairstyles",
       "niche": "beauty",
       "pop": 75,
       "mom": 400,
-      "yoy": 30,
+      "yoy": 90,
       "rising": true,
       "score": 185
     },
     {
       "keyword": "summer nail colors 2026",
       "niche": "beauty",
-      "pop": 72,
+      "pop": 73,
       "mom": 800,
       "yoy": 10001,
       "rising": true,
-      "score": 182
+      "score": 183
     },
     {
       "keyword": "june nail inspo",
       "niche": "beauty",
-      "pop": 71,
+      "pop": 72,
       "mom": 1000,
       "yoy": 70,
       "rising": true,
-      "score": 181
+      "score": 182
+    },
+    {
+      "keyword": "basic summer nails",
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 600,
+      "yoy": 30,
+      "rising": true,
+      "score": 180
     },
     {
       "keyword": "back to school hairstyles black women",
@@ -57,49 +66,130 @@
       "score": 180
     },
     {
-      "keyword": "2000s teen bedroom",
+      "keyword": "summer toe nails 2026",
+      "niche": "beauty",
+      "pop": 69,
+      "mom": 600,
+      "yoy": 10001,
+      "rising": true,
+      "score": 179
+    },
+    {
+      "keyword": "indoor house plants aesthetic",
       "niche": "home decor",
-      "pop": 66,
+      "pop": 67,
       "mom": 300,
-      "yoy": -10,
+      "yoy": 10001,
+      "rising": true,
+      "score": 177
+    },
+    {
+      "keyword": "nails summer 2026 trends",
+      "niche": "beauty",
+      "pop": 66,
+      "mom": 400,
+      "yoy": 10001,
       "rising": true,
       "score": 176
     },
     {
       "keyword": "pool hair",
       "niche": "beauty",
-      "pop": 66,
+      "pop": 65,
       "mom": 400,
       "yoy": 20,
       "rising": true,
-      "score": 176
+      "score": 175
     },
     {
-      "keyword": "pride nail ideas",
-      "niche": "beauty",
-      "pop": 60,
-      "mom": 2500,
-      "yoy": 400,
+      "keyword": "2000s teen bedroom",
+      "niche": "home decor",
+      "pop": 64,
+      "mom": 400,
+      "yoy": -9,
       "rising": true,
-      "score": 170
+      "score": 174
+    },
+    {
+      "keyword": "pride nails",
+      "niche": "beauty",
+      "pop": 64,
+      "mom": 700,
+      "yoy": -9,
+      "rising": true,
+      "score": 174
     },
     {
       "keyword": "beach hair ideas",
       "niche": "beauty",
-      "pop": 60,
+      "pop": 61,
       "mom": 600,
-      "yoy": 200,
+      "yoy": 300,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "hairline tattoo for women",
+      "niche": "beauty",
+      "pop": 60,
+      "mom": 1500,
+      "yoy": 500,
       "rising": true,
       "score": 170
     },
     {
-      "keyword": "basic summer nails",
+      "keyword": "june nails ideas",
       "niche": "beauty",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 30,
-      "rising": true,
+      "pop": 70,
+      "mom": 3000,
+      "yoy": 40,
+      "rising": false,
       "score": 170
+    },
+    {
+      "keyword": "4th of july nail art",
+      "niche": "beauty",
+      "pop": 59,
+      "mom": 1500,
+      "yoy": 1000,
+      "rising": true,
+      "score": 169
+    },
+    {
+      "keyword": "rainbow pride nails",
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 4500,
+      "yoy": -30,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "lesbian pride nails",
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 1500,
+      "yoy": 90,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "مدل مو",
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 1500,
+      "yoy": -50,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "forth of july nails",
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 700,
+      "yoy": 2000,
+      "rising": true,
+      "score": 168
     },
     {
       "keyword": "church camp nails",
@@ -111,139 +201,121 @@
       "score": 168
     },
     {
-      "keyword": "hairline tattoo",
+      "keyword": "pedicure ideas summer",
       "niche": "beauty",
-      "pop": 57,
-      "mom": 1500,
-      "yoy": 500,
+      "pop": 58,
+      "mom": 400,
+      "yoy": 9,
       "rising": true,
-      "score": 167
+      "score": 168
     },
     {
-      "keyword": "hairline tattoo for women",
+      "keyword": "pride nail art",
       "niche": "beauty",
       "pop": 57,
-      "mom": 1500,
-      "yoy": 400,
+      "mom": 2500,
+      "yoy": -20,
       "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "headbands hairstyles",
-      "niche": "beauty",
-      "pop": 57,
-      "mom": 700,
-      "yoy": 300,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "pride nails",
-      "niche": "beauty",
-      "pop": 57,
-      "mom": 700,
-      "yoy": -9,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "june nails ideas",
-      "niche": "beauty",
-      "pop": 67,
-      "mom": 3500,
-      "yoy": 40,
-      "rising": false,
       "score": 167
     },
     {
       "keyword": "june nails",
       "niche": "beauty",
-      "pop": 66,
-      "mom": 1500,
+      "pop": 67,
+      "mom": 1000,
       "yoy": 70,
       "rising": false,
-      "score": 166
-    },
-    {
-      "keyword": "مدل مو",
-      "niche": "beauty",
-      "pop": 55,
-      "mom": 1500,
-      "yoy": -50,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "forth of july nails",
-      "niche": "beauty",
-      "pop": 55,
-      "mom": 700,
-      "yoy": 2000,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "subtle pride nails",
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 2500,
-      "yoy": -10,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "one color summer nails",
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 2000,
-      "yoy": 300,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "4th of july nail art",
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 1500,
-      "yoy": 1000,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "camp hairstyles",
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 600,
-      "yoy": -6,
-      "rising": true,
-      "score": 163
+      "score": 167
     },
     {
       "keyword": "میکاپ",
       "niche": "beauty",
-      "pop": 52,
+      "pop": 56,
       "mom": 3000,
-      "yoy": -50,
+      "yoy": -40,
       "rising": true,
-      "score": 162
+      "score": 166
+    },
+    {
+      "keyword": "headbands hairstyles",
+      "niche": "beauty",
+      "pop": 56,
+      "mom": 800,
+      "yoy": 300,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "camp hairstyles",
+      "niche": "beauty",
+      "pop": 56,
+      "mom": 600,
+      "yoy": -5,
+      "rising": true,
+      "score": 166
     },
     {
       "keyword": "neutral summer nails",
       "niche": "beauty",
-      "pop": 51,
+      "pop": 56,
       "mom": 400,
       "yoy": 10,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "pride nails designs",
+      "niche": "beauty",
+      "pop": 53,
+      "mom": 5500,
+      "yoy": 8,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "hairstyles for the pool",
+      "niche": "beauty",
+      "pop": 52,
+      "mom": 400,
+      "yoy": -7,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "wig hairstyles ideas",
+      "niche": "beauty",
+      "pop": 51,
+      "mom": 400,
+      "yoy": 100,
       "rising": true,
       "score": 161
     },
     {
-      "keyword": "june birthday nails",
+      "keyword": "summer hairstyles for long hair",
       "niche": "beauty",
-      "pop": 49,
-      "mom": 1500,
+      "pop": 48,
+      "mom": 400,
+      "yoy": 40,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "makeup routine",
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 300,
+      "yoy": 200,
+      "rising": false,
+      "score": 158
+    },
+    {
+      "keyword": "uncanny valley makeup",
+      "niche": "beauty",
+      "pop": 47,
+      "mom": 600,
       "yoy": 200,
       "rising": true,
-      "score": 159
+      "score": 157
     },
     {
       "keyword": "new summer nails",
@@ -255,112 +327,40 @@
       "score": 157
     },
     {
-      "keyword": "summer hairstyles for long hair",
-      "niche": "beauty",
-      "pop": 47,
-      "mom": 400,
-      "yoy": 40,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "makeup routine",
-      "niche": "beauty",
-      "pop": 57,
-      "mom": 300,
-      "yoy": 100,
-      "rising": false,
-      "score": 157
-    },
-    {
-      "keyword": "pride nails designs",
+      "keyword": "bi pride nails",
       "niche": "beauty",
       "pop": 45,
-      "mom": 5500,
-      "yoy": 7,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "uncanny valley makeup",
-      "niche": "beauty",
-      "pop": 45,
-      "mom": 600,
-      "yoy": 200,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "wig hairstyles ideas",
-      "niche": "beauty",
-      "pop": 45,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "pride nail art",
-      "niche": "beauty",
-      "pop": 44,
       "mom": 2500,
-      "yoy": -20,
+      "yoy": 20,
       "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "curtains living room ideas",
-      "niche": "home decor",
-      "pop": 77,
-      "mom": 200,
-      "yoy": 100,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "rainbow pride nails",
-      "niche": "beauty",
-      "pop": 43,
-      "mom": 4500,
-      "yoy": -20,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "lesbian pride nails",
-      "niche": "beauty",
-      "pop": 43,
-      "mom": 1500,
-      "yoy": 100,
-      "rising": true,
-      "score": 153
+      "score": 155
     },
     {
       "keyword": "lace nails designs",
       "niche": "beauty",
-      "pop": 40,
-      "mom": 900,
+      "pop": 45,
+      "mom": 1000,
       "yoy": 100,
       "rising": true,
-      "score": 150
-    },
-    {
-      "keyword": "color drenched bedroom",
-      "niche": "home decor",
-      "pop": 73,
-      "mom": 200,
-      "yoy": 70,
-      "rising": true,
-      "score": 149
+      "score": 155
     },
     {
       "keyword": "pride makeup",
       "niche": "beauty",
-      "pop": 38,
+      "pop": 42,
       "mom": 3000,
       "yoy": -30,
       "rising": true,
-      "score": 148
+      "score": 152
+    },
+    {
+      "keyword": "bathroom aesthetic ideas",
+      "niche": "home decor",
+      "pop": 41,
+      "mom": 300,
+      "yoy": 100,
+      "rising": true,
+      "score": 151
     }
   ],
   "briefs": [
@@ -369,27 +369,27 @@
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "15 Gemini Birthday Nails That Will Make You the Star of the Party",
+      "article_topic": "12 Gemini Birthday Nails That Will Make You the Star of Your Party",
       "pin_titles": [
-        "Gemini Birthday Nails: 15 Ideas for Your Big Day",
-        "10 Gemini Birthday Nails for a Two-Toned Look",
-        "Gemini Birthday Nails to Try This May & June"
+        "12 Gemini Birthday Nails for Your Big Day",
+        "Gemini Birthday Nails That Manifest Good Vibes",
+        "Cute Gemini Birthday Nails for May and June"
       ],
       "pin_descriptions": [
-        "Looking for the perfect Gemini birthday nails? These stunning zodiac-inspired manicures are guaranteed to turn heads. Click to find your perfect birthday look!",
-        "Celebrate your season with these Gemini birthday nails! From subtle twin art to bold chrome finishes, find your next set here."
+        "Looking for Gemini birthday nails? Try these 12 fun and flirty nail designs for your special day. Click to find your perfect set!",
+        "These Gemini birthday nails are exactly what you need for your June celebrations. Save this pin to show your nail tech!"
       ],
       "boards": [
-        "Zodiac Nail Inspo",
-        "Birthday Nails"
+        "Birthday Nail Ideas",
+        "Zodiac Beauty Trends"
       ],
       "product_ideas": [
-        "Zodiac Nail Art Decal Template",
-        "Birthday Prep Checklist Printable"
+        "Printable Gemini Nail Art Stencils",
+        "Digital Zodiac Beauty Guide"
       ],
       "affiliate_matches": [
-        "Press-on nails",
-        "Zodiac nail stickers"
+        "Press-on nail kits",
+        "Zodiac-themed nail decals"
       ],
       "niche": "beauty",
       "pop": 83,
@@ -399,70 +399,70 @@
       "score": 193
     },
     {
-      "keyword": "americana porch decor",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "12 Americana Porch Decor Ideas for a Cozy Fourth of July Setup",
-      "pin_titles": [
-        "Americana Porch Decor: 12 Ways to Style Your Entryway",
-        "10 Americana Porch Decor Ideas for Summer 2026",
-        "Americana Porch Decor That Looks Chic Not Cheesy"
-      ],
-      "pin_descriptions": [
-        "Elevate your entryway with these Americana porch decor ideas perfect for summer. Create a welcoming patriotic vibe with these simple styling tips!",
-        "Ready for the 4th? This Americana porch decor will give your home that classic summer charm. Shop the look on our blog!"
-      ],
-      "boards": [
-        "Summer Porch Decor",
-        "Patriotic Home Decor"
-      ],
-      "product_ideas": [
-        "Summer Porch Styling Guide",
-        "Patriotic Bunting DIY Pattern"
-      ],
-      "affiliate_matches": [
-        "Outdoor throw pillows",
-        "Vintage-style American flags"
-      ],
-      "niche": "home decor",
-      "pop": 77,
-      "mom": 300,
-      "yoy": 500,
-      "rising": true,
-      "score": 187
-    },
-    {
       "keyword": "pool hairstyles",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "9 Easy Pool Hairstyles That Keep Your Hair Safe and Cute",
+      "intent": "high",
+      "article_topic": "11 Pool Hairstyles That Protect Your Ends from Chlorine Damage",
       "pin_titles": [
-        "Pool Hairstyles: 9 Easy Looks to Protect Your Hair",
-        "Cute Pool Hairstyles That Survive the Water",
-        "7 Pool Hairstyles for Frizz-Free Summer Days"
+        "11 Pool Hairstyles to Keep Hair Out of the Water",
+        "Cute Pool Hairstyles for Swimming and Sunbathing",
+        "Easy Pool Hairstyles That Prevent Chlorine Damage"
       ],
       "pin_descriptions": [
-        "Try these easy pool hairstyles that actually stay put while you swim. Protect your ends from chlorine and look cute doing it!",
-        "Need quick pool hairstyles? These braids and buns take under 5 minutes and keep your hair tangle-free all day. Click for tutorials!"
+        "Need quick pool hairstyles? Discover 11 easy ways to tie up your hair and protect your ends from harsh chlorine. Read the full post for tutorials!",
+        "These pool hairstyles are perfect for long hair on hot summer days. Save this pin to keep your hair healthy and tangle-free at the pool!"
       ],
       "boards": [
-        "Summer Hairstyles",
-        "Vacation Hair"
+        "Summer Hair Ideas",
+        "Vacation Hairstyles"
       ],
       "product_ideas": [
-        "Summer Haircare Cheatsheet",
-        "Braiding Tutorial Video Guide"
+        "Summer Hair Care Digital Planner",
+        "Step-by-Step Braiding Guide"
       ],
       "affiliate_matches": [
-        "Leave-in conditioner",
+        "Leave-in conditioner sprays",
         "Waterproof claw clips"
+      ],
+      "niche": "beauty",
+      "pop": 76,
+      "mom": 400,
+      "yoy": 30,
+      "rising": true,
+      "score": 186
+    },
+    {
+      "keyword": "pool day hairstyles",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "9 Easy Pool Day Hairstyles You Can Do in Under 3 Minutes",
+      "pin_titles": [
+        "9 Pool Day Hairstyles for a Frizz-Free Summer",
+        "Quick Pool Day Hairstyles You Can Do in 3 Minutes",
+        "Chic Pool Day Hairstyles for Lounging in the Sun"
+      ],
+      "pin_descriptions": [
+        "Try these pool day hairstyles for a chic, effortless look that survives the humidity. Click here to see all 9 easy styles!",
+        "Looking for simple pool day hairstyles? Protect your hair and look cute while lounging with these quick tutorials. Read the blog post now!"
+      ],
+      "boards": [
+        "Summer Hair Ideas",
+        "Easy Everyday Hairstyles"
+      ],
+      "product_ideas": [
+        "Vacation Packing Checklist",
+        "Summer Beauty Routine Tracker"
+      ],
+      "affiliate_matches": [
+        "Silk scrunchies",
+        "UV protection hair mist"
       ],
       "niche": "beauty",
       "pop": 75,
       "mom": 400,
-      "yoy": 30,
+      "yoy": 90,
       "rising": true,
       "score": 185
     },
@@ -471,83 +471,117 @@
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "15 Summer Nail Colors 2026 That Are Trending Right Now",
+      "article_topic": "10 Summer Nail Colors 2026 That Look Amazing on Tanned Skin",
       "pin_titles": [
-        "Summer Nail Colors 2026: 15 Shades You Need to Try",
-        "The Best Summer Nail Colors 2026 for a Beach Vacation",
-        "10 Summer Nail Colors 2026 to Ask Your Tech For"
+        "10 Summer Nail Colors 2026 to Try This Season",
+        "The Best Summer Nail Colors 2026 for Beach Vacations",
+        "Trending Summer Nail Colors 2026 for Tanned Skin"
       ],
       "pin_descriptions": [
-        "Discover the top summer nail colors 2026 that everyone is asking for at the salon. From bright corals to glazed pastels, find your next shade!",
-        "Upgrade your manicure with the hottest summer nail colors 2026. Click through to see our favorite polish picks and shop the shades!"
+        "Ready for a fresh manicure? These summer nail colors 2026 are guaranteed to make your tan pop. Click to shop the exact polish shades!",
+        "Discover the top summer nail colors 2026 that everyone is asking for at the salon. Save this pin for your next nail appointment!"
       ],
       "boards": [
-        "Summer Nails 2026",
-        "Nail Color Trends"
+        "Summer Nail Trends",
+        "Nail Polish Colors"
       ],
       "product_ideas": [
-        "Seasonal Nail Trend Report",
-        "Salon Request Flashcards"
+        "Seasonal Nail Polish Inventory Tracker",
+        "DIY Manicure Guidebook"
       ],
       "affiliate_matches": [
-        "Gel polish kits",
-        "Cuticle oil"
+        "Neon gel polish sets",
+        "High-shine top coats"
       ],
       "niche": "beauty",
-      "pop": 72,
+      "pop": 73,
       "mom": 800,
       "yoy": 10001,
       "rising": true,
-      "score": 182
+      "score": 183
     },
     {
       "keyword": "june nail inspo",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "20 June Nail Inspo Pics to Bring to Your Next Appointment",
+      "intent": "low",
+      "article_topic": "14 June Nail Inspo Ideas to Kick Off Your Summer Right",
       "pin_titles": [
-        "June Nail Inspo: 20 Bright Ideas for Early Summer",
-        "June Nail Inspo for Your First Beach Trip of the Year",
-        "Top June Nail Inspo to Transition into Summer"
+        "14 June Nail Inspo Ideas for Your Next Salon Visit",
+        "Bright June Nail Inspo for Summer Vacations",
+        "June Nail Inspo That Will Get You Compliments"
       ],
       "pin_descriptions": [
-        "Searching for June nail inspo? We've rounded up 20 stunning designs to kick off your summer the right way.",
-        "Get ready for warm weather with this June nail inspo! These bright and fun manicures are exactly what you need. Save for later!"
+        "Looking for fresh June nail inspo? Browse these 14 bright and fun designs to start your summer off right. Click to find your favorite!",
+        "This June nail inspo is exactly what you need for pool parties and beach trips. Save these ideas to show your nail tech!"
       ],
       "boards": [
         "Summer Nail Ideas",
-        "Monthly Nail Inspo"
+        "Monthly Nail Inspiration"
       ],
       "product_ideas": [
-        "Nail Art Planner Printable",
-        "Summer Self-Care Guide"
+        "Nail Art Idea Lookbook",
+        "Summer Beauty Moodboards"
       ],
       "affiliate_matches": [
-        "UV nail lamp",
-        "Neon nail polish sets"
+        "Nail art brushes",
+        "Cuticle oil pens"
       ],
       "niche": "beauty",
-      "pop": 71,
+      "pop": 72,
       "mom": 1000,
       "yoy": 70,
       "rising": true,
-      "score": 181
+      "score": 182
+    },
+    {
+      "keyword": "basic summer nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "12 Basic Summer Nails for Minimalists Who Hate Chipped Polish",
+      "pin_titles": [
+        "12 Basic Summer Nails for a Clean Aesthetic",
+        "Simple Basic Summer Nails That Look Expensive",
+        "Basic Summer Nails for Minimalist Girls"
+      ],
+      "pin_descriptions": [
+        "Love a clean look? These basic summer nails are simple, elegant, and perfect for minimalists. Click to see the best neutral shades for summer!",
+        "Try these basic summer nails if you want a low-maintenance manicure that lasts for weeks. Save this pin for elegant, everyday nail ideas!"
+      ],
+      "boards": [
+        "Minimalist Nails",
+        "Simple Nail Designs"
+      ],
+      "product_ideas": [
+        "Minimalist Beauty Routine Guide",
+        "Nail Shape Selection Chart"
+      ],
+      "affiliate_matches": [
+        "Sheer pink nail polish",
+        "Ridge-filling base coats"
+      ],
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 600,
+      "yoy": 30,
+      "rising": true,
+      "score": 180
     },
     {
       "keyword": "back to school hairstyles black women",
       "keep": true,
       "season": "fall",
-      "intent": "medium",
-      "article_topic": "14 Back to School Hairstyles Black Women Can Do in Under 10 Minutes",
+      "intent": "high",
+      "article_topic": "15 Back to School Hairstyles for Black Women Needing Quick Mornings",
       "pin_titles": [
-        "Back to School Hairstyles Black Women Will Love This Fall",
-        "14 Back to School Hairstyles Black Women Can Do Fast",
-        "Easy Back to School Hairstyles Black Women Should Try"
+        "15 Back to School Hairstyles for Black Women",
+        "Quick Back to School Hairstyles for Black Women",
+        "Protective Back to School Hairstyles for Black Women"
       ],
       "pin_descriptions": [
-        "Master your morning routine with these back to school hairstyles black women can do in minutes. Perfect for protecting your natural hair on busy days!",
-        "These back to school hairstyles black women are obsessed with will save you so much time. Click to see the step-by-step tutorials!"
+        "Need easy morning routines? Try these 15 back to school hairstyles for Black women that look amazing and save time. Click for full tutorials!",
+        "These back to school hairstyles for Black women are perfect for busy college mornings. Save this pin for cute and protective styling ideas!"
       ],
       "boards": [
         "Natural Hairstyles",
@@ -555,11 +589,11 @@
       ],
       "product_ideas": [
         "Natural Hair Wash Day Schedule",
-        "Quick Morning Routine Planner"
+        "College Morning Routine Planner"
       ],
       "affiliate_matches": [
         "Edge control gel",
-        "Satin scrunchies"
+        "Pre-stretched braiding hair"
       ],
       "niche": "beauty",
       "pop": 70,
@@ -569,36 +603,104 @@
       "score": 180
     },
     {
-      "keyword": "2000s teen bedroom",
+      "keyword": "summer toe nails 2026",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "10 Summer Toe Nails 2026 Trends Perfect for Your Favorite Sandals",
+      "pin_titles": [
+        "10 Summer Toe Nails 2026 for Sandal Season",
+        "Cute Summer Toe Nails 2026 You Can Do at Home",
+        "Trending Summer Toe Nails 2026 for Beach Days"
+      ],
+      "pin_descriptions": [
+        "Get your feet vacation-ready with these summer toe nails 2026 trends. Click to see the most popular pedicure colors for sandal season!",
+        "These summer toe nails 2026 ideas are guaranteed to make your pedicure pop. Save this pin to recreate these cute looks at home!"
+      ],
+      "boards": [
+        "Pedicure Ideas",
+        "Summer Nail Trends"
+      ],
+      "product_ideas": [
+        "At-Home Pedicure Checklist",
+        "Summer Footcare Guide"
+      ],
+      "affiliate_matches": [
+        "Callus remover gels",
+        "Bright pedicure polish bundles"
+      ],
+      "niche": "beauty",
+      "pop": 69,
+      "mom": 600,
+      "yoy": 10001,
+      "rising": true,
+      "score": 179
+    },
+    {
+      "keyword": "indoor house plants aesthetic",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "11 Ways to Recreate a 2000s Teen Bedroom with a Modern Twist",
+      "article_topic": "7 Indoor House Plants Aesthetic Ideas for a Cozy, Green Apartment",
       "pin_titles": [
-        "2000s Teen Bedroom: 11 Y2K Decor Ideas You Need",
-        "How to Style a 2000s Teen Bedroom Without Looking Cluttered",
-        "9 2000s Teen Bedroom Essentials for a Nostalgic Vibe"
+        "7 Indoor House Plants Aesthetic Ideas for Small Spaces",
+        "How to Get the Indoor House Plants Aesthetic",
+        "Indoor House Plants Aesthetic: 7 Styling Tips"
       ],
       "pin_descriptions": [
-        "Bring back the best of Y2K with these 2000s teen bedroom ideas. Get that nostalgic aesthetic with modern pieces you can actually shop!",
-        "Creating a 2000s teen bedroom is easier than you think. Discover the 11 essentials you need for the ultimate retro cozy space!"
+        "Want a greener home? Discover 7 indoor house plants aesthetic ideas to make your apartment feel cozy and alive. Click to shop the best low-light plants!",
+        "Create the perfect indoor house plants aesthetic with these easy styling tips. Save this pin to transform your living room into a jungle oasis!"
       ],
       "boards": [
-        "Y2K Room Decor",
-        "Teen Bedroom Ideas"
+        "Apartment Decor Ideas",
+        "Indoor Plant Styling"
       ],
       "product_ideas": [
-        "Y2K Room Decor Sourcing Guide",
-        "Nostalgic Gallery Wall Printables"
+        "Plant Watering Schedule Printable",
+        "Houseplant Care Digital Guide"
       ],
       "affiliate_matches": [
-        "Beaded curtains",
-        "Inflatable chairs"
+        "Modern ceramic planters",
+        "Full-spectrum grow lights"
       ],
       "niche": "home decor",
-      "pop": 66,
+      "pop": 67,
       "mom": 300,
-      "yoy": -10,
+      "yoy": 10001,
+      "rising": true,
+      "score": 177
+    },
+    {
+      "keyword": "nails summer 2026 trends",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "8 Nails Summer 2026 Trends You Need to Try Before August",
+      "pin_titles": [
+        "8 Nails Summer 2026 Trends to Ask For",
+        "The Biggest Nails Summer 2026 Trends Right Now",
+        "Nails Summer 2026 Trends You Can Do at Home"
+      ],
+      "pin_descriptions": [
+        "Stay ahead of the curve with these 8 nails summer 2026 trends. Click to find out which colors and shapes are dominating this season!",
+        "These nails summer 2026 trends are taking over right now. Save this pin to guarantee your next manicure is perfectly on trend!"
+      ],
+      "boards": [
+        "Trending Nail Designs",
+        "Summer 2026 Beauty"
+      ],
+      "product_ideas": [
+        "Trend Forecasting Beauty Guide",
+        "DIY Nail Art E-book"
+      ],
+      "affiliate_matches": [
+        "Chrome nail powder",
+        "Almond shape press-on nails"
+      ],
+      "niche": "beauty",
+      "pop": 66,
+      "mom": 400,
+      "yoy": 10001,
       "rising": true,
       "score": 176
     },
@@ -607,163 +709,333 @@
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "10 Pool Hair Care Tips to Prevent Chlorine Damage This Summer",
+      "article_topic": "How to Fix Pool Hair: 5 Steps to Remove Chlorine Damage",
       "pin_titles": [
-        "Pool Hair Care: 10 Tips to Stop Chlorine Damage",
-        "7 Pool Hair Hacks to Keep Your Strands Soft and Healthy",
-        "Pool Hair Fixes: How to Detangle After a Swim"
+        "How to Fix Pool Hair in 5 Easy Steps",
+        "The Best Treatments for Damaged Pool Hair",
+        "Stop Pool Hair: 5 Tips for Swimmers"
       ],
       "pin_descriptions": [
-        "Say goodbye to green, crunchy ends with our top pool hair care tips. Learn how to prep and protect your hair before you swim!",
-        "Dealing with damaged pool hair? These deep conditioning treatments and easy protective styles will save your summer strands. Read the guide!"
+        "Struggling with dry, green strands? Learn how to fix pool hair with these 5 simple steps. Click to discover the best clarifying treatments!",
+        "Don't let chlorine ruin your locks. Save this pin to learn exactly how to treat and prevent pool hair all summer long!"
       ],
       "boards": [
         "Hair Care Tips",
-        "Summer Beauty"
+        "Summer Beauty Hacks"
       ],
       "product_ideas": [
-        "Summer Hair Rescue Protocol PDF",
-        "DIY Hair Mask Recipe Book"
+        "Hair Damage Repair Guide",
+        "Summer Hair Care Checklist"
       ],
       "affiliate_matches": [
         "Clarifying shampoo",
-        "Wet detangling brush"
+        "Deep conditioning hair masks"
       ],
       "niche": "beauty",
-      "pop": 66,
+      "pop": 65,
       "mom": 400,
       "yoy": 20,
       "rising": true,
-      "score": 176
+      "score": 175
     },
     {
-      "keyword": "pride nail ideas",
+      "keyword": "2000s teen bedroom",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "11 2000s Teen Bedroom Decor Ideas That Bring Back Y2K Nostalgia",
+      "pin_titles": [
+        "11 2000s Teen Bedroom Ideas for a Y2K Vibe",
+        "How to Decorate a 2000s Teen Bedroom Today",
+        "Iconic 2000s Teen Bedroom Decor You Can Buy"
+      ],
+      "pin_descriptions": [
+        "Obsessed with Y2K? Discover 11 2000s teen bedroom decor ideas that perfectly capture early 2000s nostalgia. Click to shop the aesthetic!",
+        "Bring back the best era with these authentic 2000s teen bedroom styling tips. Save this pin to start your Y2K room makeover!"
+      ],
+      "boards": [
+        "Y2K Room Decor",
+        "Teen Bedroom Ideas"
+      ],
+      "product_ideas": [
+        "Y2K Wall Collage Kit Printable",
+        "Retro Room Decor Moodboard"
+      ],
+      "affiliate_matches": [
+        "Inflatable furniture",
+        "Beaded doorway curtains"
+      ],
+      "niche": "home decor",
+      "pop": 64,
+      "mom": 400,
+      "yoy": -9,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "pride nails",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "18 Pride Nail Ideas to Celebrate in Style This June",
+      "article_topic": "15 Pride Nails Ideas to Celebrate June in Style",
       "pin_titles": [
-        "Pride Nail Ideas: 18 Rainbow Designs You Need to Try",
-        "12 Pride Nail Ideas That Are Actually Easy to DIY",
-        "Pride Nail Ideas to Show Your Colors All Month Long"
+        "15 Pride Nails Ideas to Show Your Colors",
+        "Cute Pride Nails You Can Do at Home",
+        "Bright Pride Nails for June Celebrations"
       ],
       "pin_descriptions": [
-        "Celebrate love with these gorgeous pride nail ideas! From bold rainbows to subtle pastel arches, find the perfect mani for June.",
-        "Looking for the best pride nail ideas? We've gathered 18 stunning designs that you can easily recreate at home. Click for the tutorials!"
+        "Get ready for June with these 15 vibrant pride nails ideas. Click to see easy tutorials for colorful, celebration-ready manicures!",
+        "These pride nails are the perfect way to show your support and style this June. Save this pin for your next nail appointment!"
       ],
       "boards": [
-        "Rainbow Nails",
-        "Pride Month Beauty"
+        "Pride Month Beauty",
+        "Colorful Nail Designs"
       ],
       "product_ideas": [
-        "Rainbow Nail Art Cheat Sheet",
-        "June Content Calendar for Nail Techs"
+        "Rainbow Nail Art Stencils",
+        "June Event Planner Printable"
       ],
       "affiliate_matches": [
-        "Rainbow nail polish bundle",
-        "Striping tape for nail art"
+        "Rainbow nail polish sets",
+        "Nail striping tape"
       ],
       "niche": "beauty",
-      "pop": 60,
-      "mom": 2500,
-      "yoy": 400,
+      "pop": 64,
+      "mom": 700,
+      "yoy": -9,
       "rising": true,
-      "score": 170
+      "score": 174
     },
     {
       "keyword": "beach hair ideas",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "15 Beach Hair Ideas for Effortless Waves All Vacation Long",
+      "intent": "high",
+      "article_topic": "9 Beach Hair Ideas That Look Better the Messier They Get",
       "pin_titles": [
-        "Beach Hair Ideas: 15 Styles to Try on Your Next Vacation",
-        "Easy Beach Hair Ideas That Look Better Messy",
-        "10 Beach Hair Ideas to Protect Your Scalp from the Sun"
+        "9 Beach Hair Ideas That Survive the Ocean",
+        "Effortless Beach Hair Ideas for Summer Days",
+        "Cute Beach Hair Ideas for Frizzy Hair"
       ],
       "pin_descriptions": [
-        "Get that perfect salty texture with these easy beach hair ideas. We're sharing the best protective styles and wave-enhancing tricks!",
-        "These beach hair ideas are perfect for long days in the sun and sand. Click through to find out which sea salt spray we swear by!"
+        "Heading to the coast? Try these 9 beach hair ideas that actually look better with wind and salt water. Click to see the easy tutorials!",
+        "These beach hair ideas are perfect for keeping your hair out of your face while looking effortlessly chic. Save this pin for your vacation!"
       ],
       "boards": [
-        "Vacation Hairstyles",
-        "Summer Hair"
+        "Beach Vacation Style",
+        "Summer Hairstyles"
       ],
       "product_ideas": [
-        "Beach Vacation Packing List",
-        "Heatless Hair Styling E-Book"
+        "Vacation Hair Styling Guide",
+        "Beach Packing List Printable"
       ],
       "affiliate_matches": [
-        "Sea salt spray",
-        "UV protection hair mist"
+        "Sea salt texture spray",
+        "Oversized hair scrunchies"
       ],
       "niche": "beauty",
-      "pop": 60,
+      "pop": 61,
       "mom": 600,
-      "yoy": 200,
+      "yoy": 300,
       "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "june nails ideas",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "12 June Nails Ideas Perfect for Vacations and Pool Days",
+      "pin_titles": [
+        "12 June Nails Ideas for Your Summer Vacation",
+        "Bright June Nails Ideas You Need to Try",
+        "June Nails Ideas for a Flawless Summer Manicure"
+      ],
+      "pin_descriptions": [
+        "Kick off summer with these 12 beautiful June nails ideas. Click to explore the brightest and most fun designs for the season!",
+        "These June nails ideas are exactly what you need to welcome the warm weather. Save this pin to inspire your next DIY manicure!"
+      ],
+      "boards": [
+        "Summer Nail Ideas",
+        "Monthly Nail Inspiration"
+      ],
+      "product_ideas": [
+        "Summer Nail Art Planner",
+        "DIY Manicure Cheat Sheet"
+      ],
+      "affiliate_matches": [
+        "Pastel gel polish kits",
+        "Nail art dotting tools"
+      ],
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 3000,
+      "yoy": 40,
+      "rising": false,
       "score": 170
     },
     {
-      "keyword": "basic summer nails",
+      "keyword": "4th of july nail art",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "12 Basic Summer Nails That Look Clean, Chic, and Expensive",
+      "article_topic": "10 4th of July Nail Art Designs That Aren't Cheesy",
       "pin_titles": [
-        "Basic Summer Nails: 12 Clean Girl Manicures to Try",
-        "10 Basic Summer Nails for a Minimalist Vacation Look",
-        "Basic Summer Nails That Go With Every Outfit"
+        "10 4th of July Nail Art Designs That Are Actually Cute",
+        "Classy 4th of July Nail Art for Summer BBQs",
+        "Easy 4th of July Nail Art You Can Do at Home"
       ],
       "pin_descriptions": [
-        "Love a minimalist look? These basic summer nails are clean, chic, and perfect for every occasion. Discover our favorite neutral shades!",
-        "Keep it simple with these basic summer nails. From sheer pinks to classic French tips, these manicures never go out of style. Shop the polishes!"
+        "Skip the tacky looks with these 10 classy 4th of July nail art designs. Click to shop the exact red, white, and blue polishes used!",
+        "These 4th of July nail art ideas are perfect for your holiday weekend BBQs. Save this pin for chic, festive manicure inspiration!"
       ],
       "boards": [
-        "Minimalist Nails",
-        "Clean Girl Aesthetic"
+        "Holiday Nail Designs",
+        "Summer Nail Trends"
       ],
       "product_ideas": [
-        "Minimalist Wardrobe & Beauty Guide",
-        "Nail Shape Guide Printable"
+        "Holiday Nail Art Guide",
+        "Summer Party Planner Printable"
       ],
       "affiliate_matches": [
-        "Sheer pink nail polish",
-        "Glass nail files"
+        "Red white and blue polish sets",
+        "Star nail decals"
       ],
       "niche": "beauty",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 30,
+      "pop": 59,
+      "mom": 1500,
+      "yoy": 1000,
       "rising": true,
-      "score": 170
+      "score": 169
+    },
+    {
+      "keyword": "rainbow pride nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "8 Rainbow Pride Nails Tutorials Anyone Can Do at Home",
+      "pin_titles": [
+        "8 Rainbow Pride Nails Tutorials for Beginners",
+        "Easy Rainbow Pride Nails You Can DIY",
+        "Bright Rainbow Pride Nails for June"
+      ],
+      "pin_descriptions": [
+        "Want to paint your own manicure? Follow these 8 easy rainbow pride nails tutorials for a flawless finish. Click to get the step-by-step guide!",
+        "These rainbow pride nails are bright, fun, and surprisingly easy to do yourself. Save this pin to try these colorful designs at home!"
+      ],
+      "boards": [
+        "Rainbow Nail Art",
+        "Pride Month Beauty"
+      ],
+      "product_ideas": [
+        "DIY Nail Art Workbook",
+        "Color Theory for Nails Guide"
+      ],
+      "affiliate_matches": [
+        "Rainbow gel polish bundles",
+        "Fine detail nail brushes"
+      ],
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 4500,
+      "yoy": -30,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "lesbian pride nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "7 Lesbian Pride Nails Designs to Show Your Colors This June",
+      "pin_titles": [
+        "7 Lesbian Pride Nails Designs for June",
+        "Cute Lesbian Pride Nails to Try This Month",
+        "Subtle Lesbian Pride Nails for Everyday Wear"
+      ],
+      "pin_descriptions": [
+        "Celebrate your identity with these 7 gorgeous lesbian pride nails designs. Click to see the best ways to incorporate the sunset flag colors!",
+        "These lesbian pride nails are the perfect way to show your colors this June. Save this pin to show your nail artist!"
+      ],
+      "boards": [
+        "Pride Month Beauty",
+        "Colorful Nail Designs"
+      ],
+      "product_ideas": [
+        "Pride Month Event Tracker",
+        "Nail Art Color Matching Guide"
+      ],
+      "affiliate_matches": [
+        "Sunset color polish sets",
+        "Matte top coats"
+      ],
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 1500,
+      "yoy": 90,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "forth of july nails",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "14 Forth of July Nails You'll Want to Wear All Summer Long",
+      "pin_titles": [
+        "14 Forth of July Nails for Your Holiday Weekend",
+        "Cute Forth of July Nails That Aren't Tacky",
+        "Easy Forth of July Nails for Summer Parties"
+      ],
+      "pin_descriptions": [
+        "Get ready for the fireworks with these 14 amazing forth of july nails. Click to find a festive design that matches your holiday outfit!",
+        "These forth of july nails are the perfect accessory for your holiday BBQ. Save this pin to secure your festive summer manicure!"
+      ],
+      "boards": [
+        "Holiday Nail Designs",
+        "Summer Nail Ideas"
+      ],
+      "product_ideas": [
+        "Summer Holiday Planner",
+        "Nail Art Stencil Printables"
+      ],
+      "affiliate_matches": [
+        "Glitter top coats",
+        "Patriotic nail wraps"
+      ],
+      "niche": "beauty",
+      "pop": 58,
+      "mom": 700,
+      "yoy": 2000,
+      "rising": true,
+      "score": 168
     },
     {
       "keyword": "church camp nails",
       "keep": true,
       "season": "summer",
-      "intent": "low",
-      "article_topic": "10 Church Camp Nails That Are Cute and Chip-Resistant",
+      "intent": "medium",
+      "article_topic": "9 Church Camp Nails That Are Cute, Modest, and Chip-Resistant",
       "pin_titles": [
-        "Church Camp Nails: 10 Durable Designs for a Week Away",
-        "Cute Church Camp Nails That Won't Chip Outdoors",
-        "7 Easy Church Camp Nails for Teen Girls"
+        "9 Church Camp Nails That Will Last All Week",
+        "Cute and Modest Church Camp Nails",
+        "Chip-Resistant Church Camp Nails for Summer"
       ],
       "pin_descriptions": [
-        "Need a manicure that lasts all week? These church camp nails are durable, cute, and perfect for outdoor activities.",
-        "Get ready for your trip with these church camp nails. We share the best chip-proof gel ideas that will survive a week of fun. Read more!"
+        "Need a manicure that survives the outdoors? Try these 9 church camp nails that are cute, modest, and incredibly durable. Click for the best long-lasting polishes!",
+        "These church camp nails are perfectly understated and won't chip during activities. Save this pin for your summer camp packing list!"
       ],
       "boards": [
-        "Teen Nail Ideas",
-        "Summer Camp Prep"
+        "Simple Nail Designs",
+        "Summer Camp Essentials"
       ],
       "product_ideas": [
         "Summer Camp Packing Checklist",
-        "DIY Gel Manicure Guide"
+        "Modest Beauty Routine Guide"
       ],
       "affiliate_matches": [
-        "Strengthening base coat",
-        "Press-on nail kits"
+        "Strengthening base coats",
+        "Long-wear neutral polish"
       ],
       "niche": "beauty",
       "pop": 58,
@@ -771,244 +1043,6 @@
       "yoy": 100,
       "rising": true,
       "score": 168
-    },
-    {
-      "keyword": "headbands hairstyles",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "high",
-      "article_topic": "17 Headbands Hairstyles That Will Save Your Bad Hair Day",
-      "pin_titles": [
-        "Headbands Hairstyles: 17 Easy Ways to Hide Dirty Hair",
-        "10 Headbands Hairstyles for Short and Medium Hair",
-        "Cute Headbands Hairstyles You Can Do in 2 Minutes"
-      ],
-      "pin_descriptions": [
-        "Upgrade your daily look with these simple headbands hairstyles. Perfect for hiding second-day hair while still looking put together!",
-        "Don't know how to style your hair today? Try these headbands hairstyles! Click to shop our favorite comfortable headbands that don't cause headaches."
-      ],
-      "boards": [
-        "Hair Accessories",
-        "Easy Everyday Hairstyles"
-      ],
-      "product_ideas": [
-        "Hair Accessory Organization Guide",
-        "5-Minute Morning Routine Planner"
-      ],
-      "affiliate_matches": [
-        "Padded headbands",
-        "Dry shampoo"
-      ],
-      "niche": "beauty",
-      "pop": 57,
-      "mom": 700,
-      "yoy": 300,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "pride nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "25 Pride Nails to Celebrate Love This June",
-      "pin_titles": [
-        "Pride Nails: 25 Colorful Designs for June 2026",
-        "15 Pride Nails That Feature Subtle Rainbow Art",
-        "Bright Pride Nails to Show Off Your Spirit"
-      ],
-      "pin_descriptions": [
-        "Celebrate Pride Month with these gorgeous pride nails! We've collected the best bright, bold, and beautiful rainbow designs to inspire you.",
-        "Get ready for the parade with these stunning pride nails. From glitter tips to full rainbow gradients, find the perfect design here!"
-      ],
-      "boards": [
-        "Pride Month Ideas",
-        "Colorful Nails"
-      ],
-      "product_ideas": [
-        "Rainbow Color Palette Guide",
-        "At-Home Manicure E-Book"
-      ],
-      "affiliate_matches": [
-        "Multi-color nail polish sets",
-        "Nail art brushes"
-      ],
-      "niche": "beauty",
-      "pop": 57,
-      "mom": 700,
-      "yoy": -9,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "june nails ideas",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "22 June Nails Ideas to Kick Off Your Summer Vacation",
-      "pin_titles": [
-        "June Nails Ideas: 22 Fresh Looks for Early Summer",
-        "15 June Nails Ideas Featuring Bright Summer Colors",
-        "June Nails Ideas You Need to Screenshot for the Salon"
-      ],
-      "pin_descriptions": [
-        "Welcome the warm weather with these stunning June nails ideas. Find the perfect bright colors and fun patterns for your next mani!",
-        "Searching for fresh June nails ideas? We've got you covered with 22 gorgeous manicures that scream summer. Click to see them all!"
-      ],
-      "boards": [
-        "Summer Nail Inspo",
-        "June Beauty"
-      ],
-      "product_ideas": [
-        "Summer Beauty Lookbook",
-        "Nail Tech Appointment Tracker"
-      ],
-      "affiliate_matches": [
-        "Neon gel polish",
-        "Cuticle pusher"
-      ],
-      "niche": "beauty",
-      "pop": 67,
-      "mom": 3500,
-      "yoy": 40,
-      "rising": false,
-      "score": 167
-    },
-    {
-      "keyword": "june nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "19 June Nails That Perfectly Capture the Summer Vibe",
-      "pin_titles": [
-        "June Nails: 19 Manicures You Need to Try This Month",
-        "The Best June Nails for Your Next Beach Vacation",
-        "10 June Nails That Feature Fun Floral Designs"
-      ],
-      "pin_descriptions": [
-        "Kick off the summer season with these beautiful June nails. From tropical brights to soft pastels, find your signature summer shade!",
-        "Need inspiration for your next salon visit? These June nails are trending everywhere. Save your favorites and shop the polish colors!"
-      ],
-      "boards": [
-        "Summer Nails",
-        "Monthly Manicures"
-      ],
-      "product_ideas": [
-        "Summer Glow-Up Guide",
-        "Polish Collection Organizer Printable"
-      ],
-      "affiliate_matches": [
-        "Floral nail decals",
-        "Top coat polish"
-      ],
-      "niche": "beauty",
-      "pop": 66,
-      "mom": 1500,
-      "yoy": 70,
-      "rising": false,
-      "score": 166
-    },
-    {
-      "keyword": "forth of july nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "20 Forth of July Nails That Are Patriotic and Chic",
-      "pin_titles": [
-        "Forth of July Nails: 20 Chic Red White and Blue Looks",
-        "15 Forth of July Nails You Can Easily Do at Home",
-        "Cute Forth of July Nails That Aren't Tacky"
-      ],
-      "pin_descriptions": [
-        "Get festive with these forth of july nails! Discover chic, modern ways to wear red, white, and blue without looking over-the-top.",
-        "These forth of july nails are exactly what you need for your holiday BBQ. Click through to find easy DIY tutorials and shop the shades!"
-      ],
-      "boards": [
-        "4th of July Beauty",
-        "Holiday Nails"
-      ],
-      "product_ideas": [
-        "Holiday Party Hosting Checklist",
-        "Summer Manicure Guide"
-      ],
-      "affiliate_matches": [
-        "Red white and blue polish set",
-        "Star nail stickers"
-      ],
-      "niche": "beauty",
-      "pop": 55,
-      "mom": 700,
-      "yoy": 2000,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "subtle pride nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "14 Subtle Pride Nails for a Minimalist Rainbow Look",
-      "pin_titles": [
-        "Subtle Pride Nails: 14 Minimalist Rainbow Manicures",
-        "10 Subtle Pride Nails for the Office",
-        "Chic Subtle Pride Nails You Can Wear All Summer"
-      ],
-      "pin_descriptions": [
-        "Celebrate love with these subtle pride nails. Perfect for minimalists who want just a tiny pop of rainbow color!",
-        "Want to show your support at work? These subtle pride nails are office-friendly, chic, and easy to DIY. Read the blog post for details!"
-      ],
-      "boards": [
-        "Minimalist Nail Art",
-        "Subtle Manicures"
-      ],
-      "product_ideas": [
-        "Minimalist Nail Art Guide",
-        "Micro-French Tip Tutorial Video"
-      ],
-      "affiliate_matches": [
-        "Fine detail nail brushes",
-        "Nude base coat polish"
-      ],
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 2500,
-      "yoy": -10,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "one color summer nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "16 One Color Summer Nails That Look Effortlessly Expensive",
-      "pin_titles": [
-        "One Color Summer Nails: 16 Shades to Try in 2026",
-        "12 One Color Summer Nails for a Clean Girl Aesthetic",
-        "The Best One Color Summer Nails for Short Manicures"
-      ],
-      "pin_descriptions": [
-        "Keep it simple and chic with these one color summer nails. Sometimes a solid, vibrant shade is all you need for a perfect vacation look!",
-        "Discover the trendiest one color summer nails of 2026. From butter yellow to bright coral, find the single shade that suits you best!"
-      ],
-      "boards": [
-        "Solid Color Nails",
-        "Easy Summer Nails"
-      ],
-      "product_ideas": [
-        "Color Theory for Nails Guide",
-        "Summer Polish Capsule Wardrobe"
-      ],
-      "affiliate_matches": [
-        "Butter yellow nail polish",
-        "High-shine gel top coat"
-      ],
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 2000,
-      "yoy": 300,
-      "rising": true,
-      "score": 163
     }
   ]
 }
