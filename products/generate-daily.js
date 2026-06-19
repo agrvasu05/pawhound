@@ -12,12 +12,17 @@ const fs = require('fs');
 const path = require('path');
 const lib = require('./lib');
 
-// Top-demand digital types (per market research). Wall-art portraits retired.
+// Product formats. Rotation favors the FORMATS that actually convert on Pinterest
+// (see products/niche-performance.js): planner + wall-art drive outbound clicks;
+// spreadsheet (0 impressions) and clipart (0 outbound) are kept available but off
+// the default rotation. Wall-art re-enabled (best out/pin), now themed to the
+// proven home-decor niche rather than the retired dog portraits.
 const TYPES = {
-  clipart: require('./types/clipart'),        // #1 demand (transparent PNG sets)
-  spreadsheet: require('./types/spreadsheet'),// editable trackers (.xlsx, ~$0)
-  planner: require('./types/planner'),        // printable PDFs (~$0)
-  coloring: require('./types/coloring'),       // available, off by default (image cost)
+  planner: require('./types/planner'),         // printable PDFs (~$0) — proven outbound
+  'wall-art': require('./types/wall-art'),     // best out/pin; small image cost
+  clipart: require('./types/clipart'),         // available (0 outbound so far) — off rotation
+  spreadsheet: require('./types/spreadsheet'), // available (dead: 0 impressions) — off rotation
+  coloring: require('./types/coloring'),        // available, off by default (image cost)
 };
 
 const OUT_ROOT = path.join(process.cwd(), 'products', 'output');
@@ -27,19 +32,21 @@ const TRACKER = path.join(process.cwd(), 'content', 'gumroad-products.json');
 // keyword (e.g. "skincare routine tracker", "home organization planner", "bedroom
 // decor clipart") so the shop stays on-brand with the rest of the account.
 const TYPE_NICHES = {
+  planner: ['home decor', 'beauty'],
+  'wall-art': ['home decor', 'beauty'],
   clipart: ['home decor', 'beauty'],
   spreadsheet: ['home decor', 'beauty'],
-  planner: ['home decor', 'beauty'],
   coloring: ['home decor', 'beauty'],
 };
 
 const argTypes = process.argv.find((a) => a.startsWith('--types='));
-// Default: 2 products/day, rotating evenly across the top-demand types
-// (clipart, spreadsheet, planner) so output is steady + varied. Clipart adds a
-// small image cost (~$0.13); spreadsheet/planner are ~$0.
-const ROTATION = ['clipart', 'spreadsheet', 'planner'];
+// Default: 2 products/day across the two formats that actually convert on
+// Pinterest — planner (proven outbound, ~$0) + wall-art (best out/pin, small
+// image cost). Doubled down per niche-performance analysis; spreadsheet/clipart
+// dropped from the rotation (0 conversions). Override with --types=...
+const ROTATION = ['planner', 'wall-art'];
 const dayIdx = Math.floor(Date.now() / 864e5);
-const defaultSel = [ROTATION[dayIdx % 3], ROTATION[(dayIdx + 1) % 3]];
+const defaultSel = [ROTATION[dayIdx % ROTATION.length], ROTATION[(dayIdx + 1) % ROTATION.length]];
 const selected = argTypes ? argTypes.split('=')[1].split(',') : defaultSel;
 const generateOnly = process.argv.includes('--generate-only');
 
