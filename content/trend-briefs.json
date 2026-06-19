@@ -1,78 +1,132 @@
 {
-  "generated_at": "2026-06-19T16:28:55.002Z",
+  "generated_at": "2026-06-19T17:25:21.401Z",
   "region": "US",
   "candidates": [
     {
-      "keyword": "swimming hairstyles",
+      "keyword": "summer nail colors 2026",
       "niche": "beauty",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 10,
+      "pop": 83,
+      "mom": 700,
+      "yoy": 10001,
       "rising": true,
-      "score": 192
+      "score": 193
     },
     {
       "keyword": "pool hairstyles",
       "niche": "beauty",
-      "pop": 81,
-      "mom": 400,
+      "pop": 83,
+      "mom": 500,
       "yoy": 30,
       "rising": true,
-      "score": 191
+      "score": 193
+    },
+    {
+      "keyword": "swimming hairstyles",
+      "niche": "beauty",
+      "pop": 83,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 193
     },
     {
       "keyword": "summer neutral nails",
       "niche": "beauty",
-      "pop": 80,
+      "pop": 82,
       "mom": 300,
       "yoy": 40,
       "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "summer hairstyle",
-      "niche": "beauty",
-      "pop": 80,
-      "mom": 300,
-      "yoy": 30,
-      "rising": true,
-      "score": 190
+      "score": 192
     },
     {
       "keyword": "pool day hairstyles",
       "niche": "beauty",
-      "pop": 77,
+      "pop": 78,
       "mom": 400,
-      "yoy": 90,
+      "yoy": 100,
+      "rising": true,
+      "score": 188
+    },
+    {
+      "keyword": "summer hairstyle",
+      "niche": "beauty",
+      "pop": 77,
+      "mom": 300,
+      "yoy": 30,
       "rising": true,
       "score": 187
     },
     {
-      "keyword": "summer nail colors 2026",
+      "keyword": "summer wedding nails",
       "niche": "beauty",
-      "pop": 76,
-      "mom": 700,
-      "yoy": 10001,
+      "pop": 77,
+      "mom": 300,
+      "yoy": 8,
       "rising": true,
-      "score": 186
+      "score": 187
     },
     {
-      "keyword": "june nail inspo",
+      "keyword": "headbands hairstyles",
       "niche": "beauty",
-      "pop": 74,
-      "mom": 1000,
-      "yoy": 70,
+      "pop": 75,
+      "mom": 800,
+      "yoy": 300,
       "rising": true,
-      "score": 184
+      "score": 185
+    },
+    {
+      "keyword": "pool hair",
+      "niche": "beauty",
+      "pop": 73,
+      "mom": 400,
+      "yoy": 20,
+      "rising": true,
+      "score": 183
     },
     {
       "keyword": "nails summer 2026 trends",
       "niche": "beauty",
-      "pop": 70,
+      "pop": 73,
       "mom": 400,
       "yoy": 10001,
       "rising": true,
+      "score": 183
+    },
+    {
+      "keyword": "pedicure ideas summer",
+      "niche": "beauty",
+      "pop": 73,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 183
+    },
+    {
+      "keyword": "beach hair ideas",
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 600,
+      "yoy": 300,
+      "rising": true,
       "score": 180
+    },
+    {
+      "keyword": "pool makeup",
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 180
+    },
+    {
+      "keyword": "cloud 9 nails",
+      "niche": "beauty",
+      "pop": 69,
+      "mom": 600,
+      "yoy": 3000,
+      "rising": true,
+      "score": 179
     },
     {
       "keyword": "back to school hairstyles black women",
@@ -84,173 +138,92 @@
       "score": 179
     },
     {
-      "keyword": "beach hair ideas",
-      "niche": "beauty",
-      "pop": 68,
-      "mom": 600,
-      "yoy": 300,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "pool hair",
-      "niche": "beauty",
-      "pop": 68,
-      "mom": 400,
-      "yoy": 20,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "pool makeup",
-      "niche": "beauty",
-      "pop": 68,
-      "mom": 300,
-      "yoy": -10,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "neutral summer nails",
-      "niche": "beauty",
-      "pop": 67,
-      "mom": 400,
-      "yoy": 10,
-      "rising": true,
-      "score": 177
-    },
-    {
-      "keyword": "wig hairstyles ideas",
-      "niche": "beauty",
-      "pop": 66,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 176
-    },
-    {
-      "keyword": "indoor house plants aesthetic",
-      "niche": "home decor",
-      "pop": 64,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 174
-    },
-    {
-      "keyword": "headbands hairstyles",
-      "niche": "beauty",
-      "pop": 64,
-      "mom": 800,
-      "yoy": 300,
-      "rising": true,
-      "score": 174
-    },
-    {
-      "keyword": "pride nails",
-      "niche": "beauty",
-      "pop": 63,
-      "mom": 700,
-      "yoy": -8,
-      "rising": true,
-      "score": 173
-    },
-    {
       "keyword": "june nails ideas",
       "niche": "beauty",
-      "pop": 73,
-      "mom": 2500,
+      "pop": 78,
+      "mom": 2000,
       "yoy": 40,
       "rising": false,
-      "score": 173
-    },
-    {
-      "keyword": "2000s teen bedroom",
-      "niche": "home decor",
-      "pop": 62,
-      "mom": 400,
-      "yoy": -6,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "pedicure ideas summer",
-      "niche": "beauty",
-      "pop": 62,
-      "mom": 400,
-      "yoy": 10,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "مدل مو",
-      "niche": "beauty",
-      "pop": 61,
-      "mom": 1500,
-      "yoy": -50,
-      "rising": true,
-      "score": 171
-    },
-    {
-      "keyword": "june nails",
-      "niche": "beauty",
-      "pop": 71,
-      "mom": 1000,
-      "yoy": 70,
-      "rising": false,
-      "score": 171
-    },
-    {
-      "keyword": "میکاپ",
-      "niche": "beauty",
-      "pop": 60,
-      "mom": 3000,
-      "yoy": -40,
-      "rising": true,
-      "score": 170
+      "score": 178
     },
     {
       "keyword": "bandana hair",
       "niche": "beauty",
-      "pop": 60,
-      "mom": 300,
+      "pop": 67,
+      "mom": 400,
       "yoy": 500,
       "rising": true,
-      "score": 170
+      "score": 177
     },
     {
-      "keyword": "church camp nails",
-      "niche": "beauty",
-      "pop": 58,
-      "mom": 600,
-      "yoy": 100,
+      "keyword": "indoor house plants aesthetic",
+      "niche": "home decor",
+      "pop": 66,
+      "mom": 300,
+      "yoy": 10001,
       "rising": true,
-      "score": 168
+      "score": 176
+    },
+    {
+      "keyword": "june nails",
+      "niche": "beauty",
+      "pop": 76,
+      "mom": 800,
+      "yoy": 70,
+      "rising": false,
+      "score": 176
+    },
+    {
+      "keyword": "مدل مو",
+      "niche": "beauty",
+      "pop": 64,
+      "mom": 1500,
+      "yoy": -50,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "میکاپ",
+      "niche": "beauty",
+      "pop": 61,
+      "mom": 3000,
+      "yoy": -40,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "hairstyles for the pool",
+      "niche": "beauty",
+      "pop": 61,
+      "mom": 400,
+      "yoy": -7,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "2000s teen bedroom",
+      "niche": "home decor",
+      "pop": 60,
+      "mom": 400,
+      "yoy": -2,
+      "rising": true,
+      "score": 170
     },
     {
       "keyword": "forth of july nails",
       "niche": "beauty",
       "pop": 57,
-      "mom": 700,
+      "mom": 800,
       "yoy": 2000,
       "rising": true,
       "score": 167
     },
     {
-      "keyword": "hairstyles for the pool",
+      "keyword": "lace nails designs",
       "niche": "beauty",
       "pop": 56,
-      "mom": 400,
-      "yoy": -7,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "lesbian makeup",
-      "niche": "beauty",
-      "pop": 56,
-      "mom": 400,
-      "yoy": 20,
+      "mom": 1000,
+      "yoy": 200,
       "rising": true,
       "score": 166
     },
@@ -259,409 +232,640 @@
       "niche": "beauty",
       "pop": 55,
       "mom": 600,
-      "yoy": -4,
+      "yoy": -3,
       "rising": true,
       "score": 165
     },
     {
-      "keyword": "lace nails designs",
-      "niche": "beauty",
-      "pop": 53,
-      "mom": 1000,
-      "yoy": 200,
-      "rising": true,
-      "score": 163
-    },
-    {
       "keyword": "summer hairstyles for long hair",
       "niche": "beauty",
-      "pop": 51,
-      "mom": 400,
+      "pop": 55,
+      "mom": 500,
       "yoy": 40,
       "rising": true,
-      "score": 161
+      "score": 165
     },
     {
-      "keyword": "uncanny valley makeup",
+      "keyword": "church camp nails",
       "niche": "beauty",
-      "pop": 49,
+      "pop": 54,
       "mom": 700,
       "yoy": 200,
       "rising": true,
-      "score": 159
+      "score": 164
     },
     {
-      "keyword": "makeup routine",
+      "keyword": "lesbian makeup",
       "niche": "beauty",
-      "pop": 59,
-      "mom": 300,
-      "yoy": 200,
-      "rising": false,
-      "score": 159
+      "pop": 54,
+      "mom": 400,
+      "yoy": 20,
+      "rising": true,
+      "score": 164
     },
     {
       "keyword": "pride makeup",
       "niche": "beauty",
-      "pop": 47,
+      "pop": 53,
       "mom": 3000,
       "yoy": -30,
       "rising": true,
-      "score": 157
+      "score": 163
     },
     {
       "keyword": "new summer nails",
       "niche": "beauty",
-      "pop": 47,
+      "pop": 53,
       "mom": 600,
       "yoy": 3000,
       "rising": true,
-      "score": 157
+      "score": 163
+    },
+    {
+      "keyword": "uncanny valley makeup",
+      "niche": "beauty",
+      "pop": 52,
+      "mom": 700,
+      "yoy": 300,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "jax makeup",
+      "niche": "beauty",
+      "pop": 51,
+      "mom": 800,
+      "yoy": 10001,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "pride nails",
+      "niche": "beauty",
+      "pop": 61,
+      "mom": 700,
+      "yoy": -8,
+      "rising": false,
+      "score": 161
+    },
+    {
+      "keyword": "makeup routine",
+      "niche": "beauty",
+      "pop": 60,
+      "mom": 300,
+      "yoy": 200,
+      "rising": false,
+      "score": 160
     },
     {
       "keyword": "bathroom aesthetic ideas",
       "niche": "home decor",
-      "pop": 44,
+      "pop": 47,
       "mom": 300,
       "yoy": 100,
       "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "color drenched bedroom",
-      "niche": "home decor",
-      "pop": 77,
-      "mom": 200,
-      "yoy": 80,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "bedroom makeover",
-      "niche": "home decor",
-      "pop": 51,
-      "mom": 300,
-      "yoy": 100,
-      "rising": false,
-      "score": 151
+      "score": 157
     },
     {
       "keyword": "pride makeup ideas",
       "niche": "beauty",
-      "pop": 41,
+      "pop": 46,
       "mom": 1500,
-      "yoy": 50,
+      "yoy": 60,
       "rising": true,
-      "score": 151
+      "score": 156
     },
     {
-      "keyword": "tanning routine",
+      "keyword": "summer pedicure",
       "niche": "beauty",
-      "pop": 84,
+      "pop": 89,
       "mom": 200,
-      "yoy": 40,
+      "yoy": 20,
       "rising": false,
-      "score": 151
+      "score": 156
+    },
+    {
+      "keyword": "color drenched bedroom",
+      "niche": "home decor",
+      "pop": 78,
+      "mom": 200,
+      "yoy": 80,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "nails for june",
+      "niche": "beauty",
+      "pop": 45,
+      "mom": 3000,
+      "yoy": 400,
+      "rising": true,
+      "score": 155
     }
   ],
   "briefs": [
     {
-      "keyword": "swimming hairstyles",
+      "keyword": "summer nail colors 2026",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "11 Swimming Hairstyles That Prevent Tangles and Chlorine Damage",
+      "intent": "high",
+      "article_topic": "15 Summer Nail Colors 2026 That Will Dominate Your Next Salon Visit",
       "pin_titles": [
-        "11 Easy Swimming Hairstyles to Protect Your Hair",
-        "Cute Swimming Hairstyles That Actually Stay Put",
-        "Swimming Hairstyles: 11 Looks for Long Hair"
+        "15 Summer Nail Colors 2026 to Try Now",
+        "Summer Nail Colors 2026: 15 Bright Shades",
+        "15 Summer Nail Colors 2026 for Your Vacation"
       ],
       "pin_descriptions": [
-        "Need swimming hairstyles that won't leave you with a tangled mess? Try these easy protective styles for the pool.",
-        "Discover cute swimming hairstyles that protect your hair from chlorine and tangles. Click to see the tutorials!"
+        "Looking for summer nail colors 2026 trends? Discover 15 vibrant and neutral shades perfect for beach days. Click to find your next manicure inspiration!",
+        "These summer nail colors 2026 are taking over Pinterest. From bright corals to milky whites, find the perfect polish. Shop our favorite shades on the blog!"
       ],
       "boards": [
-        "Summer Hairstyles",
-        "Hair Care Tips"
+        "Summer Nail Ideas",
+        "2026 Beauty Trends"
       ],
       "product_ideas": [
-        "Summer Hair Care Guide PDF",
-        "Protective Styling Video Masterclass"
+        "Nail Polish Color Guide PDF",
+        "At-Home Gel Manicure Checklist"
       ],
       "affiliate_matches": [
-        "Swim caps",
-        "Leave-in conditioner for swimmers"
+        "Gel polish kits",
+        "Cuticle oils"
       ],
       "niche": "beauty",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 10,
+      "pop": 83,
+      "mom": 700,
+      "yoy": 10001,
       "rising": true,
-      "score": 192
+      "score": 193
     },
     {
       "keyword": "pool hairstyles",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "9 Pool Hairstyles That Look Cute Even When Wet",
+      "article_topic": "12 Pool Hairstyles That Keep Wet Hair Out of Your Face",
       "pin_titles": [
-        "9 Pool Hairstyles for a Frizz-Free Summer",
-        "Easy Pool Hairstyles You Can Do in 5 Minutes",
-        "Cute Pool Hairstyles for Curly Hair Protection"
+        "12 Easy Pool Hairstyles for Wet Hair",
+        "Cute Pool Hairstyles for Your Next Vacation",
+        "12 Effortless Pool Hairstyles to Try"
       ],
       "pin_descriptions": [
-        "Looking for pool hairstyles that survive the water? These easy braids and buns are perfect for swim days.",
-        "Find your new favorite pool hairstyles to keep your hair protected and looking chic. Click to read more!"
+        "Need cute pool hairstyles that actually stay put? These 12 easy looks will keep your hair protected and stylish all day. Click for the step-by-step tutorials!",
+        "Try these simple pool hairstyles for your next beach or resort day. Protect your locks from chlorine while looking chic. Read the post for our favorite hair accessories!"
       ],
       "boards": [
-        "Summer Hair Ideas",
-        "Vacation Beauty"
+        "Summer Hairstyles",
+        "Vacation Beauty Tips"
       ],
       "product_ideas": [
-        "Vacation Packing List Printable",
-        "Summer Beauty Routine Planner"
+        "Summer Haircare Routine Guide",
+        "Vacation Packing List Printable"
       ],
       "affiliate_matches": [
-        "Waterproof hair ties",
-        "UV protection hair spray"
+        "Waterproof claw clips",
+        "Leave-in conditioner with UV protection"
       ],
       "niche": "beauty",
-      "pop": 81,
-      "mom": 400,
+      "pop": 83,
+      "mom": 500,
       "yoy": 30,
       "rising": true,
-      "score": 191
+      "score": 193
+    },
+    {
+      "keyword": "swimming hairstyles",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "9 Swimming Hairstyles to Protect Your Hair From Chlorine Damage",
+      "pin_titles": [
+        "9 Swimming Hairstyles to Protect Your Hair",
+        "Easy Swimming Hairstyles for Long Hair",
+        "9 Swimming Hairstyles That Survive the Water"
+      ],
+      "pin_descriptions": [
+        "Looking for swimming hairstyles that prevent tangles? These 9 protective styles will keep your hair safe from chlorine and sun damage. Click to see the looks!",
+        "Discover the best swimming hairstyles for your daily laps or beach days. Keep your hair healthy and out of your face. Shop our favorite swim-friendly hair ties!"
+      ],
+      "boards": [
+        "Protective Hairstyles",
+        "Summer Hair Care"
+      ],
+      "product_ideas": [
+        "Healthy Hair Habit Tracker",
+        "Swimmers Hair Care Cheat Sheet"
+      ],
+      "affiliate_matches": [
+        "Silk scrunchies",
+        "Clarifying swimmer shampoo"
+      ],
+      "niche": "beauty",
+      "pop": 83,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 193
     },
     {
       "keyword": "summer neutral nails",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "15 Summer Neutral Nails You Need to Try in 2026",
+      "article_topic": "14 Summer Neutral Nails That Look Elegant for Weddings and Vacations",
       "pin_titles": [
-        "15 Summer Neutral Nails for a Clean Girl Vibe",
-        "Chic Summer Neutral Nails to Try This Season",
-        "Summer Neutral Nails: 15 Minimalist Designs"
+        "14 Summer Neutral Nails for a Chic Look",
+        "Elegant Summer Neutral Nails for Brides",
+        "14 Summer Neutral Nails for Everyday Wear"
       ],
       "pin_descriptions": [
-        "Obsessed with summer neutral nails? Check out these 15 chic and minimalist designs perfect for vacation.",
-        "Upgrade your manicure with these stunning summer neutral nails. Click to shop the exact polish shades!"
+        "Ready for a fresh manicure? These 14 summer neutral nails are perfectly understated for any warm weather occasion. Click to find your favorite minimalist design!",
+        "Upgrade your look with these beautiful summer neutral nails. Perfect for weddings, vacations, or the office. Check out our blog for the exact polish shades!"
       ],
       "boards": [
-        "Neutral Nail Inspo",
-        "Summer Nails"
+        "Neutral Nail Designs",
+        "Minimalist Beauty"
       ],
       "product_ideas": [
-        "Nail Shape & Color Guide",
-        "At-Home Manicure Checklist"
+        "Minimalist Style Guide PDF",
+        "DIY Manicure Planner"
       ],
       "affiliate_matches": [
-        "Neutral gel polish sets",
-        "Cuticle oil pens"
+        "Sheer nude nail polish",
+        "Matte top coat"
       ],
       "niche": "beauty",
-      "pop": 80,
+      "pop": 82,
       "mom": 300,
       "yoy": 40,
       "rising": true,
-      "score": 190
-    },
-    {
-      "keyword": "summer hairstyle",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "21 Summer Hairstyle Ideas to Beat the Heat in Style",
-      "pin_titles": [
-        "21 Summer Hairstyle Ideas for Hot Weather",
-        "The Ultimate Summer Hairstyle Guide for 2026",
-        "Easy Summer Hairstyle Ideas for Medium Hair"
-      ],
-      "pin_descriptions": [
-        "Find the perfect summer hairstyle to keep you cool and stylish all season long. Read our top 21 picks!",
-        "Looking for a quick summer hairstyle? These 5-minute updos and braids are perfect for hot days. Click here!"
-      ],
-      "boards": [
-        "Summer Hairstyles",
-        "Easy Hair Tutorials"
-      ],
-      "product_ideas": [
-        "Summer Hair Accessory Lookbook",
-        "Heatless Hair Styling Guide"
-      ],
-      "affiliate_matches": [
-        "Claw clips",
-        "Sea salt texturizing spray"
-      ],
-      "niche": "beauty",
-      "pop": 80,
-      "mom": 300,
-      "yoy": 30,
-      "rising": true,
-      "score": 190
+      "score": 192
     },
     {
       "keyword": "pool day hairstyles",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "10 Pool Day Hairstyles That Take Less Than 3 Minutes",
+      "article_topic": "10 Easy Pool Day Hairstyles That Look Chic Even When Wet",
       "pin_titles": [
-        "10 Quick Pool Day Hairstyles for Long Hair",
-        "Cute Pool Day Hairstyles That Survive the Water",
-        "Easy Pool Day Hairstyles for a Frizz-Free Look"
+        "10 Pool Day Hairstyles for Humid Weather",
+        "Cute Pool Day Hairstyles You Can Do Fast",
+        "10 Pool Day Hairstyles for Curly Hair"
       ],
       "pin_descriptions": [
-        "Need pool day hairstyles that are quick and cute? Try these easy braids and top knots.",
-        "Discover the best pool day hairstyles to protect your ends from chlorine. Click to see the step-by-step guide!"
+        "Searching for quick pool day hairstyles? These 10 effortless looks will keep you looking glamorous from the lounger to the water. Click for the full list!",
+        "Master these easy pool day hairstyles before your next summer getaway. Say goodbye to messy, tangled vacation hair. Shop the best waterproof hair accessories here!"
       ],
       "boards": [
-        "Vacation Hairstyles",
-        "Summer Beauty Tips"
+        "Vacation Hair Ideas",
+        "Summer Beauty Hacks"
       ],
       "product_ideas": [
-        "Swim Hair Care Routine Printable",
-        "Summer Beauty E-book"
+        "Travel Beauty Checklist",
+        "Summer Glow Up Guide"
       ],
       "affiliate_matches": [
-        "Silk scrunchies",
-        "Detangling wet brush"
+        "Spiral hair ties",
+        "UV protection hair spray"
+      ],
+      "niche": "beauty",
+      "pop": 78,
+      "mom": 400,
+      "yoy": 100,
+      "rising": true,
+      "score": 188
+    },
+    {
+      "keyword": "summer hairstyle",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "20 Summer Hairstyle Ideas to Beat the Heat in Style",
+      "pin_titles": [
+        "20 Summer Hairstyle Ideas for Hot Days",
+        "The Best Summer Hairstyle Trends for 2026",
+        "20 Easy Summer Hairstyle Tutorials"
+      ],
+      "pin_descriptions": [
+        "Find your new go-to summer hairstyle for hot and humid days. We gathered 20 stunning looks that take less than five minutes. Click to see them all!",
+        "A cute summer hairstyle is all you need to elevate your warm weather outfits. From braids to messy buns, find your perfect match. Read the post for styling tips!"
+      ],
+      "boards": [
+        "Summer Hair Trends",
+        "Everyday Hairstyles"
+      ],
+      "product_ideas": [
+        "5-Minute Hair Tutorial Ebook",
+        "Seasonal Beauty Planner"
+      ],
+      "affiliate_matches": [
+        "Texturizing sea salt spray",
+        "Boho hair scarves"
       ],
       "niche": "beauty",
       "pop": 77,
-      "mom": 400,
-      "yoy": 90,
+      "mom": 300,
+      "yoy": 30,
       "rising": true,
       "score": 187
     },
     {
-      "keyword": "summer nail colors 2026",
+      "keyword": "summer wedding nails",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "12 Summer Nail Colors 2026 That Will Dominate Your Feed",
+      "article_topic": "17 Summer Wedding Nails for Brides and Guests That Look Flawless",
       "pin_titles": [
-        "Top Summer Nail Colors 2026 You Need to Try",
-        "12 Trending Summer Nail Colors 2026",
-        "Summer Nail Colors 2026: The Ultimate Shade Guide"
+        "17 Summer Wedding Nails for the Bride",
+        "Elegant Summer Wedding Nails for Guests",
+        "17 Summer Wedding Nails to Copy Now"
       ],
       "pin_descriptions": [
-        "Looking for the best summer nail colors 2026? We have rounded up the hottest shades of the season.",
-        "Stay on trend with these gorgeous summer nail colors 2026. Click to shop the exact polishes!"
+        "Planning your bridal look? These 17 summer wedding nails offer the perfect blend of elegance and seasonal flair. Click to save your favorite designs for the salon!",
+        "Discover the most stunning summer wedding nails for brides and bridesmaids. From classic french tips to delicate florals, get inspired. Shop our favorite bridal polishes!"
       ],
       "boards": [
-        "Summer Nails 2026",
-        "Nail Polish Trends"
+        "Wedding Nail Inspiration",
+        "Bridal Beauty Ideas"
       ],
       "product_ideas": [
-        "2026 Trend Forecast E-book",
-        "Nail Polish Collection Tracker"
+        "Bridal Beauty Timeline PDF",
+        "Wedding Guest Outfit Planner"
       ],
       "affiliate_matches": [
-        "Trending summer nail polish bundles",
-        "Gel top coat"
+        "Long-lasting gel top coat",
+        "Hand cream for photos"
       ],
       "niche": "beauty",
-      "pop": 76,
-      "mom": 700,
-      "yoy": 10001,
+      "pop": 77,
+      "mom": 300,
+      "yoy": 8,
       "rising": true,
-      "score": 186
+      "score": 187
     },
     {
-      "keyword": "june nail inspo",
+      "keyword": "headbands hairstyles",
       "keep": true,
-      "season": "summer",
+      "season": "evergreen",
       "intent": "medium",
-      "article_topic": "18 June Nail Inspo Ideas to Kick Off Summer 2026",
+      "article_topic": "11 Headbands Hairstyles That Make Unwashed Hair Look Effortlessly Chic",
       "pin_titles": [
-        "18 June Nail Inspo Designs for Early Summer",
-        "Cute June Nail Inspo to Try This Month",
-        "June Nail Inspo: 18 Bright and Fun Manicures"
+        "11 Headbands Hairstyles for Second Day Hair",
+        "Cute Headbands Hairstyles for Short Hair",
+        "11 Headbands Hairstyles You Can Do in Minutes"
       ],
       "pin_descriptions": [
-        "Need some fresh June nail inspo? Check out these 18 bright and colorful designs to start your summer right.",
-        "Browse our favorite June nail inspo for your next salon visit. Click to see all the gorgeous designs!"
+        "Struggling with bad hair days? These 11 headbands hairstyles instantly elevate greasy or unwashed hair. Click to learn how to style your favorite hair accessories!",
+        "Try these trendy headbands hairstyles for a polished look with zero effort. Perfect for work, school, or running errands. Shop our curated collection of headbands on the blog!"
       ],
       "boards": [
-        "June Nails",
-        "Summer Nail Art"
+        "Hair Accessories",
+        "Quick Hairstyles"
       ],
       "product_ideas": [
-        "Monthly Nail Art Planner",
-        "Summer Manicure Moodboard"
+        "Capsule Wardrobe Accessory Guide",
+        "Busy Morning Routine Planner"
       ],
       "affiliate_matches": [
-        "Nail art brushes",
-        "Neon nail polish sets"
+        "Padded velvet headbands",
+        "Dry shampoo powder"
       ],
       "niche": "beauty",
-      "pop": 74,
-      "mom": 1000,
-      "yoy": 70,
+      "pop": 75,
+      "mom": 800,
+      "yoy": 300,
       "rising": true,
-      "score": 184
+      "score": 185
+    },
+    {
+      "keyword": "pool hair",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "8 Pool Hair Protection Tips to Prevent Green and Damaged Strands",
+      "pin_titles": [
+        "8 Pool Hair Care Tips to Prevent Damage",
+        "How to Fix Pool Hair: 8 Proven Hacks",
+        "8 Pool Hair Treatments for Swimmers"
+      ],
+      "pin_descriptions": [
+        "Tired of dry, brittle pool hair? These 8 essential tips will protect your strands from chlorine and hard water. Click to rescue your summer locks!",
+        "Say goodbye to green pool hair with this ultimate swimmer care routine. Keep your blonde bright and your ends healthy. Shop the best clarifying products today!"
+      ],
+      "boards": [
+        "Hair Care Tips",
+        "Summer Beauty Survival"
+      ],
+      "product_ideas": [
+        "Hair Porosity Guide PDF",
+        "DIY Hair Mask Recipe Book"
+      ],
+      "affiliate_matches": [
+        "Vitamin C shower filter",
+        "Chlorine removal shampoo"
+      ],
+      "niche": "beauty",
+      "pop": 73,
+      "mom": 400,
+      "yoy": 20,
+      "rising": true,
+      "score": 183
     },
     {
       "keyword": "nails summer 2026 trends",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "10 Nails Summer 2026 Trends You Can Do at Home",
+      "intent": "medium",
+      "article_topic": "12 Nails Summer 2026 Trends You Need to Ask Your Tech For",
       "pin_titles": [
-        "10 Nails Summer 2026 Trends to Copy Now",
-        "The Biggest Nails Summer 2026 Trends Explained",
-        "Nails Summer 2026 Trends: 10 Must-Try Looks"
+        "12 Nails Summer 2026 Trends to Try",
+        "Hottest Nails Summer 2026 Trends for You",
+        "12 Nails Summer 2026 Trends: Brights & Art"
       ],
       "pin_descriptions": [
-        "Discover the hottest nails summer 2026 trends that are taking over Pinterest. Read our guide for all the inspo!",
-        "Want to try the latest nails summer 2026 trends? Click to see the top 10 styles and how to achieve them."
+        "Stay ahead of the curve with these 12 nails summer 2026 trends. From 3D accents to neon aura designs, find your next statement manicure. Click for the ultimate inspiration!",
+        "These nails summer 2026 trends are guaranteed to get you compliments. Discover the colors and shapes dominating this season. Read the blog to shop the exact shades!"
       ],
       "boards": [
-        "Nail Trends 2026",
-        "Summer Nails"
+        "2026 Nail Trends",
+        "Summer Beauty Inspiration"
       ],
       "product_ideas": [
-        "2026 Nail Trend Lookbook",
-        "DIY Nail Art Guide"
+        "Nail Art Practice Sheets",
+        "Seasonal Trend Report PDF"
       ],
       "affiliate_matches": [
-        "Press-on nail kits",
-        "Chrome nail powder"
+        "Nail art brush set",
+        "Neon gel polish bundle"
       ],
       "niche": "beauty",
-      "pop": 70,
+      "pop": 73,
       "mom": 400,
       "yoy": 10001,
       "rising": true,
+      "score": 183
+    },
+    {
+      "keyword": "pedicure ideas summer",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "15 Pedicure Ideas Summer Vacationers Will Obsess Over",
+      "pin_titles": [
+        "15 Pedicure Ideas Summer Ready Toes",
+        "Bright Pedicure Ideas Summer Vacation",
+        "15 Pedicure Ideas Summer Sandal Season"
+      ],
+      "pin_descriptions": [
+        "Get your feet sandal-ready with these 15 pedicure ideas summer lovers will adore. From neon toes to minimalist art, find your perfect match. Click to pick your shade!",
+        "These gorgeous pedicure ideas summer designs are perfect for the beach. Treat yourself to a spa day at home with these looks. Shop our favorite foot care essentials!"
+      ],
+      "boards": [
+        "Summer Pedicures",
+        "At-Home Spa Days"
+      ],
+      "product_ideas": [
+        "At-Home Pedicure Step-by-Step Guide",
+        "Summer Self-Care Checklist"
+      ],
+      "affiliate_matches": [
+        "Foot peeling mask",
+        "Callus remover tool"
+      ],
+      "niche": "beauty",
+      "pop": 73,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 183
+    },
+    {
+      "keyword": "beach hair ideas",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "10 Beach Hair Ideas That Embrace the Salt and Wind",
+      "pin_titles": [
+        "10 Beach Hair Ideas for a Breezy Day",
+        "Effortless Beach Hair Ideas for Vacations",
+        "10 Beach Hair Ideas That Look Amazing"
+      ],
+      "pin_descriptions": [
+        "Want to look gorgeous by the ocean? These 10 beach hair ideas work with the humidity and wind instead of against it. Click to master the ultimate mermaid waves!",
+        "Try these easy beach hair ideas for your next seaside getaway. From messy braids to textured buns, keep your hair chic. Read our post for the best texturizing sprays!"
+      ],
+      "boards": [
+        "Beach Vacation Style",
+        "Mermaid Hair"
+      ],
+      "product_ideas": [
+        "Vacation Photo Posing Guide",
+        "Travel Toiletries Checklist"
+      ],
+      "affiliate_matches": [
+        "Sea salt texture spray",
+        "Wide tooth detangling comb"
+      ],
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 600,
+      "yoy": 300,
+      "rising": true,
       "score": 180
+    },
+    {
+      "keyword": "pool makeup",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "7 Pool Makeup Essentials That Actually Survive the Water and Heat",
+      "pin_titles": [
+        "7 Pool Makeup Products That Are Waterproof",
+        "Sweatproof Pool Makeup Routine for Summer",
+        "7 Pool Makeup Essentials You Need Now"
+      ],
+      "pin_descriptions": [
+        "Want to look flawless while swimming? This 7-step pool makeup routine uses only the best waterproof products. Click to see which formulas actually last!",
+        "Discover the ultimate pool makeup essentials that will not melt off in the sun. Enjoy your vacation with confidence. Shop our top waterproof mascara recommendations!"
+      ],
+      "boards": [
+        "Waterproof Makeup",
+        "Summer Beauty Hacks"
+      ],
+      "product_ideas": [
+        "Waterproof Makeup Product Guide",
+        "Summer Skincare Routine PDF"
+      ],
+      "affiliate_matches": [
+        "Waterproof tubing mascara",
+        "SPF tinted lip balm"
+      ],
+      "niche": "beauty",
+      "pop": 70,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 180
+    },
+    {
+      "keyword": "cloud 9 nails",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "10 Cloud 9 Nails Designs That Give You the Dreamiest Manicure",
+      "pin_titles": [
+        "10 Cloud 9 Nails Designs to Try at Home",
+        "Dreamy Cloud 9 Nails for a Soft Aesthetic",
+        "10 Cloud 9 Nails Ideas You Will Love"
+      ],
+      "pin_descriptions": [
+        "Obsessed with the dreamy aesthetic? These 10 cloud 9 nails designs feature soft pastels and fluffy clouds for a magical manicure. Click to see the tutorial!",
+        "Get the ultimate soft girl look with these stunning cloud 9 nails. Perfect for spring and summer pastel lovers. Shop the best opaque white polishes for nail art!"
+      ],
+      "boards": [
+        "Pastel Nail Art",
+        "Aesthetic Beauty"
+      ],
+      "product_ideas": [
+        "Aesthetic Moodboard Templates",
+        "Nail Art Decal Printable Designs"
+      ],
+      "affiliate_matches": [
+        "Cloud nail stickers",
+        "Pastel blue nail polish"
+      ],
+      "niche": "beauty",
+      "pop": 69,
+      "mom": 600,
+      "yoy": 3000,
+      "rising": true,
+      "score": 179
     },
     {
       "keyword": "back to school hairstyles black women",
       "keep": true,
       "season": "fall",
       "intent": "medium",
-      "article_topic": "15 Back to School Hairstyles Black Women Will Love for Fall",
+      "article_topic": "15 Back to School Hairstyles Black Women Can Do in Under 10 Minutes",
       "pin_titles": [
-        "15 Back to School Hairstyles Black Women Can Do Fast",
-        "Easy Back to School Hairstyles Black Women Will Love",
-        "Protective Back to School Hairstyles Black Women"
+        "15 Back to School Hairstyles Black Women",
+        "Easy Back to School Hairstyles Black Women",
+        "15 Back to School Hairstyles Natural Hair"
       ],
       "pin_descriptions": [
-        "Looking for back to school hairstyles black women can do in a rush? These 15 protective styles are perfect.",
-        "Find your new favorite back to school hairstyles black women are rocking this fall. Click to see the tutorials!"
+        "Need quick morning routines? These 15 back to school hairstyles black women will love take less than ten minutes to achieve. Click to see the gorgeous protective styles!",
+        "Start the semester right with these stunning back to school hairstyles black women can rock all week. From sleek buns to chunky twists, get inspired. Shop our favorite edge controls!"
       ],
       "boards": [
         "Natural Hair Styles",
         "Back to School Beauty"
       ],
       "product_ideas": [
-        "Natural Hair Care Regimen Planner",
-        "Back to School Beauty Checklist"
+        "Natural Hair Wash Day Schedule",
+        "Student Morning Routine Planner"
       ],
       "affiliate_matches": [
-        "Edge control gel",
-        "Satin bonnets"
+        "Strong hold edge control",
+        "Satin lined scrunchies"
       ],
       "niche": "beauty",
       "pop": 69,
@@ -671,411 +875,173 @@
       "score": 179
     },
     {
-      "keyword": "beach hair ideas",
+      "keyword": "june nails ideas",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "14 Beach Hair Ideas That Look Better the Messier They Get",
+      "article_topic": "20 June Nails Ideas to Kick Off Your Summer 2026 Aesthetic",
       "pin_titles": [
-        "14 Beach Hair Ideas for a Flawless Vacation Look",
-        "Easy Beach Hair Ideas You Can Do in Minutes",
-        "Cute Beach Hair Ideas for Wavy and Curly Hair"
+        "20 June Nails Ideas to Start Summer 2026",
+        "Bright June Nails Ideas for Vacation",
+        "20 June Nails Ideas You Need to Try"
       ],
       "pin_descriptions": [
-        "Need effortless beach hair ideas? These 14 styles are perfect for a day in the sun and sand.",
-        "Discover gorgeous beach hair ideas that protect your locks from UV rays. Click to see the full list!"
+        "Ready for summer? These 20 June nails ideas are the perfect transition into bright and bold warm-weather manicures. Click to find your next salon request!",
+        "Celebrate the start of summer with these vibrant June nails ideas. From fruity nail art to neon french tips, find your favorite. Read the blog to shop the colors!"
       ],
       "boards": [
-        "Beach Hairstyles",
-        "Summer Vacation Beauty"
+        "Summer 2026 Nails",
+        "Monthly Nail Inspo"
       ],
       "product_ideas": [
-        "Vacation Beauty Packing List",
-        "Beach Hair Care Guide PDF"
+        "Monthly Beauty Planner",
+        "Summer Bucket List Printable"
       ],
       "affiliate_matches": [
-        "SPF hair mist",
-        "Wide tooth comb"
+        "Neon nail polish set",
+        "Fruity nail decals"
       ],
       "niche": "beauty",
-      "pop": 68,
-      "mom": 600,
-      "yoy": 300,
-      "rising": true,
+      "pop": 78,
+      "mom": 2000,
+      "yoy": 40,
+      "rising": false,
       "score": 178
     },
     {
-      "keyword": "pool hair",
+      "keyword": "bandana hair",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "7 Pool Hair Hacks to Prevent Chlorine Damage",
+      "article_topic": "12 Bandana Hair Styles Perfect for Hiding Frizz on Humid Days",
       "pin_titles": [
-        "7 Pool Hair Care Tips to Stop Chlorine Damage",
-        "Easy Pool Hair Styles to Keep Your Ends Safe",
-        "Pool Hair Routine: How to Protect Your Locks"
+        "12 Bandana Hair Styles for Frizzy Days",
+        "Cute Bandana Hair Ideas for Summer",
+        "12 Bandana Hair Styles You Can Do Fast"
       ],
       "pin_descriptions": [
-        "Struggling with dry pool hair? These 7 hacks will protect your hair from chlorine and keep it soft.",
-        "Learn how to manage pool hair with our ultimate summer hair care routine. Click to read the tips!"
+        "Having a bad hair day? These 12 bandana hair styles are the ultimate hack for hiding frizz and protecting your scalp from the sun. Click for easy styling tutorials!",
+        "Elevate your casual outfits with these trendy bandana hair looks. Perfect for festivals, beach days, or running errands. Shop our collection of silk bandanas on the blog!"
       ],
       "boards": [
-        "Hair Care Tips",
-        "Summer Beauty Hacks"
+        "Hair Accessories",
+        "Festival Beauty"
       ],
       "product_ideas": [
-        "Swimmer's Hair Care Routine PDF",
-        "Summer Beauty Cheat Sheet"
+        "Capsule Wardrobe Planner",
+        "Summer Accessory Style Guide"
       ],
       "affiliate_matches": [
-        "Clarifying shampoo",
-        "Deep conditioning hair mask"
-      ],
-      "niche": "beauty",
-      "pop": 68,
-      "mom": 400,
-      "yoy": 20,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "pool makeup",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "9 Pool Makeup Products That Actually Survive Swimming",
-      "pin_titles": [
-        "9 Pool Makeup Essentials That Are Truly Waterproof",
-        "The Best Pool Makeup for a Flawless Summer Glow",
-        "Waterproof Pool Makeup Routine You Need to Try"
-      ],
-      "pin_descriptions": [
-        "Looking for pool makeup that won't melt off? We tested the best waterproof products for summer.",
-        "Get a flawless look with our favorite pool makeup essentials. Click to shop the waterproof routine!"
-      ],
-      "boards": [
-        "Waterproof Makeup",
-        "Summer Beauty"
-      ],
-      "product_ideas": [
-        "Waterproof Makeup Buying Guide",
-        "Summer Glow Routine Checklist"
-      ],
-      "affiliate_matches": [
-        "Waterproof mascara",
-        "Tinted SPF moisturizer"
-      ],
-      "niche": "beauty",
-      "pop": 68,
-      "mom": 300,
-      "yoy": -10,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "neutral summer nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "20 Neutral Summer Nails for a Minimalist Aesthetic",
-      "pin_titles": [
-        "20 Neutral Summer Nails for the Clean Girl Look",
-        "Chic Neutral Summer Nails You Can Wear Anywhere",
-        "Minimalist Neutral Summer Nails to Try in 2026"
-      ],
-      "pin_descriptions": [
-        "Obsessed with the clean girl aesthetic? These neutral summer nails are the perfect minimalist touch.",
-        "Find your signature shade with these 20 gorgeous neutral summer nails. Click to see the designs!"
-      ],
-      "boards": [
-        "Neutral Nails",
-        "Minimalist Beauty"
-      ],
-      "product_ideas": [
-        "Nail Color Palette Guide",
-        "Minimalist Beauty E-book"
-      ],
-      "affiliate_matches": [
-        "Sheer pink nail polish",
-        "Matte top coat"
+        "Silk square bandanas",
+        "Bobby pin bulk pack"
       ],
       "niche": "beauty",
       "pop": 67,
       "mom": 400,
-      "yoy": 10,
+      "yoy": 500,
       "rising": true,
       "score": 177
-    },
-    {
-      "keyword": "wig hairstyles ideas",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "15 Wig Hairstyles Ideas to Switch Up Your Everyday Look",
-      "pin_titles": [
-        "15 Wig Hairstyles Ideas for a Flawless Install",
-        "Cute Wig Hairstyles Ideas You Need to Try",
-        "Easy Wig Hairstyles Ideas for Beginners"
-      ],
-      "pin_descriptions": [
-        "Looking for fresh wig hairstyles ideas? These 15 easy styles will completely transform your look.",
-        "Discover gorgeous wig hairstyles ideas that look incredibly natural. Click to see the step-by-step styling tips!"
-      ],
-      "boards": [
-        "Wig Styling",
-        "Protective Hairstyles"
-      ],
-      "product_ideas": [
-        "Wig Care & Maintenance Guide",
-        "Beginner's Wig Install Checklist"
-      ],
-      "affiliate_matches": [
-        "Lace melting spray",
-        "Hot comb"
-      ],
-      "niche": "beauty",
-      "pop": 66,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 176
     },
     {
       "keyword": "indoor house plants aesthetic",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "12 Indoor House Plants Aesthetic Ideas for a Cozy Apartment",
+      "article_topic": "9 Indoor House Plants Aesthetic Ideas for Styling a Cozy Small Apartment",
       "pin_titles": [
-        "12 Indoor House Plants Aesthetic Ideas for Small Spaces",
-        "How to Get the Indoor House Plants Aesthetic",
-        "Indoor House Plants Aesthetic: 12 Easy Decor Ideas"
+        "9 Indoor House Plants Aesthetic Styling Tips",
+        "Cozy Indoor House Plants Aesthetic Ideas",
+        "9 Indoor House Plants Aesthetic for Small Spaces"
       ],
       "pin_descriptions": [
-        "Want that lush indoor house plants aesthetic? Here are 12 easy ways to style plants in your home.",
-        "Transform your space with the perfect indoor house plants aesthetic. Click to see our favorite styling tips!"
+        "Want a greener home? These 9 indoor house plants aesthetic ideas will help you style your small apartment into a cozy jungle. Click to see the best low-light options!",
+        "Transform your living room with this indoor house plants aesthetic guide. Learn how to display your greenery beautifully. Shop our favorite aesthetic plant pots here!"
       ],
       "boards": [
-        "Indoor Jungle",
-        "Cozy Apartment Decor"
+        "Cozy Apartment Decor",
+        "Indoor Plant Styling"
       ],
       "product_ideas": [
-        "Houseplant Care Tracker Printable",
-        "Plant Styling Guide PDF"
+        "Plant Watering Tracker Printable",
+        "Small Space Decorating Guide Ebook"
       ],
       "affiliate_matches": [
-        "Aesthetic plant stands",
-        "Self-watering ceramic planters"
+        "Ceramic indoor planters",
+        "Modern plant stands"
       ],
       "niche": "home decor",
-      "pop": 64,
+      "pop": 66,
       "mom": 300,
       "yoy": 10001,
       "rising": true,
-      "score": 174
-    },
-    {
-      "keyword": "headbands hairstyles",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "16 Headbands Hairstyles That Hide Second-Day Hair",
-      "pin_titles": [
-        "16 Headbands Hairstyles for Quick and Easy Mornings",
-        "Cute Headbands Hairstyles to Elevate Your Look",
-        "Easy Headbands Hairstyles for Short and Medium Hair"
-      ],
-      "pin_descriptions": [
-        "Need quick headbands hairstyles? These 16 looks are perfect for hiding greasy roots and looking chic.",
-        "Discover adorable headbands hairstyles that take less than 5 minutes. Click to see the full list!"
-      ],
-      "boards": [
-        "Hair Accessories",
-        "Easy Hairstyles"
-      ],
-      "product_ideas": [
-        "Hair Accessory Styling Guide",
-        "5-Minute Hairstyles E-book"
-      ],
-      "affiliate_matches": [
-        "Padded headbands",
-        "Dry shampoo"
-      ],
-      "niche": "beauty",
-      "pop": 64,
-      "mom": 800,
-      "yoy": 300,
-      "rising": true,
-      "score": 174
-    },
-    {
-      "keyword": "pride nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "25 Pride Nails Ideas to Celebrate June in Style",
-      "pin_titles": [
-        "25 Pride Nails to Show Your True Colors",
-        "Cute and Colorful Pride Nails for June 2026",
-        "Pride Nails: 25 Rainbow Manicures You Will Love"
-      ],
-      "pin_descriptions": [
-        "Get ready for June with these 25 gorgeous pride nails! From subtle rainbows to bold statements.",
-        "Celebrate all month long with these stunning pride nails. Click to find your favorite colorful design!"
-      ],
-      "boards": [
-        "Pride Month Ideas",
-        "Colorful Nail Art"
-      ],
-      "product_ideas": [
-        "Rainbow Nail Art Stencils PDF",
-        "June Content Calendar for Creators"
-      ],
-      "affiliate_matches": [
-        "Rainbow gel polish set",
-        "Nail art dotting tools"
-      ],
-      "niche": "beauty",
-      "pop": 63,
-      "mom": 700,
-      "yoy": -8,
-      "rising": true,
-      "score": 173
-    },
-    {
-      "keyword": "june nails ideas",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "22 June Nails Ideas Perfect for Your Summer Vacation",
-      "pin_titles": [
-        "22 June Nails Ideas to Kick Off Summer 2026",
-        "Bright and Fun June Nails Ideas to Try Now",
-        "June Nails Ideas: 22 Manicures You Will Obsess Over"
-      ],
-      "pin_descriptions": [
-        "Looking for fresh June nails ideas? These 22 designs are exactly what you need for early summer.",
-        "Find the perfect June nails ideas for your next salon trip. Click to see all the gorgeous inspiration!"
-      ],
-      "boards": [
-        "Summer Nails",
-        "June Nail Inspo"
-      ],
-      "product_ideas": [
-        "Summer Nail Trend Report",
-        "At-Home Mani Planner"
-      ],
-      "affiliate_matches": [
-        "Bright summer polish bundles",
-        "Nail stickers"
-      ],
-      "niche": "beauty",
-      "pop": 73,
-      "mom": 2500,
-      "yoy": 40,
-      "rising": false,
-      "score": 173
-    },
-    {
-      "keyword": "2000s teen bedroom",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "high",
-      "article_topic": "10 Y2K 2000s Teen Bedroom Decor Ideas You Can Buy Today",
-      "pin_titles": [
-        "10 Nostalgic 2000s Teen Bedroom Ideas to Recreate",
-        "How to Get the Ultimate 2000s Teen Bedroom Aesthetic",
-        "2000s Teen Bedroom Decor: 10 Y2K Room Essentials"
-      ],
-      "pin_descriptions": [
-        "Obsessed with the Y2K aesthetic? These 2000s teen bedroom ideas will give you major nostalgia.",
-        "Transform your space with these iconic 2000s teen bedroom decor pieces. Click to shop the Y2K look!"
-      ],
-      "boards": [
-        "Y2K Room Decor",
-        "Teen Bedroom Aesthetic"
-      ],
-      "product_ideas": [
-        "Y2K Decor Sourcing Guide",
-        "Room Makeover Budget Planner"
-      ],
-      "affiliate_matches": [
-        "Inflatable chairs",
-        "Beaded doorway curtains"
-      ],
-      "niche": "home decor",
-      "pop": 62,
-      "mom": 400,
-      "yoy": -6,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "pedicure ideas summer",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "15 Pedicure Ideas Summer 2026 Trends You Need to Try",
-      "pin_titles": [
-        "15 Pedicure Ideas Summer Ready for Sandal Season",
-        "Cute Pedicure Ideas Summer 2026 Edition",
-        "Pedicure Ideas Summer: 15 Bright and Neutral Looks"
-      ],
-      "pin_descriptions": [
-        "Get sandal-ready with these 15 gorgeous pedicure ideas summer trends. Perfect for your next beach trip!",
-        "Looking for fresh pedicure ideas summer edition? Click to see the best colors and designs for your toes."
-      ],
-      "boards": [
-        "Summer Pedicures",
-        "Nail Inspo"
-      ],
-      "product_ideas": [
-        "At-Home Pedicure Checklist",
-        "Summer Beauty Prep Guide"
-      ],
-      "affiliate_matches": [
-        "Foot peel masks",
-        "Long-wear toe polish"
-      ],
-      "niche": "beauty",
-      "pop": 62,
-      "mom": 400,
-      "yoy": 10,
-      "rising": true,
-      "score": 172
+      "score": 176
     },
     {
       "keyword": "june nails",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "20 June Nails That Scream Early Summer Vibes",
+      "article_topic": "18 June Nails to Try When You Are Ready for Summer Brights",
       "pin_titles": [
-        "20 June Nails to Start Your Summer Right",
-        "The Best June Nails for Your Next Salon Visit",
-        "Cute June Nails You Need to Try This Month"
+        "18 June Nails to Welcome the Summer",
+        "Trending June Nails for Your Next Mani",
+        "18 June Nails Designs You Will Love"
       ],
       "pin_descriptions": [
-        "Searching for the perfect June nails? We have gathered 20 stunning manicures to kick off the season.",
-        "Upgrade your summer look with these gorgeous June nails. Click to find your new favorite design!"
+        "Looking for fresh manicure inspiration? These 18 June nails feature the brightest, most fun designs to kick off your summer. Click to save your favorites!",
+        "Get ready for pool days with these stunning June nails. We rounded up the best colorful and trendy designs for the season. Shop our top summer polish picks!"
       ],
       "boards": [
-        "June Nails",
-        "Summer Manicures"
+        "Summer Nail Designs",
+        "Colorful Manicures"
       ],
       "product_ideas": [
-        "Summer Nail Design Lookbook",
-        "Nail Care Routine Tracker"
+        "Summer Style Guide PDF",
+        "DIY Nail Art Workbook"
       ],
       "affiliate_matches": [
-        "Pastel nail polish sets",
-        "Glass nail files"
+        "Bright coral nail polish",
+        "High shine gel top coat"
       ],
       "niche": "beauty",
-      "pop": 71,
-      "mom": 1000,
+      "pop": 76,
+      "mom": 800,
       "yoy": 70,
       "rising": false,
+      "score": 176
+    },
+    {
+      "keyword": "hairstyles for the pool",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "14 Hairstyles for the Pool That Keep Your Ends Safe from Chlorine",
+      "pin_titles": [
+        "14 Hairstyles for the Pool to Prevent Damage",
+        "Easy Hairstyles for the Pool Day",
+        "14 Hairstyles for the Pool You Will Love"
+      ],
+      "pin_descriptions": [
+        "Protect your hair from harsh chemicals with these 14 hairstyles for the pool. These looks are cute, practical, and easy to do. Click for step-by-step instructions!",
+        "Keep your hair out of your face with these simple hairstyles for the pool. Perfect for swimming laps or lounging by the water. Read the post for our favorite swim hair accessories!"
+      ],
+      "boards": [
+        "Swim Hair Care",
+        "Summer Beauty Tips"
+      ],
+      "product_ideas": [
+        "Swimmers Beauty Guide PDF",
+        "Summer Hair Care Checklist"
+      ],
+      "affiliate_matches": [
+        "Waterproof hair ties",
+        "Leave-in hair serum"
+      ],
+      "niche": "beauty",
+      "pop": 61,
+      "mom": 400,
+      "yoy": -7,
+      "rising": true,
       "score": 171
     }
   ]
