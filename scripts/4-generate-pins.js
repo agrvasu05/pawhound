@@ -10,7 +10,9 @@ function breedToSlug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-// 5 pin templates — rotated to avoid Pinterest "templated content" detection
+// 7 pin templates — rotated to avoid Pinterest "templated content" detection.
+// Templates 6–7 are SAVE-optimized (list-count badge + explicit "save" cue) to
+// lift the save rate (the #1 reach signal); 1–5 lean click-through.
 const TEMPLATES = [
   ({ headline, image }) => `
     <div style="width:1000px;height:1500px;font-family:'Georgia',serif;position:relative;">
@@ -61,6 +63,34 @@ const TEMPLATES = [
         <div style="margin-top:40px;font-size:62px;font-weight:bold;line-height:1.1;color:#2d2d2d;">${headline}</div>
       </div>
       <div style="text-align:center;margin-top:60px;color:#999;font-size:24px;letter-spacing:3px;">${BRAND}</div>
+    </div>`,
+
+  // ── Save-optimized: list-count badge + explicit "Save it" cue (people bookmark
+  // numbered idea lists to act on later → drives SAVES, the #1 reach signal). ──
+  ({ headline, image }) => {
+    const num = (String(headline).match(/\d+/) || [])[0];
+    return `
+    <div style="width:1000px;height:1500px;font-family:'Inter',sans-serif;position:relative;background:#fff;">
+      <img src="${image}" style="width:100%;height:64%;object-fit:cover;"/>
+      ${num ? `<div style="position:absolute;top:42px;left:42px;background:#b05a3c;color:#fff;font-weight:900;font-size:52px;line-height:1;padding:20px 28px;border-radius:18px;text-align:center;">${num}<div style="font-size:22px;font-weight:700;letter-spacing:3px;margin-top:6px;">IDEAS</div></div>` : ''}
+      <div style="position:absolute;top:42px;right:42px;background:rgba(255,255,255,0.95);color:#b05a3c;font-weight:bold;font-size:27px;padding:15px 28px;border-radius:50px;box-shadow:0 6px 20px rgba(0,0,0,0.18);">📌 Save it</div>
+      <div style="padding:52px 60px;box-sizing:border-box;">
+        <div style="font-size:70px;font-weight:900;line-height:1.05;color:#1a1a1a;">${headline}</div>
+        <div style="margin-top:28px;font-size:22px;color:#999;text-transform:uppercase;letter-spacing:3px;">${BRAND} · save for later</div>
+      </div>
+    </div>`;
+  },
+
+  // ── Save-optimized: full-bleed inspo image + "SAVE THIS" ribbon ──
+  ({ headline, image }) => `
+    <div style="width:1000px;height:1500px;font-family:'Georgia',serif;position:relative;">
+      <img src="${image}" style="width:100%;height:100%;object-fit:cover;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.18),rgba(0,0,0,0.04) 35%,rgba(0,0,0,0.78));"></div>
+      <div style="position:absolute;top:50px;left:50px;background:#f5b942;color:#1a1a1a;font-weight:bold;font-size:27px;padding:15px 32px;border-radius:8px;letter-spacing:1px;">📌 SAVE THIS</div>
+      <div style="position:absolute;bottom:80px;left:60px;right:60px;color:#fff;text-align:center;">
+        <div style="font-size:76px;font-weight:bold;line-height:1.05;text-shadow:0 2px 18px rgba(0,0,0,0.6);">${headline}</div>
+        <div style="margin-top:26px;font-size:24px;opacity:0.9;letter-spacing:2px;">${BRAND}</div>
+      </div>
     </div>`,
 ];
 
