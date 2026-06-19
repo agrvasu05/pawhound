@@ -382,7 +382,9 @@ async function postPin(pin, boardId) {
       };
       posted++;
       console.log(`  ✓ https://pinterest.com/pin/${result.id}`);
-      await new Promise((r) => setTimeout(r, 5000)); // 5s between pins — avoids spam detection
+      // Randomized 8–28s gap (not a fixed cadence) — Pinterest's anti-spam guidance
+      // is to "vary your actions" rather than repeat the same thing on a timer.
+      await new Promise((r) => setTimeout(r, 8000 + Math.floor(Math.random() * 20000)));
     } catch (err) {
       console.error(`  ✗ ${pin.key}: ${err.message}`);
     }
