@@ -178,5 +178,35 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/mjeazq",
     "landing": "/shop/watercolor-sleeping-dogs-art",
     "created_at": "2026-06-20T16:28:30.298Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "mid-century-pastel-dog-art",
+    "title": "Abstract Pastel Dog Printable Wall Art Set Mid Century Modern",
+    "price": 5,
+    "gumroad_id": "PT2xHmON6g4enJmADuT-Tg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/mnhetp",
+    "landing": "/shop/mid-century-pastel-dog-art",
+    "created_at": "2026-06-21T16:52:34.231Z"
+  },
+  {
+    "type": "planner",
+    "slug": "ultimate-wedding-planning-checklist-printable",
+    "title": "Ultimate Wedding Planning Checklist Printable | Bridal Planner | Timeline Tracker",
+    "price": 4,
+    "gumroad_id": "Vy6ko86o0kKXele2ikyAEg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/ofzvl",
+    "landing": "/shop/ultimate-wedding-planning-checklist-printable",
+    "created_at": "2026-06-21T16:53:16.622Z"
+  },
+  {
+    "type": "bundle",
+    "slug": "dog-lover-bundle-2026-06-21",
+    "title": "The Complete Dog Lover Printable Bundle — 2 Products (Wall Art, Coloring & Planner)",
+    "price": 12,
+    "gumroad_id": "rvHS3dzX79V5lu8ltE_L1A==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/vitgcj",
+    "landing": "/shop/dog-lover-bundle-2026-06-21",
+    "created_at": "2026-06-21T16:53:48.604Z"
   }
 ]
