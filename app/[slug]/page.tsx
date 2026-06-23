@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
 import { shopHref } from "@/lib/affiliate";
 import AdSlot from "@/components/AdSlot";
+import FreebieBanner from "@/components/FreebieBanner";
 
 export async function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.topic_slug }));
@@ -154,6 +155,8 @@ export default async function ArticleHub({
         . We count down from #{total} to our #1 pick, so keep scrolling for the
         top spot.
       </div>
+
+      <FreebieBanner />
 
       {/* Quick jump list — scannable overview + internal anchors */}
       <nav className="mb-10 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm">
