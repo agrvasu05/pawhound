@@ -77,6 +77,10 @@ jobs:
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/ public/
-          git diff --cached --quiet || git commit -m "Daily content"
+          # [skip netlify] — don't build here. The daily-products run (15:00, one
+          # hour later) is the single daily Netlify build and publishes this
+          # content + the new products together. Halves build-minute usage so
+          # Netlify's free tier doesn't run out mid-month and freeze the site.
+          git diff --cached --quiet || git commit -m "Daily content [skip netlify]"
           git pull --rebase --autostash || true
           git push

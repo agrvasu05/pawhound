@@ -10,9 +10,10 @@ function breedToSlug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-// 7 pin templates — rotated to avoid Pinterest "templated content" detection.
-// Templates 6–7 are SAVE-optimized (list-count badge + explicit "save" cue) to
-// lift the save rate (the #1 reach signal); 1–5 lean click-through.
+// 8 pin templates — rotated to avoid Pinterest "templated content" detection.
+// Templates 6–7 are SAVE-optimized (list-count badge + explicit "save" cue);
+// template 8 is the bold colored-background "clickbait" style (rotates red/blue/
+// purple/gold) that classic Pinterest growth guides swear by; 1–5 lean click-through.
 const TEMPLATES = [
   ({ headline, image }) => `
     <div style="width:1000px;height:1500px;font-family:'Georgia',serif;position:relative;">
@@ -92,6 +93,25 @@ const TEMPLATES = [
         <div style="margin-top:26px;font-size:24px;opacity:0.9;letter-spacing:2px;">${BRAND}</div>
       </div>
     </div>`,
+
+  // Bold colored-background "clickbait" style (the classic Pinterest-growth look):
+  // strong color block + photo + big high-contrast headline. Color rotates by
+  // headline so pins vary.
+  ({ headline, image }) => {
+    const palette = ["#c0392b", "#21407a", "#6c3483", "#b8860b"]; // red, blue, purple, gold
+    let h = 0;
+    for (let i = 0; i < String(headline).length; i++) h = (h * 31 + String(headline).charCodeAt(i)) >>> 0;
+    const bg = palette[h % palette.length];
+    return `
+    <div style="width:1000px;height:1500px;font-family:'Helvetica',sans-serif;background:${bg};position:relative;">
+      <img src="${image}" style="width:100%;height:56%;object-fit:cover;"/>
+      <div style="padding:58px 60px;color:#fff;">
+        <div style="font-size:80px;font-weight:900;line-height:1.03;text-shadow:0 2px 14px rgba(0,0,0,0.35);">${headline}</div>
+        <div style="margin-top:36px;display:inline-block;background:#fff;color:${bg};font-weight:800;font-size:30px;padding:18px 42px;border-radius:50px;">Read more →</div>
+      </div>
+      <div style="position:absolute;bottom:30px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.85);font-size:22px;letter-spacing:2px;">${BRAND}</div>
+    </div>`;
+  },
 ];
 
 async function generatePin({ headline, image, output, templateIdx }) {
