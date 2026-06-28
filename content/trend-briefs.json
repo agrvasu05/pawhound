@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T15:11:13.113Z",
+  "generated_at": "2026-06-28T16:19:22.474Z",
   "region": "US",
   "candidates": [
     {
@@ -365,31 +365,99 @@
   ],
   "briefs": [
     {
+      "keyword": "uncanny makeup",
+      "keep": true,
+      "season": "fall",
+      "intent": "medium",
+      "article_topic": "11 Uncanny Makeup Ideas and the Exact Products You Need",
+      "pin_titles": [
+        "Uncanny Makeup: 5 Steps to the Viral Creepy Look",
+        "7 Uncanny Makeup Products for a Flawless Finish",
+        "How to Nail the Uncanny Makeup Trend for 2026"
+      ],
+      "pin_descriptions": [
+        "Looking for uncanny makeup tutorials? Discover the exact foundation and liner techniques to achieve this viral look. Click through to see the step-by-step guide!",
+        "Master the uncanny makeup trend with these 5 easy steps. Perfect for a striking, surreal aesthetic that stops the scroll. Read the full tutorial on the blog now."
+      ],
+      "boards": [
+        "Trendy Makeup Looks",
+        "Halloween Makeup Ideas"
+      ],
+      "product_ideas": [
+        "Trend Makeup Face Charts",
+        "Special Effects Lookbook PDF"
+      ],
+      "affiliate_matches": [
+        "Matte pale foundation",
+        "Black gel eyeliner"
+      ],
+      "niche": "beauty",
+      "pop": 93,
+      "mom": 800,
+      "yoy": 500,
+      "rising": true,
+      "score": 203
+    },
+    {
+      "keyword": "uncanny valley makeup",
+      "keep": true,
+      "season": "fall",
+      "intent": "medium",
+      "article_topic": "9 Uncanny Valley Makeup Tips for a Flawless Cyborg Look",
+      "pin_titles": [
+        "Uncanny Valley Makeup: 5 Essential Steps",
+        "The Best Uncanny Valley Makeup Products",
+        "7 Uncanny Valley Makeup Looks for 2026"
+      ],
+      "pin_descriptions": [
+        "Try this uncanny valley makeup tutorial for a perfectly unsettling, doll-like finish. Get the exact product list to recreate it at home. Click to read the guide!",
+        "This uncanny valley makeup look is taking over the internet. Learn how to block your brows and overline for that surreal effect. Shop the recommended products now."
+      ],
+      "boards": [
+        "Creative Makeup Tutorials",
+        "Viral Beauty Trends"
+      ],
+      "product_ideas": [
+        "Special Effects Makeup Guide",
+        "Face Chart Templates"
+      ],
+      "affiliate_matches": [
+        "Full coverage matte foundation",
+        "White liquid eyeliner"
+      ],
+      "niche": "beauty",
+      "pop": 87,
+      "mom": 900,
+      "yoy": 500,
+      "rising": true,
+      "score": 197
+    },
+    {
       "keyword": "pride nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "15 Pride Nails Designs for 2026 That You Can Easily Do at Home",
+      "intent": "high",
+      "article_topic": "15 Pride Nails Ideas to Celebrate in Style for 2026",
       "pin_titles": [
-        "Pride Nails: 15 Rainbow Designs to Try",
-        "Easy Pride Nails for Beginners to DIY",
-        "15 Pride Nails You Need to Copy This June"
+        "15 Pride Nails Ideas You Can Do at Home",
+        "Pride Nails: 7 Rainbow Designs for June",
+        "The Best Pride Nails for Short Nails"
       ],
       "pin_descriptions": [
-        "Looking for pride nails? Discover 15 vibrant rainbow nail designs perfect for celebrating all month long. Click to see the full step-by-step tutorial!",
-        "Show your true colors with these easy pride nails! Grab your favorite polishes and try these bright looks at home. Click for our beginner-friendly guides."
+        "These pride nails are the perfect way to celebrate this June. Discover 15 bright, rainbow-inspired designs you can easily DIY. Click to find your favorite look!",
+        "Looking for gorgeous pride nails? From subtle colorful French tips to bold rainbow art, we have the best inspiration. Check out the full list of nail ideas on our blog."
       ],
       "boards": [
-        "Summer Nail Ideas",
-        "DIY Manicure Inspo"
+        "Summer Nail Designs",
+        "Colorful Nail Art"
       ],
       "product_ideas": [
-        "Printable Nail Art Practice Sheets",
-        "Digital Rainbow Nail Color Palette Guide"
+        "Nail Art Practice Sheets",
+        "DIY Manicure Checklist"
       ],
       "affiliate_matches": [
-        "Rainbow gel polish sets",
-        "Nail art brushes and dotting tools"
+        "Rainbow gel polish set",
+        "Nail art dotting tools"
       ],
       "niche": "beauty",
       "pop": 84,
@@ -402,28 +470,28 @@
       "keyword": "2000s teen bedroom",
       "keep": true,
       "season": "evergreen",
-      "intent": "high",
-      "article_topic": "10 2000s Teen Bedroom Decor Ideas That Make a Modern Space Pop",
+      "intent": "medium",
+      "article_topic": "12 2000s Teen Bedroom Decor Ideas That Bring Back Y2K Vibes",
       "pin_titles": [
-        "2000s Teen Bedroom: 10 Nostalgic Decor Ideas",
-        "How to Style a 2000s Teen Bedroom in 2026",
-        "10 Y2K Room Ideas for a 2000s Teen Bedroom"
+        "2000s Teen Bedroom: 7 Ways to Get the Y2K Look",
+        "Nostalgic 2000s Teen Bedroom Makeover Ideas",
+        "10 Must-Haves for a 2000s Teen Bedroom Aesthetic"
       ],
       "pin_descriptions": [
-        "Want a 2000s teen bedroom aesthetic? Here are 10 ways to bring Y2K decor into your space without looking tacky. Read the post for links to shop the look!",
-        "Upgrade your space with these 2000s teen bedroom decor ideas! From fuzzy pillows to neon signs, find the best Y2K accents. Click to shop the exact items."
+        "Create the ultimate 2000s teen bedroom with these nostalgic decor ideas. From inflatable chairs to bead curtains, get the Y2K aesthetic easily. Click to shop the look!",
+        "A 2000s teen bedroom aesthetic is totally back in style for 2026. Learn how to layer posters, neon lights, and funky textures. Read the full room makeover guide now."
       ],
       "boards": [
-        "Teen Bedroom Decor",
-        "Y2K Room Aesthetic"
+        "Y2K Room Decor",
+        "Teen Bedroom Ideas"
       ],
       "product_ideas": [
-        "Y2K Room Makeover Checklist PDF",
-        "Printable 2000s Aesthetic Wall Collage Kit"
+        "Y2K Room Decor Sourcing Guide",
+        "Printable Wall Collage Kit"
       ],
       "affiliate_matches": [
         "Inflatable chairs",
-        "Butterfly string lights"
+        "Beaded door curtains"
       ],
       "niche": "home decor",
       "pop": 71,
@@ -436,27 +504,27 @@
       "keyword": "4th of july nail art",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "12 4th of July Nail Art Designs for a Festive 2026 Summer",
+      "intent": "high",
+      "article_topic": "17 4th of July Nail Art Designs for a Festive 2026 Summer",
       "pin_titles": [
-        "4th of July Nail Art: 12 Easy DIY Designs",
-        "12 4th of July Nail Art Ideas for Summer 2026",
-        "Simple 4th of July Nail Art You Can Do at Home"
+        "4th of July Nail Art: 9 Easy DIY Designs",
+        "Festive 4th of July Nail Art for Short Nails",
+        "7 4th of July Nail Art Ideas Using Gel Polish"
       ],
       "pin_descriptions": [
-        "Get ready for the holiday with this 4th of july nail art! We rounded up 12 festive designs you can easily recreate for your next BBQ. Click to see them all!",
-        "Looking for 4th of july nail art? Try these red, white, and blue manicures to elevate your summer style. Click for the exact polish list!"
+        "Get ready for the barbecue with this fun 4th of july nail art. Learn how to paint easy stars and stripes at home. Click through for the step-by-step tutorials!",
+        "This 4th of july nail art is guaranteed to get compliments at your summer party. Discover 17 festive red, white, and blue designs. Save this pin for your next manicure."
       ],
       "boards": [
         "Summer Nail Art",
-        "4th of July Beauty"
+        "Holiday Nails"
       ],
       "product_ideas": [
-        "Summer Nail Art Design E-book",
-        "Step-by-Step Star Nail Art Guide PDF"
+        "Summer Nail Art Lookbook",
+        "Step-by-Step Nail Design Ebook"
       ],
       "affiliate_matches": [
-        "Red, white, and blue polish sets",
+        "Red white and blue nail polish set",
         "Star nail decals"
       ],
       "niche": "beauty",
@@ -471,27 +539,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "9 Ways to Master the Indoor House Plants Aesthetic in a Small Apartment",
+      "article_topic": "10 Indoor House Plants Aesthetic Ideas for a Cozy Apartment",
       "pin_titles": [
-        "Indoor House Plants Aesthetic: 9 Styling Tips",
-        "How to Get the Indoor House Plants Aesthetic",
-        "9 Ideas for an Indoor House Plants Aesthetic"
+        "Indoor House Plants Aesthetic: 7 Low-Light Plant Picks",
+        "How to Create an Indoor House Plants Aesthetic",
+        "9 Planters for the Perfect Indoor House Plants Aesthetic"
       ],
       "pin_descriptions": [
-        "Love the indoor house plants aesthetic? Learn how to style your greenery in small apartments for maximum coziness. Click to read more styling secrets!",
-        "Create the perfect indoor house plants aesthetic with these 9 easy styling tips. Transform your living room into a cozy jungle today. Click for plant planter links!"
+        "Master the indoor house plants aesthetic even if you live in a small apartment. Discover the best low-maintenance plants and stylish pots. Click to read the styling guide!",
+        "Want that lush indoor house plants aesthetic? Learn how to layer trailing vines and tall statement plants for a cozy, green home. Shop our favorite planters on the blog."
       ],
       "boards": [
-        "Cozy Living Room Decor",
+        "Cozy Apartment Decor",
         "Indoor Plant Styling"
       ],
       "product_ideas": [
-        "Houseplant Care & Watering Tracker",
-        "Plant Styling Cheat Sheet PDF"
+        "Houseplant Care Schedule Printable",
+        "Plant Styling Guide PDF"
       ],
       "affiliate_matches": [
-        "Aesthetic ceramic planters",
-        "Mid-century modern plant stands"
+        "Ceramic plant pots",
+        "Aesthetic grow lights"
       ],
       "niche": "home decor",
       "pop": 86,
@@ -507,24 +575,24 @@
       "intent": "high",
       "article_topic": "My 5-Minute Makeup Routine for a Flawless Everyday Glow",
       "pin_titles": [
-        "5-Minute Makeup Routine for Busy Mornings",
-        "The Ultimate Everyday Makeup Routine",
-        "My Go-To Makeup Routine for Glowing Skin"
+        "A 5-Minute Makeup Routine for Busy Mornings",
+        "The Best Makeup Routine for Glowing Skin",
+        "My Essential Makeup Routine Products for 2026"
       ],
       "pin_descriptions": [
-        "Need a faster makeup routine? Discover the 5-minute everyday look that gives you a flawless, natural glow. Click to shop my favorite time-saving products!",
-        "Streamline your mornings with this simple makeup routine! Perfect for beginners wanting a natural finish without the fuss. Read the blog for full steps."
+        "Streamline your mornings with this easy 5-minute makeup routine. Perfect for achieving a natural, dewy glow with minimal products. Click to see the exact steps!",
+        "Looking for a new everyday makeup routine? Discover the 5 holy-grail products that will make your skin look flawless all day. Read the full post to shop the list."
       ],
       "boards": [
         "Everyday Makeup Looks",
-        "Beauty Tips & Routines"
+        "Beauty Tips & Tricks"
       ],
       "product_ideas": [
-        "Customizable Makeup Routine Planner",
-        "Beginner's Makeup Step-by-Step E-book"
+        "Customizable Makeup Routine Tracker",
+        "Skincare & Makeup Order Guide"
       ],
       "affiliate_matches": [
-        "Tinted moisturizers",
+        "Dewy sunscreen primer",
         "Cream blush sticks"
       ],
       "niche": "beauty",
@@ -538,28 +606,28 @@
       "keyword": "july nails ideas",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "14 July Nails Ideas to Try Before Summer 2026 Ends",
+      "intent": "high",
+      "article_topic": "21 July Nails Ideas That Are Trending for Summer 2026",
       "pin_titles": [
-        "14 July Nails Ideas for Your Next Salon Trip",
-        "Trendy July Nails Ideas for Summer 2026",
-        "14 Bright July Nails Ideas You Will Love"
+        "21 July Nails Ideas for Your Next Salon Visit",
+        "Bright July Nails Ideas for a Beach Vacation",
+        "10 July Nails Ideas You Can Easily DIY"
       ],
       "pin_descriptions": [
-        "Searching for july nails ideas? Check out these 14 bright and fun summer manicures perfect for your next beach vacation. Click to find your favorite look!",
-        "Upgrade your summer style with these july nails ideas! From neon tips to cute floral designs, get inspired here. Click to see the full list of trends."
+        "Find the perfect july nails ideas for your mid-summer manicures. From neon brights to subtle beachy tones, we have the best inspiration. Click to save your favorites!",
+        "These july nails ideas are exactly what you need for your upcoming summer vacation. Discover the top 2026 nail trends. Read the blog post for all the gorgeous photos."
       ],
       "boards": [
-        "Summer Nails",
-        "Manicure Inspiration"
+        "Summer Nail Trends",
+        "July Beauty Ideas"
       ],
       "product_ideas": [
-        "Summer Nail Trend Lookbook PDF",
-        "DIY Manicure Supply Checklist"
+        "Summer Nail Polish Color Guide",
+        "DIY Manicure Ebook"
       ],
       "affiliate_matches": [
-        "Neon gel polish sets",
-        "UV LED nail lamps"
+        "Neon gel polish kit",
+        "UV LED nail lamp"
       ],
       "niche": "beauty",
       "pop": 51,
@@ -572,28 +640,28 @@
       "keyword": "forth of july nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "10 Forth of July Nails That Are Festive but Not Cheesy",
+      "intent": "high",
+      "article_topic": "14 Forth of July Nails That Will Sparkle at the BBQ",
       "pin_titles": [
-        "10 Forth of July Nails for a Chic Summer Look",
-        "Easy Forth of July Nails You Can DIY",
-        "10 Forth of July Nails to Try in 2026"
+        "14 Forth of July Nails for a Festive Summer Look",
+        "Easy Forth of July Nails You Can Do at Home",
+        "The Best Forth of July Nails for 2026"
       ],
       "pin_descriptions": [
-        "Want forth of july nails that look chic? Discover 10 modern designs that celebrate the holiday in style without looking tacky. Click to get the polish details!",
-        "Try these forth of july nails for your next summer party! Easy, festive, and perfect for beginners to paint at home. Read the post for a full tutorial."
+        "Get inspired by these stunning forth of july nails before your holiday weekend. Learn how to add the perfect amount of glitter and stars. Click to see the designs!",
+        "These forth of july nails are simple enough to do yourself but look like you went to a salon. Grab your red, white, and blue polish. Check out the full list now."
       ],
       "boards": [
-        "Holiday Nail Art",
-        "Summer Beauty Trends"
+        "4th of July Beauty",
+        "Summer Nail Designs"
       ],
       "product_ideas": [
-        "Holiday Nail Art Guide PDF",
-        "Printable Nail Polish Inventory Tracker"
+        "Holiday Nail Art Templates",
+        "Summer Beauty Planner"
       ],
       "affiliate_matches": [
-        "Navy blue nail polish",
-        "Silver glitter top coats"
+        "Glitter top coat",
+        "Red gel polish"
       ],
       "niche": "beauty",
       "pop": 49,
@@ -606,28 +674,28 @@
       "keyword": "simple patriotic nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "8 Simple Patriotic Nails You Can Paint in Under 10 Minutes",
+      "intent": "high",
+      "article_topic": "9 Simple Patriotic Nails Anyone Can Paint at Home",
       "pin_titles": [
-        "8 Simple Patriotic Nails for Beginners",
-        "Simple Patriotic Nails: 10-Minute DIYs",
-        "8 Simple Patriotic Nails for Summer 2026"
+        "9 Simple Patriotic Nails for a Minimalist 4th of July",
+        "Simple Patriotic Nails: 5 Easy Red White & Blue Looks",
+        "How to Get Simple Patriotic Nails in 10 Minutes"
       ],
       "pin_descriptions": [
-        "Looking for simple patriotic nails? These 8 minimalist designs take less than 10 minutes to recreate at home. Click for the step-by-step instructions!",
-        "Get festive with these simple patriotic nails! Perfect for a chic and subtle 4th of July look that pairs with any outfit. Click to shop the exact colors used."
+        "Try these simple patriotic nails if you want a festive look without the fuss. Perfect for minimalist beauty lovers this summer. Click through for easy DIY instructions!",
+        "These simple patriotic nails prove less is more for the 4th of July. Discover elegant red, white, and blue French tips and dots. Read the blog to learn how to do them."
       ],
       "boards": [
-        "Minimalist Nails",
-        "Summer Nail Ideas"
+        "Minimalist Nail Art",
+        "Patriotic Beauty"
       ],
       "product_ideas": [
-        "Minimalist Nail Art E-book",
-        "10-Minute Manicure Cheat Sheet"
+        "Minimalist Nail Art Guide",
+        "At-Home Manicure Checklist"
       ],
       "affiliate_matches": [
-        "Opaque white nail polish",
-        "Fine-tip nail art pens"
+        "Fine tip nail art brushes",
+        "Navy blue nail polish"
       ],
       "niche": "beauty",
       "pop": 48,
@@ -640,28 +708,28 @@
       "keyword": "americana nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "11 Americana Nails That Bring Vintage Summer Vibes",
+      "intent": "high",
+      "article_topic": "11 Americana Nails Ideas for a Vintage Summer Aesthetic",
       "pin_titles": [
-        "11 Americana Nails for a Vintage Summer",
-        "Americana Nails: 11 Retro Designs to Try",
-        "11 Americana Nails Perfect for July 2026"
+        "11 Americana Nails for a Classic Summer Vibe",
+        "Vintage Americana Nails You Need to Try in 2026",
+        "7 Americana Nails Designs for the 4th of July"
       ],
       "pin_descriptions": [
-        "Embrace the retro vibe with these americana nails! We rounded up 11 vintage-inspired red, white, and blue looks for a classic summer. Click to see them all!",
-        "Looking for americana nails? Discover chic, vintage-inspired manicures perfect for your summer aesthetic. Click for the polish links and tutorials!"
+        "Embrace a classic summer aesthetic with these beautiful americana nails. Featuring cherry reds, crisp whites, and denim blues. Click to find your favorite retro design!",
+        "These americana nails are perfect for all your summer road trips and barbecues. Discover 11 vintage-inspired manicure ideas. Save this pin to show your nail tech."
       ],
       "boards": [
-        "Vintage Beauty Aesthetics",
-        "Summer Manicures"
+        "Vintage Beauty Trends",
+        "Summer Nail Inspo"
       ],
       "product_ideas": [
-        "Vintage Aesthetic Color Palette Guide",
-        "Retro Nail Art Practice Sheets"
+        "Vintage Beauty Trend Report",
+        "Nail Polish Palette Guide"
       ],
       "affiliate_matches": [
-        "Classic cherry red polish",
-        "Matte top coats"
+        "Cherry red nail polish",
+        "White nail art pens"
       ],
       "niche": "beauty",
       "pop": 48,
@@ -674,28 +742,28 @@
       "keyword": "patriotic nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "15 Patriotic Nails to Complete Your 4th of July Outfit",
+      "intent": "high",
+      "article_topic": "18 Patriotic Nails Ideas to Try for Summer 2026",
       "pin_titles": [
-        "15 Patriotic Nails for Your Summer BBQ",
-        "Easy Patriotic Nails You Can Do at Home",
-        "15 Patriotic Nails for a Festive July"
+        "18 Patriotic Nails to Celebrate the 4th in Style",
+        "The Best Patriotic Nails for Almond Shaped Nails",
+        "5 Easy Patriotic Nails Tutorials for Beginners"
       ],
       "pin_descriptions": [
-        "Get ready for the holiday with these patriotic nails! Find 15 gorgeous designs that are perfect for all your summer celebrations. Click to read the blog!",
-        "Show off your style with these patriotic nails. From glitter gradients to subtle stars, find your next stunning mani here. Click for step-by-step tutorials!"
+        "Stand out this summer with these stunning patriotic nails. From bold glitter to subtle stars, find the perfect holiday manicure. Click to browse all 18 ideas!",
+        "Looking for the best patriotic nails for the 4th of July? We rounded up the most gorgeous red, white, and blue nail art for 2026. Read the post to get inspired."
       ],
       "boards": [
-        "Holiday Nails",
-        "Summer Style & Beauty"
+        "Summer Holiday Nails",
+        "Festive Nail Art"
       ],
       "product_ideas": [
-        "Holiday Beauty Prep Checklist",
-        "Nail Art Decal Placement Guide"
+        "Holiday Nail Design Ebook",
+        "Nail Art Practice Sheets"
       ],
       "affiliate_matches": [
-        "Holographic nail glitter",
-        "Red and blue gel polishes"
+        "Star-shaped nail glitter",
+        "Blue holographic nail polish"
       ],
       "niche": "beauty",
       "pop": 57,
@@ -708,28 +776,28 @@
       "keyword": "western fourth of july nails",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "9 Western Fourth of July Nails for a Coastal Cowgirl Summer",
+      "intent": "medium",
+      "article_topic": "10 Western Fourth of July Nails for a Cowgirl Summer",
       "pin_titles": [
-        "9 Western Fourth of July Nails to Try",
-        "Western Fourth of July Nails: Cowgirl Chic",
-        "9 Western Fourth of July Nails for 2026"
+        "10 Western Fourth of July Nails for a Rodeo Ready Look",
+        "Cute Western Fourth of July Nails with Cow Print",
+        "How to DIY Western Fourth of July Nails"
       ],
       "pin_descriptions": [
-        "Obsessed with the coastal cowgirl trend? Try these western fourth of july nails featuring stars, boots, and denim blues. Click to see the full gallery!",
-        "Saddle up for summer with these western fourth of july nails! Perfect for a country-inspired holiday look that stands out. Click to get the polish list."
+        "Combine cowgirl aesthetics with holiday fun using these western fourth of july nails. Featuring red bandanas, stars, and cow print. Click to see the unique designs!",
+        "These western fourth of july nails are a must-try for your 2026 summer rodeos and barbecues. Learn how to mix turquoise and red seamlessly. Read the full tutorial on the blog."
       ],
       "boards": [
-        "Coastal Cowgirl Aesthetic",
-        "Trendy Nail Art"
+        "Western Beauty Aesthetic",
+        "4th of July Nails"
       ],
       "product_ideas": [
-        "Western Aesthetic Style Guide",
-        "Cowgirl Nail Art Decal Printables"
+        "Western Beauty Trend Guide",
+        "Cowgirl Aesthetic Lookbook"
       ],
       "affiliate_matches": [
-        "Denim blue nail polish",
-        "Cow print nail stamping plates"
+        "Cow print nail stickers",
+        "Turquoise nail polish"
       ],
       "niche": "beauty",
       "pop": 44,
@@ -739,30 +807,64 @@
       "score": 154
     },
     {
+      "keyword": "mexico makeup",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "12 Mexico Makeup Trends Taking Over Beauty in 2026",
+      "pin_titles": [
+        "12 Mexico Makeup Trends for a Flawless Latina Glam",
+        "How to Do the Viral Mexico Makeup Look",
+        "7 Mexico Makeup Products You Need to Try"
+      ],
+      "pin_descriptions": [
+        "Discover the gorgeous mexico makeup trends that are going viral this year. Learn how to achieve that perfect bold lip and fluttery lash. Click for the step-by-step guide!",
+        "This mexico makeup look is all about high glamour and flawless skin. Find out which 7 products you need to recreate the aesthetic. Read the blog post to shop the look."
+      ],
+      "boards": [
+        "Latina Beauty Trends",
+        "Glam Makeup Looks"
+      ],
+      "product_ideas": [
+        "Glam Makeup Face Charts",
+        "Latina Beauty Brand Directory"
+      ],
+      "affiliate_matches": [
+        "Volumizing false lashes",
+        "Brown lip liner"
+      ],
+      "niche": "beauty",
+      "pop": 44,
+      "mom": 800,
+      "yoy": 800,
+      "rising": true,
+      "score": 154
+    },
+    {
       "keyword": "4th of july nail inspo",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "17 4th of July Nail Inspo Pics to Show Your Nail Tech",
+      "intent": "high",
+      "article_topic": "25 4th of July Nail Inspo Pictures to Show Your Tech",
       "pin_titles": [
-        "4th of July Nail Inspo: 17 Looks to Copy",
-        "17 4th of July Nail Inspo Pics for 2026",
-        "The Best 4th of July Nail Inspo for Summer"
+        "25 4th of July Nail Inspo Ideas for Summer 2026",
+        "The Ultimate 4th of July Nail Inspo Guide",
+        "7 4th of July Nail Inspo Designs You Can DIY"
       ],
       "pin_descriptions": [
-        "Need 4th of july nail inspo? Save these 17 gorgeous designs to show your nail tech at your next summer appointment. Click to view the stunning gallery!",
-        "Find your perfect holiday mani with this 4th of july nail inspo! From acrylics to natural nails, we have a style for everyone. Click for all the details."
+        "Need the perfect 4th of july nail inspo before your next salon appointment? We have 25 gorgeous holiday designs to choose from. Click to find your favorite look!",
+        "This 4th of july nail inspo is everything you need for a festive summer. From minimalist stripes to full glam glitter, save these ideas. Check out the full gallery on the blog."
       ],
       "boards": [
-        "Nail Salon Inspiration",
-        "Summer Beauty"
+        "4th of July Beauty",
+        "Nail Inspo 2026"
       ],
       "product_ideas": [
-        "Nail Tech Request Cheat Sheet",
-        "Summer Manicure Lookbook"
+        "Nail Inspo Digital Lookbook",
+        "Salon Appointment Planner"
       ],
       "affiliate_matches": [
-        "Press-on nail kits",
+        "Press-on nail kit",
         "Cuticle oil pens"
       ],
       "niche": "beauty",
@@ -776,28 +878,28 @@
       "keyword": "fourth of july nails simple",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "10 Fourth of July Nails Simple Enough for Total Beginners",
+      "intent": "high",
+      "article_topic": "8 Fourth of July Nails Simple Designs for Beginners",
       "pin_titles": [
-        "Fourth of July Nails Simple: 10 Easy Ideas",
-        "10 Fourth of July Nails Simple & Quick DIYs",
-        "Fourth of July Nails Simple Designs for 2026"
+        "8 Fourth of July Nails Simple Enough to DIY",
+        "Fourth of July Nails Simple & Elegant Ideas",
+        "5 Fourth of July Nails Simple Tutorials"
       ],
       "pin_descriptions": [
-        "Looking for fourth of july nails simple enough to DIY? Check out these 10 easy ideas that require zero special tools. Click for the beginner tutorial!",
-        "Save time and money with these fourth of july nails simple designs! Perfect for a last-minute festive look before your BBQ. Click to see the polishes."
+        "Looking for fourth of july nails simple enough to do at home? These 8 easy designs require zero special tools. Click through to watch the quick tutorials!",
+        "You will love these fourth of july nails simple and minimalist ideas. Perfect for a chic holiday look without spending hours painting. Read the blog to get started."
       ],
       "boards": [
-        "Easy DIY Nails",
-        "Summer Manicures"
+        "Simple Nail Art",
+        "Easy DIY Manicures"
       ],
       "product_ideas": [
-        "Beginner Nail Art PDF Guide",
-        "5-Minute Beauty Hacks E-book"
+        "Beginner Nail Art Guide",
+        "Minimalist Nail Planner"
       ],
       "affiliate_matches": [
-        "Quick-dry nail polish",
-        "Nail polish corrector pens"
+        "Dotting tool set",
+        "Quick dry top coat"
       ],
       "niche": "beauty",
       "pop": 42,
@@ -810,28 +912,28 @@
       "keyword": "july nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "20 July Nails That Scream Peak Summer Aesthetics",
+      "intent": "high",
+      "article_topic": "20 July Nails You'll Want to Wear All Summer Long",
       "pin_titles": [
-        "20 July Nails You Need to Try This Summer",
-        "Trendy July Nails for Your Next Vacation",
-        "20 July Nails to Copy in Summer 2026"
+        "20 July Nails Ideas for a Bright Summer Aesthetic",
+        "The Best July Nails Trends for 2026",
+        "12 July Nails Designs for Your Next Vacation"
       ],
       "pin_descriptions": [
-        "Get ready for vacation with these stunning july nails! We rounded up 20 trending designs that are perfect for the hottest month. Click to find yours!",
-        "Upgrade your manicure with these july nails! From bright neons to beachy waves, discover the best summer looks to try next. Click to read the post."
+        "Update your summer look with these stunning july nails. Featuring vibrant colors, tropical prints, and chic minimalist art. Click to see the top 20 designs for 2026!",
+        "These july nails are the ultimate inspiration for mid-summer manicures. Whether you love bright neons or soft pastels, find your match. Save this pin for later."
       ],
       "boards": [
-        "Summer Nails",
-        "Vacation Beauty Prep"
+        "Summer Nails 2026",
+        "July Beauty"
       ],
       "product_ideas": [
-        "Summer Beauty Prep Checklist",
-        "At-Home Spa Day Guide PDF"
+        "Summer Nail Color Palette",
+        "Vacation Beauty Packing List"
       ],
       "affiliate_matches": [
-        "Summer gel polish collections",
-        "Nail strengthening base coats"
+        "Coral nail polish",
+        "SPF hand cream"
       ],
       "niche": "beauty",
       "pop": 42,
@@ -844,28 +946,28 @@
       "keyword": "fun 4th of july nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "13 Fun 4th of July Nails That Will Make You Smile",
+      "intent": "high",
+      "article_topic": "15 Fun 4th of July Nails That Scream Summer Party",
       "pin_titles": [
-        "13 Fun 4th of July Nails for Summer 2026",
-        "Fun 4th of July Nails: 13 Playful Designs",
-        "13 Fun 4th of July Nails to DIY This Year"
+        "15 Fun 4th of July Nails for Your Holiday BBQ",
+        "Fun 4th of July Nails with Glitter and Stars",
+        "7 Fun 4th of July Nails Ideas to DIY"
       ],
       "pin_descriptions": [
-        "Want to stand out? Try these fun 4th of july nails featuring fireworks, popsicles, and bold stars for a playful summer vibe. Click to see all 13 designs!",
-        "Celebrate the holiday with these fun 4th of july nails! Perfect for adding a pop of joy to your summer outfit. Click for the polish links and tutorials."
+        "Get the party started with these fun 4th of july nails. Packed with glitter, fireworks, and bold colors for a standout look. Click to browse the festive gallery!",
+        "These fun 4th of july nails are guaranteed to be a hit at your summer cookout. Learn how to mix and match patterns easily. Read the full post for product recommendations."
       ],
       "boards": [
-        "Creative Nail Art",
-        "4th of July Ideas"
+        "Holiday Nail Art",
+        "Fun Summer Nails"
       ],
       "product_ideas": [
-        "Creative Nail Art Prompt Deck",
-        "Summer Party Hosting Guide"
+        "Party Ready Beauty Guide",
+        "DIY Nail Art Workbook"
       ],
       "affiliate_matches": [
-        "Rhinestone nail art kits",
-        "Bright red polish"
+        "Chunky glitter nail polish",
+        "Nail art rhinestones"
       ],
       "niche": "beauty",
       "pop": 42,
@@ -878,28 +980,28 @@
       "keyword": "vintage americana nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "7 Vintage Americana Nails for a Nostalgic Summer Look",
+      "intent": "high",
+      "article_topic": "10 Vintage Americana Nails for a Retro Summer Vibe",
       "pin_titles": [
-        "7 Vintage Americana Nails for Summer 2026",
-        "Vintage Americana Nails: 7 Retro Designs",
-        "7 Vintage Americana Nails You Can DIY"
+        "10 Vintage Americana Nails for a Retro 4th of July",
+        "How to Get Vintage Americana Nails at Home",
+        "7 Vintage Americana Nails Designs for 2026"
       ],
       "pin_descriptions": [
-        "Love retro style? These vintage americana nails feature muted reds, cream whites, and denim blues for a nostalgic summer vibe. Click to see the looks!",
-        "Step back in time with these vintage americana nails! Perfect for a classic, understated 4th of July look. Click to shop the exact vintage-inspired shades."
+        "Channel retro summer vibes with these vintage americana nails. Think muted reds, classic creams, and timeless patterns. Click to see how to achieve this chic aesthetic!",
+        "These vintage americana nails are the perfect subtle nod to the 4th of July. Discover 10 elegant designs that look great on any nail shape. Check out the blog for details."
       ],
       "boards": [
-        "Vintage Aesthetics",
-        "Classic Beauty"
+        "Retro Beauty Ideas",
+        "Vintage Summer Aesthetic"
       ],
       "product_ideas": [
-        "Retro Beauty Lookbook PDF",
-        "Vintage Color Palette Swatch Guide"
+        "Retro Beauty Lookbook",
+        "Vintage Style Nail Guide"
       ],
       "affiliate_matches": [
         "Muted red nail polish",
-        "Creamy off-white polish"
+        "Matte top coat"
       ],
       "niche": "beauty",
       "pop": 42,
@@ -912,28 +1014,28 @@
       "keyword": "july 4th nails",
       "keep": true,
       "season": "summer",
-      "intent": "medium",
-      "article_topic": "16 July 4th Nails You Need to Pin for Summer 2026",
+      "intent": "high",
+      "article_topic": "22 July 4th Nails That Will Elevate Your Holiday Look",
       "pin_titles": [
-        "16 July 4th Nails for Your Holiday Weekend",
-        "Trendy July 4th Nails to Try in 2026",
-        "16 July 4th Nails That Are Actually Chic"
+        "22 July 4th Nails Ideas for Summer 2026",
+        "The Best July 4th Nails for Acrylics",
+        "9 Easy July 4th Nails You Can Paint Yourself"
       ],
       "pin_descriptions": [
-        "Need a holiday manicure? Browse these 16 stunning july 4th nails and find the perfect look for your summer BBQ. Click for tutorials and polish links!",
-        "Celebrate in style with these july 4th nails! We found the chicest red, white, and blue designs on the internet for you to copy. Click to see the list."
+        "Elevate your holiday weekend with these stunning july 4th nails. We gathered 22 of the best red, white, and blue designs for 2026. Click to find your favorite!",
+        "From elegant stars to bold glitter, these july 4th nails are everything you need for summer. Learn which polishes work best for DIY art. Read the full guide now."
       ],
       "boards": [
-        "Summer Nail Trends",
-        "Holiday Beauty"
+        "July 4th Inspiration",
+        "Summer Acrylic Nails"
       ],
       "product_ideas": [
-        "Holiday Nail Art Planner",
-        "Printable Summer Beauty Calendar"
+        "Summer Nail Art Ebook",
+        "Holiday Beauty Planner"
       ],
       "affiliate_matches": [
-        "Long-lasting top coats",
-        "Blue glitter nail polish"
+        "Acrylic nail kit",
+        "Red and blue gel polish"
       ],
       "niche": "beauty",
       "pop": 41,

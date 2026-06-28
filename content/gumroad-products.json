@@ -288,5 +288,35 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/ilxyqf",
     "landing": "/shop/printable-fitness-workout-tracker-gym-planner",
     "created_at": "2026-06-27T16:15:13.475Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker",
+    "title": "Printable Savings Tracker & Money Goals Planner | Financial Budget Printable | Sinking Funds Tracker",
+    "price": 4,
+    "gumroad_id": "jSKqB8YOPd9BAc2ZoxQLPQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/ebyxr",
+    "landing": "/shop/printable-savings-money-goals-tracker",
+    "created_at": "2026-06-28T16:20:06.534Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-cottage-dog-wall-art",
+    "title": "Cozy Cottage Dog Watercolor Printable Wall Art Set of 3 Posters",
+    "price": 5,
+    "gumroad_id": "9yKz994dAM8o1M4_wjn46A==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/cvyxf",
+    "landing": "/shop/cozy-cottage-dog-wall-art",
+    "created_at": "2026-06-28T16:21:38.205Z"
+  },
+  {
+    "type": "bundle",
+    "slug": "dog-lover-bundle-2026-06-28",
+    "title": "The Complete Dog Lover Printable Bundle — 2 Products (Wall Art, Coloring & Planner)",
+    "price": 12,
+    "gumroad_id": "ybPR0n6eZC-dvjYJz_94dw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/csttam",
+    "landing": "/shop/dog-lover-bundle-2026-06-28",
+    "created_at": "2026-06-28T16:21:57.933Z"
   }
 ]
