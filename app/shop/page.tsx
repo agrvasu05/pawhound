@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { getAllShopProducts, shopAsset } from "@/lib/shop";
 
 export const metadata: Metadata = {
-  title: "Shop — Printable Art, Planners & Coloring Pages",
+  title: "Shop — Printable Wall Art & Planners",
   description:
-    "Instant-download printable wall art, planners, trackers, and coloring pages for dog lovers and cozy homes.",
+    "Instant-download printable wall art, planners, and trackers for a cozy, organized home.",
   alternates: { canonical: "/shop" },
 };
 
@@ -21,8 +21,8 @@ export default function ShopIndex() {
         The Shop
       </h1>
       <p className="mt-3 max-w-2xl text-lg text-stone-600">
-        Instant-download printables for dog lovers and cozy homes — wall art,
-        planners, trackers, and coloring pages. Download, print, enjoy.
+        Instant-download printables for a cozy, organized home — wall art,
+        planners, and trackers. Download, print, enjoy.
       </p>
 
       {products.length === 0 ? (

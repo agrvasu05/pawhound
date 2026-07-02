@@ -244,12 +244,13 @@ function firstSentence(text) {
   return (m ? m[0] : text).trim();
 }
 
-// Pinterest descriptions: ranked on KEYWORDS in natural prose (not hashtags),
-// and clicks come from an explicit call-to-action. So we front-load the exact
-// search phrase + a benefit, add one specific real sentence, then a clear CTA,
-// and finish with a few targeted hashtags.
+// Pinterest descriptions: ranked on KEYWORDS in natural prose, and clicks come
+// from an explicit call-to-action. Front-load the exact search phrase (keyword
+// must land within the first 50 chars) + a benefit, one specific real sentence,
+// then a clear CTA. NO hashtags — dead as a ranking factor in 2025/26 (Tailwind);
+// the characters are better spent on semantic keywords (see pinterest-playbook-2026.md).
 function buildDescription(article) {
-  const phrase = corePhrase(article.topic_title); // e.g. "Best Apartment Dogs"
+  const phrase = corePhrase(article.topic_title); // e.g. "Cozy Reading Nook Ideas"
   const count = article.picks.length;
   const noun = article.item_noun || "breeds";
   const isDogs = (article.niche || "dogs") === "dogs";
@@ -265,55 +266,22 @@ function buildDescription(article) {
     ? `👉 Tap to see the full ranked list with photos and find your perfect match.`
     : `👉 Tap to see the full list with photos, details, and our top pick.`;
 
-  const tags = getHashtags(article.topic_slug, article.topic_title, article.niche);
-
-  // Cap at Pinterest's 500-char limit, leaving room for the hashtag line.
   let body = `${hook} ${detail} ${cta}`;
-  const maxBody = 495 - (tags.length + 2);
-  if (body.length > maxBody) body = body.slice(0, maxBody - 1).trimEnd() + "…";
-  return `${body}\n\n${tags}`;
+  if (body.length > 480) body = body.slice(0, 479).trimEnd() + "…";
+  return body;
 }
 
-function getHashtags(slug, title, niche) {
-  const t = title.toLowerCase();
-
-  // Specific, title-derived tags rank better than generic ones, so they go
-  // FIRST and we keep just ~5 total (Pinterest deprioritizes hashtag spam).
-  const specific = [];
-  const dedupe = (generic) =>
-    [...new Set([...specific, ...generic])].slice(0, 5).join(' ');
-
-  // Non-dog niches: use niche-appropriate tags + a few title-derived ones.
-  if (niche && niche !== 'dogs') {
-    if (niche === 'home') {
-      if (t.includes('small') || t.includes('apartment')) specific.push('#smallspaces', '#apartmenttherapy');
-      if (t.includes('organi')) specific.push('#homeorganization', '#organizationideas');
-      if (t.includes('budget') || t.includes('cheap') || t.includes('diy')) specific.push('#budgetdecor', '#diyhome');
-      if (t.includes('bedroom')) specific.push('#bedroomdecor', '#bedroomideas');
-      if (t.includes('kitchen')) specific.push('#kitchendecor', '#kitchenideas');
-      if (t.includes('living')) specific.push('#livingroomdecor');
-      if (t.includes('cozy') || t.includes('cosy')) specific.push('#cozyhome', '#cozyvibes');
-      if (t.includes('rental') || t.includes('renter')) specific.push('#rentaldecor');
-      return dedupe(['#homedecor', '#homeideas', '#interiordesign', '#homeinspo']);
-    }
-    // Generic fallback for any future niche
-    return ['#pinterestideas', '#inspiration', '#trending'].join(' ');
-  }
-
-  if (t.includes('apartment') || t.includes('small')) specific.push('#apartmentdogs', '#smalldogs');
-  if (t.includes('active') || t.includes('running')) specific.push('#activedogs', '#runningwithdogs');
-  if (t.includes('fluffy')) specific.push('#fluffydogs', '#fluffypuppy');
-  if (t.includes('family')) specific.push('#familydogs', '#dogsandkids');
-  if (t.includes('smart') || t.includes('intellig')) specific.push('#smartdogs');
-  if (t.includes('loyal')) specific.push('#loyaldogs');
-  if (t.includes('support') || t.includes('therapy')) specific.push('#emotionalsupportdog');
-  if (t.includes('senior')) specific.push('#dogsforseniors');
-  if (t.includes('guard') || t.includes('watch')) specific.push('#guarddogs');
-  if (t.includes('rare')) specific.push('#raredogs', '#uniquebreeds');
-  if (t.includes('shed') || t.includes('hypo')) specific.push('#hypoallergenicdogs');
-  if (t.includes('cold') || t.includes('weather')) specific.push('#coldweatherdogs');
-  if (t.includes('calm') || t.includes('quiet')) specific.push('#calmdog', '#quietdogs');
-  return dedupe(['#dogbreeds', '#dogsofpinterest', '#doglovers']);
+// Alt text is the highest-ROI hidden field (+123% outbound clicks, Tailwind 2025):
+// a LITERAL visual description of the pin image that naturally contains the
+// searchable keyword phrase.
+function buildAltText(article) {
+  const phrase = corePhrase(article.topic_title);
+  const top = article.picks.find((p) => p.rank === 1);
+  const noun = article.item_noun || "ideas";
+  const alt = top
+    ? `${phrase}: photo collage featuring ${top.breed}, from a ranked list of ${article.picks.length} ${noun}.`
+    : `${phrase} — pin image for a ranked list of ${article.picks.length} ${noun}.`;
+  return alt.slice(0, 480);
 }
 
 // ── Post one pin ──────────────────────────────────────────────────────────────
@@ -324,6 +292,7 @@ async function postPin(pin, boardId) {
     board_id: boardId,
     title: article.topic_title,
     description: buildDescription(article),
+    alt_text: buildAltText(article),
     link: `${SITE_URL}/${slug}`,
     media_source: {
       source_type: 'image_url',

@@ -25,19 +25,21 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Safety guard: only post during the US evening peak (6-11 PM Eastern).
-      # If something ever fires this off-schedule, we SKIP rather than dump pins
-      # at a bad hour. Handles EST/EDT automatically via the TZ database.
-      - name: Guard — only post 6-11 PM ET
+      # Safety guard: only post during Pinterest's US peak windows — evening
+      # (6-11 PM ET) and midday (10 AM-1 PM ET, per content/pinterest-playbook-2026.md
+      # rule 6). To activate the midday slot, add a SECOND cron-job.org trigger at
+      # ~15:00 UTC; pins then spread across two slots instead of one evening dump.
+      # If something fires off-schedule, we SKIP rather than post at a bad hour.
+      - name: Guard — only post in peak windows (10 AM-1 PM / 6-11 PM ET)
         id: guard
         run: |
           H=$(TZ=America/New_York date +%H)
           echo "Eastern hour: $H"
-          if [ "$H" -ge 18 ] && [ "$H" -le 23 ]; then
+          if { [ "$H" -ge 18 ] && [ "$H" -le 23 ]; } || { [ "$H" -ge 10 ] && [ "$H" -le 12 ]; }; then
             echo "ok=true" >> "$GITHUB_OUTPUT"
           else
             echo "ok=false" >> "$GITHUB_OUTPUT"
-            echo "Outside 6-11 PM ET window — skipping this run."
+            echo "Outside peak windows — skipping this run."
           fi
 
       - uses: actions/setup-node@v4
@@ -90,6 +92,17 @@ jobs:
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+
+      # 3) Niche lockdown (playbook rule 5): secret up to 4 off-niche boards per
+      #    day — ~90 legacy dog/beauty/fashion boards clear in ~3 weeks, staggered
+      #    so the cleanup never looks like mass edits. No-op once they're gone.
+      - name: Board hygiene — secret off-niche boards
+        if: steps.guard.outputs.ok == 'true'
+        run: node products/board-hygiene.js
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
 
       # Save updated trackers (posted-pins, boards, pin-queue)
       - name: Commit trackers

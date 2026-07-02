@@ -7,8 +7,9 @@
  * product ideas, affiliate matches). Output: content/trend-briefs.json — the
  * SEED that the article/product/pin generators consume instead of random themes.
  *
- * Niches: fashion, home decor, beauty, wellness, gifts/occasions, aesthetic art,
- * digital products. Dogs are intentionally limited (only kept if clearly rising).
+ * Niche: home/cozy living ONLY (decor, organization, small-space, printables).
+ * Beauty was dropped 2026-07: unproven clicks + printables monetize poorly there.
+ * Dogs are intentionally limited (only kept if clearly rising).
  */
 require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env.local') });
 const https = require('https');
@@ -30,12 +31,15 @@ function api(method, endpoint) {
 }
 
 // Pinterest interest -> our niche label.
-// FOCUSED on home decor + beauty/skincare only — a young account needs ONE clear
-// identity for Pinterest to build topical authority and distribute pins. (Fashion,
-// wellness, gifts, aesthetic, design were dropped to stop confusing the algorithm.)
+// FOCUSED on the home/cozy niche only — a young account needs ONE clear identity
+// for Pinterest to build topical authority and distribute pins. Beauty was the
+// last other niche dropped (2026-07: 90-day data showed home converts 3.3× better
+// per pin, and beauty barely monetizes through printables). diy_and_crafts is
+// included because printables/planner demand surfaces there; if the slug ever
+// 404s the loop just skips it.
 const INTERESTS = {
   home_decor: 'home decor',
-  beauty: 'beauty',
+  diy_and_crafts: 'home',
 };
 const DOG_RE = /\b(dog|dogs|puppy|puppies|pet|pets|cat|cats|kitten)\b/i;
 
@@ -49,7 +53,9 @@ const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
 async function pullTrends() {
   const pool = new Map(); // keyword -> best record
   for (const [interest, niche] of Object.entries(INTERESTS)) {
-    for (const type of ['growing', 'monthly']) {
+    // seasonal added per playbook rule 7 — seasonal keywords surface 45-60 days
+    // before their peak, which is exactly when we should be publishing for them.
+    for (const type of ['growing', 'monthly', 'seasonal']) {
       const r = await api('GET', `/v5/trends/keywords/US/top/${type}?interests=${interest}`);
       if (r.status !== 200) continue;
       for (const t of r.body.trends || []) {
@@ -59,7 +65,7 @@ async function pullTrends() {
         const yoy = t.pct_growth_yoy ?? 0;
         const pop = recentPopularity(t.time_series);
         // Score: current volume (0-100) + growth bonus (up to ~100). Rising + popular wins.
-        const score = Math.round(pop + clamp(mom, -50, 300) / 3 + (type === 'growing' ? 10 : 0));
+        const score = Math.round(pop + clamp(mom, -50, 300) / 3 + (type !== 'monthly' ? 10 : 0));
         // Limit dogs/pets unless clearly surging.
         if (DOG_RE.test(kw) && mom < 80) continue;
         const rec = { keyword: kw, niche, pop: Math.round(pop), mom, yoy, rising: type === 'growing', score };
@@ -96,7 +102,7 @@ async function buildBriefs(top) {
   const year = new Date().getFullYear();
   const list = top.map((t) => `- "${t.keyword}" [niche: ${t.niche}; volume ${t.pop}/100; MoM ${t.mom}%${t.rising ? '; RISING' : ''}]`).join('\n');
   const { briefs } = await lib.chatJSON({
-    system: `You turn real Pinterest search keywords into actionable content briefs for a US Pinterest+blog+shop business focused on TWO niches only: home decor (cozy living, small-space, organization, styling) and beauty/skincare. Be specific and buyer-focused. The current year is ${year}; use ${year} in any dated titles (the season is happening now) — never a past or future year. Set keep=false for anything off-niche (not home decor or beauty/skincare) and for non-commercial fads (video games, fan art, celebrity/brand IP, anything we cannot legally sell or recommend products for). US English.`,
+    system: `You turn real Pinterest search keywords into actionable content briefs for a US Pinterest+blog+shop business focused on ONE niche: home/cozy living (home decor, cozy styling, small-space ideas, organization, cleaning/home routines) monetized with printable digital products (wall art and planners/trackers). Be specific and buyer-focused; for product_ideas ALWAYS suggest printable wall art or a printable planner/tracker angle that fits the keyword. The current year is ${year}; use ${year} in any dated titles (the season is happening now) — never a past or future year. Set keep=false for anything off-niche (not home/cozy living — e.g. beauty, fashion, food recipes, travel) and for non-commercial fads (video games, fan art, celebrity/brand IP, anything we cannot legally sell or recommend products for). US English.`,
     user: `For EACH keyword below, produce a content brief. Favor strong buying intent and seasonal timing.\n\n${list}`,
     schema: BRIEF_SCHEMA, temperature: 0.7,
   });

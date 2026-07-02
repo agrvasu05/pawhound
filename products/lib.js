@@ -174,9 +174,14 @@ function pickScene(cat) {
 }
 
 // Renders a "lifestyle mockup" pin: the product shown in a real room/desk scene
-// (which earns far more saves than a flat background), title + a full-width
-// bottom CTA bar that lines up with Pinterest's "Visit site". Falls back to a
-// clean gradient if no scene images are available.
+// (which earns far more saves than a flat background). Two modes per the 2026
+// playbook (content/pinterest-playbook-2026.md rule 1):
+//   • wall (wall-art/bundle): MINIMAL text — the pin must read as room/decor
+//     inspiration, not an ad. Big scene, elegant caption, small price chip.
+//   • desk (planner etc.): benefit text overlay + CTA, since planner buyers
+//     respond to the promise, not the aesthetic alone.
+// Both keep the bottom 15% (~225px) free of critical text — Pinterest's UI
+// overlaps it. Falls back to a clean gradient if no scene images are available.
 async function renderShopPin(spec, outPath) {
   const accent = spec.accent || '#2d4a3e';
   const imgs = spec.images.map(dataUrl);
@@ -188,39 +193,66 @@ async function renderShopPin(spec, outPath) {
   const framed = (src, w, h, pad, rot = 0) =>
     `<div style="background:#fff;padding:${pad}px;border:2px solid #efe7d8;box-shadow:0 22px 50px rgba(30,20,10,0.30);transform:rotate(${rot}deg);">
        <img src="${src}" style="width:${w}px;height:${h}px;object-fit:cover;display:block;"/></div>`;
+
+  const brandChip = `<div style="position:absolute;top:28px;left:28px;background:rgba(255,255,255,0.92);color:#6b5844;
+                 padding:9px 20px;border-radius:30px;font-size:21px;letter-spacing:1px;z-index:3;">${BRAND}</div>`;
+
+  if (sceneCat === 'wall') {
+    // Decor-inspiration look: tall scene, small serif caption, subtle price chip.
+    // Headline stays (keyword is OCR-indexed) but styled like a magazine caption.
+    const sceneZone = sceneUrl
+      ? `<div style="position:relative;width:100%;height:1120px;overflow:hidden;background:#e7dccb;">
+           <img src="${sceneUrl}" style="width:100%;height:100%;object-fit:cover;"/>
+           <div style="position:absolute;inset:0;background:rgba(255,255,255,0.05);"></div>
+           <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
+             ${framed(hero, 470, 630, 30, 0)}
+           </div>
+         </div>`
+      : `<div style="height:1120px;display:flex;align-items:center;justify-content:center;
+                    background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 500, 670, 30)}</div>`;
+    const html = `<html><body style="margin:0;">
+     <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
+       ${brandChip}
+       ${sceneZone}
+       <div style="text-align:center;padding:34px 60px 0;">
+         <div style="font-size:46px;font-weight:bold;line-height:1.12;color:#33271c;">${esc(spec.headline)}</div>
+         <div style="margin-top:12px;font-size:24px;color:#8a7257;">${esc(spec.subhead)}
+           <span style="display:inline-block;margin-left:14px;background:${accent};color:#fff;font-size:22px;
+                        padding:7px 20px;border-radius:26px;vertical-align:middle;">Printable · $${spec.price}</span>
+         </div>
+       </div>
+     </div></body></html>`;
+    return htmlToPng(html, outPath);
+  }
+
+  // Desk/planner mode: benefit overlay + CTA pill (kept above the bottom 15%).
   const thumbs = imgs.length > 1
     ? `<div style="display:flex;justify-content:center;gap:18px;margin-top:18px;">
-         ${imgs.slice(0, 3).map((t) => framed(t, 120, 160, 9)).join('')}</div>`
+         ${imgs.slice(0, 3).map((t) => framed(t, 110, 148, 8)).join('')}</div>`
     : '';
-
-  // Scene zone: product composited onto the room/desk photo.
   const sceneZone = sceneUrl
-    ? `<div style="position:relative;width:100%;height:880px;overflow:hidden;background:#e7dccb;">
+    ? `<div style="position:relative;width:100%;height:860px;overflow:hidden;background:#e7dccb;">
          <img src="${sceneUrl}" style="width:100%;height:100%;object-fit:cover;"/>
-         <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,0.06);"></div>
+         <div style="position:absolute;inset:0;background:rgba(255,255,255,0.06);"></div>
          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
-           ${sceneCat === 'desk' ? framed(hero, 400, 520, 24, -3) : framed(hero, 380, 510, 26, 0)}
+           ${framed(hero, 400, 520, 24, -3)}
          </div>
        </div>`
-    : `<div style="height:880px;display:flex;align-items:center;justify-content:center;
+    : `<div style="height:860px;display:flex;align-items:center;justify-content:center;
                   background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 460, 620, 28)}</div>`;
 
   const html = `<html><body style="margin:0;">
    <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
-     <div style="position:absolute;top:28px;left:28px;background:rgba(255,255,255,0.92);color:#6b5844;
-                 padding:9px 20px;border-radius:30px;font-size:21px;letter-spacing:1px;z-index:3;">${BRAND}</div>
+     ${brandChip}
      ${sceneZone}
      <div style="text-align:center;padding:30px 50px 0;">
-       <div style="font-size:58px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
-       <div style="margin-top:10px;font-size:27px;color:#8a7257;">${esc(spec.subhead)}</div>
+       <div style="font-size:56px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
+       <div style="margin-top:10px;font-size:26px;color:#8a7257;">${esc(spec.subhead)}</div>
        ${thumbs}
-     </div>
-     <div style="position:absolute;bottom:0;left:0;right:0;height:150px;background:${accent};color:#fff;
-                 display:flex;align-items:center;justify-content:center;gap:20px;">
-       <span style="font-size:48px;font-weight:bold;">Tap to shop</span>
-       <span style="font-size:40px;opacity:.85;">·</span>
-       <span style="font-size:48px;font-weight:bold;">$${spec.price}</span>
-       <span style="font-size:52px;font-weight:bold;">→</span>
+       <div style="margin-top:26px;display:inline-flex;align-items:center;gap:16px;background:${accent};color:#fff;
+                   padding:18px 44px;border-radius:50px;">
+         <span style="font-size:36px;font-weight:bold;">Tap to shop · $${spec.price} →</span>
+       </div>
      </div>
    </div></body></html>`;
   return htmlToPng(html, outPath);
@@ -335,17 +367,18 @@ function persistShopProduct({ slug, type, listing, gumroadUrl, srcImages }) {
 async function generateVariantSpecs(title, type, n = 6, keyword = '') {
   const schema = { name: 'pin_variants', strict: true, schema: { type: 'object', additionalProperties: false, required: ['variants'],
     properties: { variants: { type: 'array', items: { type: 'object', additionalProperties: false,
-      required: ['headline', 'subhead', 'pin_title', 'pin_description'], properties: {
-        headline: { type: 'string', description: '<=22 char punchy overlay headline' },
+      required: ['headline', 'subhead', 'pin_title', 'pin_description', 'alt_text'], properties: {
+        headline: { type: 'string', description: '<=22 char punchy overlay headline containing the keyword or a close variant (the image text is OCR-indexed by Pinterest)' },
         subhead: { type: 'string', description: '<=34 char benefit line' },
-        pin_title: { type: 'string', description: '<=95 char Pinterest title: target keyword near the front + a SPECIFIC, save-worthy promise (number, concrete outcome, or use-case). Never vague.' },
-        pin_description: { type: 'string', description: '<=480 char description: keyword in the first sentence, natural keywords throughout, then a clear CTA' },
+        pin_title: { type: 'string', description: '<=95 char Pinterest title: target keyword in the FIRST 3-5 WORDS (the algorithm weights the start; only ~40 chars show in feed) + a SPECIFIC, save-worthy promise (number, concrete outcome, or use-case). Never vague.' },
+        pin_description: { type: 'string', description: '150-450 char description: keyword within the FIRST 50 characters, 2-4 semantic/related keywords woven into natural sentences (never a keyword list), then a clear CTA. ZERO hashtags.' },
+        alt_text: { type: 'string', description: '<=480 char LITERAL visual description of the pin image (the printable shown in a styled room or on a desk) that naturally contains the keyword — for accessibility + Pinterest visual-search SEO.' },
       } } } } } };
   const kwLine = keyword
-    ? ` Target Pinterest search keyword: "${keyword}" — put it (or a close variant) at the FRONT of every pin_title and in the first sentence of every pin_description for SEO.`
+    ? ` Target Pinterest search keyword: "${keyword}" — put it (or a close variant) in the FIRST 3-5 words of every pin_title and within the first 50 characters of every pin_description for SEO.`
     : '';
   const { variants } = await chatJSON({
-    system: `You write high-CTR, SEO-optimized Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. Pinterest is a search engine — lead with the searchable keyword. US English. No hashtags in the headline.${kwLine}`,
+    system: `You write high-CTR, SEO-optimized Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. Pinterest is a search engine — lead with the searchable keyword. US English. NO hashtags anywhere (dead as a ranking factor; spend the characters on keywords).${kwLine}`,
     user: `Product: "${title}" (a printable ${type}). Give ${n} distinct pin-angle variations.`,
     schema, temperature: 0.9,
   });
@@ -388,7 +421,8 @@ async function enqueueProductVariants({ slug, type, title, price, board, boards 
   const entries = specs.map((s, i) => ({
     slug, link, board: boardList[i % boardList.length], price, keyword,
     headline: s.headline, subhead: s.subhead, title: s.pin_title, description: s.pin_description,
-    alt: keyword ? `${s.pin_title} — ${keyword}` : s.pin_title,
+    // Literal visual description w/ keyword (+123% outbound clicks, Tailwind 2025).
+    alt: s.alt_text || (keyword ? `${s.pin_title} — ${keyword}` : s.pin_title),
     accent: VARIANT_ACCENTS[i % VARIANT_ACCENTS.length],
     status: 'pending', created_at: new Date().toISOString(),
   }));

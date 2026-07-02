@@ -10,14 +10,17 @@ export const metadata = {
 
 // Display labels + ordering for each niche section. New trending niches sit on
 // top; dog guides are pushed to the bottom.
+// Home/cozy is the site's identity now (2026-07 refocus): decor + cozy living
+// lead, printables-adjacent niches follow, and the retired niches (beauty,
+// fashion, dogs) sink to the bottom while their archive pages age out.
 const NICHE_META: Record<string, { label: string; blurb: string; order: number }> = {
-  fashion: { label: "Fashion & Outfit Ideas", blurb: "Trending looks, capsule wardrobes, and styling guides.", order: 0 },
-  beauty: { label: "Beauty & Nails", blurb: "Trending nail, hair, and beauty looks.", order: 1 },
-  "home decor": { label: "Home Decor & Styling", blurb: "Wall art, room ideas, and decor inspiration.", order: 2 },
-  home: { label: "Home & Cozy Living", blurb: "Small-space wins, cozy corners, and budget makeovers.", order: 3 },
-  wellness: { label: "Wellness & Self-Care", blurb: "Routines, planners, and calm-living ideas.", order: 4 },
-  "gifts & occasions": { label: "Gifts & Occasions", blurb: "Graduation, parties, and giftable finds.", order: 5 },
-  "aesthetic art & printables": { label: "Printables & Aesthetic Art", blurb: "Instant-download art and printables.", order: 6 },
+  "home decor": { label: "Home Decor & Styling", blurb: "Wall art, room ideas, and decor inspiration.", order: 0 },
+  home: { label: "Home & Cozy Living", blurb: "Small-space wins, cozy corners, and budget makeovers.", order: 1 },
+  "aesthetic art & printables": { label: "Printables & Aesthetic Art", blurb: "Instant-download art and printables.", order: 2 },
+  wellness: { label: "Wellness & Self-Care", blurb: "Routines, planners, and calm-living ideas.", order: 3 },
+  "gifts & occasions": { label: "Gifts & Occasions", blurb: "Graduation, parties, and giftable finds.", order: 4 },
+  beauty: { label: "Beauty & Nails", blurb: "Trending nail, hair, and beauty looks.", order: 80 },
+  fashion: { label: "Fashion & Outfit Ideas", blurb: "Trending looks, capsule wardrobes, and styling guides.", order: 85 },
   dogs: { label: "Dog Breed Guides", blurb: "Find the breed that actually fits your life.", order: 90 },
 };
 
@@ -106,14 +109,22 @@ export default function Home() {
             className="text-4xl font-black leading-tight tracking-tight text-stone-900 sm:text-5xl"
             style={{ fontFamily: "var(--font-display), Georgia, serif" }}
           >
-            Hand-picked finds,
-            <span className="text-emerald-700"> ranked daily.</span>
+            A cozier home,
+            <span className="text-emerald-700"> one idea at a time.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-stone-600">
-            Honest, beautifully simple guides — dog breeds, cozy home ideas, and
-            more. We rank the best so you can skip the guesswork.
+            Cozy home decor ideas, small-space wins, and printable wall art &
+            planners you can download in seconds.
           </p>
-          <div className="mt-7 flex flex-wrap justify-center gap-2">
+          <div className="mt-7 flex justify-center">
+            <Link
+              href="/shop"
+              className="rounded-full bg-emerald-700 px-6 py-3 text-base font-semibold text-white shadow-md transition hover:bg-emerald-800"
+            >
+              Shop Printables →
+            </Link>
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
             {sections.map(([niche]) => (
               <a
                 key={niche}

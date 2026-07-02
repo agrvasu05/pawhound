@@ -1,6 +1,6 @@
 /**
  * 2d-generate-trend-articles.js — publishes SEO listicle articles for the top
- * trending Pinterest keywords (fashion/beauty niches), in the same shape as the
+ * trending Pinterest keywords (home/cozy niche), in the same shape as the
  * existing articles so they render on /[slug] + the homepage and get Pexels
  * images via 3-fetch-images.js. Each item carries a `shop_query` so the affiliate
  * module can later drop in Awin product links (affiliate-ready, dormant for now).
@@ -16,7 +16,7 @@ const lib = require('../products/lib'); // chatJSON: Gemini 2.5 Pro primary, Ope
 const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
 const BRIEFS = path.join(process.cwd(), 'content', 'trend-briefs.json');
 const USED = path.join(process.cwd(), 'content', 'used-briefs.json');
-const ARTICLE_NICHES = ['home decor', 'beauty']; // focused niche — one clear account identity for Pinterest
+const ARTICLE_NICHES = ['home decor', 'home']; // focused niche — one clear account identity for Pinterest (beauty dropped 2026-07)
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 function loadBriefs() { try { return JSON.parse(fs.readFileSync(BRIEFS, 'utf-8')).briefs || []; } catch { return []; } }
@@ -50,7 +50,7 @@ const SCHEMA = {
 
 async function generate(brief) {
   const a = await lib.chatJSON({
-    system: 'You write genuinely useful, SEO-friendly listicle articles for a US Pinterest+blog audience (fashion, beauty, lifestyle). Each item is concrete and shoppable. Warm, specific, US English. No medical/financial guarantees, no celebrity endorsements.',
+    system: 'You write genuinely useful, SEO-friendly listicle articles for a US Pinterest+blog audience focused on home/cozy living (decor, organization, small spaces, home routines). Each item is concrete and shoppable. Warm, specific, US English. No medical/financial guarantees, no celebrity endorsements.',
     user: `Write the article "${brief.article_topic}" targeting the trending Pinterest search "${brief.keyword}". Use the keyword in the first sentence. Give 9-12 specific, shoppable items with a precise shop_query for each.`,
     schema: SCHEMA,
     temperature: 0.75,
@@ -72,7 +72,7 @@ async function generate(brief) {
   const pool = loadBriefs()
     .filter((b) => ARTICLE_NICHES.includes(b.niche) && !used.has(b.keyword))
     .sort((a, b) => (b.score || 0) - (a.score || 0));
-  if (!pool.length) { console.log('No unused fashion/beauty trend briefs available.'); return; }
+  if (!pool.length) { console.log('No unused home/cozy trend briefs available.'); return; }
 
   fs.mkdirSync(ARTICLES_DIR, { recursive: true });
   let made = 0, total = 0;

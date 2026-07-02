@@ -52,8 +52,8 @@ jobs:
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
 
-      # Trends only — keyword-driven fashion/beauty/home articles (affiliate-ready).
-      # (Dog + generic-home generators retired.)
+      # Trends only — keyword-driven home/cozy articles (affiliate-ready).
+      # (Dog, generic-home and beauty generators retired.)
       - name: Generate trending articles
         run: node scripts/2d-generate-trend-articles.js --count=6
         env:

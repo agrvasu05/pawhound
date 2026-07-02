@@ -16,7 +16,7 @@ export default function SiteFooter() {
             </span>
           </div>
           <p className="max-w-md text-sm text-stone-500">
-            Honest, hand-picked guides — dog breeds, cozy home ideas, and more.
+            Cozy home ideas and printable wall art & planners.
             New finds every day.
           </p>
           <nav className="mt-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-stone-500">

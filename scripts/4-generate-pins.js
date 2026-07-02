@@ -112,15 +112,58 @@ const TEMPLATES = [
       <div style="position:absolute;bottom:30px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.85);font-size:22px;letter-spacing:2px;">${BRAND}</div>
     </div>`;
   },
+
+  // ── Multi-image "N ideas" COLLAGE — the highest-save pin format for idea
+  // content (Tailwind 2025, see content/pinterest-playbook-2026.md). Uses 3-4
+  // DIFFERENT pick images so each pin is also a fresh image combination.
+  // Only rotated in when the article has ≥3 pick images (see main loop). ──
+  ({ headline, image, images = [] }) => {
+    const pics = (images.length >= 3 ? images : [image]).slice(0, 4);
+    const num = (String(headline).match(/\d+/) || [])[0];
+    const cells = pics
+      .map((src, i) =>
+        `<img src="${src}" style="width:100%;height:100%;object-fit:cover;display:block;${pics.length === 3 && i === 0 ? 'grid-column:1/3;' : ''}"/>`
+      )
+      .join('');
+    return `
+    <div style="width:1000px;height:1500px;font-family:'Inter',sans-serif;background:#fff;position:relative;display:flex;flex-direction:column;">
+      <div style="height:930px;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:8px;overflow:hidden;">${cells}</div>
+      ${num ? `<div style="position:absolute;top:40px;left:40px;background:#b05a3c;color:#fff;font-weight:900;font-size:54px;line-height:1;padding:22px 30px;border-radius:18px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.25);">${num}<div style="font-size:20px;font-weight:700;letter-spacing:3px;margin-top:6px;">IDEAS</div></div>` : ''}
+      <div style="flex:1;padding:48px 60px 0;box-sizing:border-box;text-align:center;">
+        <div style="font-size:62px;font-weight:900;line-height:1.08;color:#1f1f1f;">${headline}</div>
+        <div style="margin-top:24px;font-size:22px;color:#a09383;text-transform:uppercase;letter-spacing:3px;">${BRAND}</div>
+      </div>
+    </div>`;
+  },
+
+  // ── Magazine-stack collage: one hero + two stacked images, save cue on top,
+  // headline BELOW the photos, bottom 15% kept clear of critical text. ──
+  ({ headline, image, images = [] }) => {
+    const pics = (images.length >= 3 ? images : [image, image, image]).slice(0, 3);
+    return `
+    <div style="width:1000px;height:1500px;font-family:'Georgia',serif;background:#f6f0e6;position:relative;box-sizing:border-box;padding:44px;">
+      <div style="display:flex;gap:14px;height:820px;">
+        <img src="${pics[0]}" style="flex:1.6;height:100%;object-fit:cover;min-width:0;"/>
+        <div style="flex:1;display:flex;flex-direction:column;gap:14px;min-width:0;">
+          ${pics.slice(1).map((s) => `<img src="${s}" style="flex:1;min-height:0;width:100%;object-fit:cover;"/>`).join('')}
+        </div>
+      </div>
+      <div style="margin-top:44px;text-align:center;">
+        <div style="display:inline-block;background:#2d4a3e;color:#fff;font-size:24px;padding:12px 30px;border-radius:40px;letter-spacing:2px;">📌 SAVE FOR LATER</div>
+        <div style="margin-top:26px;font-size:64px;font-weight:bold;line-height:1.06;color:#33271c;">${headline}</div>
+        <div style="margin-top:22px;font-size:22px;color:#a08a6e;letter-spacing:3px;">${BRAND}</div>
+      </div>
+    </div>`;
+  },
 ];
 
-async function generatePin({ headline, image, output, templateIdx }) {
-  // Embed image as base64 to avoid file:// protocol issues
-  const imageBuffer = fs.readFileSync(image);
-  const base64 = imageBuffer.toString('base64');
-  const dataUrl = `data:image/jpeg;base64,${base64}`;
+async function generatePin({ headline, images, output, templateIdx }) {
+  // Embed images as base64 to avoid file:// protocol issues
+  const dataUrls = images.map(
+    (f) => `data:image/jpeg;base64,${fs.readFileSync(f).toString('base64')}`
+  );
 
-  const html = `<html><head></head><body style="margin:0;">${TEMPLATES[templateIdx]({ headline, image: dataUrl })}</body></html>`;
+  const html = `<html><head></head><body style="margin:0;">${TEMPLATES[templateIdx]({ headline, image: dataUrls[0], images: dataUrls })}</body></html>`;
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
   await page.setViewport({ width: 1000, height: 1500, deviceScaleFactor: 1 });
@@ -135,7 +178,11 @@ async function generatePin({ headline, image, output, templateIdx }) {
     process.exit(1);
   }
 
-  const files = fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith('.json'));
+  // Optional --only=<substr> filter (same convention as 5-post-pins.js).
+  const onlyArg = process.argv.find((a) => a.startsWith('--only='))?.split('=')[1];
+  const files = fs.readdirSync(ARTICLES_DIR)
+    .filter((f) => f.endsWith('.json'))
+    .filter((f) => !onlyArg || f.includes(onlyArg));
   console.log(`Generating pins for ${files.length} article(s)...`);
   let total = 0;
 
@@ -144,31 +191,33 @@ async function generatePin({ headline, image, output, templateIdx }) {
     const pinDir = path.join(PINS_DIR, article.topic_slug);
     fs.mkdirSync(pinDir, { recursive: true });
 
-    const topBreed = article.picks.find((p) => p.rank === 1);
-    if (!topBreed) continue;
-
-    const breedImgPath = path.resolve(
-      process.cwd(),
-      'public',
-      'images',
-      'breeds',
-      breedToSlug(topBreed.breed),
-      '1.jpg'
-    );
-
-    if (!fs.existsSync(breedImgPath)) {
-      console.warn(`  Skipping ${article.topic_slug}: missing image for ${topBreed.breed}`);
+    // Collect up to 4 pick images (rank order). The top pick's image feeds the
+    // single-image templates; 3+ images unlock the save-optimized collage
+    // templates (see pinterest-playbook-2026.md rule 1).
+    const imgPaths = [];
+    for (const p of [...article.picks].sort((a, b) => a.rank - b.rank)) {
+      const ip = path.resolve(process.cwd(), 'public', 'images', 'breeds', breedToSlug(p.breed), '1.jpg');
+      if (fs.existsSync(ip)) imgPaths.push(ip);
+      if (imgPaths.length >= 4) break;
+    }
+    if (!imgPaths.length) {
+      console.warn(`  Skipping ${article.topic_slug}: no pick images found`);
       continue;
     }
+    // Pins post in pin-1..N order (one per article per ~week), so lead with the
+    // collage templates — the highest-save format — then rotate the rest.
+    const order = imgPaths.length >= 3
+      ? [8, 9, 6, 0, 7, 1, 2, 3, 4, 5]
+      : [6, 0, 7, 1, 2, 3, 4, 5];
 
     for (let i = 0; i < article.pin_headlines.length; i++) {
       const output = path.join(pinDir, `pin-${i + 1}.png`);
       if (fs.existsSync(output)) continue;
       await generatePin({
         headline: article.pin_headlines[i],
-        image: breedImgPath,
+        images: imgPaths,
         output,
-        templateIdx: i % TEMPLATES.length,
+        templateIdx: order[i % order.length],
       });
       total++;
       process.stdout.write(`\r${total} pins generated`);

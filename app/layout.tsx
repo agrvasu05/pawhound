@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com"
   ),
   title: {
-    default: "Value Finds Daily — Dog Breed Guides",
+    default: "Value Finds Daily — Cozy Home Ideas & Printables",
     template: "%s | Value Finds Daily",
   },
   description:
-    "Honest dog breed guides for every kind of household. Find the breed that fits your actual life.",
+    "Cozy home decor ideas, small-space organization guides, and printable wall art & planners you can download instantly.",
   openGraph: { type: "website", siteName: "Value Finds Daily" },
   twitter: { card: "summary_large_image" },
   other: {
