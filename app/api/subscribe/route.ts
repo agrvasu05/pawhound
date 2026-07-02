@@ -26,7 +26,9 @@ export async function POST(request: Request) {
   const key = process.env.MAILERLITE_API_KEY;
   if (key) {
     try {
-      const payload: Record<string, unknown> = { email, fields: { source } };
+      // "source" is a reserved field name in MailerLite — we store the opt-in
+      // origin in the custom field "signup_source" (created via API 2026-07-02).
+      const payload: Record<string, unknown> = { email, fields: { signup_source: source } };
       const group = process.env.MAILERLITE_GROUP_ID;
       if (group) payload.groups = [group];
       const res = await fetch("https://connect.mailerlite.com/api/subscribers", {
