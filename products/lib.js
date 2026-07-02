@@ -218,7 +218,7 @@ async function renderShopPin(spec, outPath) {
          <div style="font-size:46px;font-weight:bold;line-height:1.12;color:#33271c;">${esc(spec.headline)}</div>
          <div style="margin-top:12px;font-size:24px;color:#8a7257;">${esc(spec.subhead)}
            <span style="display:inline-block;margin-left:14px;background:${accent};color:#fff;font-size:22px;
-                        padding:7px 20px;border-radius:26px;vertical-align:middle;">Printable · $${spec.price}</span>
+                        padding:7px 20px;border-radius:26px;vertical-align:middle;">${spec.price === 0 ? 'FREE Printable' : `Printable · $${spec.price}`}</span>
          </div>
        </div>
      </div></body></html>`;
@@ -251,7 +251,7 @@ async function renderShopPin(spec, outPath) {
        ${thumbs}
        <div style="margin-top:26px;display:inline-flex;align-items:center;gap:16px;background:${accent};color:#fff;
                    padding:18px 44px;border-radius:50px;">
-         <span style="font-size:36px;font-weight:bold;">Tap to shop · $${spec.price} →</span>
+         <span style="font-size:36px;font-weight:bold;">${spec.price === 0 ? 'FREE download →' : `Tap to shop · $${spec.price} →`}</span>
        </div>
      </div>
    </div></body></html>`;
@@ -364,7 +364,9 @@ function persistShopProduct({ slug, type, listing, gumroadUrl, srcImages }) {
 
 // GPT: distinct pin angles for one product (per the strategy doc: 1 product -> many fresh pins).
 // `keyword` = the trending Pinterest search term to weave into every pin for SEO.
-async function generateVariantSpecs(title, type, n = 6, keyword = '') {
+// `free` = lead magnet: pins lead with "free printable" (itself a high-volume
+// Pinterest search) instead of a price angle.
+async function generateVariantSpecs(title, type, n = 6, keyword = '', free = false) {
   const schema = { name: 'pin_variants', strict: true, schema: { type: 'object', additionalProperties: false, required: ['variants'],
     properties: { variants: { type: 'array', items: { type: 'object', additionalProperties: false,
       required: ['headline', 'subhead', 'pin_title', 'pin_description', 'alt_text'], properties: {
@@ -377,8 +379,11 @@ async function generateVariantSpecs(title, type, n = 6, keyword = '') {
   const kwLine = keyword
     ? ` Target Pinterest search keyword: "${keyword}" — put it (or a close variant) in the FIRST 3-5 words of every pin_title and within the first 50 characters of every pin_description for SEO.`
     : '';
+  const freeLine = free
+    ? ` This product is FREE (a lead magnet). Lead every pin_title with "Free printable" or "Free" + the keyword — "free printable" is itself a high-volume Pinterest search — and make the CTA about the free instant download, never a price.`
+    : '';
   const { variants } = await chatJSON({
-    system: `You write high-CTR, SEO-optimized Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. Pinterest is a search engine — lead with the searchable keyword. US English. NO hashtags anywhere (dead as a ranking factor; spend the characters on keywords).${kwLine}`,
+    system: `You write high-CTR, SEO-optimized Pinterest pin variations. Each MUST use a different angle: core benefit, target audience, occasion/gift, what's-included, aesthetic/style, urgency/seasonal. Pinterest is a search engine — lead with the searchable keyword. US English. NO hashtags anywhere (dead as a ranking factor; spend the characters on keywords).${kwLine}${freeLine}`,
     user: `Product: "${title}" (a printable ${type}). Give ${n} distinct pin-angle variations.`,
     schema, temperature: 0.9,
   });
@@ -407,14 +412,15 @@ function kwBoardDesc(name) {
   return `${name} — curated finds, printables and ideas for inspiration. Tap any pin for instant downloads and the full details.`.slice(0, 480);
 }
 
-// Enqueue N pin variants that link to the product's OWNED landing page (/shop/<slug>).
-async function enqueueProductVariants({ slug, type, title, price, board, boards = null, keyword = '' }) {
+// Enqueue N pin variants that link to the product's OWNED landing page
+// (/shop/<slug>, or `linkPath` when the landing lives elsewhere, e.g. /freebie).
+async function enqueueProductVariants({ slug, type, title, price, board, boards = null, keyword = '', linkPath = null }) {
   // 3 variants/product. Each variant is pinned to a DIFFERENT keyword-named board
   // (from the trend brief) so the same URL reaches several keyword audiences over
   // the weeks it drips out. Falls back to the generator's single niche board when
   // the brief has no keyword boards.
-  const specs = await generateVariantSpecs(title, type, 3, keyword);
-  const link = `${SITE_URL}/shop/${slug}`;
+  const specs = await generateVariantSpecs(title, type, 3, keyword, price === 0);
+  const link = `${SITE_URL}${linkPath || `/shop/${slug}`}`;
   const boardList = (boards && boards.length)
     ? boards.filter(Boolean).map((name) => ({ name: name.slice(0, 50), description: kwBoardDesc(name) }))
     : [board];
@@ -497,7 +503,7 @@ module.exports = {
   htmlToPng, htmlToPdf, dataUrl, zip, renderShopPin, esc,
   gumroadCreateAndPublish,
   pinRefresh, pinGetOrCreateBoard, pinPost,
-  persistShopProduct, enqueueProductVariants, postQueue, loadQueue,
+  persistShopProduct, enqueueProductVariants, postQueue, loadQueue, kwBoardDesc,
   pickBrief, markBriefUsed, loadBriefs,
   PUBLIC_SHOP, SHOP_DIR, PIN_QUEUE, SITE_URL,
 };

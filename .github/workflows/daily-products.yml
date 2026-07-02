@@ -63,6 +63,15 @@ jobs:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           HOME: /home/runner
 
+      # 1b) Keep "free printable" funnel pins flowing (playbook rule 9). Self-
+      # limiting: only enqueues when no freebie variants are pending; postQueue's
+      # 7-day spacing drips them ~1/week. Most days this is a no-op.
+      - name: Queue freebie funnel pins
+        run: node products/freebie-pins.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
+
       # 2) Deploy landing pages + queue so links resolve + Rich Pins enrich long
       # before the evening posting run (post-pins.yml). No posting happens here.
       - name: Commit landing pages + queue

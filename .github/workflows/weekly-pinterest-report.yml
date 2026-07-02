@@ -23,10 +23,21 @@ jobs:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+
+      # Kill/scale creative feedback loop (playbook rule 10): grade each pin
+      # template on measured save/outbound rates; 4-generate-pins.js reads the
+      # verdicts and drops killed templates / fronts scaled ones.
+      - name: Grade pin templates (kill/scale loop)
+        run: node scripts/6-template-feedback.js
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+
       - name: Commit report
         run: |
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
-          git add content/pinterest-report.md
-          git diff --cached --quiet || git commit -m "Weekly Pinterest report"
+          git add content/pinterest-report.md content/template-performance.json
+          git diff --cached --quiet || git commit -m "Weekly Pinterest report + template grades"
           git push

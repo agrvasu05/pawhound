@@ -1,0 +1,14 @@
+{
+ "slug": "freebie",
+ "type": "planner",
+ "title": "The Cozy Home Reset \u2014 Free 7-Day Printable Checklist",
+ "description_html": "<p>A free 7-day checklist to a warmer, calmer home in 15 minutes a day.</p>",
+ "price": 0,
+ "currency": "usd",
+ "gumroad_url": "",
+ "images": [
+  "cover.png"
+ ],
+ "cover": "cover.png",
+ "created_at": "2026-07-02T00:00:00.000Z"
+}

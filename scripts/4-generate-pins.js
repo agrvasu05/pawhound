@@ -6,6 +6,23 @@ const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
 const PINS_DIR = path.join(process.cwd(), 'public', 'pins');
 const BRAND = 'valuefindsdaily.com';
 
+// Stable names for each template, index-aligned with TEMPLATES below. Written
+// to public/pins/<slug>/manifest.json per generated pin so the weekly feedback
+// loop (scripts/6-template-feedback.js) can attribute saves/clicks to a
+// template and kill/scale accordingly (playbook rule 10).
+const TEMPLATE_KEYS = [
+  'color-block-hero',   // 0
+  'dark-editorial',     // 1
+  'serif-split',        // 2
+  'full-bleed-overlay', // 3
+  'polaroid',           // 4
+  'list-badge',         // 5
+  'save-ribbon',        // 6
+  'bold-color',         // 7
+  'collage-grid',       // 8
+  'collage-stack',      // 9
+];
+
 function breedToSlug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -172,6 +189,23 @@ async function generatePin({ headline, images, output, templateIdx }) {
   await browser.close();
 }
 
+// Measured template verdicts from the weekly feedback loop
+// (content/template-performance.json, written by scripts/6-template-feedback.js):
+// drop 'kill' templates from the rotation, move 'scale' templates to the front.
+// Missing/empty file = no reordering (cold start).
+function applyVerdicts(order) {
+  let verdicts = {};
+  try {
+    verdicts = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), 'content', 'template-performance.json'), 'utf-8')
+    ).templates || {};
+  } catch { return order; }
+  const v = (i) => (verdicts[TEMPLATE_KEYS[i]] || {}).verdict;
+  const kept = order.filter((i) => v(i) !== 'kill');
+  const base = kept.length ? kept : order; // never kill everything
+  return [...base.filter((i) => v(i) === 'scale'), ...base.filter((i) => v(i) !== 'scale')];
+}
+
 (async () => {
   if (!fs.existsSync(ARTICLES_DIR)) {
     console.error('No articles found. Run `npm run generate` first.');
@@ -206,19 +240,28 @@ async function generatePin({ headline, images, output, templateIdx }) {
     }
     // Pins post in pin-1..N order (one per article per ~week), so lead with the
     // collage templates — the highest-save format — then rotate the rest.
-    const order = imgPaths.length >= 3
-      ? [8, 9, 6, 0, 7, 1, 2, 3, 4, 5]
-      : [6, 0, 7, 1, 2, 3, 4, 5];
+    // The weekly feedback loop then reshuffles: measured 'kill' templates are
+    // dropped and 'scale' templates move to the front (playbook rule 10).
+    const order = applyVerdicts(
+      imgPaths.length >= 3 ? [8, 9, 6, 0, 7, 1, 2, 3, 4, 5] : [6, 0, 7, 1, 2, 3, 4, 5]
+    );
+
+    const manifestPath = path.join(pinDir, 'manifest.json');
+    let manifest = {};
+    try { manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8')); } catch { /* first run */ }
 
     for (let i = 0; i < article.pin_headlines.length; i++) {
       const output = path.join(pinDir, `pin-${i + 1}.png`);
       if (fs.existsSync(output)) continue;
+      const templateIdx = order[i % order.length];
       await generatePin({
         headline: article.pin_headlines[i],
         images: imgPaths,
         output,
-        templateIdx: order[i % order.length],
+        templateIdx,
       });
+      manifest[`pin-${i + 1}.png`] = TEMPLATE_KEYS[templateIdx];
+      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
       total++;
       process.stdout.write(`\r${total} pins generated`);
     }

@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -43,6 +43,9 @@ export default async function ShopProductPage({
   const { slug } = await params;
   const p = getShopProduct(slug);
   if (!p) notFound();
+  // The $0 freebie record exists only for the pin pipeline — its real landing
+  // page is /freebie (email opt-in funnel), so send any direct visits there.
+  if (!p.price) redirect("/freebie");
 
   const jsonLd = {
     "@context": "https://schema.org",

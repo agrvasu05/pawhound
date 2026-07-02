@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-02T09:12:31.641Z",
+  "window_days": 90,
+  "thresholds": {
+    "min_impressions": 300,
+    "kill_save_rate": 0.002,
+    "kill_outbound_rate": 0.005,
+    "scale_save_rate": 0.005,
+    "scale_outbound_rate": 0.01
+  },
+  "templates": {}
+}

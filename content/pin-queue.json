@@ -1702,5 +1702,59 @@
     "accent": "#9c6b4f",
     "status": "pending",
     "created_at": "2026-07-01T17:26:59.866Z"
+  },
+  {
+    "slug": "freebie",
+    "link": "https://valuefindsdaily.com/freebie",
+    "board": {
+      "name": "Free Printables",
+      "description": "Free Printables — curated finds, printables and ideas for inspiration. Tap any pin for instant downloads and the full details."
+    },
+    "price": 0,
+    "keyword": "free printable checklist",
+    "headline": "Free Printable List",
+    "subhead": "7 Days to a Cozy Home",
+    "title": "Free printable checklist to reset your home in just 7 days",
+    "description": "Grab your free printable checklist to transform your space into a cozy sanctuary. This 7-day home reset planner helps you declutter, organize, and refresh your rooms without the overwhelm. Perfect for a quick weekend project or daily bite-sized tasks. Click through for your free instant download and start organizing today!",
+    "alt": "A printed free printable checklist resting on a wooden desk next to a warm cup of coffee and a small potted plant, showing the Cozy Home Reset 7-day planner.",
+    "accent": "#b05a3c",
+    "status": "pending",
+    "created_at": "2026-07-02T09:13:22.593Z"
+  },
+  {
+    "slug": "freebie",
+    "link": "https://valuefindsdaily.com/freebie",
+    "board": {
+      "name": "Free Printable Planners & Checklists",
+      "description": "Free Printable Planners & Checklists — curated finds, printables and ideas for inspiration. Tap any pin for instant downloads and the full details."
+    },
+    "price": 0,
+    "keyword": "free printable checklist",
+    "headline": "Free Home Checklist",
+    "subhead": "Free 7-Day Reset Planner",
+    "title": "Free printable checklist planner for a complete cozy home reset",
+    "description": "Looking for a free printable checklist to tackle your home chores? This beautiful 7-day cozy home reset planner includes daily tasks to deep clean, declutter, and style your space. Whether you love aesthetic printables or need a step-by-step cleaning guide, this template is for you. Get your free instant download now!",
+    "alt": "A beautifully styled aesthetic workspace featuring the free printable checklist on a clipboard. Soft sunlight highlights the Cozy Home Reset daily tasks, accompanied by a beige sweater and a gold pen.",
+    "accent": "#a8503a",
+    "status": "pending",
+    "created_at": "2026-07-02T09:13:22.594Z"
+  },
+  {
+    "slug": "freebie",
+    "link": "https://valuefindsdaily.com/freebie",
+    "board": {
+      "name": "Cozy Home Decor Ideas",
+      "description": "Cozy Home Decor Ideas — curated finds, printables and ideas for inspiration. Tap any pin for instant downloads and the full details."
+    },
+    "price": 0,
+    "keyword": "free printable checklist",
+    "headline": "Free Reset Checklist",
+    "subhead": "Instantly Refresh Your Space",
+    "title": "Free printable checklist for your ultimate seasonal home reset",
+    "description": "Download this free printable checklist to instantly refresh your space for the new season. Stop putting off your deep cleaning and use this simple 7-day home reset planner to organize every room fast. Ready to enjoy a calm and tidy house? Grab your free instant download right here and check off that first box today.",
+    "alt": "Flat lay of a free printable checklist titled Cozy Home Reset surrounded by seasonal decor, a lit candle, and cleaning supplies. A hand is checking off the first day on the 7-day planner.",
+    "accent": "#9c6b4f",
+    "status": "pending",
+    "created_at": "2026-07-02T09:13:22.594Z"
   }
 ]

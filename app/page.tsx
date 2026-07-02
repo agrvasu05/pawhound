@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles, getBreedImage, type Article } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
+import FreebieBanner from "@/components/FreebieBanner";
 import { LogoMark } from "@/components/Logo";
 
 export const metadata = {
@@ -139,6 +140,7 @@ export default function Home() {
       </section>
 
       <div className="mx-auto max-w-5xl px-4">
+        <FreebieBanner />
         <AdSlot type="native" className="my-8" />
 
         {articles.length === 0 ? (

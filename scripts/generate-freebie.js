@@ -102,6 +102,16 @@ h2{font-size:24pt;color:#2c2117}
   await page.setContent(html, { waitUntil: 'load' });
   await new Promise((r) => setTimeout(r, 300));
   await page.pdf({ path: OUT, format: 'Letter', printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
+
+  // Cover PNG for the pin pipeline (products/freebie-pins.js): screenshot the
+  // cover page so freebie pins can use the same scene-mockup renderer as shop pins.
+  const coverDir = path.join(process.cwd(), 'public', 'shop-assets', 'freebie');
+  fs.mkdirSync(coverDir, { recursive: true });
+  await page.setViewport({ width: 850, height: 1100, deviceScaleFactor: 1 });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: path.join(coverDir, 'cover.png'), clip: { x: 0, y: 0, width: 816, height: 1056 } });
+
   await browser.close();
   console.log(`✓ freebie → ${OUT} (${(fs.statSync(OUT).size / 1024).toFixed(0)} KB)`);
+  console.log(`✓ cover  → ${path.join(coverDir, 'cover.png')}`);
 })();

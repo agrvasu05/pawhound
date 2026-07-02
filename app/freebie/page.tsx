@@ -1,4 +1,5 @@
 import SubscribeForm from "@/components/SubscribeForm";
+import { getTripwireProduct, shopAsset } from "@/lib/shop";
 
 export const metadata = {
   title: "Free Printable: The Cozy Home Reset (7-Day Checklist)",
@@ -13,6 +14,20 @@ export const metadata = {
 };
 
 export default function FreebiePage() {
+  // The $4–6 one-time offer shown right after opt-in (playbook rule 9). The
+  // optional NEXT_PUBLIC_TRIPWIRE_CODE appends a Gumroad offer code (create it
+  // once in the Gumroad dashboard) so the tripwire can carry a real discount.
+  const tw = getTripwireProduct();
+  const code = process.env.NEXT_PUBLIC_TRIPWIRE_CODE;
+  const offer = tw
+    ? {
+        title: tw.title,
+        price: tw.price,
+        url: code ? `${tw.gumroad_url}/${code}` : tw.gumroad_url,
+        image: tw.cover ? shopAsset(tw.slug, tw.cover) : null,
+      }
+    : null;
+
   return (
     <main className="mx-auto max-w-2xl px-4 py-12">
       <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#b05a3c]">Free Printable</p>
@@ -34,7 +49,7 @@ export default function FreebiePage() {
         <p className="mb-4 text-center font-medium text-stone-800">
           Enter your email and we&apos;ll send it straight over 👇
         </p>
-        <SubscribeForm source="freebie-page" />
+        <SubscribeForm source="freebie-page" offer={offer} />
         <p className="mt-4 text-center text-xs text-stone-400">
           Free forever. We&apos;ll also send the occasional cozy-home idea — unsubscribe anytime.
         </p>
