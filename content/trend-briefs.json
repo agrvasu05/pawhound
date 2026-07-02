@@ -1,946 +1,912 @@
 {
-  "generated_at": "2026-07-01T17:24:55.003Z",
+  "generated_at": "2026-07-02T16:01:44.641Z",
   "region": "US",
   "candidates": [
     {
-      "keyword": "بافت مو",
-      "niche": "beauty",
-      "pop": 93,
-      "mom": 1500,
-      "yoy": -50,
-      "rising": true,
-      "score": 203
-    },
-    {
-      "keyword": "uncanny makeup",
-      "niche": "beauty",
-      "pop": 93,
-      "mom": 800,
-      "yoy": 500,
-      "rising": true,
-      "score": 203
-    },
-    {
-      "keyword": "مدل ناخن تابستونی",
-      "niche": "beauty",
-      "pop": 92,
-      "mom": 2000,
-      "yoy": 80,
-      "rising": true,
-      "score": 202
-    },
-    {
-      "keyword": "uncanny valley makeup",
-      "niche": "beauty",
+      "keyword": "badazel ideas",
+      "niche": "home",
       "pop": 87,
-      "mom": 900,
-      "yoy": 500,
+      "mom": 1500,
+      "yoy": 10001,
       "rising": true,
       "score": 197
     },
     {
-      "keyword": "pride nails",
-      "niche": "beauty",
-      "pop": 84,
+      "keyword": "summer art for toddlers",
+      "niche": "home",
+      "pop": 82,
       "mom": 300,
-      "yoy": 1,
+      "yoy": 0,
       "rising": false,
-      "score": 184
+      "score": 192
+    },
+    {
+      "keyword": "ways to cut a t shirt",
+      "niche": "home",
+      "pop": 80,
+      "mom": 800,
+      "yoy": 1500,
+      "rising": true,
+      "score": 190
+    },
+    {
+      "keyword": "diy pride shirt",
+      "niche": "home",
+      "pop": 78,
+      "mom": 1500,
+      "yoy": 20,
+      "rising": true,
+      "score": 188
     },
     {
       "keyword": "2000s teen bedroom",
       "niche": "home decor",
       "pop": 71,
-      "mom": 600,
+      "mom": 400,
       "yoy": 40,
       "rising": true,
       "score": 181
     },
     {
-      "keyword": "4th of july nail art",
-      "niche": "beauty",
-      "pop": 66,
-      "mom": 1500,
-      "yoy": 400,
+      "keyword": "father’s day art",
+      "niche": "home",
+      "pop": 61,
+      "mom": 900,
+      "yoy": -10,
       "rising": true,
-      "score": 176
+      "score": 171
+    },
+    {
+      "keyword": "things to make for father’s day",
+      "niche": "home",
+      "pop": 57,
+      "mom": 1000,
+      "yoy": 200,
+      "rising": true,
+      "score": 167
+    },
+    {
+      "keyword": "superhero crafts for kids",
+      "niche": "home",
+      "pop": 91,
+      "mom": 200,
+      "yoy": 50,
+      "rising": false,
+      "score": 167
     },
     {
       "keyword": "indoor house plants aesthetic",
       "niche": "home decor",
-      "pop": 86,
+      "pop": 90,
       "mom": 200,
       "yoy": 10001,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "father’s day gifts ideas",
+      "niche": "home",
+      "pop": 64,
+      "mom": 1500,
+      "yoy": 4000,
+      "rising": false,
+      "score": 164
+    },
+    {
+      "keyword": "fathers day gifts from",
+      "niche": "home",
+      "pop": 53,
+      "mom": 700,
+      "yoy": 8500,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "cute fathers day ideas",
+      "niche": "home",
+      "pop": 52,
+      "mom": 900,
+      "yoy": 100,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "july nails ideas",
-      "niche": "beauty",
-      "pop": 51,
+      "keyword": "father’s day cards diy",
+      "niche": "home",
+      "pop": 50,
+      "mom": 2500,
+      "yoy": 100,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "father's day card ideas",
+      "niche": "home",
+      "pop": 50,
       "mom": 2000,
+      "yoy": 70,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "father’s day",
+      "niche": "home",
+      "pop": 48,
+      "mom": 800,
       "yoy": 30,
       "rising": true,
-      "score": 161
+      "score": 158
     },
     {
-      "keyword": "makeup routine",
-      "niche": "beauty",
-      "pop": 61,
-      "mom": 300,
+      "keyword": "father’s day gifts",
+      "niche": "home",
+      "pop": 58,
+      "mom": 600,
+      "yoy": 10001,
+      "rising": false,
+      "score": 158
+    },
+    {
+      "keyword": "toy story classroom theme",
+      "niche": "home",
+      "pop": 81,
+      "mom": 200,
       "yoy": 100,
       "rising": false,
-      "score": 161
+      "score": 158
     },
     {
-      "keyword": "forth of july nails",
-      "niche": "beauty",
-      "pop": 49,
+      "keyword": "last minute fathers day gifts diy",
+      "niche": "home",
+      "pop": 47,
       "mom": 1500,
-      "yoy": 2000,
+      "yoy": 200,
       "rising": true,
-      "score": 159
+      "score": 157
     },
     {
-      "keyword": "simple patriotic nails",
-      "niche": "beauty",
-      "pop": 48,
-      "mom": 700,
-      "yoy": 300,
+      "keyword": "diy father's day cards",
+      "niche": "home",
+      "pop": 47,
+      "mom": 1500,
+      "yoy": 20,
       "rising": true,
-      "score": 158
+      "score": 157
     },
     {
-      "keyword": "americana nails",
-      "niche": "beauty",
-      "pop": 48,
-      "mom": 700,
-      "yoy": 300,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "patriotic nails",
-      "niche": "beauty",
+      "keyword": "father’s day gift",
+      "niche": "home",
       "pop": 57,
-      "mom": 300,
+      "mom": 700,
       "yoy": 100,
       "rising": false,
       "score": 157
     },
     {
-      "keyword": "western fourth of july nails",
-      "niche": "beauty",
-      "pop": 44,
+      "keyword": "homemade fathers day cards",
+      "niche": "home",
+      "pop": 45,
       "mom": 2000,
-      "yoy": 300,
+      "yoy": -3,
       "rising": true,
-      "score": 154
+      "score": 155
     },
     {
-      "keyword": "mexico makeup",
-      "niche": "beauty",
+      "keyword": "father’s day cards handmade",
+      "niche": "home",
       "pop": 44,
-      "mom": 800,
-      "yoy": 800,
+      "mom": 2500,
+      "yoy": 1000,
       "rising": true,
       "score": 154
     },
     {
-      "keyword": "4th of july nail inspo",
-      "niche": "beauty",
+      "keyword": "diy father’s day gifts",
+      "niche": "home",
       "pop": 44,
-      "mom": 800,
-      "yoy": 100,
+      "mom": 1500,
+      "yoy": 50,
       "rising": true,
       "score": 154
     },
     {
-      "keyword": "fourth of july nails simple",
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 2000,
+      "keyword": "father's day cards handmade",
+      "niche": "home",
+      "pop": 44,
+      "mom": 1000,
+      "yoy": 20,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "father's day card",
+      "niche": "home",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": 50,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "father's day cards",
+      "niche": "home",
+      "pop": 43,
+      "mom": 1000,
+      "yoy": -10,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "father day",
+      "niche": "home",
+      "pop": 43,
+      "mom": 800,
+      "yoy": 10,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "easy fourth of july crafts for kids",
+      "niche": "home",
+      "pop": 43,
+      "mom": 300,
       "yoy": 200,
-      "rising": true,
-      "score": 152
+      "rising": false,
+      "score": 153
     },
     {
-      "keyword": "july nails",
-      "niche": "beauty",
+      "keyword": "homemade father’s day card",
+      "niche": "home",
       "pop": 42,
-      "mom": 1500,
-      "yoy": 80,
+      "mom": 4500,
+      "yoy": 90,
       "rising": true,
       "score": 152
     },
     {
-      "keyword": "fun 4th of july nails",
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 1500,
-      "yoy": 600,
-      "rising": true,
+      "keyword": "fathers day crafts for kids",
+      "niche": "home",
+      "pop": 52,
+      "mom": 600,
+      "yoy": 500,
+      "rising": false,
       "score": 152
     },
     {
-      "keyword": "vintage americana nails",
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 700,
-      "yoy": 700,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "july 4th nails",
-      "niche": "beauty",
+      "keyword": "diy father’s day card",
+      "niche": "home",
       "pop": 41,
-      "mom": 2000,
-      "yoy": 80,
+      "mom": 5000,
+      "yoy": 40,
       "rising": true,
       "score": 151
     },
     {
-      "keyword": "subtle fourth of july nails",
-      "niche": "beauty",
+      "keyword": "father’s day crafts from kids",
+      "niche": "home",
+      "pop": 51,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": false,
+      "score": 151
+    },
+    {
+      "keyword": "4th of july parade float ideas",
+      "niche": "home",
+      "pop": 74,
+      "mom": 200,
+      "yoy": 90,
+      "rising": false,
+      "score": 151
+    },
+    {
+      "keyword": "fathers day card ideas diy",
+      "niche": "home",
       "pop": 40,
-      "mom": 1500,
-      "yoy": 200,
+      "mom": 2500,
+      "yoy": 100,
       "rising": true,
       "score": 150
     },
     {
-      "keyword": "independence day nails",
-      "niche": "beauty",
-      "pop": 38,
-      "mom": 1000,
-      "yoy": 100,
-      "rising": true,
-      "score": 148
-    },
-    {
-      "keyword": "short 4th of july nails",
-      "niche": "beauty",
-      "pop": 36,
-      "mom": 2500,
-      "yoy": 200,
-      "rising": true,
-      "score": 146
-    },
-    {
-      "keyword": "fourth of july nail ideas",
-      "niche": "beauty",
-      "pop": 35,
-      "mom": 1000,
-      "yoy": 300,
-      "rising": true,
-      "score": 145
-    },
-    {
-      "keyword": "forth of july nail designs",
-      "niche": "beauty",
-      "pop": 35,
-      "mom": 700,
-      "yoy": 10001,
-      "rising": true,
-      "score": 145
-    },
-    {
-      "keyword": "dorm bed",
-      "niche": "home decor",
-      "pop": 34,
-      "mom": 400,
-      "yoy": 100,
-      "rising": true,
-      "score": 144
-    },
-    {
-      "keyword": "cute 4th of july nails",
-      "niche": "beauty",
-      "pop": 34,
-      "mom": 1500,
-      "yoy": -5,
-      "rising": true,
-      "score": 144
-    },
-    {
-      "keyword": "mexican ribbon hair",
-      "niche": "beauty",
-      "pop": 34,
-      "mom": 600,
-      "yoy": 900,
-      "rising": true,
-      "score": 144
-    },
-    {
-      "keyword": "simple 4th of july nails",
-      "niche": "beauty",
-      "pop": 33,
-      "mom": 2500,
-      "yoy": 100,
-      "rising": true,
-      "score": 143
-    },
-    {
-      "keyword": "fourth of july nail inspo",
-      "niche": "beauty",
-      "pop": 32,
-      "mom": 1500,
-      "yoy": 90,
-      "rising": true,
-      "score": 142
-    },
-    {
-      "keyword": "4th of july nails simple",
-      "niche": "beauty",
-      "pop": 31,
-      "mom": 4500,
-      "yoy": 90,
-      "rising": true,
-      "score": 141
-    },
-    {
-      "keyword": "kitchen decor ideas",
-      "niche": "home decor",
-      "pop": 72,
-      "mom": 200,
-      "yoy": 300,
-      "rising": false,
-      "score": 139
-    },
-    {
-      "keyword": "4th of july nails french tip",
-      "niche": "beauty",
-      "pop": 29,
-      "mom": 6500,
-      "yoy": 30,
-      "rising": true,
-      "score": 139
-    },
-    {
-      "keyword": "firework nails",
-      "niche": "beauty",
-      "pop": 28,
-      "mom": 1500,
-      "yoy": 50,
-      "rising": true,
-      "score": 138
-    },
-    {
-      "keyword": "subtle 4th of july nails",
-      "niche": "beauty",
-      "pop": 27,
-      "mom": 2500,
-      "yoy": -20,
-      "rising": true,
-      "score": 137
-    },
-    {
-      "keyword": "nail ideas 4th of july",
-      "niche": "beauty",
-      "pop": 27,
+      "keyword": "father day cards",
+      "niche": "home",
+      "pop": 40,
       "mom": 2000,
-      "yoy": 40,
+      "yoy": -40,
       "rising": true,
-      "score": 137
+      "score": 150
     },
     {
-      "keyword": "july 4 nails",
-      "niche": "beauty",
-      "pop": 27,
-      "mom": 1000,
-      "yoy": -20,
+      "keyword": "diy gifts for dad from daughter",
+      "niche": "home",
+      "pop": 40,
+      "mom": 600,
+      "yoy": 300,
       "rising": true,
-      "score": 137
+      "score": 150
     },
     {
-      "keyword": "4th of july pedicure",
-      "niche": "beauty",
-      "pop": 26,
-      "mom": 4500,
-      "yoy": 20,
+      "keyword": "father’s day cards",
+      "niche": "home",
+      "pop": 39,
+      "mom": 4000,
+      "yoy": -30,
       "rising": true,
-      "score": 136
+      "score": 149
+    },
+    {
+      "keyword": "handmade fathers day cards ideas",
+      "niche": "home",
+      "pop": 39,
+      "mom": 3000,
+      "yoy": 400,
+      "rising": true,
+      "score": 149
+    },
+    {
+      "keyword": "father’s day gift ideas",
+      "niche": "home",
+      "pop": 49,
+      "mom": 400,
+      "yoy": 50,
+      "rising": false,
+      "score": 149
+    },
+    {
+      "keyword": "fathers day gift ideas",
+      "niche": "home",
+      "pop": 49,
+      "mom": 400,
+      "yoy": 400,
+      "rising": false,
+      "score": 149
     }
   ],
   "briefs": [
     {
-      "keyword": "pride nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "15 Pride Nails Ideas in 2026 That Are Easy to DIY at Home",
-      "pin_titles": [
-        "Pride Nails: 15 Colorful Ideas to Try This June",
-        "Easy Pride Nails for Your Next Parade Outfit",
-        "Rainbow Pride Nails You Can DIY in 10 Minutes"
-      ],
-      "pin_descriptions": [
-        "Get ready for June with these pride nails that celebrate love in style. Discover the best rainbow polish sets and easy nail art decals to try today!",
-        "Looking for fun pride nails? Check out these 15 vibrant ideas and shop the exact press-ons and polishes to get the perfect salon look at home."
-      ],
-      "boards": [
-        "Pride Month Beauty",
-        "Summer Nail Ideas"
-      ],
-      "product_ideas": [
-        "Printable Nail Art Practice Sheets",
-        "Digital Color Palette Guide for Nails"
-      ],
-      "affiliate_matches": [
-        "Rainbow press-on nails",
-        "Neon nail polish sets"
-      ],
-      "niche": "beauty",
-      "pop": 84,
-      "mom": 300,
-      "yoy": 1,
-      "rising": false,
-      "score": 184
-    },
-    {
       "keyword": "2000s teen bedroom",
       "keep": true,
       "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "21 Nostalgic 2000s Teen Bedroom Ideas to Recreate the Y2K Vibe",
+      "intent": "high",
+      "article_topic": "11 2000s Teen Bedroom Ideas to Recreate That Nostalgic Cozy Vibe in 2026",
       "pin_titles": [
-        "2000s Teen Bedroom: 21 Y2K Decor Ideas to Copy",
-        "How to Style a 2000s Teen Bedroom for Small Spaces",
-        "Y2K Decor: 10 2000s Teen Bedroom Essentials"
+        "2000s teen bedroom decor ideas you can actually buy today",
+        "Y2K aesthetic 2000s teen bedroom styling tips for small spaces",
+        "2000s teen bedroom printable posters and nostalgic wall art"
       ],
       "pin_descriptions": [
-        "Transform your space with these 2000s teen bedroom ideas that bring back the best Y2K vibes. Shop beaded curtains, inflatable chairs, and neon signs to complete your room!",
-        "Create the ultimate 2000s teen bedroom with these 21 nostalgic decor tips. Click to find the best retro accessories to give your apartment a fun makeover."
+        "Looking for 2000s teen bedroom inspiration? Discover how to bring back the ultimate Y2K cozy aesthetic with these easy decor swaps. Click to read more!",
+        "Upgrade your space with these 2000s teen bedroom decor trends making a huge comeback. Grab our printable Y2K wall art bundle today to complete the look!"
       ],
       "boards": [
         "Y2K Room Decor",
-        "Teen Bedroom Ideas"
+        "Teen Bedroom Aesthetics"
       ],
       "product_ideas": [
-        "Y2K Aesthetic Room Moodboard Template",
-        "Printable Retro Wall Art Set"
+        "Y2K aesthetic printable wall art bundle",
+        "2000s style printable room cleaning tracker"
       ],
       "affiliate_matches": [
         "Beaded door curtains",
-        "Butterfly chair covers"
+        "Inflatable chairs"
       ],
       "niche": "home decor",
       "pop": 71,
-      "mom": 600,
+      "mom": 400,
       "yoy": 40,
       "rising": true,
       "score": 181
     },
     {
-      "keyword": "4th of july nail art",
+      "keyword": "father’s day art",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "17 Easy 4th of July Nail Art Designs to Try in 2026",
+      "article_topic": "9 Father's Day Art Ideas That Make the Perfect Framed Gift for His Office",
       "pin_titles": [
-        "4th of July Nail Art: 17 Festive Designs for Summer",
-        "Easy 4th of July Nail Art for Absolute Beginners",
-        "Patriotic 4th of July Nail Art You Can DIY Fast"
+        "Father's Day art printables that look amazing in a desk frame",
+        "Meaningful Father's Day art ideas for his man cave or garage",
+        "Last-minute Father's Day art you can print at home right now"
       ],
       "pin_descriptions": [
-        "Celebrate Independence Day with stunning 4th of July nail art that you can easily do yourself. Grab these star decals and bold red polishes for a chip-free manicure!",
-        "Need ideas for 4th of July nail art? Explore 17 festive designs and shop the best patriotic press-ons and stamping kits for a perfect summer look."
+        "Need quick Father's Day art to print and frame? These cozy and modern designs are perfect for upgrading his home office. Click to shop the printables!",
+        "Discover the best Father's Day art ideas to personalize Dad's workspace. Download our printable wall art and frame it today for an unforgettable gift!"
       ],
       "boards": [
-        "4th of July Beauty",
-        "Summer Nail Art"
+        "Father's Day Gift Ideas",
+        "Home Office Decor For Men"
       ],
       "product_ideas": [
-        "Step-by-step Nail Art E-Guide",
-        "Summer Nail Care Tracker Printable"
+        "Minimalist Best Dad typography printable wall art",
+        "Printable fingerprint art template for kids to make for Dad's desk"
       ],
       "affiliate_matches": [
-        "Star nail decals",
-        "Red, white, and blue polish bundles"
+        "Rustic wood picture frames",
+        "Desktop display easels"
       ],
-      "niche": "beauty",
-      "pop": 66,
-      "mom": 1500,
-      "yoy": 400,
+      "niche": "home",
+      "pop": 61,
+      "mom": 900,
+      "yoy": -10,
       "rising": true,
-      "score": 176
+      "score": 171
+    },
+    {
+      "keyword": "things to make for father’s day",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "15 Easy Things to Make for Father's Day (Including Framed Printable Art!)",
+      "pin_titles": [
+        "Things to make for Father's Day that he will actually display",
+        "Quick things to make for Father's Day using our printable templates",
+        "DIY things to make for Father's Day to spruce up his home office"
+      ],
+      "pin_descriptions": [
+        "Looking for things to make for Father's Day? These printable wall art ideas and DIY decor gifts are perfect for his man cave. Check out the list!",
+        "Stop stressing over things to make for Father's Day! Print and frame these cozy art pieces for an instant, meaningful gift he will love. Click here!"
+      ],
+      "boards": [
+        "DIY Father's Day Gifts",
+        "Meaningful Decor Gifts"
+      ],
+      "product_ideas": [
+        "Printable Dad's Workshop sign wall art",
+        "Printable DIY coupon book and chore tracker for Dad"
+      ],
+      "affiliate_matches": [
+        "DIY framing kits",
+        "Premium craft paper and cardstock"
+      ],
+      "niche": "home",
+      "pop": 57,
+      "mom": 1000,
+      "yoy": 200,
+      "rising": true,
+      "score": 167
     },
     {
       "keyword": "indoor house plants aesthetic",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "10 Indoor House Plants Aesthetic Ideas for Small Apartments",
+      "article_topic": "10 Indoor House Plants Aesthetic Ideas for a Cozy, Green Living Room",
       "pin_titles": [
-        "Indoor House Plants Aesthetic: 10 Styling Tips",
-        "How to Get the Indoor House Plants Aesthetic Fast",
-        "Indoor House Plants Aesthetic for Cozy Living Rooms"
+        "Indoor house plants aesthetic tips for small cozy apartments",
+        "How to get that indoor house plants aesthetic without the clutter",
+        "Indoor house plants aesthetic decor and printable botanical wall art"
       ],
       "pin_descriptions": [
-        "Elevate your home with the indoor house plants aesthetic using these 10 easy styling tips. Discover the best modern planters and low-light greenery to liven up your corners!",
-        "Love the indoor house plants aesthetic? Learn how to arrange your greenery for maximum impact and shop our favorite mid-century plant stands today."
+        "Create a stunning indoor house plants aesthetic with these cozy corner styling ideas. Click to see our favorite planters and layouts for 2026!",
+        "Love the indoor house plants aesthetic? Pair your real plants with our printable vintage botanical wall art for the ultimate cozy vibe. Shop now!"
       ],
       "boards": [
-        "Plant Parent Decor",
-        "Cozy Apartment Living"
+        "Cozy Plant Room Decor",
+        "Indoor Jungle Aesthetic"
       ],
       "product_ideas": [
-        "Houseplant Care & Watering Tracker",
-        "Plant Styling Digital Guide"
+        "Vintage botanical printable wall art set",
+        "Printable plant watering schedule and care tracker"
       ],
       "affiliate_matches": [
         "Ceramic indoor planters",
-        "Tiered wooden plant stands"
+        "Mid-century modern plant stands"
       ],
       "niche": "home decor",
-      "pop": 86,
+      "pop": 90,
       "mom": 200,
       "yoy": 10001,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "father’s day gifts ideas",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "14 Father's Day Gifts Ideas to Upgrade His Home Office or Man Cave",
+      "pin_titles": [
+        "Father's Day gifts ideas he can hang in his cozy workspace",
+        "Unique Father's Day gifts ideas featuring printable wall art",
+        "Best Father's Day gifts ideas for the homebody dad"
+      ],
+      "pin_descriptions": [
+        "Searching for Father's Day gifts ideas? Give him the gift of a cozy home office with these printable art pieces and decor tips. Click to browse!",
+        "These Father's Day gifts ideas are perfect for dads who love their man cave. Download our printable signs and frame them instantly for a great gift!"
+      ],
+      "boards": [
+        "Gifts for Dad",
+        "Home Office Decor"
+      ],
+      "product_ideas": [
+        "Printable Dad's Man Cave rules poster",
+        "Printable golf-themed wall art for his office"
+      ],
+      "affiliate_matches": [
+        "Leather desk organizers",
+        "Digital photo frames"
+      ],
+      "niche": "home",
+      "pop": 64,
+      "mom": 1500,
+      "yoy": 4000,
+      "rising": false,
+      "score": 164
+    },
+    {
+      "keyword": "fathers day gifts from",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "12 Meaningful Fathers Day Gifts From Kids That Double as Home Decor",
+      "pin_titles": [
+        "Fathers Day gifts from kids that look beautiful framed on his desk",
+        "Fathers Day gifts from the kids: printable art he will cherish",
+        "Best fathers day gifts from toddlers that make great office decor"
+      ],
+      "pin_descriptions": [
+        "Need fathers day gifts from the kids? These printable art templates allow kids to add their handprints for a gorgeous framed keepsake. Click to download!",
+        "Find the sweetest fathers day gifts from toddlers and older kids. Print our custom wall art designs and pop them in a frame for Dad's desk!"
+      ],
+      "boards": [
+        "Father's Day Gifts From Kids",
+        "Sentimental Home Decor"
+      ],
+      "product_ideas": [
+        "Printable fill-in-the-blank Why I Love Dad wall art",
+        "Printable handprint art template for Dad's office"
+      ],
+      "affiliate_matches": [
+        "Shadow box frames",
+        "Kid-safe washable ink pads"
+      ],
+      "niche": "home",
+      "pop": 53,
+      "mom": 700,
+      "yoy": 8500,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "cute fathers day ideas",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "10 Cute Fathers Day Ideas for a Cozy Breakfast in Bed & Gift Reveal",
+      "pin_titles": [
+        "Cute fathers day ideas for a cozy morning routine at home",
+        "Cute fathers day ideas featuring printable tray decor and art",
+        "Simple and cute fathers day ideas to make him feel special at home"
+      ],
+      "pin_descriptions": [
+        "Plan the perfect morning with these cute fathers day ideas, including cozy breakfast-in-bed styling and printable framed art gifts. Read the blog post!",
+        "Looking for cute fathers day ideas? Decorate his home office desk with our printable wall art and planners. Click to shop the collection!"
+      ],
+      "boards": [
+        "Father's Day Celebrations at Home",
+        "Cozy Family Routines"
+      ],
+      "product_ideas": [
+        "Printable breakfast-in-bed menu and tray decor set",
+        "Printable Dad's Weekend To-Do List (Relax!) planner"
+      ],
+      "affiliate_matches": [
+        "Bamboo bed trays",
+        "Cozy waffle knit robes for men"
+      ],
+      "niche": "home",
+      "pop": 52,
+      "mom": 900,
+      "yoy": 100,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "july nails ideas",
+      "keyword": "father’s day cards diy",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "8 Father's Day Cards DIY Ideas That Double as Framed Desk Art",
+      "pin_titles": [
+        "Father's Day cards DIY templates you can print and frame",
+        "Easy Father's Day cards DIY for a beautiful home office gift",
+        "Father's Day cards DIY ideas that look like professional typography art"
+      ],
+      "pin_descriptions": [
+        "Make his day with these Father's Day cards DIY ideas that look stunning in a 5x7 frame on his desk. Click to get the printable templates!",
+        "Stop buying boring cards! Try these Father's Day cards DIY printables that double as modern wall art for his man cave. Download now!"
+      ],
+      "boards": [
+        "DIY Father's Day Printables",
+        "Desk Decor Ideas"
+      ],
+      "product_ideas": [
+        "Printable 5x7 typography card that doubles as desk art",
+        "Printable DIY origami shirt card template"
+      ],
+      "affiliate_matches": [
+        "5x7 acrylic block frames",
+        "Premium cardstock paper"
+      ],
+      "niche": "home",
+      "pop": 50,
+      "mom": 2500,
+      "yoy": 100,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "father's day card ideas",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "10 Father's Day Card Ideas to Print, Frame, and Display in His Office",
+      "pin_titles": [
+        "Father's Day card ideas that double as gorgeous desk decor",
+        "Printable Father's Day card ideas he'll actually want to frame",
+        "Unique Father's Day card ideas for the cozy homebody dad"
+      ],
+      "pin_descriptions": [
+        "Looking for Father's Day card ideas? Give him a printable card that looks so good, he'll frame it for his home office. Check out our designs!",
+        "These Father's Day card ideas are perfect for adding a touch of love to his workspace. Download our printable desk art cards today!"
+      ],
+      "boards": [
+        "Printable Cards & Art",
+        "Office Decor For Him"
+      ],
+      "product_ideas": [
+        "Printable minimalist quote card and desk art",
+        "Printable Dad Joke of the Day desk tracker card"
+      ],
+      "affiliate_matches": [
+        "Minimalist metal desk frames",
+        "High-quality fountain pens"
+      ],
+      "niche": "home",
+      "pop": 50,
+      "mom": 2000,
+      "yoy": 70,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "father’s day",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "20 July Nails Ideas in 2026 That Scream Summer Vacation",
+      "article_topic": "15 Father's Day Decor & Gift Ideas for a Cozy Celebration at Home in 2026",
       "pin_titles": [
-        "July Nails Ideas: 20 Summer Manicures to Copy",
-        "Bright July Nails Ideas for Your Next Beach Trip",
-        "Trending July Nails Ideas You Must Try in 2026"
+        "Father's Day ideas for a cozy weekend at home",
+        "Best Father's Day printable wall art gifts for his man cave",
+        "How to set up a cozy Father's Day breakfast with printable decor"
       ],
       "pin_descriptions": [
-        "Refresh your look with these gorgeous July nails ideas perfect for beach days and barbecues. Shop the hottest summer polish shades right here to upgrade your style!",
-        "Looking for fresh July nails ideas? Browse 20 stunning summer designs and find the exact tools you need to recreate these bright looks at home."
+        "Celebrate Father's Day at home with these cozy styling ideas and printable gift guides. Perfect for his office or man cave! Click to read.",
+        "Make this Father's Day unforgettable with our printable wall art and cozy home celebration tips. Grab your printables here!"
       ],
       "boards": [
-        "Summer Nail Inspo",
-        "July Beauty Trends"
+        "Father's Day Home Ideas",
+        "Gifts for Men"
       ],
       "product_ideas": [
-        "Summer Vacation Packing List Printable",
-        "DIY At-Home Manicure E-Book"
+        "Father's Day printable banner and wall art bundle",
+        "Printable Dad's Project Planner for the DIY dad"
       ],
       "affiliate_matches": [
-        "Neon gel polish kits",
-        "Summer-themed nail stickers"
+        "Cozy slippers for men",
+        "Coffee mug warmers"
       ],
-      "niche": "beauty",
-      "pop": 51,
-      "mom": 2000,
+      "niche": "home",
+      "pop": 48,
+      "mom": 800,
       "yoy": 30,
       "rising": true,
-      "score": 161
+      "score": 158
     },
     {
-      "keyword": "makeup routine",
+      "keyword": "father’s day gifts",
       "keep": true,
-      "season": "evergreen",
+      "season": "summer",
       "intent": "high",
-      "article_topic": "My 5-Minute Everyday Makeup Routine for a Flawless Glow",
+      "article_topic": "20 Father's Day Gifts to Spruce Up His Home Office or Man Cave",
       "pin_titles": [
-        "Makeup Routine: 5-Minute Flawless Look for Work",
-        "The Ultimate Everyday Makeup Routine for Beginners",
-        "A Simple Makeup Routine Using Only 5 Products"
+        "Father's Day gifts he can actually use in his home office",
+        "Best Father's Day gifts: printable wall art for Dad's space",
+        "Last-minute Father's Day gifts you can print and frame today"
       ],
       "pin_descriptions": [
-        "Master your morning with this quick 5-minute makeup routine designed for busy days. Discover the multi-use sticks and hydrating primers that make it happen fast!",
-        "Looking for a simpler makeup routine? Learn how to achieve a natural glow in just a few steps and shop our top-rated essential beauty products."
+        "Need Father's Day gifts in a hurry? Our printable wall art designs are the perfect cozy addition to his home office or garage. Shop now!",
+        "Discover the best Father's Day gifts for homebody dads. From cozy desk accessories to printable planner bundles, click to see our favorites!"
       ],
       "boards": [
-        "Everyday Makeup",
-        "Beauty Routines & Tutorials"
+        "Father's Day Gifts",
+        "Cozy Office Decor"
       ],
       "product_ideas": [
-        "Step-by-Step Makeup Routine Workbook",
-        "Printable Skincare & Makeup Organizer"
+        "Printable classic cars wall art set for his garage or office",
+        "Printable daily habit tracker for Dad"
       ],
       "affiliate_matches": [
-        "Cream blush and lip sticks",
-        "Hydrating makeup primers"
+        "Ergonomic office chairs",
+        "Architect desk lamps"
       ],
-      "niche": "beauty",
-      "pop": 61,
-      "mom": 300,
-      "yoy": 100,
+      "niche": "home",
+      "pop": 58,
+      "mom": 600,
+      "yoy": 10001,
       "rising": false,
-      "score": 161
+      "score": 158
     },
     {
-      "keyword": "forth of july nails",
+      "keyword": "last minute fathers day gifts diy",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "14 Forth of July Nails That Stand Out at the BBQ",
+      "article_topic": "7 Last Minute Fathers Day Gifts DIY You Can Print and Frame in 5 Minutes",
       "pin_titles": [
-        "Forth of July Nails: 14 Easy Ideas to Try",
-        "Festive Forth of July Nails to DIY in Minutes",
-        "Red White and Blue Forth of July Nails for Summer"
+        "Last minute fathers day gifts DIY you can print right now",
+        "Frameable last minute fathers day gifts DIY for his home office",
+        "Easy last minute fathers day gifts DIY featuring printable desk art"
       ],
       "pin_descriptions": [
-        "Get ready for the fireworks with these stunning forth of july nails. Shop the best long-lasting gel polishes for a chip-free holiday weekend!",
-        "Need quick forth of july nails? Check out these 14 simple ideas and grab the exact press-on sets to get a flawless manicure in minutes."
+        "Out of time? These last minute fathers day gifts DIY are just a click away. Print our stunning wall art and pop it in a frame for his desk!",
+        "Save the day with these last minute fathers day gifts DIY ideas. Download our printable Dad planners and art prints instantly. Click here!"
       ],
       "boards": [
-        "Holiday Nail Art",
-        "Summer Beauty Ideas"
+        "Last Minute Gifts",
+        "DIY Printables"
       ],
       "product_ideas": [
-        "Holiday Event Planner Printable",
-        "Nail Polish Collection Organizer"
+        "Instant download World's Best Dad typography wall art",
+        "Printable DIY Coupon Book for Dad PDF"
       ],
       "affiliate_matches": [
-        "Patriotic press-on nails",
-        "Blue glitter nail polish"
+        "Amazon Prime eligible picture frames",
+        "Home color printers"
       ],
-      "niche": "beauty",
-      "pop": 49,
+      "niche": "home",
+      "pop": 47,
       "mom": 1500,
-      "yoy": 2000,
+      "yoy": 200,
       "rising": true,
-      "score": 159
+      "score": 157
     },
     {
-      "keyword": "simple patriotic nails",
+      "keyword": "diy father's day cards",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "11 Simple Patriotic Nails for a Minimalist 4th of July",
+      "article_topic": "9 DIY Father's Day Cards That Make the Perfect Framed Desk Art",
       "pin_titles": [
-        "Simple Patriotic Nails: 11 Minimalist Looks",
-        "How to Do Simple Patriotic Nails at Home",
-        "Elegant & Simple Patriotic Nails for Short Nails"
+        "DIY Father's Day cards that look like expensive typography art",
+        "Printable DIY Father's Day cards he can frame for his office",
+        "Easy DIY Father's Day cards for a cozy home celebration"
       ],
       "pin_descriptions": [
-        "Prefer a subtle look? Try these simple patriotic nails that celebrate the holiday without being too flashy. Shop our favorite minimalist nail tools to get started!",
-        "Discover 11 simple patriotic nails that are easy to recreate. Find the best sheer nude polishes and tiny star decals to complete your elegant manicure."
+        "Why buy a generic card? These DIY Father's Day cards are designed to be framed as mini wall art for his desk. Click to download the printables!",
+        "Create a beautiful keepsake with these DIY Father's Day cards. Print, fold, and frame for the ultimate home office upgrade. Shop the templates!"
       ],
       "boards": [
-        "Minimalist Nails",
-        "4th of July Style"
+        "DIY Father's Day Printables",
+        "Gifts for Dad"
       ],
       "product_ideas": [
-        "Minimalist Nail Art Guidebook",
-        "Digital Habit Tracker for Nail Care"
+        "Printable fold-out card that turns into a desk display",
+        "Printable 5x7 art card with a heartfelt poem"
       ],
       "affiliate_matches": [
-        "Sheer neutral base polishes",
-        "Miniature star nail stickers"
+        "Tabletop picture frames",
+        "High-quality matte photo paper"
       ],
-      "niche": "beauty",
-      "pop": 48,
-      "mom": 700,
-      "yoy": 300,
+      "niche": "home",
+      "pop": 47,
+      "mom": 1500,
+      "yoy": 20,
       "rising": true,
-      "score": 158
+      "score": 157
     },
     {
-      "keyword": "americana nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "15 Vintage Americana Nails to Rock All Summer Long",
-      "pin_titles": [
-        "Americana Nails: 15 Vintage Designs for Summer",
-        "Retro Americana Nails You Will Absolutely Love",
-        "How to Style Classic Americana Nails Easily"
-      ],
-      "pin_descriptions": [
-        "Embrace a classic summer vibe with these stunning americana nails. Uncover the best cherry-red polishes and retro decals to nail the look at home!",
-        "Looking for a nostalgic summer style? Browse these 15 americana nails and shop the exact products needed for a perfect vintage-inspired manicure."
-      ],
-      "boards": [
-        "Vintage Beauty",
-        "Summer Americana Style"
-      ],
-      "product_ideas": [
-        "Vintage Color Palette Digital Guide",
-        "Printable Summer Bucket List"
-      ],
-      "affiliate_matches": [
-        "Classic cherry red nail polish",
-        "Retro checkerboard nail wraps"
-      ],
-      "niche": "beauty",
-      "pop": 48,
-      "mom": 700,
-      "yoy": 300,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "patriotic nails",
+      "keyword": "father’s day gift",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "25 Patriotic Nails for Memorial Day and the 4th of July",
+      "article_topic": "11 Father's Day Gift Ideas to Make His Man Cave the Coziest Room in the House",
       "pin_titles": [
-        "Patriotic Nails: 25 Festive Designs to Copy",
-        "The Best Patriotic Nails for Summer Holidays",
-        "Easy Patriotic Nails You Can Do Yourself Fast"
+        "The ultimate Father's Day gift guide for a cozy man cave",
+        "Find the perfect Father's Day gift with these printable wall art ideas",
+        "A Father's Day gift he'll actually use: printables for his home office"
       ],
       "pin_descriptions": [
-        "Show your spirit with these gorgeous patriotic nails perfect for any summer holiday. Shop top-rated gel kits and festive glitter accents to make them pop!",
-        "Get inspired by 25 amazing patriotic nails that are guaranteed to turn heads. Click to find the best red, white, and blue press-ons available right now."
+        "Looking for a meaningful Father's Day gift? Upgrade his space with our printable wall art designed specifically for home offices and man caves. Shop now!",
+        "Give a Father's Day gift that adds a cozy vibe to his daily routine. Check out our printable planners and desk art prints. Click to read!"
       ],
       "boards": [
-        "Patriotic Style",
-        "Festive Nail Art"
+        "Father's Day Gift Guide",
+        "Men's Room Decor"
       ],
       "product_ideas": [
-        "Holiday Beauty Prep Checklist",
-        "At-Home Gel Manicure E-Book"
+        "Printable retro patent drawings wall art set",
+        "Printable Dad's Gym and Workout tracker poster"
       ],
       "affiliate_matches": [
-        "Red, white, and blue gel polish sets",
-        "Patriotic nail stamping plates"
+        "Mini desk fridges",
+        "Cozy armchair throws"
       ],
-      "niche": "beauty",
+      "niche": "home",
       "pop": 57,
-      "mom": 300,
+      "mom": 700,
       "yoy": 100,
       "rising": false,
       "score": 157
     },
     {
-      "keyword": "western fourth of july nails",
+      "keyword": "homemade fathers day cards",
       "keep": true,
       "season": "summer",
       "intent": "high",
-      "article_topic": "12 Western Fourth of July Nails for a Coastal Cowgirl Summer",
+      "article_topic": "10 Homemade Fathers Day Cards You Can Print and Frame for His Desk",
       "pin_titles": [
-        "Western Fourth of July Nails: 12 Rustic Ideas",
-        "Cowgirl Chic: Western Fourth of July Nails",
-        "How to Get Western Fourth of July Nails at Home"
+        "Homemade fathers day cards that double as modern desk art",
+        "Printable templates for homemade fathers day cards he will love",
+        "Easy homemade fathers day cards to print for a cozy gift"
       ],
       "pin_descriptions": [
-        "Combine country charm with holiday spirit using these western fourth of july nails. Shop cowboy boot decals and turquoise polish to complete the look!",
-        "Saddle up for summer with 12 amazing western fourth of july nails. Find the best rustic nail art supplies and long-lasting top coats right here."
+        "Take your gift to the next level with these homemade fathers day cards that look stunning in a 5x7 frame. Click to grab the printable templates!",
+        "These homemade fathers day cards are the perfect addition to his home office decor. Download, print, and frame instantly. See the designs here!"
       ],
       "boards": [
-        "Western Aesthetic Beauty",
-        "Summer Festival Nails"
+        "Printable Cards",
+        "Father's Day Crafts & Gifts"
       ],
       "product_ideas": [
-        "Coastal Cowgirl Style Guide PDF",
-        "Western Motif Nail Art Templates"
+        "Printable Reasons We Love Dad fill-in-the-blank card art",
+        "Printable vintage-style greeting card for Dad"
       ],
       "affiliate_matches": [
-        "Cow print nail wraps",
-        "Turquoise and red nail polish"
+        "Decorative desk trays",
+        "5x7 wooden frames"
       ],
-      "niche": "beauty",
-      "pop": 44,
+      "niche": "home",
+      "pop": 45,
       "mom": 2000,
-      "yoy": 300,
+      "yoy": -3,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "father’s day cards handmade",
+      "keep": true,
+      "season": "summer",
+      "intent": "high",
+      "article_topic": "8 Father's Day Cards Handmade Ideas Using Printable Art Templates",
+      "pin_titles": [
+        "Father's Day cards handmade ideas that look like professional art",
+        "Frameable Father's Day cards handmade with our printable designs",
+        "Quick Father's Day cards handmade ideas for his home office desk"
+      ],
+      "pin_descriptions": [
+        "Want to give something special? These Father's Day cards handmade ideas use our printable templates to create gorgeous, frameable desk art. Click to shop!",
+        "Discover Father's Day cards handmade ideas that he will actually want to keep on his desk all year. Download our printable card art today!"
+      ],
+      "boards": [
+        "Handmade Gifts For Him",
+        "Printable Art & Cards"
+      ],
+      "product_ideas": [
+        "Printable watercolor-style desk card and art for Dad",
+        "Printable interactive Dad's Favorite Things card"
+      ],
+      "affiliate_matches": [
+        "Paper cutting tools",
+        "Fine tip markers for writing inside"
+      ],
+      "niche": "home",
+      "pop": 44,
+      "mom": 2500,
+      "yoy": 1000,
       "rising": true,
       "score": 154
-    },
-    {
-      "keyword": "4th of july nail inspo",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "22 Pieces of 4th of July Nail Inspo to Save for Your Salon Visit",
-      "pin_titles": [
-        "4th of July Nail Inspo: 22 Stunning Looks",
-        "Save This 4th of July Nail Inspo for Summer",
-        "Trending 4th of July Nail Inspo for 2026"
-      ],
-      "pin_descriptions": [
-        "Searching for the perfect holiday manicure? Browse our top 4th of july nail inspo and shop the best tools to recreate these designs at home!",
-        "Find your favorite 4th of july nail inspo among these 22 trending summer designs. Grab the exact gel colors and brushes to get started today."
-      ],
-      "boards": [
-        "4th of July Nails",
-        "Summer Manicure Inspo"
-      ],
-      "product_ideas": [
-        "Digital Nail Art Lookbook",
-        "Salon Appointment Planner Printable"
-      ],
-      "affiliate_matches": [
-        "Fine detail nail art brushes",
-        "UV/LED nail lamps"
-      ],
-      "niche": "beauty",
-      "pop": 44,
-      "mom": 800,
-      "yoy": 100,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "fourth of july nails simple",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "9 Fourth of July Nails Simple Enough for Absolute Beginners",
-      "pin_titles": [
-        "Fourth of July Nails Simple & Easy to DIY",
-        "9 Fourth of July Nails Simple Designs to Try",
-        "Quick Fourth of July Nails Simple Ideas"
-      ],
-      "pin_descriptions": [
-        "Short on time? Try these fourth of july nails simple enough for anyone to master. Discover the best quick-dry polishes and easy-to-apply stickers!",
-        "Get a festive look in minutes with these fourth of july nails simple ideas. Shop our favorite fuss-free press-on nails for a flawless finish."
-      ],
-      "boards": [
-        "Easy DIY Nails",
-        "4th of July Prep"
-      ],
-      "product_ideas": [
-        "Beginner Nail Art Video Tutorial Access",
-        "Quick Beauty Routines E-Guide"
-      ],
-      "affiliate_matches": [
-        "Quick-dry red polish",
-        "Pre-painted patriotic press-ons"
-      ],
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 2000,
-      "yoy": 200,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "july nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "18 July Nails That Capture the Best of Mid-Summer 2026",
-      "pin_titles": [
-        "July Nails: 18 Trending Summer Designs to Copy",
-        "The Best July Nails for Sunny Beach Days",
-        "Bright & Bold July Nails to Try in 2026"
-      ],
-      "pin_descriptions": [
-        "Update your manicure with the hottest july nails of the season. Find out which neon shades and tropical decals are flying off the shelves!",
-        "Ready for a summer refresh? Explore 18 gorgeous july nails and shop the exact polishes you need to recreate these vibrant looks at home."
-      ],
-      "boards": [
-        "Summer Nails 2026",
-        "July Beauty Favorites"
-      ],
-      "product_ideas": [
-        "Summer Color Trend Report PDF",
-        "Nail Polish Inventory Tracker"
-      ],
-      "affiliate_matches": [
-        "Tropical nail decals",
-        "Neon yellow and pink polish"
-      ],
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 1500,
-      "yoy": 80,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "fun 4th of july nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "16 Fun 4th of July Nails That Bring the Party to Your Fingertips",
-      "pin_titles": [
-        "Fun 4th of July Nails: 16 Party-Ready Looks",
-        "Super Fun 4th of July Nails to DIY This Year",
-        "Creative & Fun 4th of July Nails for Summer"
-      ],
-      "pin_descriptions": [
-        "Make a statement this holiday with these fun 4th of july nails. Shop the brightest glitter polishes and 3D nail charms to elevate your manicure!",
-        "Looking for something unique? Check out 16 fun 4th of july nails that are sure to spark joy. Find the best nail art kits to get the look today."
-      ],
-      "boards": [
-        "Fun Nail Art",
-        "Holiday Party Prep"
-      ],
-      "product_ideas": [
-        "Party Planning Checklist Printable",
-        "DIY Nail Art Idea Generator Digital Tool"
-      ],
-      "affiliate_matches": [
-        "3D star nail charms",
-        "Chunky holographic glitter polish"
-      ],
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 1500,
-      "yoy": 600,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "vintage americana nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "10 Vintage Americana Nails for a Nostalgic Summer Vibe",
-      "pin_titles": [
-        "Vintage Americana Nails: 10 Retro Ideas",
-        "How to Get Vintage Americana Nails Easily",
-        "Classic Vintage Americana Nails for Summer"
-      ],
-      "pin_descriptions": [
-        "Step back in time with these gorgeous vintage americana nails. Discover the perfect muted reds and faded blues to achieve this classic look!",
-        "Love retro style? Browse 10 stunning vintage americana nails and shop the exact matte top coats and vintage-inspired nail wraps you need."
-      ],
-      "boards": [
-        "Retro Beauty Trends",
-        "Americana Aesthetic"
-      ],
-      "product_ideas": [
-        "Vintage Aesthetic Moodboard Kit",
-        "Retro Style Guide E-Book"
-      ],
-      "affiliate_matches": [
-        "Matte nail top coat",
-        "Muted navy blue nail polish"
-      ],
-      "niche": "beauty",
-      "pop": 42,
-      "mom": 700,
-      "yoy": 700,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "july 4th nails",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "20 July 4th Nails to Complete Your Independence Day Outfit",
-      "pin_titles": [
-        "July 4th Nails: 20 Ideas for Independence Day",
-        "Easy July 4th Nails You Can Do at Home",
-        "The Ultimate Guide to July 4th Nails"
-      ],
-      "pin_descriptions": [
-        "Complete your holiday look with these stunning july 4th nails. Shop the best long-lasting top coats to keep your manicure looking fresh all weekend!",
-        "Get ready to celebrate with 20 amazing july 4th nails. Click to find the most popular patriotic nail wraps and gel kits for a flawless finish."
-      ],
-      "boards": [
-        "July 4th Inspiration",
-        "Summer Nail Designs"
-      ],
-      "product_ideas": [
-        "Holiday Outfit & Beauty Planner",
-        "Nail Art Decal Printable Templates"
-      ],
-      "affiliate_matches": [
-        "Patriotic nail wraps",
-        "High-shine gel top coat"
-      ],
-      "niche": "beauty",
-      "pop": 41,
-      "mom": 2000,
-      "yoy": 80,
-      "rising": true,
-      "score": 151
     }
   ]
 }
