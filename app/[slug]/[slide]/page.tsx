@@ -6,14 +6,15 @@ import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
 import NextButton from "@/components/NextButton";
 
+// Render slide pages ON-DEMAND (cached after first hit) instead of pre-baking all
+// of them. 171 articles × ~13 slides = 2,000+ prerendered pages was bloating
+// .next/server past Netlify's 250 MB serverless-function limit and breaking every
+// deploy. These slideshow slides are secondary (canonical points to the hub
+// article), so on-demand rendering is fine and keeps the build small as content grows.
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-  const params: { slug: string; slide: string }[] = [];
-  for (const a of getAllArticles()) {
-    for (const p of a.picks) {
-      params.push({ slug: a.topic_slug, slide: String(p.rank) });
-    }
-  }
-  return params;
+  return [];
 }
 
 export async function generateMetadata({
