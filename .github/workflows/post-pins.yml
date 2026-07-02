@@ -1,18 +1,26 @@
-name: Post pins (US evening peak)
+name: Post pins (US peak windows)
 
 # Posting is DECOUPLED from generation. Content + products are generated earlier
 # in the day (see daily-content.yml / daily-products.yml) and are already live on
-# the site by now. This workflow ONLY posts the already-queued pins, and it is
-# triggered by an EXTERNAL precise scheduler (cron-job.org) via workflow_dispatch
-# at 01:00 UTC = 9:00 PM ET — Pinterest's US evening peak.
+# the site by now. This workflow ONLY posts the already-queued pins.
 #
-# Why external trigger: GitHub's own `schedule:` (cron) events get delayed by
-# hours under load, especially near midnight UTC (our target window). A
-# workflow_dispatch call runs within ~30-60s, so cron-job.org gives us precise
-# timing while GitHub just does the work on demand.
+# Two triggers, two peak windows (guard enforces both):
+#   • EVENING (daily): cron-job.org fires workflow_dispatch at 01:00 UTC
+#     = 9 PM ET. External scheduler because GitHub's `schedule:` events get
+#     delayed by hours near midnight UTC, and this window needs precision.
+#   • MIDDAY (Tue-Thu): GitHub's own schedule below, targeting the 10 AM-1 PM ET
+#     peak. Precision doesn't matter here — the run lands anywhere in a 3-hour
+#     window, and if GitHub delays it past 1 PM ET the guard just skips (the
+#     evening run still posts that day). No external account needed.
+#
+# Per-run caps keep the two runs within the 3-5 fresh pins/day playbook target:
+# 2 content + up to 1 product per run, and postQueue's DAILY product cap means
+# the second run never double-posts products.
 
 on:
-  workflow_dispatch:   # fired by cron-job.org (and usable as a manual button)
+  workflow_dispatch:   # fired by cron-job.org at 01:00 UTC (and manual button)
+  schedule:
+    - cron: '5 15 * * 2,3,4'   # Tue-Thu ~15:05 UTC = 11:05 AM EDT / 10:05 AM EST
 
 permissions:
   contents: write
