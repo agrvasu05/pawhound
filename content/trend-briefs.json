@@ -1,366 +1,366 @@
 {
-  "generated_at": "2026-07-03T16:42:18.266Z",
+  "generated_at": "2026-07-04T14:58:08.478Z",
   "region": "US",
   "candidates": [
     {
       "keyword": "badazel ideas",
       "niche": "home",
-      "pop": 87,
-      "mom": 1500,
+      "pop": 88,
+      "mom": 1000,
       "yoy": 10001,
       "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "summer art for toddlers",
-      "niche": "home",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 0,
-      "rising": false,
-      "score": 192
+      "score": 198
     },
     {
       "keyword": "ways to cut a t shirt",
       "niche": "home",
-      "pop": 80,
-      "mom": 800,
+      "pop": 83,
+      "mom": 600,
       "yoy": 1500,
       "rising": true,
-      "score": 190
+      "score": 193
+    },
+    {
+      "keyword": "summer art for toddlers",
+      "niche": "home",
+      "pop": 83,
+      "mom": 300,
+      "yoy": 0,
+      "rising": false,
+      "score": 193
     },
     {
       "keyword": "diy pride shirt",
       "niche": "home",
-      "pop": 78,
+      "pop": 76,
       "mom": 1500,
       "yoy": 20,
       "rising": true,
-      "score": 188
+      "score": 186
     },
     {
       "keyword": "2000s teen bedroom",
       "niche": "home decor",
-      "pop": 71,
+      "pop": 72,
       "mom": 400,
-      "yoy": 40,
+      "yoy": 50,
       "rising": true,
-      "score": 181
+      "score": 182
     },
     {
-      "keyword": "father’s day art",
+      "keyword": "charger bedazzled ideas",
       "niche": "home",
-      "pop": 61,
-      "mom": 900,
+      "pop": 65,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "father’s day cards diy",
+      "niche": "home",
+      "pop": 62,
+      "mom": 2500,
+      "yoy": 100,
+      "rising": true,
+      "score": 172
+    },
+    {
+      "keyword": "father’s day",
+      "niche": "home",
+      "pop": 59,
+      "mom": 800,
+      "yoy": 30,
+      "rising": true,
+      "score": 169
+    },
+    {
+      "keyword": "4th of july window painting",
+      "niche": "home",
+      "pop": 59,
+      "mom": 400,
+      "yoy": 100,
+      "rising": true,
+      "score": 169
+    },
+    {
+      "keyword": "father’s day cards handmade",
+      "niche": "home",
+      "pop": 58,
+      "mom": 2500,
+      "yoy": 1000,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "father's day cards handmade",
+      "niche": "home",
+      "pop": 58,
+      "mom": 1000,
+      "yoy": 20,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "father's day cards",
+      "niche": "home",
+      "pop": 58,
+      "mom": 1000,
       "yoy": -10,
       "rising": true,
-      "score": 171
+      "score": 168
     },
     {
-      "keyword": "things to make for father’s day",
+      "keyword": "diy father’s day gifts",
       "niche": "home",
-      "pop": 57,
-      "mom": 1000,
-      "yoy": 200,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "superhero crafts for kids",
-      "niche": "home",
-      "pop": 91,
-      "mom": 200,
+      "pop": 56,
+      "mom": 1500,
       "yoy": 50,
-      "rising": false,
-      "score": 167
-    },
-    {
-      "keyword": "indoor house plants aesthetic",
-      "niche": "home decor",
-      "pop": 90,
-      "mom": 200,
-      "yoy": 10001,
       "rising": true,
       "score": 166
     },
     {
-      "keyword": "father’s day gifts ideas",
+      "keyword": "father's day card",
       "niche": "home",
-      "pop": 64,
+      "pop": 56,
       "mom": 1500,
-      "yoy": 4000,
-      "rising": false,
-      "score": 164
+      "yoy": 50,
+      "rising": true,
+      "score": 166
     },
     {
-      "keyword": "fathers day gifts from",
+      "keyword": "father day cards",
+      "niche": "home",
+      "pop": 55,
+      "mom": 2000,
+      "yoy": -40,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "fathers day card ideas diy",
       "niche": "home",
       "pop": 53,
-      "mom": 700,
-      "yoy": 8500,
+      "mom": 2000,
+      "yoy": 100,
       "rising": true,
       "score": 163
     },
     {
-      "keyword": "cute fathers day ideas",
+      "keyword": "father’s day card inspo",
       "niche": "home",
       "pop": 52,
-      "mom": 900,
+      "mom": 10001,
       "yoy": 100,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "father’s day cards diy",
-      "niche": "home",
-      "pop": 50,
-      "mom": 2500,
-      "yoy": 100,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "father's day card ideas",
-      "niche": "home",
-      "pop": 50,
-      "mom": 2000,
-      "yoy": 70,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "father’s day",
-      "niche": "home",
-      "pop": 48,
-      "mom": 800,
-      "yoy": 30,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "father’s day gifts",
-      "niche": "home",
-      "pop": 58,
-      "mom": 600,
-      "yoy": 10001,
-      "rising": false,
-      "score": 158
-    },
-    {
-      "keyword": "toy story classroom theme",
-      "niche": "home",
-      "pop": 81,
-      "mom": 200,
-      "yoy": 100,
-      "rising": false,
-      "score": 158
-    },
-    {
-      "keyword": "last minute fathers day gifts diy",
-      "niche": "home",
-      "pop": 47,
-      "mom": 1500,
-      "yoy": 200,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "diy father's day cards",
-      "niche": "home",
-      "pop": 47,
-      "mom": 1500,
-      "yoy": 20,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "father’s day gift",
-      "niche": "home",
-      "pop": 57,
-      "mom": 700,
-      "yoy": 100,
-      "rising": false,
-      "score": 157
-    },
-    {
-      "keyword": "homemade fathers day cards",
-      "niche": "home",
-      "pop": 45,
-      "mom": 2000,
-      "yoy": -3,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "father’s day cards handmade",
-      "niche": "home",
-      "pop": 44,
-      "mom": 2500,
-      "yoy": 1000,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "diy father’s day gifts",
-      "niche": "home",
-      "pop": 44,
-      "mom": 1500,
-      "yoy": 50,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "father's day cards handmade",
-      "niche": "home",
-      "pop": 44,
-      "mom": 1000,
-      "yoy": 20,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "father's day card",
-      "niche": "home",
-      "pop": 43,
-      "mom": 1500,
-      "yoy": 50,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "father's day cards",
-      "niche": "home",
-      "pop": 43,
-      "mom": 1000,
-      "yoy": -10,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "father day",
-      "niche": "home",
-      "pop": 43,
-      "mom": 800,
-      "yoy": 10,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "easy fourth of july crafts for kids",
-      "niche": "home",
-      "pop": 43,
-      "mom": 300,
-      "yoy": 200,
-      "rising": false,
-      "score": 153
-    },
-    {
-      "keyword": "homemade father’s day card",
-      "niche": "home",
-      "pop": 42,
-      "mom": 4500,
-      "yoy": 90,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "fathers day crafts for kids",
-      "niche": "home",
-      "pop": 52,
-      "mom": 600,
-      "yoy": 500,
-      "rising": false,
-      "score": 152
-    },
-    {
-      "keyword": "diy father’s day card",
-      "niche": "home",
-      "pop": 41,
-      "mom": 5000,
-      "yoy": 40,
-      "rising": true,
-      "score": 151
-    },
-    {
-      "keyword": "father’s day crafts from kids",
-      "niche": "home",
-      "pop": 51,
-      "mom": 400,
-      "yoy": 10001,
-      "rising": false,
-      "score": 151
-    },
-    {
-      "keyword": "4th of july parade float ideas",
-      "niche": "home",
-      "pop": 74,
-      "mom": 200,
-      "yoy": 90,
-      "rising": false,
-      "score": 151
-    },
-    {
-      "keyword": "fathers day card ideas diy",
-      "niche": "home",
-      "pop": 40,
-      "mom": 2500,
-      "yoy": 100,
-      "rising": true,
-      "score": 150
-    },
-    {
-      "keyword": "father day cards",
-      "niche": "home",
-      "pop": 40,
-      "mom": 2000,
-      "yoy": -40,
-      "rising": true,
-      "score": 150
-    },
-    {
-      "keyword": "diy gifts for dad from daughter",
-      "niche": "home",
-      "pop": 40,
-      "mom": 600,
-      "yoy": 300,
-      "rising": true,
-      "score": 150
-    },
-    {
       "keyword": "father’s day cards",
       "niche": "home",
-      "pop": 39,
+      "pop": 52,
       "mom": 4000,
       "yoy": -30,
       "rising": true,
-      "score": 149
+      "score": 162
     },
     {
       "keyword": "handmade fathers day cards ideas",
       "niche": "home",
-      "pop": 39,
-      "mom": 3000,
+      "pop": 52,
+      "mom": 2500,
       "yoy": 400,
       "rising": true,
-      "score": 149
+      "score": 162
     },
     {
-      "keyword": "father’s day gift ideas",
+      "keyword": "father’s day card ideas funny",
+      "niche": "home",
+      "pop": 52,
+      "mom": 2500,
+      "yoy": 300,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "father day",
+      "niche": "home",
+      "pop": 51,
+      "mom": 700,
+      "yoy": 10,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "fathers day",
+      "niche": "home",
+      "pop": 51,
+      "mom": 500,
+      "yoy": -40,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "fathers day cards diy",
+      "niche": "home",
+      "pop": 50,
+      "mom": 2500,
+      "yoy": 200,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "father’s day gifts ideas",
+      "niche": "home",
+      "pop": 60,
+      "mom": 1000,
+      "yoy": 4000,
+      "rising": false,
+      "score": 160
+    },
+    {
+      "keyword": "cute fathers day cards",
       "niche": "home",
       "pop": 49,
-      "mom": 400,
-      "yoy": 50,
+      "mom": 3000,
+      "yoy": -50,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "4th of july banner painted",
+      "niche": "home",
+      "pop": 49,
+      "mom": 600,
+      "yoy": 60,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "toy story classroom theme",
+      "niche": "home",
+      "pop": 82,
+      "mom": 200,
+      "yoy": 100,
       "rising": false,
-      "score": 149
+      "score": 159
+    },
+    {
+      "keyword": "last minute fathers day gifts",
+      "niche": "home",
+      "pop": 48,
+      "mom": 10001,
+      "yoy": -40,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "father day card ideas",
+      "niche": "home",
+      "pop": 48,
+      "mom": 6500,
+      "yoy": 70,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "father’s day card idea",
+      "niche": "home",
+      "pop": 48,
+      "mom": 3500,
+      "yoy": 50,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "fathers day cards ideas",
+      "niche": "home",
+      "pop": 48,
+      "mom": 3500,
+      "yoy": 50,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "fathers day card ideas",
+      "niche": "home",
+      "pop": 48,
+      "mom": 3000,
+      "yoy": 200,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "fathers day card",
+      "niche": "home",
+      "pop": 48,
+      "mom": 2000,
+      "yoy": -7,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "father’s day card",
+      "niche": "home",
+      "pop": 46,
+      "mom": 4500,
+      "yoy": 70,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "father’s day cards ideas",
+      "niche": "home",
+      "pop": 46,
+      "mom": 1500,
+      "yoy": 30,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "father’s day card ideas",
+      "niche": "home",
+      "pop": 45,
+      "mom": 7500,
+      "yoy": 70,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "father day card",
+      "niche": "home",
+      "pop": 45,
+      "mom": 4000,
+      "yoy": 100,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "fathers day cards",
+      "niche": "home",
+      "pop": 44,
+      "mom": 2000,
+      "yoy": -7,
+      "rising": true,
+      "score": 154
+    },
+    {
+      "keyword": "father’s day card diy",
+      "niche": "home",
+      "pop": 43,
+      "mom": 5500,
+      "yoy": 100,
+      "rising": true,
+      "score": 153
     },
     {
       "keyword": "fathers day gift ideas",
       "niche": "home",
-      "pop": 49,
-      "mom": 400,
+      "pop": 53,
+      "mom": 300,
       "yoy": 400,
       "rising": false,
-      "score": 149
+      "score": 153
     }
   ],
   "briefs": [
@@ -368,205 +368,69 @@
       "keyword": "2000s teen bedroom",
       "keep": true,
       "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "15 Nostalgic 2000s Teen Bedroom Decor Ideas for a Cozy Space in 2026",
+      "intent": "high",
+      "article_topic": "12 2000s Teen Bedroom Ideas That Bring Nostalgic Y2K Coziness in 2026",
       "pin_titles": [
-        "15 Y2K Aesthetic 2000s Teen Bedroom Ideas",
-        "How to Style a Cozy 2000s Teen Bedroom",
-        "2000s Teen Bedroom Decor Must-Haves"
+        "2000s Teen Bedroom Decor Ideas for a Cozy Y2K Vibe",
+        "How to Style a 2000s Teen Bedroom on a Budget",
+        "2000s Teen Bedroom Inspiration: 11 Nostalgic Touches"
       ],
       "pin_descriptions": [
-        "Looking for 2000s teen bedroom inspiration? Discover the best Y2K aesthetic decor tips to make your space cozy and nostalgic. Click for the ultimate room makeover guide!",
-        "Create the ultimate 2000s teen bedroom with these cozy Y2K decor ideas. Perfect for adding a nostalgic vibe to your space. Read the post for all the details!"
+        "Looking for 2000s teen bedroom ideas? Discover how to bring back the ultimate cozy Y2K aesthetic with neon lights, fluffy pillows, and retro wall art. Click to see the full room tour!",
+        "Transform your space with these 2000s teen bedroom styling tips! From inflatable chairs to nostalgic wall decor, get the exact look for your room. Read the blog post for links."
       ],
       "boards": [
-        "Teen Bedroom Decor",
-        "Y2K Room Aesthetic"
+        "Y2K Bedroom Decor",
+        "Cozy Teen Room Ideas"
       ],
       "product_ideas": [
-        "Y2K Aesthetic Printable Wall Art Set",
-        "Retro 2000s Style Room Cleaning Tracker"
+        "Printable Y2K Nostalgia Quote Wall Art Set",
+        "Printable Teen Bedroom Makeover Budget Tracker"
       ],
       "affiliate_matches": [
-        "Beaded door curtains",
-        "Faux fur throw pillows"
+        "Inflatable lounge chairs",
+        "Beaded door curtains"
       ],
       "niche": "home decor",
-      "pop": 71,
+      "pop": 72,
       "mom": 400,
-      "yoy": 40,
+      "yoy": 50,
       "rising": true,
-      "score": 181
+      "score": 182
     },
     {
-      "keyword": "father’s day art",
+      "keyword": "4th of july window painting",
       "keep": true,
       "season": "summer",
-      "intent": "high",
-      "article_topic": "10 Father's Day Art Prints That Make the Perfect Home Office Decor",
+      "intent": "medium",
+      "article_topic": "9 4th of July Window Painting Ideas for Festive Home Decor in 2026",
       "pin_titles": [
-        "Father's Day Art Ideas for His Man Cave",
-        "Printable Father's Day Art Gifts He'll Hang Up",
-        "10 Father's Day Art Prints for a Cozy Office"
+        "4th of July Window Painting Ideas for Your Living Room",
+        "Easy 4th of July Window Painting Designs for Cozy Homes",
+        "4th of July Window Painting: 7 Festive Decor Ideas"
       ],
       "pin_descriptions": [
-        "Find the perfect Father's Day art to upgrade his home office or man cave. These printable wall art ideas make easy, thoughtful gifts. Click to shop the prints!",
-        "Need easy Father's Day art ideas? These printable quotes and posters are the perfect cozy decor for dad's favorite room. See the full gift list now!"
+        "Try these 4th of July window painting ideas to make your home instantly festive for summer! Learn which washable paints work best for glass without leaving a mess. Click for the full tutorial.",
+        "Looking for 4th of July window painting inspiration? Decorate your cozy home with these simple red, white, and blue designs. Grab our printable decor guides on the blog!"
       ],
       "boards": [
-        "Father's Day Gift Ideas",
-        "Home Office Decor"
+        "Summer Home Decor",
+        "4th of July Decorating"
       ],
       "product_ideas": [
-        "Dad's Man Cave Printable Wall Art",
-        "Customizable Dad's Office Rules Printable"
+        "Printable 4th of July Patriotic Wall Art Set",
+        "Printable Summer Holiday Party Planner"
       ],
       "affiliate_matches": [
-        "Minimalist picture frames",
-        "Desk organizers"
+        "Washable window paint markers",
+        "Painter's tape for glass"
       ],
       "niche": "home",
-      "pop": 61,
-      "mom": 900,
-      "yoy": -10,
-      "rising": true,
-      "score": 171
-    },
-    {
-      "keyword": "indoor house plants aesthetic",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "high",
-      "article_topic": "12 Indoor House Plants Aesthetic Ideas for a Perfectly Cozy Living Room",
-      "pin_titles": [
-        "Indoor House Plants Aesthetic Ideas for Small Spaces",
-        "How to Get the Indoor House Plants Aesthetic",
-        "12 Indoor House Plants Aesthetic Styling Tips"
-      ],
-      "pin_descriptions": [
-        "Master the indoor house plants aesthetic with these cozy styling tips for any room. Learn how to display your greenery beautifully. Read the guide for more!",
-        "Want that lush indoor house plants aesthetic? Discover the best ways to arrange indoor plants for a cozy, relaxing vibe. Click to see the ideas!"
-      ],
-      "boards": [
-        "Cozy Living Room Decor",
-        "Indoor Plant Styling"
-      ],
-      "product_ideas": [
-        "Printable Plant Care Tracker",
-        "Botanical Line Art Printable Set"
-      ],
-      "affiliate_matches": [
-        "Woven plant baskets",
-        "Tiered wooden plant stands"
-      ],
-      "niche": "home decor",
-      "pop": 90,
-      "mom": 200,
-      "yoy": 10001,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "father’s day gifts ideas",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "25 Father’s Day Gifts Ideas for the Cozy Homebody Dad in 2026",
-      "pin_titles": [
-        "Father’s Day Gifts Ideas for the Homebody Dad",
-        "25 Cozy Father’s Day Gifts Ideas He'll Love",
-        "Best Father’s Day Gifts Ideas for His Man Cave"
-      ],
-      "pin_descriptions": [
-        "Stuck on what to buy? Discover these cozy Father’s Day gifts ideas perfect for the dad who loves relaxing at home. Click to shop the ultimate gift guide!",
-        "Find the best Father’s Day gifts ideas to upgrade his home office or lounge space. From cozy gadgets to printable art, click for the best picks!"
-      ],
-      "boards": [
-        "Father's Day Gift Ideas",
-        "Cozy Home Finds"
-      ],
-      "product_ideas": [
-        "Dad's Weekend Routine Printable Planner",
-        "Funny Dad Quote Printable Wall Art"
-      ],
-      "affiliate_matches": [
-        "Heated throw blankets",
-        "Ergonomic lounge chairs"
-      ],
-      "niche": "home",
-      "pop": 64,
-      "mom": 1500,
-      "yoy": 4000,
-      "rising": false,
-      "score": 164
-    },
-    {
-      "keyword": "father’s day gifts",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "18 Cozy Father’s Day Gifts That Upgrade His Home Office",
-      "pin_titles": [
-        "Father’s Day Gifts for the Ultimate Homebody",
-        "18 Cozy Father’s Day Gifts He Actually Wants",
-        "Best Father’s Day Gifts for His Home Office"
-      ],
-      "pin_descriptions": [
-        "Looking for Father’s Day gifts? Treat him to these cozy home upgrades and printable office art pieces he will cherish. Click to view the full gift list!",
-        "Discover the best Father’s Day gifts for the dad who loves a cozy home. From lounge essentials to man cave decor, click to shop our favorites!"
-      ],
-      "boards": [
-        "Father's Day Gifts",
-        "Home Office Decor"
-      ],
-      "product_ideas": [
-        "Printable Dad Joke Wall Art Set",
-        "Printable Home Maintenance Tracker for Dad"
-      ],
-      "affiliate_matches": [
-        "Coffee mug warmers",
-        "Luxury memory foam slippers"
-      ],
-      "niche": "home",
-      "pop": 58,
-      "mom": 600,
-      "yoy": 10001,
-      "rising": false,
-      "score": 158
-    },
-    {
-      "keyword": "father’s day gift",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "The Ultimate Father’s Day Gift Guide for a Cozy Dad Space in 2026",
-      "pin_titles": [
-        "The Best Father’s Day Gift for a Homebody Dad",
-        "Find the Perfect Father’s Day Gift for His Office",
-        "A Cozy Father’s Day Gift Guide for 2026"
-      ],
-      "pin_descriptions": [
-        "Searching for the perfect Father’s Day gift? Explore our top cozy home decor and printable wall art ideas for his special day. Click to shop!",
-        "Give him a Father’s Day gift he'll actually use with these cozy home office and lounge ideas. Click to see the ultimate dad gift guide!"
-      ],
-      "boards": [
-        "Father's Day Gift Ideas",
-        "Cozy Home Finds"
-      ],
-      "product_ideas": [
-        "Golf Theme Printable Wall Art",
-        "Dad's Daily Habit Tracker Printable"
-      ],
-      "affiliate_matches": [
-        "Desktop coffee stations",
-        "Plush robe"
-      ],
-      "niche": "home",
-      "pop": 57,
-      "mom": 700,
+      "pop": 59,
+      "mom": 400,
       "yoy": 100,
-      "rising": false,
-      "score": 157
+      "rising": true,
+      "score": 169
     }
   ]
 }
