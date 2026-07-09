@@ -3,15 +3,20 @@
  *
  * Pinterest categorizes the whole ACCOUNT from its board structure; off-niche
  * boards (dogs, beauty, fashion...) dilute topical authority for the home/cozy
- * printables niche. The safe recovery per Simple Pin Media / Anastasia Blogger:
- * set off-niche boards to SECRET (never delete — deleting loses followers and
- * mass changes read as spam), a few at a time over 2-4 weeks.
+ * printables niche.
  *
- * Runs daily (post-pins.yml): secrets up to MAX_PER_RUN off-niche public boards
- * per run until none remain — ~90 off-niche boards clear in ~3 weeks, inside the
- * recommended 2-4 week window. Idempotent and self-limiting.
+ * 2026-07-09: the original plan (PATCH board privacy → SECRET) is BLOCKED on this
+ * app's access tier — Pinterest returns 403 code 29 "not permitted to access that
+ * resource", so it silently no-op'd for weeks. DELETE, however, is allowed (204).
+ * The bulk of the legacy off-niche boards (87) were deleted in a one-off,
+ * engagement-checked pass (kept 15 off-niche boards that still earn clicks/saves).
  *
- * Flags: --dry-run   list what would change without changing it
+ * This daily job now only DELETES **empty** off-niche public boards (pin_count 0)
+ * — an empty board has zero engagement by definition, so this can never remove a
+ * board someone is saving from, and it keeps future off-niche clutter from
+ * accumulating. Boards with any pins are left alone (review them manually).
+ *
+ * Flags: --dry-run   list what would be deleted without deleting it
  */
 require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env.local') });
 const https = require('https');
@@ -43,18 +48,23 @@ function api(method, endpoint, body) {
   const r = await api('GET', '/v5/boards?page_size=250&privacy=PUBLIC');
   if (r.status !== 200) { console.error(`Board list failed (${r.status}):`, JSON.stringify(r.body).slice(0, 200)); process.exit(1); }
   const boards = r.body.items || [];
+  // Only EMPTY off-niche boards are eligible for deletion. A board with pins may
+  // be earning saves/clicks (the 15 engaged off-niche boards we deliberately kept
+  // all have pins) — never auto-delete those; surface them for a manual call.
   const offNiche = boards.filter((b) => !ON_NICHE.test(b.name || ''));
+  const emptyOff = offNiche.filter((b) => (b.pin_count || 0) === 0);
+  const withPins = offNiche.filter((b) => (b.pin_count || 0) > 0);
 
-  console.log(`${boards.length} public boards; ${offNiche.length} off-niche remaining.`);
-  if (!offNiche.length) { console.log('✅ Board cleanup complete — account is niche-locked.'); return; }
+  console.log(`${boards.length} public boards; ${offNiche.length} off-niche (${emptyOff.length} empty → delete, ${withPins.length} with pins → keep for manual review).`);
+  if (!emptyOff.length) { console.log('✅ No empty off-niche boards to clean up.'); return; }
 
-  let changed = 0;
-  for (const b of offNiche.slice(0, MAX_PER_RUN)) {
-    if (DRY) { console.log(`  (dry-run) would secret: "${b.name}" (${b.id})`); continue; }
-    const res = await api('PATCH', `/v5/boards/${b.id}`, { privacy: 'SECRET' });
-    if (res.status === 200) { console.log(`  ✓ secreted: "${b.name}"`); changed++; }
+  let deleted = 0;
+  for (const b of emptyOff.slice(0, MAX_PER_RUN)) {
+    if (DRY) { console.log(`  (dry-run) would delete empty: "${b.name}" (${b.id})`); continue; }
+    const res = await api('DELETE', `/v5/boards/${b.id}`);
+    if (res.status === 204) { console.log(`  ✓ deleted empty off-niche board: "${b.name}"`); deleted++; }
     else console.error(`  ✗ "${b.name}" failed (${res.status}): ${JSON.stringify(res.body).slice(0, 150)}`);
     await new Promise((s) => setTimeout(s, 2000));
   }
-  console.log(`Done. ${changed} board(s) set to SECRET this run; ${offNiche.length - changed} to go (staggered by design).`);
+  console.log(`Done. Deleted ${deleted} empty off-niche board(s) this run; ${emptyOff.length - deleted} empty remaining.`);
 })();
