@@ -143,6 +143,9 @@ async function htmlToPng(html, outPath, { width = 1000, height = 1500 } = {}) {
     await p.setViewport({ width, height, deviceScaleFactor: 1 });
     // Inline data URLs (no network), so 'load' is reliable; 'networkidle0' can hang in CI.
     await p.setContent(html, { waitUntil: 'load', timeout: 60000 });
+    // Wait for any web fonts (Playfair/Poppins) to load so serif text doesn't
+    // screenshot as a fallback; bounded so it never hangs when offline.
+    try { await Promise.race([p.evaluate(() => document.fonts.ready), new Promise((r) => setTimeout(r, 3500))]); } catch { /* offline → fallback */ }
     await new Promise((r) => setTimeout(r, 300)); // let images decode/paint
     await p.screenshot({ path: outPath, type: 'png' });
   });
@@ -190,6 +193,16 @@ async function renderShopPin(spec, outPath) {
   const sceneFile = pickScene(sceneCat);
   const sceneUrl = sceneFile ? dataUrl(sceneFile) : null;
 
+  // Shared type tokens: Playfair (serif) + Poppins (sans), Georgia fallback offline.
+  const HEAD = `<head><style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap');
+    :root{--serif:'Playfair Display',Georgia,serif;--sans:'Poppins','Helvetica Neue',Arial,sans-serif;}
+  </style></head>`;
+  // Warm wash + gentle warm filter unify cold/blue-grey stock rooms with the cozy
+  // brand palette so the mockup reads as a warm home, not a showroom.
+  const sceneImgStyle = 'width:100%;height:100%;object-fit:cover;filter:saturate(1.05) brightness(1.03) sepia(0.10);';
+  const warmWash = '<div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(176,90,60,0.10),rgba(120,86,54,0.14));"></div>';
+
   const framed = (src, w, h, pad, rot = 0) =>
     `<div style="background:#fff;padding:${pad}px;border:2px solid #efe7d8;box-shadow:0 22px 50px rgba(30,20,10,0.30);transform:rotate(${rot}deg);">
        <img src="${src}" style="width:${w}px;height:${h}px;object-fit:cover;display:block;"/></div>`;
@@ -202,16 +215,16 @@ async function renderShopPin(spec, outPath) {
     // Headline stays (keyword is OCR-indexed) but styled like a magazine caption.
     const sceneZone = sceneUrl
       ? `<div style="position:relative;width:100%;height:1120px;overflow:hidden;background:#e7dccb;">
-           <img src="${sceneUrl}" style="width:100%;height:100%;object-fit:cover;"/>
-           <div style="position:absolute;inset:0;background:rgba(255,255,255,0.05);"></div>
+           <img src="${sceneUrl}" style="${sceneImgStyle}"/>
+           ${warmWash}
            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
              ${framed(hero, 470, 630, 30, 0)}
            </div>
          </div>`
       : `<div style="height:1120px;display:flex;align-items:center;justify-content:center;
                     background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 500, 670, 30)}</div>`;
-    const html = `<html><body style="margin:0;">
-     <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
+    const html = `<html>${HEAD}<body style="margin:0;">
+     <div style="width:1000px;height:1500px;font-family:var(--serif);position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
        ${brandChip}
        ${sceneZone}
        <div style="text-align:center;padding:34px 60px 0;">
@@ -232,8 +245,8 @@ async function renderShopPin(spec, outPath) {
     : '';
   const sceneZone = sceneUrl
     ? `<div style="position:relative;width:100%;height:860px;overflow:hidden;background:#e7dccb;">
-         <img src="${sceneUrl}" style="width:100%;height:100%;object-fit:cover;"/>
-         <div style="position:absolute;inset:0;background:rgba(255,255,255,0.06);"></div>
+         <img src="${sceneUrl}" style="${sceneImgStyle}"/>
+         ${warmWash}
          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
            ${framed(hero, 400, 520, 24, -3)}
          </div>
@@ -241,8 +254,8 @@ async function renderShopPin(spec, outPath) {
     : `<div style="height:860px;display:flex;align-items:center;justify-content:center;
                   background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 460, 620, 28)}</div>`;
 
-  const html = `<html><body style="margin:0;">
-   <div style="width:1000px;height:1500px;font-family:Georgia,serif;position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
+  const html = `<html>${HEAD}<body style="margin:0;">
+   <div style="width:1000px;height:1500px;font-family:var(--serif);position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
      ${brandChip}
      ${sceneZone}
      <div style="text-align:center;padding:30px 50px 0;">
