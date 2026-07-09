@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
+const { renderKenBurnsFromImage } = require('./lib-video');
 
 const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
 const PINS_DIR = path.join(process.cwd(), 'public', 'pins');
@@ -227,6 +228,21 @@ function applyVerdicts(order) {
       fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
       total++;
       process.stdout.write(`\r${total} pins generated`);
+    }
+
+    // One video pin per article too — 2026 data shows video pins run ~3x the
+    // CTR / ~2x the saves of static (see scripts/lib-video.js). Built from the
+    // already-rendered pin-1 (this article's lead/highest-priority template)
+    // via a slow Ken Burns zoom, so it's the same warm design, just in motion —
+    // not a separate video-editing pipeline.
+    const videoOut = path.join(pinDir, 'video-1.mp4');
+    const videoCover = path.join(pinDir, 'video-1-cover.jpg');
+    const leadPin = path.join(pinDir, 'pin-1.png');
+    if (!fs.existsSync(videoOut) && fs.existsSync(leadPin)) {
+      await renderKenBurnsFromImage({ imagePath: leadPin, outPath: videoOut, coverPath: videoCover });
+      manifest['video-1.mp4'] = 'video';
+      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+      console.log(`\n  ✓ video-1.mp4`);
     }
   }
   console.log(`\nDone. ${total} pins saved to public/pins/`);

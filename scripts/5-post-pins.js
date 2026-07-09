@@ -13,6 +13,7 @@ require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env.lo
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const { postVideoPin } = require('./pinterest-video');
 
 const CLIENT_ID = process.env.PINTEREST_CLIENT_ID;
 const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
@@ -225,13 +226,20 @@ function buildQueue(tracker) {
         const n = (s) => parseInt(s.replace('pin-', '').replace('.png', ''));
         return n(a) - n(b);
       });
+    // Video pins run ~3x the CTR / ~2x the saves of static (2026 data) — try the
+    // video FIRST for each article (once posted it falls through to pin-1,
+    // pin-2, ... as before). Same 1-per-article-per-day slot as static pins, so
+    // this doesn't add volume — it just prioritizes the higher-performing asset.
+    const allVideos = fs.readdirSync(pinFolder).filter((f) => f.endsWith('.mp4'));
+    const candidates = [...allVideos, ...pinFiles];
 
-    for (const pinFile of pinFiles) {
+    for (const pinFile of candidates) {
       const key = `${slug}/${pinFile}`;
       if (tracker[key]) continue;
-      // brand-new article = none of its pins posted yet → seed these first
-      const isNew = !allPins.some((f) => tracker[`${slug}/${f}`]);
-      queue.push({ key, slug, article, pinFile, isNew });
+      // brand-new article = none of its pins/videos posted yet → seed these first
+      const isNew = !allPins.concat(allVideos).some((f) => tracker[`${slug}/${f}`]);
+      const isVideo = pinFile.endsWith('.mp4');
+      queue.push({ key, slug, article, pinFile, isNew, isVideo });
       break; // max 1 pin per article per day — prevents same-URL spam flag
     }
   }
@@ -299,7 +307,23 @@ function buildAltText(article) {
 
 // ── Post one pin ──────────────────────────────────────────────────────────────
 async function postPin(pin, boardId) {
-  const { article, pinFile, slug } = pin;
+  const { article, pinFile, slug, isVideo } = pin;
+
+  if (isVideo) {
+    const videoPath = path.join(process.cwd(), 'public', 'pins', slug, pinFile);
+    const coverFile = pinFile.replace(/\.mp4$/, '-cover.jpg');
+    return postVideoPin({
+      accessToken: ACCESS_TOKEN,
+      apiHost: API_HOST,
+      boardId,
+      title: article.topic_title,
+      description: buildDescription(article),
+      altText: buildAltText(article),
+      link: `${SITE_URL}/${slug}`,
+      videoPath,
+      coverImageUrl: `${SITE_URL}/pins/${slug}/${coverFile}`,
+    });
+  }
 
   const res = await api('POST', '/v5/pins', {
     board_id: boardId,

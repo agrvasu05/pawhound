@@ -10,6 +10,8 @@ const path = require('path');
 const { execFileSync, execSync } = require('child_process');
 const OpenAI = require('openai');
 const puppeteer = require('puppeteer');
+const { renderKenBurnsFromImage } = require('../scripts/lib-video');
+const { postVideoPin } = require('../scripts/pinterest-video');
 
 // Only instantiate when a key exists — post-queue.js requires this lib for
 // rendering/posting and must not crash when OPENAI_API_KEY isn't in its env.
@@ -493,18 +495,39 @@ async function postQueue({ maxPerRun = 5 } = {}) {
       .map((f) => path.join(assetDir, f)).filter((f) => fs.existsSync(f));
     if (!images.length) continue;
     const tmpPin = path.join(assetDir, '_pin_tmp.png');
+    // First pin posted for a product goes out as VIDEO (2026 data: ~3x CTR /
+    // ~2x saves vs static) via a Ken Burns zoom over this same rendered design;
+    // once a product has one, its other drip variants stay static — mirrors the
+    // content-pin pattern (video first per URL, then static) rather than
+    // converting every future shop pin, keeping this an accelerant not a rewrite.
+    const useVideo = !q.some((x) => x.slug === e.slug && x.status === 'posted' && x.wasVideo);
+    const tmpVideo = path.join(assetDir, '_pin_tmp.mp4');
+    const tmpCover = path.join(assetDir, '_pin_tmp_cover.jpg');
     try {
       const scene = (rec.type === 'wall-art' || rec.type === 'bundle') ? 'wall' : 'desk';
       await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent, scene }, tmpPin);
       const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
-      const url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin, altText: e.alt });
+      let url;
+      if (useVideo) {
+        await renderKenBurnsFromImage({ imagePath: tmpPin, outPath: tmpVideo, coverPath: tmpCover });
+        const pin = await postVideoPin({
+          accessToken: PIN.ACCESS, apiHost: 'api.pinterest.com', boardId,
+          title: e.title, description: e.description, altText: e.alt, link: e.link,
+          videoPath: tmpVideo, coverImageData: fs.readFileSync(tmpCover).toString('base64'), coverImageContentType: 'image/jpeg',
+        });
+        url = `https://pinterest.com/pin/${pin.id}`;
+        e.wasVideo = true;
+      } else {
+        url = await pinPost({ boardId, title: e.title, description: e.description, link: e.link, pngPath: tmpPin, altText: e.alt });
+      }
       e.status = 'posted'; e.pin_url = url; e.posted_at = new Date().toISOString();
       recentlyPostedSlugs.add(e.slug); posted++;
-      console.log(`  ✓ ${e.slug} -> ${url}`);
-      fs.unlinkSync(tmpPin);
+      console.log(`  ✓ ${e.slug} -> ${url}${useVideo ? ' (video)' : ''}`);
       await new Promise((r) => setTimeout(r, 4000));
     } catch (err) {
       console.error(`  ✗ ${e.slug} pin failed:`, err.message);
+    } finally {
+      for (const f of [tmpPin, tmpVideo, tmpCover]) { try { fs.unlinkSync(f); } catch { /* not written this run */ } }
     }
   }
   saveQueue(q);
