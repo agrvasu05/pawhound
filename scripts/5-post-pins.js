@@ -105,6 +105,12 @@ async function refreshToken() {
   console.log('✓ Token refreshed.');
 }
 
+// Which article niches are allowed to be pinned. Home/cozy/decor ONLY — the
+// account's reach collapsed because it pinned beauty + dogs + fashion too, so
+// Pinterest could not assign it a topic. Matches the article `niche` field
+// ("home", "home decor", …). Beauty/fashion/dogs are intentionally excluded.
+const ON_NICHE = /(home|cozy|cosy|decor|interior|room|bedroom|kitchen|living|entryway|apartment|rental|small.?space|storage|declutter|clean|organi[sz]|plant|garden|nook|nest|farmhouse|boho|minimalist|printable|planner|checklist)/i;
+
 // One board per NICHE (not per article). All dog pins go to the dog board and
 // all home pins to the home board — fuller, keyword-rich boards rank far better
 // on Pinterest than hundreds of thin single-pin boards.
@@ -197,8 +203,15 @@ function buildQueue(tracker) {
     const filePath = path.join(articlesDir, file);
     const article = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     const slug = article.topic_slug;
-    // Dogs removed from postings — skip dog/legacy articles (no niche or 'dogs').
-    if (!article.niche || article.niche === 'dogs') continue;
+    // NICHE LOCK (2026-07 pivot). Only pin home/cozy/decor articles. The old guard
+    // let 'beauty' (73 articles) and 'fashion' through, so every day we pinned
+    // nails/makeup/hairstyle pins next to home decor across dozens of unrelated
+    // boards. Pinterest could not categorize the account → 0 saves and reach
+    // collapsed (5242→2673 impressions in 10 days). Pinning ONE tight niche is the
+    // documented recovery (content/pinterest-playbook-2026.md). Everything not
+    // home/cozy is skipped here (articles still publish for ad revenue; they just
+    // never get pinned).
+    if (!article.niche || !ON_NICHE.test(article.niche)) continue;
     if (onlyArg && !slug.includes(onlyArg)) continue;
     const pinFolder = path.join(pinsDir, slug);
     if (!fs.existsSync(pinFolder)) continue;
