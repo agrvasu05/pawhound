@@ -1,606 +1,538 @@
 {
-  "generated_at": "2026-07-11T16:04:01.438Z",
+  "generated_at": "2026-07-12T14:49:07.887Z",
   "region": "US",
   "candidates": [
     {
-      "keyword": "2000s teen bedroom",
-      "niche": "home decor",
-      "pop": 87,
-      "mom": 300,
-      "yoy": 80,
-      "rising": true,
-      "score": 197
-    },
-    {
       "keyword": "charger bedazzled ideas",
       "niche": "home",
-      "pop": 87,
-      "mom": 500,
+      "pop": 89,
+      "mom": 400,
       "yoy": 10001,
       "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "diy pool ladder",
-      "niche": "home decor",
-      "pop": 83,
-      "mom": 300,
-      "yoy": -30,
-      "rising": true,
-      "score": 193
+      "score": 199
     },
     {
       "keyword": "сквиши из бумаги",
       "niche": "home",
-      "pop": 81,
-      "mom": 500,
+      "pop": 78,
+      "mom": 300,
       "yoy": 5500,
       "rising": true,
-      "score": 191
+      "score": 188
     },
     {
-      "keyword": "4th of july golf cart parade ideas",
+      "keyword": "paper dolls clothing",
       "niche": "home",
-      "pop": 70,
-      "mom": 500,
-      "yoy": -30,
-      "rising": true,
-      "score": 180
-    },
-    {
-      "keyword": "4th of july banner painted",
-      "niche": "home",
-      "pop": 60,
-      "mom": 700,
-      "yoy": 70,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "4th of july banners ideas",
-      "niche": "home",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 500,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "4th of july banner",
-      "niche": "home",
-      "pop": 60,
+      "pop": 74,
       "mom": 400,
-      "yoy": 50,
+      "yoy": -50,
       "rising": true,
-      "score": 170
+      "score": 184
     },
     {
-      "keyword": "easy 4th of july crafts",
-      "niche": "home",
-      "pop": 59,
+      "keyword": "dorm gallery wall",
+      "niche": "home decor",
+      "pop": 65,
       "mom": 300,
-      "yoy": -30,
+      "yoy": 200,
       "rising": false,
-      "score": 169
+      "score": 175
     },
     {
-      "keyword": "4th of july crafts for toddlers",
+      "keyword": "mom birthday cards",
       "niche": "home",
-      "pop": 57,
-      "mom": 2500,
-      "yoy": 30,
+      "pop": 92,
+      "mom": 200,
+      "yoy": 80,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "macrame ideas",
+      "niche": "home",
+      "pop": 90,
+      "mom": 200,
+      "yoy": -5,
       "rising": true,
       "score": 167
     },
     {
-      "keyword": "4th of july crafts for infants",
-      "niche": "home",
-      "pop": 57,
-      "mom": 1500,
-      "yoy": -20,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "fourth of july banner",
-      "niche": "home",
-      "pop": 57,
-      "mom": 500,
-      "yoy": 60,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "july 4th crafts for kids",
-      "niche": "home",
-      "pop": 56,
-      "mom": 1000,
-      "yoy": 60,
+      "keyword": "2000s teen bedroom",
+      "niche": "home decor",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 90,
       "rising": true,
       "score": 166
     },
     {
-      "keyword": "4th of july shirts",
+      "keyword": "4th of july shorts diy",
       "niche": "home",
-      "pop": 55,
-      "mom": 400,
-      "yoy": 1,
+      "pop": 54,
+      "mom": 1500,
+      "yoy": 100,
       "rising": true,
-      "score": 165
+      "score": 164
+    },
+    {
+      "keyword": "dorm checklist",
+      "niche": "home decor",
+      "pop": 86,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "tye dye patterns",
+      "niche": "home",
+      "pop": 85,
+      "mom": 200,
+      "yoy": -30,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "crochet grid patterns",
+      "niche": "home",
+      "pop": 83,
+      "mom": 200,
+      "yoy": 20,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "4th of july painting ideas",
+      "niche": "home",
+      "pop": 47,
+      "mom": 400,
+      "yoy": 60,
+      "rising": true,
+      "score": 157
+    },
+    {
+      "keyword": "4th of july painting",
+      "niche": "home",
+      "pop": 46,
+      "mom": 700,
+      "yoy": 30,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "paper squishes",
+      "niche": "home",
+      "pop": 46,
+      "mom": 500,
+      "yoy": 500,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "fourth of july painting ideas",
+      "niche": "home",
+      "pop": 46,
+      "mom": 400,
+      "yoy": 200,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "easy diy clothes",
+      "niche": "home",
+      "pop": 78,
+      "mom": 200,
+      "yoy": -30,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "ways to cut a t shirt",
+      "niche": "home",
+      "pop": 79,
+      "mom": 200,
+      "yoy": 2500,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "classy cubicle",
+      "niche": "home decor",
+      "pop": 73,
+      "mom": 200,
+      "yoy": 1000,
+      "rising": true,
+      "score": 149
+    },
+    {
+      "keyword": "random things to bedazzle",
+      "niche": "home",
+      "pop": 38,
+      "mom": 1500,
+      "yoy": 2500,
+      "rising": true,
+      "score": 148
+    },
+    {
+      "keyword": "animal masks",
+      "niche": "home",
+      "pop": 72,
+      "mom": 200,
+      "yoy": 300,
+      "rising": true,
+      "score": 148
+    },
+    {
+      "keyword": "fathers day gifts ideas",
+      "niche": "home",
+      "pop": 48,
+      "mom": 300,
+      "yoy": -20,
+      "rising": false,
+      "score": 148
+    },
+    {
+      "keyword": "father’s day gift ideas",
+      "niche": "home",
+      "pop": 47,
+      "mom": 400,
+      "yoy": 100,
+      "rising": false,
+      "score": 147
     },
     {
       "keyword": "4th of july crafts",
       "niche": "home",
-      "pop": 55,
-      "mom": 400,
+      "pop": 47,
+      "mom": 300,
       "yoy": 20,
       "rising": false,
-      "score": 165
+      "score": 147
     },
     {
-      "keyword": "fourth of july crafts for kids",
+      "keyword": "diy cut t-shirts",
       "niche": "home",
-      "pop": 54,
-      "mom": 1000,
-      "yoy": 60,
+      "pop": 69,
+      "mom": 200,
+      "yoy": 1500,
       "rising": true,
-      "score": 164
+      "score": 146
+    },
+    {
+      "keyword": "tee shirt cutting diy",
+      "niche": "home",
+      "pop": 67,
+      "mom": 200,
+      "yoy": -20,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "book bags",
+      "niche": "home",
+      "pop": 66,
+      "mom": 200,
+      "yoy": 6,
+      "rising": true,
+      "score": 143
+    },
+    {
+      "keyword": "fourth of july paint",
+      "niche": "home",
+      "pop": 31,
+      "mom": 1000,
+      "yoy": 5,
+      "rising": true,
+      "score": 141
     },
     {
       "keyword": "4th of july crafts for kids",
       "niche": "home",
-      "pop": 54,
+      "pop": 41,
       "mom": 1000,
       "yoy": 50,
-      "rising": true,
-      "score": 164
-    },
-    {
-      "keyword": "4th of july art for toddlers",
-      "niche": "home",
-      "pop": 54,
-      "mom": 1000,
-      "yoy": -30,
-      "rising": true,
-      "score": 164
-    },
-    {
-      "keyword": "4th of july toddler crafts",
-      "niche": "home",
-      "pop": 52,
-      "mom": 1000,
-      "yoy": -30,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "4th of july tie dye shirts diy",
-      "niche": "home",
-      "pop": 52,
-      "mom": 800,
-      "yoy": 10,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "4th of july kids crafts",
-      "niche": "home",
-      "pop": 52,
-      "mom": 700,
-      "yoy": -20,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "fourth of july crafts for toddlers",
-      "niche": "home",
-      "pop": 51,
-      "mom": 1500,
-      "yoy": 10,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "easy fourth of july crafts for kids",
-      "niche": "home",
-      "pop": 51,
-      "mom": 900,
-      "yoy": 200,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "4th of july kids activities",
-      "niche": "home",
-      "pop": 51,
-      "mom": 600,
-      "yoy": -10,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "fourth of july shirts",
-      "niche": "home",
-      "pop": 51,
-      "mom": 500,
-      "yoy": -20,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "4th of july craft",
-      "niche": "home",
-      "pop": 50,
-      "mom": 800,
-      "yoy": 4,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "4th of july handprint art",
-      "niche": "home",
-      "pop": 49,
-      "mom": 2000,
-      "yoy": 40,
-      "rising": true,
-      "score": 159
-    },
-    {
-      "keyword": "4th of july activities for kids",
-      "niche": "home",
-      "pop": 49,
-      "mom": 1500,
-      "yoy": -20,
-      "rising": true,
-      "score": 159
-    },
-    {
-      "keyword": "4th of july bracelet ideas",
-      "niche": "home",
-      "pop": 49,
-      "mom": 600,
-      "yoy": 20,
-      "rising": true,
-      "score": 159
-    },
-    {
-      "keyword": "firework craft",
-      "niche": "home",
-      "pop": 49,
-      "mom": 600,
-      "yoy": 10,
       "rising": false,
-      "score": 159
+      "score": 141
     },
     {
-      "keyword": "fourth of july shirts diy",
+      "keyword": "fourth of july crafts for kids",
       "niche": "home",
-      "pop": 48,
-      "mom": 800,
+      "pop": 41,
+      "mom": 1000,
+      "yoy": 60,
+      "rising": false,
+      "score": 141
+    },
+    {
+      "keyword": "4th of july paint",
+      "niche": "home",
+      "pop": 30,
+      "mom": 6000,
+      "yoy": 10,
+      "rising": true,
+      "score": 140
+    },
+    {
+      "keyword": "bedazzle ideas",
+      "niche": "home",
+      "pop": 97,
+      "mom": 100,
+      "yoy": 2500,
+      "rising": true,
+      "score": 140
+    },
+    {
+      "keyword": "things to diy",
+      "niche": "home",
+      "pop": 62,
+      "mom": 200,
       "yoy": 100,
       "rising": true,
-      "score": 158
+      "score": 139
     },
     {
-      "keyword": "4th of july activities",
-      "niche": "home",
-      "pop": 48,
-      "mom": 700,
-      "yoy": 20,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "fourth of july shirt",
-      "niche": "home",
-      "pop": 48,
-      "mom": 500,
-      "yoy": -4,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "4th of july shirt",
-      "niche": "home",
-      "pop": 48,
-      "mom": 400,
-      "yoy": 9,
-      "rising": false,
-      "score": 158
-    },
-    {
-      "keyword": "4 of july crafts for kids",
-      "niche": "home",
-      "pop": 47,
-      "mom": 2000,
-      "yoy": 20,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "fourth of july craft",
-      "niche": "home",
-      "pop": 47,
-      "mom": 1000,
-      "yoy": -4,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "fourth of july activities for kids",
-      "niche": "home",
-      "pop": 47,
+      "keyword": "black nouveau bedroom",
+      "niche": "home decor",
+      "pop": 28,
       "mom": 800,
-      "yoy": -20,
+      "yoy": 10001,
       "rising": true,
-      "score": 157
+      "score": 138
     },
     {
-      "keyword": "fourth of july crafts for preschoolers",
+      "keyword": "beaded animals",
       "niche": "home",
-      "pop": 46,
-      "mom": 2000,
+      "pop": 95,
+      "mom": 100,
+      "yoy": -40,
+      "rising": true,
+      "score": 138
+    },
+    {
+      "keyword": "painted jenga blocks",
+      "niche": "home",
+      "pop": 94,
+      "mom": 100,
+      "yoy": 200,
+      "rising": true,
+      "score": 137
+    },
+    {
+      "keyword": "father’s day",
+      "niche": "home",
+      "pop": 36,
+      "mom": 300,
       "yoy": 70,
-      "rising": true,
-      "score": 156
+      "rising": false,
+      "score": 136
     },
     {
-      "keyword": "fourth of july activities",
-      "niche": "home",
-      "pop": 46,
-      "mom": 1000,
-      "yoy": 20,
+      "keyword": "light switch bedazzled",
+      "niche": "home decor",
+      "pop": 91,
+      "mom": 100,
+      "yoy": 8500,
       "rising": true,
-      "score": 156
+      "score": 134
     },
     {
-      "keyword": "diy fourth of july shirt",
-      "niche": "home",
-      "pop": 46,
-      "mom": 900,
-      "yoy": 30,
+      "keyword": "farmhouse ideas",
+      "niche": "home decor",
+      "pop": 91,
+      "mom": 100,
+      "yoy": 50,
       "rising": true,
-      "score": 156
+      "score": 134
+    },
+    {
+      "keyword": "fathers day",
+      "niche": "home",
+      "pop": 34,
+      "mom": 300,
+      "yoy": -30,
+      "rising": false,
+      "score": 134
+    },
+    {
+      "keyword": "easy kandi ideas",
+      "niche": "home",
+      "pop": 56,
+      "mom": 200,
+      "yoy": 90,
+      "rising": true,
+      "score": 133
     }
   ],
   "briefs": [
     {
-      "keyword": "2000s teen bedroom",
+      "keyword": "dorm gallery wall",
+      "keep": true,
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "15 Dorm Gallery Wall Layouts That Make a Tiny Room Feel Like Home in 2026",
+      "pin_titles": [
+        "Dorm Gallery Wall Ideas for a Cozy College Room",
+        "10 Easy Dorm Gallery Wall Layouts You Can Hang Without Nails",
+        "Aesthetic Dorm Gallery Wall Inspiration for Your 2026 Room"
+      ],
+      "pin_descriptions": [
+        "Looking for dorm gallery wall ideas? Discover easy, damage-free ways to style your college bedroom and make it incredibly cozy. Click to see our favorite printable art layouts!",
+        "Create the perfect dorm gallery wall with these renter-friendly hanging hacks. Read the post for cozy college decor inspiration and download our printable art sets today!"
+      ],
+      "boards": [
+        "Dorm Room Decor",
+        "College Apartment Ideas"
+      ],
+      "product_ideas": [
+        "Printable Trendy Dorm Wall Art Bundle",
+        "Gallery Wall Planning Template & Tracker"
+      ],
+      "affiliate_matches": [
+        "Command strips and damage-free hanging hooks",
+        "Aesthetic lightweight picture frames"
+      ],
+      "niche": "home decor",
+      "pop": 65,
+      "mom": 300,
+      "yoy": 200,
+      "rising": false,
+      "score": 175
+    },
+    {
+      "keyword": "macrame ideas",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "15 2000s Teen Bedroom Decor Ideas to Bring Back Cozy Y2K Vibes in 2026",
+      "article_topic": "11 Cozy Macrame Ideas to Add Texture to Your Living Room",
       "pin_titles": [
-        "2000s Teen Bedroom Ideas for a Cozy Y2K Aesthetic",
-        "11 2000s Teen Bedroom Essentials You Need Right Now",
-        "2000s Teen Bedroom Decor: How to Get the Look"
+        "Macrame Ideas for a Cozy, Boho Bedroom Makeover",
+        "7 Easy Macrame Ideas to Warm Up Empty Wall Space",
+        "Boho Macrame Ideas and Decor Pairings for 2026"
       ],
       "pin_descriptions": [
-        "Looking for 2000s teen bedroom inspiration? Discover the ultimate Y2K decor elements that make your space feel incredibly cozy and nostalgic. Click through for our favorite printable posters and styling tips!",
-        "Transform your space with these 2000s teen bedroom ideas that scream early aughts nostalgia. Learn how to layer cozy textures and bright colors today. Read the full post for more!"
+        "Need fresh macrame ideas for your space? Add instant warmth and texture to any room with these cozy boho styling tips. Click to read the guide!",
+        "Explore beautiful macrame ideas that instantly make your apartment feel cozier. Check out our styling tips and grab our matching boho printable wall art!"
       ],
       "boards": [
-        "Y2K Room Decor",
-        "Cozy Bedroom Ideas"
+        "Boho Home Decor",
+        "Cozy Living Room Ideas"
       ],
       "product_ideas": [
-        "Y2K aesthetic printable wall art bundle",
-        "Printable room makeover budget tracker"
+        "Boho Desert Printable Wall Art Collection",
+        "DIY Craft Project Planner Printable"
       ],
       "affiliate_matches": [
-        "Inflatable chairs",
-        "Beaded doorway curtains"
-      ],
-      "niche": "home decor",
-      "pop": 87,
-      "mom": 300,
-      "yoy": 80,
-      "rising": true,
-      "score": 197
-    },
-    {
-      "keyword": "4th of july banner painted",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "9 4th of July Banner Painted Designs for a Festive Cozy Mantel in 2026",
-      "pin_titles": [
-        "4th of July Banner Painted Ideas for Your Mantel",
-        "7 4th of July Banner Painted DIYs to Try This Summer",
-        "4th of July Banner Painted Decor for a Cozy Home"
-      ],
-      "pin_descriptions": [
-        "Create a stunning 4th of July banner painted with our easy step-by-step home decor guide. Bring a cozy, festive touch to your living room mantel this summer. Click to see the tutorials and grab our templates!",
-        "Looking for 4th of July banner painted inspiration? We have the best DIY decor ideas to make your home feel patriotic and cozy. Check out the blog post for our printable stencils!"
-      ],
-      "boards": [
-        "4th of July Home Decor",
-        "DIY Seasonal Banners"
-      ],
-      "product_ideas": [
-        "Printable 4th of July banner stencils",
-        "Summer party planning printable tracker"
-      ],
-      "affiliate_matches": [
-        "Acrylic craft paint sets",
-        "Blank canvas bunting flags"
+        "Pre-made macrame wall hangings",
+        "Floating wood shelves for macrame plant hangers"
       ],
       "niche": "home",
-      "pop": 60,
-      "mom": 700,
-      "yoy": 70,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "4th of july banners ideas",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "14 4th of July Banners Ideas That Instantly Make Your Home Look Festive",
-      "pin_titles": [
-        "4th of July Banners Ideas for a Cozy Summer Mantel",
-        "10 4th of July Banners Ideas You Can Print at Home",
-        "4th of July Banners Ideas to Decorate Your Porch"
-      ],
-      "pin_descriptions": [
-        "Need fresh 4th of July banners ideas for your summer decorating? Explore our favorite cozy and festive bunting designs to dress up your fireplace or porch. Click to download our printable banner sets!",
-        "Discover the best 4th of July banners ideas to elevate your holiday home decor this season. Add a cozy, patriotic touch in minutes. Read the guide and get decorating!"
-      ],
-      "boards": [
-        "Patriotic Home Decor",
-        "Summer Mantel Styling"
-      ],
-      "product_ideas": [
-        "Printable 4th of July bunting flags",
-        "Printable July home organization calendar"
-      ],
-      "affiliate_matches": [
-        "Command hooks for hanging banners",
-        "Fairy lights for mantel decor"
-      ],
-      "niche": "home",
-      "pop": 60,
-      "mom": 600,
-      "yoy": 500,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "4th of july banner",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "10 4th of July Banner Designs to Print for a Cozy Holiday Mantel",
-      "pin_titles": [
-        "4th of July Banner Printables for Instant Holiday Decor",
-        "5 4th of July Banner Styles for a Festive Living Room",
-        "4th of July Banner Ideas to Brighten Your Space"
-      ],
-      "pin_descriptions": [
-        "Find the perfect 4th of July banner to instantly make your living room feel ready for summer hosting. These cozy decor details are so easy to set up. Click to shop our printable banners!",
-        "A beautiful 4th of July banner is the easiest way to add patriotic charm to your cozy home. See our top styling tips for mantels and entryways. Check out the post to download yours!"
-      ],
-      "boards": [
-        "4th of July Decorating",
-        "Printable Home Decor"
-      ],
-      "product_ideas": [
-        "Printable patriotic stars and stripes banner",
-        "Printable summer BBQ hosting planner"
-      ],
-      "affiliate_matches": [
-        "Decorative natural jute twine",
-        "Mini clothespins for hanging decor"
-      ],
-      "niche": "home",
-      "pop": 60,
-      "mom": 400,
-      "yoy": 50,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "easy 4th of july crafts",
-      "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "12 Easy 4th of July Crafts That Double as Beautiful Home Decor in 2026",
-      "pin_titles": [
-        "Easy 4th of July Crafts for a Festive Cozy Home",
-        "9 Easy 4th of July Crafts to Decorate Your Mantel",
-        "Easy 4th of July Crafts You Can Display All Summer"
-      ],
-      "pin_descriptions": [
-        "Try these easy 4th of July crafts that actually look gorgeous as home decor. Perfect for adding a cozy, festive touch to your summer hosting spaces. Click through for our printable craft templates!",
-        "Looking for easy 4th of July crafts to spruce up your living room? These simple DIY decor projects will make your home shine this summer. Read the post for full instructions!"
-      ],
-      "boards": [
-        "DIY Summer Decor",
-        "4th of July Crafts & Decor"
-      ],
-      "product_ideas": [
-        "Printable 4th of July craft templates and wall art",
-        "Printable summer craft project planner"
-      ],
-      "affiliate_matches": [
-        "Mason jars for painted centerpieces",
-        "Hot glue guns and craft supplies"
-      ],
-      "niche": "home",
-      "pop": 59,
-      "mom": 300,
-      "yoy": -30,
-      "rising": false,
-      "score": 169
-    },
-    {
-      "keyword": "fourth of july banner",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "8 Fourth of July Banner Ideas to Elevate Your Summer Porch Decor",
-      "pin_titles": [
-        "Fourth of July Banner Ideas for a Cozy Front Porch",
-        "7 Fourth of July Banner Printables for Easy Decorating",
-        "Fourth of July Banner Styles You Will Love This Summer"
-      ],
-      "pin_descriptions": [
-        "Hang a stunning fourth of july banner to give your home a cozy, welcoming vibe for the holiday weekend. Perfect for mantels, porches, and entryways. Click here to grab our instant printables!",
-        "A festive fourth of july banner is the ultimate easy decor hack for summer hosting. Learn how to style yours for maximum coziness. Read the blog to shop our printable designs!"
-      ],
-      "boards": [
-        "Patriotic Porch Decor",
-        "Summer Holiday Home"
-      ],
-      "product_ideas": [
-        "Printable vintage-style Fourth of July banner",
-        "Printable summer holiday decor checklist"
-      ],
-      "affiliate_matches": [
-        "Outdoor weather-resistant command strips",
-        "Patriotic throw pillows for porch seating"
-      ],
-      "niche": "home",
-      "pop": 57,
-      "mom": 500,
-      "yoy": 60,
+      "pop": 90,
+      "mom": 200,
+      "yoy": -5,
       "rising": true,
       "score": 167
     },
     {
-      "keyword": "4th of july crafts",
+      "keyword": "2000s teen bedroom",
       "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "15 4th of July Crafts to Create Cozy Patriotic Home Decor",
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "9 2000s Teen Bedroom Decor Ideas for a Nostalgic Vibe",
       "pin_titles": [
-        "4th of July Crafts to Spruce Up Your Summer Home",
-        "11 4th of July Crafts That Look Like High-End Decor",
-        "4th of July Crafts for a Beautiful Holiday Mantel"
+        "2000s Teen Bedroom Decor Ideas for a Nostalgic Cozy Space",
+        "How to Get the Ultimate 2000s Teen Bedroom Aesthetic",
+        "Y2K 2000s Teen Bedroom Inspiration for 2026"
       ],
       "pin_descriptions": [
-        "Discover elegant 4th of July crafts that perfectly blend with your cozy home aesthetic. Elevate your summer hosting with these simple DIY decor pieces. Click to see the tutorials and printables!",
-        "These 4th of July crafts are the perfect way to add festive charm to your living space this summer. Create beautiful centerpieces and wall art in minutes. Check out the post for inspiration!"
+        "Bring back the best of the era with these 2000s teen bedroom decor tips. Create a cozy, nostalgic space that feels totally updated for 2026. Click to read!",
+        "Obsessed with the 2000s teen bedroom aesthetic? Learn how to recreate the cozy Y2K vibe with modern touches. Click here for decor links and printable posters!"
       ],
       "boards": [
-        "Summer DIY Decor",
-        "Holiday Home Crafts"
+        "Teen Bedroom Inspiration",
+        "Y2K Room Decor"
       ],
       "product_ideas": [
-        "Printable patriotic wall art trio",
-        "Printable DIY decor project tracker"
+        "Y2K Nostalgia Printable Wall Art Posters",
+        "Room Makeover Budget Planner Printable"
       ],
       "affiliate_matches": [
-        "Mod Podge for decoupage projects",
-        "Rustic wooden trays for centerpieces"
+        "Beaded door curtains",
+        "Fuzzy throw pillows and butterfly chairs"
       ],
-      "niche": "home",
-      "pop": 55,
-      "mom": 400,
-      "yoy": 20,
-      "rising": false,
-      "score": 165
+      "niche": "home decor",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 90,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "dorm checklist",
+      "keep": true,
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "The Ultimate 2026 Dorm Checklist: 25 Essentials for a Cozy College Room",
+      "pin_titles": [
+        "The Only Dorm Checklist You Need for a Cozy College Room",
+        "Complete Dorm Checklist 2026: What to Actually Bring",
+        "Minimalist Dorm Checklist for an Organized Small Space"
+      ],
+      "pin_descriptions": [
+        "Don't overpack! This ultimate dorm checklist covers all the essentials you actually need for a cozy and organized college room. Click to download the printable tracker!",
+        "Get ready for move-in day with our comprehensive 2026 dorm checklist. Ensure your college room is perfectly organized and styled. Read the post now!"
+      ],
+      "boards": [
+        "College Organization",
+        "Dorm Room Essentials"
+      ],
+      "product_ideas": [
+        "Printable College Dorm Packing Checklist",
+        "Dorm Room Daily Cleaning Routine Tracker"
+      ],
+      "affiliate_matches": [
+        "Under-bed rolling storage bins",
+        "Compact mattress toppers for dorm beds"
+      ],
+      "niche": "home decor",
+      "pop": 86,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "classy cubicle",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "10 Classy Cubicle Decor Ideas That Make Work Feel Like Home",
+      "pin_titles": [
+        "Classy Cubicle Decor Ideas for a Cozy Workspace",
+        "How to Style a Classy Cubicle That Boosts Productivity",
+        "7 Classy Cubicle Makeovers for Your 2026 Office"
+      ],
+      "pin_descriptions": [
+        "Transform your boring desk into a classy cubicle with these cozy office decor ideas. Make your workspace feel like a home away from home. Click to see the inspiration!",
+        "Looking for classy cubicle ideas? Discover easy ways to add warmth and organization to your office desk. Read the guide and grab our printable desk art!"
+      ],
+      "boards": [
+        "Office Decor Ideas",
+        "Desk Organization"
+      ],
+      "product_ideas": [
+        "Printable Motivational Desk Art Bundle",
+        "Daily Work Productivity Planner Printable"
+      ],
+      "affiliate_matches": [
+        "Gold wire desk organizers",
+        "Ergonomic cozy desk chairs"
+      ],
+      "niche": "home decor",
+      "pop": 73,
+      "mom": 200,
+      "yoy": 1000,
+      "rising": true,
+      "score": 149
     }
   ]
 }
