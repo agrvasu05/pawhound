@@ -1,247 +1,238 @@
 {
-  "generated_at": "2026-07-12T16:07:11.101Z",
+  "generated_at": "2026-07-13T17:21:09.138Z",
   "region": "US",
   "candidates": [
     {
       "keyword": "charger bedazzled ideas",
       "niche": "home",
       "pop": 89,
-      "mom": 400,
+      "mom": 300,
       "yoy": 10001,
       "rising": true,
       "score": 199
     },
     {
+      "keyword": "dorm room themes",
+      "niche": "home decor",
+      "pop": 82,
+      "mom": 300,
+      "yoy": 100,
+      "rising": true,
+      "score": 192
+    },
+    {
       "keyword": "сквиши из бумаги",
       "niche": "home",
-      "pop": 78,
+      "pop": 81,
       "mom": 300,
-      "yoy": 5500,
+      "yoy": 6000,
       "rising": true,
-      "score": 188
+      "score": 191
     },
     {
       "keyword": "paper dolls clothing",
       "niche": "home",
-      "pop": 74,
+      "pop": 76,
       "mom": 400,
       "yoy": -50,
       "rising": true,
-      "score": 184
+      "score": 186
     },
     {
       "keyword": "dorm gallery wall",
       "niche": "home decor",
-      "pop": 65,
+      "pop": 63,
       "mom": 300,
-      "yoy": 200,
+      "yoy": 100,
       "rising": false,
-      "score": 175
+      "score": 173
     },
     {
       "keyword": "mom birthday cards",
       "niche": "home",
-      "pop": 92,
+      "pop": 96,
       "mom": 200,
       "yoy": 80,
       "rising": true,
-      "score": 168
-    },
-    {
-      "keyword": "macrame ideas",
-      "niche": "home",
-      "pop": 90,
-      "mom": 200,
-      "yoy": -5,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "2000s teen bedroom",
-      "niche": "home decor",
-      "pop": 89,
-      "mom": 200,
-      "yoy": 90,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "4th of july shorts diy",
-      "niche": "home",
-      "pop": 54,
-      "mom": 1500,
-      "yoy": 100,
-      "rising": true,
-      "score": 164
-    },
-    {
-      "keyword": "dorm checklist",
-      "niche": "home decor",
-      "pop": 86,
-      "mom": 200,
-      "yoy": 50,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "tye dye patterns",
-      "niche": "home",
-      "pop": 85,
-      "mom": 200,
-      "yoy": -30,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "crochet grid patterns",
-      "niche": "home",
-      "pop": 83,
-      "mom": 200,
-      "yoy": 20,
-      "rising": true,
-      "score": 159
+      "score": 173
     },
     {
       "keyword": "4th of july painting ideas",
       "niche": "home",
-      "pop": 47,
+      "pop": 58,
       "mom": 400,
       "yoy": 60,
       "rising": true,
-      "score": 157
+      "score": 168
     },
     {
       "keyword": "4th of july painting",
       "niche": "home",
-      "pop": 46,
+      "pop": 57,
       "mom": 700,
       "yoy": 30,
       "rising": true,
-      "score": 156
+      "score": 167
     },
     {
-      "keyword": "paper squishes",
-      "niche": "home",
-      "pop": 46,
-      "mom": 500,
-      "yoy": 500,
+      "keyword": "farmhouse ideas",
+      "niche": "home decor",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 50,
       "rising": true,
-      "score": 156
+      "score": 166
     },
     {
       "keyword": "fourth of july painting ideas",
       "niche": "home",
-      "pop": 46,
-      "mom": 400,
+      "pop": 56,
+      "mom": 300,
       "yoy": 200,
       "rising": true,
-      "score": 156
+      "score": 166
+    },
+    {
+      "keyword": "dorm checklist",
+      "niche": "home decor",
+      "pop": 82,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "paper squishes",
+      "niche": "home",
+      "pop": 47,
+      "mom": 500,
+      "yoy": 500,
+      "rising": true,
+      "score": 157
     },
     {
       "keyword": "easy diy clothes",
       "niche": "home",
-      "pop": 78,
+      "pop": 80,
       "mom": 200,
       "yoy": -30,
       "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "ways to cut a t shirt",
-      "niche": "home",
-      "pop": 79,
-      "mom": 200,
-      "yoy": 2500,
-      "rising": true,
-      "score": 155
+      "score": 157
     },
     {
       "keyword": "classy cubicle",
       "niche": "home decor",
-      "pop": 73,
+      "pop": 76,
       "mom": 200,
       "yoy": 1000,
       "rising": true,
-      "score": 149
-    },
-    {
-      "keyword": "random things to bedazzle",
-      "niche": "home",
-      "pop": 38,
-      "mom": 1500,
-      "yoy": 2500,
-      "rising": true,
-      "score": 148
+      "score": 153
     },
     {
       "keyword": "animal masks",
       "niche": "home",
-      "pop": 72,
+      "pop": 76,
       "mom": 200,
       "yoy": 300,
       "rising": true,
-      "score": 148
-    },
-    {
-      "keyword": "fathers day gifts ideas",
-      "niche": "home",
-      "pop": 48,
-      "mom": 300,
-      "yoy": -20,
-      "rising": false,
-      "score": 148
-    },
-    {
-      "keyword": "father’s day gift ideas",
-      "niche": "home",
-      "pop": 47,
-      "mom": 400,
-      "yoy": 100,
-      "rising": false,
-      "score": 147
-    },
-    {
-      "keyword": "4th of july crafts",
-      "niche": "home",
-      "pop": 47,
-      "mom": 300,
-      "yoy": 20,
-      "rising": false,
-      "score": 147
+      "score": 152
     },
     {
       "keyword": "diy cut t-shirts",
       "niche": "home",
-      "pop": 69,
+      "pop": 76,
       "mom": 200,
       "yoy": 1500,
       "rising": true,
-      "score": 146
+      "score": 152
+    },
+    {
+      "keyword": "random things to bedazzle",
+      "niche": "home",
+      "pop": 41,
+      "mom": 1500,
+      "yoy": 2500,
+      "rising": true,
+      "score": 151
     },
     {
       "keyword": "tee shirt cutting diy",
       "niche": "home",
-      "pop": 67,
+      "pop": 74,
       "mom": 200,
-      "yoy": -20,
+      "yoy": -10,
       "rising": true,
-      "score": 144
+      "score": 151
     },
     {
       "keyword": "book bags",
       "niche": "home",
-      "pop": 66,
+      "pop": 71,
       "mom": 200,
-      "yoy": 6,
+      "yoy": 7,
       "rising": true,
-      "score": 143
+      "score": 147
     },
     {
       "keyword": "fourth of july paint",
       "niche": "home",
-      "pop": 31,
+      "pop": 36,
       "mom": 1000,
-      "yoy": 5,
+      "yoy": 6,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "4th of july paint",
+      "niche": "home",
+      "pop": 34,
+      "mom": 5500,
+      "yoy": 10,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "things to diy",
+      "niche": "home",
+      "pop": 68,
+      "mom": 200,
+      "yoy": 100,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "4th of july crafts",
+      "niche": "home",
+      "pop": 44,
+      "mom": 300,
+      "yoy": 20,
+      "rising": false,
+      "score": 144
+    },
+    {
+      "keyword": "fathers day gifts ideas",
+      "niche": "home",
+      "pop": 43,
+      "mom": 300,
+      "yoy": -6,
+      "rising": false,
+      "score": 143
+    },
+    {
+      "keyword": "father’s day gift ideas",
+      "niche": "home",
+      "pop": 42,
+      "mom": 400,
+      "yoy": 200,
+      "rising": false,
+      "score": 142
+    },
+    {
+      "keyword": "bedazzle ideas",
+      "niche": "home",
+      "pop": 98,
+      "mom": 100,
+      "yoy": 2500,
       "rising": true,
       "score": 141
     },
@@ -258,37 +249,19 @@
       "keyword": "fourth of july crafts for kids",
       "niche": "home",
       "pop": 41,
-      "mom": 1000,
+      "mom": 900,
       "yoy": 60,
       "rising": false,
       "score": 141
     },
     {
-      "keyword": "4th of july paint",
+      "keyword": "father’s day",
       "niche": "home",
-      "pop": 30,
-      "mom": 6000,
-      "yoy": 10,
-      "rising": true,
+      "pop": 40,
+      "mom": 300,
+      "yoy": 80,
+      "rising": false,
       "score": 140
-    },
-    {
-      "keyword": "bedazzle ideas",
-      "niche": "home",
-      "pop": 97,
-      "mom": 100,
-      "yoy": 2500,
-      "rising": true,
-      "score": 140
-    },
-    {
-      "keyword": "things to diy",
-      "niche": "home",
-      "pop": 62,
-      "mom": 200,
-      "yoy": 100,
-      "rising": true,
-      "score": 139
     },
     {
       "keyword": "black nouveau bedroom",
@@ -300,341 +273,538 @@
       "score": 138
     },
     {
-      "keyword": "beaded animals",
+      "keyword": "easy kandi ideas",
       "niche": "home",
-      "pop": 95,
-      "mom": 100,
-      "yoy": -40,
+      "pop": 61,
+      "mom": 200,
+      "yoy": 90,
       "rising": true,
       "score": 138
     },
     {
-      "keyword": "painted jenga blocks",
+      "keyword": "beaded animals",
       "niche": "home",
-      "pop": 94,
+      "pop": 95,
       "mom": 100,
-      "yoy": 200,
+      "yoy": -30,
       "rising": true,
-      "score": 137
-    },
-    {
-      "keyword": "father’s day",
-      "niche": "home",
-      "pop": 36,
-      "mom": 300,
-      "yoy": 70,
-      "rising": false,
-      "score": 136
+      "score": 138
     },
     {
       "keyword": "light switch bedazzled",
       "niche": "home decor",
-      "pop": 91,
+      "pop": 93,
       "mom": 100,
-      "yoy": 8500,
+      "yoy": 9000,
       "rising": true,
-      "score": 134
-    },
-    {
-      "keyword": "farmhouse ideas",
-      "niche": "home decor",
-      "pop": 91,
-      "mom": 100,
-      "yoy": 50,
-      "rising": true,
-      "score": 134
+      "score": 137
     },
     {
       "keyword": "fathers day",
       "niche": "home",
-      "pop": 34,
+      "pop": 37,
       "mom": 300,
       "yoy": -30,
+      "rising": false,
+      "score": 137
+    },
+    {
+      "keyword": "father’s day cards",
+      "niche": "home",
+      "pop": 36,
+      "mom": 1000,
+      "yoy": -30,
+      "rising": false,
+      "score": 136
+    },
+    {
+      "keyword": "fathers day card",
+      "niche": "home",
+      "pop": 35,
+      "mom": 1000,
+      "yoy": 10,
+      "rising": false,
+      "score": 135
+    },
+    {
+      "keyword": "jewelry crafts",
+      "niche": "home",
+      "pop": 90,
+      "mom": 100,
+      "yoy": 100,
+      "rising": true,
+      "score": 134
+    },
+    {
+      "keyword": "father’s day card",
+      "niche": "home",
+      "pop": 34,
+      "mom": 1500,
+      "yoy": 90,
       "rising": false,
       "score": 134
     },
     {
-      "keyword": "easy kandi ideas",
+      "keyword": "fathers day card ideas",
       "niche": "home",
-      "pop": 56,
-      "mom": 200,
-      "yoy": 90,
+      "pop": 34,
+      "mom": 900,
+      "yoy": 200,
+      "rising": false,
+      "score": 134
+    },
+    {
+      "keyword": "painted jenga blocks",
+      "niche": "home",
+      "pop": 89,
+      "mom": 100,
+      "yoy": 200,
       "rising": true,
       "score": 133
     }
   ],
   "briefs": [
     {
+      "keyword": "dorm room themes",
+      "keep": true,
+      "season": "fall",
+      "intent": "high",
+      "article_topic": "10 Dorm Room Themes for 2026 That Transform Your College Space Into a Cozy Retreat",
+      "pin_titles": [
+        "Dorm Room Themes 2026: 10 Stylish Ideas for Small Spaces",
+        "Top 10 Dorm Room Themes for Cozy College Living 2026",
+        "2026 Dorm Room Themes: Affordable Decorating Ideas for Students"
+      ],
+      "pin_descriptions": [
+        "Discover dorm room themes that make your college space cozy and stylish in 2026. Find inspiration and printables to personalize your room today!",
+        "Explore 2026 dorm room themes designed for small spaces and cozy vibes. Download printable wall art and planners to organize your dorm life."
+      ],
+      "boards": [
+        "Dorm Room Decor Ideas",
+        "Cozy College Living 2026"
+      ],
+      "product_ideas": [
+        "Printable dorm room wall art sets with trendy 2026 themes",
+        "Dorm room organization planner and checklist printable for 2026"
+      ],
+      "affiliate_matches": [
+        "Small space storage solutions",
+        "Dorm room lighting and decor accessories"
+      ],
+      "niche": "home decor",
+      "pop": 82,
+      "mom": 300,
+      "yoy": 100,
+      "rising": true,
+      "score": 192
+    },
+    {
       "keyword": "dorm gallery wall",
       "keep": true,
-      "season": "summer",
+      "season": "fall",
       "intent": "high",
-      "article_topic": "15 Dorm Gallery Wall Ideas for 2026 That Won't Damage Your Paint",
+      "article_topic": "7 Dorm Gallery Wall Ideas for 2026 That Add Personality to Your Small Space",
       "pin_titles": [
-        "Dorm Gallery Wall Layouts You Can Copy in 10 Minutes",
-        "Create a Dorm Gallery Wall Fast with These Printables",
-        "Dorm Gallery Wall Ideas for Tiny College Small Spaces"
+        "2026 Dorm Gallery Wall Ideas: 7 Ways to Personalize Your Space",
+        "Small Space Dorm Gallery Wall Ideas for Students 2026",
+        "7 Stylish Dorm Gallery Wall Ideas for Cozy College Rooms 2026"
       ],
       "pin_descriptions": [
-        "Looking for dorm gallery wall inspiration? Discover easy layouts and printable art ideas to make your college room feel cozy without damaging the walls. Click to see the full list of ideas!",
-        "Build the perfect dorm gallery wall on a student budget. Grab our printable art sets and layout guides to transform your blank dorm walls in minutes. Read the post for styling tips!"
+        "Create a dorm gallery wall that showcases your style in 2026. Get printable wall art and layout planners to make decorating easy and fun!",
+        "Explore 7 dorm gallery wall ideas perfect for small college rooms in 2026. Download printable art and planning sheets to personalize your space."
       ],
       "boards": [
-        "Dorm Room Decor",
-        "College Apartment Ideas"
+        "Dorm Room Gallery Walls",
+        "Small Space Decor Ideas 2026"
       ],
       "product_ideas": [
-        "Printable retro dorm wall art set",
-        "Dorm decor planning and layout tracker"
+        "Printable dorm gallery wall art bundles with trendy 2026 designs",
+        "Gallery wall layout planner printables for dorm rooms"
       ],
       "affiliate_matches": [
-        "Command strips and damage-free hooks",
-        "Lightweight aesthetic picture frames"
+        "Command strips and wall mounting supplies",
+        "Dorm room photo display accessories"
       ],
       "niche": "home decor",
-      "pop": 65,
+      "pop": 63,
       "mom": 300,
-      "yoy": 200,
+      "yoy": 100,
       "rising": false,
-      "score": 175
+      "score": 173
     },
     {
-      "keyword": "macrame ideas",
+      "keyword": "mom birthday cards",
       "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "10 Macrame Ideas to Add Instant Cozy Texture to Your Living Room",
+      "season": "birthday",
+      "intent": "high",
+      "article_topic": "15 Mom Birthday Cards Printables for 2026 That Show Love and Warmth",
       "pin_titles": [
-        "Macrame Ideas to Make a Blank Bedroom Wall Feel Cozy",
-        "Easy Macrame Ideas for Styling Your First Apartment",
-        "Macrame Ideas That Add Instant Warmth to Living Rooms"
+        "2026 Mom Birthday Cards: 15 Printable Designs to Celebrate Her",
+        "15 Beautiful Printable Mom Birthday Cards for 2026",
+        "Mom Birthday Cards 2026: 15 Heartfelt Printable Options"
       ],
       "pin_descriptions": [
-        "Explore beautiful macrame ideas to bring boho texture into your home. These cozy styling tips will transform your bedroom or living room instantly and make it feel lived-in. Click to see our favorite looks!",
-        "Love boho decor? These macrame ideas are perfect for adding warmth to stark blank walls. Pair them with our printable boho wall art for a complete room refresh. Save this for your next project!"
+        "Find 15 printable mom birthday cards for 2026 that express love and warmth. Download and print instantly to make her day special!",
+        "Celebrate your mom’s birthday with 15 unique printable cards for 2026. Easy to customize and print at home with heartfelt messages."
       ],
       "boards": [
-        "Boho Home Decor",
-        "Cozy Living Room Ideas"
+        "Birthday Cards & Printables",
+        "Mom Gifts & Celebrations 2026"
       ],
       "product_ideas": [
-        "Boho minimalist printable wall art",
-        "Home decor project planner printable"
+        "Printable mom birthday card sets with editable messages",
+        "Mom birthday planner and celebration checklist printable"
       ],
       "affiliate_matches": [
-        "Pre-made macrame wall hangings",
-        "Floating wood shelves for display"
+        "Cardstock and printing supplies",
+        "Gift wrap and birthday decor"
       ],
       "niche": "home",
-      "pop": 90,
+      "pop": 96,
       "mom": 200,
-      "yoy": -5,
+      "yoy": 80,
       "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "2000s teen bedroom",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "12 2000s Teen Bedroom Ideas That Make a Modern Space Feel Cozy",
-      "pin_titles": [
-        "2000s Teen Bedroom Ideas to Recreate on a Budget",
-        "Cozy 2000s Teen Bedroom Styling Tips for Small Rooms",
-        "2000s Teen Bedroom Inspiration for a Nostalgic Vibe"
-      ],
-      "pin_descriptions": [
-        "Ready for a throwback? These 2000s teen bedroom ideas bring back the best Y2K cozy vibes with a modern twist for your apartment. Click to see how to style your space!",
-        "A 2000s teen bedroom aesthetic is the ultimate cozy throwback. Discover how to mix retro prints and plush textures to get the look without spending a fortune. Read the blog post for all the details!"
-      ],
-      "boards": [
-        "Teen Bedroom Decor",
-        "Y2K Room Aesthetic"
-      ],
-      "product_ideas": [
-        "Y2K aesthetic printable quote posters",
-        "Room makeover budget tracker printable"
-      ],
-      "affiliate_matches": [
-        "Inflatable chairs or plush bean bags",
-        "Butterfly clip string lights"
-      ],
-      "niche": "home decor",
-      "pop": 89,
-      "mom": 200,
-      "yoy": 90,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "dorm checklist",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "45 Dorm Checklist Essentials for 2026 to Keep Your Room Cozy",
-      "pin_titles": [
-        "Dorm Checklist 2026: Everything You Need for Comfort",
-        "The Only Dorm Checklist for a Perfectly Organized Room",
-        "Dorm Checklist Essentials for Out of State Students"
-      ],
-      "pin_descriptions": [
-        "Don't pack without this dorm checklist! We rounded up all the cozy room essentials and organization must-haves to make your college transition seamless. Click to download the printable checklist!",
-        "Grab our ultimate dorm checklist to ensure your college room is perfectly organized and cozy from day one. Say goodbye to packing stress and forgotten items. Read the post to get started!"
-      ],
-      "boards": [
-        "College Dorm Organization",
-        "Back to School Prep"
-      ],
-      "product_ideas": [
-        "Printable comprehensive dorm packing checklist",
-        "Printable dorm chore and cleaning tracker"
-      ],
-      "affiliate_matches": [
-        "Under-bed storage bins",
-        "Rolling utility carts"
-      ],
-      "niche": "home decor",
-      "pop": 86,
-      "mom": 200,
-      "yoy": 50,
-      "rising": true,
-      "score": 162
+      "score": 173
     },
     {
       "keyword": "4th of july painting ideas",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "7 4th of July Painting Ideas to Brighten Up Your Cozy Porch",
+      "article_topic": "12 4th of July Painting Ideas for 2026 That Bring Festive Charm to Your Home",
       "pin_titles": [
-        "4th of July Painting Ideas for a Festive Front Porch",
-        "Easy 4th of July Painting Ideas for Summer Wall Decor",
-        "4th of July Painting Ideas You Can Finish in One Day"
+        "2026 4th of July Painting Ideas: 12 Festive Home Decor Projects",
+        "12 Easy 4th of July Painting Ideas for Patriotic Home Styling 2026",
+        "4th of July Painting Ideas 2026: 12 Ways to Celebrate with Art"
       ],
       "pin_descriptions": [
-        "Looking for easy 4th of July painting ideas? These patriotic decor crafts will add the perfect cozy touch to your summer porch aesthetics. Click to find your next weekend project!",
-        "Try these beautiful 4th of July painting ideas to celebrate the summer season in style. Perfect for adding a handmade, welcoming touch to your home entryway. Save this pin for your holiday prep!"
+        "Explore 12 patriotic 4th of July painting ideas for 2026 that add charm to your home decor. Download printable painting guides and templates!",
+        "Celebrate Independence Day with 12 easy 4th of July painting ideas in 2026. Get printable step-by-step instructions for festive wall art."
       ],
       "boards": [
-        "Summer Porch Decor",
-        "Patriotic Home Ideas"
+        "4th of July Decor Ideas",
+        "Summer Holiday Crafting 2026"
       ],
       "product_ideas": [
-        "Printable Americana patriotic wall art",
-        "Summer home project printable planner"
+        "Printable 4th of July painting templates and coloring pages",
+        "4th of July themed wall art printables for summer 2026"
       ],
       "affiliate_matches": [
-        "Outdoor acrylic craft paints",
-        "Blank rustic wood signs"
+        "Acrylic paint sets and brushes",
+        "Canvas panels and painting supplies"
       ],
       "niche": "home",
-      "pop": 47,
+      "pop": 58,
       "mom": 400,
       "yoy": 60,
       "rising": true,
-      "score": 157
+      "score": 168
     },
     {
       "keyword": "4th of july painting",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "5 4th of July Painting Styles That Upgrade Your Summer Mantel",
+      "article_topic": "10 4th of July Painting Designs for 2026 That Brighten Your Home",
       "pin_titles": [
-        "4th of July Painting Inspiration for Cozy Mantel Decor",
-        "Style a 4th of July Painting in Your Living Room",
-        "4th of July Painting Projects for Beginners at Home"
+        "2026 4th of July Painting Designs: 10 Patriotic Ideas",
+        "10 Easy 4th of July Paintings to Decorate Your Home 2026",
+        "4th of July Painting Ideas 2026: 10 Festive Art Projects"
       ],
       "pin_descriptions": [
-        "A beautiful 4th of July painting is the perfect centerpiece for your summer mantel. Discover how to style patriotic art in your cozy living room for the holidays. Click for decor inspiration!",
-        "Add a festive touch with a 4th of July painting that perfectly fits your cozy home aesthetic. Pair it with our printable art for a stunning gallery look all season. Read the post for styling tips!"
+        "Discover 10 beautiful 4th of July painting designs for 2026 to brighten your living space. Download printable guides and templates to create your own!",
+        "Bring patriotic spirit to your home with 10 easy 4th of July paintings for 2026. Print templates and step-by-step instructions included."
       ],
       "boards": [
-        "Summer Mantel Decor",
-        "Patriotic Home Ideas"
+        "Summer Holiday Art Projects",
+        "Patriotic Home Decor 2026"
       ],
       "product_ideas": [
-        "Printable vintage flag wall art",
-        "Holiday decor inventory printable tracker"
+        "Printable 4th of July painting patterns and templates",
+        "Patriotic wall art printable sets for summer 2026"
       ],
       "affiliate_matches": [
-        "Easel stands for mantel art display",
-        "Canvas boards and painting supplies"
+        "Painting kits for beginners",
+        "Red, white, and blue craft supplies"
       ],
       "niche": "home",
-      "pop": 46,
+      "pop": 57,
       "mom": 700,
       "yoy": 30,
       "rising": true,
-      "score": 156
+      "score": 167
+    },
+    {
+      "keyword": "farmhouse ideas",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "14 Farmhouse Ideas for 2026 That Create Cozy, Rustic Home Vibes",
+      "pin_titles": [
+        "2026 Farmhouse Ideas: 14 Cozy Rustic Decor Tips",
+        "14 Farmhouse Ideas to Refresh Your Home in 2026",
+        "Cozy Farmhouse Ideas for 2026: 14 Ways to Style Your Space"
+      ],
+      "pin_descriptions": [
+        "Explore 14 farmhouse ideas for 2026 that bring cozy rustic charm to your home. Download printable wall art and farmhouse style planners!",
+        "Create warm farmhouse vibes with 14 ideas for 2026. Get printable rustic wall art and organization trackers to complete your look."
+      ],
+      "boards": [
+        "Farmhouse Decor Ideas",
+        "Cozy Rustic Home Styling 2026"
+      ],
+      "product_ideas": [
+        "Printable farmhouse-style wall art sets for 2026",
+        "Farmhouse home organization planner and cleaning tracker printables"
+      ],
+      "affiliate_matches": [
+        "Rustic decor accessories",
+        "Farmhouse style furniture and textiles"
+      ],
+      "niche": "home decor",
+      "pop": 89,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 166
     },
     {
       "keyword": "fourth of july painting ideas",
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "8 Fourth of July Painting Ideas for Festive Summer Wall Decor",
+      "article_topic": "12 Fourth of July Painting Ideas for 2026 That Celebrate Independence Day in Style",
       "pin_titles": [
-        "Fourth of July Painting Ideas for Cozy Summer Homes",
-        "Try These Fourth of July Painting Ideas This Weekend",
-        "Fourth of July Painting Ideas to Brighten Blank Walls"
+        "2026 Fourth of July Painting Ideas: 12 Patriotic Art Projects",
+        "12 Fourth of July Painting Ideas to Brighten Your Home 2026",
+        "Celebrate 2026 with 12 Fourth of July Painting Ideas"
       ],
       "pin_descriptions": [
-        "Get festive with these Fourth of July painting ideas designed for cozy home decor. Perfect for dressing up your entryway or living room for summer gatherings. Click to see the designs!",
-        "These Fourth of July painting ideas make DIY summer decor a breeze. Create beautiful patriotic art to display on your walls all season long. Save this pin for your summer decor mood board!"
+        "Celebrate Independence Day with 12 Fourth of July painting ideas for 2026 that add festive charm. Download printable templates and guides!",
+        "Get creative with 12 Fourth of July painting ideas in 2026. Print step-by-step instructions and patriotic wall art for your home."
       ],
       "boards": [
-        "Summer Home Decor",
-        "DIY Wall Art Ideas"
+        "Fourth of July Home Decor",
+        "Summer Holiday Art Projects 2026"
       ],
       "product_ideas": [
-        "Printable 4th of July party planner",
-        "Printable modern patriotic quote art"
+        "Printable Fourth of July painting templates and coloring sheets",
+        "Patriotic wall art printable bundles for summer 2026"
       ],
       "affiliate_matches": [
-        "Framed blank canvases",
-        "Patriotic indoor and outdoor throw pillows"
+        "Craft paint and brushes",
+        "Canvas and art supplies"
       ],
       "niche": "home",
-      "pop": 46,
-      "mom": 400,
+      "pop": 56,
+      "mom": 300,
       "yoy": 200,
       "rising": true,
-      "score": 156
+      "score": 166
+    },
+    {
+      "keyword": "dorm checklist",
+      "keep": true,
+      "season": "fall",
+      "intent": "high",
+      "article_topic": "9 Essential Dorm Checklists for 2026 That Simplify Your College Move-In",
+      "pin_titles": [
+        "2026 Dorm Checklist: 9 Must-Have Items for College Living",
+        "9 Essential Dorm Checklists to Organize Your 2026 Move-In",
+        "Simplify Your College Move-In with 9 Dorm Checklists 2026"
+      ],
+      "pin_descriptions": [
+        "Get organized for college with 9 essential dorm checklists for 2026. Download printable planners and packing lists to make move-in stress-free!",
+        "Prepare for your 2026 dorm move-in with 9 comprehensive checklists. Print and customize your packing and organization planners today."
+      ],
+      "boards": [
+        "College Dorm Organization 2026",
+        "Back to School Dorm Prep"
+      ],
+      "product_ideas": [
+        "Printable dorm move-in checklists and planners for 2026",
+        "Dorm room organization tracker and packing list printables"
+      ],
+      "affiliate_matches": [
+        "Storage bins and organizers",
+        "Dorm bedding and room essentials"
+      ],
+      "niche": "home decor",
+      "pop": 82,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 158
     },
     {
       "keyword": "classy cubicle",
       "keep": true,
       "season": "evergreen",
-      "intent": "high",
-      "article_topic": "11 Classy Cubicle Decor Ideas to Make Your Office Feel Like Home",
+      "intent": "medium",
+      "article_topic": "11 Classy Cubicle Decor Ideas for 2026 That Boost Productivity and Style",
       "pin_titles": [
-        "Classy Cubicle Ideas to Make Work Feel Like Home",
-        "How to Decorate a Classy Cubicle for Maximum Comfort",
-        "Classy Cubicle Decor That Looks Highly Professional"
+        "2026 Classy Cubicle Decor: 11 Stylish Ideas to Upgrade Your Space",
+        "11 Classy Cubicle Decor Ideas for a Cozy Work Area 2026",
+        "Upgrade Your Workspace with 11 Classy Cubicle Ideas 2026"
       ],
       "pin_descriptions": [
-        "Transform your desk with these classy cubicle decor ideas. Learn how to add cozy, professional touches that make going to the office a joy every single day. Click to see the makeover tips!",
-        "A classy cubicle is all about mixing organization with aesthetic decor. Grab our printable desk planners and wall art to elevate your workspace into a cozy haven today. Read the full guide!"
+        "Transform your office space with 11 classy cubicle decor ideas for 2026 that inspire productivity. Download printable wall art and planners!",
+        "Create a stylish and cozy cubicle with 11 decor tips for 2026. Get printable organization trackers and motivational wall art today."
       ],
       "boards": [
-        "Home Office & Desk Decor",
-        "Workspace Organization"
+        "Office Decor Ideas 2026",
+        "Classy Workspace Styling"
       ],
       "product_ideas": [
-        "Printable daily desk planner pad",
-        "Printable motivational minimalist desk art"
+        "Printable classy cubicle motivational wall art for 2026",
+        "Cubicle organization planner and daily routine tracker printables"
       ],
       "affiliate_matches": [
-        "Gold or brass desk organizers",
-        "Faux potted desk plants"
+        "Desk organizers and accessories",
+        "LED desk lamps and decor accents"
       ],
       "niche": "home decor",
-      "pop": 73,
+      "pop": 76,
       "mom": 200,
       "yoy": 1000,
       "rising": true,
-      "score": 149
+      "score": 153
+    },
+    {
+      "keyword": "random things to bedazzle",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "10 Random Things to Bedazzle in 2026 That Add Sparkle to Your Home",
+      "pin_titles": [
+        "2026 Bedazzling Ideas: 10 Random Things to Sparkle Up Your Space",
+        "10 Random Things to Bedazzle for Cozy Home Style 2026",
+        "Add Sparkle: 10 Random Things to Bedazzle in 2026"
+      ],
+      "pin_descriptions": [
+        "Discover 10 random things to bedazzle in 2026 that bring sparkle to your cozy home decor. Download printable guides and project planners!",
+        "Add charm and shine to your home with 10 bedazzling ideas for 2026. Print step-by-step instructions and organize your craft projects easily."
+      ],
+      "boards": [
+        "DIY Bedazzling Projects",
+        "Cozy Home Craft Ideas 2026"
+      ],
+      "product_ideas": [
+        "Printable bedazzle project planner and tracker for 2026",
+        "Set of printable art designs to inspire bedazzling home decor"
+      ],
+      "affiliate_matches": [
+        "Craft rhinestones and glue",
+        "Decorative embellishments and tools"
+      ],
+      "niche": "home",
+      "pop": 41,
+      "mom": 1500,
+      "yoy": 2500,
+      "rising": true,
+      "score": 151
+    },
+    {
+      "keyword": "fourth of july paint",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "11 Fourth of July Paint Projects for 2026 That Bring Festive Spirit to Your Home",
+      "pin_titles": [
+        "2026 Fourth of July Paint Projects: 11 Patriotic Ideas",
+        "11 Fourth of July Paint Projects to Celebrate in 2026",
+        "Festive 4th of July Paint Projects for Your Home 2026"
+      ],
+      "pin_descriptions": [
+        "Celebrate Independence Day with 11 Fourth of July paint projects for 2026 that add festive spirit. Download printable guides and templates!",
+        "Get creative with 11 patriotic paint projects for 4th of July 2026. Print step-by-step instructions and wall art for your home decor."
+      ],
+      "boards": [
+        "4th of July Craft Ideas",
+        "Summer Holiday Painting 2026"
+      ],
+      "product_ideas": [
+        "Printable Fourth of July paint project templates",
+        "Patriotic themed wall art printables for summer 2026"
+      ],
+      "affiliate_matches": [
+        "Acrylic paint sets",
+        "Canvas and craft supplies"
+      ],
+      "niche": "home",
+      "pop": 36,
+      "mom": 1000,
+      "yoy": 6,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "4th of july paint",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "11 4th of July Paint Ideas for 2026 That Add Patriotic Charm to Your Home",
+      "pin_titles": [
+        "2026 4th of July Paint Ideas: 11 Festive Projects",
+        "11 Easy 4th of July Paint Ideas for Your Home 2026",
+        "Celebrate Independence Day with 11 4th of July Paint Ideas 2026"
+      ],
+      "pin_descriptions": [
+        "Discover 11 festive 4th of July paint ideas for 2026 that bring patriotic charm to your home. Download printable guides and templates!",
+        "Celebrate 4th of July 2026 with 11 easy paint ideas. Print step-by-step instructions and festive wall art to decorate your space."
+      ],
+      "boards": [
+        "4th of July Home Decor",
+        "Summer Painting Projects 2026"
+      ],
+      "product_ideas": [
+        "Printable 4th of July paint templates and guides",
+        "Patriotic wall art printable sets for summer 2026"
+      ],
+      "affiliate_matches": [
+        "Craft paints and brushes",
+        "DIY canvas kits"
+      ],
+      "niche": "home",
+      "pop": 34,
+      "mom": 5500,
+      "yoy": 10,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "things to diy",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "15 Things to DIY in 2026 That Enhance Your Cozy Home Living",
+      "pin_titles": [
+        "2026 Things to DIY: 15 Cozy Home Projects",
+        "15 Things to DIY for Cozy Living in 2026",
+        "Top 15 DIY Projects to Refresh Your Home 2026"
+      ],
+      "pin_descriptions": [
+        "Explore 15 things to DIY in 2026 that boost cozy living and home decor. Download printable planners and project instructions!",
+        "Get inspired with 15 DIY projects to enhance your cozy home in 2026. Print step-by-step guides and organization trackers today."
+      ],
+      "boards": [
+        "DIY Home Projects 2026",
+        "Cozy Living Ideas"
+      ],
+      "product_ideas": [
+        "Printable DIY project planners and trackers for 2026",
+        "DIY themed wall art printables to inspire cozy living"
+      ],
+      "affiliate_matches": [
+        "Craft kits and tools",
+        "Home improvement supplies"
+      ],
+      "niche": "home",
+      "pop": 68,
+      "mom": 200,
+      "yoy": 100,
+      "rising": true,
+      "score": 144
     }
   ]
 }
