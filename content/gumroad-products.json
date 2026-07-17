@@ -508,5 +508,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/wgidew",
     "landing": "/shop/boho-minimalist-dog-art",
     "created_at": "2026-07-16T16:25:11.977Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "backpack-keychains-art",
+    "title": "Printable Wall Art Set Featuring Trendy Backpack Keychains Decor",
+    "price": 5,
+    "gumroad_id": "OA2MKcJlvAO_Ki8y4WwL6A==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/upzetr",
+    "landing": "/shop/backpack-keychains-art",
+    "created_at": "2026-07-17T16:24:00.581Z"
+  },
+  {
+    "type": "planner",
+    "slug": "teacher-desk-makeover-printable-planner-tracker",
+    "title": "Teacher Desk Makeover Printable Planner & Tracker",
+    "price": 4,
+    "gumroad_id": "U3wvepFqTqNjOfgvCHuoMA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/yzgvc",
+    "landing": "/shop/teacher-desk-makeover-printable-planner-tracker",
+    "created_at": "2026-07-17T16:24:25.073Z"
   }
 ]
