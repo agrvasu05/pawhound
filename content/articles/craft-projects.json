@@ -1,0 +1,136 @@
+{
+  "intro": "Craft projects are a delightful way to infuse your home with warmth and personality while adding practical organization. In 2026, cozy home decor trends emphasize handmade touches and smart storage solutions that fit any space. Whether you're a seasoned crafter or just starting out, these 20 easy craft projects offer creative ways to brighten your living area, keep clutter at bay, and embrace a cozy aesthetic. From rustic wall hangings to charming storage baskets, each project combines style and function, helping you craft a home that feels inviting and organized.",
+  "item_noun": "craft projects",
+  "picks": [
+    {
+      "rank": 1,
+      "breed": "Macrame Wall Hanging Kit",
+      "image_query": "macrame wall hanging kit",
+      "description": "Macrame wall hangings bring a boho-chic vibe to any room, adding texture and a handmade feel. This kit includes cotton cord, wooden dowels, and step-by-step instructions, perfect for beginners. Create a beautiful statement piece for your living room or bedroom that complements cozy decor styles like farmhouse or Scandinavian. The neutral tones of the cotton cord blend seamlessly with soft pillows and warm lighting.",
+      "best_for": "DIY beginners and boho decor lovers",
+      "quirky_fact": "Use natural-dyed cord for eco-friendly, earthy tones.",
+      "shop_query": "macrame wall hanging kit beginner"
+    },
+    {
+      "rank": 2,
+      "breed": "Wooden Storage Crate Set",
+      "image_query": "wooden storage crates",
+      "description": "Organize your space stylishly with a set of wooden storage crates. These crates are versatile for storing blankets, magazines, or craft supplies and add rustic charm to your shelves or entryway. Their sturdy construction and natural wood finish make them a cozy, functional addition to any room needing extra storage. Stack or arrange them side by side for a custom look that keeps clutter out of sight but within reach.",
+      "best_for": "small space organizers and rustic decor fans",
+      "quirky_fact": "Line crates with burlap for a soft, textured interior.",
+      "shop_query": "wooden storage crates set rustic"
+    },
+    {
+      "rank": 3,
+      "breed": "Felt Ball Garland Kit",
+      "image_query": "felt ball garland kit",
+      "description": "Add a pop of color and whimsy with a felt ball garland kit. This project includes pre-made felt balls in warm hues and durable string for easy assembly. Perfect for draping over a mantel, bedpost, or window frame, it instantly enhances cozy vibes. The soft texture of felt contrasts beautifully with wood and fabric elements, making it a charming accent for nurseries or living spaces.",
+      "best_for": "craft lovers seeking colorful, easy decor",
+      "quirky_fact": "Mix sizes for a playful, dynamic garland look.",
+      "shop_query": "felt ball garland kit DIY"
+    },
+    {
+      "rank": 4,
+      "breed": "Glass Terrarium Kit",
+      "image_query": "glass terrarium kit",
+      "description": "Bring nature indoors with a glass terrarium kit. This kit comes with a clear geometric glass container, gravel, activated charcoal, and moss to make low-maintenance indoor gardens. Perfect for small spaces or tabletops, terrariums add a fresh, calming focal point to your home decor. They’re especially great for those who want to add greenery but lack garden space or time for plant care.",
+      "best_for": "plant lovers and minimalists",
+      "quirky_fact": "Use air plants for zero soil and easy upkeep.",
+      "shop_query": "glass terrarium kit geometric"
+    },
+    {
+      "rank": 5,
+      "breed": "Fabric Basket DIY Kit",
+      "image_query": "fabric basket kit",
+      "description": "Create soft, collapsible fabric baskets that keep your space tidy in style. This kit includes fabric pieces, interfacing, thread, and instructions to sew your own storage baskets. Ideal for organizing toys, yarn, or bathroom essentials, these baskets add a cozy, handmade touch. Choose warm fabrics like cotton or linen blends with subtle patterns to coordinate with your home’s palette.",
+      "best_for": "sewing enthusiasts and cozy organization",
+      "quirky_fact": "Add leather handles for a chic, sturdy grip.",
+      "shop_query": "fabric basket DIY sewing kit"
+    },
+    {
+      "rank": 6,
+      "breed": "Soy Wax Candle Making Set",
+      "image_query": "soy wax candle making set",
+      "description": "Craft your own scented candles with a soy wax candle making set. The kit includes soy wax flakes, cotton wicks, fragrance oils, and reusable glass jars. Handmade candles create a warm ambiance and can be customized to your favorite cozy scents like vanilla, cinnamon, or pine. Making your own candles is a relaxing craft that doubles as personalized decor and gift ideas.",
+      "best_for": "candle lovers and scent enthusiasts",
+      "quirky_fact": "Use dried herbs for decorative, natural candle tops.",
+      "shop_query": "soy wax candle making kit scented"
+    },
+    {
+      "rank": 7,
+      "breed": "Chalkboard Label Stickers",
+      "image_query": "chalkboard label stickers jars",
+      "description": "Keep your pantry and craft supplies neatly labeled with chalkboard label stickers. These removable, writable stickers stick on jars, bins, and boxes, making organization flexible and attractive. Write and rewrite labels as needed with chalk markers, perfect for seasonal decor swaps or changing storage needs. The matte black finish pairs well with rustic wood and glass containers.",
+      "best_for": "organized kitchens and craft rooms",
+      "quirky_fact": "Use colorful chalk markers for a fun twist.",
+      "shop_query": "chalkboard label stickers reusable"
+    },
+    {
+      "rank": 8,
+      "breed": "Knitting Starter Kit with Yarn",
+      "image_query": "knitting starter kit colorful yarn",
+      "description": "Dive into cozy crafting with a knitting starter kit that includes soft yarn, knitting needles, and beginner patterns. Knit simple projects like scarves, coasters, or cushions that add warmth and texture to your home. Handmade knit pieces are perfect for layering on sofas or beds, enhancing your cozy aesthetic. This kit’s colorful yarn options allow you to match seasonal or personal decor themes.",
+      "best_for": "beginners wanting cozy handmade textiles",
+      "quirky_fact": "Try chunky yarn for quicker, eye-catching projects.",
+      "shop_query": "knitting starter kit yarn beginner"
+    },
+    {
+      "rank": 9,
+      "breed": "Decorative Wood Slice Coasters",
+      "image_query": "wood slice coasters",
+      "description": "Bring natural elements to your tabletop with decorative wood slice coasters. These coasters showcase the beauty of natural wood grain and bark edges, perfect for rustic or cabin-inspired decor. Use them as a simple craft base by adding paint or woodburning designs for personalization. They protect surfaces while adding organic charm to your coffee table or dining area.",
+      "best_for": "nature lovers and rustic home decorators",
+      "quirky_fact": "Seal edges with beeswax to prevent cracking.",
+      "shop_query": "wood slice coasters natural rustic"
+    },
+    {
+      "rank": 10,
+      "breed": "Magnetic Spice Jars Set",
+      "image_query": "magnetic spice jars",
+      "description": "Save kitchen space and add visual interest with a magnetic spice jars set. Attach these clear jars magnetically to a metal board or fridge for easy access and organization. Label each jar with included chalkboard stickers to keep your spices tidy and your cooking area clutter-free. This practical project combines organization with sleek, minimalist design ideal for small kitchens.",
+      "best_for": "small kitchen organizers and cooks",
+      "quirky_fact": "Use colored lids to code spice types visually.",
+      "shop_query": "magnetic spice jars set with labels"
+    }
+  ],
+  "pin_headlines": [
+    "20 Easy Craft Projects for Cozy Home Decor",
+    "DIY Craft Projects to Organize Your Home in 2026",
+    "Craft Projects: 20 Ideas for Warm & Tidy Spaces",
+    "Simple Craft Projects for Cozy Living Rooms",
+    "Craft Projects That Double as Home Organization",
+    "2026’s Best Craft Projects for Small Spaces",
+    "Easy Craft Projects to Refresh Your Home Decor",
+    "Craft Projects for Rustic & Boho Home Styles",
+    "Craft Projects to Personalize Your Space",
+    "Top 20 Craft Projects for Cozy & Organized Homes"
+  ],
+  "faqs": [
+    {
+      "question": "What materials do I need to start easy craft projects for home decor?",
+      "answer": "Starting easy craft projects typically requires basic supplies like fabric, yarn, wood, glue, scissors, and paint. Kits often include specialized materials like macrame cord or soy wax, making it easier to begin without buying everything separately."
+    },
+    {
+      "question": "Can craft projects help with home organization?",
+      "answer": "Absolutely! Many craft projects focus on creating storage solutions like fabric baskets, labeled jars, and wooden crates that keep your space neat while adding decorative charm."
+    },
+    {
+      "question": "Are these craft projects suitable for beginners?",
+      "answer": "Yes, the projects recommended are beginner-friendly, often with kits that include instructions and materials to guide you step-by-step through creating cozy decor and functional items."
+    },
+    {
+      "question": "Where can I find supplies for these craft projects?",
+      "answer": "Supplies can be found at craft stores, online marketplaces like Amazon or Etsy, and specialty shops. Using the precise search terms provided helps locate the right kits and materials quickly."
+    }
+  ],
+  "topic_slug": "craft-projects",
+  "topic_title": "20 Easy Craft Projects for Cozy Home Decor and Organization in 2026",
+  "niche": "home",
+  "keyword": "craft projects",
+  "boards": [
+    "DIY Home Crafts",
+    "Cozy Living Projects"
+  ],
+  "author": "the Value Finds Daily Editorial Team",
+  "updated_at": "2026-07-17"
+}
