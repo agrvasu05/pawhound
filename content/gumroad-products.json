@@ -528,5 +528,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/yzgvc",
     "landing": "/shop/teacher-desk-makeover-printable-planner-tracker",
     "created_at": "2026-07-17T16:24:25.073Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-backpack-keychains-planner-tracker",
+    "title": "Printable Backpack Keychains Planner & Tracker",
+    "price": 4,
+    "gumroad_id": "0we0AgPv1tfKTl78Z4kjBA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/cwasfo",
+    "landing": "/shop/printable-backpack-keychains-planner-tracker",
+    "created_at": "2026-07-18T16:06:14.568Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "vintage-botanical-dog-set",
+    "title": "Vintage Botanical Illustration Printable Wall Art Set with Gentle Dog in Soft Antique Tones",
+    "price": 5,
+    "gumroad_id": "GWGo2mcjM0HqfKfSvaDlOg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/vcvyzr",
+    "landing": "/shop/vintage-botanical-dog-set",
+    "created_at": "2026-07-18T16:07:30.369Z"
   }
 ]
