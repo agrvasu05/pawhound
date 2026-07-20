@@ -1,87 +1,114 @@
 {
-  "generated_at": "2026-07-19T16:05:22.686Z",
+  "generated_at": "2026-07-20T15:44:34.031Z",
   "region": "US",
   "candidates": [
     {
-      "keyword": "charger bedazzled ideas",
-      "niche": "home",
-      "pop": 86,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 196
-    },
-    {
       "keyword": "dorm room themes",
       "niche": "home decor",
-      "pop": 82,
+      "pop": 87,
       "mom": 300,
       "yoy": 100,
       "rising": true,
-      "score": 192
+      "score": 197
     },
     {
       "keyword": "animal masks",
       "niche": "home",
-      "pop": 82,
+      "pop": 84,
       "mom": 300,
       "yoy": 300,
       "rising": true,
-      "score": 192
+      "score": 194
+    },
+    {
+      "keyword": "charger bedazzled ideas",
+      "niche": "home",
+      "pop": 83,
+      "mom": 300,
+      "yoy": 10001,
+      "rising": true,
+      "score": 193
     },
     {
       "keyword": "paper dolls clothing",
       "niche": "home",
-      "pop": 77,
-      "mom": 400,
+      "pop": 82,
+      "mom": 300,
       "yoy": -50,
       "rising": true,
-      "score": 187
+      "score": 192
+    },
+    {
+      "keyword": "dorm bed ideas",
+      "niche": "home decor",
+      "pop": 78,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 188
     },
     {
       "keyword": "dorm gallery wall",
       "niche": "home decor",
-      "pop": 67,
+      "pop": 70,
       "mom": 400,
-      "yoy": 200,
+      "yoy": 100,
       "rising": false,
-      "score": 177
+      "score": 180
     },
     {
       "keyword": "easy kandi ideas",
       "niche": "home",
-      "pop": 67,
+      "pop": 68,
       "mom": 300,
       "yoy": 90,
       "rising": true,
-      "score": 177
+      "score": 178
     },
     {
       "keyword": "bedazzling patterns",
       "niche": "home",
-      "pop": 90,
+      "pop": 91,
       "mom": 200,
       "yoy": 7500,
       "rising": true,
-      "score": 167
+      "score": 168
     },
     {
       "keyword": "farmhouse ideas",
       "niche": "home decor",
-      "pop": 89,
+      "pop": 90,
       "mom": 200,
-      "yoy": 50,
+      "yoy": 60,
       "rising": true,
       "score": 166
     },
     {
+      "keyword": "dorm checklist",
+      "niche": "home decor",
+      "pop": 86,
+      "mom": 200,
+      "yoy": 50,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "paper squishes",
+      "niche": "home",
+      "pop": 52,
+      "mom": 600,
+      "yoy": 600,
+      "rising": true,
+      "score": 162
+    },
+    {
       "keyword": "craft projects",
       "niche": "home",
-      "pop": 87,
+      "pop": 85,
       "mom": 200,
       "yoy": 100,
       "rising": true,
-      "score": 163
+      "score": 162
     },
     {
       "keyword": "scrapbook paper designs",
@@ -93,103 +120,112 @@
       "score": 162
     },
     {
-      "keyword": "paper squishes",
+      "keyword": "scrap fabric",
       "niche": "home",
       "pop": 51,
-      "mom": 600,
-      "yoy": 600,
+      "mom": 300,
+      "yoy": 300,
       "rising": true,
       "score": 161
     },
     {
-      "keyword": "dorm checklist",
-      "niche": "home decor",
-      "pop": 83,
-      "mom": 200,
-      "yoy": 50,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "scrap fabric",
-      "niche": "home",
-      "pop": 47,
-      "mom": 300,
-      "yoy": 300,
-      "rising": true,
-      "score": 157
-    },
-    {
       "keyword": "random things to bedazzle",
       "niche": "home",
-      "pop": 45,
+      "pop": 48,
       "mom": 1500,
-      "yoy": 3000,
+      "yoy": 3500,
       "rising": true,
-      "score": 155
+      "score": 158
+    },
+    {
+      "keyword": "fourth of july crafts for kids",
+      "niche": "home",
+      "pop": 53,
+      "mom": 800,
+      "yoy": 60,
+      "rising": false,
+      "score": 153
     },
     {
       "keyword": "classy cubicle",
       "niche": "home decor",
-      "pop": 77,
+      "pop": 76,
       "mom": 200,
       "yoy": 1000,
       "rising": true,
-      "score": 154
+      "score": 152
+    },
+    {
+      "keyword": "4th of july crafts for kids",
+      "niche": "home",
+      "pop": 52,
+      "mom": 800,
+      "yoy": 50,
+      "rising": false,
+      "score": 152
+    },
+    {
+      "keyword": "4th of july crafts",
+      "niche": "home",
+      "pop": 51,
+      "mom": 300,
+      "yoy": 20,
+      "rising": false,
+      "score": 151
+    },
+    {
+      "keyword": "backpack keychains",
+      "niche": "home",
+      "pop": 38,
+      "mom": 300,
+      "yoy": 1,
+      "rising": false,
+      "score": 148
+    },
+    {
+      "keyword": "pirate crafts for kids",
+      "niche": "home",
+      "pop": 70,
+      "mom": 200,
+      "yoy": 20,
+      "rising": true,
+      "score": 147
     },
     {
       "keyword": "book bags",
       "niche": "home",
       "pop": 69,
       "mom": 200,
-      "yoy": 7,
+      "yoy": 8,
       "rising": true,
       "score": 146
     },
     {
-      "keyword": "backpack keychains",
-      "niche": "home",
-      "pop": 35,
+      "keyword": "black nouveau interior",
+      "niche": "home decor",
+      "pop": 34,
       "mom": 300,
-      "yoy": 1,
-      "rising": false,
-      "score": 145
-    },
-    {
-      "keyword": "4th of july crafts",
-      "niche": "home",
-      "pop": 42,
-      "mom": 300,
-      "yoy": 20,
-      "rising": false,
-      "score": 142
-    },
-    {
-      "keyword": "fourth of july crafts for kids",
-      "niche": "home",
-      "pop": 41,
-      "mom": 800,
-      "yoy": 60,
-      "rising": false,
-      "score": 141
+      "yoy": 1500,
+      "rising": true,
+      "score": 144
     },
     {
       "keyword": "teacher desk makeover",
       "niche": "home decor",
-      "pop": 64,
+      "pop": 67,
       "mom": 200,
-      "yoy": -7,
+      "yoy": -6,
       "rising": true,
-      "score": 140
+      "score": 143
     },
     {
-      "keyword": "4th of july crafts for kids",
-      "niche": "home",
-      "pop": 40,
-      "mom": 900,
-      "yoy": 50,
-      "rising": false,
-      "score": 140
+      "keyword": "black nouveau bedroom",
+      "niche": "home decor",
+      "pop": 29,
+      "mom": 1000,
+      "yoy": 10001,
+      "rising": true,
+      "score": 139
     },
     {
       "keyword": "bedazzle ideas",
@@ -201,31 +237,49 @@
       "score": 139
     },
     {
-      "keyword": "black nouveau bedroom",
-      "niche": "home decor",
+      "keyword": "diy cow costume",
+      "niche": "home",
       "pop": 28,
-      "mom": 900,
-      "yoy": 10001,
-      "rising": true,
+      "mom": 2000,
+      "yoy": 2000,
+      "rising": false,
       "score": 138
     },
     {
       "keyword": "primitive halloween crafts",
       "niche": "home",
-      "pop": 61,
+      "pop": 62,
       "mom": 200,
-      "yoy": 20,
+      "yoy": 10,
       "rising": false,
       "score": 138
     },
     {
-      "keyword": "diy cow costume",
+      "keyword": "bedazzling designs",
       "niche": "home",
-      "pop": 27,
-      "mom": 900,
-      "yoy": 1000,
-      "rising": false,
+      "pop": 94,
+      "mom": 100,
+      "yoy": 4500,
+      "rising": true,
       "score": 137
+    },
+    {
+      "keyword": "halloween sewing projects",
+      "niche": "home",
+      "pop": 59,
+      "mom": 200,
+      "yoy": 20,
+      "rising": true,
+      "score": 135
+    },
+    {
+      "keyword": "painted jenga blocks",
+      "niche": "home",
+      "pop": 91,
+      "mom": 100,
+      "yoy": 200,
+      "rising": true,
+      "score": 135
     },
     {
       "keyword": "pony bead keychain patterns",
@@ -237,47 +291,38 @@
       "score": 135
     },
     {
-      "keyword": "painted jenga blocks",
-      "niche": "home",
-      "pop": 90,
-      "mom": 100,
-      "yoy": 200,
-      "rising": true,
-      "score": 134
-    },
-    {
-      "keyword": "halloween sewing projects",
-      "niche": "home",
-      "pop": 57,
-      "mom": 200,
-      "yoy": 20,
-      "rising": false,
-      "score": 134
-    },
-    {
-      "keyword": "light switch ideas",
+      "keyword": "fall room ideas",
       "niche": "home decor",
-      "pop": 93,
-      "mom": 90,
-      "yoy": 800,
-      "rising": true,
-      "score": 133
-    },
-    {
-      "keyword": "americana bedroom",
-      "niche": "home decor",
-      "pop": 90,
-      "mom": 100,
+      "pop": 24,
+      "mom": 600,
       "yoy": 40,
       "rising": false,
-      "score": 133
+      "score": 134
     },
     {
-      "keyword": "bedazzling designs",
+      "keyword": "blue school supplies",
       "niche": "home",
-      "pop": 89,
+      "pop": 58,
+      "mom": 200,
+      "yoy": -20,
+      "rising": false,
+      "score": 134
+    },
+    {
+      "keyword": "fall room",
+      "niche": "home decor",
+      "pop": 22,
+      "mom": 300,
+      "yoy": 50,
+      "rising": true,
+      "score": 132
+    },
+    {
+      "keyword": "light switch bedazzled",
+      "niche": "home decor",
+      "pop": 88,
       "mom": 100,
-      "yoy": 4500,
+      "yoy": 9000,
       "rising": true,
       "score": 132
     },
@@ -286,314 +331,303 @@
       "niche": "home",
       "pop": 22,
       "mom": 300,
-      "yoy": 70,
+      "yoy": 80,
       "rising": false,
       "score": 132
     },
     {
-      "keyword": "light switch bedazzled",
+      "keyword": "light switch ideas",
       "niche": "home decor",
-      "pop": 88,
-      "mom": 100,
-      "yoy": 8500,
+      "pop": 90,
+      "mom": 90,
+      "yoy": 900,
       "rising": true,
-      "score": 131
-    },
-    {
-      "keyword": "fall room ideas",
-      "niche": "home decor",
-      "pop": 21,
-      "mom": 600,
-      "yoy": 40,
-      "rising": false,
-      "score": 131
-    },
-    {
-      "keyword": "blue school supplies",
-      "niche": "home",
-      "pop": 54,
-      "mom": 200,
-      "yoy": -20,
-      "rising": false,
-      "score": 131
+      "score": 130
     },
     {
       "keyword": "door ideas",
       "niche": "home decor",
-      "pop": 96,
+      "pop": 97,
       "mom": 70,
       "yoy": 50,
       "rising": true,
       "score": 130
     },
     {
-      "keyword": "fall room",
-      "niche": "home decor",
-      "pop": 19,
-      "mom": 300,
-      "yoy": 50,
-      "rising": true,
-      "score": 129
-    },
-    {
       "keyword": "altered clothing",
       "niche": "home",
-      "pop": 86,
+      "pop": 87,
       "mom": 100,
-      "yoy": 90,
+      "yoy": 100,
       "rising": true,
-      "score": 129
-    },
-    {
-      "keyword": "useful 3d printing ideas",
-      "niche": "home",
-      "pop": 86,
-      "mom": 100,
-      "yoy": 6000,
-      "rising": true,
-      "score": 129
-    },
-    {
-      "keyword": "fall crochet ideas",
-      "niche": "home",
-      "pop": 19,
-      "mom": 300,
-      "yoy": 70,
-      "rising": false,
-      "score": 129
+      "score": 130
     }
   ],
   "briefs": [
     {
-      "keyword": "charger bedazzled ideas",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "high",
-      "article_topic": "10 Charger Bedazzled Ideas to Transform Your Tech Accessories in 2026",
-      "pin_titles": [
-        "Charger Bedazzled Ideas: 10 Sparkly Designs to Brighten Your Space",
-        "Top Charger Bedazzled Ideas for a Unique Home Tech Look",
-        "2026 Charger Bedazzled Ideas: DIY Glam for Your Chargers"
-      ],
-      "pin_descriptions": [
-        "Discover stylish charger bedazzled ideas to add sparkle and personality to your home tech accessories. Brighten your charging area with easy DIY tips—save now!",
-        "Explore 10 charger bedazzled ideas that turn ordinary chargers into chic home accents. Perfect for cozy living spaces, grab these creative ideas today!"
-      ],
-      "boards": [
-        "Home Decor DIY Projects",
-        "Cozy Living Tech Accessories"
-      ],
-      "product_ideas": [
-        "Printable wall art featuring glam tech quotes for charging stations",
-        "A printable planner page for organizing and customizing your tech accessories"
-      ],
-      "affiliate_matches": [
-        "Craft rhinestones and adhesive gems",
-        "Decorative tapes and crafting tools"
-      ],
-      "niche": "home",
-      "pop": 86,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 196
-    },
-    {
       "keyword": "dorm room themes",
       "keep": true,
-      "season": "summer",
+      "season": "back to school",
       "intent": "high",
-      "article_topic": "12 Dorm Room Themes for 2026 That Make Small Spaces Feel Cozy and Stylish",
+      "article_topic": "10 Trendy Dorm Room Themes for 2026 That Maximize Small Space Style",
       "pin_titles": [
-        "Dorm Room Themes 2026: 12 Cozy Styles for Small Spaces",
-        "Top 12 Dorm Room Themes to Personalize Your Space This Summer",
-        "2026 Dorm Room Themes: Stylish Ideas for College Living"
+        "Dorm Room Themes 2026: 10 Stylish Ideas for Small Spaces",
+        "10 Dorm Room Themes That Make College Living Cozy",
+        "Top Dorm Room Themes 2026 for Trendy Students"
       ],
       "pin_descriptions": [
-        "Explore 12 dorm room themes for 2026 that maximize small space style and comfort. Perfect for college students wanting a cozy vibe—save your favorites!",
-        "Find dorm room themes to transform your college space with style and function. These 12 ideas help you create a cozy, organized room this summer. Download our planner!"
+        "Dorm room themes help you create a personalized, cozy space for college life. Discover 10 stylish themes for 2026 to decorate your dorm with ease. Save this guide for your back-to-school setup!",
+        "Explore dorm room themes that bring comfort and style to your small space. These 10 ideas for 2026 are perfect for students wanting a cozy, functional room. Pin now for dorm inspiration!"
       ],
       "boards": [
         "Dorm Room Decor Ideas",
-        "Cozy Small Space Living"
+        "Small Space Home Decor"
       ],
       "product_ideas": [
-        "Printable dorm room decor wall art sets matching popular themes",
-        "A dorm room organization and cleaning checklist printable"
+        "Printable Dorm Room Wall Art Sets with Themed Quotes",
+        "2026 Dorm Room Organization and Cleaning Planner"
       ],
       "affiliate_matches": [
-        "College bedding and decor sets",
-        "Space-saving storage solutions"
+        "Compact storage bins",
+        "String lights for ambiance"
       ],
       "niche": "home decor",
-      "pop": 82,
+      "pop": 87,
       "mom": 300,
       "yoy": 100,
       "rising": true,
-      "score": 192
+      "score": 197
+    },
+    {
+      "keyword": "charger bedazzled ideas",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "7 Charger Bedazzled Ideas to Add Sparkle to Your Everyday Accessories in 2026",
+      "pin_titles": [
+        "Charger Bedazzled Ideas: 7 Sparkling Designs for 2026",
+        "7 DIY Charger Bedazzled Ideas to Brighten Your Space",
+        "2026 Charger Bedazzled Ideas for Stylish Tech Accessories"
+      ],
+      "pin_descriptions": [
+        "Charger bedazzled ideas bring fun and glam to your tech accessories. Discover 7 creative ways to personalize chargers and keep your space cozy. Save these sparkling ideas for your next project!",
+        "Add sparkle to your daily essentials with charger bedazzled ideas. These 7 designs for 2026 will help you create unique, cozy tech accessories. Pin to start your DIY project today!"
+      ],
+      "boards": [
+        "DIY Home Decor Ideas",
+        "Cozy Tech Accessories"
+      ],
+      "product_ideas": [
+        "Printable Charger Decoration Planner with Design Templates",
+        "Printable Wall Art Featuring Bedazzled Pattern Motifs"
+      ],
+      "affiliate_matches": [
+        "Bedazzling kits",
+        "Adhesive rhinestones and gems"
+      ],
+      "niche": "home",
+      "pop": 83,
+      "mom": 300,
+      "yoy": 10001,
+      "rising": true,
+      "score": 193
+    },
+    {
+      "keyword": "dorm bed ideas",
+      "keep": true,
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "12 Dorm Bed Ideas for 2026 That Maximize Comfort and Storage",
+      "pin_titles": [
+        "Dorm Bed Ideas 2026: 12 Ways to Boost Comfort & Storage",
+        "12 Dorm Bed Ideas to Make Your Room Cozy and Organized",
+        "Top 12 Dorm Bed Ideas for Small Spaces 2026"
+      ],
+      "pin_descriptions": [
+        "Dorm bed ideas for 2026 help you maximize comfort and storage in small spaces. Discover 12 creative ways to style and organize your bed area. Pin now for college-ready inspiration!",
+        "Make your dorm bed the coziest spot with these 12 dorm bed ideas for 2026. From storage hacks to styling tips, these ideas will transform your space. Save this guide before moving in!"
+      ],
+      "boards": [
+        "Dorm Room Organization",
+        "Cozy Small Space Living"
+      ],
+      "product_ideas": [
+        "2026 Dorm Bed Comfort and Organization Printable Planner",
+        "Printable Dorm Room Wall Art with Cozy Bed Themes"
+      ],
+      "affiliate_matches": [
+        "Memory foam mattress toppers",
+        "Under-bed storage bins"
+      ],
+      "niche": "home decor",
+      "pop": 78,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 188
     },
     {
       "keyword": "dorm gallery wall",
       "keep": true,
-      "season": "summer",
+      "season": "back to school",
       "intent": "high",
-      "article_topic": "9 Dorm Gallery Wall Ideas for 2026 to Personalize Your Space on a Budget",
+      "article_topic": "9 Dorm Gallery Wall Ideas for 2026 That Personalize Your Space on a Budget",
       "pin_titles": [
-        "Dorm Gallery Wall Ideas 2026: 9 Budget-Friendly Ways to Personalize",
-        "Create a Dorm Gallery Wall That Feels Like Home in 2026",
-        "9 Stylish Dorm Gallery Wall Ideas to Brighten Your Space"
+        "Dorm Gallery Wall Ideas 2026: 9 Affordable Ways to Personalize",
+        "9 Dorm Gallery Wall Ideas to Make Your Room Cozy & Stylish",
+        "Budget-Friendly Dorm Gallery Wall Ideas for 2026"
       ],
       "pin_descriptions": [
-        "Discover 9 dorm gallery wall ideas for 2026 that personalize your space without breaking the bank. Perfect for cozy dorm rooms—get inspired and save!",
-        "Make your dorm feel like home with these 9 gallery wall ideas. Affordable and stylish for 2026 dorm living. Download matching printable wall art sets!"
+        "Dorm gallery wall ideas for 2026 help you personalize your space without breaking the bank. Explore 9 creative and budget-friendly ideas to decorate your dorm. Pin to save your favorite looks!",
+        "Create a cozy dorm gallery wall with these 9 ideas for 2026. Personalize your small space with prints, photos, and DIY art. Save this pin for easy decorating inspiration!"
       ],
       "boards": [
         "Dorm Room Decor Ideas",
-        "Gallery Wall Inspiration"
+        "Budget Home Decor"
       ],
       "product_ideas": [
-        "Printable gallery wall art bundles designed for dorm rooms",
-        "A dorm room wall art planner and layout tracker printable"
+        "Printable Gallery Wall Art Sets for Dorm Rooms 2026",
+        "2026 Dorm Room Decoration and Organization Planner"
       ],
       "affiliate_matches": [
-        "Affordable frames and mounting supplies",
-        "LED string lights for ambiance"
+        "Command strips and hooks",
+        "Photo clip string lights"
       ],
       "niche": "home decor",
-      "pop": 67,
+      "pop": 70,
       "mom": 400,
-      "yoy": 200,
+      "yoy": 100,
       "rising": false,
-      "score": 177
+      "score": 180
     },
     {
       "keyword": "bedazzling patterns",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "7 Bedazzling Patterns to Elevate Your Home Decor in 2026",
+      "article_topic": "8 Bedazzling Patterns to Elevate Your Home Decor Projects in 2026",
       "pin_titles": [
-        "Bedazzling Patterns: 7 Designs to Sparkle Up Your Home Decor",
-        "2026 Bedazzling Patterns to Add Glamour to Your Living Space",
-        "Top 7 Bedazzling Patterns for Chic Home Styling"
+        "Bedazzling Patterns 2026: 8 Designs to Transform Decor",
+        "8 Bedazzling Patterns for DIY Home Style 2026",
+        "2026 Bedazzling Patterns to Add Sparkle to Your Space"
       ],
       "pin_descriptions": [
-        "Add sparkle to your home with 7 bedazzling patterns perfect for 2026 decor trends. Easy to create with printable art and crafts—start your glam makeover today!",
-        "Discover how bedazzling patterns can transform your cozy living space. These 7 patterns bring charm and shine—download printable wall art now!"
+        "Bedazzling patterns add sparkle and personality to your home decor projects. Discover 8 stunning designs for 2026 to inspire your next DIY. Save these ideas for creative decorating!",
+        "Elevate your home style with bedazzling patterns in 2026. These 8 patterns bring glam and cozy vibes to any space. Pin now for your next crafting project!"
       ],
       "boards": [
-        "Home Decor Inspiration",
-        "DIY Bedazzling Projects"
+        "DIY Home Decor",
+        "Cozy Living Spaces"
       ],
       "product_ideas": [
-        "Printable wall art featuring trendy bedazzling patterns",
-        "A bedazzling pattern planner to design your own home decor accents"
+        "Printable Wall Art Featuring Bedazzling Pattern Designs",
+        "Printable Craft Planner for Bedazzling Projects 2026"
       ],
       "affiliate_matches": [
-        "Craft rhinestones and embellishments",
-        "Adhesive tools and crafting mats"
+        "Rhinestone embellishments",
+        "Glue guns and crafting tools"
       ],
       "niche": "home",
-      "pop": 90,
+      "pop": 91,
       "mom": 200,
       "yoy": 7500,
       "rising": true,
-      "score": 167
+      "score": 168
     },
     {
       "keyword": "farmhouse ideas",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "15 Farmhouse Ideas for 2026 to Create a Cozy, Timeless Home",
+      "article_topic": "15 Farmhouse Ideas for 2026 That Create Cozy, Timeless Home Decor",
       "pin_titles": [
-        "Farmhouse Ideas 2026: 15 Ways to Make Your Home Cozy and Classic",
-        "15 Cozy Farmhouse Ideas to Update Your Home in 2026",
-        "Top 15 Farmhouse Decorating Ideas for a Warm 2026 Home"
+        "Farmhouse Ideas 2026: 15 Cozy Decor Tips",
+        "15 Farmhouse Ideas to Warm Up Your Home 2026",
+        "Timeless Farmhouse Ideas for Cozy Living 2026"
       ],
       "pin_descriptions": [
-        "Explore 15 farmhouse ideas for 2026 that bring warmth and timeless charm to your home. Perfect for cozy living—download printable wall art to complete your look!",
-        "Transform your space with 15 farmhouse ideas that create a cozy, inviting atmosphere. Grab our printable planners to organize your farmhouse decor projects!"
+        "Farmhouse ideas for 2026 offer cozy, timeless decor solutions that make any home inviting. Explore 15 ways to bring rustic charm into your space. Save this guide for your next makeover!",
+        "Create a cozy farmhouse vibe with these 15 ideas for 2026. From rustic accents to warm colors, these tips transform your home into a welcoming retreat. Pin for farmhouse inspiration!"
       ],
       "boards": [
-        "Farmhouse Style Decor",
-        "Cozy Home Ideas"
+        "Farmhouse Decor Ideas",
+        "Cozy Home Styling"
       ],
       "product_ideas": [
-        "Printable farmhouse-style wall art collections",
-        "Farmhouse home project planners and seasonal cleaning trackers"
+        "Printable Farmhouse Wall Art Sets 2026",
+        "Farmhouse Style Home Planner and Cleaning Tracker Printables"
       ],
       "affiliate_matches": [
-        "Rustic furniture and accessories",
-        "Farmhouse-style textiles and rugs"
+        "Rustic wood signs",
+        "Vintage-style decor accents"
       ],
       "niche": "home decor",
-      "pop": 89,
+      "pop": 90,
+      "mom": 200,
+      "yoy": 60,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "dorm checklist",
+      "keep": true,
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "The 2026 Ultimate Dorm Checklist: 20 Essentials for a Cozy, Organized Room",
+      "pin_titles": [
+        "2026 Dorm Checklist: 20 Essentials for Cozy Living",
+        "Ultimate Dorm Checklist for 2026 Students",
+        "20 Must-Have Items on Your 2026 Dorm Checklist"
+      ],
+      "pin_descriptions": [
+        "The 2026 dorm checklist covers all essentials for creating a cozy, organized college space. Discover 20 must-have items to pack for your dorm. Save this checklist to prepare with confidence!",
+        "Prepare for college with the ultimate 2026 dorm checklist. These 20 essentials help you create a functional and cozy dorm room. Pin now to stay organized before move-in day!"
+      ],
+      "boards": [
+        "Back to School Dorm Essentials",
+        "College Dorm Organization"
+      ],
+      "product_ideas": [
+        "2026 Printable Dorm Packing and Organization Checklist",
+        "Dorm Room Cleaning and Routine Planner Printable"
+      ],
+      "affiliate_matches": [
+        "Compact laundry hampers",
+        "Desk organizers"
+      ],
+      "niche": "home decor",
+      "pop": 86,
       "mom": 200,
       "yoy": 50,
       "rising": true,
-      "score": 166
+      "score": 163
     },
     {
       "keyword": "craft projects",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "10 Cozy Craft Projects for 2026 to Refresh Your Home and Mind",
+      "article_topic": "14 Easy Craft Projects for Cozy Home Decor in 2026",
       "pin_titles": [
-        "Craft Projects 2026: 10 Cozy Ideas to Refresh Your Home",
-        "10 Easy Craft Projects to Add Warmth to Your Space in 2026",
-        "Top 10 Cozy Craft Projects for Home Refresh 2026"
+        "Craft Projects 2026: 14 Cozy Home Ideas",
+        "14 Craft Projects to Beautify Your Home 2026",
+        "Easy Craft Projects for Cozy Living 2026"
       ],
       "pin_descriptions": [
-        "Try these 10 cozy craft projects to refresh your home in 2026 with easy DIY ideas. Perfect for personalizing your space—get our printable project planners now!",
-        "Discover 10 craft projects that add warmth and personality to your living space. Simple, cozy ideas for 2026—download printable trackers to stay organized!"
+        "Craft projects can transform your home into a cozy haven. Explore 14 easy ideas for 2026 to add warmth and personality to your space. Save this list for your next DIY!",
+        "Looking for craft projects to make your home cozy? These 14 ideas for 2026 are beginner-friendly and perfect for adding charm to any room. Pin now for creative inspiration!"
       ],
       "boards": [
-        "DIY Home Crafts",
-        "Cozy Living Projects"
+        "DIY Home Decor",
+        "Cozy Living Ideas"
       ],
       "product_ideas": [
-        "Printable craft project planners with step-by-step guides",
-        "Wall art printables featuring craft-inspired quotes and designs"
+        "Printable Craft Project Planner and Tracker 2026",
+        "Printable Wall Art Featuring Craft-Themed Quotes"
       ],
       "affiliate_matches": [
-        "Craft kits and supplies",
-        "Organizational tools for crafting spaces"
-      ],
-      "niche": "home",
-      "pop": 87,
-      "mom": 200,
-      "yoy": 100,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "scrapbook paper designs",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "8 Scrapbook Paper Designs for 2026 That Inspire Cozy Home Crafts",
-      "pin_titles": [
-        "Scrapbook Paper Designs 2026: 8 Patterns for Cozy Crafts",
-        "8 Inspiring Scrapbook Paper Designs for 2026 Home Projects",
-        "Top 8 Scrapbook Paper Designs to Spark Your Creativity"
-      ],
-      "pin_descriptions": [
-        "Explore 8 scrapbook paper designs perfect for cozy home crafts in 2026. Use our printable patterns to elevate your projects—download now!",
-        "Find inspiration with 8 scrapbook paper designs that make crafting at home fun and stylish. Perfect for planners and wall art—grab your printables!"
-      ],
-      "boards": [
-        "Scrapbooking & Paper Crafts",
-        "Cozy Home Crafting"
-      ],
-      "product_ideas": [
-        "Printable scrapbook paper design bundles",
-        "Cozy craft planners and project trackers"
-      ],
-      "affiliate_matches": [
-        "Scrapbooking tools and adhesives",
-        "Decorative punches and cutters"
+        "Craft tool sets",
+        "Quality glue and adhesives"
       ],
       "niche": "home",
       "pop": 85,
@@ -603,310 +637,344 @@
       "score": 162
     },
     {
-      "keyword": "dorm checklist",
+      "keyword": "scrapbook paper designs",
       "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "The Ultimate 2026 Dorm Checklist: 15 Essentials for a Cozy, Organized College Space",
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "12 Scrapbook Paper Designs for 2026 That Inspire Cozy Crafting",
       "pin_titles": [
-        "2026 Dorm Checklist: 15 Essentials for Cozy College Living",
-        "Ultimate Dorm Checklist 2026 to Organize Your Small Space",
-        "15 Must-Have Items on the 2026 Dorm Checklist"
+        "Scrapbook Paper Designs 2026: 12 Cozy Patterns",
+        "12 Scrapbook Paper Designs to Spark Creativity 2026",
+        "Cozy Scrapbook Paper Designs for 2026 Crafts"
       ],
       "pin_descriptions": [
-        "Use our 2026 dorm checklist to ensure your college space is cozy and organized. Perfect for first-year students—download the printable checklist now!",
-        "Stay prepared with the ultimate dorm checklist for 2026. Organize your space with essential items and routines—grab your printable planner today!"
+        "Scrapbook paper designs for 2026 offer cozy, inspiring patterns for your craft projects. Discover 12 designs that add warmth and style. Pin these ideas for your next creation!",
+        "Elevate your crafts with scrapbook paper designs perfect for cozy home projects. These 12 2026 patterns inspire creativity and charm. Save this pin for scrapbook inspiration!"
       ],
       "boards": [
-        "Dorm Room Organization",
-        "College Living Essentials"
+        "Craft Supplies and Inspiration",
+        "Cozy Paper Crafts"
       ],
       "product_ideas": [
-        "Printable dorm checklist planner and packing list",
-        "A dorm room cleaning and organization tracker printable"
+        "Printable Scrapbook Paper Design Collections 2026",
+        "Craft Project Planner Printable with Paper Design Samples"
       ],
       "affiliate_matches": [
-        "Storage bins and organizers",
-        "Compact bedding and linens"
+        "Scrapbooking tool kits",
+        "Patterned paper sets"
       ],
-      "niche": "home decor",
-      "pop": 83,
+      "niche": "home",
+      "pop": 85,
       "mom": 200,
-      "yoy": 50,
+      "yoy": 100,
       "rising": true,
-      "score": 160
+      "score": 162
     },
     {
       "keyword": "scrap fabric",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "7 Creative Ways to Use Scrap Fabric for Cozy Home Decor in 2026",
+      "article_topic": "10 Creative Uses for Scrap Fabric in Cozy Home Projects 2026",
       "pin_titles": [
-        "Scrap Fabric Ideas 2026: 7 Cozy Home Decor Projects",
-        "7 Creative Scrap Fabric Uses to Refresh Your Space",
-        "2026 Scrap Fabric Projects for Cozy Living"
+        "Scrap Fabric Ideas 2026: 10 Creative Uses",
+        "10 Scrap Fabric Projects for Cozy Homes 2026",
+        "Creative Scrap Fabric Uses for Home Decor 2026"
       ],
       "pin_descriptions": [
-        "Discover 7 creative ways to use scrap fabric to add cozy touches to your home in 2026. Easy DIY ideas with printable patterns—get started today!",
-        "Use scrap fabric for beautiful and sustainable home decor projects. These 7 ideas bring warmth to any room—download matching printable project guides!"
+        "Scrap fabric can add charm and sustainability to your home projects. Discover 10 creative uses in 2026 to decorate and organize. Pin now for eco-friendly cozy ideas!",
+        "Turn scrap fabric into cozy home decor with these 10 ideas for 2026. From patchwork art to organizers, these projects add warmth and personality. Save for your next craft session!"
       ],
       "boards": [
-        "Eco-Friendly Home Decor",
-        "Cozy Fabric Crafts"
+        "Sustainable Home Decor",
+        "DIY Fabric Projects"
       ],
       "product_ideas": [
-        "Printable scrap fabric project patterns and instructions",
-        "Fabric project planners and organization trackers"
+        "Printable Scrap Fabric Project Planner 2026",
+        "Farmhouse Style Patchwork Wall Art Printables"
       ],
       "affiliate_matches": [
-        "Sewing kits and tools",
-        "Fabric glue and crafting supplies"
+        "Fabric scissors and tools",
+        "Sewing kits"
       ],
       "niche": "home",
-      "pop": 47,
+      "pop": 51,
       "mom": 300,
       "yoy": 300,
       "rising": true,
-      "score": 157
+      "score": 161
     },
     {
       "keyword": "random things to bedazzle",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "14 Random Things to Bedazzle for a Sparkly Home Refresh in 2026",
+      "article_topic": "13 Random Things to Bedazzle for a Cozy, Sparkly Home in 2026",
       "pin_titles": [
-        "Random Things to Bedazzle: 14 Sparkly Home Ideas",
-        "14 Fun Items to Bedazzle for Cozy Living Spaces",
-        "2026 Bedazzle Ideas: 14 Random Things to Glam Up Your Home"
+        "Random Things to Bedazzle: 13 Fun Ideas 2026",
+        "13 Items to Bedazzle for Cozy Decor 2026",
+        "2026 Bedazzling Ideas for Random Home Items"
       ],
       "pin_descriptions": [
-        "Explore 14 random things to bedazzle that add sparkle and personality to your home in 2026. Easy DIY ideas with printable guides—start your glam makeover!",
-        "Add charm to your living space by bedazzling everyday items. These 14 ideas come with printable planners for a stylish and cozy home refresh!"
+        "Discover 13 random things to bedazzle that add sparkle and charm to your home in 2026. These ideas bring cozy glam to everyday items. Save for your next creative project!",
+        "Add personality to your home with 13 random things to bedazzle in 2026. Sparkle meets cozy in these fun DIY ideas. Pin now to glam up your space!"
       ],
       "boards": [
-        "DIY Bedazzling Projects",
-        "Cozy Home Makeovers"
+        "DIY Sparkle Decor",
+        "Cozy Bedazzling Projects"
       ],
       "product_ideas": [
-        "Printable bedazzling pattern guides for various home items",
-        "A planner for tracking bedazzling projects and supplies"
+        "Printable Bedazzling Project Planner 2026",
+        "Printable Wall Art Featuring Bedazzled Motifs"
       ],
       "affiliate_matches": [
-        "Rhinestones and adhesive gems",
-        "Crafting tools and embellishments"
+        "Rhinestone kits",
+        "Craft glue and embellishments"
       ],
       "niche": "home",
-      "pop": 45,
+      "pop": 48,
       "mom": 1500,
-      "yoy": 3000,
+      "yoy": 3500,
       "rising": true,
-      "score": 155
+      "score": 158
+    },
+    {
+      "keyword": "fourth of july crafts for kids",
+      "keep": true,
+      "season": "holiday",
+      "intent": "high",
+      "article_topic": "15 Fourth of July Crafts for Kids in 2026 That Create Cozy Holiday Fun",
+      "pin_titles": [
+        "Fourth of July Crafts for Kids 2026: 15 Easy Ideas",
+        "15 Cozy Fourth of July Crafts for Kids 2026",
+        "Fun Fourth of July Crafts for Kids 2026"
+      ],
+      "pin_descriptions": [
+        "Fourth of July crafts for kids in 2026 offer fun, cozy ways to celebrate. Discover 15 easy projects that keep children engaged and festive. Save these for your holiday activities!",
+        "Keep kids entertained with 15 cozy Fourth of July crafts for 2026. These easy projects add patriotic spirit and fun to your holiday. Pin now to prepare for celebrations!"
+      ],
+      "boards": [
+        "Holiday Crafts for Kids",
+        "Cozy Holiday Activities"
+      ],
+      "product_ideas": [
+        "Printable Fourth of July Kids Craft Planner 2026",
+        "Printable Wall Art with Patriotic Quotes for Kids"
+      ],
+      "affiliate_matches": [
+        "Craft kits for kids",
+        "Non-toxic glue and supplies"
+      ],
+      "niche": "home",
+      "pop": 53,
+      "mom": 800,
+      "yoy": 60,
+      "rising": false,
+      "score": 153
     },
     {
       "keyword": "classy cubicle",
       "keep": true,
       "season": "evergreen",
-      "intent": "high",
-      "article_topic": "10 Classy Cubicle Decorating Ideas for a Cozy Office Space in 2026",
+      "intent": "medium",
+      "article_topic": "10 Classy Cubicle Decor Ideas for a Cozy and Professional Workspace in 2026",
       "pin_titles": [
-        "Classy Cubicle Ideas 2026: 10 Ways to Cozy Up Your Office",
-        "10 Classy Cubicle Decorating Ideas for a Stylish Workspace",
-        "2026 Classy Cubicle Tips to Create a Cozy Office Vibe"
+        "Classy Cubicle Ideas 2026: 10 Cozy Decor Tips",
+        "10 Ways to Make Your Cubicle Classy & Cozy 2026",
+        "2026 Classy Cubicle Decor Ideas for Professionals"
       ],
       "pin_descriptions": [
-        "Discover 10 classy cubicle decorating ideas to make your office cozy and stylish in 2026. Download matching printable planners and wall art for inspiration!",
-        "Make your cubicle a cozy retreat with these 10 classy decorating ideas. Perfect for office workers wanting style and comfort—get your printables today!"
+        "Classy cubicle ideas for 2026 help you create a cozy, professional workspace. Discover 10 stylish decor tips to personalize your office. Save this for workspace inspiration!",
+        "Transform your cubicle into a classy, cozy space with these 10 ideas for 2026. Personalize your work area with style and comfort. Pin now for office decor ideas!"
       ],
       "boards": [
         "Office Decor Ideas",
         "Cozy Workspaces"
       ],
       "product_ideas": [
-        "Printable classy cubicle wall art sets",
-        "A cubicle organization and decor planner printable"
+        "Printable Cubicle Organization and Decor Planner 2026",
+        "Printable Inspirational Wall Art for Workspaces"
       ],
       "affiliate_matches": [
-        "Desk organizers and accessories",
-        "Decorative office supplies"
+        "Desk organizers",
+        "Elegant photo frames"
       ],
       "niche": "home decor",
-      "pop": 77,
+      "pop": 76,
       "mom": 200,
       "yoy": 1000,
       "rising": true,
-      "score": 154
+      "score": 152
     },
     {
-      "keyword": "book bags",
+      "keyword": "4th of july crafts for kids",
       "keep": true,
-      "season": "summer",
-      "intent": "medium",
-      "article_topic": "8 Stylish Book Bags for Dorms and Small Spaces in 2026",
+      "season": "holiday",
+      "intent": "high",
+      "article_topic": "15 Fourth of July Crafts for Kids in 2026 That Create Cozy Holiday Fun",
       "pin_titles": [
-        "Book Bags 2026: 8 Stylish Picks for Dorm Life",
-        "8 Best Book Bags for Small Spaces and Dorms",
-        "Top 8 Book Bags to Organize Your College Essentials"
+        "Fourth of July Crafts for Kids 2026: 15 Easy Ideas",
+        "15 Cozy Fourth of July Crafts for Kids 2026",
+        "Fun Fourth of July Crafts for Kids 2026"
       ],
       "pin_descriptions": [
-        "Check out 8 stylish book bags perfect for dorms and small spaces in 2026. Stay organized and cozy with these trendy picks—save your favorites!",
-        "Find the best book bags for dorm living and small spaces. These 8 options combine style and function—download printable organization planners today!"
+        "Fourth of July crafts for kids in 2026 offer fun, cozy ways to celebrate. Discover 15 easy projects that keep children engaged and festive. Save these for your holiday activities!",
+        "Keep kids entertained with 15 cozy Fourth of July crafts for 2026. These easy projects add patriotic spirit and fun to your holiday. Pin now to prepare for celebrations!"
       ],
       "boards": [
-        "College Essentials",
-        "Dorm Room Organization"
+        "Holiday Crafts for Kids",
+        "Cozy Holiday Activities"
       ],
       "product_ideas": [
-        "Printable book bag inventory and organization trackers",
-        "Wall art featuring motivational quotes for students"
+        "Printable Fourth of July Kids Craft Planner 2026",
+        "Printable Wall Art with Patriotic Quotes for Kids"
       ],
       "affiliate_matches": [
-        "Durable backpacks and tote bags",
-        "Bag organizers and accessories"
+        "Craft kits for kids",
+        "Non-toxic glue and supplies"
       ],
       "niche": "home",
-      "pop": 69,
-      "mom": 200,
-      "yoy": 7,
-      "rising": true,
-      "score": 146
+      "pop": 52,
+      "mom": 800,
+      "yoy": 50,
+      "rising": false,
+      "score": 152
     },
     {
       "keyword": "4th of july crafts",
       "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "12 Easy 4th of July Crafts for a Cozy Patriotic Home in 2026",
+      "season": "holiday",
+      "intent": "medium",
+      "article_topic": "12 Fourth of July Crafts for 2026 That Add Cozy Patriotism to Your Home",
       "pin_titles": [
-        "4th of July Crafts 2026: 12 Easy Ideas for Cozy Decor",
-        "12 Patriotic 4th of July Crafts to Cozy Up Your Home",
-        "Easy 4th of July Crafts for a Festive 2026 Home"
+        "Fourth of July Crafts 2026: 12 Cozy Ideas",
+        "12 Easy Fourth of July Crafts for Your Home 2026",
+        "Cozy Fourth of July Crafts to Celebrate 2026"
       ],
       "pin_descriptions": [
-        "Celebrate with 12 easy 4th of July crafts that bring cozy patriotic charm to your home in 2026. Get printable craft templates and planners—start crafting today!",
-        "Add festive warmth with 4th of July crafts perfect for your home. These 12 ideas come with printables to keep you organized and creative!"
+        "Fourth of July crafts for 2026 bring cozy patriotism to your home decor. Explore 12 easy projects to celebrate in style. Save this for your holiday crafting!",
+        "Add festive charm with these 12 Fourth of July crafts for 2026. Cozy and easy ideas to decorate your home for the holiday. Pin now to start your patriotic projects!"
       ],
       "boards": [
-        "Holiday Crafts",
-        "Cozy Summer Decor"
+        "Holiday Home Decor",
+        "Cozy Seasonal Crafts"
       ],
       "product_ideas": [
-        "Printable 4th of July craft templates and wall art",
-        "A 4th of July craft project planner and tracker"
+        "Printable Fourth of July Craft Planner 2026",
+        "Patriotic Wall Art Printables for Summer 2026"
       ],
       "affiliate_matches": [
-        "Craft supplies and patriotic decorations",
-        "Glue guns and crafting tools"
+        "Red, white, and blue craft supplies",
+        "Patriotic banners and decor"
       ],
       "niche": "home",
-      "pop": 42,
+      "pop": 51,
       "mom": 300,
       "yoy": 20,
       "rising": false,
-      "score": 142
+      "score": 151
     },
     {
-      "keyword": "fourth of july crafts for kids",
+      "keyword": "backpack keychains",
       "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "10 Fourth of July Crafts for Kids in 2026 That Make Cozy Family Fun",
+      "season": "back to school",
+      "intent": "medium",
+      "article_topic": "9 Backpack Keychains for 2026 That Add Cozy Personality to School Gear",
       "pin_titles": [
-        "Fourth of July Crafts for Kids 2026: 10 Fun Ideas",
-        "10 Easy Fourth of July Crafts for Kids to Celebrate 2026",
-        "Cozy Family Fun: 10 Fourth of July Crafts for Kids"
+        "Backpack Keychains 2026: 9 Cozy Style Ideas",
+        "9 Backpack Keychains to Personalize Your Gear 2026",
+        "Cozy Backpack Keychains for School 2026"
       ],
       "pin_descriptions": [
-        "Keep kids entertained with 10 Fourth of July crafts perfect for family fun in 2026. Printable templates and planners included—download and start creating!",
-        "Explore 10 easy Fourth of July crafts for kids that add cozy charm to your holiday. Get printable guides and stay organized with our craft planner!"
+        "Backpack keychains for 2026 add cozy personality to your school gear. Discover 9 stylish ideas to customize your backpack. Save this list for back-to-school shopping!",
+        "Make your backpack stand out with these 9 cozy keychain ideas for 2026. Personalize your school essentials with charm and style. Pin now for unique accessory ideas!"
       ],
       "boards": [
-        "Kids Crafts",
-        "Holiday Family Activities"
+        "Back to School Accessories",
+        "Cozy School Gear"
       ],
       "product_ideas": [
-        "Printable Fourth of July craft templates for kids",
-        "A family craft project planner printable"
+        "Printable Backpack Keychain Design Templates 2026",
+        "Back to School Organizer and Tracker Printable"
       ],
       "affiliate_matches": [
-        "Kids craft kits and supplies",
-        "Child-safe crafting tools"
+        "Cute keychain charms",
+        "Backpack organizers"
       ],
       "niche": "home",
-      "pop": 41,
-      "mom": 800,
-      "yoy": 60,
+      "pop": 38,
+      "mom": 300,
+      "yoy": 1,
       "rising": false,
-      "score": 141
+      "score": 148
     },
     {
-      "keyword": "teacher desk makeover",
-      "keep": true,
-      "season": "summer",
-      "intent": "high",
-      "article_topic": "11 Teacher Desk Makeover Ideas for a Cozy and Organized Classroom in 2026",
-      "pin_titles": [
-        "Teacher Desk Makeover 2026: 11 Cozy Ideas",
-        "11 Teacher Desk Makeover Tips for an Organized Space",
-        "Cozy Teacher Desk Makeover Ideas for 2026 Classrooms"
-      ],
-      "pin_descriptions": [
-        "Refresh your classroom with 11 teacher desk makeover ideas to create a cozy and organized workspace in 2026. Download printable planners and wall art!",
-        "Make your teacher desk a cozy hub with these 11 makeover ideas. Perfect for staying organized and stylish—get your printable organization tools today!"
-      ],
-      "boards": [
-        "Classroom Decor",
-        "Teacher Organization"
-      ],
-      "product_ideas": [
-        "Printable teacher desk organization planners",
-        "Classroom wall art printables with motivational quotes"
-      ],
-      "affiliate_matches": [
-        "Desk organizers and accessories",
-        "Classroom decor supplies"
-      ],
-      "niche": "home decor",
-      "pop": 64,
-      "mom": 200,
-      "yoy": -7,
-      "rising": true,
-      "score": 140
-    },
-    {
-      "keyword": "bedazzle ideas",
+      "keyword": "pirate crafts for kids",
       "keep": true,
       "season": "evergreen",
-      "intent": "high",
-      "article_topic": "13 Bedazzle Ideas to Sparkle Up Your Home Decor in 2026",
+      "intent": "medium",
+      "article_topic": "11 Pirate Crafts for Kids in 2026 That Create Cozy Adventure Fun",
       "pin_titles": [
-        "Bedazzle Ideas 2026: 13 Ways to Add Sparkle to Your Home",
-        "13 Creative Bedazzle Ideas for Cozy Living Spaces",
-        "Top 13 Bedazzle Ideas to Refresh Your Home Decor"
+        "Pirate Crafts for Kids 2026: 11 Fun Ideas",
+        "11 Cozy Pirate Crafts to Engage Kids 2026",
+        "2026 Pirate Crafts for Kids to Spark Imagination"
       ],
       "pin_descriptions": [
-        "Brighten your space with 13 bedazzle ideas perfect for cozy home decor in 2026. Easy DIY projects with printable guides—start sparkling today!",
-        "Discover creative bedazzle ideas to add charm and shine to your home. Download printable planners and wall art for your 2026 home refresh!"
+        "Pirate crafts for kids in 2026 offer fun, cozy ways to spark imagination and adventure. Discover 11 creative projects for children. Save these ideas for your next craft time!",
+        "Keep kids entertained with 11 cozy pirate crafts for 2026. These fun projects inspire creativity and adventure at home. Pin now to prepare for imaginative play!"
       ],
       "boards": [
-        "DIY Bedazzling Projects",
-        "Cozy Home Decor Ideas"
+        "Kids Crafts and Activities",
+        "Cozy Creative Play"
       ],
       "product_ideas": [
-        "Printable bedazzle pattern guides and project planners",
-        "Wall art featuring glamorous bedazzled designs"
+        "Printable Pirate Craft Project Planner 2026",
+        "Themed Wall Art Printables for Kids' Rooms"
       ],
       "affiliate_matches": [
-        "Rhinestones and embellishments",
-        "Crafting adhesive and tools"
+        "Craft kits for children",
+        "Non-toxic paint and supplies"
       ],
       "niche": "home",
-      "pop": 96,
-      "mom": 100,
-      "yoy": 2500,
+      "pop": 70,
+      "mom": 200,
+      "yoy": 20,
       "rising": true,
-      "score": 139
+      "score": 147
+    },
+    {
+      "keyword": "book bags",
+      "keep": true,
+      "season": "back to school",
+      "intent": "medium",
+      "article_topic": "10 Book Bags for 2026 That Combine Style and Cozy Functionality",
+      "pin_titles": [
+        "Book Bags 2026: 10 Stylish & Cozy Options",
+        "10 Book Bags That Blend Style and Comfort 2026",
+        "Cozy Book Bags for Students 2026"
+      ],
+      "pin_descriptions": [
+        "Book bags for 2026 combine style and cozy functionality for students. Discover 10 top picks that keep your gear organized and comfortable. Save this list for back-to-school shopping!",
+        "Find the perfect book bag for 2026 with these 10 cozy and stylish options. Organize your school essentials with ease and charm. Pin now for your next backpack!"
+      ],
+      "boards": [
+        "Back to School Gear",
+        "Cozy Student Essentials"
+      ],
+      "product_ideas": [
+        "Printable Book Bag Organization Planner 2026",
+        "Cozy Themed Wall Art for Study Spaces"
+      ],
+      "affiliate_matches": [
+        "Ergonomic backpacks",
+        "Bag organizers"
+      ],
+      "niche": "home",
+      "pop": 69,
+      "mom": 200,
+      "yoy": 8,
+      "rising": true,
+      "score": 146
     }
   ]
 }
