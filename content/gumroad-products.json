@@ -578,5 +578,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/ngshcb",
     "landing": "/shop/cozy-home-bundle-2026-07-19",
     "created_at": "2026-07-19T16:07:04.990Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-monthly-budget-bill-tracker",
+    "title": "Printable Monthly Budget & Bill Tracker Planner",
+    "price": 4,
+    "gumroad_id": "2Fp8N5erZLzvk2CC_y4owg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/jvqksc",
+    "landing": "/shop/printable-monthly-budget-bill-tracker",
+    "created_at": "2026-07-20T16:30:17.709Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "mid-century-dog-art-set",
+    "title": "Abstract Pastel Mid-Century Dog Printable Wall Art Set, Mustard Blush Teal",
+    "price": 5,
+    "gumroad_id": "Afwb_suWJCSE4OrorJ3ZJw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/ymylnx",
+    "landing": "/shop/mid-century-dog-art-set",
+    "created_at": "2026-07-20T16:31:29.089Z"
   }
 ]
