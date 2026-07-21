@@ -598,5 +598,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/ymylnx",
     "landing": "/shop/mid-century-dog-art-set",
     "created_at": "2026-07-20T16:31:29.089Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "christmas-july-decorations-set",
+    "title": "Christmas in July Decorations Printable Wall Art Set - Summer Holiday Festive Prints",
+    "price": 5,
+    "gumroad_id": "H5mjKD8WD9bF8WhOtcuAYA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/rvafa",
+    "landing": "/shop/christmas-july-decorations-set",
+    "created_at": "2026-07-21T16:30:31.715Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-monthly-budget-bill-tracker-planner",
+    "title": "Printable Monthly Budget & Bill Tracker Planner",
+    "price": 4,
+    "gumroad_id": "Sq9OORkz71mjsMKkRxCzTg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/vpcuyg",
+    "landing": "/shop/printable-monthly-budget-bill-tracker-planner",
+    "created_at": "2026-07-21T16:30:52.612Z"
   }
 ]
