@@ -618,5 +618,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/vpcuyg",
     "landing": "/shop/printable-monthly-budget-bill-tracker-planner",
     "created_at": "2026-07-21T16:30:52.612Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker-planner",
+    "title": "Printable Savings & Money Goals Tracker Planner",
+    "price": 4,
+    "gumroad_id": "yXPqWfvgeqvwz7J_sFs5AA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/nxacvt",
+    "landing": "/shop/printable-savings-money-goals-tracker-planner",
+    "created_at": "2026-07-22T16:25:25.625Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "japandi-minimalist-dog-set",
+    "title": "Japandi Style Minimalist Dog Portrait Printable Wall Art Set in Sage and Oatmeal",
+    "price": 5,
+    "gumroad_id": "OggbUnOeZkJe6ig93I1eOg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/wdxvq",
+    "landing": "/shop/japandi-minimalist-dog-set",
+    "created_at": "2026-07-22T16:27:28.922Z"
   }
 ]

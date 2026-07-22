@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T15:33:20.699Z",
+  "generated_at": "2026-07-22T16:25:04.452Z",
   "region": "US",
   "candidates": [
     {
@@ -365,30 +365,64 @@
   ],
   "briefs": [
     {
+      "keyword": "things to diy",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "15 Things to DIY for a Cozy Home Makeover in 2026",
+      "pin_titles": [
+        "Things to DIY for a Cozy Home: 15 Easy Projects to Try Now",
+        "15 Things to DIY That Transform Your Home Organization",
+        "Things to DIY: 15 Printable Planner Ideas for Home & Cozy Living"
+      ],
+      "pin_descriptions": [
+        "Discover things to DIY that bring warmth and organization to your home in 2026. Get inspired with printable planners to keep your projects on track!",
+        "Looking for things to DIY for a cozy living space? Try these 15 projects plus printable trackers to plan and organize your home refresh."
+      ],
+      "boards": [
+        "DIY Home Projects",
+        "Cozy Living & Home Organization"
+      ],
+      "product_ideas": [
+        "Printable DIY Project Planner for Home Makeovers 2026",
+        "Cozy Home DIY Wall Art Quotes Collection"
+      ],
+      "affiliate_matches": [
+        "DIY craft kits",
+        "Home organization tools"
+      ],
+      "niche": "home",
+      "pop": 85,
+      "mom": 500,
+      "yoy": 100,
+      "rising": true,
+      "score": 195
+    },
+    {
       "keyword": "scrap booking pages for boyfriend",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "10 Scrapbooking Pages for Boyfriend That Capture Your Love Perfectly",
+      "article_topic": "12 Scrapbooking Pages for Boyfriend That Capture Your Love in 2026",
       "pin_titles": [
-        "Scrapbooking Pages for Boyfriend: 10 Designs to Express Your Love",
-        "10 Scrapbooking Pages for Boyfriend That Make Your Memories Shine",
-        "Scrapbooking Pages for Boyfriend: 10 Creative Ideas for Meaningful Gifts"
+        "Scrapbooking Pages for Boyfriend: 12 Romantic DIY Layouts",
+        "12 Scrapbooking Pages for Boyfriend with Printable Templates",
+        "Scrapbooking Pages for Boyfriend: 12 Ideas to Celebrate Your Relationship"
       ],
       "pin_descriptions": [
-        "Scrapbooking pages for boyfriend help you create heartfelt gifts that preserve memories. Discover 10 creative designs and get inspired to craft your own! Save these ideas now.",
-        "Explore 10 scrapbooking pages for boyfriend that turn your favorite moments into beautiful keepsakes. Start your DIY project today with our printable templates!"
+        "Create heartfelt scrapbooking pages for boyfriend with these 12 romantic ideas plus printable templates to personalize your album.",
+        "Looking for scrapbooking pages for boyfriend? Try these 12 creative designs with printable trackers for memories and dates."
       ],
       "boards": [
-        "Scrapbooking Ideas",
-        "DIY Gifts and Keepsakes"
+        "Scrapbooking & Memory Keeping",
+        "DIY Romantic Gifts"
       ],
       "product_ideas": [
-        "Printable scrapbook page templates for boyfriend with romantic themes",
-        "Printable memory trackers and relationship milestone planners"
+        "Printable Scrapbooking Page Templates for Couples 2026",
+        "Relationship Memory Tracker Printable Planner"
       ],
       "affiliate_matches": [
-        "Scrapbooking kits and tools",
+        "Scrapbooking supplies",
         "Photo printing services"
       ],
       "niche": "home",
@@ -403,27 +437,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "8 Desk Hutch Decor Ideas That Organize and Beautify Your Workspace in 2026",
+      "article_topic": "10 Desk Hutch Decor Ideas That Maximize Style and Storage in 2026",
       "pin_titles": [
-        "Desk Hutch Decor: 8 Stylish Ideas to Organize Your Workspace",
-        "8 Desk Hutch Decor Ideas to Maximize Small Office Space",
-        "Desk Hutch Decor: 8 Must-Try Tips for a Cozy Work Nook"
+        "Desk Hutch Decor: 10 Stylish Ideas for Small Spaces",
+        "10 Desk Hutch Decor Tips to Organize Your Workspace",
+        "Desk Hutch Decor: 10 Printable Wall Art Pieces for Your Office"
       ],
       "pin_descriptions": [
-        "Desk hutch decor can transform your workspace with style and function. Discover 8 ideas to help you organize and decorate your desk in 2026! Save these tips now.",
-        "Make your desk hutch both beautiful and practical with these 8 decor ideas. Perfect for small spaces and cozy work setups. Download our printable organizers too!"
+        "Transform your desk hutch decor with these 10 stylish ideas that maximize storage and style for 2026. Includes printable wall art suggestions.",
+        "Looking to refresh your desk hutch decor? Discover 10 ideas plus printable planners to organize your workspace efficiently."
       ],
       "boards": [
         "Home Office Decor",
-        "Desk Organization Ideas"
+        "Small Space Organization"
       ],
       "product_ideas": [
-        "Printable desk hutch organization planner with labels and checklists",
-        "Printable wall art for desk hutch inspiration and motivation"
+        "Printable Desk Hutch Organization Planner 2026",
+        "Inspirational Wall Art for Desk Hutch Spaces"
       ],
       "affiliate_matches": [
-        "Desk organizers and storage bins",
-        "LED desk lamps"
+        "Desk organizers",
+        "Decorative storage baskets"
       ],
       "niche": "home decor",
       "pop": 75,
@@ -435,29 +469,29 @@
     {
       "keyword": "dorm gallery wall",
       "keep": true,
-      "season": "fall",
+      "season": "back to school",
       "intent": "high",
-      "article_topic": "12 Dorm Gallery Wall Ideas That Make Your Small Space Feel Like Home in Fall 2026",
+      "article_topic": "14 Dorm Gallery Wall Ideas That Make Your Space Cozy in Fall 2026",
       "pin_titles": [
-        "Dorm Gallery Wall: 12 Cozy Ideas for Small Spaces",
-        "12 Dorm Gallery Wall Ideas to Personalize Your College Room",
-        "Dorm Gallery Wall: 12 Stylish Prints to Brighten Your Space"
+        "Dorm Gallery Wall: 14 Ideas to Personalize Your Space",
+        "14 Dorm Gallery Wall Ideas with Printable Art for Fall 2026",
+        "Dorm Gallery Wall: 14 Cozy Styling Tips for College Rooms"
       ],
       "pin_descriptions": [
-        "Dorm gallery wall ideas help you personalize your college room with style. Check out 12 printables and decor tips perfect for fall 2026! Save now.",
-        "Create a cozy vibe in your dorm with 12 gallery wall ideas featuring printable wall art and easy styling tips. Start your room makeover today!"
+        "Explore dorm gallery wall ideas to make your college space cozy and stylish for Fall 2026 with printable wall art options.",
+        "Need dorm gallery wall ideas? Here are 14 ways to decorate with printable art and create a cozy vibe this back to school season."
       ],
       "boards": [
         "Dorm Room Decor",
-        "Gallery Wall Ideas"
+        "College Home Styling"
       ],
       "product_ideas": [
-        "Printable dorm-themed wall art sets for gallery walls",
-        "Printable dorm room planners and checklists for organization"
+        "Printable Dorm Gallery Wall Art Set 2026",
+        "Dorm Room Decor Planner and Tracker"
       ],
       "affiliate_matches": [
-        "Photo hanging kits",
-        "Affordable frames for gallery walls"
+        "Wall mounting supplies",
+        "Dorm room storage solutions"
       ],
       "niche": "home decor",
       "pop": 73,
@@ -469,29 +503,29 @@
     {
       "keyword": "bulliten board idea",
       "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "9 Bulletin Board Ideas That Organize and Inspire Your Home Office in 2026",
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "12 Bulletin Board Ideas for a Stylish and Organized Space in 2026",
       "pin_titles": [
-        "Bulletin Board Ideas: 9 Ways to Boost Home Office Style",
-        "9 Bulletin Board Ideas to Organize Your Space Efficiently",
-        "Bulletin Board Ideas: 9 Creative Tips for Functional Decor"
+        "Bulletin Board Ideas: 12 Ways to Organize Your Desk Area",
+        "12 Bulletin Board Ideas with Printable Planners for 2026",
+        "Bulletin Board Ideas: 12 Creative Displays for Home & Office"
       ],
       "pin_descriptions": [
-        "Bulletin board ideas bring organization and style to your home office. Discover 9 creative and practical setups plus printable planners! Save your favorites.",
-        "Transform your workspace with 9 bulletin board ideas that inspire productivity and keep clutter away. Printable trackers included for better routines."
+        "Find bulletin board ideas that help you stay organized and stylish in 2026 with printable planners to track your goals.",
+        "Looking for bulletin board ideas? Try these 12 creative setups plus printable trackers for your home or office space."
       ],
       "boards": [
         "Home Office Organization",
-        "Bulletin Board Inspiration"
+        "Back to School Planning"
       ],
       "product_ideas": [
-        "Printable bulletin board planners and note templates",
-        "Printable inspirational wall art for office spaces"
+        "Printable Bulletin Board Planner & Tracker 2026",
+        "Inspirational Bulletin Board Wall Art Printables"
       ],
       "affiliate_matches": [
-        "Push pins and decorative thumbtacks",
-        "Cork boards and magnetic boards"
+        "Push pins and clips",
+        "Bulletin board accessories"
       ],
       "niche": "home",
       "pop": 71,
@@ -505,27 +539,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "7 Random Things to Bedazzle That Instantly Upgrade Your Cozy Home Decor",
+      "article_topic": "10 Random Things to Bedazzle for a Cozy Home Touch in 2026",
       "pin_titles": [
-        "Random Things to Bedazzle: 7 Ideas for Cozy Home Upgrades",
-        "7 Random Things to Bedazzle That Add Sparkle to Your Space",
-        "Random Things to Bedazzle: 7 DIY Projects for Stylish Living"
+        "Random Things to Bedazzle: 10 DIY Decor Ideas",
+        "10 Random Things to Bedazzle with Printable Craft Planners",
+        "Random Things to Bedazzle: 10 Stylish Home Accessories"
       ],
       "pin_descriptions": [
-        "Random things to bedazzle can add sparkle and personality to your home. Try these 7 creative ideas to refresh your decor with ease. Download printable planners!",
-        "Add glam to your cozy living with 7 random things to bedazzle that are easy and fun. Includes printable trackers to plan your DIY projects."
+        "Explore 10 random things to bedazzle that add sparkle and personality to your cozy home with printable craft planners.",
+        "Looking for random things to bedazzle? These 10 ideas plus printable trackers make DIY decorating fun and organized."
       ],
       "boards": [
         "DIY Home Decor",
-        "Sparkle and Shine Crafts"
+        "Cozy Living Crafts"
       ],
       "product_ideas": [
-        "Printable bedazzling project planners and supply checklists",
-        "Printable wall art with bedazzle-inspired designs"
+        "Printable Bedazzle Craft Planner 2026",
+        "Bedazzling DIY Wall Art Templates"
       ],
       "affiliate_matches": [
-        "Rhinestone and bead kits",
-        "Craft glue and applicators"
+        "Craft rhinestones and gems",
+        "Glue and craft tools"
       ],
       "niche": "home",
       "pop": 66,
@@ -539,27 +573,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "10 Creative Uses for Scrap Fabric to Organize and Style Your Home in 2026",
+      "article_topic": "12 Creative Uses for Scrap Fabric in Cozy Home Projects 2026",
       "pin_titles": [
-        "Creative Scrap Fabric Uses: 10 Ideas for Home Organization",
-        "10 Scrap Fabric Projects That Boost Cozy Living",
-        "Scrap Fabric Ideas: 10 Ways to Style and Organize"
+        "Scrap Fabric: 12 Ways to Upcycle at Home",
+        "12 Scrap Fabric DIY Ideas with Printable Project Planners",
+        "Scrap Fabric: 12 Cozy Home Decor Projects to Try"
       ],
       "pin_descriptions": [
-        "Scrap fabric can be transformed into stylish home accessories. Discover 10 creative projects to organize and decorate your space this year. Get printable planners!",
-        "Turn scrap fabric into beautiful, functional decor with these 10 ideas. Includes printable project planners to keep your crafting on track."
+        "Discover 12 creative uses for scrap fabric to add cozy touches in your home with printable project planners to organize your crafts.",
+        "Need scrap fabric ideas? Try these 12 DIY projects plus printable trackers for crafting success in 2026."
       ],
       "boards": [
-        "Upcycled Home Decor",
-        "Fabric Crafts and Organization"
+        "Upcycling & Recycling Crafts",
+        "Cozy Home DIY Projects"
       ],
       "product_ideas": [
-        "Printable scrap fabric project planners with templates",
-        "Printable wall art featuring fabric-inspired patterns"
+        "Printable Scrap Fabric Project Planner 2026",
+        "Upcycled Fabric Pattern Printable Wall Art"
       ],
       "affiliate_matches": [
-        "Fabric scissors and rotary cutters",
-        "Storage bins for craft supplies"
+        "Fabric scissors and tools",
+        "Sewing kits and supplies"
       ],
       "niche": "home",
       "pop": 64,
@@ -573,27 +607,27 @@
       "keep": true,
       "season": "back to school",
       "intent": "high",
-      "article_topic": "15 Back to School Banners That Brighten Your Home and Desk in 2026",
+      "article_topic": "15 Back to School Banners That Brighten Your Home & Classroom in 2026",
       "pin_titles": [
-        "Back to School Banners: 15 Printables for Home and Desk",
-        "15 Back to School Banners That Motivate and Decorate",
-        "Back to School Banners: 15 Easy DIY Printable Designs"
+        "Back to School Banners: 15 Printable Designs for 2026",
+        "15 Back to School Banners That Organize & Decorate",
+        "Back to School Banners: 15 DIY Ideas with Printable Templates"
       ],
       "pin_descriptions": [
-        "Back to school banners add festive charm to your home and workspace. Explore 15 printable designs perfect for 2026 celebrations. Download now!",
-        "Get your home back to school ready with 15 colorful banner printables that brighten desks and rooms. Perfect for easy DIY decor."
+        "Get ready for 2026 with 15 back to school banners that brighten your home and classroom with printable templates included.",
+        "Looking for back to school banners? Here are 15 easy DIY ideas plus printable planners to keep your school year organized."
       ],
       "boards": [
         "Back to School Decor",
-        "Seasonal Home Decorations"
+        "Classroom & Home Organization"
       ],
       "product_ideas": [
-        "Printable back to school banner sets",
-        "Printable planners for school year organization"
+        "Printable Back to School Banner Templates 2026",
+        "Back to School Planning & Tracker Printable"
       ],
       "affiliate_matches": [
         "Banner hanging kits",
-        "Desk organizers and supplies"
+        "Classroom decor supplies"
       ],
       "niche": "home",
       "pop": 57,
@@ -607,27 +641,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "7 Black Nouveau Bedroom Ideas That Create a Chic and Cozy Space in 2026",
+      "article_topic": "10 Black Nouveau Bedroom Ideas for a Chic Cozy Space in 2026",
       "pin_titles": [
-        "Black Nouveau Bedroom: 7 Stylish Ideas for Cozy Vibes",
-        "7 Black Nouveau Bedroom Designs to Elevate Your Space",
-        "Black Nouveau Bedroom: 7 Decor Tips for Elegant Comfort"
+        "Black Nouveau Bedroom: 10 Styling Ideas for 2026",
+        "10 Black Nouveau Bedroom Decor Tips for a Cozy Look",
+        "Black Nouveau Bedroom: 10 Printable Wall Art Designs"
       ],
       "pin_descriptions": [
-        "Black nouveau bedroom decor blends elegance and comfort. Discover 7 ideas to style your room with chic, cozy touches in 2026. Save and shop printables!",
-        "Transform your space with 7 black nouveau bedroom ideas that balance glam and warmth. Includes printable wall art and planners for your project."
+        "Transform your bedroom with 10 black nouveau ideas for a chic cozy space in 2026 plus printable wall art to complete the look.",
+        "Love black nouveau bedroom style? Try these 10 decor tips and printable wall art designs to refresh your space."
       ],
       "boards": [
-        "Bedroom Decor Ideas",
-        "Chic Home Styling"
+        "Black Nouveau Decor",
+        "Cozy Bedroom Styling"
       ],
       "product_ideas": [
-        "Printable black nouveau themed wall art",
-        "Printable bedroom organization planners"
+        "Printable Black Nouveau Style Wall Art Set 2026",
+        "Black Nouveau Bedroom Planning & Styling Tracker"
       ],
       "affiliate_matches": [
-        "Black matte decor accessories",
-        "Luxury bedding sets"
+        "Chic bedding sets",
+        "Decorative pillows and throws"
       ],
       "niche": "home decor",
       "pop": 51,
@@ -641,27 +675,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "9 Black Nouveau Interior Ideas That Blend Elegance with Cozy Living in 2026",
+      "article_topic": "12 Black Nouveau Interior Ideas to Elevate Your Home Style 2026",
       "pin_titles": [
-        "Black Nouveau Interior: 9 Elegant and Cozy Ideas",
-        "9 Black Nouveau Interior Tips for Stylish Homes",
-        "Black Nouveau Interior: 9 Ways to Add Glam to Cozy Spaces"
+        "Black Nouveau Interior: 12 Stylish Decor Tips",
+        "12 Black Nouveau Interior Ideas with Printable Art",
+        "Black Nouveau Interior: 12 Cozy Styling Hacks"
       ],
       "pin_descriptions": [
-        "Black nouveau interior style is perfect for chic and cozy homes. Explore 9 ideas to elevate your decor with printables to guide your design journey.",
-        "Create a sophisticated yet inviting space with 9 black nouveau interior ideas. Includes printable trackers and wall art for inspiration."
+        "Elevate your home style with 12 black nouveau interior ideas and printable wall art to bring cozy elegance in 2026.",
+        "Want black nouveau interior inspiration? Try these 12 decor tips plus printable planners for a stylish home refresh."
       ],
       "boards": [
-        "Interior Design Trends",
-        "Cozy Elegant Decor"
+        "Black Nouveau Decor",
+        "Elegant Home Interiors"
       ],
       "product_ideas": [
-        "Printable black nouveau interior mood boards",
-        "Printable home styling planners"
+        "Printable Black Nouveau Interior Wall Art Collection",
+        "Interior Styling Planner & Tracker for Black Nouveau"
       ],
       "affiliate_matches": [
-        "Decorative black accents",
-        "Statement lighting fixtures"
+        "Elegant lighting fixtures",
+        "Decorative vases and accents"
       ],
       "niche": "home decor",
       "pop": 51,
@@ -675,27 +709,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "5 Bedazzling Charger Block Ideas to Add Sparkle to Your Tech in 2026",
+      "article_topic": "8 Bedazzling Charger Block Ideas to Sparkle Your Workspace in 2026",
       "pin_titles": [
-        "Bedazzling Charger Block: 5 DIY Sparkle Ideas",
-        "5 Bedazzling Charger Block Designs for Stylish Tech",
-        "Bedazzling Charger Block: 5 Easy Ways to Glam Your Gear"
+        "Bedazzling Charger Block: 8 DIY Ideas",
+        "8 Bedazzling Charger Block Designs with Printable Planners",
+        "Bedazzling Charger Block: 8 Cozy Workspace Accessories"
       ],
       "pin_descriptions": [
-        "Bedazzling charger block ideas bring sparkle to your everyday tech. Try these 5 DIY projects with printable planners to keep organized.",
-        "Make your charger block stand out with 5 bedazzling ideas perfect for adding glam. Includes printable supply checklists for easy crafting."
+        "Add sparkle to your workspace with 8 bedazzling charger block ideas and printable craft planners for your projects in 2026.",
+        "Looking for bedazzling charger block ideas? Try these 8 creative designs plus printable trackers to organize your craft supplies."
       ],
       "boards": [
-        "Tech Decor DIY",
-        "Sparkly Home Accessories"
+        "DIY Workspace Decor",
+        "Cozy Living Crafts"
       ],
       "product_ideas": [
-        "Printable bedazzling project checklists and planners",
-        "Printable wall art with glam tech themes"
+        "Printable Bedazzle Craft Planner 2026",
+        "Charger Block Decoration Printable Templates"
       ],
       "affiliate_matches": [
-        "Rhinestone kits for tech accessories",
-        "Strong craft glue"
+        "Craft rhinestones and gems",
+        "Adhesive glues and tools"
       ],
       "niche": "home",
       "pop": 82,
@@ -709,27 +743,27 @@
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "10 Christmas in July Crafts That Bring Cozy Cheer to Your Home in Summer 2026",
+      "article_topic": "10 Christmas in July Crafts to Cozy Up Your Home in Summer 2026",
       "pin_titles": [
-        "Christmas in July Crafts: 10 Cozy Ideas for Summer",
-        "10 Christmas in July Crafts to Brighten Your Home",
-        "Christmas in July Crafts: 10 Fun DIY Projects for Warm Weather"
+        "Christmas in July Crafts: 10 Fun DIY Ideas",
+        "10 Christmas in July Crafts with Printable Project Planners",
+        "Christmas in July Crafts: 10 Cozy Home Decor Projects"
       ],
       "pin_descriptions": [
-        "Christmas in July crafts add festive charm to your summer home. Discover 10 cozy DIY projects with printable planners to organize your fun.",
-        "Get into the holiday spirit early with 10 Christmas in July crafts perfect for cozy living. Includes printable checklists to keep you on track."
+        "Celebrate summer with 10 Christmas in July crafts that bring cozy charm to your home using printable project planners.",
+        "Looking for Christmas in July crafts? Try these 10 festive DIY ideas plus printable trackers to keep your projects organized."
       ],
       "boards": [
-        "Summer Holiday Crafts",
-        "Cozy Seasonal Decor"
+        "Summer Crafts",
+        "Holiday Home Decor"
       ],
       "product_ideas": [
-        "Printable Christmas in July craft planners",
-        "Printable festive wall art for summer"
+        "Printable Christmas in July Craft Planner 2026",
+        "Festive Wall Art Printables for Christmas in July"
       ],
       "affiliate_matches": [
-        "Craft supply kits for holiday projects",
-        "Seasonal decor accents"
+        "Craft kits and supplies",
+        "Holiday decor accents"
       ],
       "niche": "home",
       "pop": 47,
@@ -743,27 +777,27 @@
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "6 Charger Bedazzled Ideas to Personalize Your Tech in 2026",
+      "article_topic": "7 Charger Bedazzled Ideas to Sparkle Your Tech Setup in 2026",
       "pin_titles": [
-        "Charger Bedazzled Ideas: 6 Ways to Glam Your Tech",
-        "6 Charger Bedazzled Ideas for Stylish Gadgets",
-        "Charger Bedazzled Ideas: 6 DIY Projects for Sparkle"
+        "Charger Bedazzled Ideas: 7 DIY Sparkle Tips",
+        "7 Charger Bedazzled Ideas with Printable Craft Trackers",
+        "Charger Bedazzled Ideas: 7 Cozy Workspace Decor Projects"
       ],
       "pin_descriptions": [
-        "Charger bedazzled ideas let you personalize your tech accessories with style. Explore 6 creative projects with printable planners to guide you.",
-        "Add fun sparkle to your chargers with 6 bedazzled ideas perfect for cozy living enthusiasts. Includes printable supply lists and planners."
+        "Add glam to your tech with 7 charger bedazzled ideas plus printable craft trackers to plan your designs in 2026.",
+        "Searching for charger bedazzled ideas? Try these 7 DIY projects with printable planners for a cozy workspace."
       ],
       "boards": [
-        "DIY Tech Accessories",
-        "Sparkle and Shine Crafts"
+        "DIY Tech Decor",
+        "Cozy Living Crafts"
       ],
       "product_ideas": [
-        "Printable bedazzling design templates and planners",
-        "Printable inspirational wall art for tech spaces"
+        "Printable Bedazzle Craft Planner 2026",
+        "Tech Accessory Decoration Printable Templates"
       ],
       "affiliate_matches": [
-        "Rhinestone embellishments",
-        "Craft glue and applicators"
+        "Craft rhinestones and gems",
+        "Adhesive glues and tools"
       ],
       "niche": "home",
       "pop": 81,
@@ -777,27 +811,27 @@
       "keep": true,
       "season": "back to school",
       "intent": "high",
-      "article_topic": "10 Teacher Desk Makeover Ideas to Organize and Inspire Your Classroom in Fall 2026",
+      "article_topic": "10 Teacher Desk Makeover Ideas to Organize & Inspire in 2026",
       "pin_titles": [
-        "Teacher Desk Makeover: 10 Ideas for Organized Classrooms",
-        "10 Teacher Desk Makeover Tips to Boost Productivity",
-        "Teacher Desk Makeover: 10 Stylish and Functional Ideas"
+        "Teacher Desk Makeover: 10 Organization Ideas",
+        "10 Teacher Desk Makeover Tips with Printable Planners",
+        "Teacher Desk Makeover: 10 Cozy Decor Ideas for 2026"
       ],
       "pin_descriptions": [
-        "Teacher desk makeover ideas help organize and brighten classrooms for fall 2026. Discover 10 tips plus printable planners to get started.",
-        "Transform your teacher desk with 10 makeover ideas that combine function and style. Includes printable trackers to maintain organization."
+        "Refresh your space with 10 teacher desk makeover ideas to organize and inspire, featuring printable planners for 2026.",
+        "Need a teacher desk makeover? Try these 10 ideas plus printable trackers to create a cozy, efficient workspace this school year."
       ],
       "boards": [
         "Classroom Organization",
-        "Teacher Workspace Ideas"
+        "Teacher Workspace Decor"
       ],
       "product_ideas": [
-        "Printable teacher desk organization planners",
-        "Printable motivational wall art for classrooms"
+        "Printable Teacher Desk Organization Planner 2026",
+        "Inspirational Wall Art for Teacher Desks"
       ],
       "affiliate_matches": [
-        "Desk organizers for teachers",
-        "Classroom supply storage solutions"
+        "Desk organizers",
+        "Decorative storage solutions"
       ],
       "niche": "home decor",
       "pop": 80,
@@ -811,27 +845,27 @@
       "keep": true,
       "season": "summer",
       "intent": "medium",
-      "article_topic": "12 Christmas in July Decorations That Brighten Your Home in Summer 2026",
+      "article_topic": "12 Christmas in July Decorations to Brighten Your Home in 2026",
       "pin_titles": [
-        "Christmas in July Decorations: 12 Festive Ideas for Summer",
-        "12 Christmas in July Decorations to Cheer Your Space",
-        "Christmas in July Decorations: 12 Easy DIY Projects"
+        "Christmas in July Decorations: 12 Festive Ideas",
+        "12 Christmas in July Decorations with Printable Templates",
+        "Christmas in July Decorations: 12 Cozy Home Styling Tips"
       ],
       "pin_descriptions": [
-        "Christmas in July decorations add summer cheer with festive touches. Explore 12 ideas and printable decor templates for 2026.",
-        "Celebrate early with 12 Christmas in July decorations perfect for cozy summer homes. Includes printable banners and wall art."
+        "Brighten your summer with 12 Christmas in July decorations plus printable templates to create festive cozy spaces in 2026.",
+        "Looking for Christmas in July decorations? Try these 12 DIY ideas with printable planners to organize your holiday crafts."
       ],
       "boards": [
-        "Summer Holiday Decor",
-        "Festive Home Decorations"
+        "Holiday Home Decor",
+        "Summer Festive Decorating"
       ],
       "product_ideas": [
-        "Printable Christmas in July banner sets",
-        "Printable festive wall art and decor"
+        "Printable Christmas in July Decoration Templates 2026",
+        "Festive Planning & Craft Tracker Printables"
       ],
       "affiliate_matches": [
-        "Seasonal decoration kits",
-        "Craft supplies for holiday decor"
+        "Holiday lights and garlands",
+        "Craft supplies for decorations"
       ],
       "niche": "home",
       "pop": 44,
