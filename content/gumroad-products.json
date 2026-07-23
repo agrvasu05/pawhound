@@ -638,5 +638,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/wdxvq",
     "landing": "/shop/japandi-minimalist-dog-set",
     "created_at": "2026-07-22T16:27:28.922Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "boho-dog-line-art-set",
+    "title": "Boho Minimalist Dog Line Art Printable Wall Art Set, Neutral Beige & Terracotta",
+    "price": 5,
+    "gumroad_id": "YL5nTEGRtd6UUgIhn5_UwA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/vqhocm",
+    "landing": "/shop/boho-dog-line-art-set",
+    "created_at": "2026-07-23T16:46:20.580Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-daily-self-care-habit-tracker-planner",
+    "title": "Printable Daily Self-Care & Habit Tracker Planner",
+    "price": 4,
+    "gumroad_id": "xa5d3ZXa_UdvBSwuB1E6kw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/wajtaj",
+    "landing": "/shop/printable-daily-self-care-habit-tracker-planner",
+    "created_at": "2026-07-23T16:46:50.607Z"
   }
 ]
