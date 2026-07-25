@@ -678,5 +678,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/juoswp",
     "landing": "/shop/watercolor-sleeping-dogs-set",
     "created_at": "2026-07-24T16:50:38.549Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-cottage-wall-art",
+    "title": "Cozy Cottage Printable Wall Art Set - 3 Warm Watercolor Hygge Home Scenes with Dog",
+    "price": 5,
+    "gumroad_id": "SELj_jUOZ9ige5td-s9Fjw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/dhfuiv",
+    "landing": "/shop/cozy-cottage-wall-art",
+    "created_at": "2026-07-25T16:11:39.579Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker",
+    "title": "Printable Savings & Money Goals Tracker Planner",
+    "price": 4,
+    "gumroad_id": "yptOWPgKvk4L0abonplbHg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/nssvf",
+    "landing": "/shop/printable-savings-money-goals-tracker",
+    "created_at": "2026-07-25T16:11:57.995Z"
   }
 ]
