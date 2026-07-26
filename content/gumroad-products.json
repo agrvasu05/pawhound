@@ -698,5 +698,35 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/nssvf",
     "landing": "/shop/printable-savings-money-goals-tracker",
     "created_at": "2026-07-25T16:11:57.995Z"
+  },
+  {
+    "type": "planner",
+    "slug": "wedding-planning-checklist-organizer",
+    "title": "Printable Wedding Planning Checklist & Organizer Planner",
+    "price": 4,
+    "gumroad_id": "kL0yKuUdBBk2stdNfjZ3ZA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/gcpazq",
+    "landing": "/shop/wedding-planning-checklist-organizer",
+    "created_at": "2026-07-26T16:08:42.827Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-sleeping-dogs-set",
+    "title": "Cozy Sleeping Dogs Printable Wall Art Set - Soft Watercolor Pastel Decor",
+    "price": 5,
+    "gumroad_id": "6SZNAD3m3x5wPvHTysFplQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/ciywgn",
+    "landing": "/shop/cozy-sleeping-dogs-set",
+    "created_at": "2026-07-26T16:09:49.663Z"
+  },
+  {
+    "type": "bundle",
+    "slug": "cozy-home-bundle-2026-07-26",
+    "title": "The Cozy Home Printable Bundle — 2 Products (Wall Art & Planners)",
+    "price": 12,
+    "gumroad_id": "SJsh_YfV4QSsvxepZrqtmg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/zmjsig",
+    "landing": "/shop/cozy-home-bundle-2026-07-26",
+    "created_at": "2026-07-26T16:10:01.096Z"
   }
 ]
