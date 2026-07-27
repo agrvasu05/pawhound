@@ -728,5 +728,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/zmjsig",
     "landing": "/shop/cozy-home-bundle-2026-07-26",
     "created_at": "2026-07-26T16:10:01.096Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "vintage-botanical-dog-art",
+    "title": "Vintage Botanical Printable Wall Art Set with Gentle Dog in Soft Antique Tones",
+    "price": 5,
+    "gumroad_id": "MGQ_CwrYKEOFqPdy9lfXFQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/qzrhc",
+    "landing": "/shop/vintage-botanical-dog-art",
+    "created_at": "2026-07-27T17:07:16.716Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-weekly-meal-planner-grocery-list",
+    "title": "Printable Weekly Meal Planner & Grocery List Organizer",
+    "price": 4,
+    "gumroad_id": "WiuzhvgNozjjMVTbqr0gnw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/cwixa",
+    "landing": "/shop/printable-weekly-meal-planner-grocery-list",
+    "created_at": "2026-07-27T17:07:38.968Z"
   }
 ]
