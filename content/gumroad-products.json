@@ -748,5 +748,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/cwixa",
     "landing": "/shop/printable-weekly-meal-planner-grocery-list",
     "created_at": "2026-07-27T17:07:38.968Z"
+  },
+  {
+    "type": "planner",
+    "slug": "wedding-planning-checklist-printable",
+    "title": "Printable Wedding Planning Checklist & Organizer",
+    "price": 4,
+    "gumroad_id": "uiiPHvvs8Kj0U-XTvGJV7A==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/bxirxk",
+    "landing": "/shop/wedding-planning-checklist-printable",
+    "created_at": "2026-07-28T16:47:39.196Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-cottage-wall-art",
+    "title": "Cozy Cottage Home Scenes Printable Wall Art Set, Warm Watercolor Hygge Decor",
+    "price": 5,
+    "gumroad_id": "rOCg9on5okjYWyFyvQCfZg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/yqritl",
+    "landing": "/shop/cozy-cottage-wall-art",
+    "created_at": "2026-07-28T16:48:48.759Z"
   }
 ]
