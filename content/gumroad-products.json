@@ -788,5 +788,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/raqhus",
     "landing": "/shop/printable-weekly-meal-planner-grocery-list",
     "created_at": "2026-07-29T16:54:18.949Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-fitness-workout-tracker-planner",
+    "title": "Printable Fitness & Workout Tracker Planner",
+    "price": 4,
+    "gumroad_id": "w7_Gm998TE3P78JiNxSnIw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/lkcjk",
+    "landing": "/shop/printable-fitness-workout-tracker-planner",
+    "created_at": "2026-07-30T16:43:09.296Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "watercolor-sleeping-dogs-set",
+    "title": "Soft Watercolor Sleeping Dogs Printable Wall Art Set - Calming Pastel Home Decor",
+    "price": 5,
+    "gumroad_id": "BO5Kcxp2bOI47Xo6PAO1tA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/vdcgv",
+    "landing": "/shop/watercolor-sleeping-dogs-set",
+    "created_at": "2026-07-30T16:44:12.628Z"
   }
 ]
