@@ -808,5 +808,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/vdcgv",
     "landing": "/shop/watercolor-sleeping-dogs-set",
     "created_at": "2026-07-30T16:44:12.628Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "vintage-botanical-dog-set",
+    "title": "Vintage Botanical Printable Wall Art Set with Gentle Dog in Soft Antique Tones",
+    "price": 5,
+    "gumroad_id": "-J6pzKC4NuuK4o2sHnJ0zA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/njquv",
+    "landing": "/shop/vintage-botanical-dog-set",
+    "created_at": "2026-07-31T17:41:43.426Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-fitness-workout-tracker-planner",
+    "title": "Printable Fitness & Workout Tracker Planner",
+    "price": 4,
+    "gumroad_id": "jqinAk8t0h7xSXEQKmt2Xg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/mimdx",
+    "landing": "/shop/printable-fitness-workout-tracker-planner",
+    "created_at": "2026-07-31T17:42:03.704Z"
   }
 ]
