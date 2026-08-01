@@ -1,0 +1,127 @@
+{
+  "intro": "August crafts are the perfect way to infuse your cozy home with a fresh, warm vibe before the crisp days of fall 2026 arrive. As summer winds down, these creative projects not only bring a personal touch to your living space but also help you transition your décor smoothly. From natural accents to soft textiles and charming DIY kits, these crafts will refresh your home with seasonal charm and comfort. Whether you enjoy painting, stitching, or simple assembly, these ideas are designed to fit various skill levels and add a cozy glow to your favorite rooms.",
+  "item_noun": "August crafts",
+  "picks": [
+    {
+      "rank": 1,
+      "breed": "DIY Macrame Plant Hanger Kit",
+      "image_query": "macrame plant hanger kit",
+      "description": "This all-in-one DIY macrame plant hanger kit includes pre-cut cotton cords, a wooden ring, and illustrated instructions to help you create a chic, boho-style plant hanger. Perfect for adding a natural, cozy touch to your living room or bedroom, it’s a great craft for beginners looking to personalize their green space. The neutral colors blend beautifully with any décor, and hanging your favorite potted plant adds both greenery and texture to your home.",
+      "best_for": "plant lovers and boho décor enthusiasts",
+      "quirky_fact": "Try using colored cords for a subtle pop of summer into your hanger design.",
+      "shop_query": "DIY macrame plant hanger kit cotton cotton cord"
+    },
+    {
+      "rank": 2,
+      "breed": "Hand-Poured Soy Wax Candle Making Set",
+      "image_query": "soy wax candle making kit",
+      "description": "Create your own scented candles with this hand-poured soy wax candle making set featuring natural soy flakes, cotton wicks, fragrance oils, and reusable glass jars. The set includes easy-to-follow instructions, making it ideal for beginners or anyone wanting to customize scents that evoke cozy late-summer evenings. Soy wax burns cleaner and longer than traditional paraffin, making it an eco-friendly choice to brighten your home with warm, soft light and inviting aromas.",
+      "best_for": "candle lovers and DIY home scenting",
+      "quirky_fact": "Layer different colored waxes for a beautiful, multi-toned candle effect.",
+      "shop_query": "soy wax candle making kit natural fragrance oils glass jars"
+    },
+    {
+      "rank": 3,
+      "breed": "Pressed Flower Resin Coaster Kit",
+      "image_query": "pressed flower coaster kit",
+      "description": "Preserve the delicate beauty of summer blooms with this pressed flower resin coaster kit. It includes real dried flowers, clear epoxy resin, silicone molds, and mixing tools so you can craft unique, glossy coasters that brighten any coffee table. The kit’s step-by-step guide ensures a smooth crafting experience, and these coasters make charming gifts or charming additions to your own cozy living space with a touch of nature’s artistry.",
+      "best_for": "nature lovers and resin craft beginners",
+      "quirky_fact": "Mix in a little gold leaf or glitter for an extra shimmer effect.",
+      "shop_query": "pressed flower resin coaster kit epoxy resin dried flowers"
+    },
+    {
+      "rank": 4,
+      "breed": "Chunky Knit Throw Blanket Kit",
+      "image_query": "chunky knit blanket kit",
+      "description": "Wrap yourself in warmth with this chunky knit throw blanket kit, featuring thick, super-soft yarn and large wooden knitting needles. Designed for beginners, this kit includes an easy pattern to create a cozy, textured blanket perfect for snuggling on cool fall nights. The neutral tones help it blend seamlessly with any décor, and the oversized knit style adds a trendy yet timeless look to your living room or bedroom.",
+      "best_for": "knitting beginners and cozy décor lovers",
+      "quirky_fact": "Use arm knitting techniques for an ultra-fast project with no needles required.",
+      "shop_query": "chunky knit throw blanket kit super soft yarn"
+    },
+    {
+      "rank": 5,
+      "breed": "DIY Terrarium Kit with Succulents",
+      "image_query": "DIY succulent terrarium kit",
+      "description": "Bring a little green indoors with this DIY terrarium kit featuring assorted succulents, decorative stones, activated charcoal, soil, and a glass container. Succulents are low-maintenance and perfect for small spaces, adding a fresh, calming vibe to your countertop or shelf. The kit’s clear instructions guide you through building your own mini desert garden, an ideal August craft for those wanting a simple, lasting nature-inspired décor element.",
+      "best_for": "succulent lovers and small space decorators",
+      "quirky_fact": "Add tiny fairy lights inside for a magical glow after dark.",
+      "shop_query": "DIY succulent terrarium kit glass container charcoal"
+    },
+    {
+      "rank": 6,
+      "breed": "Natural Linen Table Runner DIY Kit",
+      "image_query": "linen table runner DIY kit",
+      "description": "This natural linen table runner DIY kit comes with pre-cut linen fabric, embroidery floss in soft autumn shades, needles, and an easy-to-follow pattern. Perfect for adding handmade charm to your dining or coffee table, the subtle embroidery adds texture and warmth to your space. The neutral linen base complements a variety of furniture styles, and finishing this project just in time for fall entertaining brings a personal, cozy touch to your home.",
+      "best_for": "embroidery enthusiasts and rustic décor fans",
+      "quirky_fact": "Try adding small tassels or fringe to the ends for extra flair.",
+      "shop_query": "natural linen table runner DIY kit embroidery floss"
+    },
+    {
+      "rank": 7,
+      "breed": "Wooden Bead Garland Craft Kit",
+      "image_query": "wooden bead garland kit",
+      "description": "Create a versatile decorative piece with this wooden bead garland craft kit including natural unfinished beads, jute twine, and instructions for stringing and styling. This garland can be draped over mantels, shelves, or plants to bring a minimalist, cozy vibe to your space. The natural wood tones pair beautifully with fall colors, and the DIY aspect lets you choose bead sizes and spacing to personalize your décor exactly to your taste.",
+      "best_for": "minimalist decorators and DIY beginners",
+      "quirky_fact": "Add small fabric tassels between beads for texture and color.",
+      "shop_query": "wooden bead garland craft kit natural beads jute twine"
+    },
+    {
+      "rank": 8,
+      "breed": "Watercolor Autumn Leaves Art Set",
+      "image_query": "watercolor autumn leaves set",
+      "description": "Celebrate the changing season with this watercolor autumn leaves art set, including high-quality paints, brushes, and textured paper designed for beginners and hobbyists. Capture the warm hues of fall foliage in your own artwork to frame or gift. This set encourages a relaxing creative practice and leaves you with personalized wall art that perfectly complements your cozy home ambiance as fall approaches.",
+      "best_for": "art lovers and seasonal decorators",
+      "quirky_fact": "Use salt sprinkled on wet paint to create natural leaf texture effects.",
+      "shop_query": "watercolor autumn leaves painting set paper brushes"
+    },
+    {
+      "rank": 9,
+      "breed": "Handmade Clay Pumpkin Vase Kit",
+      "image_query": "clay pumpkin vase kit",
+      "description": "Get crafty with this handmade clay pumpkin vase kit, which includes air-dry clay, sculpting tools, paint, and sealant. Sculpt your own pumpkin-shaped vase, perfect for holding seasonal flowers or as a standalone centerpiece. The kit is approachable for beginners and adds a charming, tactile element to your fall décor, blending creativity with functional art that lasts through the season and beyond.",
+      "best_for": "ceramic craft beginners and fall decorators",
+      "quirky_fact": "Try adding gold paint accents to highlight pumpkin ridges for a luxe look.",
+      "shop_query": "air dry clay pumpkin vase kit sculpting tools"
+    }
+  ],
+  "pin_headlines": [
+    "7 August Crafts to Refresh Your Cozy Home Before Fall",
+    "DIY August Crafts Ideas for a Cozy Home Makeover",
+    "Top 7 August Crafts to Warm Up Your Living Space",
+    "August Crafts: 7 Easy Projects for Cozy Fall Vibes",
+    "7 Must-Try August Crafts to Refresh Your Home Décor",
+    "Cozy Up with These 7 August Crafts Before Fall 2026",
+    "7 August Crafts Perfect for Small Space Cozy Living",
+    "Refresh Your Home with These 7 August Crafts for Fall",
+    "7 Creative August Crafts to Transform Your Cozy Home",
+    "August Crafts Guide: 7 Ways to Prep Your Home for Fall"
+  ],
+  "faqs": [
+    {
+      "question": "What materials do I need for these August crafts?",
+      "answer": "Materials vary by project but generally include items like cotton cords, soy wax, dried flowers, yarn, succulents, linen fabric, wooden beads, watercolor paints, and air-dry clay. Most kits provide all necessary supplies for convenience."
+    },
+    {
+      "question": "Are these August crafts suitable for beginners?",
+      "answer": "Yes, the selected crafts come with step-by-step instructions and are designed to be beginner-friendly, making them accessible for all skill levels."
+    },
+    {
+      "question": "How long do these crafts typically take to complete?",
+      "answer": "Most projects can be completed within a few hours to a couple of days, depending on complexity and drying times, allowing you to enjoy a cozy home refresh promptly."
+    },
+    {
+      "question": "Can these crafts be personalized to fit my home style?",
+      "answer": "Absolutely! Many kits encourage adding personal touches, such as choosing colors, adding embellishments, or customizing the design to suit your unique décor preferences."
+    }
+  ],
+  "topic_slug": "august-crafts",
+  "topic_title": "7 August Crafts to Refresh Your Cozy Home Before Fall 2026",
+  "niche": "home",
+  "keyword": "august crafts",
+  "boards": [
+    "Summer Craft Ideas",
+    "Cozy Home DIY"
+  ],
+  "author": "the Value Finds Daily Editorial Team",
+  "updated_at": "2026-08-01"
+}
