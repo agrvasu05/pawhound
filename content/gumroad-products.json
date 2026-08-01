@@ -828,5 +828,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/mimdx",
     "landing": "/shop/printable-fitness-workout-tracker-planner",
     "created_at": "2026-07-31T17:42:03.704Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-fitness-workout-tracker-planner",
+    "title": "Printable Fitness & Workout Tracker Planner",
+    "price": 4,
+    "gumroad_id": "emHBCvhw7DpI0u2LEskg7g==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/pmenbt",
+    "landing": "/shop/printable-fitness-workout-tracker-planner",
+    "created_at": "2026-08-01T16:08:56.301Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "japandi-minimalist-dog-set",
+    "title": "Japandi Style Minimalist Dog Portrait Printable Wall Art Set, Muted Sage & Oatmeal",
+    "price": 5,
+    "gumroad_id": "SbciMCKLlmFjDRnn4rVEpQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/tbxuaz",
+    "landing": "/shop/japandi-minimalist-dog-set",
+    "created_at": "2026-08-01T16:10:01.061Z"
   }
 ]
