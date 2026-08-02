@@ -1,222 +1,231 @@
 {
-  "generated_at": "2026-08-01T16:08:34.068Z",
+  "generated_at": "2026-08-02T14:56:58.709Z",
   "region": "US",
   "candidates": [
     {
+      "keyword": "scrap booking pages for boyfriend",
+      "niche": "home",
+      "pop": 93,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
+      "score": 203
+    },
+    {
       "keyword": "paper squishes",
       "niche": "home",
-      "pop": 87,
-      "mom": 700,
+      "pop": 89,
+      "mom": 600,
       "yoy": 900,
       "rising": true,
-      "score": 197
+      "score": 199
     },
     {
       "keyword": "easy kandi ideas",
       "niche": "home",
-      "pop": 83,
-      "mom": 400,
+      "pop": 85,
+      "mom": 300,
       "yoy": 100,
       "rising": true,
-      "score": 193
+      "score": 195
     },
     {
       "keyword": "random things to bedazzle",
       "niche": "home",
-      "pop": 80,
+      "pop": 81,
       "mom": 2500,
       "yoy": 6000,
       "rising": true,
-      "score": 190
+      "score": 191
     },
     {
-      "keyword": "dorm gallery wall",
+      "keyword": "dinning room decoration idea",
       "niche": "home decor",
       "pop": 78,
-      "mom": 300,
-      "yoy": 100,
-      "rising": false,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
       "score": 188
     },
     {
       "keyword": "sprinkle embroidery cake",
       "niche": "home",
-      "pop": 78,
+      "pop": 76,
       "mom": 300,
       "yoy": 1500,
       "rising": true,
-      "score": 188
-    },
-    {
-      "keyword": "dinning room decoration idea",
-      "niche": "home decor",
-      "pop": 74,
-      "mom": 400,
-      "yoy": 10001,
-      "rising": true,
-      "score": 184
-    },
-    {
-      "keyword": "back to school banners",
-      "niche": "home",
-      "pop": 73,
-      "mom": 500,
-      "yoy": 60,
-      "rising": true,
-      "score": 183
+      "score": 186
     },
     {
       "keyword": "school supplies theme",
       "niche": "home",
-      "pop": 70,
+      "pop": 75,
       "mom": 300,
       "yoy": 200,
       "rising": true,
-      "score": 180
+      "score": 185
     },
     {
-      "keyword": "library card",
+      "keyword": "back to school banners",
       "niche": "home",
-      "pop": 68,
-      "mom": 300,
-      "yoy": 200,
+      "pop": 74,
+      "mom": 500,
+      "yoy": 50,
       "rising": true,
-      "score": 178
+      "score": 184
     },
     {
       "keyword": "scrap fabric",
       "niche": "home",
-      "pop": 67,
-      "mom": 600,
-      "yoy": 500,
+      "pop": 72,
+      "mom": 700,
+      "yoy": 600,
       "rising": true,
-      "score": 177
+      "score": 182
     },
     {
       "keyword": "primitive autumn",
       "niche": "home",
-      "pop": 66,
-      "mom": 700,
-      "yoy": 30,
+      "pop": 69,
+      "mom": 600,
+      "yoy": 40,
       "rising": false,
-      "score": 176
+      "score": 179
     },
     {
       "keyword": "bling ideas",
       "niche": "home",
-      "pop": 63,
+      "pop": 68,
       "mom": 300,
       "yoy": 40,
       "rising": true,
-      "score": 173
+      "score": 178
     },
     {
       "keyword": "teacher painted jeans",
       "niche": "home",
-      "pop": 63,
+      "pop": 64,
       "mom": 300,
       "yoy": 600,
       "rising": true,
-      "score": 173
+      "score": 174
     },
     {
       "keyword": "back to school painted banner",
       "niche": "home",
-      "pop": 62,
+      "pop": 63,
       "mom": 400,
       "yoy": -20,
       "rising": true,
-      "score": 172
+      "score": 173
     },
     {
       "keyword": "badazzeling idea",
       "niche": "home",
-      "pop": 55,
+      "pop": 59,
       "mom": 800,
       "yoy": 10001,
       "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "backpack keychains",
-      "niche": "home",
-      "pop": 55,
-      "mom": 300,
-      "yoy": -10,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "halloween apartment decor",
-      "niche": "home decor",
-      "pop": 52,
-      "mom": 300,
-      "yoy": 20,
-      "rising": false,
-      "score": 162
+      "score": 169
     },
     {
       "keyword": "fall wreath ideas",
       "niche": "home",
-      "pop": 52,
+      "pop": 57,
       "mom": 300,
       "yoy": 200,
       "rising": false,
-      "score": 162
+      "score": 167
+    },
+    {
+      "keyword": "backpack keychains",
+      "niche": "home",
+      "pop": 56,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 166
     },
     {
       "keyword": "blue rooms",
       "niche": "home decor",
-      "pop": 84,
+      "pop": 88,
       "mom": 200,
-      "yoy": -40,
+      "yoy": -30,
       "rising": true,
-      "score": 161
+      "score": 164
+    },
+    {
+      "keyword": "halloween apartment decor",
+      "niche": "home decor",
+      "pop": 54,
+      "mom": 400,
+      "yoy": 20,
+      "rising": false,
+      "score": 164
+    },
+    {
+      "keyword": "christmas in july crafts",
+      "niche": "home",
+      "pop": 86,
+      "mom": 200,
+      "yoy": -20,
+      "rising": true,
+      "score": 162
     },
     {
       "keyword": "august crafts",
       "niche": "home",
-      "pop": 50,
+      "pop": 52,
       "mom": 400,
-      "yoy": 6,
+      "yoy": 7,
       "rising": false,
-      "score": 160
-    },
-    {
-      "keyword": "teacher survival kit ideas",
-      "niche": "home",
-      "pop": 50,
-      "mom": 300,
-      "yoy": 200,
-      "rising": false,
-      "score": 160
+      "score": 162
     },
     {
       "keyword": "luxurious bedrooms",
       "niche": "home decor",
       "pop": 82,
       "mom": 200,
-      "yoy": -60,
+      "yoy": -50,
       "rising": true,
       "score": 159
     },
     {
-      "keyword": "christmas in july crafts",
-      "niche": "home",
+      "keyword": "diy tiny house under $5000",
+      "niche": "home decor",
       "pop": 81,
       "mom": 200,
-      "yoy": -20,
+      "yoy": 500,
       "rising": true,
       "score": 158
     },
     {
+      "keyword": "dorm diy",
+      "niche": "home decor",
+      "pop": 81,
+      "mom": 200,
+      "yoy": 100,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "back to school crafts for kids",
+      "niche": "home",
+      "pop": 47,
+      "mom": 500,
+      "yoy": 90,
+      "rising": true,
+      "score": 157
+    },
+    {
       "keyword": "bottle crafts",
       "niche": "home",
-      "pop": 79,
+      "pop": 81,
       "mom": 200,
       "yoy": -60,
       "rising": true,
-      "score": 156
+      "score": 157
     },
     {
       "keyword": "fall sewing projects",
@@ -224,20 +233,11 @@
       "pop": 46,
       "mom": 300,
       "yoy": 20,
-      "rising": false,
+      "rising": true,
       "score": 156
     },
     {
-      "keyword": "diy tiny house under $5000",
-      "niche": "home decor",
-      "pop": 79,
-      "mom": 200,
-      "yoy": 500,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "dorm diy",
+      "keyword": "dorm gallery wall",
       "niche": "home decor",
       "pop": 78,
       "mom": 200,
@@ -246,65 +246,83 @@
       "score": 155
     },
     {
-      "keyword": "back to school crafts for kids",
+      "keyword": "fall decor 2026",
       "niche": "home",
       "pop": 45,
-      "mom": 500,
+      "mom": 1500,
+      "yoy": 10001,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "backpack decor",
+      "niche": "home",
+      "pop": 78,
+      "mom": 200,
       "yoy": 90,
       "rising": true,
       "score": 155
     },
     {
-      "keyword": "fall decor 2026",
+      "keyword": "classroom banner ideas",
       "niche": "home",
-      "pop": 44,
-      "mom": 1000,
-      "yoy": 10001,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "pencil pouch",
-      "niche": "home",
-      "pop": 77,
+      "pop": 73,
       "mom": 200,
-      "yoy": 8,
+      "yoy": 500,
       "rising": true,
-      "score": 154
+      "score": 149
     },
     {
-      "keyword": "senior overalls",
+      "keyword": "canning pickles",
       "niche": "home",
-      "pop": 53,
+      "pop": 73,
+      "mom": 200,
+      "yoy": -10,
+      "rising": true,
+      "score": 149
+    },
+    {
+      "keyword": "fall bedroom ideas",
+      "niche": "home decor",
+      "pop": 38,
       "mom": 300,
-      "yoy": 100,
-      "rising": false,
-      "score": 153
-    },
-    {
-      "keyword": "backpack decoration",
-      "niche": "home",
-      "pop": 71,
-      "mom": 200,
-      "yoy": 50,
+      "yoy": 70,
       "rising": true,
       "score": 148
     },
     {
-      "keyword": "classroom banner ideas",
-      "niche": "home",
-      "pop": 70,
-      "mom": 200,
-      "yoy": 500,
+      "keyword": "college cork board ideas",
+      "niche": "home decor",
+      "pop": 37,
+      "mom": 300,
+      "yoy": 30,
       "rising": true,
       "score": 147
     },
     {
-      "keyword": "college cork board ideas",
+      "keyword": "halloween yard ideas",
+      "niche": "home",
+      "pop": 37,
+      "mom": 400,
+      "yoy": 200,
+      "rising": false,
+      "score": 147
+    },
+    {
+      "keyword": "halloween porch ideas",
       "niche": "home decor",
       "pop": 35,
-      "mom": 300,
-      "yoy": 30,
+      "mom": 600,
+      "yoy": 60,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "painted backpack",
+      "niche": "home",
+      "pop": 69,
+      "mom": 200,
+      "yoy": 300,
       "rising": true,
       "score": 145
     },
@@ -318,561 +336,645 @@
       "score": 145
     },
     {
+      "keyword": "fall room ideas",
+      "niche": "home decor",
+      "pop": 34,
+      "mom": 400,
+      "yoy": 30,
+      "rising": true,
+      "score": 144
+    },
+    {
       "keyword": "fall crochet ideas",
       "niche": "home",
       "pop": 34,
       "mom": 300,
-      "yoy": 60,
+      "yoy": 50,
       "rising": true,
       "score": 144
     },
     {
-      "keyword": "halloween yard ideas",
+      "keyword": "back to school gifts for students",
       "niche": "home",
-      "pop": 34,
-      "mom": 400,
-      "yoy": 200,
-      "rising": false,
-      "score": 144
-    },
-    {
-      "keyword": "fall room ideas",
-      "niche": "home decor",
       "pop": 33,
-      "mom": 400,
-      "yoy": 30,
-      "rising": true,
-      "score": 143
-    },
-    {
-      "keyword": "dorm wall art",
-      "niche": "home decor",
-      "pop": 66,
-      "mom": 200,
-      "yoy": 5,
-      "rising": true,
-      "score": 143
-    },
-    {
-      "keyword": "bulliten board idea",
-      "niche": "home",
-      "pop": 67,
-      "mom": 200,
-      "yoy": 10001,
+      "mom": 300,
+      "yoy": -40,
       "rising": true,
       "score": 143
     }
   ],
   "briefs": [
     {
-      "keyword": "dorm gallery wall",
+      "keyword": "scrap booking pages for boyfriend",
       "keep": true,
-      "season": "back to school",
+      "season": "evergreen",
       "intent": "high",
-      "article_topic": "10 Dorm Gallery Wall Ideas That Transform Your Small Space in 2026",
+      "article_topic": "10 Scrapbooking Pages for Boyfriend That Capture Your Love Perfectly",
       "pin_titles": [
-        "Dorm Gallery Wall Ideas for Small Spaces: 10 Must-Try Looks",
-        "10 Dorm Gallery Wall Designs That Make Your Room Cozy in 2026",
-        "2026 Dorm Gallery Wall Ideas: 10 Easy DIY Tips for Students"
+        "Scrapbooking Pages for Boyfriend: 10 Creative Layouts to Try",
+        "10 Scrapbooking Pages for Boyfriend That Tell Your Story",
+        "Unique Scrapbooking Pages for Boyfriend: 10 Ideas to Impress"
       ],
       "pin_descriptions": [
-        "Dorm gallery wall ideas to personalize your dorm room with cozy decor and printable wall art. Discover 10 stylish designs and shop coordinating printables!",
-        "Create a cozy dorm gallery wall with our top 10 ideas for 2026. Includes printable wall art sets perfect for students wanting a personalized space. Save now!"
+        "Scrapbooking pages for boyfriend offer a heartfelt way to preserve memories. Discover 10 creative layouts to inspire your next project and make your love story shine. Save these ideas now!",
+        "Looking for scrapbooking pages for boyfriend? These 10 designs help you beautifully showcase your relationship milestones. Perfect for DIY lovers wanting meaningful decor. Pin for later!"
       ],
       "boards": [
-        "Dorm Room Decor Inspiration",
-        "Small Space Gallery Wall Ideas"
+        "Scrapbooking Ideas",
+        "DIY Home Decor & Crafts"
       ],
       "product_ideas": [
-        "Printable dorm-themed gallery wall art sets with motivational quotes",
-        "Back-to-school dorm room planner and organization tracker printables"
+        "Printable scrapbook journaling cards for boyfriend-themed pages",
+        "Printable romantic memory trackers/planners for couples"
       ],
       "affiliate_matches": [
-        "Decorative wall clips and string lights",
-        "Dorm room organizational storage bins"
+        "Scrapbooking kits and supplies",
+        "Photo printing services"
       ],
-      "niche": "home decor",
-      "pop": 78,
-      "mom": 300,
-      "yoy": 100,
-      "rising": false,
-      "score": 188
+      "niche": "home",
+      "pop": 93,
+      "mom": 400,
+      "yoy": 10001,
+      "rising": true,
+      "score": 203
+    },
+    {
+      "keyword": "random things to bedazzle",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "15 Random Things to Bedazzle That Instantly Upgrade Your Home Decor",
+      "pin_titles": [
+        "Random Things to Bedazzle: 15 DIY Ideas for Home Style",
+        "15 Random Things to Bedazzle That Make Your Space Shine",
+        "DIY Random Things to Bedazzle: 15 Fun Home Projects"
+      ],
+      "pin_descriptions": [
+        "Looking for random things to bedazzle? These 15 ideas add sparkle to everyday items and refresh your home decor effortlessly. Get inspired and start crafting today!",
+        "Random things to bedazzle can transform your space with simple DIY projects. Discover 15 creative items to personalize your home with bling. Save these crafty ideas now!"
+      ],
+      "boards": [
+        "DIY Home Decor",
+        "Cozy Living & Craft Ideas"
+      ],
+      "product_ideas": [
+        "Printable bedazzle project planners and supply checklists",
+        "Printable wall art templates featuring bedazzle patterns"
+      ],
+      "affiliate_matches": [
+        "Craft rhinestone kits",
+        "DIY embellishment tools"
+      ],
+      "niche": "home",
+      "pop": 81,
+      "mom": 2500,
+      "yoy": 6000,
+      "rising": true,
+      "score": 191
     },
     {
       "keyword": "dinning room decoration idea",
       "keep": true,
-      "season": "fall",
+      "season": "evergreen",
       "intent": "high",
-      "article_topic": "15 Dining Room Decoration Ideas to Create a Cozy Fall Atmosphere in 2026",
+      "article_topic": "12 Dining Room Decoration Ideas to Transform Your Space in 2026",
       "pin_titles": [
-        "Dining Room Decoration Ideas for Fall: 15 Cozy Styling Tips",
-        "15 Dining Room Decoration Ideas to Warm Your Home This Fall 2026",
-        "Cozy Fall Dining Room Decoration Ideas: 15 Must-Try Looks"
+        "Dining Room Decoration Ideas: 12 Stylish Looks for 2026",
+        "12 Dining Room Decoration Ideas That Make Meals Cozy",
+        "2026 Dining Room Decoration Ideas: 12 Trends to Try"
       ],
       "pin_descriptions": [
-        "Dining room decoration ideas to transform your space with cozy fall vibes. Discover 15 ways including printable wall art to elevate your 2026 autumn style.",
-        "Create a warm dining room atmosphere with our top 15 fall decoration ideas. Includes printable autumn-themed wall art perfect for seasonal updates. Save for your 2026 decor!"
+        "Dining room decoration idea searches are booming! Discover 12 stylish ideas to refresh your space and create a cozy atmosphere for 2026. Pin for your next remodel inspiration.",
+        "Looking for dining room decoration ideas? These 12 tips help you create an inviting and modern space perfect for entertaining all year. Save this guide to get started!"
       ],
       "boards": [
-        "Fall Home Decor Ideas",
-        "Cozy Dining Room Styling"
+        "Dining Room Decor",
+        "Home Decorating Ideas"
       ],
       "product_ideas": [
-        "Printable autumn-themed dining room wall art sets",
-        "2026 fall meal planners and dining trackers"
+        "Printable dining room seasonal decor planners",
+        "Printable wall art with dining and food themes"
       ],
       "affiliate_matches": [
-        "Seasonal table linens and placemats",
-        "Scented candles for dining ambiance"
+        "Table linens and decor",
+        "Ambient lighting fixtures"
       ],
       "niche": "home decor",
-      "pop": 74,
+      "pop": 78,
       "mom": 400,
       "yoy": 10001,
       "rising": true,
-      "score": 184
+      "score": 188
+    },
+    {
+      "keyword": "school supplies theme",
+      "keep": true,
+      "season": "back to school",
+      "intent": "high",
+      "article_topic": "10 School Supplies Theme Printables to Organize Your 2026 Classroom or Home Study",
+      "pin_titles": [
+        "School Supplies Theme Printables: 10 Organizers for 2026",
+        "10 School Supplies Theme Trackers & Planners for Students",
+        "Back to School 2026: 10 School Supplies Theme Printables"
+      ],
+      "pin_descriptions": [
+        "School supplies theme printables help organize your study space for 2026. Find 10 planners and trackers designed to keep kids motivated and prepared. Pin to get organized today!",
+        "Organize with school supplies theme printables perfect for home or classroom. These 10 tools make back to school 2026 easy and fun. Save for your school prep checklist!"
+      ],
+      "boards": [
+        "Back to School Organization",
+        "School Supplies & Planning"
+      ],
+      "product_ideas": [
+        "Printable school supplies themed homework planners",
+        "Printable classroom wall art with school supplies motifs"
+      ],
+      "affiliate_matches": [
+        "Back to school supplies bundles",
+        "Desk organization accessories"
+      ],
+      "niche": "home",
+      "pop": 75,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 185
     },
     {
       "keyword": "back to school banners",
       "keep": true,
       "season": "back to school",
       "intent": "high",
-      "article_topic": "12 Back to School Banner Ideas for a Stylish and Organized 2026",
+      "article_topic": "8 Back to School Banners for 2026 That Brighten Your Home or Classroom",
       "pin_titles": [
-        "Back to School Banners: 12 Easy DIY Ideas for 2026",
-        "12 Back to School Banner Designs to Brighten Your Home",
-        "2026 Back to School Banner Ideas for Kids’ Rooms and Study Areas"
+        "Back to School Banners 2026: 8 Designs to Celebrate",
+        "8 Back to School Banners Perfect for Home & Classroom 2026",
+        "Decorate with 8 Back to School Banners for 2026"
       ],
       "pin_descriptions": [
-        "Back to school banners to brighten your home and organize study spaces. Find 12 creative ideas including printable banner templates to download and use.",
-        "Create stylish back to school banners with our 12 ideas perfect for 2026. Includes printable banner kits to decorate classrooms and bedrooms. Save this for your seasonal decor!"
+        "Back to school banners brighten any space for 2026. Discover 8 unique designs to welcome students and add fun to your home or classroom. Save these festive ideas now!",
+        "Looking for back to school banners for 2026? These 8 options bring color and cheer to your study area or classroom entrance. Pin to prep your school decor!"
       ],
       "boards": [
         "Back to School Decor",
-        "Kids’ Study Space Organization"
+        "Classroom & Study Room Ideas"
       ],
       "product_ideas": [
-        "Printable back to school banner kits with customizable text",
-        "2026 school routine planners and homework trackers"
+        "Printable back to school banner kits",
+        "Coordinating printable planners with matching banner designs"
       ],
       "affiliate_matches": [
-        "Craft supplies for banner making",
-        "Desk organizers and study lamps"
+        "Banner hanging kits",
+        "Classroom decoration supplies"
       ],
       "niche": "home",
-      "pop": 73,
+      "pop": 74,
       "mom": 500,
-      "yoy": 60,
+      "yoy": 50,
       "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "school supplies theme",
-      "keep": true,
-      "season": "back to school",
-      "intent": "medium",
-      "article_topic": "10 School Supplies Theme Decor Ideas to Organize Your Study Space in 2026",
-      "pin_titles": [
-        "School Supplies Theme Decor: 10 Ideas for Organized Study Spaces",
-        "10 School Supplies Theme Decorations for Back to School 2026",
-        "Organize Your Study Space with These 10 School Supplies Theme Ideas"
-      ],
-      "pin_descriptions": [
-        "School supplies theme decor to organize your study space in 2026. Explore 10 creative ideas including printable labels and planners to boost productivity.",
-        "Get inspired with 10 school supplies theme decor ideas perfect for back to school 2026. Includes printable organizers and trackers to keep you on top of tasks. Save now!"
-      ],
-      "boards": [
-        "Back to School Organization",
-        "Study Space Decor Ideas"
-      ],
-      "product_ideas": [
-        "Printable school supplies themed planner stickers and labels",
-        "2026 homework and supply trackers printable sets"
-      ],
-      "affiliate_matches": [
-        "Desk organizers and supply caddies",
-        "Colorful pen and pencil sets"
-      ],
-      "niche": "home",
-      "pop": 70,
-      "mom": 300,
-      "yoy": 200,
-      "rising": true,
-      "score": 180
-    },
-    {
-      "keyword": "library card",
-      "keep": true,
-      "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "8 Library Card Inspired Wall Art Prints to Cozy Up Your Reading Nook in 2026",
-      "pin_titles": [
-        "Library Card Wall Art: 8 Prints to Inspire Your Reading Nook",
-        "8 Library Card Inspired Prints for Cozy Home Decor 2026",
-        "Cozy Reading Nook Decor: 8 Library Card Wall Art Ideas"
-      ],
-      "pin_descriptions": [
-        "Library card inspired wall art to add charm to your reading nook. Discover 8 printable art ideas perfect for cozy home vibes in 2026.",
-        "Add personality to your reading space with 8 library card wall art printables. Perfect for book lovers wanting stylish and cozy decor in 2026. Save this for your home!"
-      ],
-      "boards": [
-        "Reading Nook Decor",
-        "Cozy Home Wall Art"
-      ],
-      "product_ideas": [
-        "Printable vintage library card style wall art sets",
-        "Reading habit trackers and book journal printables 2026"
-      ],
-      "affiliate_matches": [
-        "Bookshelf organizers",
-        "Cozy reading lamps and cushions"
-      ],
-      "niche": "home",
-      "pop": 68,
-      "mom": 300,
-      "yoy": 200,
-      "rising": true,
-      "score": 178
+      "score": 184
     },
     {
       "keyword": "scrap fabric",
       "keep": true,
       "season": "evergreen",
       "intent": "medium",
-      "article_topic": "12 Creative Scrap Fabric Ideas for Cozy Home Projects in 2026",
+      "article_topic": "12 Creative Ways to Use Scrap Fabric in Cozy Home Projects",
       "pin_titles": [
         "Scrap Fabric Ideas: 12 Cozy Home Projects to Try",
-        "12 Scrap Fabric Crafts for Stylish Home Decor 2026",
-        "Cozy Up Your Home with These 12 Scrap Fabric Ideas"
+        "12 Creative Uses for Scrap Fabric in Home Decor",
+        "DIY Scrap Fabric Projects: 12 Ideas for Cozy Living"
       ],
       "pin_descriptions": [
-        "Scrap fabric ideas to create cozy home decor projects. Explore 12 creative ways including printable project planners for 2026 crafting.",
-        "Turn scrap fabric into stylish home accents with 12 easy projects. Includes printable fabric craft planners and trackers to organize your 2026 creations. Save today!"
+        "Scrap fabric is perfect for cozy home projects. Discover 12 creative ways to repurpose fabric scraps into stylish decor and organization solutions. Save these crafty ideas!",
+        "Looking for scrap fabric crafts? These 12 projects turn leftovers into charming home accessories and storage options. Pin to start your sustainable DIY today!"
       ],
       "boards": [
-        "DIY Home Crafts",
-        "Cozy Fabric Projects"
+        "DIY Fabric Crafts",
+        "Cozy Home Decor Ideas"
       ],
       "product_ideas": [
-        "Printable fabric craft project planners and supply trackers",
-        "Scrap fabric pattern templates and wall art printables"
+        "Printable scrap fabric project planners and templates",
+        "Printable fabric scrap inventory and project trackers"
       ],
       "affiliate_matches": [
-        "Sewing kits and fabric scissors",
-        "Storage bins for craft supplies"
+        "Fabric bundles and remnants",
+        "Sewing kits and tools"
       ],
       "niche": "home",
-      "pop": 67,
-      "mom": 600,
-      "yoy": 500,
+      "pop": 72,
+      "mom": 700,
+      "yoy": 600,
       "rising": true,
-      "score": 177
+      "score": 182
     },
     {
       "keyword": "primitive autumn",
       "keep": true,
       "season": "fall",
       "intent": "high",
-      "article_topic": "14 Primitive Autumn Decor Ideas to Warm Your Home in 2026",
+      "article_topic": "10 Primitive Autumn Decor Ideas for a Cozy 2026 Fall Season",
       "pin_titles": [
-        "Primitive Autumn Decor: 14 Cozy Ideas for Fall 2026",
-        "14 Primitive Autumn Styling Tips to Transform Your Home",
-        "Cozy Primitive Autumn Decor: 14 Must-Try Ideas for 2026"
+        "Primitive Autumn Decor: 10 Cozy Ideas for Fall 2026",
+        "10 Primitive Autumn Decor Tips to Warm Your Home",
+        "Fall 2026 Primitive Autumn Decor: 10 Inspiring Ideas"
       ],
       "pin_descriptions": [
-        "Primitive autumn decor ideas to bring warmth to your home this fall. Discover 14 cozy styling tips including printable wall art for 2026.",
-        "Warm up your space with 14 primitive autumn decor ideas perfect for 2026. Includes printable autumn-themed wall art and planners to celebrate the season. Save now!"
+        "Primitive autumn decor brings warmth and charm to your home this fall 2026. Explore 10 ideas to create a cozy, rustic vibe. Save these seasonal decorating tips!",
+        "Looking for primitive autumn decor ideas? These 10 tips help you craft a welcoming fall atmosphere with simple, timeless pieces. Pin for your seasonal refresh!"
       ],
       "boards": [
-        "Fall Primitive Decor",
-        "Cozy Autumn Home Ideas"
+        "Fall Home Decor",
+        "Primitive & Rustic Style"
       ],
       "product_ideas": [
-        "Printable primitive autumn wall art collections",
-        "2026 fall home cleaning and decorating planners"
+        "Printable primitive autumn wall art sets",
+        "Fall 2026 printable home decor planners"
       ],
       "affiliate_matches": [
-        "Rustic decor accents and candles",
-        "Natural fiber throw blankets"
+        "Rustic decor accessories",
+        "Seasonal wreaths and garlands"
       ],
       "niche": "home",
-      "pop": 66,
-      "mom": 700,
-      "yoy": 30,
+      "pop": 69,
+      "mom": 600,
+      "yoy": 40,
       "rising": false,
-      "score": 176
+      "score": 179
+    },
+    {
+      "keyword": "bling ideas",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "medium",
+      "article_topic": "12 Bling Ideas to Add Sparkle to Your Cozy Living Space",
+      "pin_titles": [
+        "Bling Ideas: 12 Ways to Sparkle Up Your Home",
+        "12 Bling Ideas for Cozy and Stylish Decor",
+        "Add Sparkle with These 12 Bling Ideas for Home"
+      ],
+      "pin_descriptions": [
+        "Bling ideas bring sparkle and personality to your cozy living space. Discover 12 ways to add shimmer with simple DIY projects. Save these ideas for your next home refresh!",
+        "Looking for bling ideas? These 12 tips help you glam up your decor with sparkle that fits a cozy vibe. Pin now to add a touch of shine to your home!"
+      ],
+      "boards": [
+        "Cozy Living & Decor",
+        "DIY Sparkle & Bling Projects"
+      ],
+      "product_ideas": [
+        "Printable bling project trackers and planners",
+        "Printable wall art with sparkling designs"
+      ],
+      "affiliate_matches": [
+        "Craft rhinestones and embellishments",
+        "Decorative lighting and mirrors"
+      ],
+      "niche": "home",
+      "pop": 68,
+      "mom": 300,
+      "yoy": 40,
+      "rising": true,
+      "score": 178
     },
     {
       "keyword": "back to school painted banner",
       "keep": true,
       "season": "back to school",
       "intent": "high",
-      "article_topic": "10 Back to School Painted Banner Ideas to Energize Your 2026 Classroom or Home",
+      "article_topic": "7 Back to School Painted Banner Ideas to Brighten 2026 Classrooms and Homes",
       "pin_titles": [
-        "Back to School Painted Banner Ideas: 10 Creative Designs for 2026",
-        "10 Painted Banner Ideas to Brighten Your Back to School Decor",
-        "2026 Back to School Painted Banners: 10 DIY Inspiration Tips"
+        "Back to School Painted Banner Ideas for 2026: 7 Designs",
+        "7 Back to School Painted Banners to Inspire Your 2026 Decor",
+        "2026 Back to School Painted Banner Ideas for Home & School"
       ],
       "pin_descriptions": [
-        "Back to school painted banner ideas to energize your classroom or home in 2026. Find 10 creative designs plus printable banner templates.",
-        "Brighten your back to school season with 10 painted banner ideas perfect for 2026. Includes printable banner kits for easy customization. Save this for your decor!"
+        "Back to school painted banners add vibrant charm to your 2026 classroom or home study space. Explore 7 creative ideas to welcome the new school year. Save these inspiring designs!",
+        "Looking for back to school painted banner ideas? These 7 designs bring color and motivation to your 2026 school season decor. Pin to prepare your space today!"
       ],
       "boards": [
         "Back to School Decor",
-        "Classroom and Study Space Ideas"
+        "Classroom & Study Room Ideas"
       ],
       "product_ideas": [
-        "Printable back to school painted banner templates",
-        "2026 school year planners and homework trackers"
+        "Printable painted banner templates and instructions",
+        "Coordinating back to school planners with banner themes"
       ],
       "affiliate_matches": [
-        "Acrylic paint sets and brushes",
-        "Craft paper and banner materials"
+        "Banner painting supplies",
+        "Classroom decoration kits"
       ],
       "niche": "home",
-      "pop": 62,
+      "pop": 63,
       "mom": 400,
       "yoy": -20,
       "rising": true,
-      "score": 172
+      "score": 173
     },
     {
-      "keyword": "backpack keychains",
+      "keyword": "badazzeling idea",
       "keep": true,
-      "season": "back to school",
+      "season": "evergreen",
       "intent": "medium",
-      "article_topic": "9 Backpack Keychains Ideas to Personalize Your School Gear in 2026",
+      "article_topic": "15 Badazzeling Ideas to Customize Your Cozy Home Accessories",
       "pin_titles": [
-        "Backpack Keychains: 9 Fun Ideas for School Personalization 2026",
-        "9 Backpack Keychains to Make Your School Gear Stand Out",
-        "2026 Backpack Keychain Ideas for Students and Kids"
+        "Badazzeling Ideas: 15 Ways to Customize Your Home",
+        "15 Creative Badazzeling Ideas for Cozy Living",
+        "DIY Badazzeling Ideas to Sparkle Up Your Space"
       ],
       "pin_descriptions": [
-        "Backpack keychains ideas to personalize your school gear this 2026. Discover 9 creative designs including printable keychain tags and labels.",
-        "Make your backpack unique with 9 keychain ideas perfect for back to school 2026. Includes printable accessory labels and organization trackers. Save for your school prep!"
+        "Badazzeling ideas help you personalize your cozy home accessories with sparkle. Discover 15 creative projects to make your space uniquely yours. Save these ideas now!",
+        "Looking for badazzeling ideas? These 15 DIY projects add shimmer and charm to your home decor and accessories. Pin to start crafting your sparkle today!"
       ],
       "boards": [
-        "Back to School Accessories",
-        "Kids’ School Gear Ideas"
+        "DIY Home Decor",
+        "Cozy Living & Craft Ideas"
       ],
       "product_ideas": [
-        "Printable backpack keychain tag templates",
-        "2026 school supply and accessory organization planners"
+        "Printable badazzeling project planners and supply checklists",
+        "Printable wall art featuring sparkling designs"
       ],
       "affiliate_matches": [
-        "Keychain charms and craft kits",
-        "Backpack organizers and hooks"
+        "Rhinestone embellishment kits",
+        "Craft glue and tools"
       ],
       "niche": "home",
-      "pop": 55,
-      "mom": 300,
-      "yoy": -10,
+      "pop": 59,
+      "mom": 800,
+      "yoy": 10001,
       "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "halloween apartment decor",
-      "keep": true,
-      "season": "holiday",
-      "intent": "high",
-      "article_topic": "13 Halloween Apartment Decor Ideas to Create a Cozy Spooky Vibe in 2026",
-      "pin_titles": [
-        "Halloween Apartment Decor: 13 Cozy Ideas for 2026",
-        "13 Halloween Apartment Decorating Tips for a Spooky Cozy Home",
-        "Cozy Halloween Apartment Decor: 13 Must-Try Ideas for 2026"
-      ],
-      "pin_descriptions": [
-        "Halloween apartment decor ideas to create a cozy spooky vibe. Explore 13 easy decorating tips including printable Halloween wall art for 2026.",
-        "Transform your apartment for Halloween with 13 cozy decor ideas perfect for 2026. Includes printable spooky-themed wall art and planners. Save these ideas now!"
-      ],
-      "boards": [
-        "Halloween Home Decor",
-        "Cozy Holiday Apartment Ideas"
-      ],
-      "product_ideas": [
-        "Printable Halloween-themed apartment wall art sets",
-        "2026 Halloween party planners and cleaning checklists"
-      ],
-      "affiliate_matches": [
-        "Halloween string lights and candles",
-        "Spooky themed throw pillows and blankets"
-      ],
-      "niche": "home decor",
-      "pop": 52,
-      "mom": 300,
-      "yoy": 20,
-      "rising": false,
-      "score": 162
+      "score": 169
     },
     {
       "keyword": "fall wreath ideas",
       "keep": true,
       "season": "fall",
       "intent": "high",
-      "article_topic": "11 Fall Wreath Ideas to Welcome Autumn in 2026",
+      "article_topic": "10 Fall Wreath Ideas to Welcome Autumn 2026 in Style",
       "pin_titles": [
-        "Fall Wreath Ideas: 11 Cozy Designs for 2026",
-        "11 Fall Wreath Decorating Tips to Warm Your Home",
-        "Cozy Up Your Door with These 11 Fall Wreath Ideas 2026"
+        "Fall Wreath Ideas: 10 Designs for Autumn 2026",
+        "10 Fall Wreath Ideas to Brighten Your Front Door",
+        "Autumn 2026: 10 Cozy Fall Wreath Ideas to Try"
       ],
       "pin_descriptions": [
-        "Fall wreath ideas to welcome autumn with cozy style. Discover 11 easy designs plus printable wreath care and decorating planners for 2026.",
-        "Bring autumn charm to your home with 11 fall wreath ideas. Includes printable fall-themed wall art and wreath maintenance trackers for 2026. Save now!"
+        "Fall wreath ideas are perfect for welcoming autumn 2026 with warmth. Explore 10 beautiful designs to decorate your door or walls. Save these seasonal favorites!",
+        "Looking for fall wreath ideas? These 10 designs bring cozy charm to your home this autumn 2026. Pin for your seasonal decorating inspiration!"
       ],
       "boards": [
         "Fall Home Decor",
-        "Cozy Seasonal Wreath Ideas"
+        "Seasonal Wreaths & Garlands"
       ],
       "product_ideas": [
-        "Printable fall wreath care and decorating planners",
-        "Autumn-themed wall art printables for door decor"
+        "Printable fall wreath design templates",
+        "Autumn 2026 seasonal decor planners"
       ],
       "affiliate_matches": [
-        "Wreath making supplies and ribbons",
-        "Seasonal floral accents and greenery"
+        "Wreath making supplies",
+        "Autumn floral accents"
       ],
       "niche": "home",
-      "pop": 52,
+      "pop": 57,
       "mom": 300,
       "yoy": 200,
       "rising": false,
-      "score": 162
+      "score": 167
+    },
+    {
+      "keyword": "backpack keychains",
+      "keep": true,
+      "season": "back to school",
+      "intent": "medium",
+      "article_topic": "12 Backpack Keychains to Personalize Your 2026 School Gear",
+      "pin_titles": [
+        "Backpack Keychains: 12 Styles to Personalize Your 2026 Gear",
+        "12 Cute Backpack Keychains for Back to School 2026",
+        "Personalize Your Backpack with These 12 Keychains"
+      ],
+      "pin_descriptions": [
+        "Backpack keychains add fun and personality to your 2026 school gear. Discover 12 stylish options to customize backpacks for kids and teens. Save these ideas now!",
+        "Looking for backpack keychains? These 12 trendy styles help students express themselves this back to school 2026. Pin to find the perfect accessory!"
+      ],
+      "boards": [
+        "Back to School Accessories",
+        "Personalized School Gear"
+      ],
+      "product_ideas": [
+        "Printable backpack keychain design templates",
+        "Printable school gear organizers and trackers"
+      ],
+      "affiliate_matches": [
+        "Backpack keychain accessories",
+        "School supply organizers"
+      ],
+      "niche": "home",
+      "pop": 56,
+      "mom": 300,
+      "yoy": -10,
+      "rising": true,
+      "score": 166
     },
     {
       "keyword": "blue rooms",
       "keep": true,
       "season": "evergreen",
-      "intent": "medium",
-      "article_topic": "12 Blue Room Decor Ideas That Make Your Space Feel Calm and Cozy in 2026",
+      "intent": "high",
+      "article_topic": "15 Blue Room Decor Ideas That Create Calm and Cozy Spaces in 2026",
       "pin_titles": [
-        "Blue Rooms: 12 Cozy Decorating Ideas for 2026",
-        "12 Blue Room Styling Tips to Create Calm Spaces",
-        "Cozy Blue Room Decor: 12 Ideas for a Relaxing Home 2026"
+        "Blue Rooms: 15 Decor Ideas for Calm & Cozy 2026 Spaces",
+        "15 Blue Room Design Tips to Refresh Your Home",
+        "2026 Blue Rooms: 15 Ways to Style with Blue for Cozy Living"
       ],
       "pin_descriptions": [
-        "Blue rooms decor ideas that make your space calm and cozy. Find 12 styling tips including printable blue-themed wall art for 2026.",
-        "Create a relaxing blue room with these 12 cozy decorating ideas perfect for 2026. Includes printable wall art collections and room planners. Save this for your home!"
+        "Blue rooms create calm and cozy vibes in any home. Discover 15 decor ideas to refresh your blue-themed spaces in 2026. Save these soothing tips!",
+        "Looking for blue rooms inspiration? These 15 ideas help you style your space with blue tones for a serene and inviting atmosphere. Pin to plan your makeover!"
       ],
       "boards": [
-        "Blue Room Decor Ideas",
-        "Cozy Colorful Bedrooms"
+        "Blue Home Decor",
+        "Cozy Living Room Ideas"
       ],
       "product_ideas": [
-        "Printable blue-themed wall art sets",
-        "2026 bedroom organization and cleaning planners"
+        "Printable blue room mood boards and planners",
+        "Printable wall art with blue color palettes"
       ],
       "affiliate_matches": [
-        "Blue accent pillows and throws",
-        "Calming LED lighting options"
+        "Blue home accents and textiles",
+        "Decorative pillows and throws"
       ],
       "niche": "home decor",
-      "pop": 84,
+      "pop": 88,
       "mom": 200,
-      "yoy": -40,
+      "yoy": -30,
       "rising": true,
-      "score": 161
+      "score": 164
+    },
+    {
+      "keyword": "halloween apartment decor",
+      "keep": true,
+      "season": "fall",
+      "intent": "high",
+      "article_topic": "10 Halloween Apartment Decor Ideas for a Spooky Cozy 2026",
+      "pin_titles": [
+        "Halloween Apartment Decor: 10 Spooky Cozy Ideas for 2026",
+        "10 Halloween Apartment Decor Tips to Celebrate 2026",
+        "Cozy Halloween Apartment Decor: 10 Ideas for 2026"
+      ],
+      "pin_descriptions": [
+        "Halloween apartment decor ideas help you celebrate spooky season in style for 2026. Explore 10 cozy and easy tips to transform your space. Save your favorites!",
+        "Looking for Halloween apartment decor ideas? These 10 tips bring festive charm to small spaces with cozy, spooky vibes for 2026. Pin to prep your decor!"
+      ],
+      "boards": [
+        "Halloween Home Decor",
+        "Cozy Seasonal Decorating"
+      ],
+      "product_ideas": [
+        "Printable Halloween-themed wall art sets",
+        "2026 Halloween decoration planners and trackers"
+      ],
+      "affiliate_matches": [
+        "Halloween decor kits",
+        "LED string lights and candles"
+      ],
+      "niche": "home decor",
+      "pop": 54,
+      "mom": 400,
+      "yoy": 20,
+      "rising": false,
+      "score": 164
+    },
+    {
+      "keyword": "christmas in july crafts",
+      "keep": true,
+      "season": "summer",
+      "intent": "medium",
+      "article_topic": "12 Christmas in July Crafts to Get Cozy and Creative in 2026",
+      "pin_titles": [
+        "Christmas in July Crafts: 12 Cozy DIY Ideas for 2026",
+        "12 Christmas in July Crafts to Brighten Your Summer",
+        "Get Festive Early with 12 Christmas in July Crafts 2026"
+      ],
+      "pin_descriptions": [
+        "Christmas in July crafts bring cozy cheer to summer 2026. Discover 12 fun DIY projects to celebrate early and decorate your home. Save these creative ideas!",
+        "Looking for Christmas in July crafts? These 12 projects add festive spirit to your summer with cozy decor and gifts. Pin to get inspired early this year!"
+      ],
+      "boards": [
+        "Summer Crafts & Decor",
+        "Holiday Crafts Year-Round"
+      ],
+      "product_ideas": [
+        "Printable Christmas in July craft project planners",
+        "Festive printable wall art for summer holiday cheer"
+      ],
+      "affiliate_matches": [
+        "Craft supplies and kits",
+        "Seasonal embellishments"
+      ],
+      "niche": "home",
+      "pop": 86,
+      "mom": 200,
+      "yoy": -20,
+      "rising": true,
+      "score": 162
     },
     {
       "keyword": "august crafts",
       "keep": true,
-      "season": "late summer",
+      "season": "summer",
       "intent": "medium",
-      "article_topic": "10 August Crafts to Refresh Your Cozy Home in 2026",
+      "article_topic": "10 August Crafts to Refresh Your Cozy Living Space in 2026",
       "pin_titles": [
-        "August Crafts: 10 Cozy DIY Ideas for Your Home 2026",
-        "10 August Craft Projects to Brighten Your Living Space",
-        "Cozy Home August Crafts: 10 Fun Ideas for 2026"
+        "August Crafts: 10 Cozy DIY Ideas for Summer 2026",
+        "10 August Crafts to Brighten Your Home This Summer",
+        "Summer 2026: 10 August Crafts for Cozy Living"
       ],
       "pin_descriptions": [
-        "August crafts to refresh your cozy home with DIY projects. Explore 10 ideas including printable craft planners and project trackers for 2026.",
-        "Brighten your home this August with 10 cozy craft projects. Includes printable planners to organize your crafting and seasonal decor ideas. Save for your 2026 home refresh!"
+        "August crafts help refresh your cozy living space during summer 2026. Explore 10 creative projects perfect for warm weather and indoor fun. Save these ideas!",
+        "Looking for August crafts? These 10 DIY projects bring charm and comfort to your home as summer winds down. Pin to try these cozy crafts!"
       ],
       "boards": [
-        "August DIY Crafts",
-        "Cozy Seasonal Crafting"
+        "Summer Crafts & Decor",
+        "Cozy Home Projects"
       ],
       "product_ideas": [
-        "Printable craft project planners and supply trackers",
-        "August-themed seasonal wall art printables"
+        "Printable August craft project planners and instructions",
+        "Seasonal summer printable wall art"
       ],
       "affiliate_matches": [
-        "Crafting tool kits and supplies",
-        "Storage solutions for craft materials"
+        "Craft toolkits",
+        "Summer-themed craft supplies"
       ],
       "niche": "home",
-      "pop": 50,
+      "pop": 52,
       "mom": 400,
-      "yoy": 6,
+      "yoy": 7,
       "rising": false,
-      "score": 160
-    },
-    {
-      "keyword": "teacher survival kit ideas",
-      "keep": true,
-      "season": "back to school",
-      "intent": "high",
-      "article_topic": "12 Teacher Survival Kit Ideas to Start the 2026 School Year Right",
-      "pin_titles": [
-        "Teacher Survival Kit Ideas: 12 Essentials for 2026",
-        "12 Teacher Survival Kit Must-Haves for Back to School 2026",
-        "2026 Teacher Survival Kit Ideas to Boost Classroom Energy"
-      ],
-      "pin_descriptions": [
-        "Teacher survival kit ideas with 12 essentials to start the 2026 school year prepared. Includes printable labels and planners to organize your kit.",
-        "Prepare for 2026 back to school with 12 teacher survival kit ideas. Includes printable checklists and planner pages to keep your classroom ready. Save these tips!"
-      ],
-      "boards": [
-        "Teacher Gift Ideas",
-        "Back to School Essentials"
-      ],
-      "product_ideas": [
-        "Printable teacher survival kit checklists and labels",
-        "2026 classroom organization and lesson planners"
-      ],
-      "affiliate_matches": [
-        "Classroom supplies and organizational tools",
-        "Gift baskets and storage containers"
-      ],
-      "niche": "home",
-      "pop": 50,
-      "mom": 300,
-      "yoy": 200,
-      "rising": false,
-      "score": 160
+      "score": 162
     },
     {
       "keyword": "luxurious bedrooms",
       "keep": true,
       "season": "evergreen",
       "intent": "high",
-      "article_topic": "13 Luxurious Bedroom Decor Ideas to Create a Cozy Retreat in 2026",
+      "article_topic": "12 Luxurious Bedroom Ideas for a Cozy Yet Elegant 2026 Space",
       "pin_titles": [
-        "Luxurious Bedrooms: 13 Cozy Decor Ideas for 2026",
-        "13 Luxurious Bedroom Styling Tips to Elevate Your Space",
-        "Cozy Up Your Bedroom with These 13 Luxurious Ideas 2026"
+        "Luxurious Bedrooms: 12 Cozy & Elegant Ideas for 2026",
+        "12 Luxurious Bedroom Decor Tips for Cozy Elegance",
+        "2026 Luxurious Bedrooms: 12 Ways to Upgrade Your Space"
       ],
       "pin_descriptions": [
-        "Luxurious bedrooms decor ideas to create a cozy retreat at home. Discover 13 styling tips including printable wall art and room planners for 2026.",
-        "Elevate your bedroom with 13 luxurious decor ideas perfect for a cozy retreat. Includes printable bedroom organization and cleaning planners for 2026. Save now!"
+        "Luxurious bedrooms blend cozy comfort with elegance. Discover 12 ideas to create your dream space in 2026. Save these stylish bedroom tips now!",
+        "Looking for luxurious bedrooms inspiration? These 12 decor tips help you achieve cozy luxury for a relaxing retreat. Pin to plan your bedroom makeover!"
       ],
       "boards": [
-        "Luxurious Bedroom Decor",
-        "Cozy Home Retreat Ideas"
+        "Luxury Bedroom Decor",
+        "Cozy Elegant Living"
       ],
       "product_ideas": [
-        "Printable luxurious bedroom wall art collections",
-        "2026 bedroom cleaning and organization planners"
+        "Printable luxurious bedroom mood boards and planners",
+        "Elegant printable wall art sets for bedrooms"
       ],
       "affiliate_matches": [
-        "High-end bedding and throw blankets",
-        "Decorative lighting and accent furniture"
+        "High-end bedding and linens",
+        "Decorative lighting fixtures"
       ],
       "niche": "home decor",
       "pop": 82,
       "mom": 200,
-      "yoy": -60,
+      "yoy": -50,
       "rising": true,
       "score": 159
+    },
+    {
+      "keyword": "diy tiny house under $5000",
+      "keep": true,
+      "season": "evergreen",
+      "intent": "high",
+      "article_topic": "10 DIY Tiny House Ideas Under $5000 to Create Cozy Living in 2026",
+      "pin_titles": [
+        "DIY Tiny House Under $5000: 10 Cozy Ideas for 2026",
+        "10 Affordable DIY Tiny House Projects Under $5000",
+        "2026 DIY Tiny House Under $5000: Cozy Living Made Easy"
+      ],
+      "pin_descriptions": [
+        "DIY tiny house under $5000 ideas help you create cozy, affordable living in 2026. Explore 10 projects that keep costs low without sacrificing style. Save these budget-friendly tips!",
+        "Looking for a DIY tiny house under $5000? These 10 ideas show you how to build cozy, functional spaces affordably in 2026. Pin to start your tiny home journey!"
+      ],
+      "boards": [
+        "Tiny House Living",
+        "Affordable Cozy Homes"
+      ],
+      "product_ideas": [
+        "Printable DIY tiny house project planners and budgets",
+        "Tiny house interior design printable wall art"
+      ],
+      "affiliate_matches": [
+        "Compact furniture and storage solutions",
+        "Tiny house building materials kits"
+      ],
+      "niche": "home decor",
+      "pop": 81,
+      "mom": 200,
+      "yoy": 500,
+      "rising": true,
+      "score": 158
     }
   ]
 }
