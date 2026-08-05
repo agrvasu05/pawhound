@@ -918,5 +918,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/ssyhtc",
     "landing": "/shop/printable-fitness-workout-tracker-planner",
     "created_at": "2026-08-04T17:01:02.162Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker-planner",
+    "title": "Printable Savings & Money Goals Tracker Planner",
+    "price": 4,
+    "gumroad_id": "DWsqz9rkNvoVdZZn0xkj5w==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/oxsjti",
+    "landing": "/shop/printable-savings-money-goals-tracker-planner",
+    "created_at": "2026-08-05T17:56:43.000Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "vintage-botanical-dog-set",
+    "title": "Vintage Botanical Printable Wall Art Set with Gentle Dog Illustrations, Soft Antique Tones",
+    "price": 5,
+    "gumroad_id": "K8zwM57vy9iX_GzJeCf8uw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/bxizn",
+    "landing": "/shop/vintage-botanical-dog-set",
+    "created_at": "2026-08-05T17:57:52.972Z"
   }
 ]
