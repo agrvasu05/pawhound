@@ -938,5 +938,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/bxizn",
     "landing": "/shop/vintage-botanical-dog-set",
     "created_at": "2026-08-05T17:57:52.972Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-monthly-budget-bill-tracker-planner",
+    "title": "Printable Monthly Budget & Bill Tracker Planner",
+    "price": 4,
+    "gumroad_id": "G5lnGYGuOpewcAKHg9McoA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/srhtv",
+    "landing": "/shop/printable-monthly-budget-bill-tracker-planner",
+    "created_at": "2026-08-07T16:05:29.970Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-cottage-wall-art",
+    "title": "Cozy Cottage Home Scenes Printable Wall Art Set, Warm Watercolor Hygge Decor",
+    "price": 5,
+    "gumroad_id": "KG0NzDiaBKzapX6bVzARtw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/qdpgkm",
+    "landing": "/shop/cozy-cottage-wall-art",
+    "created_at": "2026-08-07T16:06:56.921Z"
   }
 ]
