@@ -958,5 +958,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/qdpgkm",
     "landing": "/shop/cozy-cottage-wall-art",
     "created_at": "2026-08-07T16:06:56.921Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "abstract-midcentury-dog-set",
+    "title": "Abstract Pastel Mid-Century Dog Printable Wall Art Set - Mustard Blush Teal Decor",
+    "price": 5,
+    "gumroad_id": "ty0x0rKm1b2ckcH3dbP9Fg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/osafw",
+    "landing": "/shop/abstract-midcentury-dog-set",
+    "created_at": "2026-08-08T15:42:39.548Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-weekly-meal-planner-grocery-list",
+    "title": "Printable Weekly Meal Planner & Grocery List Tracker",
+    "price": 4,
+    "gumroad_id": "tFGv-zUwEVaqXB45GlJFsg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/krineo",
+    "landing": "/shop/printable-weekly-meal-planner-grocery-list",
+    "created_at": "2026-08-08T15:43:01.874Z"
   }
 ]
