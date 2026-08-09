@@ -978,5 +978,35 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/krineo",
     "landing": "/shop/printable-weekly-meal-planner-grocery-list",
     "created_at": "2026-08-08T15:43:01.874Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-student-study-revision-planner",
+    "title": "Printable Student Study & Revision Planner",
+    "price": 4,
+    "gumroad_id": "z71zWba6FMJHsuGRnDBjKA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/xrqlb",
+    "landing": "/shop/printable-student-study-revision-planner",
+    "created_at": "2026-08-09T15:39:57.778Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "pastel-midcentury-dog-art",
+    "title": "Abstract Pastel Mid-Century Dog Printable Wall Art Set - Mustard, Blush & Teal",
+    "price": 5,
+    "gumroad_id": "i4lkWPLzaTYjWZe23yij1w==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/lplrye",
+    "landing": "/shop/pastel-midcentury-dog-art",
+    "created_at": "2026-08-09T15:41:15.486Z"
+  },
+  {
+    "type": "bundle",
+    "slug": "cozy-home-bundle-2026-08-09",
+    "title": "The Cozy Home Printable Bundle — 2 Products (Wall Art & Planners)",
+    "price": 12,
+    "gumroad_id": "oteBRHkFirDUmOxTsycdtg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/dqfyfe",
+    "landing": "/shop/cozy-home-bundle-2026-08-09",
+    "created_at": "2026-08-09T15:41:28.142Z"
   }
 ]
