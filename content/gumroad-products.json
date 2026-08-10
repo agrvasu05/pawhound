@@ -1008,5 +1008,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/dqfyfe",
     "landing": "/shop/cozy-home-bundle-2026-08-09",
     "created_at": "2026-08-09T15:41:28.142Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-cottage-wall-art",
+    "title": "Cozy Cottage Home Scenes Printable Wall Art Set - Warm Watercolor Hygge Decor with Dog",
+    "price": 5,
+    "gumroad_id": "WYiXrhN8TZG2pFuEX0spvg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/wbkgnj",
+    "landing": "/shop/cozy-cottage-wall-art",
+    "created_at": "2026-08-10T16:08:46.822Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker-planner",
+    "title": "Printable Savings & Money Goals Tracker Planner",
+    "price": 4,
+    "gumroad_id": "nau02iK6JcB21XDaoZaU_Q==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/awfxdd",
+    "landing": "/shop/printable-savings-money-goals-tracker-planner",
+    "created_at": "2026-08-10T16:09:10.186Z"
   }
 ]
