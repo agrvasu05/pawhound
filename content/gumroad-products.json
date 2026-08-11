@@ -1028,5 +1028,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/awfxdd",
     "landing": "/shop/printable-savings-money-goals-tracker-planner",
     "created_at": "2026-08-10T16:09:10.186Z"
+  },
+  {
+    "type": "planner",
+    "slug": "wedding-planning-checklist-planner",
+    "title": "Printable Wedding Planning Checklist & Planner",
+    "price": 4,
+    "gumroad_id": "oBrVLTBzHAolizGyPc6NVg==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/diauv",
+    "landing": "/shop/wedding-planning-checklist-planner",
+    "created_at": "2026-08-11T16:08:29.988Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "vintage-botanical-dog-set",
+    "title": "Vintage Botanical Illustration Printable Wall Art Set with Gentle Dog - Soft Antique Tones",
+    "price": 5,
+    "gumroad_id": "ve4-8VESWKQb-jn5kBVGTA==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/wvxbna",
+    "landing": "/shop/vintage-botanical-dog-set",
+    "created_at": "2026-08-11T16:10:56.488Z"
   }
 ]
