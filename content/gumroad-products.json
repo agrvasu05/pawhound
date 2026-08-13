@@ -1068,5 +1068,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/clhnuv",
     "landing": "/shop/cozy-home-cleaning-schedule-planner",
     "created_at": "2026-08-12T16:08:47.974Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-savings-money-goals-tracker-planner",
+    "title": "Printable Savings & Money Goals Tracker Planner",
+    "price": 4,
+    "gumroad_id": "wwMk6ObUlZ571HnNDDOFTQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/shcuba",
+    "landing": "/shop/printable-savings-money-goals-tracker-planner",
+    "created_at": "2026-08-13T16:30:20.801Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "boho-minimalist-dog-art",
+    "title": "Boho Minimalist Dog Line Art Printable Wall Art Set - Neutral Beige, Cream & Terracotta",
+    "price": 5,
+    "gumroad_id": "sqembIGYiFaz4QQXIsbnow==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/waikip",
+    "landing": "/shop/boho-minimalist-dog-art",
+    "created_at": "2026-08-13T16:31:40.162Z"
   }
 ]
