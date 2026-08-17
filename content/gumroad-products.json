@@ -1148,5 +1148,25 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/ynsdg",
     "landing": "/shop/cozy-home-bundle-2026-08-16",
     "created_at": "2026-08-16T15:32:29.285Z"
+  },
+  {
+    "type": "planner",
+    "slug": "printable-student-study-revision-planner",
+    "title": "Printable Student Study & Revision Planner",
+    "price": 4,
+    "gumroad_id": "aLr75uknjcKothcyX6OwoQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/wxqsp",
+    "landing": "/shop/printable-student-study-revision-planner",
+    "created_at": "2026-08-17T15:34:29.621Z"
+  },
+  {
+    "type": "wall-art",
+    "slug": "cozy-sleeping-dogs-set",
+    "title": "Cozy Sleeping Dogs Printable Wall Art Set, Soft Watercolor Pastel Prints",
+    "price": 5,
+    "gumroad_id": "B98ting54hpkpx6ib-j4uw==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/yvtcud",
+    "landing": "/shop/cozy-sleeping-dogs-set",
+    "created_at": "2026-08-17T15:36:15.128Z"
   }
 ]
