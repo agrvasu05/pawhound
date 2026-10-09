@@ -34,17 +34,19 @@ const KEEP_URLS = new Set([
 ]);
 
 const tracker = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content', 'gumroad-products.json'), 'utf-8'));
-const keepUrls = new Set([...KEEP_URLS, ...canonicalProducts().map((p) => p.gumroad_url)]);
-// Also keep whatever a *non-canonical* landing page currently points at? No —
-// those pages 301 to the canonical page now, so their Gumroad copy is orphaned.
+// Compare by permalink only: the store was renamed (wesucceed → valuefinds), so
+// the tracker holds old-host URLs for the June products while the pins use the
+// new host. Same product either way.
+const permalink = (u) => (String(u || '').match(/\/l\/([^/?#]+)/) || [])[1] || '';
+const keepLinks = new Set([...KEEP_URLS, ...canonicalProducts().map((p) => p.gumroad_url)].map(permalink).filter(Boolean));
 const seen = new Set();
 const toUnpublish = tracker.filter((p) => {
   if (seen.has(p.gumroad_id)) return false;
   seen.add(p.gumroad_id);
-  return !keepUrls.has(p.gumroad_url) && !KEEP_URLS.has(p.gumroad_url.replace(/\/$/, ''));
+  return !keepLinks.has(permalink(p.gumroad_url));
 });
 
-console.log(`${tracker.length} Gumroad products in tracker; keeping ${keepUrls.size} (canonical + legacy-pinned); unpublishing ${toUnpublish.length}.`);
+console.log(`${tracker.length} Gumroad products in tracker; keeping ${keepLinks.size} (canonical + legacy-pinned); unpublishing ${toUnpublish.length}.`);
 for (const p of toUnpublish) console.log(`  ${APPLY ? 'unpublish' : '(dry) would unpublish'} ${p.gumroad_id}  ${p.type.padEnd(9)} $${p.price}  ${p.title.slice(0, 70)}`);
 if (!APPLY) { console.log('\nRe-run with --apply to unpublish.'); process.exit(0); }
 

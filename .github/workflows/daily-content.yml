@@ -43,7 +43,8 @@ jobs:
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
+          GCP_PROJECT_ID: single-bonus-450611-h1   # Vertex billing project (WIF SA has aiplatform.user here)
+          GEMINI_MODEL: gemini-2.5-flash
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
@@ -54,7 +55,8 @@ jobs:
         run: node scripts/2d-generate-trend-articles.js --count=3
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
+          GCP_PROJECT_ID: single-bonus-450611-h1   # Vertex billing project (WIF SA has aiplatform.user here)
+          GEMINI_MODEL: gemini-2.5-flash
 
       - name: Fetch images for new articles
         run: node scripts/3-fetch-images.js

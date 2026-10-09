@@ -24,7 +24,7 @@ const BRAND = 'Value Finds Daily';
 //     Uses the $300 Google Cloud credits; required for org-managed projects that
 //     block plain Gemini keys. Highest rate limits.
 //   • Developer API — when only GEMINI_API_KEY is set (simple key).
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.1-pro-preview';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
 const GCP_SA_FILE = process.env.GCP_SA_FILE || '';
 const GCP_SA_KEY = process.env.GCP_SA_KEY || '';
@@ -101,8 +101,38 @@ async function geminiJSON({ system, user, schema, temperature }) {
   return JSON.parse(text);
 }
 
-// ── Image generation (cheap; swap IMAGE_PROVIDER to scale) ───────────────────
+// ── Image generation ─────────────────────────────────────────────────────────
+// Provider order: IMAGE_PROVIDER env if set; else Gemini image model on Vertex
+// when Vertex is configured (the OpenAI key died in 2026-09, and Imagen is not
+// enabled on the billing project — gemini-2.5-flash-image is); else OpenAI.
+const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
+const IMAGE_PROVIDER = process.env.IMAGE_PROVIDER || (USE_VERTEX ? 'gemini' : 'openai');
+
+async function geminiImage(prompt, { aspectRatio = '3:4' } = {}) {
+  const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${await vertexAuth()}` };
+  // Image models are regional; us-central1 is the broadest.
+  const loc = process.env.GEMINI_IMAGE_LOCATION || 'us-central1';
+  const url = `https://${loc}-aiplatform.googleapis.com/v1/projects/${_vertexProject}/locations/${loc}/publishers/google/models/${IMAGE_MODEL}:generateContent`;
+  const body = {
+    contents: [{ role: 'user', parts: [{ text: prompt }] }],
+    generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio } },
+  };
+  const res = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+  const data = await res.json();
+  if (!res.ok) throw new Error(`Gemini image ${res.status}: ${JSON.stringify(data).slice(0, 300)}`);
+  const parts = ((data.candidates || [])[0] || {}).content?.parts || [];
+  const img = parts.find((p) => p.inlineData && p.inlineData.data);
+  if (!img) throw new Error(`Gemini image: no image returned (${JSON.stringify(data).slice(0, 200)})`);
+  return Buffer.from(img.inlineData.data, 'base64');
+}
+
 async function generateImage(prompt, { size = '1024x1536', quality = 'low', background } = {}) {
+  if (IMAGE_PROVIDER === 'gemini') {
+    const aspectRatio = size === '1024x1024' ? '1:1' : size === '1536x1024' ? '4:3' : '3:4';
+    const p = background === 'transparent' ? `${prompt}. Isolated on a plain pure-white background.` : prompt;
+    return geminiImage(p, { aspectRatio });
+  }
+  if (!openai) throw new Error('No image provider configured (set OPENAI_API_KEY or GCP_PROJECT_ID)');
   const r = await openai.images.generate({
     model: 'gpt-image-1', prompt, size, quality, n: 1,
     ...(background ? { background } : {}), // 'transparent' for clipart PNGs

@@ -20,6 +20,18 @@ Expected output: 6–10 fresh pins/day, ~50–70/week, 3 articles/day, ~2 produc
 2. **Post-pins and the weekly report were disabled manually on 23 Jul.** Nothing was posted after that day. The posting workflow depended on an external cron-job.org trigger; it now runs on GitHub's own schedule.
 3. **Token rotation needs `PINTEREST_PAT`** (a GitHub token with `repo` scope) to write the rotated refresh token back into the repo secret. If that PAT expires, the rotated token is lost and Pinterest auth dies on the next run. Check it whenever auth fails.
 
+## LLM + image generation (fixed 10 Oct 2026)
+
+- The original Vertex project (`project-394cd8b9…`, $300 credits) lost billing in
+  September and the OpenAI key was revoked, so every generator failed silently
+  behind the Pinterest error. Text and images now run on Vertex in
+  `single-bonus-450611-h1` (your own billing account): `gemini-2.5-flash` for
+  copy, `gemini-2.5-flash-image` for wall-art prints (~$0.04/image). The CI
+  service account `vertex-gemini@project-394cd8b9…` has `roles/aiplatform.user`
+  there; WIF token exchange still happens in the old project (no billing needed).
+- Expected spend: ~3 articles + 2 products/day ≈ $0.20–0.40/day. Watch the
+  billing page the first week.
+
 ## Re-authenticating Pinterest (whenever `Pinterest auth failed` shows up)
 
 1. Locally, create `.env.local` with `PINTEREST_CLIENT_ID` and `PINTEREST_CLIENT_SECRET` (from https://developers.pinterest.com/apps/, app id 1574960).
