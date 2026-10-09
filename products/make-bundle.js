@@ -92,13 +92,23 @@ const BUNDLES = {
   console.log(`Bundle "${B.title}": ${sets.length} sets, ${printCount} prints, $${B.price} → ${zipFile}`);
   if (DRY) { console.log('(dry run) stopping before Gumroad/landing page/queue.'); return; }
 
-  const product = lib.gumroadCreateAndPublish(listing);
-  console.log(`  ✓ Gumroad: ${product.url}`);
-  lib.persistShopProduct({ slug: B.slug, type: 'bundle', listing, gumroadUrl: product.url, srcImages: covers });
+  // Idempotent: if a previous run already created the Gumroad product and the
+  // landing page (content/shop/<slug>.json), reuse it instead of minting a copy.
+  const recPath = path.join(lib.SHOP_DIR, `${B.slug}.json`);
+  let product;
+  if (fs.existsSync(recPath)) {
+    const rec = JSON.parse(fs.readFileSync(recPath, 'utf-8'));
+    product = { id: rec.gumroad_id || null, url: rec.gumroad_url };
+    console.log(`  ↻ landing page + Gumroad product already exist (${product.url}) — reusing`);
+  } else {
+    product = lib.gumroadCreateAndPublish(listing);
+    console.log(`  ✓ Gumroad: ${product.url}`);
+    lib.persistShopProduct({ slug: B.slug, type: 'bundle', listing, gumroadUrl: product.url, srcImages: covers });
+  }
   const n = await lib.enqueueProductVariants({ slug: B.slug, type: 'bundle', title: B.title, price: B.price, board: { name: B.boards[0], description: lib.kwBoardDesc(B.boards[0]) }, boards: B.boards, keyword: B.keyword });
   const trackerPath = path.join(process.cwd(), 'content', 'gumroad-products.json');
   const tracker = JSON.parse(fs.readFileSync(trackerPath, 'utf-8'));
-  tracker.push({ type: 'bundle', slug: B.slug, title: B.title, price: B.price, gumroad_id: product.id, gumroad_url: product.url, landing: `/shop/${B.slug}`, created_at: new Date().toISOString() });
+  if (!tracker.some((t) => t.slug === B.slug)) tracker.push({ type: 'bundle', slug: B.slug, title: B.title, price: B.price, gumroad_id: product.id, gumroad_url: product.url, landing: `/shop/${B.slug}`, created_at: new Date().toISOString() });
   fs.writeFileSync(trackerPath, JSON.stringify(tracker, null, 2));
   console.log(`  ✓ landing /shop/${B.slug} + ${n} pin variants queued`);
 })().catch((e) => { console.error(e.stdout?.toString() || e.message); process.exit(1); });
