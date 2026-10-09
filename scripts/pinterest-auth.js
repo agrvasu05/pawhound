@@ -79,6 +79,9 @@ function pinterestPost(endpoint, body) {
   console.log('\nOpen this URL in your browser (WeValue account):\n');
   console.log('  ' + authUrl);
   console.log('\nApprove the permissions — you will be redirected to localhost automatically.\n');
+  // macOS: open the consent page in the default browser (log into the
+  // ValueFindsDaily Pinterest account there first).
+  if (process.platform === 'darwin') { try { require('child_process').spawn('open', [authUrl], { stdio: 'ignore', detached: true }).unref(); } catch { /* print only */ } }
 
   const code = await new Promise((resolve, reject) => {
     const server = http.createServer((req, res) => {
