@@ -1,29 +1,33 @@
 name: Post pins (US peak windows)
 
 # Posting is DECOUPLED from generation. Content + products are generated earlier
-# in the day (see daily-content.yml / daily-products.yml) and are already live on
-# the site by now. This workflow ONLY posts the already-queued pins.
+# in the day (daily-content.yml / daily-products.yml) and are live on the site
+# by now. This workflow ONLY posts: it renders each pin at post time (nothing is
+# committed to public/pins any more) and uploads it as base64.
 #
-# Two triggers, two peak windows (guard enforces both):
-#   • EVENING (daily): cron-job.org fires workflow_dispatch at 01:00 UTC
-#     = 9 PM ET. External scheduler because GitHub's `schedule:` events get
-#     delayed by hours near midnight UTC, and this window needs precision.
-#   • MIDDAY (Tue-Thu): GitHub's own schedule below, targeting the 10 AM-1 PM ET
-#     peak. Precision doesn't matter here — the run lands anywhere in a 3-hour
-#     window, and if GitHub delays it past 1 PM ET the guard just skips (the
-#     evening run still posts that day). No external account needed.
-#
-# Per-run caps keep the two runs within the 3-5 fresh pins/day playbook target:
-# 2 content + up to 1 product per run, and postQueue's DAILY product cap means
-# the second run never double-posts products.
+# Cadence (Oct 2026 reset): two runs a day, every day, inside Pinterest's US
+# peak windows — midday (10 AM–1 PM ET) and evening (6–11 PM ET). Each run posts
+# up to 3 content pins + 2 product pins, so a full day is 6–10 fresh pins: the
+# audit target, and still under the 10/day spam line. GitHub's cron can lag by
+# up to ~an hour near the top of the hour, so each window has a primary and a
+# backup cron and the guard below just skips anything that lands outside peak.
+# (The old cron-job.org trigger is no longer required; workflow_dispatch stays
+# for manual runs.)
 
 on:
-  workflow_dispatch:   # fired by cron-job.org at 01:00 UTC (and manual button)
+  workflow_dispatch:
   schedule:
-    - cron: '5 15 * * 2,3,4'   # Tue-Thu ~15:05 UTC = 11:05 AM EDT / 10:05 AM EST
+    - cron: '20 15 * * *'   # 15:20 UTC = 11:20 AM EDT / 10:20 AM EST — midday window
+    - cron: '35 16 * * *'   # backup midday (12:35 PM EDT / 11:35 AM EST)
+    - cron: '20 0 * * *'    # 00:20 UTC = 8:20 PM EDT / 7:20 PM EST — evening window
+    - cron: '45 1 * * *'    # backup evening (9:45 PM EDT / 8:45 PM EST)
 
 permissions:
   contents: write
+
+concurrency:
+  group: post-pins
+  cancel-in-progress: false
 
 jobs:
   post:
@@ -33,22 +37,29 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Safety guard: only post during Pinterest's US peak windows — evening
-      # (6-11 PM ET) and midday (10 AM-1 PM ET, per content/pinterest-playbook-2026.md
-      # rule 6). To activate the midday slot, add a SECOND cron-job.org trigger at
-      # ~15:00 UTC; pins then spread across two slots instead of one evening dump.
-      # If something fires off-schedule, we SKIP rather than post at a bad hour.
-      - name: Guard — only post in peak windows (10 AM-1 PM / 6-11 PM ET)
+      # Safety guard: only post during peak windows. Each window also posts at
+      # most once per day (a stamp file in content/.post-stamps), so the backup
+      # cron never double-posts when the primary already ran.
+      - name: Guard — peak window + once per window per day
         id: guard
         run: |
           H=$(TZ=America/New_York date +%H)
-          echo "Eastern hour: $H"
-          if { [ "$H" -ge 18 ] && [ "$H" -le 23 ]; } || { [ "$H" -ge 10 ] && [ "$H" -le 12 ]; }; then
-            echo "ok=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "ok=false" >> "$GITHUB_OUTPUT"
-            echo "Outside peak windows — skipping this run."
+          D=$(TZ=America/New_York date +%F)
+          WINDOW=""
+          if [ "$H" -ge 10 ] && [ "$H" -le 12 ]; then WINDOW=midday; fi
+          if [ "$H" -ge 18 ] && [ "$H" -le 23 ]; then WINDOW=evening; fi
+          echo "Eastern hour: $H  window: ${WINDOW:-none}"
+          if [ -z "$WINDOW" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Outside peak windows — skipping."; exit 0
           fi
+          STAMP="content/.post-stamps/$D-${WINDOW:-manual}"
+          if [ -f "$STAMP" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Window already posted today ($STAMP) — skipping."; exit 0
+          fi
+          mkdir -p content/.post-stamps && touch "$STAMP"
+          # keep only the last 14 days of stamps
+          ls -1 content/.post-stamps | sort | head -n -40 | sed 's#^#content/.post-stamps/#' | xargs -r rm -f
+          echo "ok=true" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-node@v4
         if: steps.guard.outputs.ok == 'true'
@@ -65,24 +76,24 @@ jobs:
         if: steps.guard.outputs.ok == 'true'
         run: npm install
 
-      # Pull any commits the daytime generation runs pushed, so we post the
-      # freshest queue/content.
       - name: Sync latest content
         if: steps.guard.outputs.ok == 'true'
         run: git pull --rebase --autostash || true
 
-      # 1) Post article/content pins (up to 10/run; skips dog articles internally)
+      # 1) Content (article) pins — rendered at post time, up to 3/run, ≤1 dog guide
       - name: Post content pins
         id: pinterest
         if: steps.guard.outputs.ok == 'true'
-        run: node scripts/5-post-pins.js
+        run: node scripts/5-post-pins.js --max=3
         env:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
-      # Rotate the Pinterest refresh token if the poster returned a new one
+      # Rotate the Pinterest refresh token if the poster returned a new one.
+      # PINTEREST_PAT must be a GitHub token with repo scope (see OPERATIONS.md);
+      # if it has expired the new refresh token is lost and auth dies next run.
       - name: Rotate Pinterest refresh token
         if: steps.guard.outputs.ok == 'true' && steps.pinterest.outputs.new_refresh_token != ''
         env:
@@ -90,35 +101,32 @@ jobs:
         run: |
           gh secret set PINTEREST_REFRESH_TOKEN --body "${{ steps.pinterest.outputs.new_refresh_token }}" --repo ${{ github.repository }}
 
-      # 2) Drip-post product (shop landing page) pin variants (1/run while the
-      #    account is young; 2 content + 1 product = ~3/day, ~21/week)
+      # 2) Product (shop landing page) pin variants — 2 per run, 7-day spacing per product
       - name: Post product pins
         if: steps.guard.outputs.ok == 'true'
-        run: node products/post-queue.js --max=1
+        run: node products/post-queue.js --max=2
         env:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
-      # 3) Niche lockdown (playbook rule 5): secret up to 4 off-niche boards per
-      #    day — ~90 legacy dog/beauty/fashion boards clear in ~3 weeks, staggered
-      #    so the cleanup never looks like mass edits. No-op once they're gone.
-      - name: Board hygiene — secret off-niche boards
+      # 3) Board hygiene: delete EMPTY off-niche boards only (never ones with pins)
+      - name: Board hygiene
         if: steps.guard.outputs.ok == 'true'
+        continue-on-error: true
         run: node products/board-hygiene.js
         env:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
 
-      # Save updated trackers (posted-pins, boards, pin-queue)
       - name: Commit trackers
-        if: steps.guard.outputs.ok == 'true'
+        if: always() && steps.guard.outputs.ok == 'true'
         run: |
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
-          git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json
+          git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json content/.post-stamps
           git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify]"
           git pull --rebase --autostash || true
           git push

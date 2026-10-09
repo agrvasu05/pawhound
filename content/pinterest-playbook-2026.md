@@ -4,6 +4,11 @@ Researched July 2026 (~16 web searches: Pinterest official docs, Tailwind's 2025
 benchmark study, current practitioner guides). This is the strategy doc the automation
 encodes — see "WHERE ENCODED" notes per rule.
 
+> **Oct 2026 update:** the operational truth now lives in `content/OPERATIONS.md`
+> (why the pipeline stopped, how to re-auth, cadence, catalog rules). Rule 4 is
+> now 6–10 fresh pins/day across two peak windows; rule 1's text sizes are
+> enforced by `scripts/pin-renderer.js` (≥ 56px headlines, ≤ 3 lines).
+
 ## 1. Pinterest SEO — how pins rank now
 
 Pinterest scores pins in stages: (1) domain quality (click/save history of the linked

@@ -90,6 +90,9 @@ async function fetchImagesForBreed(breed) {
   if (photos.length === 0) return 'no-image';
 
   fs.mkdirSync(dir, { recursive: true });
+  // Only 1.jpg is ever rendered (article pages, cards, pins). The 2.jpg/3.jpg
+  // copies were 330 MB of dead weight in the repo by Oct 2026, so save one.
+  photos = photos.slice(0, 1);
   for (let i = 0; i < photos.length; i++) {
     const imgRes = await fetch(photos[i].src.large);
     if (!imgRes.ok) continue;

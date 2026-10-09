@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
+import { getAllShopProducts } from "@/lib/shop";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
@@ -10,16 +11,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // alternates, so they are intentionally excluded from the sitemap.
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/${article.topic_slug}`,
-    lastModified: new Date(),
+    lastModified: article.updated_at ? new Date(article.updated_at) : new Date(),
     priority: 0.8,
+  }));
+
+  // Canonical products only — duplicate listings 301 to these.
+  const productUrls = getAllShopProducts().map((p) => ({
+    url: `${baseUrl}/shop/${p.slug}`,
+    lastModified: new Date(p.created_at),
+    priority: 0.7,
   }));
 
   return [
     { url: baseUrl, lastModified: new Date(), priority: 1.0 },
+    { url: `${baseUrl}/shop`, lastModified: new Date(), priority: 0.9 },
+    { url: `${baseUrl}/freebie`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), priority: 0.5 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), priority: 0.5 },
     { url: `${baseUrl}/privacy`, lastModified: new Date(), priority: 0.3 },
     { url: `${baseUrl}/terms`, lastModified: new Date(), priority: 0.3 },
+    ...productUrls,
     ...articleUrls,
   ];
 }

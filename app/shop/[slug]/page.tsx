@@ -1,9 +1,17 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getAllShopProducts, getShopProduct, shopAsset } from "@/lib/shop";
+import {
+  canonicalSlug,
+  getAllShopProducts,
+  getShopProduct,
+  shopAsset,
+} from "@/lib/shop";
 import AdSlot from "@/components/AdSlot";
+import PinItButton from "@/components/PinItButton";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
 
 export async function generateStaticParams() {
   return getAllShopProducts().map((p) => ({ slug: p.slug }));
@@ -22,7 +30,7 @@ export async function generateMetadata({
   return {
     title: p.title,
     description: desc,
-    alternates: { canonical: `/shop/${slug}` },
+    alternates: { canonical: `/shop/${canonicalSlug(slug)}` },
     // Open Graph "product" tags power Pinterest Product Rich Pins.
     openGraph: { title: p.title, description: desc, images: [img], type: "website" },
     other: {
@@ -41,6 +49,11 @@ export default async function ShopProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  // Duplicate listings 301 to the product page we kept, so every old pin
+  // still lands on a live page and the canonical page gets the traffic.
+  const canon = canonicalSlug(slug);
+  if (canon !== slug && getShopProduct(canon)) permanentRedirect(`/shop/${canon}`);
+
   const p = getShopProduct(slug);
   if (!p) notFound();
   // The $0 freebie record exists only for the pin pipeline — its real landing
@@ -62,6 +75,11 @@ export default async function ShopProductPage({
       url: p.gumroad_url,
     },
   };
+
+  const more = getAllShopProducts()
+    .filter((x) => x.slug !== slug)
+    .sort((a, b) => (a.type === b.type ? 0 : a.type === p.type ? -1 : 1))
+    .slice(0, 4);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
@@ -85,6 +103,7 @@ export default async function ShopProductPage({
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, 500px"
+              priority
             />
           </div>
           {p.images.length > 1 && (
@@ -105,6 +124,13 @@ export default async function ShopProductPage({
               ))}
             </div>
           )}
+          <div className="mt-3">
+            <PinItButton
+              url={`${SITE_URL}/shop/${slug}`}
+              media={`${SITE_URL}${shopAsset(slug, p.cover)}`}
+              description={`${p.title} — instant printable download from Value Finds Daily`}
+            />
+          </div>
         </div>
 
         <div>
@@ -153,6 +179,40 @@ export default async function ShopProductPage({
           />
         </div>
       </div>
+
+      {more.length > 0 && (
+        <section className="mt-14 border-t border-stone-100 pt-8">
+          <h2
+            className="mb-6 text-2xl font-bold"
+            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+          >
+            More printables you&apos;ll love
+          </h2>
+          <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+            {more.map((x) => (
+              <Link
+                key={x.slug}
+                href={`/shop/${x.slug}`}
+                className="group block overflow-hidden rounded-xl ring-1 ring-stone-200 transition hover:shadow-lg"
+              >
+                <div className="relative aspect-[4/5] bg-stone-100">
+                  <Image
+                    src={shopAsset(x.slug, x.cover)}
+                    alt={x.title}
+                    fill
+                    className="object-cover transition group-hover:scale-105"
+                    sizes="(max-width: 640px) 50vw, 220px"
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="line-clamp-2 text-sm font-medium text-stone-800">{x.title}</p>
+                  <p className="mt-1 text-sm font-bold text-emerald-700">${x.price}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <AdSlot className="my-10" />
     </main>

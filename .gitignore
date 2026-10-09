@@ -45,3 +45,5 @@ products/output/
 
 # Google Cloud service-account key (Vertex AI) — NEVER commit
 gcp-sa.json
+tmp-pins/
+public/pins/

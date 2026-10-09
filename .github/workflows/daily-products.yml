@@ -45,6 +45,7 @@ jobs:
 
       # 0) Refresh trending keywords/topics (content/trend-briefs.json)
       - name: Refresh Pinterest trend briefs
+        continue-on-error: true   # auth hiccups must not block product generation
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -62,6 +63,16 @@ jobs:
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           HOME: /home/runner
+
+      # 1a) Keep every canonical product supplied with fresh pin variants (3 per
+      #     product whenever it runs dry) — this is what makes "post a lot" possible
+      #     without minting duplicate products.
+      - name: Requeue fresh variants for the catalog
+        continue-on-error: true
+        run: node products/requeue-catalog.js --per=3 --min-pending=1
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
 
       # 1b) Keep "free printable" funnel pins flowing (playbook rule 9). Self-
       # limiting: only enqueues when no freebie variants are pending; postQueue's

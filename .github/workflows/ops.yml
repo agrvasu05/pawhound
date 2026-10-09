@@ -1,0 +1,99 @@
+name: Ops (manual maintenance tasks)
+
+# One-off and occasional maintenance that needs the repo secrets (Pinterest,
+# Gumroad, Vertex). Run from the Actions tab → "Ops" → pick a task.
+#
+#   requeue-catalog       queue 3 fresh pin variants for every canonical product
+#   make-bundle           build + publish a themed bundle (input: bundle kind)
+#   gumroad-cleanup       unpublish duplicate Gumroad listings (dry run unless apply=true)
+#   consolidate-boards    merge one-pin boards into keyword boards (dry run unless apply=true)
+#   analytics-report      pull Pinterest analytics + grade templates
+#   post-now              post one batch of pins right now (ignores the peak-window guard)
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Task to run
+        required: true
+        type: choice
+        options: [requeue-catalog, make-bundle, gumroad-cleanup, consolidate-boards, analytics-report, post-now]
+      apply:
+        description: Apply changes (gumroad-cleanup / consolidate-boards; otherwise dry run)
+        required: false
+        default: false
+        type: boolean
+      arg:
+        description: Extra argument (make-bundle kind, e.g. dog-lovers | cozy-home | everything; or --only=<slug> for requeue)
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: post-pins
+  cancel-in-progress: false
+
+jobs:
+  ops:
+    runs-on: ubuntu-latest
+    env:
+      PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+      PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+      PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+      GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GCP_PROJECT_ID: project-394cd8b9-b7dd-48a6-930
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+      HOME: /home/runner
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-go@v5
+        if: inputs.task == 'make-bundle' || inputs.task == 'gumroad-cleanup'
+        with:
+          go-version: '1.22'
+      - name: Install Gumroad CLI
+        if: inputs.task == 'make-bundle' || inputs.task == 'gumroad-cleanup'
+        run: go install github.com/antiwork/gumroad-cli/cmd/gumroad@latest
+      - name: Authenticate to Google Cloud
+        if: inputs.task == 'requeue-catalog' || inputs.task == 'make-bundle'
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: project-394cd8b9-b7dd-48a6-930
+          workload_identity_provider: projects/1010009979038/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: vertex-gemini@project-394cd8b9-b7dd-48a6-930.iam.gserviceaccount.com
+      - name: Install Puppeteer system dependencies
+        if: inputs.task == 'post-now'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+      - run: npm install
+
+      - name: Run task
+        run: |
+          case "${{ inputs.task }}" in
+            requeue-catalog)    node products/requeue-catalog.js ${{ inputs.arg }} ;;
+            make-bundle)        node products/make-bundle.js "${{ inputs.arg || 'dog-lovers' }}" ;;
+            gumroad-cleanup)    node products/gumroad-cleanup.js ${{ inputs.apply && '--apply' || '' }} ;;
+            consolidate-boards) node products/consolidate-boards.js ${{ inputs.apply && '--apply' || '' }} ;;
+            analytics-report)   node products/analytics-report.js && node scripts/6-template-feedback.js ;;
+            post-now)           node scripts/5-post-pins.js --max=3 && node products/post-queue.js --max=2 ;;
+          esac
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/ public/shop-assets 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Ops: ${{ inputs.task }}"
+          git pull --rebase --autostash || true
+          git push

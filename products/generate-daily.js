@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const lib = require('./lib');
+const { findExisting } = require('./catalog');
 
 // Product formats. Rotation favors the FORMATS that actually convert on Pinterest
 // (see products/niche-performance.js): planner + wall-art drive outbound clicks;
@@ -107,6 +108,21 @@ async function makeBundle(created, tracker) {
       console.log(`  generated: "${p.listing.title}"`);
 
       if (generateOnly) { console.log(`  (generate-only) files in ${p.dir}`); made++; continue; }
+
+      // DEDUPE (Oct 2026): the shop ended up with 117 Gumroad products for ~20
+      // real ones because the same themes were re-made daily. If a canonical
+      // product already covers this title/keyword, do NOT mint another copy —
+      // queue fresh pin variants for the existing product instead (same
+      // Pinterest output, zero duplicate listings, no image-gen spend wasted).
+      const dupe = findExisting({ title: p.listing.title, type: p.type, keyword: p.keyword });
+      if (dupe) {
+        const ex = dupe.product;
+        console.log(`  ↻ matches existing product "${ex.title.slice(0, 60)}" (${(dupe.score * 100).toFixed(0)}%) — reusing /shop/${ex.slug}`);
+        const n = await lib.enqueueProductVariants({ slug: ex.slug, type: ex.type, title: ex.title, price: ex.price, board: p.board, boards: (brief && brief.boards) || null, keyword: p.keyword || '' });
+        console.log(`  ✓ ${n} fresh pin variants queued for the existing product`);
+        made++;
+        continue;
+      }
 
       const product = lib.gumroadCreateAndPublish(p.listing);
       console.log(`  ✓ Gumroad: ${product.url}`);

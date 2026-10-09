@@ -216,22 +216,22 @@ async function renderShopPin(spec, outPath) {
     // Decor-inspiration look: tall scene, small serif caption, subtle price chip.
     // Headline stays (keyword is OCR-indexed) but styled like a magazine caption.
     const sceneZone = sceneUrl
-      ? `<div style="position:relative;width:100%;height:1120px;overflow:hidden;background:#e7dccb;">
+      ? `<div style="position:relative;width:100%;height:1060px;overflow:hidden;background:#e7dccb;">
            <img src="${sceneUrl}" style="${sceneImgStyle}"/>
            ${warmWash}
            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);">
              ${framed(hero, 470, 630, 30, 0)}
            </div>
          </div>`
-      : `<div style="height:1120px;display:flex;align-items:center;justify-content:center;
+      : `<div style="height:1060px;display:flex;align-items:center;justify-content:center;
                     background:linear-gradient(160deg,#f1e9dd 0%,#e7dccb 100%);">${framed(hero, 500, 670, 30)}</div>`;
     const html = `<html>${HEAD}<body style="margin:0;">
      <div style="width:1000px;height:1500px;font-family:var(--serif);position:relative;box-sizing:border-box;background:#f4ede1;overflow:hidden;">
        ${brandChip}
        ${sceneZone}
        <div style="text-align:center;padding:34px 60px 0;">
-         <div style="font-size:46px;font-weight:bold;line-height:1.12;color:#33271c;">${esc(spec.headline)}</div>
-         <div style="margin-top:12px;font-size:24px;color:#8a7257;">${esc(spec.subhead)}
+         <div style="font-size:${spec.headline.length > 18 ? 62 : 72}px;font-weight:bold;line-height:1.08;color:#33271c;">${esc(spec.headline)}</div>
+         <div style="margin-top:12px;font-size:28px;color:#8a7257;">${esc(spec.subhead)}
            <span style="display:inline-block;margin-left:14px;background:${accent};color:#fff;font-size:22px;
                         padding:7px 20px;border-radius:26px;vertical-align:middle;">${spec.price === 0 ? 'FREE Printable' : `Printable · $${spec.price}`}</span>
          </div>
@@ -261,8 +261,8 @@ async function renderShopPin(spec, outPath) {
      ${brandChip}
      ${sceneZone}
      <div style="text-align:center;padding:30px 50px 0;">
-       <div style="font-size:56px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
-       <div style="margin-top:10px;font-size:26px;color:#8a7257;">${esc(spec.subhead)}</div>
+       <div style="font-size:${spec.headline.length > 18 ? 70 : 82}px;font-weight:bold;line-height:1.05;color:#33271c;">${esc(spec.headline)}</div>
+       <div style="margin-top:10px;font-size:30px;color:#8a7257;">${esc(spec.subhead)}</div>
        ${thumbs}
        <div style="margin-top:26px;display:inline-flex;align-items:center;gap:16px;background:${accent};color:#fff;
                    padding:18px 44px;border-radius:50px;">

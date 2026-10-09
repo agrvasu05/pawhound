@@ -3,9 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
-import { shopHref } from "@/lib/affiliate";
+import { shopHref, dogEssentialsFor } from "@/lib/affiliate";
+import { getProductsForArticle, shopAsset } from "@/lib/shop";
 import AdSlot from "@/components/AdSlot";
 import FreebieBanner from "@/components/FreebieBanner";
+import PinItButton from "@/components/PinItButton";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
 
 export async function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.topic_slug }));
@@ -63,6 +67,11 @@ export default async function ArticleHub({
       })
     : null;
   const faqs = article.faqs ?? [];
+  const products = getProductsForArticle(article.niche, 3);
+  const essentials = isDogs ? dogEssentialsFor(article.topic_title) : [];
+  const pinMedia = topPick
+    ? `${SITE_URL}${getBreedImage(topPick.breed)}`
+    : `${SITE_URL}/favicon.ico`;
 
   // Related guides — internal links (SEO crawl + ranking) and more pageviews.
   const relatedAll = getAllArticles().filter(
@@ -130,10 +139,17 @@ export default async function ArticleHub({
         {total} {itemNoun} ranked · counting down to #1
       </p>
 
-      <p className="mb-6 text-sm text-stone-500">
-        By <span className="font-medium text-stone-700">{author}</span>
-        {updatedLabel ? <> · Last updated {updatedLabel}</> : null}
-      </p>
+      <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-3 text-sm text-stone-500">
+        <p>
+          By <span className="font-medium text-stone-700">{author}</span>
+          {updatedLabel ? <> · Last updated {updatedLabel}</> : null}
+        </p>
+        <PinItButton
+          url={`${SITE_URL}/${slug}`}
+          media={pinMedia}
+          description={`${article.topic_title} — ${article.intro.slice(0, 120)}`}
+        />
+      </div>
 
       <p className="text-lg text-stone-700 mb-6 leading-relaxed">
         {article.intro}
@@ -254,6 +270,76 @@ export default async function ArticleHub({
           )}
         </div>
       ))}
+
+      {/* Dog-owner essentials — the guides that click best on Pinterest had no
+          affiliate links at all. Tagged Amazon searches, earning from day one. */}
+      {essentials.length > 0 && (
+        <section className="mb-10 rounded-2xl border border-stone-200 bg-stone-50 p-6">
+          <h2
+            className="mb-1 text-2xl font-bold"
+            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+          >
+            Bringing one of these home? Start here
+          </h2>
+          <p className="mb-4 text-sm text-stone-500">
+            The first-month essentials we recommend to every new owner. Affiliate links — we may earn a small commission at no extra cost to you.
+          </p>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {essentials.map((e) => (
+              <li key={e.query} className="rounded-xl bg-white p-4 ring-1 ring-stone-200">
+                <a
+                  href={shopHref("dogs", e.query)}
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="font-semibold text-stone-900 hover:text-emerald-700"
+                >
+                  {e.label} →
+                </a>
+                <p className="mt-1 text-sm text-stone-500">{e.why}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Printables that fit this guide — the guides and the shop used to be
+          two separate sites sharing a header. */}
+      {products.length > 0 && (
+        <section className="mb-10">
+          <h2
+            className="mb-1 text-2xl font-bold"
+            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+          >
+            {isDogs ? "Printable art for dog lovers" : "Printables for a cozier home"}
+          </h2>
+          <p className="mb-4 text-sm text-stone-500">
+            Instant downloads from our shop — print at home or at any print shop.
+          </p>
+          <div className="grid grid-cols-3 gap-4">
+            {products.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/shop/${p.slug}`}
+                className="group block overflow-hidden rounded-xl ring-1 ring-stone-200 transition hover:shadow-lg"
+              >
+                <div className="relative aspect-[4/5] bg-stone-100">
+                  <Image
+                    src={shopAsset(p.slug, p.cover)}
+                    alt={p.title}
+                    fill
+                    className="object-cover transition group-hover:scale-105"
+                    sizes="(max-width: 640px) 33vw, 220px"
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="line-clamp-2 text-sm font-medium text-stone-800">{p.title}</p>
+                  <p className="mt-1 text-sm font-bold text-emerald-700">${p.price}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Conclusion */}
       <section className="mt-2 rounded-2xl bg-emerald-50/60 border border-emerald-100 p-6">
