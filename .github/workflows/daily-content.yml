@@ -77,5 +77,5 @@ jobs:
           # content + the new products together. Halves build-minute usage so
           # Netlify's free tier doesn't run out mid-month and freeze the site.
           git diff --cached --quiet || git commit -m "Daily content [skip netlify]"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push

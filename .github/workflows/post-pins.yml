@@ -78,7 +78,7 @@ jobs:
 
       - name: Sync latest content
         if: steps.guard.outputs.ok == 'true'
-        run: git pull --rebase --autostash || true
+        run: git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
 
       # 1) Content (article) pins — rendered at post time, up to 3/run, ≤1 dog guide
       - name: Post content pins
@@ -128,5 +128,5 @@ jobs:
           git config user.email "bot@valuefindsdaily.com"
           git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json content/.post-stamps
           git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify]"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push

@@ -108,6 +108,24 @@ async function geminiJSON({ system, user, schema, temperature }) {
 const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
 const IMAGE_PROVIDER = process.env.IMAGE_PROVIDER || (USE_VERTEX ? 'gemini' : 'openai');
 
+// Retry transient Vertex errors (429 resource exhausted on a fresh project, 5xx)
+// with backoff before giving up. Image calls are the usual victims.
+async function withRetry(fn, { tries = 4, baseMs = 8000, label = 'call' } = {}) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try { return await fn(); }
+    catch (e) {
+      last = e;
+      const m = String(e.message || '');
+      if (!/\b(429|500|502|503|504)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|fetch failed/i.test(m) || i === tries - 1) throw e;
+      const wait = baseMs * (i + 1);
+      console.warn(`  ${label} transient error (${m.slice(0, 80)}) — retry ${i + 1}/${tries - 1} in ${wait / 1000}s`);
+      await new Promise((r) => setTimeout(r, wait));
+    }
+  }
+  throw last;
+}
+
 async function geminiImage(prompt, { aspectRatio = '3:4' } = {}) {
   const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${await vertexAuth()}` };
   // Image models are regional; us-central1 is the broadest.
@@ -130,7 +148,7 @@ async function generateImage(prompt, { size = '1024x1536', quality = 'low', back
   if (IMAGE_PROVIDER === 'gemini') {
     const aspectRatio = size === '1024x1024' ? '1:1' : size === '1536x1024' ? '4:3' : '3:4';
     const p = background === 'transparent' ? `${prompt}. Isolated on a plain pure-white background.` : prompt;
-    return geminiImage(p, { aspectRatio });
+    return withRetry(() => geminiImage(p, { aspectRatio }), { label: 'Gemini image' });
   }
   if (!openai) throw new Error('No image provider configured (set OPENAI_API_KEY or GCP_PROJECT_ID)');
   const r = await openai.images.generate({
@@ -143,7 +161,7 @@ async function generateImage(prompt, { size = '1024x1536', quality = 'low', back
 // ── Chat JSON helper — Gemini 2.5 Pro primary, OpenAI fallback ───────────────
 async function chatJSON({ system, user, schema, temperature = 0.8 }) {
   if (GEMINI_ON) {
-    try { return await geminiJSON({ system, user, schema, temperature }); }
+    try { return await withRetry(() => geminiJSON({ system, user, schema, temperature }), { label: 'Gemini', baseMs: 5000 }); }
     catch (e) {
       if (!openai) throw e;
       console.error('  Gemini failed, falling back to OpenAI:', e.message);

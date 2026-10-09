@@ -12,6 +12,11 @@ permissions:
   contents: write
   id-token: write   # required for keyless Google Cloud auth (Workload Identity)
 
+# Shares the queue files with post-pins/ops — serialize so trackers never race.
+concurrency:
+  group: post-pins
+  cancel-in-progress: false
+
 jobs:
   products:
     runs-on: ubuntu-latest
@@ -95,5 +100,5 @@ jobs:
           git config user.email "bot@valuefindsdaily.com"
           git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json content/trend-briefs.json
           git diff --cached --quiet || git commit -m "Daily products + landing pages"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push

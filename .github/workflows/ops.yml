@@ -96,5 +96,5 @@ jobs:
           git config user.email "bot@valuefindsdaily.com"
           git add content/ public/shop-assets 2>/dev/null || true
           git diff --cached --quiet || git commit -m "Ops: ${{ inputs.task }}"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push
