@@ -152,15 +152,44 @@ the stated reason. The usual reasons for a site like this, and what is now done:
   already has visitors). Keep the beauty/fashion archive off the homepage
   rotation (it sinks to the bottom automatically).
 
-## SEO baseline (10 Oct 2026)
+## SEO (state on 10 Oct 2026)
 
-Done: canonical tags, sitemap with guides + products + categories, robots.txt,
-Open Graph, FAQ + ItemList + Article + Breadcrumb schema, descriptive alt
-text, `lastmod` from real dates, internal links guide→product and guide→guide,
-category hubs, homepage trimmed to 9 per section, responsive image sizes.
-Next (manual): submit the sitemap in Google Search Console for the owning
-account, request indexing of the category pages, and watch "Pages" for
-"Crawled, currently not indexed" (the signal that content is too thin).
+Search Console: property `sc-domain:valuefindsdaily.com` lives under the Google
+account **rockstarvasuagrawal@gmail.com** (not vasuagrawalbackup). Before today
+no sitemap had ever been submitted: Google knew 10 URLs, indexed 1, and the
+site had 130 impressions / 1 click in four months, all on dog-breed queries.
+
+Done:
+- Sitemap submitted (234 URLs). Indexing requested for: /, /guides/dogs,
+  /guides/home-decor, /guides/home, /shop, /best-apartment-dogs,
+  /dog-breeds-with-unique-curly-and-wavy-coats,
+  /best-dog-breeds-for-minimalist-and-modern-living,
+  /shop/dog-lover-wall-art-bundle. Quota is ~10/day; spend it on new hubs or
+  the best new guides, not on every article (the sitemap covers those).
+- Pruning: 30 duplicate guides 301 to the strongest version
+  (content/article-canonical.json); beauty + fashion (77) are noindex,follow
+  and out of the sitemap/homepage (URLs stay live for old pins). To bring a
+  niche back, remove it from NOINDEX_NICHES in lib/articles.ts.
+- Dog guides carry an at-a-glance comparison table from content/breeds.json
+  (the queries Google already shows us are dog-breed ones).
+- Category hubs, breadcrumbs, Article/Breadcrumb/ItemList/FAQ schema,
+  sentence-boundary meta descriptions, relevance-ranked related guides.
+- Speed: AdSense loads after the page is idle (verification via the
+  google-adsense-account meta tag); long cache headers (public/_headers).
+- Lighthouse SEO 100 / accessibility 95–100 on the homepage and a guide.
+
+Watch (weekly, Search Console → Pages): "Indexed" should climb over 2–4 weeks.
+If "Crawled – currently not indexed" grows instead, the next lever is quality
+on the guides themselves (first-hand detail, fewer generic sentences), not more
+articles. New duplicates: add them to content/article-canonical.json.
+
+Cloudflare settings that hurt SEO/speed (security settings; change by hand):
+- Security → Settings → **JavaScript detections**: on. It injects a
+  /cdn-cgi/challenge-platform script that cost ~2.6 s of main-thread time on
+  mobile. Turning it off is safe for a static content site.
+- Security → Settings → AI crawlers are **blocked**, which also keeps the site
+  out of AI search answers (ChatGPT search, Perplexity). Allow "AI search"
+  crawlers if you want that traffic; AI training can stay blocked.
 
 ## Site monetization status
 
