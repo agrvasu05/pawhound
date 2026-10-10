@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: '20'
           cache: npm
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - name: Build static export
         run: npm run build   # runs prebuild → scripts/build-redirects.js
         env:
