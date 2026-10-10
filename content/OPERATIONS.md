@@ -56,7 +56,20 @@ Expected output: 6–10 fresh pins/day, ~50–70/week, 3 articles/day, ~2 produc
 - Seasonal content 45–60 days ahead: Halloween pins stop ~25 Oct; Thanksgiving/Christmas/New-Year-planner content runs from 10 Oct.
 - Watch **saves**, not impressions: target 10 saves/week by week 4, 50/week by week 8. Templates under 0.2% save rate get killed by the weekly report.
 
-## Hosting: Cloudflare Pages (moved off Netlify, 10 Oct 2026)
+## Hosting: Cloudflare Pages (LIVE since 10 Oct 2026)
+
+Live setup: Cloudflare account rockstarvasuagrawal@gmail.com → Workers & Pages →
+project `valuefindsdaily`, connected to GitHub agrvasu05/pawhound (Cloudflare
+GitHub app, this repo only). Cloudflare builds on every push to main:
+`npm install --no-audit --no-fund && npm run build`, output `out`. Custom
+domains valuefindsdaily.com + www. www → apex is a Cloudflare Redirect Rule
+(Pages `_redirects` can't redirect by hostname). Free plan: 500 builds/month;
+bot tracker commits and the daily-content commit carry `[CI Skip]`, so it is
+~1 build/day (the daily-products commit) plus code pushes. The Actions
+`deploy.yml` (wrangler upload) is a dormant fallback: it builds and skips the
+upload because no CLOUDFLARE_API_TOKEN is set.
+
+## Hosting history: moving off Netlify
 
 Netlify's free build credits were half gone by mid-month. The site is now a
 **static export** (`output: "export"` in next.config.ts) built in GitHub Actions
