@@ -1188,5 +1188,15 @@
     "gumroad_url": "https://valuefinds.gumroad.com/l/qxxyyb",
     "landing": "/shop/cozy-home-wall-art-bundle",
     "created_at": "2026-10-10T05:16:38.906Z"
+  },
+  {
+    "type": "bundle",
+    "slug": "everything-wall-art-bundle",
+    "title": "The Everything Wall Art Bundle — Every Printable Set from Value Finds Daily",
+    "price": 29,
+    "gumroad_id": "y8oS7RFyWU7CRG2XqPjfuQ==",
+    "gumroad_url": "https://valuefinds.gumroad.com/l/gpcrio",
+    "landing": "/shop/everything-wall-art-bundle",
+    "created_at": "2026-10-10T05:18:46.620Z"
   }
 ]
