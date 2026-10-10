@@ -56,11 +56,55 @@ Expected output: 6–10 fresh pins/day, ~50–70/week, 3 articles/day, ~2 produc
 - Seasonal content 45–60 days ahead: Halloween pins stop ~25 Oct; Thanksgiving/Christmas/New-Year-planner content runs from 10 Oct.
 - Watch **saves**, not impressions: target 10 saves/week by week 4, 50/week by week 8. Templates under 0.2% save rate get killed by the weekly report.
 
+## Hosting: Cloudflare Pages (moved off Netlify, 10 Oct 2026)
+
+Netlify's free build credits were half gone by mid-month. The site is now a
+**static export** (`output: "export"` in next.config.ts) built in GitHub Actions
+and uploaded to **Cloudflare Pages** by `.github/workflows/deploy.yml`
+(wrangler direct upload: no Cloudflare build minutes, unlimited bandwidth,
+free). The email opt-in endpoint moved to a Pages Function
+(`functions/api/subscribe.js`, same `/api/subscribe` path). Duplicate shop
+URLs redirect via `public/_redirects` (generated from shop-canonical.json).
+Netlify is set to skip all builds (`ignore = "exit 0"` in netlify.toml) and
+keeps serving its last deploy only until DNS moves.
+
+One-time cutover (about 10 minutes, dashboard only):
+1. Cloudflare dashboard → My Profile → API Tokens → Create Token → template
+   "Edit Cloudflare Workers" is fine, or custom with *Account › Cloudflare
+   Pages › Edit*. Copy the token. Account ID is on the right side of any zone
+   overview page.
+2. `gh secret set CLOUDFLARE_API_TOKEN --repo agrvasu05/pawhound` and
+   `gh secret set CLOUDFLARE_ACCOUNT_ID --repo agrvasu05/pawhound`.
+3. Actions → "Deploy site (Cloudflare Pages)" → Run workflow. First upload is
+   large (~900 MB of images); later deploys upload only changed files.
+4. Cloudflare → Workers & Pages → valuefindsdaily → Custom domains → add
+   `valuefindsdaily.com` and `www.valuefindsdaily.com` (DNS updates itself
+   because the zone is on Cloudflare).
+5. Same project → Settings → Variables and Secrets → add
+   `MAILERLITE_API_KEY` and `MAILERLITE_GROUP_ID` (copy from Netlify →
+   Site configuration → Environment variables) → redeploy once.
+6. Delete the Netlify site.
+
+Deploys then happen once a day from the daily products workflow, plus on any
+push that touches site code.
+
+File budget: Pages allows 20,000 files per deploy. After pruning (prefetch
+segment files, attribution.json) the site is ~9,500 files and grows ~40/day
+(one photo per guide item + the page). The deploy fails loudly at 19,000;
+when that happens, move `public/images` to Cloudflare R2 (free 10 GB) and
+point `getBreedImage()` at the R2 public URL.
+
+Pinterest board consolidation: the API refuses to move pins between boards on
+this app's access tier (401 on PATCH /pins), so `consolidate-boards.js` can
+only create the keyword boards and delete empty ones. Moving the ~60 one-pin
+boards' pins is a 10-minute job in the Pinterest app: open a board → select
+all → Move → pick the keyword board. New pins already go to keyword boards.
+
 ## Running it for free (Oct 2026 settings)
 
 | Service | Plan | Usage now | Keep it free by |
 |---|---|---|---|
-| Netlify (hosting + builds) | Free: 300 build-min/month | ~6 min/build | Builds only on product days (Mon/Thu UTC): ~50 min/month. Every other commit is `[skip netlify]`. Pins only post for pages that are already live. |
+| Cloudflare Pages (hosting) | Free: unlimited bandwidth, 500 CI builds/month (unused: we upload) | 1 deploy/day from Actions | Nothing to do. Pins only post for pages that are already live. |
 | Cloudflare (DNS/proxy) | Free | – | Nothing to do. |
 | GitHub Actions | Free: 2,000 min/month (private repo) | ~25 min/day | Within quota. If it gets tight, make the repo public (unlimited minutes). |
 | Vertex AI (Gemini text + images) | Pay-as-you-go | ≈ $0.10–0.30/day | Add a free AI Studio key: `gh secret set GEMINI_API_KEY --repo agrvasu05/pawhound` (https://aistudio.google.com/apikey). The code prefers it over Vertex, so spend drops to $0. New products only on Mon/Thu already cut image calls by ~70%. |

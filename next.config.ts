@@ -1,19 +1,19 @@
 import type { NextConfig } from "next";
 
+// Static export: the whole site is plain HTML/JS/CSS in ./out, built in GitHub
+// Actions and uploaded to Cloudflare Pages (free, no build minutes, unlimited
+// bandwidth). Dynamic bits moved to Cloudflare Pages Functions (./functions).
 const nextConfig: NextConfig = {
+  output: "export",
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "**" }],
+    // No image optimizer in a static export; photos are already web-sized
+    // (Pexels "large", ~940px) so plain <img> is fine.
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
   },
-  // Never bundle /public into the Netlify serverless function — it's served
-  // from the CDN. Without this, the attribution page's fs.readdirSync over
-  // public/images/breeds made Next trace ALL images (234 MB — and public/pins
-  // grows daily) into the function, blowing Netlify's 250 MB limit. Pages that
-  // fs-read public/ (attribution) render fully at build time; a runtime
-  // re-render just falls back to their empty state.
-  outputFileTracingExcludes: {
-    "/*": ["./public/**"],
-  },
+  // Keep /guide/ URLs without trailing slashes; Cloudflare Pages resolves
+  // /guide → /guide.html automatically.
+  trailingSlash: false,
 };
 
 export default nextConfig;

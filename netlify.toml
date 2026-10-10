@@ -1,18 +1,11 @@
+# Netlify is being retired (free build credits ran out mid-month). The site now
+# builds in GitHub Actions and deploys to Cloudflare Pages (.github/workflows/deploy.yml).
+# `ignore` exiting 0 tells Netlify to SKIP every build, so no more credits are
+# used; the last successful deploy keeps serving until DNS points at Cloudflare.
 [build]
   command = "npm run build"
   publish = ".next"
+  ignore = "exit 0"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[[redirects]]
-  from = "http://valuefindsdaily.com/*"
-  to = "https://valuefindsdaily.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.valuefindsdaily.com/*"
-  to = "https://valuefindsdaily.com/:splat"
-  status = 301
-  force = true

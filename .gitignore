@@ -47,3 +47,5 @@ products/output/
 gcp-sa.json
 tmp-pins/
 public/pins/
+public/_redirects
+out/

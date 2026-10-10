@@ -3,6 +3,9 @@ import { getAllArticles } from "@/lib/articles";
 import { getAllShopProducts } from "@/lib/shop";
 import { nicheOf, nicheSlug } from "@/lib/niches";
 
+// Required for `output: "export"`.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";

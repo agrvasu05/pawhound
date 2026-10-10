@@ -1,0 +1,74 @@
+name: Deploy site (Cloudflare Pages)
+
+# Builds the static export in GitHub Actions and uploads ./out to Cloudflare
+# Pages with wrangler (direct upload: no Cloudflare build minutes, unlimited
+# bandwidth, free). Pages Functions in ./functions ship with it.
+#
+# Runs: on manual dispatch, when called from the daily product workflow (once a
+# day after new content + products are committed), and on pushes that touch
+# the site code. Bot commits made with GITHUB_TOKEN never trigger `push`, which
+# is why the daily workflow calls this one explicitly.
+#
+# Secrets needed (once): CLOUDFLARE_API_TOKEN (Account → Cloudflare Pages: Edit)
+# and CLOUDFLARE_ACCOUNT_ID. See content/OPERATIONS.md → Hosting.
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'functions/**'
+      - 'next.config.ts'
+      - 'package.json'
+      - 'content/shop-canonical.json'
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Build static export
+        run: npx next build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://valuefindsdaily.com
+          NEXT_PUBLIC_PINTEREST_VERIFY_TAG: 96f16459b5cd61b93a785297079749a6
+      # Cloudflare Pages allows 20,000 files per deployment. Two things in the
+      # export are dead weight at runtime and are pruned here:
+      #  - Next 16 writes ~7 per-segment prefetch files (__next.*.txt) per page;
+      #    client navigation falls back to the page RSC file when they 404
+      #    (verified locally), so they go.
+      #  - public/images/breeds/*/attribution.json is read at BUILD time by the
+      #    attribution page; it is never fetched by the browser.
+      - name: Prune runtime-unused files + sanity check
+        run: |
+          test -f out/index.html && test -f out/sitemap.xml && test -f out/_redirects && test -f out/ads.txt
+          find out -name '__next.*.txt' -print0 | xargs -0 rm -f
+          find out/images -name 'attribution.json' -print0 | xargs -0 rm -f
+          N=$(find out -type f | wc -l)
+          echo "pages: $(find out -name '*.html' | wc -l)  files: $N  size: $(du -sh out | cut -f1)"
+          if [ "$N" -gt 19000 ]; then echo "::error::$N files is close to the 20,000-file Pages limit; move images to R2 (see OPERATIONS.md)"; exit 1; fi
+      - name: Ensure the Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler pages project list 2>/dev/null | grep -q '^│ valuefindsdaily ' \
+            || npx wrangler pages project create valuefindsdaily --production-branch main
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy out --project-name valuefindsdaily --branch main --commit-dirty=true

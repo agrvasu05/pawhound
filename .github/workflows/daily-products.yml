@@ -103,11 +103,13 @@ jobs:
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json content/trend-briefs.json content/used-briefs.json
-          # Free tier: Netlify builds only on product days (Mon/Thu UTC) — that's
-          # when new landing pages + the week's new articles go live. Other days
-          # commit with [skip netlify]. (Pins only post for pages that are live.)
-          DOW=$(date -u +%u)
-          if [ "$DOW" = "1" ] || [ "$DOW" = "4" ]; then MSG="Daily products + landing pages"; else MSG="Daily products + landing pages [skip netlify]"; fi
-          git diff --cached --quiet || git commit -m "$MSG"
+          git diff --cached --quiet || git commit -m "Daily products + landing pages [skip netlify]"
           git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push
+
+  # One site deploy per day, after today's articles (14:00 run) and products
+  # are committed. Cloudflare Pages direct upload: free, no build minutes.
+  deploy:
+    needs: products
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

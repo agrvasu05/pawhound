@@ -391,14 +391,6 @@ export default async function ArticleHub({
             </>
           )}
         </p>
-        <p className="mt-4">
-          <Link
-            href={`/${slug}/${total}`}
-            className="text-sm font-semibold text-emerald-700 hover:text-emerald-900"
-          >
-            Prefer to flip through one at a time? View as a slideshow →
-          </Link>
-        </p>
       </section>
 
       {faqs.length > 0 && (
