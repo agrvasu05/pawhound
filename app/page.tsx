@@ -34,7 +34,7 @@ function ArticleCard({ article }: { article: Article }) {
         {imgSrc && (
           <Image
             src={imgSrc}
-            alt={article.topic_title}
+            alt=""
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

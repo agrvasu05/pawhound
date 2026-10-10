@@ -135,7 +135,7 @@ export default function SearchBar() {
                       <span className="block truncate text-sm font-semibold text-stone-800">
                         {r.title}
                       </span>
-                      <span className="text-xs text-stone-400">
+                      <span className="text-xs text-stone-500">
                         {r.count} {r.noun} ranked
                       </span>
                     </span>

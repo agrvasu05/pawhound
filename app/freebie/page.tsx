@@ -30,7 +30,7 @@ export default function FreebiePage() {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-12">
-      <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#b05a3c]">Free Printable</p>
+      <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#93452a]">Free Printable</p>
       <h1 className="mb-4 text-4xl font-bold leading-tight text-stone-900">The Cozy Home Reset</h1>
       <p className="mb-6 text-lg leading-relaxed text-stone-600">
         A simple <strong>7-day checklist</strong> to make your home feel warmer, calmer and more beautiful —
@@ -50,7 +50,7 @@ export default function FreebiePage() {
           Enter your email and we&apos;ll send it straight over 👇
         </p>
         <SubscribeForm source="freebie-page" offer={offer} />
-        <p className="mt-4 text-center text-xs text-stone-400">
+        <p className="mt-4 text-center text-xs text-stone-500">
           Free forever. We&apos;ll also send the occasional cozy-home idea — unsubscribe anytime.
         </p>
       </div>

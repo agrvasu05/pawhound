@@ -199,7 +199,7 @@ export default async function ArticleHub({
       </p>
 
       {article.picks.some((p) => p.affiliate_url || p.shop_query) && (
-        <p className="-mt-3 mb-6 text-xs text-stone-400">
+        <p className="-mt-3 mb-6 text-xs text-stone-500">
           This article contains affiliate links. We may earn a small commission
           at no extra cost to you.
         </p>
@@ -503,7 +503,7 @@ export default async function ArticleHub({
                     {top && (
                       <Image
                         src={getBreedImage(top.breed)}
-                        alt={r.topic_title}
+                        alt=""
                         fill
                         className="object-cover transition group-hover:scale-105"
                         sizes="(max-width: 640px) 50vw, 220px"

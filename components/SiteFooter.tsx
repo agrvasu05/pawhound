@@ -26,7 +26,7 @@ export default function SiteFooter() {
             <Link href="/contact" className="transition hover:text-emerald-700">Contact</Link>
             <Link href="/attribution" className="transition hover:text-emerald-700">Image Credits</Link>
           </nav>
-          <p className="mt-4 text-xs text-stone-400">
+          <p className="mt-4 text-xs text-stone-500">
             © {new Date().getFullYear()} Value Finds Daily. All rights reserved.
           </p>
         </div>
