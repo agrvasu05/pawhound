@@ -78,6 +78,6 @@ jobs:
           # hour later) is the single daily Netlify build and publishes this
           # content + the new products together. Halves build-minute usage so
           # Netlify's free tier doesn't run out mid-month and freeze the site.
-          git diff --cached --quiet || git commit -m "Daily content [skip netlify] [CI Skip]"
+          git diff --cached --quiet || git commit -m "Daily content"
           git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push

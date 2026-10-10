@@ -13,7 +13,8 @@
     "images": "node scripts/3-fetch-images.js",
     "pins": "node scripts/4-generate-pins.js",
     "prebuild": "node scripts/build-redirects.js",
-    "deploy": "wrangler pages deploy out --project-name valuefindsdaily --commit-dirty=true"
+    "deploy": "wrangler pages deploy out --project-name valuefindsdaily --commit-dirty=true",
+    "postbuild": "node scripts/prune-out.js"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
