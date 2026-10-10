@@ -2,8 +2,8 @@
  * prune-out.js — runs after `next build` (npm postbuild) on every host.
  * Removes files the browser never requests so the Cloudflare Pages deploy
  * stays far under its 20,000-file limit, then fails loudly near the limit.
- *  - __next.*.txt  per-segment prefetch files (client nav falls back to the
- *                  page RSC file; verified locally)
+ *  (Next's __next.*.txt prefetch files are KEPT: pruning them caused 404s
+ *   on link prefetch, which Lighthouse counts as console errors.)
  *  - images/breeds/<item>/attribution.json  (read at build time only)
  */
 const fs = require('fs');
@@ -15,7 +15,7 @@ let removed = 0, total = 0;
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) { walk(p); continue; }
-    if (/^__next\..*\.txt$/.test(e.name) || (e.name === 'attribution.json' && p.includes(`${path.sep}images${path.sep}`))) {
+    if (e.name === 'attribution.json' && p.includes(`${path.sep}images${path.sep}`)) {
       fs.unlinkSync(p); removed++;
     } else total++;
   }

@@ -1,0 +1,16 @@
+# Cloudflare Pages response headers.
+# Hashed build assets never change → cache for a year.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Photos, product images and fonts change rarely → a month at the edge and in browsers.
+/images/*
+  Cache-Control: public, max-age=2592000
+/shop-assets/*
+  Cache-Control: public, max-age=2592000
+/freebies/*
+  Cache-Control: public, max-age=2592000
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

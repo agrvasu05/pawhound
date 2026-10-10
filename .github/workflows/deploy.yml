@@ -48,15 +48,13 @@ jobs:
           NEXT_PUBLIC_PINTEREST_VERIFY_TAG: 96f16459b5cd61b93a785297079749a6
       # Cloudflare Pages allows 20,000 files per deployment. Two things in the
       # export are dead weight at runtime and are pruned here:
-      #  - Next 16 writes ~7 per-segment prefetch files (__next.*.txt) per page;
-      #    client navigation falls back to the page RSC file when they 404
-      #    (verified locally), so they go.
+      #  (Next's __next.*.txt prefetch files are kept: removing them makes link
+      #   prefetch 404, which shows up as console errors.)
       #  - public/images/breeds/*/attribution.json is read at BUILD time by the
       #    attribution page; it is never fetched by the browser.
       - name: Prune runtime-unused files + sanity check
         run: |
           test -f out/index.html && test -f out/sitemap.xml && test -f out/_redirects && test -f out/ads.txt
-          find out -name '__next.*.txt' -print0 | xargs -0 rm -f
           find out/images -name 'attribution.json' -print0 | xargs -0 rm -f
           N=$(find out -type f | wc -l)
           echo "pages: $(find out -name '*.html' | wc -l)  files: $N  size: $(du -sh out | cut -f1)"
