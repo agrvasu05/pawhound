@@ -247,7 +247,7 @@ export default async function ArticleHub({
                   <td className="px-4 py-2.5 capitalize">{b!.trainability}</td>
                   <td className="px-4 py-2.5 capitalize">{b!.barking}</td>
                   <td className="px-4 py-2.5 whitespace-nowrap">{b!.lifespan_min}–{b!.lifespan_max} yrs</td>
-                  <td className="px-4 py-2.5">{b!.good_with_kids ? "Yes" : "Caution"}</td>
+                  <td className="px-4 py-2.5">{b!.good_with_kids ? "Yes" : "No"}</td>
                 </tr>
               ))}
             </tbody>
