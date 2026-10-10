@@ -80,6 +80,16 @@ One-time cutover (about 10 minutes):
 5. Delete the Netlify site. Until then it keeps serving (and metering
    bandwidth/function calls), so do this the same day.
 
+Alternative without an API token (if the token route stays blocked): in the
+Cloudflare account that owns the valuefindsdaily.com zone, Workers & Pages →
+Create → Pages → Connect to Git → agrvasu05/pawhound. Build command
+`npm install --no-audit --no-fund && npm run build`, output `out`, env
+`NEXT_PUBLIC_SITE_URL=https://valuefindsdaily.com`. Build watch paths:
+`app/**, components/**, lib/**, functions/**, public/**, content/articles/**,
+content/shop/**, next.config.ts, package.json`. Tracker commits carry
+`[CI Skip]`. With this route the `deploy` job in daily-products is redundant
+(it exits cleanly without a token).
+
 Deploys then happen once a day from the daily products workflow, plus on any
 push that touches site code.
 

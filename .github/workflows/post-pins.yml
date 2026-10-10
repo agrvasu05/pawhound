@@ -127,6 +127,6 @@ jobs:
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json content/.post-stamps
-          git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify]"
+          git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify] [CI Skip]"
           git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push

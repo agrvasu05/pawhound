@@ -103,7 +103,7 @@ jobs:
           git config user.name "PawHound Bot"
           git config user.email "bot@valuefindsdaily.com"
           git add content/shop public/shop-assets content/pin-queue.json content/gumroad-products.json content/trend-briefs.json content/used-briefs.json
-          git diff --cached --quiet || git commit -m "Daily products + landing pages [skip netlify]"
+          git diff --cached --quiet || git commit -m "Daily products + landing pages [skip netlify] [CI Skip]"
           git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
           git push
 
