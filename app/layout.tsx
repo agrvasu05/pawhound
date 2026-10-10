@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Value Finds Daily" },
   twitter: { card: "summary_large_image" },
   other: {
-    "p:domain_verify": process.env.NEXT_PUBLIC_PINTEREST_VERIFY_TAG || "",
+    "p:domain_verify": process.env.NEXT_PUBLIC_PINTEREST_VERIFY_TAG || "96f16459b5cd61b93a785297079749a6",
   },
 };
 
