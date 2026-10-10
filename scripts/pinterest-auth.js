@@ -138,4 +138,7 @@ function pinterestPost(endpoint, body) {
   console.log('  (select: repo → secrets permission) and add it as:');
   console.log('  PINTEREST_PAT = <your PAT>\n');
   console.log('Then run: node scripts/5-post-pins.js\n');
+  // The browser's keep-alive connection can hold the callback server open for
+  // minutes after server.close(); the tokens are saved, so exit explicitly.
+  process.exit(0);
 })();
