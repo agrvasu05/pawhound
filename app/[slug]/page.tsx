@@ -8,6 +8,7 @@ import { getProductsForArticle, shopAsset } from "@/lib/shop";
 import AdSlot from "@/components/AdSlot";
 import FreebieBanner from "@/components/FreebieBanner";
 import PinItButton from "@/components/PinItButton";
+import { nicheMeta, nicheOf, nicheSlug } from "@/lib/niches";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
 
@@ -100,6 +101,29 @@ export default async function ArticleHub({
     })),
   };
 
+  const niche = nicheOf(article);
+  const nmeta = nicheMeta(niche);
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: nmeta.label, item: `${SITE_URL}/guides/${nicheSlug(niche)}` },
+      { "@type": "ListItem", position: 3, name: article.topic_title, item: `${SITE_URL}/${slug}` },
+    ],
+  };
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.topic_title,
+    description: article.intro.slice(0, 200),
+    image: topPick ? [`${SITE_URL}${getBreedImage(topPick.breed)}`] : [],
+    author: { "@type": "Organization", name: "Value Finds Daily Editorial Team", url: `${SITE_URL}/about` },
+    publisher: { "@type": "Organization", name: "Value Finds Daily", url: SITE_URL },
+    mainEntityOfPage: `${SITE_URL}/${slug}`,
+    ...(article.updated_at ? { dateModified: `${article.updated_at}T00:00:00Z`, datePublished: `${article.updated_at}T00:00:00Z` } : {}),
+  };
+
   // FAQPage structured data — eligible for rich results, a strong E-E-A-T signal.
   const faqJsonLd =
     faqs.length > 0
@@ -121,12 +145,13 @@ export default async function ArticleHub({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Link
-        href="/"
-        className="text-sm text-stone-500 hover:text-stone-900 mb-6 inline-block"
-      >
-        ← All guides
-      </Link>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <nav aria-label="Breadcrumb" className="mb-6 text-sm text-stone-500">
+        <Link href="/" className="hover:text-stone-900">Home</Link>
+        <span className="mx-2">›</span>
+        <Link href={`/guides/${nicheSlug(niche)}`} className="hover:text-stone-900">{nmeta.label}</Link>
+      </nav>
 
       <h1
         className="text-4xl md:text-5xl font-bold mb-4 leading-tight"

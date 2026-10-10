@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
 import { getAllShopProducts } from "@/lib/shop";
+import { nicheOf, nicheSlug } from "@/lib/niches";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
@@ -22,8 +23,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const nicheUrls = [...new Set(articles.map(nicheOf))].map((n) => ({
+    url: `${baseUrl}/guides/${nicheSlug(n)}`,
+    lastModified: new Date(),
+    priority: 0.9,
+  }));
+
   return [
     { url: baseUrl, lastModified: new Date(), priority: 1.0 },
+    ...nicheUrls,
     { url: `${baseUrl}/shop`, lastModified: new Date(), priority: 0.9 },
     { url: `${baseUrl}/freebie`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), priority: 0.5 },

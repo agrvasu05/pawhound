@@ -9,25 +9,12 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
-// Display labels + ordering for each niche section. New trending niches sit on
-// top; dog guides are pushed to the bottom.
-// Home/cozy is the site's identity now (2026-07 refocus): decor + cozy living
-// lead, printables-adjacent niches follow, and the retired niches (beauty,
-// fashion, dogs) sink to the bottom while their archive pages age out.
-const NICHE_META: Record<string, { label: string; blurb: string; order: number }> = {
-  "home decor": { label: "Home Decor & Styling", blurb: "Wall art, room ideas, and decor inspiration.", order: 0 },
-  home: { label: "Home & Cozy Living", blurb: "Small-space wins, cozy corners, and budget makeovers.", order: 1 },
-  "aesthetic art & printables": { label: "Printables & Aesthetic Art", blurb: "Instant-download art and printables.", order: 2 },
-  wellness: { label: "Wellness & Self-Care", blurb: "Routines, planners, and calm-living ideas.", order: 3 },
-  "gifts & occasions": { label: "Gifts & Occasions", blurb: "Graduation, parties, and giftable finds.", order: 4 },
-  beauty: { label: "Beauty & Nails", blurb: "Trending nail, hair, and beauty looks.", order: 80 },
-  fashion: { label: "Fashion & Outfit Ideas", blurb: "Trending looks, capsule wardrobes, and styling guides.", order: 85 },
-  dogs: { label: "Dog Breed Guides", blurb: "Find the breed that actually fits your life.", order: 90 },
-};
+import { NICHE_META, nicheOf, nicheSlug, sortNewest } from "@/lib/niches";
 
-function nicheOf(a: Article) {
-  return a.niche || "dogs";
-}
+// Each section shows its newest guides; the full list lives on /guides/<niche>.
+// The homepage used to render all 277 guides (1.5 MB of HTML, 270 images),
+// which hurt both load time and crawl focus.
+const PER_SECTION = 9;
 
 function ArticleCard({ article }: { article: Article }) {
   const topBreed = article.picks.find((p) => p.rank === 1);
@@ -50,6 +37,7 @@ function ArticleCard({ article }: { article: Article }) {
             alt={article.topic_title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         )}
         <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/45 to-transparent" />
@@ -127,13 +115,13 @@ export default function Home() {
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             {sections.map(([niche]) => (
-              <a
+              <Link
                 key={niche}
-                href={`#${niche}`}
+                href={`/guides/${nicheSlug(niche)}`}
                 className="rounded-full border border-emerald-200 bg-white/70 px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm transition hover:bg-emerald-700 hover:text-white"
               >
                 {NICHE_META[niche]?.label ?? niche}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -164,15 +152,25 @@ export default function Home() {
                       <p className="mt-1 text-sm text-stone-500">{meta.blurb}</p>
                     )}
                   </div>
-                  <span className="whitespace-nowrap text-sm font-medium text-stone-400">
-                    {items.length} guide{items.length === 1 ? "" : "s"}
-                  </span>
+                  <Link href={`/guides/${nicheSlug(niche)}`} className="whitespace-nowrap text-sm font-medium text-stone-400 hover:text-emerald-700">
+                    {items.length} guide{items.length === 1 ? "" : "s"} →
+                  </Link>
                 </div>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {items.map((article) => (
+                  {sortNewest(items).slice(0, PER_SECTION).map((article) => (
                     <ArticleCard key={article.topic_slug} article={article} />
                   ))}
                 </div>
+                {items.length > PER_SECTION && (
+                  <div className="mt-6 text-center">
+                    <Link
+                      href={`/guides/${nicheSlug(niche)}`}
+                      className="inline-block rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-700 hover:text-white"
+                    >
+                      View all {items.length} {meta?.label ?? niche} guides →
+                    </Link>
+                  </div>
+                )}
               </section>
             );
           })

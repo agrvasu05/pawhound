@@ -197,4 +197,16 @@ function templateOrder(imageCount, root = process.cwd()) {
   return [...base.filter((i) => v(i) === 'scale'), ...base.filter((i) => v(i) !== 'scale')];
 }
 
-module.exports = { BRAND, TEMPLATE_KEYS, TEMPLATES, fitHeadline, renderPin, articleImages, templateOrder, breedToSlug };
+/** True when the destination URL is live (2xx/3xx). Netlify builds only run a
+ *  few times a week to stay on the free tier, so a pin must never go out before
+ *  its page exists. */
+async function isLive(url, timeoutMs = 8000) {
+  try {
+    const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), timeoutMs);
+    const r = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: ctrl.signal });
+    clearTimeout(t);
+    return r.status >= 200 && r.status < 400;
+  } catch { return false; }
+}
+
+module.exports = { isLive, BRAND, TEMPLATE_KEYS, TEMPLATES, fitHeadline, renderPin, articleImages, templateOrder, breedToSlug };

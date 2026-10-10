@@ -43,6 +43,7 @@ jobs:
         run: node products/trends-engine.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GCP_PROJECT_ID: single-bonus-450611-h1   # Vertex billing project (WIF SA has aiplatform.user here)
           GEMINI_MODEL: gemini-2.5-flash
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
@@ -55,6 +56,7 @@ jobs:
         run: node scripts/2d-generate-trend-articles.js --count=3
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GCP_PROJECT_ID: single-bonus-450611-h1   # Vertex billing project (WIF SA has aiplatform.user here)
           GEMINI_MODEL: gemini-2.5-flash
 

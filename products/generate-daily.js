@@ -51,6 +51,15 @@ const dayIdx = Math.floor(Date.now() / 864e5);
 const defaultSel = [ROTATION[dayIdx % ROTATION.length], ROTATION[(dayIdx + 1) % ROTATION.length]];
 const selected = argTypes ? argTypes.split('=')[1].split(',') : defaultSel;
 const generateOnly = process.argv.includes('--generate-only');
+// Free-tier cadence (Oct 2026): new products only on product days (Mon + Thu)
+// so Netlify builds ~2×/week and image generation stays near $0. Variants for
+// the existing catalog are queued every day by requeue-catalog.js. --force
+// overrides.
+const PRODUCT_DAYS = (process.env.PRODUCT_DAYS || '1,4').split(',').map(Number); // JS getUTCDay: 1=Mon, 4=Thu
+if (!process.argv.includes('--force') && !PRODUCT_DAYS.includes(new Date().getUTCDay())) {
+  console.log(`Not a product day (UTC weekday ${new Date().getUTCDay()}; product days ${PRODUCT_DAYS.join(',')}) — skipping new products.`);
+  process.exit(0);
+}
 
 function loadTracker() { try { return JSON.parse(fs.readFileSync(TRACKER, 'utf-8')); } catch { return []; } }
 

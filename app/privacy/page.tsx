@@ -57,6 +57,14 @@ export default function Privacy() {
         absolute security.
       </p>
 
+      <h2>Affiliate links</h2>
+      <p>
+        Some guides contain affiliate links. As an Amazon Associate, Value Finds
+        Daily earns from qualifying purchases. These links never change the
+        price you pay, and they do not influence how we rank the items in a
+        guide.
+      </p>
+
       <h2>Advertising</h2>
       <p>
         We use Google AdSense to display advertisements on this site. Google, as

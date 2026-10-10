@@ -24,7 +24,7 @@ const os = require('os');
 const path = require('path');
 const { postVideoPin } = require('./pinterest-video');
 const { renderKenBurnsFromImage } = require('./lib-video');
-const { TEMPLATE_KEYS, renderPin, articleImages, templateOrder } = require('./pin-renderer');
+const { TEMPLATE_KEYS, renderPin, articleImages, templateOrder, isLive } = require('./pin-renderer');
 
 const CLIENT_ID = process.env.PINTEREST_CLIENT_ID;
 const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
@@ -295,6 +295,7 @@ async function postPin(pin, boardId, m) {
 
   for (const pin of toPost) {
     try {
+      if (!DRY && !(await isLive(`${SITE_URL}/${pin.slug}`))) { console.log(`  ↷ ${pin.slug}: page not live yet — skipping`); continue; }
       const postedCount = Object.keys(tracker).filter((k) => k.startsWith(pin.slug + '/') && tracker[k].posted_at).length;
       const boardId = await getOrCreateBoard(pin.article, boardsTracker, postedCount);
       if (!boardId) continue;

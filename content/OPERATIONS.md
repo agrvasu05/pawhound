@@ -56,6 +56,47 @@ Expected output: 6–10 fresh pins/day, ~50–70/week, 3 articles/day, ~2 produc
 - Seasonal content 45–60 days ahead: Halloween pins stop ~25 Oct; Thanksgiving/Christmas/New-Year-planner content runs from 10 Oct.
 - Watch **saves**, not impressions: target 10 saves/week by week 4, 50/week by week 8. Templates under 0.2% save rate get killed by the weekly report.
 
+## Running it for free (Oct 2026 settings)
+
+| Service | Plan | Usage now | Keep it free by |
+|---|---|---|---|
+| Netlify (hosting + builds) | Free: 300 build-min/month | ~6 min/build | Builds only on product days (Mon/Thu UTC): ~50 min/month. Every other commit is `[skip netlify]`. Pins only post for pages that are already live. |
+| Cloudflare (DNS/proxy) | Free | – | Nothing to do. |
+| GitHub Actions | Free: 2,000 min/month (private repo) | ~25 min/day | Within quota. If it gets tight, make the repo public (unlimited minutes). |
+| Vertex AI (Gemini text + images) | Pay-as-you-go | ≈ $0.10–0.30/day | Add a free AI Studio key: `gh secret set GEMINI_API_KEY --repo agrvasu05/pawhound` (https://aistudio.google.com/apikey). The code prefers it over Vertex, so spend drops to $0. New products only on Mon/Thu already cut image calls by ~70%. |
+| Pexels, Gumroad, MailerLite (≤500 subs), Pinterest API | Free | – | Gumroad takes 10% + fees per sale only. |
+
+## AdSense (rejected once; what to fix before re-applying)
+
+The AdSense login in Chrome is on vasuagrawalbackup@gmail.com, which has no
+AdSense account; the publisher id in the site (ca-pub-5396532440215148) belongs
+to one of the other Google accounts. Check that account's AdSense → Sites for
+the stated reason. The usual reasons for a site like this, and what is now done:
+
+- "Low value content / scaled content": the homepage listed all 277 guides on
+  one 1.5 MB page. It now shows 9 per section with real category pages
+  (`/guides/<niche>`), breadcrumbs, Article + BreadcrumbList schema, and guides
+  cross-link to products. Still worth doing by hand: rewrite the intro of the
+  10 most-visited guides with a specific, first-person angle.
+- "Site navigation / under construction": fixed (category pages, shop
+  consolidated, no empty pages).
+- Policy pages: Privacy mentions cookies + AdSense; About lists the team and
+  editorial policy; Contact exists. Add a line to Privacy about Amazon
+  Associates ("As an Amazon Associate we earn from qualifying purchases").
+- Re-apply after 2–4 weeks of Pinterest traffic (AdSense wants a site that
+  already has visitors). Keep the beauty/fashion archive off the homepage
+  rotation (it sinks to the bottom automatically).
+
+## SEO baseline (10 Oct 2026)
+
+Done: canonical tags, sitemap with guides + products + categories, robots.txt,
+Open Graph, FAQ + ItemList + Article + Breadcrumb schema, descriptive alt
+text, `lastmod` from real dates, internal links guide→product and guide→guide,
+category hubs, homepage trimmed to 9 per section, responsive image sizes.
+Next (manual): submit the sitemap in Google Search Console for the owning
+account, request indexing of the category pages, and watch "Pages" for
+"Crawled, currently not indexed" (the signal that content is too thin).
+
 ## Site monetization status
 
 - **Gumroad printables**: live. Bundles are the lever (see above). List the same files on Etsy once the first bundle sells.

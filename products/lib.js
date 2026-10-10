@@ -33,7 +33,8 @@ const GCP_LOCATION = process.env.GCP_LOCATION || 'global';
 // Use Vertex when a SA key is given OR a project id is set (the latter relies on
 // Application Default Credentials: `gcloud auth application-default login` locally,
 // or Workload Identity Federation in CI — both keyless, org-policy friendly).
-const USE_VERTEX = !!(GCP_SA_FILE || GCP_SA_KEY || GCP_PROJECT_ID);
+// A GEMINI_API_KEY (AI Studio, free tier) wins over Vertex: $0 instead of pay-as-you-go.
+const USE_VERTEX = !GEMINI_KEY && !!(GCP_SA_FILE || GCP_SA_KEY || GCP_PROJECT_ID);
 const GEMINI_ON = USE_VERTEX || !!GEMINI_KEY;
 
 // Convert an OpenAI json_schema ({name,strict,schema}) into the subset Gemini's
@@ -106,7 +107,7 @@ async function geminiJSON({ system, user, schema, temperature }) {
 // when Vertex is configured (the OpenAI key died in 2026-09, and Imagen is not
 // enabled on the billing project — gemini-2.5-flash-image is); else OpenAI.
 const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
-const IMAGE_PROVIDER = process.env.IMAGE_PROVIDER || (USE_VERTEX ? 'gemini' : 'openai');
+const IMAGE_PROVIDER = process.env.IMAGE_PROVIDER || ((USE_VERTEX || GEMINI_KEY) ? 'gemini' : 'openai');
 
 // Retry transient Vertex errors (429 resource exhausted on a fresh project, 5xx)
 // with backoff before giving up. Image calls are the usual victims.
@@ -127,10 +128,16 @@ async function withRetry(fn, { tries = 4, baseMs = 8000, label = 'call' } = {}) 
 }
 
 async function geminiImage(prompt, { aspectRatio = '3:4' } = {}) {
-  const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${await vertexAuth()}` };
-  // Image models are regional; us-central1 is the broadest.
-  const loc = process.env.GEMINI_IMAGE_LOCATION || 'us-central1';
-  const url = `https://${loc}-aiplatform.googleapis.com/v1/projects/${_vertexProject}/locations/${loc}/publishers/google/models/${IMAGE_MODEL}:generateContent`;
+  const headers = { 'Content-Type': 'application/json' };
+  let url;
+  if (USE_VERTEX) {
+    headers.Authorization = `Bearer ${await vertexAuth()}`;
+    // Image models are regional; us-central1 is the broadest.
+    const loc = process.env.GEMINI_IMAGE_LOCATION || 'us-central1';
+    url = `https://${loc}-aiplatform.googleapis.com/v1/projects/${_vertexProject}/locations/${loc}/publishers/google/models/${IMAGE_MODEL}:generateContent`;
+  } else {
+    url = `https://generativelanguage.googleapis.com/v1beta/models/${IMAGE_MODEL}:generateContent?key=${GEMINI_KEY}`;
+  }
   const body = {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
     generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio } },
@@ -538,6 +545,9 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     const recPath = path.join(SHOP_DIR, `${e.slug}.json`);
     const assetDir = path.join(PUBLIC_SHOP, e.slug);
     if (!fs.existsSync(recPath) || !fs.existsSync(assetDir)) continue;
+    // Never pin a landing page that has not deployed yet (builds run a few
+    // times a week on the free tier).
+    if (!(await require('../scripts/pin-renderer').isLive(e.link))) { console.log(`  ↷ ${e.slug}: landing page not live yet — skipping`); continue; }
     const rec = JSON.parse(fs.readFileSync(recPath, 'utf-8'));
     const images = [rec.cover, ...rec.images.filter((f) => f !== rec.cover)]
       .map((f) => path.join(assetDir, f)).filter((f) => fs.existsSync(f));

@@ -46,7 +46,7 @@ async function uploadVideoFile({ uploadUrl, uploadParameters, filePath }) {
   if (res.status >= 300) throw new Error(`S3 video upload failed (${res.status}): ${(await res.text()).slice(0, 300)}`);
 }
 
-async function pollVideoStatus({ accessToken, apiHost, mediaId, maxAttempts = 30, intervalMs = 3000 }) {
+async function pollVideoStatus({ accessToken, apiHost, mediaId, maxAttempts = 80, intervalMs = 3000 }) {
   for (let i = 0; i < maxAttempts; i++) {
     const r = await pinterestJson('GET', apiHost, `/v5/media/${mediaId}`, accessToken);
     if (r.status !== 200) throw new Error(`Media status check failed (${r.status}): ${JSON.stringify(r.body).slice(0, 300)}`);
