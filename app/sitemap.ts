@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, isIndexable, NOINDEX_NICHES } from "@/lib/articles";
 import { getAllShopProducts } from "@/lib/shop";
 import { nicheOf, nicheSlug } from "@/lib/niches";
 
@@ -9,7 +9,8 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
-  const articles = getAllArticles();
+  // Only indexable guides: no 301'd duplicates, no off-niche archive.
+  const articles = getAllArticles().filter(isIndexable);
 
   // Only the full hub article is indexable; slideshow slides are noindex
   // alternates, so they are intentionally excluded from the sitemap.
@@ -26,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const nicheUrls = [...new Set(articles.map(nicheOf))].map((n) => ({
+  const nicheUrls = [...new Set(articles.map(nicheOf))].filter((n) => !NOINDEX_NICHES.has(n)).map((n) => ({
     url: `${baseUrl}/guides/${nicheSlug(n)}`,
     lastModified: new Date(),
     priority: 0.9,

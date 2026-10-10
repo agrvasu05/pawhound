@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getArticle, getAllArticles, getBreedImage } from "@/lib/articles";
+import { getArticle, getBreedImage, getPublishedArticles, isIndexable, metaDescription } from "@/lib/articles";
+import { getBreed } from "@/lib/breeds";
 import { shopHref, dogEssentialsFor } from "@/lib/affiliate";
 import { getProductsForArticle, shopAsset } from "@/lib/shop";
 import AdSlot from "@/components/AdSlot";
@@ -12,8 +13,9 @@ import { nicheMeta, nicheOf, nicheSlug } from "@/lib/niches";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
 
+// Duplicate articles are not pages: public/_redirects 301s them to the one we kept.
 export async function generateStaticParams() {
-  return getAllArticles().map((a) => ({ slug: a.topic_slug }));
+  return getPublishedArticles().map((a) => ({ slug: a.topic_slug }));
 }
 
 export async function generateMetadata({
@@ -25,14 +27,17 @@ export async function generateMetadata({
   const article = getArticle(slug);
   if (!article) return {};
   const topBreed = article.picks.find((p) => p.rank === 1);
+  const description = metaDescription(article.intro);
   return {
     title: article.topic_title,
-    description: article.intro.slice(0, 160),
+    description,
+    // Off-niche archive (beauty/fashion): live for old pins, kept out of Google.
+    ...(isIndexable(article) ? {} : { robots: { index: false, follow: true } }),
     alternates: { canonical: `/${slug}` },
     openGraph: {
       type: "article",
       title: article.topic_title,
-      description: article.intro.slice(0, 160),
+      description,
       images: topBreed ? [getBreedImage(topBreed.breed)] : [],
       ...(article.updated_at
         ? { modifiedTime: `${article.updated_at}T00:00:00Z` }
@@ -75,23 +80,36 @@ export default async function ArticleHub({
     : `${SITE_URL}/favicon.ico`;
 
   // Related guides — internal links (SEO crawl + ranking) and more pageviews.
-  const relatedAll = getAllArticles().filter(
-    (a) => a.topic_slug !== slug && a.picks.length >= 3
+  const relatedAll = getPublishedArticles().filter(
+    (a) => a.topic_slug !== slug && a.picks.length >= 3 && isIndexable(a)
   );
-  const sameNicheRel = relatedAll.filter(
-    (a) => (a.niche || "dogs") === (article.niche || "dogs")
-  );
-  const related = [
-    ...sameNicheRel,
-    ...relatedAll.filter((a) => (a.niche || "dogs") !== (article.niche || "dogs")),
-  ].slice(0, 4);
+  // Most topically similar guides first (shared title words), same niche
+  // preferred — internal links that match intent help both readers and crawl.
+  const words = (t: string) =>
+    new Set(t.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !/^(best|ideas|that|with|your|from|2026|2027|breeds?|guide)$/.test(w)));
+  const mine = words(article.topic_title);
+  const score = (a: { topic_title: string; niche?: string }) => {
+    let n = 0;
+    for (const w of words(a.topic_title)) if (mine.has(w)) n++;
+    return n * 2 + ((a.niche || "dogs") === (article.niche || "dogs") ? 1 : 0);
+  };
+  const related = [...relatedAll].sort((a, b) => score(b) - score(a)).slice(0, 6);
+
+  // "At a glance" table for dog guides — real attributes from content/breeds.json.
+  const glance = isDogs
+    ? ranked
+        .slice()
+        .reverse()
+        .map((p) => ({ rank: p.rank, name: p.breed, b: getBreed(p.breed) }))
+        .filter((r) => r.b)
+    : [];
 
   // ItemList structured data — tells search engines this is a real ranked list.
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: article.topic_title,
-    description: article.intro.slice(0, 200),
+    description: metaDescription(article.intro, 200),
     numberOfItems: total,
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     itemListElement: article.picks.map((p) => ({
@@ -116,7 +134,7 @@ export default async function ArticleHub({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.topic_title,
-    description: article.intro.slice(0, 200),
+    description: metaDescription(article.intro, 200),
     image: topPick ? [`${SITE_URL}${getBreedImage(topPick.breed)}`] : [],
     author: { "@type": "Organization", name: "Value Finds Daily Editorial Team", url: `${SITE_URL}/about` },
     publisher: { "@type": "Organization", name: "Value Finds Daily", url: SITE_URL },
@@ -196,6 +214,46 @@ export default async function ArticleHub({
         . We count down from #{total} to our #1 pick, so keep scrolling for the
         top spot.
       </div>
+
+      {glance.length >= 3 && (
+        <section className="mb-10 overflow-x-auto rounded-2xl border border-stone-200 bg-white">
+          <table className="w-full min-w-[640px] text-left text-sm">
+            <caption className="px-5 pt-4 pb-2 text-left text-sm font-semibold uppercase tracking-wide text-stone-500">
+              At a glance: {glance.length} breeds compared
+            </caption>
+            <thead className="border-b border-stone-200 bg-stone-50 text-stone-600">
+              <tr>
+                <th scope="col" className="px-4 py-2.5 font-semibold">#</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Breed</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Size</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Energy</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Shedding</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Training</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Barking</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Lifespan</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Kids</th>
+              </tr>
+            </thead>
+            <tbody>
+              {glance.map(({ rank, name, b }) => (
+                <tr key={rank} className="border-b border-stone-100 last:border-0">
+                  <td className="px-4 py-2.5 font-bold text-emerald-700">{rank}</td>
+                  <th scope="row" className="px-4 py-2.5 font-medium text-stone-900">
+                    <a href={`#item-${rank}`} className="hover:text-emerald-700">{name}</a>
+                  </th>
+                  <td className="px-4 py-2.5 capitalize">{b!.size}</td>
+                  <td className="px-4 py-2.5 capitalize">{b!.energy}</td>
+                  <td className="px-4 py-2.5 capitalize">{b!.shedding}</td>
+                  <td className="px-4 py-2.5 capitalize">{b!.trainability}</td>
+                  <td className="px-4 py-2.5 capitalize">{b!.barking}</td>
+                  <td className="px-4 py-2.5 whitespace-nowrap">{b!.lifespan_min}–{b!.lifespan_max} yrs</td>
+                  <td className="px-4 py-2.5">{b!.good_with_kids ? "Yes" : "Caution"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )}
 
       <FreebieBanner />
 
@@ -432,7 +490,7 @@ export default async function ArticleHub({
           >
             More guides you&apos;ll love
           </h2>
-          <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
             {related.map((r) => {
               const top = r.picks.find((p) => p.rank === 1);
               return (

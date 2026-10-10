@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getAllArticles, getBreedImage } from "@/lib/articles";
+import { getPublishedArticles as getAllArticles, getBreedImage, NOINDEX_NICHES } from "@/lib/articles";
 import { nicheFromSlug, nicheMeta, nicheOf, nicheSlug, sortNewest } from "@/lib/niches";
 import FreebieBanner from "@/components/FreebieBanner";
 import AdSlot from "@/components/AdSlot";
@@ -31,6 +31,7 @@ export async function generateMetadata({
     title: `${meta.label} — ${count} Guides`,
     description: meta.description,
     alternates: { canonical: `/guides/${slug}` },
+    ...(NOINDEX_NICHES.has(niche) ? { robots: { index: false, follow: true } } : {}),
     openGraph: { title: `${meta.label} | Value Finds Daily`, description: meta.description, type: "website" },
   };
 }

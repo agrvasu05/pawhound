@@ -11,5 +11,8 @@ const lines = [
 ];
 for (const [from, to] of Object.entries(map)) if (from !== to) lines.push(`/shop/${from} /shop/${to} 301`);
 lines.push('/shop/freebie /freebie 301');
+// Duplicate guides → the one we kept (content/article-canonical.json).
+const art = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content', 'article-canonical.json'), 'utf-8'));
+for (const [from, to] of Object.entries(art)) if (from !== to) lines.push(`/${from} /${to} 301`);
 fs.writeFileSync(path.join(process.cwd(), 'public', '_redirects'), lines.join('\n') + '\n');
 console.log(`_redirects: ${lines.length - 1} rules`);

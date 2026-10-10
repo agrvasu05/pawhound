@@ -160,10 +160,13 @@ function buildQueue(tracker) {
       .map((k) => k.split('/')[0])
   );
   const onlyArg = process.argv.find((a) => a.startsWith('--only='))?.split('=')[1];
+  let redirected = {};
+  try { redirected = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content', 'article-canonical.json'), 'utf-8')); } catch { /* none */ }
 
   for (const file of fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'))) {
     const article = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf-8'));
     const slug = article.topic_slug;
+    if (redirected[slug]) continue; // duplicate guide, 301s to its canonical
     const dog = isDogArticle(article);
     if (!dog && !(article.niche && ON_NICHE.test(article.niche))) continue;
     if (onlyArg && !slug.includes(onlyArg)) continue;

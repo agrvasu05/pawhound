@@ -1,4 +1,4 @@
-import { getAllArticles } from "@/lib/articles";
+import { getPublishedArticles as getAllArticles } from "@/lib/articles";
 
 // Prerendered to a static JSON file at build time, regenerated on every deploy.
 export const dynamic = "force-static";

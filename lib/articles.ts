@@ -64,3 +64,41 @@ export function breedToSlug(breed: string): string {
 export function getBreedImage(breed: string, index = 1): string {
   return `/images/breeds/${breedToSlug(breed)}/${index}.jpg`;
 }
+
+// ── SEO helpers ───────────────────────────────────────────────────────────────
+import canonicalArticles from "@/content/article-canonical.json";
+
+/** Duplicate article slug → the article we keep (301 via public/_redirects). */
+export const ARTICLE_CANONICAL: Record<string, string> = canonicalArticles as Record<string, string>;
+
+/** Off-niche archives: kept live for old pins, but noindex and out of the sitemap. */
+export const NOINDEX_NICHES = new Set(["beauty", "fashion"]);
+
+export function isRedirected(slug: string): boolean {
+  return slug in ARTICLE_CANONICAL;
+}
+
+export function isIndexable(a: Article): boolean {
+  return !isRedirected(a.topic_slug) && !NOINDEX_NICHES.has(a.niche || "dogs");
+}
+
+/** Articles that get their own page (duplicates are 301s, not pages). */
+export function getPublishedArticles(): Article[] {
+  return getAllArticles().filter((a) => !isRedirected(a.topic_slug));
+}
+
+/** Search-snippet description: whole sentences, ≤ max chars, never cut mid-word. */
+export function metaDescription(text: string, max = 155): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const sentences = clean.match(/[^.!?]+[.!?]+/g) || [];
+  let out = "";
+  for (const s of sentences) {
+    if ((out + s).trim().length > max) break;
+    out = (out + s).trim() + " ";
+  }
+  out = out.trim();
+  if (out.length >= 70) return out;
+  const cut = clean.slice(0, max - 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\-–—]$/, "") + "…";
+}
