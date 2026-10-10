@@ -65,7 +65,8 @@ GitHub app, this repo only). Cloudflare builds on every push to main:
 domains valuefindsdaily.com + www. www → apex is a Cloudflare Redirect Rule
 (Pages `_redirects` can't redirect by hostname). Free plan: 500 builds/month;
 bot tracker commits carry `[CI Skip]`, so it is ~2 builds/day (the daily
-content and daily products commits) plus code pushes. `npm run build` runs
+content and daily products commits) plus code pushes. Gotcha: Cloudflare skips a build if the skip tag appears ANYWHERE in the
+commit message, body included, so never mention it in prose. `npm run build` runs
 `scripts/prune-out.js` afterwards (postbuild), which strips runtime-unused files
 and fails the build if the site nears the 20,000-file Pages limit. The Actions
 `deploy.yml` (wrangler upload) is a dormant fallback: it builds and skips the
