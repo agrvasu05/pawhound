@@ -68,22 +68,17 @@ URLs redirect via `public/_redirects` (generated from shop-canonical.json).
 Netlify is set to skip all builds (`ignore = "exit 0"` in netlify.toml) and
 keeps serving its last deploy only until DNS moves.
 
-One-time cutover (about 10 minutes, dashboard only):
-1. Cloudflare dashboard → My Profile → API Tokens → Create Token → template
-   "Edit Cloudflare Workers" is fine, or custom with *Account › Cloudflare
-   Pages › Edit*. Copy the token. Account ID is on the right side of any zone
-   overview page.
-2. `gh secret set CLOUDFLARE_API_TOKEN --repo agrvasu05/pawhound` and
-   `gh secret set CLOUDFLARE_ACCOUNT_ID --repo agrvasu05/pawhound`.
-3. Actions → "Deploy site (Cloudflare Pages)" → Run workflow. First upload is
-   large (~900 MB of images); later deploys upload only changed files.
-4. Cloudflare → Workers & Pages → valuefindsdaily → Custom domains → add
-   `valuefindsdaily.com` and `www.valuefindsdaily.com` (DNS updates itself
-   because the zone is on Cloudflare).
-5. Same project → Settings → Variables and Secrets → add
-   `MAILERLITE_API_KEY` and `MAILERLITE_GROUP_ID` (copy from Netlify →
-   Site configuration → Environment variables) → redeploy once.
-6. Delete the Netlify site.
+One-time cutover (about 10 minutes):
+1. Cloudflare → My Profile → API Tokens → Create Token → Create Custom Token →
+   Permissions: Account › Cloudflare Pages › Edit → copy the token.
+2. `bash scripts/cf-setup.sh` → paste the token. It finds the account id, sets
+   both GitHub secrets and starts the first deploy.
+3. When the deploy is green: Workers & Pages → valuefindsdaily → Custom
+   domains → add `valuefindsdaily.com` and `www.valuefindsdaily.com`.
+4. Settings → Variables and Secrets → `MAILERLITE_API_KEY`,
+   `MAILERLITE_GROUP_ID` → re-run the deploy workflow.
+5. Delete the Netlify site. Until then it keeps serving (and metering
+   bandwidth/function calls), so do this the same day.
 
 Deploys then happen once a day from the daily products workflow, plus on any
 push that touches site code.
