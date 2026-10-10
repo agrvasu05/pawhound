@@ -84,8 +84,8 @@ Deploys then happen once a day from the daily products workflow, plus on any
 push that touches site code.
 
 File budget: Pages allows 20,000 files per deploy. After pruning (prefetch
-segment files, attribution.json) the site is ~9,500 files and grows ~40/day
-(one photo per guide item + the page). The deploy fails loudly at 19,000;
+segment files, attribution.json) the site is ~3,100 files / 564 MB (measured
+in CI, 10 Oct 2026) and grows ~12/day (one photo per guide item + the page). The deploy fails loudly at 19,000;
 when that happens, move `public/images` to Cloudflare R2 (free 10 GB) and
 point `getBreedImage()` at the R2 public URL.
 

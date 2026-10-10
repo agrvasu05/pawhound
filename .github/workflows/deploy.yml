@@ -25,6 +25,7 @@ on:
       - 'next.config.ts'
       - 'package.json'
       - 'content/shop-canonical.json'
+      - '.github/workflows/deploy.yml'
 
 concurrency:
   group: deploy
