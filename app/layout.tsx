@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 import SiteHeader from "@/components/SiteHeader";
@@ -7,15 +7,19 @@ import SiteFooter from "@/components/SiteFooter";
 import { ADSENSE_CLIENT } from "@/lib/ads";
 import { GA_ID } from "@/lib/analytics";
 
-const display = Fraunces({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
+// Self-hosted variable fonts (npm @fontsource-variable/*). next/font/google
+// downloads font files during the build, and Cloudflare's builder failed that
+// fetch on 11 Oct 2026; local files make the build independent of the network.
+const display = localFont({
+  src: "../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2",
+  weight: "100 900",
   variable: "--font-fraunces",
   display: "swap",
 });
 
-const sans = Inter({
-  subsets: ["latin"],
+const sans = localFont({
+  src: "../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2",
+  weight: "100 900",
   variable: "--font-inter",
   display: "swap",
 });
