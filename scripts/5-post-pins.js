@@ -186,7 +186,9 @@ function buildQueue(tracker) {
     }
   }
   const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
-  return [...shuffle(queue.filter((q) => q.isNew)), ...shuffle(queue.filter((q) => !q.isNew))];
+  // Upgraded guides (the only ones offered to Google) go first, then fresh, then the rest.
+  const ordered = [...shuffle(queue.filter((q) => q.isNew)), ...shuffle(queue.filter((q) => !q.isNew))];
+  return [...ordered.filter((q) => q.article.upgraded_at), ...ordered.filter((q) => !q.article.upgraded_at)];
 }
 
 function corePhrase(title) { return title.replace(/^top\s+\d+\s+/i, '').trim(); }

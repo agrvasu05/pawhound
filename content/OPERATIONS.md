@@ -232,3 +232,11 @@ npx next build
 
 The repo is large (public/images ≈ 500 MB). Use a sparse clone:
 `git clone --filter=blob:none --no-checkout --depth 1 <url> && git sparse-checkout set app components lib scripts products content .github`
+
+## Pin art (AI images from ChatGPT)
+
+- Original pin images live in `content/pin-art/<article-slug>.jpg` (1000×1500 JPEG, ~300 KB). When one exists, `articleImages()` in `scripts/pin-renderer.js` puts it first, so single-image templates and video pins lead with it; breed/product photos fill collages.
+- They are made in the user's ChatGPT (Plus) in Chrome during an interactive Claude session: one prompt at a time, typed normally, saved to ~/Downloads, then converted with `sips -s format jpeg -s formatOptions 82 -z 1500 1000 in.png --out content/pin-art/<slug>.jpg`. Never automate ChatGPT unattended.
+- Prompt pattern: vertical 2:3 photorealistic scene showing the guide's #1 pick in the guide's situation, top third kept simple for the headline, "No text, no logos, no watermark."
+- Not used on the site's guide pages: real breed photos stay there. The poster puts upgraded guides first in its queue.
+- Batch 1 (11 Oct 2026): the 10 upgraded dog guides.

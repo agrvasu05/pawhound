@@ -173,8 +173,12 @@ function breedToSlug(s) {
 }
 
 /** Up to 4 pick images for an article (rank order), only those that exist on disk. */
+// Original AI pin art (made in ChatGPT, see content/OPERATIONS.md) leads the
+// pin when content/pin-art/<slug>.jpg exists; breed/product photos fill the rest.
 function articleImages(article, root = process.cwd()) {
   const out = [];
+  const art = path.resolve(root, 'content', 'pin-art', `${article.topic_slug}.jpg`);
+  if (article.topic_slug && fs.existsSync(art)) out.push(art);
   for (const p of [...article.picks].sort((a, b) => a.rank - b.rank)) {
     const ip = path.resolve(root, 'public', 'images', 'breeds', breedToSlug(p.breed), '1.jpg');
     if (fs.existsSync(ip)) out.push(ip);
