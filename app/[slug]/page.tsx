@@ -2,9 +2,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getArticle, getBreedImage, getPublishedArticles, isIndexable, metaDescription } from "@/lib/articles";
+import { getArticle, getBreedImage, getPublishedArticles, isIndexable, isListed, metaDescription } from "@/lib/articles";
 import { getBreed } from "@/lib/breeds";
-import { shopHref, dogEssentialsFor } from "@/lib/affiliate";
+import { shopHref, gearForBreed, bringHomeChecklist } from "@/lib/affiliate";
+import { AUTHOR } from "@/lib/author";
 import { getProductsForArticle, shopAsset } from "@/lib/shop";
 import AdSlot from "@/components/AdSlot";
 import FreebieBanner from "@/components/FreebieBanner";
@@ -27,11 +28,12 @@ export async function generateMetadata({
   const article = getArticle(slug);
   if (!article) return {};
   const topBreed = article.picks.find((p) => p.rank === 1);
-  const description = metaDescription(article.intro);
+  const description = metaDescription(article.answer || article.intro);
   return {
-    title: article.topic_title,
+    title: article.seo_title || article.topic_title,
     description,
-    // Off-niche archive (beauty/fashion): live for old pins, kept out of Google.
+    // Only upgraded, on-niche guides are offered to Google; everything else
+    // stays live for readers and Pinterest with noindex until it is rewritten.
     ...(isIndexable(article) ? {} : { robots: { index: false, follow: true } }),
     alternates: { canonical: `/${slug}` },
     openGraph: {
@@ -64,7 +66,8 @@ export default async function ArticleHub({
   const ranked = [...article.picks].sort((a, b) => b.rank - a.rank);
   const topPick = article.picks.find((p) => p.rank === 1);
 
-  const author = article.author ?? "the Value Finds Daily Editorial Team";
+  const upgraded = !!article.upgraded_at;
+  const author = upgraded ? AUTHOR.name : article.author ?? "the Value Finds Daily Editorial Team";
   const updatedLabel = article.updated_at
     ? new Date(`${article.updated_at}T00:00:00`).toLocaleDateString("en-US", {
         year: "numeric",
@@ -74,14 +77,14 @@ export default async function ArticleHub({
     : null;
   const faqs = article.faqs ?? [];
   const products = getProductsForArticle(article.niche, 3);
-  const essentials = isDogs ? dogEssentialsFor(article.topic_title) : [];
+  const checklist = isDogs && topPick ? bringHomeChecklist(getBreed(topPick.breed)?.size) : [];
   const pinMedia = topPick
     ? `${SITE_URL}${getBreedImage(topPick.breed)}`
     : `${SITE_URL}/favicon.ico`;
 
   // Related guides — internal links (SEO crawl + ranking) and more pageviews.
   const relatedAll = getPublishedArticles().filter(
-    (a) => a.topic_slug !== slug && a.picks.length >= 3 && isIndexable(a)
+    (a) => a.topic_slug !== slug && a.picks.length >= 3 && isListed(a)
   );
   // Most topically similar guides first (shared title words), same niche
   // preferred — internal links that match intent help both readers and crawl.
@@ -136,7 +139,9 @@ export default async function ArticleHub({
     headline: article.topic_title,
     description: metaDescription(article.intro, 200),
     image: topPick ? [`${SITE_URL}${getBreedImage(topPick.breed)}`] : [],
-    author: { "@type": "Organization", name: "Value Finds Daily Editorial Team", url: `${SITE_URL}/about` },
+    author: upgraded
+      ? { "@type": "Person", name: AUTHOR.name, url: `${SITE_URL}/author/${AUTHOR.slug}` }
+      : { "@type": "Organization", name: "Value Finds Daily Editorial Team", url: `${SITE_URL}/about` },
     publisher: { "@type": "Organization", name: "Value Finds Daily", url: SITE_URL },
     mainEntityOfPage: `${SITE_URL}/${slug}`,
     ...(article.updated_at ? { dateModified: `${article.updated_at}T00:00:00Z`, datePublished: `${article.updated_at}T00:00:00Z` } : {}),
@@ -184,7 +189,14 @@ export default async function ArticleHub({
 
       <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-3 text-sm text-stone-500">
         <p>
-          By <span className="font-medium text-stone-700">{author}</span>
+          By{" "}
+          {upgraded ? (
+            <Link href={`/author/${AUTHOR.slug}`} className="font-medium text-stone-700 underline decoration-stone-300 underline-offset-2 hover:text-emerald-700">
+              {author}
+            </Link>
+          ) : (
+            <span className="font-medium text-stone-700">{author}</span>
+          )}
           {updatedLabel ? <> · Last updated {updatedLabel}</> : null}
         </p>
         <PinItButton
@@ -194,11 +206,24 @@ export default async function ArticleHub({
         />
       </div>
 
+      {/* Answer first: the short answer up top, the full countdown, data and
+          the bring-home checklist below. */}
+      {article.answer && (
+        <section className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5">
+          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-emerald-800">The short answer</h2>
+          <p className="text-lg leading-relaxed text-stone-800">{article.answer}</p>
+          <p className="mt-3 text-sm text-stone-600">
+            Below: the full countdown from #{total} to #1, a side-by-side comparison, who should skip each pick
+            {isDogs ? ", and the bring-home checklist for your first week" : ""}.
+          </p>
+        </section>
+      )}
+
       <p className="text-lg text-stone-700 mb-6 leading-relaxed">
         {article.intro}
       </p>
 
-      {article.picks.some((p) => p.affiliate_url || p.shop_query) && (
+      {(isDogs || article.picks.some((p) => p.affiliate_url || p.shop_query)) && (
         <p className="-mt-3 mb-6 text-xs text-stone-500">
           This article contains affiliate links. We may earn a small commission
           at no extra cost to you.
@@ -206,13 +231,19 @@ export default async function ArticleHub({
       )}
 
       <div className="rounded-xl bg-stone-50 border border-stone-200 px-5 py-4 mb-8 text-sm text-stone-600 leading-relaxed">
-        <strong className="text-stone-800">How we ranked these:</strong> every{" "}
-        {itemSingular} below was chosen for real-world fit —{" "}
-        {isDogs
-          ? "temperament, energy level, grooming needs, and how well it suits everyday households"
-          : "practicality, style, value, and how easily it works in a real home"}
-        . We count down from #{total} to our #1 pick, so keep scrolling for the
-        top spot.
+        <strong className="text-stone-800">How this list was made:</strong>{" "}
+        {article.method ? (
+          article.method
+        ) : (
+          <>
+            every {itemSingular} below was chosen for real-world fit —{" "}
+            {isDogs
+              ? "temperament, energy level, grooming needs, and how well it suits everyday households"
+              : "practicality, style, value, and how easily it works in a real home"}
+            .
+          </>
+        )}{" "}
+        We count down from #{total} to #1, so keep scrolling for the top spot.
       </div>
 
       {glance.length >= 3 && (
@@ -320,6 +351,12 @@ export default async function ArticleHub({
               <p>{pick.description}</p>
             </div>
 
+            {pick.skip_if && (
+              <p className="mt-4 text-stone-700">
+                <strong className="text-stone-900">Skip it if:</strong> {pick.skip_if}
+              </p>
+            )}
+
             {pick.quirky_fact && (
               <div className="mt-5 rounded-r-lg border-l-4 border-amber-400 bg-amber-50 px-5 py-4">
                 <p className="text-stone-800">
@@ -328,12 +365,27 @@ export default async function ArticleHub({
               </div>
             )}
 
-            {/* Affiliate CTA — direct affiliate_url if set, else a Skimlinks-affiliated
-                merchant search for the item (auto-converted by the Skimlinks script). */}
+            {/* One product chosen from this breed's data (shedding → deshedding
+                tool, high energy → puzzle, otherwise a crate sized to it). */}
+            {isDogs && (() => {
+              const g = gearForBreed(getBreed(pick.breed));
+              return g ? (
+                <p className="mt-5 rounded-xl bg-stone-50 px-4 py-3 text-sm text-stone-700 ring-1 ring-stone-200">
+                  <strong className="text-stone-900">What a {pick.breed} owner usually buys first:</strong>{" "}
+                  <a href={g.href} target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-900">
+                    {g.name}
+                  </a>{" "}
+                  — {g.why}.
+                </p>
+              ) : null;
+            })()}
+
+            {/* Affiliate CTA for product guides: direct affiliate_url if set, else an
+                Amazon search for the specific product named in the guide. */}
             {(() => {
               const href =
                 pick.affiliate_url ||
-                (pick.shop_query ? shopHref(article.niche, pick.shop_query) : null);
+                (pick.product_name || pick.shop_query ? shopHref(article.niche, pick.product_name || pick.shop_query || "") : null);
               return href ? (
                 <a
                   href={href}
@@ -354,34 +406,56 @@ export default async function ArticleHub({
         </div>
       ))}
 
-      {/* Dog-owner essentials — the guides that click best on Pinterest had no
-          affiliate links at all. Tagged Amazon searches, earning from day one. */}
-      {essentials.length > 0 && (
-        <section className="mb-10 rounded-2xl border border-stone-200 bg-stone-50 p-6">
-          <h2
-            className="mb-1 text-2xl font-bold"
-            style={{ fontFamily: "var(--font-display), Georgia, serif" }}
-          >
-            Bringing one of these home? Start here
+      {/* Conclusion */}
+      <section className="mt-2 rounded-2xl bg-emerald-50/60 border border-emerald-100 p-6">
+        <h2
+          className="mb-3 text-2xl font-bold"
+          style={{ fontFamily: "var(--font-display), Georgia, serif" }}
+        >
+          The bottom line
+        </h2>
+        <p className="text-stone-700 leading-relaxed">
+          {topPick ? (
+            <>
+              Our #1 pick is <strong>{topPick.breed}</strong>
+              {topPick.best_for ? ` — ${topPick.best_for.toLowerCase()}` : ""}.
+              Still, the right choice comes down to your space, routine, and what
+              you value most. Any {itemSingular} on this list is a solid place to
+              start.
+            </>
+          ) : (
+            <>
+              Any {itemSingular} on this list is a solid place to start — the
+              best choice comes down to your space, routine, and what you value
+              most.
+            </>
+          )}
+        </p>
+      </section>
+
+      {/* The bring-home checklist sits after the #1 reveal: readers who made it
+          to the end are the ones about to buy. Crate sized to the #1 pick. */}
+      {checklist.length > 0 && (
+        <section className="mt-10 rounded-2xl border border-stone-200 bg-stone-50 p-6">
+          <h2 className="mb-1 text-2xl font-bold" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
+            Your bring-home checklist
           </h2>
           <p className="mb-4 text-sm text-stone-500">
-            The first-month essentials we recommend to every new owner. Affiliate links — we may earn a small commission at no extra cost to you.
+            The five things to have ready before day one{topPick ? `, with the crate sized for a ${topPick.breed}` : ""}. Affiliate links — we may earn a small commission at no extra cost to you.
           </p>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {essentials.map((e) => (
-              <li key={e.query} className="rounded-xl bg-white p-4 ring-1 ring-stone-200">
-                <a
-                  href={shopHref("dogs", e.query)}
-                  target="_blank"
-                  rel="nofollow sponsored noopener noreferrer"
-                  className="font-semibold text-stone-900 hover:text-emerald-700"
-                >
-                  {e.label} →
-                </a>
-                <p className="mt-1 text-sm text-stone-500">{e.why}</p>
+          <ol className="grid gap-3">
+            {checklist.map((g, i) => (
+              <li key={g.key} className="flex gap-3 rounded-xl bg-white p-4 ring-1 ring-stone-200">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-sm font-bold text-white">{i + 1}</span>
+                <div>
+                  <a href={g.href} target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-semibold text-stone-900 hover:text-emerald-700">
+                    {g.name} →
+                  </a>
+                  <p className="mt-0.5 text-sm text-stone-500">{g.why}.</p>
+                </div>
               </li>
             ))}
-          </ul>
+          </ol>
         </section>
       )}
 
@@ -423,33 +497,6 @@ export default async function ArticleHub({
           </div>
         </section>
       )}
-
-      {/* Conclusion */}
-      <section className="mt-2 rounded-2xl bg-emerald-50/60 border border-emerald-100 p-6">
-        <h2
-          className="mb-3 text-2xl font-bold"
-          style={{ fontFamily: "var(--font-display), Georgia, serif" }}
-        >
-          The bottom line
-        </h2>
-        <p className="text-stone-700 leading-relaxed">
-          {topPick ? (
-            <>
-              Our #1 pick is <strong>{topPick.breed}</strong>
-              {topPick.best_for ? ` — ${topPick.best_for.toLowerCase()}` : ""}.
-              Still, the right choice comes down to your space, routine, and what
-              you value most. Any {itemSingular} on this list is a solid place to
-              start.
-            </>
-          ) : (
-            <>
-              Any {itemSingular} on this list is a solid place to start — the
-              best choice comes down to your space, routine, and what you value
-              most.
-            </>
-          )}
-        </p>
-      </section>
 
       {faqs.length > 0 && (
         <>

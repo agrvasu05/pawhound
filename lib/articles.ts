@@ -12,6 +12,10 @@ export type Pick = {
   shop_query?: string;
   /** Affiliate deep link, filled in by the affiliate module once Awin is connected. */
   affiliate_url?: string;
+  /** Who should NOT pick this (upgraded guides). */
+  skip_if?: string;
+  /** Specific product to look for (upgraded home guides). */
+  product_name?: string;
 };
 
 export type Faq = {
@@ -34,6 +38,14 @@ export type Article = {
   updated_at?: string;
   /** Byline shown on the article. Defaults to the editorial team when unset. */
   author?: string;
+  /** Answer-first summary shown at the top of upgraded guides. */
+  answer?: string;
+  /** Plain description of how the list was actually put together. */
+  method?: string;
+  /** Search title (≤ 60 chars) when it differs from the on-page H1. */
+  seo_title?: string;
+  /** Set by scripts/upgrade-article.js; only upgraded guides are indexable. */
+  upgraded_at?: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
@@ -78,8 +90,18 @@ export function isRedirected(slug: string): boolean {
   return slug in ARTICLE_CANONICAL;
 }
 
-export function isIndexable(a: Article): boolean {
+/** Listed on the homepage, hubs and related links: not a duplicate, not off-niche. */
+export function isListed(a: Article): boolean {
   return !isRedirected(a.topic_slug) && !NOINDEX_NICHES.has(a.niche || "dogs");
+}
+
+/**
+ * Offered to Google: listed AND upgraded (scripts/upgrade-article.js). Fewer,
+ * better pages — the rest stay live for readers and Pinterest but carry
+ * noindex until they are rewritten.
+ */
+export function isIndexable(a: Article): boolean {
+  return isListed(a) && !!a.upgraded_at;
 }
 
 /** Articles that get their own page (duplicates are 301s, not pages). */

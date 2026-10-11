@@ -63,6 +63,7 @@ jobs:
 
       # 1) Create products + owned landing pages + queue pin variants (no posting yet)
       - name: Generate products + landing pages
+        continue-on-error: true   # needs an LLM key; must not block the rest of the run
         run: node products/generate-daily.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -89,6 +90,7 @@ jobs:
       # limiting: only enqueues when no freebie variants are pending; postQueue's
       # 7-day spacing drips them ~1/week. Most days this is a no-op.
       - name: Queue freebie funnel pins
+        continue-on-error: true
         run: node products/freebie-pins.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

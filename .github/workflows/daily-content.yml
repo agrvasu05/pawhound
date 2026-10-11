@@ -50,14 +50,29 @@ jobs:
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
 
-      # Trends only — keyword-driven home/cozy articles (affiliate-ready).
-      # (Dog, generic-home and beauty generators retired.)
-      - name: Generate trending articles
-        run: node scripts/2d-generate-trend-articles.js --count=3
+      # Quality over volume (Oct 2026): Google judged the mass-produced guides low
+      # value. New articles: ONE per week (Mondays). Every day: rewrite existing
+      # guides into answer-first, data-grounded versions (scripts/upgrade-article.js);
+      # only upgraded guides are indexable. Upgrades start 2026-10-24, after the
+      # first hand-written batch of 10 has been measured in Search Console.
+      - name: Generate this week's article (Mondays only)
+        continue-on-error: true
+        run: |
+          if [ "$(date -u +%u)" != "1" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then echo "Not Monday — no new article today."; exit 0; fi
+          node scripts/2d-generate-trend-articles.js --count=1
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GCP_PROJECT_ID: single-bonus-450611-h1   # Vertex billing project (WIF SA has aiplatform.user here)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GCP_PROJECT_ID: single-bonus-450611-h1
+          GEMINI_MODEL: gemini-2.5-flash
+
+      - name: Upgrade existing guides (2/day)
+        continue-on-error: true
+        run: node scripts/upgrade-article.js --count=2
+        env:
+          UPGRADE_START: '2026-10-24'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_PROJECT_ID: single-bonus-450611-h1
           GEMINI_MODEL: gemini-2.5-flash
 
       - name: Fetch images for new articles

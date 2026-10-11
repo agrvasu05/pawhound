@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getPublishedArticles, getBreedImage, isIndexable, type Article } from "@/lib/articles";
+import { getPublishedArticles, getBreedImage, isListed, type Article } from "@/lib/articles";
 import AdSlot from "@/components/AdSlot";
 import FreebieBanner from "@/components/FreebieBanner";
 import { LogoMark } from "@/components/Logo";
@@ -66,7 +66,7 @@ function ArticleCard({ article }: { article: Article }) {
 
 export default function Home() {
   // Homepage shows only indexable guides (no duplicates, no off-niche archive).
-  const articles = getPublishedArticles().filter((a) => a.picks.length >= 3 && isIndexable(a));
+  const articles = getPublishedArticles().filter((a) => a.picks.length >= 3 && isListed(a));
 
   // Group by niche, ordered by NICHE_META.
   const groups = new Map<string, Article[]>();

@@ -15,6 +15,7 @@ export type Breed = {
   good_with_cats: boolean;
   good_with_other_dogs: boolean;
   group?: string;
+  coat?: string[];
 };
 
 const BY_NAME = new Map<string, Breed>(

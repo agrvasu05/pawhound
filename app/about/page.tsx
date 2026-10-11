@@ -21,32 +21,28 @@ export default function About() {
         upfront about how we reach our conclusions.
       </p>
 
-      <h2>Who we are</h2>
+      <h2>Who writes the guides</h2>
       <p>
-        We&apos;re a small editorial team of home enthusiasts. Between us
-        we&apos;ve furnished, decluttered, and re-organized more homes than
-        we&apos;d like to admit — rentals, small apartments, and shared
-        spaces included. That hands-on experience shapes the questions we ask
-        in every guide: not just &ldquo;what&apos;s popular,&rdquo; but
-        &ldquo;what is this actually like to live with?&rdquo; (Long-time
-        readers may remember our dog breed guides — they&apos;re still here,
-        but cozy living is our focus now.)
+        The guides are written under the pen name{" "}
+        <a href="/author/elena-marsh">Elena Marsh</a>. One byline, one set of
+        standards: every page says who a pick suits, who should skip it, and
+        what the trade-off is.
       </p>
 
-      <h2>How we research and rank</h2>
+      <h2>How the lists are made</h2>
       <p>
-        For our home and cozy-living guides, we weigh durability, real-world
-        cost, ease of upkeep, and how a choice holds up in small or shared
-        spaces. Our printables are designed in-house and tested the boring
-        way: printed, used on real fridges and desks, and revised until they
-        actually help.
+        Dog breed rankings start from a structured dataset of 150 breeds — size,
+        energy, shedding, barking, trainability, lifespan, and how each breed
+        tends to do with children, cats and other dogs — and are then ordered for
+        the situation a guide is about (an apartment, a first-time owner, a
+        family with allergies). The comparison table on each guide shows the
+        data the ranking used.
       </p>
       <p>
-        Each list is a considered ranking, not a random roundup. We weigh how
-        well an option fits everyday life: the household it suits, the trade-offs
-        that come with it, and the small details people usually discover only
-        after they&apos;ve committed. When something has a real downside, we say
-        so.
+        Home and cozy-living guides name specific, widely sold products and say
+        what each one is good and bad at. We don&apos;t claim to have tested
+        products we haven&apos;t, and we date every guide so you can see how
+        current it is. Our printables are designed in-house.
       </p>
 
       <h2>Editorial independence</h2>

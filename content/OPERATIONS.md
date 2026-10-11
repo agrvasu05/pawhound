@@ -191,6 +191,27 @@ Cloudflare settings that hurt SEO/speed (security settings; change by hand):
   out of AI search answers (ChatGPT search, Perplexity). Allow "AI search"
   crawlers if you want that traffic; AI training can stay blocked.
 
+## Content quality system (11 Oct 2026)
+
+- Only **upgraded** guides are indexable (`upgraded_at` set). Everything else
+  stays live for readers and Pinterest with noindex. Batch 1 (10 dog guides)
+  was written by hand on 10–11 Oct: answer-first summary, honest method,
+  per-pick "best for / skip if", rankings re-sorted to match the breed data,
+  a breed comparison table, one data-matched product per breed, and a
+  bring-home checklist after the #1 reveal.
+- Author: pen name **Elena Marsh** (`lib/author.ts`, `/author/elena-marsh`).
+  The bio claims no credentials or testing — keep it that way.
+- Amazon: `content/amazon-products.json` holds verified ASINs only. Never add a
+  product link that wasn't checked against its title; unknown products use an
+  exact-name Amazon search (`shopHref`).
+- Cadence: one new article a week (Mondays); `scripts/upgrade-article.js`
+  upgrades 2 guides/day from 2026-10-24 (after batch 1 is measured).
+- **LLM access:** the Vertex credits ran out (billing unlinked 10 Oct). All AI
+  steps (articles, upgrades, products, pin copy) are non-fatal and do nothing
+  until a free Gemini key is added:
+  https://aistudio.google.com/apikey → `gh secret set GEMINI_API_KEY --repo agrvasu05/pawhound`.
+  The code prefers that key over Vertex automatically.
+
 ## Site monetization status
 
 - **Gumroad printables**: live. Bundles are the lever (see above). List the same files on Etsy once the first bundle sells.

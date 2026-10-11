@@ -9,14 +9,14 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://valuefindsdaily.com";
-  // Only indexable guides: no 301'd duplicates, no off-niche archive.
+  // Only indexable guides: upgraded, on-niche, not a 301'd duplicate.
   const articles = getAllArticles().filter(isIndexable);
 
   // Only the full hub article is indexable; slideshow slides are noindex
   // alternates, so they are intentionally excluded from the sitemap.
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/${article.topic_slug}`,
-    lastModified: article.updated_at ? new Date(article.updated_at) : new Date(),
+    lastModified: new Date(article.upgraded_at || article.updated_at || Date.now()),
     priority: 0.8,
   }));
 
@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/shop`, lastModified: new Date(), priority: 0.9 },
     { url: `${baseUrl}/freebie`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), priority: 0.5 },
+    { url: `${baseUrl}/author/elena-marsh`, lastModified: new Date(), priority: 0.5 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), priority: 0.5 },
     { url: `${baseUrl}/privacy`, lastModified: new Date(), priority: 0.3 },
     { url: `${baseUrl}/terms`, lastModified: new Date(), priority: 0.3 },

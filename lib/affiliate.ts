@@ -44,3 +44,40 @@ export function dogEssentialsFor(title: string, limit = 4) {
   };
   return [...DOG_ESSENTIALS].sort((a, b) => boost(b) - boost(a)).slice(0, limit);
 }
+
+// ── Verified Amazon products (content/amazon-products.json) ───────────────────
+import productsJson from "@/content/amazon-products.json";
+type Product = { asin: string; name: string; why: string };
+const P = productsJson as unknown as Record<string, Product>;
+
+export function amazonDp(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
+}
+
+export type Gear = { key: string; name: string; why: string; href: string };
+function gear(key: string): Gear | null {
+  const p = P[key];
+  return p && p.asin ? { key, name: p.name, why: p.why, href: amazonDp(p.asin) } : null;
+}
+
+function crateKey(size?: string): string {
+  return size === "toy" ? "crate_toy" : size === "small" ? "crate_small" : size === "large" ? "crate_large" : size === "giant" ? "crate_giant" : "crate_medium";
+}
+
+/** One data-driven product suggestion for a breed (shown inside its entry). */
+export function gearForBreed(b?: { size?: string; energy?: string; shedding?: string; coat?: string[] } | null): Gear | null {
+  if (!b) return null;
+  if (b.shedding === "high") {
+    const long = (b.coat || []).some((c) => /long|double/.test(c)) && (b.size === "large" || b.size === "giant");
+    return gear(long ? "deshed_long" : "deshed_short");
+  }
+  if (b.energy === "high") return gear("puzzle");
+  return gear(crateKey(b.size));
+}
+
+/** The end-of-guide bring-home checklist, crate sized to the #1 pick. */
+export function bringHomeChecklist(topSize?: string): Gear[] {
+  return [crateKey(topSize), "bed", "harness", "slow_feeder", "puzzle"]
+    .map(gear)
+    .filter((g): g is Gear => !!g);
+}

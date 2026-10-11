@@ -1,0 +1,14 @@
+{
+  "_note": "Verified Amazon listings (ASIN + title confirmed from amazon.com search results, 10 Oct 2026). Links get the Associates tag at render time. Never add an ASIN that wasn't checked against its product title.",
+  "bed": { "asin": "B00D2VB1NE", "name": "Furhaven Orthopedic Dog Bed (Terry & Suede Mattress)", "why": "egg-crate orthopedic foam and a removable, washable cover" },
+  "slow_feeder": { "asin": "B00FPKNRCS", "name": "Outward Hound Fun Feeder Slo Bowl", "why": "maze ridges slow fast eaters down and help prevent bloat" },
+  "harness": { "asin": "B0009ZBKG4", "name": "PetSafe Easy Walk No-Pull Harness", "why": "front-chest clip discourages pulling without pressure on the throat" },
+  "puzzle": { "asin": "B0711Y9XTF", "name": "Outward Hound Nina Ottosson Dog Brick Puzzle", "why": "a level-2 treat puzzle that burns mental energy indoors" },
+  "deshed_short": { "asin": "B07MZD93QQ", "name": "FURminator deShedding Tool (Medium, Short Hair)", "why": "reaches loose undercoat without cutting the topcoat" },
+  "deshed_long": { "asin": "B07MZDTG76", "name": "FURminator deShedding Tool (Large, Long Hair)", "why": "built for big, long-coated shedders" },
+  "crate_toy": { "asin": "B000TZ59ES", "name": "MidWest iCrate 18-inch Double Door Crate", "why": "sized for dogs up to 10 lbs, divider included" },
+  "crate_small": { "asin": "B000QFWCJ6", "name": "MidWest iCrate 24-inch Double Door Crate", "why": "sized for 12–20 lb dogs, divider grows with a puppy" },
+  "crate_medium": { "asin": "B000QFWCK0", "name": "MidWest iCrate 30-inch Double Door Crate", "why": "sized for 21–40 lb dogs, divider grows with a puppy" },
+  "crate_large": { "asin": "B000QFT1RC", "name": "MidWest iCrate 42-inch Double Door Crate", "why": "sized for 71–90 lb dogs, divider grows with a puppy" },
+  "crate_giant": { "asin": "B000QFWCLY", "name": "MidWest iCrate 48-inch Double Door Crate", "why": "sized for 90–110 lb dogs" }
+}
