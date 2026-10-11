@@ -194,32 +194,50 @@ function buildQueue(tracker) {
 function corePhrase(title) { return title.replace(/^top\s+\d+\s+/i, '').trim(); }
 function firstSentence(text) { const m = text.match(/^[\s\S]*?[.!?](?:\s|$)/); return (m ? m[0] : text).trim(); }
 
-// Keyword-first description, one concrete sentence, explicit CTA, no hashtags.
+// Pin SEO: Pinterest search reads the title, description and alt text, and
+// the first ~50 characters of the description show in the feed.
+// Title: the pin's own headline (matches the image text and varies per pin, so
+// pins of one guide don't compete with identical titles); video pins use the
+// guide's SEO title. Years are dropped so pins stay evergreen.
+function buildTitle(article, headline, isVideo) {
+  const t = (isVideo ? article.seo_title || article.topic_title : headline || article.topic_title)
+    .replace(/\s*\((?:20\d\d)(?:\s+guide)?\)\s*$/i, '').trim();
+  return t.slice(0, 100);
+}
+
+// Description: keyword phrase first, then the guide's direct answer (names the
+// top breeds, which people search for), then a CTA. No hashtags.
 function buildDescription(article) {
   const phrase = corePhrase(article.topic_title);
   const count = article.picks.length;
-  const noun = article.item_noun || 'breeds';
   const dog = isDogArticle(article);
-  const hook = dog
-    ? `${phrase}: ${count} ${noun} ranked for real homes, with the temperament, energy and grooming notes that matter.`
-    : `${phrase}: ${count} ${noun} we'd actually use, ranked from easiest to most impactful.`;
-  const detail = firstSentence(article.intro);
+  const noun = article.item_noun || (dog ? 'dog breeds' : 'ideas');
   const cta = dog
-    ? 'Tap to see the full ranked list with photos and find the breed that fits your life.'
+    ? `Tap for all ${count} ${noun} ranked, with photos, energy, grooming and kid-friendliness notes.`
     : 'Tap for the full list with photos, where to get each piece, and our top pick.';
-  let body = `${hook} ${detail} ${cta}`;
-  if (body.length > 480) body = body.slice(0, 479).trimEnd() + '…';
+  let body;
+  if (article.answer) {
+    const answer = article.answer.replace(/\s+(?:here|on this list)(?=[:,.])/gi, '').trim();
+    body = `${phrase}: ${answer} ${cta}`;
+    if (body.length > 490) body = `${phrase}: ${firstSentence(answer)} ${cta}`;
+  } else {
+    const hook = dog
+      ? `${phrase}: ${count} ${noun} ranked for real homes, with the temperament, energy and grooming notes that matter.`
+      : `${phrase}: ${count} ${noun} we'd actually use, ranked from easiest to most impactful.`;
+    body = `${hook} ${firstSentence(article.intro)} ${cta}`;
+  }
+  if (body.length > 490) body = body.slice(0, 489).trimEnd() + '…';
   return body;
 }
 
 function buildAltText(article, headline) {
   const phrase = corePhrase(article.topic_title);
-  const top = article.picks.find((p) => p.rank === 1);
-  const noun = article.item_noun || 'ideas';
-  const alt = top
-    ? `${headline}. Photo collage featuring ${top.breed}, from a ranked list of ${article.picks.length} ${noun} about ${phrase}.`
-    : `${headline}. Pin image for a ranked list of ${article.picks.length} ${noun} about ${phrase}.`;
-  return alt.slice(0, 480);
+  const noun = article.item_noun || (isDogArticle(article) ? 'dog breeds' : 'ideas');
+  const top = [...article.picks].sort((a, b) => a.rank - b.rank).slice(0, 3).map((p) => p.breed).filter(Boolean);
+  const alt = top.length
+    ? `Pin titled "${headline}" with photos of ${top.join(', ')}, from a ranked guide to ${article.picks.length} ${noun}: ${phrase}.`
+    : `Pin titled "${headline}" for a ranked guide to ${article.picks.length} ${noun}: ${phrase}.`;
+  return alt.slice(0, 490);
 }
 
 // Render the chosen pin for this article into a temp dir. Uses a pre-rendered
@@ -252,7 +270,7 @@ async function postPin(pin, boardId, m) {
   const { article, slug } = pin;
   const common = {
     board_id: boardId,
-    title: article.topic_title.slice(0, 100),
+    title: buildTitle(article, m.headline, pin.isVideo),
     description: buildDescription(article),
     alt_text: buildAltText(article, m.headline),
     link: `${SITE_URL}/${slug}`,

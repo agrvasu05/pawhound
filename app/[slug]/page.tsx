@@ -38,7 +38,11 @@ export async function generateMetadata({
     alternates: { canonical: `/${slug}` },
     openGraph: {
       type: "article",
-      title: article.topic_title,
+      // Rich Pins and social cards read these; the page-level openGraph replaces
+      // the layout's, so siteName and url are repeated here.
+      siteName: "Value Finds Daily",
+      url: `/${slug}`,
+      title: article.seo_title || article.topic_title,
       description,
       images: topBreed ? [getBreedImage(topBreed.breed)] : [],
       ...(article.updated_at
