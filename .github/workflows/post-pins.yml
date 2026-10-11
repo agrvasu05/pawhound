@@ -8,19 +8,18 @@ name: Post pins (US peak windows)
 # Cadence (Oct 2026 reset): two runs a day, every day, inside Pinterest's US
 # peak windows — midday (10 AM–1 PM ET) and evening (6–11 PM ET). Each run posts
 # up to 3 content pins + 2 product pins, so a full day is 6–10 fresh pins: the
-# audit target, and still under the 10/day spam line. GitHub's cron can lag by
-# up to ~an hour near the top of the hour, so each window has a primary and a
-# backup cron and the guard below just skips anything that lands outside peak.
-# (The old cron-job.org trigger is no longer required; workflow_dispatch stays
-# for manual runs.)
+# audit target, and still under the 10/day spam line.
+#
+# 11 Oct 2026: GitHub started scheduled runs 4–6 hours late, so every run landed
+# outside the old 3-hour windows and nothing posted for a day and a half. The job
+# is now triggered hourly and the windows are wide (midday 9 AM–4 PM ET, evening
+# 5–11 PM ET). The once-per-window stamp below still caps it at two posting runs
+# a day; the extra runs exit in seconds (free on a public repo).
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 15 * * *'   # 15:20 UTC = 11:20 AM EDT / 10:20 AM EST — midday window
-    - cron: '35 16 * * *'   # backup midday (12:35 PM EDT / 11:35 AM EST)
-    - cron: '20 0 * * *'    # 00:20 UTC = 8:20 PM EDT / 7:20 PM EST — evening window
-    - cron: '45 1 * * *'    # backup evening (9:45 PM EDT / 8:45 PM EST)
+    - cron: '17 * * * *'    # hourly; the guard picks the window and dedupes
 
 permissions:
   contents: write
@@ -46,8 +45,8 @@ jobs:
           H=$(TZ=America/New_York date +%H)
           D=$(TZ=America/New_York date +%F)
           WINDOW=""
-          if [ "$H" -ge 10 ] && [ "$H" -le 12 ]; then WINDOW=midday; fi
-          if [ "$H" -ge 18 ] && [ "$H" -le 23 ]; then WINDOW=evening; fi
+          if [ "$H" -ge 9 ] && [ "$H" -le 16 ]; then WINDOW=midday; fi
+          if [ "$H" -ge 17 ] && [ "$H" -le 23 ]; then WINDOW=evening; fi
           echo "Eastern hour: $H  window: ${WINDOW:-none}"
           if [ -z "$WINDOW" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
             echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Outside peak windows — skipping."; exit 0
