@@ -52,7 +52,7 @@ Expected output: 6–10 fresh pins/day, ~50–70/week, 3 articles/day, ~2 produc
 - Three pillars only: cozy small-space home, dog lovers' home (breed guides + dog art), seasonal home. Beauty/fashion articles stay on the site for Google but are never pinned.
 - Fresh image on every pin; the same URL at most once per 7 days per pipeline.
 - Headlines ≤ 8 words, rendered ≥ 60px on a 1000×1500 canvas (feed thumbnails are 236px wide).
-- Keyword boards only (12–15). `products/consolidate-boards.js --apply` merges the one-pin boards; `board-hygiene.js` deletes empty off-niche boards daily.
+- Keyword boards only (12–15). Dog guides post to five search-named topic boards (Best Apartment Dogs, Active & Running Dog Breeds, Family Dogs & First-Time Owner Breeds, Low-Shedding & Hypoallergenic Dogs, Rare, Smart & Long-Living Dog Breeds; `DOG_TOPIC_BOARDS` in `scripts/5-post-pins.js`, kept by `consolidate-boards.js`); unmatched dog guides go to Dog Lovers Home & Breed Guides. `products/consolidate-boards.js --apply` merges the one-pin boards; `board-hygiene.js` deletes empty off-niche boards daily.
 - Seasonal content 45–60 days ahead: Halloween pins stop ~25 Oct; Thanksgiving/Christmas/New-Year-planner content runs from 10 Oct.
 - Watch **saves**, not impressions: target 10 saves/week by week 4, 50/week by week 8. Templates under 0.2% save rate get killed by the weekly report.
 

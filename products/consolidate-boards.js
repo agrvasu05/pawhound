@@ -39,7 +39,9 @@ const TARGETS = [
   ['Printable Wall Art & Cozy Decor', /wall art|print|poster|gallery|art set|bundle/i, 'Printable wall art and cozy home decor — instant digital downloads for warm, calming spaces.'],
   ['Home Decor & Cozy Living Ideas', /./, 'Cozy home decor and small-space living ideas you can actually use — budget-friendly makeovers, room inspiration, smart storage and warm styling.'],
 ];
-const KEEP = new Set(TARGETS.map((t) => t[0]).concat(['Free Printables', 'Free Printable Planners & Checklists', 'Cozy Home Printables']));
+// Dog topic boards that scripts/5-post-pins.js posts to (DOG_TOPIC_BOARDS).
+const DOG_TOPIC_BOARDS = ['Best Apartment Dogs', 'Active & Running Dog Breeds', 'Family Dogs & First-Time Owner Breeds', 'Low-Shedding & Hypoallergenic Dogs', 'Rare, Smart & Long-Living Dog Breeds'];
+const KEEP = new Set(TARGETS.map((t) => t[0]).concat(['Free Printables', 'Free Printable Planners & Checklists', 'Cozy Home Printables'], DOG_TOPIC_BOARDS));
 
 function api(method, endpoint, body) {
   return new Promise((resolve, reject) => {

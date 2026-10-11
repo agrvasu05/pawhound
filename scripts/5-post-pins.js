@@ -114,6 +114,28 @@ const NICHE_BOARDS = {
   },
 };
 
+// Dog guides go to search-named topic boards (board names are a Pinterest
+// ranking signal); a guide matching none stays on the broad dogs board. First
+// match wins, so order matters. "Best Apartment Dogs" already exists.
+const DOG_TOPIC_BOARDS = [
+  { test: /apartment|small.?space|condo|\bcity\b|urban|minimalist|calm|quiet|lazy|low.?energy|couch|indoor|small|toy|tiny/i,
+    name: 'Best Apartment Dogs',
+    description: 'The best apartment dogs and calm, quiet breeds for small spaces: low-barking, low-energy dog breeds that suit apartments, condos and minimalist homes. Tap any pin for the full ranked list with photos.' },
+  { test: /active|running|runner|jog|hik|swim|water|athlet|high.?energy|outdoor|sport|adventure/i,
+    name: 'Active & Running Dog Breeds',
+    description: 'High-energy dog breeds for runners, hikers and active owners: the best running dogs, hiking companions and water-loving swimmers, ranked by stamina and trainability. Tap any pin for the full ranked list with photos.' },
+  { test: /family|\bkids?\b|child|first.?time|beginner|novice|senior|elderly|\bcats?\b|gentle|couples|easiest/i,
+    name: 'Family Dogs & First-Time Owner Breeds',
+    description: 'The best family dogs for homes with kids and the easiest dog breeds for first-time owners: gentle, trainable, good with children and other pets. Tap any pin for the full ranked list with photos.' },
+  { test: /shed|hypoallergenic|allerg|curly|wavy|coat|groom|\bhair|fluff/i,
+    name: 'Low-Shedding & Hypoallergenic Dogs',
+    description: 'Low-shedding and hypoallergenic dog breeds for allergy-friendlier homes, plus curly and wavy coated dogs and what their grooming really takes. Tap any pin for the full ranked list with photos.' },
+  { test: /rare|longest|lifespan|long.?living|unique|oldest|ancient|unusual|smartest|intelligen|guard|watchdog|protect/i,
+    name: 'Rare, Smart & Long-Living Dog Breeds',
+    description: 'Dog breed facts worth knowing: the rarest dog breeds, the smartest and most trainable dogs, the best guard dogs and the breeds that live the longest. Tap any pin for the full ranked list with photos.' },
+];
+const dogTopicBoard = (article) => DOG_TOPIC_BOARDS.find((b) => b.test.test(`${article.topic_slug} ${article.topic_title}`));
+
 async function ensureBoard(name, description, key, boardsTracker) {
   if (boardsTracker[key]) return boardsTracker[key];
   if (DRY) { boardsTracker[key] = `dry-${key}`; return boardsTracker[key]; }
@@ -142,6 +164,10 @@ async function getOrCreateBoard(article, boardsTracker, rotationIdx = 0) {
     const desc = `${name} — hand-picked ${article.niche || ''} ideas and guides. ${phrase}: tap any pin for the full list with photos and details.`
       .replace(/\s+/g, ' ').trim().slice(0, 480);
     return ensureBoard(name, desc, `kw:${name.toLowerCase()}`, boardsTracker);
+  }
+  if (isDogArticle(article)) {
+    const topic = dogTopicBoard(article);
+    if (topic) return ensureBoard(topic.name, topic.description, `kw:${topic.name.toLowerCase()}`, boardsTracker);
   }
   const nicheKey = isDogArticle(article) ? 'dogs' : 'home';
   const board = NICHE_BOARDS[nicheKey];
