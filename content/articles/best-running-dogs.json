@@ -1,112 +1,127 @@
 {
   "topic_slug": "best-running-dogs",
   "topic_title": "Top 15 Best Dog Breeds for Runners and Joggers",
-  "intro": "If you love to hit the pavement or trail for a good run, having a canine companion who can keep up makes the experience even better. Certain dog breeds are built for distance and endurance, boasting high stamina and a natural love for athletic activity. Whether you're training for a marathon or just enjoy a daily jog, these breeds thrive on regular, vigorous exercise and make great running partners. Here’s a list of breeds known for their running capabilities, each bringing their own unique energy and personality to your fitness routine.",
+  "intro": "A good running dog needs more than energy. Look for a lean, athletic build, a long muzzle that sheds heat efficiently, and enough trainability to hold a steady pace on a loose leash without lunging at squirrels. Your typical distance matters too: sporting breeds handle long, steady miles, sighthounds prefer short bursts, and heavy-coated breeds suit cool climates. Wait until a puppy has finished growing before building mileage, carry water, and check paw pads on hot pavement and rough trails. The best running dog is one that matches both your pace and your weather.",
   "picks": [
     {
       "rank": 15,
       "breed": "Golden Retriever",
-      "description": "Golden Retrievers are known for their friendly and eager-to-please nature, and while they have plenty of energy, they lean more toward moderate exercise than sustained running. They enjoy a good jog now and then and can keep pace for shorter distances, but their build is more suited to a variety of activities rather than long-distance running. That said, their enthusiasm makes them fun companions for less intense runs or as part of a cross-training routine.",
-      "best_for": "Casual runners who want a friendly, adaptable companion",
-      "quirky_fact": "Golden Retrievers are often used in therapy work because of their gentle temperament."
+      "description": "The Golden Retriever is a good fit for runners who jog a few times a week at an easy pace and want a gentle, sociable dog the rest of the time. Goldens are easy to train and good with children, cats and other dogs. They enjoy running but are built more for retrieving and swimming than for long, fast miles, and their medium-length double coat holds heat, so summer runs should be short and early. The coat sheds heavily and needs brushing several times a week, and the feathering on legs and tail collects debris on trails. Goldens need roughly an hour or more of exercise a day, and regular moderate runs help keep them lean. Choose a breeder who health-tests for hip, elbow and heart issues.",
+      "best_for": "Casual joggers who want a friendly, easygoing family dog",
+      "quirky_fact": "Golden Retrievers are known for a soft mouth, carrying objects gently without damaging them.",
+      "skip_if": "You train for long races or run often in hot weather"
     },
     {
       "rank": 14,
-      "breed": "Labrador Retriever",
-      "description": "Labrador Retrievers are energetic and athletic dogs who enjoy plenty of exercise. They can keep up with runners for moderate distances, but they excel more in bursts of activity and swimming due to their background as water retrievers. Labs have a sturdy build and a love for play, so they’re great pals for joggers who mix running with other activities, but they might not have the endurance of more specialized running breeds.",
-      "best_for": "Active joggers who like variety in their workouts",
-      "quirky_fact": "Labs have webbed feet, making them excellent swimmers."
+      "breed": "Azawakh",
+      "description": "The Azawakh is a rare, very lean sighthound from the Sahel region of West Africa, built for speed in heat, with long legs and a fine, short coat that needs almost no grooming. It handles warm weather better than most breeds here, which appeals to runners in hot climates. That said, it is a specialist dog: trainability is rated hard, it is independent and reserved with strangers, and its prey drive is strong, so runs must be on a leash. The breed data rates it good with children and other dogs but not with cats. Azawakhs are quiet, rarely bark and bond closely with their own people. Because the breed is uncommon, finding a responsible breeder can take time. It suits experienced sighthound owners rather than first-time running-dog owners.",
+      "best_for": "Experienced sighthound owners running in hot climates",
+      "quirky_fact": "Azawakhs were traditionally kept by nomadic peoples of the Sahara and Sahel as hunting and guard dogs.",
+      "skip_if": "You're new to dogs, have cats, or want a dog that is easy to train"
     },
     {
       "rank": 13,
-      "breed": "Doberman Pinscher",
-      "description": "Dobermans combine strength, speed, and agility, making them solid running partners. They’re highly intelligent and responsive, so they tend to stay focused during runs. While they have great stamina, their main strength lies in sprints and shorter bursts of intense exercise rather than sustained distance running. Dobermans thrive with consistent training and mental stimulation along with physical activity.",
-      "best_for": "Sprinters and runners who enjoy high-intensity interval training",
-      "quirky_fact": "Dobermans were originally bred as guard dogs, prized for their loyalty and intelligence."
+      "breed": "Boxer",
+      "description": "The Boxer is a large, energetic, playful dog that enjoys short to moderate runs, especially in cool weather. It is good with children, cats and other dogs in the breed data, and its bouncy enthusiasm makes it a fun companion. The limit for runners is the short muzzle: Boxers cool themselves less efficiently than long-nosed breeds, so they can overheat quickly, and long runs or warm-weather runs carry real risk. Keep distances moderate, run in the cool hours and watch closely for heavy panting. The short coat is easy to care for. Training is rated moderate, and young Boxers can be jumpy and headstrong, so leash manners take work. Boxers are protective of their family and need around an hour or two of activity a day.",
+      "best_for": "Runners doing short, cool-weather runs with a playful family dog",
+      "quirky_fact": "The Boxer was developed in Germany in the late 1800s, partly from a hunting mastiff called the Bullenbeisser.",
+      "skip_if": "You run long distances or live in a hot, humid climate"
     },
     {
       "rank": 12,
-      "breed": "Boxer",
-      "description": "Boxers are muscular and energetic dogs who love to stay active. Their boundless enthusiasm makes them great for shorter runs and playful workouts, but their build is better suited to bursts of speed than long-distance endurance. Boxers are also known for their affectionate and goofy personalities, which can make running feel like a joyful game more than a workout.",
-      "best_for": "Joggers who want a spirited, fun-loving running buddy",
-      "quirky_fact": "Boxers are known for their distinctive “boxing” style play behavior."
+      "breed": "Saluki",
+      "description": "The Saluki is one of the oldest sighthound breeds, built for speed and endurance with a large, light frame and long legs. It enjoys running, but on its own terms: Salukis love to sprint and gallop, and steady jogging beside a person is something they may need to learn. They are gentle, quiet at home and rarely bark. Training is rated moderate, and they are independent, with a strong prey drive and little reliable recall, so runs should be leashed and off-leash time kept to securely fenced areas. The breed data rates them good with children and other dogs but not with cats. The coat is smooth with feathering on ears and tail, needing weekly brushing. Their thin build makes them sensitive to cold, so a coat helps in winter.",
+      "best_for": "Experienced runners who want a quiet, elegant sighthound",
+      "quirky_fact": "Salukis are often called the royal dog of Egypt and appear in ancient Middle Eastern art.",
+      "skip_if": "You have cats or want off-leash runs with reliable recall"
     },
     {
       "rank": 11,
-      "breed": "Australian Shepherd",
-      "description": "Australian Shepherds are high-energy dogs with impressive agility and endurance. They were bred to work all day herding livestock, so they have the stamina to keep moving for long stretches. These dogs enjoy mental and physical challenges, making them excellent companions for runners who appreciate a dog that can keep their focus during miles of jogging.",
-      "best_for": "Dedicated runners who want a smart, tireless athlete",
-      "quirky_fact": "Australian Shepherds often have striking blue or multicolored eyes."
+      "breed": "Labrador Retriever",
+      "description": "The Labrador Retriever is a dependable running partner for moderate distances, especially for runners who also want a relaxed family dog. Labs are easy to train, good with children, cats and other dogs, and happy to adapt to your routine. Their heavier, stockier build makes them less suited to long, fast runs than the pointers, and they can overheat in warm weather, so keep runs moderate and well hydrated. The short double coat sheds heavily, especially in spring and autumn. Labs need around an hour or more of exercise daily and gain weight easily, so regular runs help keep them lean, which also protects their joints. They are friendly to strangers and other runners, which makes busy park routes easy. Typical lifespan is 10 to 12 years.",
+      "best_for": "Casual and moderate-distance runners who want a family dog",
+      "quirky_fact": "Labradors originated in Newfoundland, not Labrador, where they helped fishermen haul in nets.",
+      "skip_if": "You run long, fast miles or can't handle heavy shedding"
     },
     {
       "rank": 10,
-      "breed": "Standard Poodle",
-      "description": "Standard Poodles combine elegance with athleticism. They have a lean, muscular build that supports endurance and speed, and they’re known for being intelligent and eager to please. Poodles enjoy a variety of activities and can easily handle sustained running, especially when paired with mental challenges or training routines that keep them engaged.",
-      "best_for": "Runners looking for a smart, versatile companion",
-      "quirky_fact": "Poodles were originally bred as water retrievers with a distinctive 'retrieving' swim style."
+      "breed": "Irish Setter",
+      "description": "The Irish Setter is a large, graceful, high-energy sporting dog with real stamina, which suits runners who head out daily and enjoy a cheerful companion. Setters are friendly with children, cats and other dogs in the breed data, and they rarely show guarding behavior. Training is rated moderate: they are eager but easily distracted and mature slowly, so teaching a steady pace takes patience. The long, silky coat is the main downside for runners, since it collects burrs and debris on trails and needs brushing several times a week. Irish Setters need at least an hour or two of exercise daily and can be boisterous indoors if they don't get it. A secure leash or fence is important, as they will range after birds.",
+      "best_for": "Daily runners who want a friendly, sociable dog and don't mind brushing",
+      "quirky_fact": "Irish Setters are known for staying puppyish well into adulthood, often taking two to three years to mature.",
+      "skip_if": "You want a quick-to-train dog or a low-grooming coat"
     },
     {
       "rank": 9,
       "breed": "German Shepherd",
-      "description": "German Shepherds are strong, versatile dogs with excellent stamina and a natural athleticism. They were bred for herding and protection work, which requires both endurance and speed. These dogs are loyal and intelligent, making them responsive running partners who can keep pace for long distances. Regular exercise is essential for their well-being, so running fits perfectly into their lifestyle.",
-      "best_for": "Runners seeking a reliable and motivated athletic partner",
-      "quirky_fact": "German Shepherds are often used in search-and-rescue missions due to their intelligence."
+      "description": "The German Shepherd is a large, strong working dog with a trotting gait built for covering ground efficiently, which makes it a solid partner for steady, moderate-pace runs. It is easy to train, loyal and protective, and it can learn to run politely beside you without much difficulty. The double, medium-length coat sheds heavily year-round and holds heat, so summer runs should be early and shorter. German Shepherds are good with children and other dogs in the breed data but not with cats. They need one to two hours of activity and mental work daily. Joint health is a concern in the breed, so build mileage slowly, keep the dog lean and choose a breeder who screens hips and elbows. Lifespan is typically 9 to 13 years.",
+      "best_for": "Runners who want a protective, trainable partner for moderate distances",
+      "quirky_fact": "German Shepherds were first developed in the 1890s by Max von Stephanitz as all-purpose herding dogs.",
+      "skip_if": "You have cats, run in hot weather, or can't handle heavy shedding"
     },
     {
       "rank": 8,
-      "breed": "English Springer Spaniel",
-      "description": "English Springer Spaniels have a lively and athletic nature, bred originally for flushing game. They are agile and energetic, able to sustain a good pace during runs. Their enthusiasm for activity pairs well with their friendly disposition, making them great for runners who want a dog that enjoys both exercise and social time.",
-      "best_for": "Joggers who want a spirited dog with a friendly outlook",
-      "quirky_fact": "Springer Spaniels are known for their distinctive 'springing' action when hunting."
+      "breed": "Standard Poodle",
+      "description": "The Standard Poodle is a surprisingly capable runner: a large, athletic dog originally bred to retrieve from water, with a light, springy gait and plenty of stamina. It is easy to train, good with children, cats and other dogs, and its curly coat sheds very little, which appeals to runners who don't want hair in the car. The trade-off is grooming: the coat needs brushing several times a week and a professional clip every four to eight weeks, and a shorter sport clip is more practical for running. Standard Poodles need an hour or two of exercise a day and enjoy mental work as much as miles. They are sensitive and do best with consistent, positive training. A long typical lifespan of 12 to 15 years is a bonus.",
+      "best_for": "Runners who want a low-shedding, trainable large dog",
+      "quirky_fact": "The poodle's traditional show clip came from a working cut that left hair over joints and organs for warmth in cold water.",
+      "skip_if": "You won't budget time or money for regular professional grooming"
     },
     {
       "rank": 7,
-      "breed": "Irish Setter",
-      "description": "Irish Setters are known for their stunning red coats and boundless energy. They have a lean frame built for speed and endurance, making them excellent running companions for those who love longer distances. These dogs are playful and affectionate, and they thrive when given plenty of exercise and attention.",
-      "best_for": "Long-distance runners who appreciate an enthusiastic, graceful dog",
-      "quirky_fact": "Irish Setters have a playful streak that often lasts well into adulthood."
+      "breed": "Doberman Pinscher",
+      "description": "The Doberman Pinscher is a large, sleek, athletic dog that runs well at a steady pace and is easy to train to stay close. The short, smooth coat is low maintenance and sheds moderately. Dobermans are loyal and protective, which some runners value on early-morning or late-evening routes, though that same instinct means socialization is important so the dog stays calm around other runners and cyclists. They are good with children and other dogs in the breed data, but not with cats. Their thin coat makes them sensitive to cold, and they can overheat on hot days, so adjust runs to the weather. They need one to two hours of activity daily and dislike long periods alone. Health testing matters, as the breed is prone to heart problems.",
+      "best_for": "Experienced owners who want a protective, trainable running partner",
+      "quirky_fact": "The breed is named after Louis Dobermann, a German tax collector who developed it in the late 1800s.",
+      "skip_if": "You have cats, are a first-time owner, or run in very cold weather"
     },
     {
       "rank": 6,
       "breed": "Siberian Husky",
-      "description": "Siberian Huskies are legendary for their incredible endurance and ability to run for miles in harsh conditions. Bred as sled dogs, they have a natural passion for running and a lot of energy to burn. Huskies enjoy running at a steady pace and are happiest when they get plenty of daily exercise. Their independent streak means they do best with patient, consistent training.",
-      "best_for": "Experienced runners who want a tireless and spirited companion",
-      "quirky_fact": "Huskies are famous for their striking blue eyes and friendly expressions."
+      "description": "The Siberian Husky was bred to pull light loads over long distances in extreme cold, which makes it an excellent partner for winter runners and for skijoring or canicross, where a dog runs ahead in a harness. Huskies have great endurance, but their double coat makes them poor partners in heat; in summer, runs should be short and early, or swapped for other activities. They are friendly with people and good with children and other dogs, but the breed data rates them not good with cats. Trainability is rated moderate, and they are known for poor recall, so runs should be on a leash or line. The coat sheds heavily, especially twice a year. A Husky without enough running often digs, howls or escapes.",
+      "best_for": "Cold-climate runners and canicross or skijoring enthusiasts",
+      "quirky_fact": "Huskies were among the sled dogs on the 1925 serum run that carried diphtheria medicine to Nome, Alaska.",
+      "skip_if": "You live somewhere hot, have cats, or want off-leash runs"
     },
     {
       "rank": 5,
-      "breed": "Weimaraner",
-      "description": "Weimaraners are sleek, fast, and built for stamina. Originally bred for hunting large game, they have the athleticism to keep up with serious runners. They’re intelligent and eager to please, thriving on both physical and mental challenges. A run with a Weimaraner can be a truly energizing experience, as they love to stay active and engaged alongside their human.",
-      "best_for": "Serious runners who want a fast, high-energy partner",
-      "quirky_fact": "Weimaraners are sometimes called \"Gray Ghosts\" because of their unique silver-gray coat."
+      "breed": "English Springer Spaniel",
+      "description": "The English Springer Spaniel is a medium-sized, upbeat running partner well suited to moderate distances, trail runs and mixed workouts with fetch or swimming. Springers are easy to train, good with children, cats and other dogs, and keen to please. They have stamina for regular runs but are built for flushing birds in cover rather than for long, steady road miles, so many do best at moderate distances. The medium, wavy coat and long ears collect burrs, mud and seeds on trails, so plan for brushing a couple of times a week, trims and ear checks after runs. A springer's nose can pull it off course, so a harness and a cue to keep moving help. They are people-focused and dislike being left alone for long stretches.",
+      "best_for": "Runners covering moderate distances on trails and parks",
+      "quirky_fact": "English Springers and English Cocker Spaniels were once born in the same litters and split by size.",
+      "skip_if": "You run marathon distances or won't keep up with coat and ear care"
     },
     {
       "rank": 4,
-      "breed": "Vizsla",
-      "description": "Vizslas are elegant, lean, and incredibly athletic dogs known for their endurance and speed. Bred in Hungary as hunting dogs, they have a natural drive to run and cover ground. Vizslas form strong bonds with their owners and love to be involved in every activity, making them attentive and motivated running companions.",
-      "best_for": "Dedicated runners who want a loyal and energetic partner",
-      "quirky_fact": "Vizslas have a velvety short coat that’s easy to maintain."
+      "breed": "Australian Shepherd",
+      "description": "The Australian Shepherd is a medium-sized runner that suits trail running in particular: agile on uneven ground, quick to respond to cues, and with stamina to spare. Aussies are easy to train and good with children, cats and other dogs. The medium-length double coat is the trade-off for runners: it holds heat, so summer runs should be early, shaded and shorter, and it needs brushing weekly or more during sheds. Aussies need mental work as well as miles, so adding direction changes, stops and trick practice to runs keeps them engaged. They bond strongly with their family and can be wary of strangers. A medium build makes them easier to manage on narrow trails and in cars than the large pointers, which many runners appreciate.",
+      "best_for": "Trail runners in mild climates who also enjoy training",
+      "quirky_fact": "Many Aussies have eyes of two different colors, or marbled eyes with flecks of blue.",
+      "skip_if": "You run in hot weather or don't want to brush a shedding coat"
     },
     {
       "rank": 3,
-      "breed": "German Shorthaired Pointer",
-      "description": "German Shorthaired Pointers are versatile and highly energetic dogs with remarkable stamina. They excel at running long distances thanks to their lean build and athleticism. These dogs are intelligent and eager to please, making training a breeze and runs more enjoyable. Their endurance and enthusiasm make them stand out as some of the best running partners around.",
-      "best_for": "Endurance runners who want a smart, tireless companion",
-      "quirky_fact": "GSPs are known to be excellent swimmers as well as runners."
+      "breed": "Weimaraner",
+      "description": "The Weimaraner has the stamina and stride for long runs and the power to pull hard if it isn't trained, so leash manners come first. Once trained, it is a steady, enthusiastic running companion. The short, smooth grey coat sheds moderately and needs only a quick brush. Weimaraners are easy to train for consistent owners and good with children and other dogs, but the breed data rates them not good with cats, and their prey drive is strong. They need one to two hours of vigorous exercise daily; running every day helps, but they also need company, as Weimaraners are prone to separation distress when left alone for long periods. Large and strong, they suit runners who are confident handling a powerful dog. Typical lifespan is 11 to 14 years.",
+      "best_for": "Confident runners who want a powerful, high-stamina partner",
+      "quirky_fact": "Weimaraners are nicknamed the grey ghost for their silvery coat and quiet way of moving.",
+      "skip_if": "You have cats or small pets, or the dog would be alone all day"
     },
     {
       "rank": 2,
-      "breed": "Saluki",
-      "description": "Salukis are one of the fastest and most graceful dog breeds, with a history as desert runners and hunters. Their slender build and long legs make them built for speed and endurance, and they can maintain high speeds over long distances. Salukis are independent yet affectionate, and they do best with patient owners who appreciate their unique temperament.",
-      "best_for": "Experienced runners wanting a swift and elegant partner",
-      "quirky_fact": "Salukis are one of the oldest dog breeds, dating back thousands of years."
+      "breed": "Vizsla",
+      "description": "The Vizsla is a light-framed, smooth-moving pointer that settles easily into a runner's rhythm and seems happiest when it is right beside its owner. The short, low-shedding coat needs almost no grooming and dries fast after rainy runs. Vizslas are easy to train and good with children and other dogs, but the breed data rates them not good with cats, and they will chase small animals. Their coat gives little insulation, so in cold weather a running jacket helps, while in summer early runs are wise. A Vizsla needs an hour or two of exercise daily and plenty of company; owners who run every morning but leave the dog alone all day often see anxiety or chewing. For runners who work from home, it is hard to find a more willing partner.",
+      "best_for": "Runners who work from home and want a constant companion",
+      "quirky_fact": "The Vizsla's russet coat color is often described as golden rust, and its nose matches the coat rather than being black.",
+      "skip_if": "You have a cat, run in very cold weather, or are away all day"
     },
     {
       "rank": 1,
-      "breed": "Azawakh",
-      "description": "Azawakhs are a rare breed known for their incredible speed and endurance, bred by nomadic tribes of the Sahara for long-distance running and hunting. They have a lean, aerodynamic build and are tireless runners who thrive on daily exercise. These dogs are loyal and reserved, forming strong bonds with their owners while maintaining an independent spirit. If you’re a serious runner looking for a breed designed to run miles with ease, the Azawakh is an exceptional choice.",
-      "best_for": "Dedicated long-distance runners seeking an elite endurance dog",
-      "quirky_fact": "Azawakhs are known as the \"Royal Dogs of the Sahara\" for their noble appearance and heritage."
+      "breed": "German Shorthaired Pointer",
+      "description": "The German Shorthaired Pointer tops this list because it combines endurance with a body made for running: large but lean, deep-chested, long-legged and covered in a short, dense coat that sheds heat well and needs only a weekly brush. GSPs are easy to train, so teaching a loose-leash running pace at your side is realistic, and they are good with children, cats and other dogs in the breed data. Most adults can build up to long runs, and they still need one to two hours of total activity a day, so a run is part of their exercise rather than all of it. Their strong bird-hunting instinct means a running harness and a firm hold when wildlife appears. On rest days they can be restless, so plan for fetch or scent games.",
+      "best_for": "Regular runners logging long distances several days a week",
+      "quirky_fact": "GSPs were bred in Germany as versatile hunting dogs that point, track and retrieve on land and in water.",
+      "skip_if": "You run only occasionally or want a calm dog on your rest days"
     }
   ],
   "pin_headlines": [
@@ -123,21 +138,30 @@
   ],
   "faqs": [
     {
-      "question": "What should I consider when choosing a running dog breed?",
-      "answer": "Focus on a dog’s energy level, endurance, size, and temperament. Breeds with high stamina and a love for exercise, like those listed, are ideal for running. Also consider your running pace and distance to match with a dog’s capabilities, plus their need for socialization and training to ensure a safe, enjoyable experience."
+      "question": "What is the best dog breed for running?",
+      "answer": "The German Shorthaired Pointer, Vizsla and Weimaraner are the most reliable choices for regular runners. All three are lean, long-legged sporting breeds with short coats, high stamina and easy trainability, so they can learn to run at your side for long distances. The Australian Shepherd and English Springer Spaniel are good medium-sized alternatives."
     },
     {
-      "question": "Are these dog breeds suitable for beginner runners?",
-      "answer": "Many of these breeds, such as the Labrador Retriever and Golden Retriever, are adaptable and can be great companions for beginner runners. Starting with shorter runs and gradually increasing distance helps build endurance for both you and your dog. Always monitor your dog’s response to exercise and consult your vet if you’re unsure."
+      "question": "How far can a dog run with you?",
+      "answer": "It depends on the breed, age, fitness and weather. Fit adult sporting breeds can often build up to long runs, while flat-faced, heavy or very young dogs should stick to short, easy distances. Increase mileage gradually, much as you would for yourself, watch for lagging or heavy panting, and ask your vet before starting a running plan."
     },
     {
-      "question": "How do I prepare my dog for running or jogging?",
-      "answer": "Begin with basic obedience training and ensure your dog is in good health by visiting the vet. Start with short, slow runs to build their stamina, and use appropriate gear like a well-fitted harness and leash. Pay attention to weather conditions, and bring water for your dog to prevent overheating or dehydration."
+      "question": "At what age can a puppy start running?",
+      "answer": "Most vets advise waiting until a dog's growth plates have closed before regular running, which is often around 12 to 18 months and later for large and giant breeds. Before then, short walks, play and leash training lay the groundwork. Ask your vet to confirm your dog is ready, especially if it is a large breed."
     },
     {
-      "question": "Which breeds in this list are best suited for long-distance running?",
-      "answer": "Breeds like the Azawakh, Saluki, and German Shorthaired Pointer excel in long-distance running due to their endurance and lean builds. Siberian Huskies and Vizslas also have great stamina for longer runs. These breeds thrive with consistent training and proper care to maintain their energy levels over extended distances."
+      "question": "Are sighthounds good running partners?",
+      "answer": "Sighthounds such as the Saluki and Azawakh are fast and enjoy running, but they are built for sprinting after things they see, not always for jogging steadily beside you. Their prey drive is strong and recall is unreliable, so they need a leash or a securely fenced area. They suit runners who are comfortable managing an independent dog."
+    },
+    {
+      "question": "How do I keep my dog safe on runs in hot weather?",
+      "answer": "Run in the early morning or evening, choose shaded routes and grass over hot pavement, and carry water for both of you. Shorten or skip runs on hot, humid days. Short-muzzled breeds and dogs with heavy coats, such as Boxers and Huskies, are especially prone to overheating, so they need extra caution or cooler-weather running only."
     }
   ],
-  "updated_at": "2026-05-29"
+  "updated_at": "2026-10-11",
+  "seo_title": "Best Running Dogs: 15 Breeds for Joggers (2026)",
+  "answer": "The German Shorthaired Pointer, Vizsla and Weimaraner are the best running partners here: lean, high-stamina sporting dogs that are easy to train to run at your side. The deciding factor is heat tolerance and build, since lean, long-nosed breeds handle mileage far better than heavy or flat-faced ones.",
+  "method": "We filtered a 150-breed dataset for high-energy breeds and ordered them by suitability for steady running alongside a person, weighing build, coat, muzzle length, trainability and how well they get along with other people and pets.",
+  "author": "Elena Marsh",
+  "upgraded_at": "2026-10-11"
 }
