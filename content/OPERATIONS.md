@@ -8,7 +8,7 @@ Last reset: 10 Oct 2026. Read this before touching the pipeline.
 |---|---|---|
 | Daily content generation | 14:00 daily | Pulls Pinterest trends → 3 new home/cozy articles → 1 Pexels photo per item → commits. No pins are pre-rendered any more. |
 | Daily digital products | 15:00 daily | Pulls trends → 2 products/day (planner + wall art). **If a matching product already exists it is reused** and 3 fresh pin variants are queued instead of a duplicate listing. Also requeues variants for every canonical product that has none pending, and freebie pins. |
-| Post pins (US peak windows) | 15:20 + 00:20 daily (backups 16:35 / 01:45) | Posts up to 3 content pins (≤1 dog guide) + 2 product pins per window. Pins are rendered at post time and uploaded as base64. One run per window per day (stamp files in `content/.post-stamps`). |
+| Post pins (US peak windows) | hourly trigger; posts once in the midday window (9 AM–4 PM ET) and once in the evening window (5–11 PM ET) | Posts up to 3 content pins (≤1 dog guide) + 2 product pins per window. Pins are rendered at post time and uploaded as base64. One run per window per day (stamp files in `content/.post-stamps`). |
 | Weekly Pinterest report | Mon 06:00 | 30-day analytics + per-template kill/scale grades. |
 | Ops | manual | requeue-catalog, make-bundle, gumroad-cleanup, consolidate-boards, analytics-report, post-now. |
 

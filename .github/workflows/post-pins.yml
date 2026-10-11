@@ -32,8 +32,11 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
+      # ref: main fetches the branch tip when the step runs (not the SHA at
+      # trigger time), so a run queued behind another sees its window stamp.
       - uses: actions/checkout@v4
         with:
+          ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # Safety guard: only post during peak windows. Each window also posts at
