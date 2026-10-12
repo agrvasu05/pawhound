@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T09:17:27.503Z",
+  "generated_at": "2026-10-12T07:47:29.235Z",
   "window_days": 90,
   "thresholds": {
     "min_impressions": 300,
@@ -8,33 +8,5 @@
     "scale_save_rate": 0.005,
     "scale_outbound_rate": 0.01
   },
-  "templates": {
-    "warm-collage": {
-      "impressions": 163,
-      "saves": 0,
-      "outbound": 4,
-      "pins": 8,
-      "save_rate": 0,
-      "outbound_rate": 0.02454,
-      "verdict": "insufficient"
-    },
-    "hero-stack": {
-      "impressions": 208,
-      "saves": 0,
-      "outbound": 3,
-      "pins": 8,
-      "save_rate": 0,
-      "outbound_rate": 0.01442,
-      "verdict": "insufficient"
-    },
-    "editorial-hero": {
-      "impressions": 71,
-      "saves": 0,
-      "outbound": 1,
-      "pins": 3,
-      "save_rate": 0,
-      "outbound_rate": 0.01408,
-      "verdict": "insufficient"
-    }
-  }
+  "templates": {}
 }
