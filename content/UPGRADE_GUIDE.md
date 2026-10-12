@@ -55,3 +55,7 @@ the reference — read `content/articles/best-apartment-dogs.json` before writin
 - Amazon: product guides link to an exact-name search for `product_name`.
   Only add a direct `/dp/ASIN` link to `content/amazon-products.json` after
   checking the listing title matches.
+- Pin headlines (`pin_headlines`): 5–9 words, the searchable phrase in the
+  first three words, never starting with "Top N" or a bare number ("Calm Dog
+  Breeds: 13 Quiet Picks", not "Top 13 Calm Dog Breeds"). Any number must match
+  the pick count. Never call a dog "hypoallergenic".

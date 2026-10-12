@@ -9,6 +9,19 @@ encodes — see "WHERE ENCODED" notes per rule.
 > now 6–10 fresh pins/day across two peak windows; rule 1's text sizes are
 > enforced by `scripts/pin-renderer.js` (≥ 56px headlines, ≤ 3 lines).
 
+## Oct 2026 corrections (audit of 12 Oct 2026)
+
+Account, last 30 days: 1,407 impressions, 0 saves, 9 outbound clicks. What was wrong and what changed:
+
+1. **Off-season pins.** About 60 home guides are Fourth of July, Father's Day, back-to-school, dorm and Christmas-in-July topics, and back-to-school pins went out on 11 Oct. Fix: `scripts/season.js` gates both posters at post time (windows open 45–60 days early and close at the event; evergreen topics always pass).
+2. **Every first pin was a video.** Rule 3 says video ≤ 20%, but the poster put `video-1.mp4` first for every guide and every product. 2026 benchmarks: video gets more impressions, static gets ~3× the outbound clicks per impression. Fix: guides go static first with at most one video per run (~20%); shop pins are static only.
+3. **Wrong products in the shop queue.** Clipart and spreadsheets (0 outbound in 90 days), beauty trackers (off-niche), a graduation pack in October, and a Snoopy clipart pack (trademarked character, takedown risk). Fix: `pinSkipReason()` in `products/lib.js` skips them at post time.
+4. **Titles started with "Top 15".** Pinterest weights the first words. Fix: `buildTitle()` drops a leading "Top N"/number; UPGRADE_GUIDE.md tells the writer to lead headlines with the keyword.
+5. **Pins stopped for 1.5 days** because GitHub ran the cron 4–6 h late. Fix: hourly trigger, wide windows (see OPERATIONS.md).
+6. **Product daily cap used the UTC date**, which lumped the evening window in with midday. Fix: US Eastern date.
+
+Not changed yet, on purpose: the 1-dog-guide-per-run cap (site SEO depends on dog guides; data too thin), the profile name/bio (an account setting), and AI art for home-decor pins (users can filter AI content in that category). Saves will only move with better creative; the template grades need 300+ impressions per template, about 2–3 weeks of posting.
+
 ## 1. Pinterest SEO — how pins rank now
 
 Pinterest scores pins in stages: (1) domain quality (click/save history of the linked

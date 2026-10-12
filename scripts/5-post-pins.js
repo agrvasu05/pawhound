@@ -25,6 +25,7 @@ const path = require('path');
 const { postVideoPin } = require('./pinterest-video');
 const { renderKenBurnsFromImage } = require('./lib-video');
 const { TEMPLATE_KEYS, renderPin, articleImages, templateOrder, isLive } = require('./pin-renderer');
+const { inSeason } = require('./season');
 
 const CLIENT_ID = process.env.PINTEREST_CLIENT_ID;
 const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
@@ -199,17 +200,23 @@ function buildQueue(tracker) {
     if (slugsPostedRecently.has(slug)) continue;
     if (!Array.isArray(article.pin_headlines) || !article.pin_headlines.length) continue;
     if (!articleImages(article).length) continue;
+    // Out-of-season topics (Father's Day crafts in October) waste reach and make
+    // the account look stale; they come back automatically when in season.
+    if (!inSeason(`${slug} ${article.topic_title}`)) continue;
 
     // Candidate keys mirror the legacy on-disk names so the tracker stays
-    // compatible: video-1.mp4 first (video pins outperform static), then pin-N.
-    const candidates = ['video-1.mp4', ...article.pin_headlines.map((_, i) => `pin-${i + 1}.png`)];
-    for (const pinFile of candidates) {
-      const key = `${slug}/${pinFile}`;
-      if (tracker[key]) continue;
-      const isNew = !candidates.some((f) => tracker[`${slug}/${f}`]);
-      queue.push({ key, slug, article, pinFile, isNew, isVideo: pinFile.endsWith('.mp4'), dog });
-      break; // max 1 pin per article per run
-    }
+    // compatible. Static first: static pins get ~3x the outbound clicks per
+    // impression (2026 benchmarks), and clicks are the goal. A video version is
+    // offered once the guide's first static pin is out; the run loop allows at
+    // most one video per run (~20% of pins).
+    const statics = article.pin_headlines.map((_, i) => `pin-${i + 1}.png`);
+    const all = ['video-1.mp4', ...statics];
+    const isNew = !all.some((f) => tracker[`${slug}/${f}`]);
+    const nextStatic = statics.find((f) => !tracker[`${slug}/${f}`]);
+    const videoOpen = !tracker[`${slug}/video-1.mp4`] && !!tracker[`${slug}/pin-1.png`];
+    if (!nextStatic && !videoOpen) continue;
+    const item = (pinFile) => ({ key: `${slug}/${pinFile}`, slug, article, pinFile, isNew, isVideo: pinFile.endsWith('.mp4'), dog });
+    queue.push({ ...item(nextStatic || 'video-1.mp4'), video: videoOpen && nextStatic ? item('video-1.mp4') : null });
   }
   const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
   // Upgraded guides (the only ones offered to Google) go first, then fresh, then the rest.
@@ -226,8 +233,12 @@ function firstSentence(text) { const m = text.match(/^[\s\S]*?[.!?](?:\s|$)/); r
 // pins of one guide don't compete with identical titles); video pins use the
 // guide's SEO title. Years are dropped so pins stay evergreen.
 function buildTitle(article, headline, isVideo) {
+  // Keyword first: Pinterest weights the first words of the title, so a
+  // leading "Top 15" / "15" is dropped ("Top 15 Dog Breeds for X" -> "Dog Breeds for X").
   const t = (isVideo ? article.seo_title || article.topic_title : headline || article.topic_title)
-    .replace(/\s*\((?:20\d\d)(?:\s+guide)?\)\s*$/i, '').trim();
+    .replace(/\s*\((?:20\d\d)(?:\s+guide)?\)\s*$/i, '')
+    .replace(/^(?:top\s+)?\d+\s+(?=[A-Za-z])/i, '')
+    .trim();
   return t.slice(0, 100);
 }
 
@@ -333,11 +344,17 @@ async function postPin(pin, boardId, m) {
 
   // Fill the run: cap dog guides, prefer fresh articles (queue is already ordered).
   const toPost = [];
-  let dogs = 0;
+  let dogs = 0, videos = 0;
+  const MAX_VIDEO_PER_RUN = 1;
   for (const q of queue) {
     if (toPost.length >= PINS_PER_RUN) break;
     if (q.dog) { if (dogs >= MAX_DOG_PER_RUN) continue; dogs++; }
-    toPost.push(q);
+    // One video per run at most; otherwise the guide's next static pin.
+    let pick = q;
+    if (q.video && videos < MAX_VIDEO_PER_RUN) pick = q.video;
+    else if (q.isVideo && videos >= MAX_VIDEO_PER_RUN) continue;
+    if (pick.isVideo) videos++;
+    toPost.push(pick);
   }
   console.log(`Queue: ${queue.length} eligible articles; posting ${toPost.length} this run${DRY ? ' (dry run)' : ''}.`);
   let posted = 0;

@@ -506,12 +506,32 @@ async function enqueueProductVariants({ slug, type, title, price, board, boards 
   return entries.length;
 }
 
+// Products that should not be pinned, whatever the queue says (runtime filter,
+// so it survives requeue-catalog rebuilding the queue). Reasons, Oct 2026:
+//  - clipart + spreadsheet: 0 outbound clicks in 90 days (niche-performance.md)
+//  - beauty: off the account's cozy-home/dog cluster, and unproven
+//  - trademarked characters: IP takedown risk on Pinterest and Gumroad
+const DEAD_TYPES = new Set(['clipart', 'spreadsheet']);
+const OFF_NICHE = /\b(nails?|manicure|hair(style|line)?s?|tattoo|lash(es)?|brows?|makeup|skin ?care|beauty)\b/i;
+const TRADEMARKED = /\b(snoopy|peanuts|charlie brown|disney|mickey|minnie|marvel|pokemon|pikachu|hello kitty|sanrio|barbie|bluey|taylor swift|harry potter|star wars|frozen|stitch|grinch|looney|sesame)\b/i;
+function pinSkipReason(e, rec) {
+  const text = `${e.slug} ${e.title || ''} ${rec.title || ''}`.replace(/[-_]+/g, ' ');
+  if (TRADEMARKED.test(text)) return 'trademarked character';
+  if (DEAD_TYPES.has(rec.type)) return `${rec.type} format gets no clicks`;
+  if (OFF_NICHE.test(text)) return 'beauty, off-niche';
+  if (!require('../scripts/season').inSeason(text)) return 'out of season';
+  return null;
+}
+
 // Drip-post pending pins: up to maxPerRun, at most 1 per product per day.
 // Renders each variant on the fly from the committed shop-asset images (no PNG bloat in git).
 async function postQueue({ maxPerRun = 5 } = {}) {
   let q = loadQueue();
   if (!q.length) { console.log('Pin queue empty.'); return; }
-  const today = new Date().toISOString().slice(0, 10);
+  // Daily cap keyed on the US Eastern date: the evening window (5–11 PM ET)
+  // crosses midnight UTC, so a UTC date would lump it in with midday.
+  const etDate = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(d);
+  const today = etDate(new Date());
   const now = Date.now();
   // Keep the queue lean + current: drop stale PENDING pins (>14d — the trend has
   // passed, no point posting them) and very old POSTED records (>45d). This stops
@@ -523,7 +543,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
   });
   if (before - q.length) console.log(`Pruned ${before - q.length} stale queue entries.`);
   // Hard DAILY cap (not just per-run) so manual re-triggers can't exceed the shop's share.
-  const postedTodayTotal = q.filter((e) => e.status === 'posted' && (e.posted_at || '').startsWith(today)).length;
+  const postedTodayTotal = q.filter((e) => e.status === 'posted' && e.posted_at && etDate(new Date(e.posted_at)) === today).length;
   const allowance = Math.max(0, maxPerRun - postedTodayTotal);
   if (allowance === 0) { console.log(`Daily shop pin cap (${maxPerRun}) already reached — posting 0.`); saveQueue(q); return; }
   await pinRefresh();
@@ -549,6 +569,8 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     // times a week on the free tier).
     if (!(await require('../scripts/pin-renderer').isLive(e.link))) { console.log(`  ↷ ${e.slug}: landing page not live yet — skipping`); continue; }
     const rec = JSON.parse(fs.readFileSync(recPath, 'utf-8'));
+    const skip = pinSkipReason(e, rec);
+    if (skip) { console.log(`  ↷ ${e.slug}: ${skip} — not pinning`); continue; }
     const images = [rec.cover, ...rec.images.filter((f) => f !== rec.cover)]
       .map((f) => path.join(assetDir, f)).filter((f) => fs.existsSync(f));
     if (!images.length) continue;
@@ -558,7 +580,9 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     // once a product has one, its other drip variants stay static — mirrors the
     // content-pin pattern (video first per URL, then static) rather than
     // converting every future shop pin, keeping this an accelerant not a rewrite.
-    const useVideo = !q.some((x) => x.slug === e.slug && x.status === 'posted' && x.wasVideo);
+    // Oct 2026: shop pins are static only. Video earns impressions, but static
+    // earns ~3x the outbound clicks per impression, and a shop pin's job is the click.
+    const useVideo = false;
     const tmpVideo = path.join(assetDir, '_pin_tmp.mp4');
     const tmpCover = path.join(assetDir, '_pin_tmp_cover.jpg');
     try {
@@ -593,6 +617,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
 }
 
 module.exports = {
+  pinSkipReason,
   BRAND, openai, generateImage, chatJSON,
   htmlToPng, htmlToPdf, dataUrl, zip, renderShopPin, esc,
   gumroadCreateAndPublish,
