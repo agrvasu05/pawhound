@@ -1,77 +1,87 @@
 {
   "topic_slug": "best-medium-dogs",
   "topic_title": "Top 10 Best Medium-Sized Dog Breeds",
-  "intro": "Finding a dog that fits perfectly into the medium size category — typically between 25 and 60 pounds — is a sweet spot for many dog lovers. These breeds often combine the manageability of smaller dogs with the robustness and energy of larger breeds. Whether you're looking for a working companion, an energetic playmate, or a loyal family member, medium-sized dogs offer a versatile range of temperaments and activity levels. Here’s a thoughtfully curated list of some of the best medium-sized dog breeds that bring personality, charm, and just the right size to your home.",
+  "intro": "Medium dogs, roughly 25 to 60 pounds, are big enough for hiking and rough play with older kids yet small enough for most cars, rentals and apartments with weight limits. Size within this range matters less than energy, though. A working breed of the same weight as a spaniel may need twice the exercise and far more mental work. Look next at grooming, since several of these coats need regular trims, and at barking if you have close neighbors.",
   "picks": [
     {
       "rank": 10,
-      "breed": "Beagle",
-      "description": "Beagles are cheerful, curious, and endlessly affectionate, making them a popular choice for families and individuals alike. Weighing in comfortably within the medium range, these dogs are known for their soulful eyes and distinctive, melodious baying. Beagles have a strong sense of smell and a love for exploring, which means daily walks and playtime are essential to keep them happy. Their compact, muscular build makes them sturdy but not cumbersome, and their friendly nature helps them get along well with kids and other pets. While they do have a tendency to follow their noses, their affectionate and playful personality keeps them close to home.",
-      "best_for": "Families and active individuals who enjoy outdoor adventures",
-      "quirky_fact": "Beagles have been used for centuries to track small game because of their excellent noses."
+      "breed": "Australian Cattle Dog",
+      "description": "The Australian Cattle Dog, about 35 to 50 pounds, is tough, intelligent and loyal, with a short coat that needs little grooming beyond weekly brushing, though it sheds moderately and drops undercoat seasonally. It ranks last for general households for three reasons in our breed data: energy is high, training is rated hard because it is independent and tests boundaries, and it is not considered good with cats. Cattle Dogs need hours of activity and a job, and they may nip at heels when herding instinct takes over, which matters around small children despite being rated fine with kids. They are protective and can be wary of strangers. For an experienced owner on a farm or with a serious outdoor routine, they are superb partners.",
+      "best_for": "Experienced owners with land or a demanding outdoor routine",
+      "quirky_fact": "Australian Cattle Dog puppies are born white and develop their blue or red speckled coat as they grow.",
+      "skip_if": "You have cats, are a first-time owner, or can't provide hours of daily work"
     },
     {
       "rank": 9,
-      "breed": "English Springer Spaniel",
-      "description": "The English Springer Spaniel is an energetic and eager-to-please breed that fits nicely into the medium-sized category. Known for their expressive eyes and beautiful coat, these dogs are both hardworking and affectionate. They have a natural hunting background, which means they thrive on activities that challenge their minds and bodies. Their size allows them to be agile and quick, perfect for both countryside adventures and lively family life. English Springer Spaniels are friendly without being overly excitable, making them a balanced companion for those who want a dog that’s both playful and trainable.",
-      "best_for": "Active families who want a loyal, medium-sized companion",
-      "quirky_fact": "English Springer Spaniels have a unique \"springing\" gait that helped hunters flush out game."
+      "breed": "Beagle",
+      "description": "The Beagle is a 20 to 30 pound scent hound with a short coat that needs only weekly brushing, and it is friendly and good with children, cats and other dogs. Two things push it near the bottom for general households. First, barking is rated high: Beagles bay and howl, especially when bored or left alone, which can upset neighbors. Second, training is moderate at best because the nose wins over commands, so recall off lead is unreliable and a securely fenced yard is needed. Energy is high, so plan on an hour or more of walking with plenty of sniffing time. They shed moderately and love food, so portion control matters. In a house with a yard and someone home, they are cheerful companions.",
+      "best_for": "Houses with yards wanting a cheerful, low-grooming family hound",
+      "quirky_fact": "A Beagle's long ears help sweep scent toward its nose as it tracks along the ground.",
+      "skip_if": "You live in an apartment, share walls or need reliable off-lead recall"
     },
     {
       "rank": 8,
       "breed": "Australian Shepherd",
-      "description": "Australian Shepherds bring a vibrant mix of intelligence, energy, and loyalty to the medium-sized dog world. Though originally bred for herding, their versatility has made them popular companions in many settings. They sport a striking coat and expressive eyes, often with beautiful marbling. Their high energy levels mean they thrive with plenty of exercise and mental stimulation, whether it's agility training, hiking, or playing fetch. Australian Shepherds form strong bonds with their families and are known for their watchful, protective nature, making them a great fit for those who want an active, attentive partner.",
-      "best_for": "Energetic owners who love outdoor activities and training",
-      "quirky_fact": "Despite their name, Australian Shepherds were actually developed in the United States."
+      "description": "The Australian Shepherd, about 40 to 65 pounds, is one of the most capable and trainable breeds on this list, and it is good with children, cats and other dogs. It ranks lower because its energy is very high: most Aussies need well over an hour of vigorous daily exercise plus a job such as agility, herding or advanced training. Without that, they invent their own work, including herding children, chewing and barking. The medium double coat sheds moderately all year and heavily in season, so weekly brushing becomes several sessions a week at those times. Aussies can be wary of strangers and need early socialization. They are excellent for experienced, active owners and too much dog for a casual household.",
+      "best_for": "Experienced, very active owners who want a dog-sports partner",
+      "quirky_fact": "Despite the name, the Australian Shepherd was developed mainly on ranches in the western United States.",
+      "skip_if": "You can't provide vigorous exercise and a daily mental job"
     },
     {
       "rank": 7,
       "breed": "Nova Scotia Duck Tolling Retriever",
-      "description": "The Nova Scotia Duck Tolling Retriever, affectionately called the \"Toller,\" is a lively and intelligent medium-sized breed with a unique history. Originally bred to lure and retrieve waterfowl, Tollers are playful and eager to please. They have a beautiful reddish coat and an alert, expressive face that reflects their friendly nature. Their size is perfect for active families or individuals who want a dog that can handle both water sports and everyday companionship. Tollers are known for their affectionate demeanor and adaptability, making them a wonderful blend of energy and sweetness.",
-      "best_for": "Water lovers and active households looking for a spirited companion",
-      "quirky_fact": "Tollers are the smallest of the retriever breeds but have a big personality."
+      "description": "The Toller is the smallest retriever, about 35 to 50 pounds, with a red, water-resistant double coat. It is easy to train, alert and good with children, cats and other dogs. Energy is high and it needs both physical and mental work: an hour or more daily of retrieving, swimming or dog sports. Tollers are known for a high-pitched scream when excited, which can be a problem in shared buildings, though the breed's overall barking rating is moderate. The coat sheds moderately, with heavier seasonal sheds, and needs weekly brushing and more during those periods. They can be reserved with strangers. For active households that want a retriever's trainability in a smaller frame, the Toller is a strong pick.",
+      "best_for": "Active owners wanting a compact, trainable retriever for dog sports",
+      "quirky_fact": "Tollers lure ducks closer by playing along the shoreline, a hunting technique called tolling.",
+      "skip_if": "You share walls and an excitable, high-pitched voice would cause friction"
     },
     {
       "rank": 6,
-      "breed": "Standard Schnauzer",
-      "description": "Standard Schnauzers stand out with their distinctive salt-and-pepper or black coats and striking bearded faces. This medium-sized breed is known for being alert, intelligent, and very loyal. They have a sturdy build and an energetic spirit, which makes them great for families who want a dog that can keep up with an active lifestyle. Standard Schnauzers are also known for their keen watchdog abilities, often alerting their owners to any unusual activity without being overly aggressive. Their coat is low-shedding and benefits from regular grooming, which adds to their appeal for those mindful of pet hair.",
-      "best_for": "Families seeking a smart, protective, and medium-sized dog",
-      "quirky_fact": "Their trademark beard and eyebrows were originally meant to protect their face while hunting."
+      "breed": "Brittany",
+      "description": "The Brittany is a lean 30 to 40 pound bird dog that is easy to train and friendly with children, cats and other dogs. Its energy is high, closer to a working dog than a pet spaniel: expect to provide 60 to 90 minutes of running, hiking or field games every day. In return, the short, medium-length coat is easy to keep, needing only a weekly brush, though it does shed moderately. Brittanys are sensitive and respond to gentle, consistent training, and they can be soft-tempered if handled harshly. Barking is moderate. They suit runners, hikers and families with a large yard far better than people expecting a relaxed indoor dog, and they can become anxious and destructive without enough outlet.",
+      "best_for": "Runners and hikers wanting a trainable, low-grooming bird dog",
+      "quirky_fact": "Brittanys are often born with naturally short or no tails, a trait that runs in the breed.",
+      "skip_if": "Your household is mostly indoors or exercise time is limited"
     },
     {
       "rank": 5,
-      "breed": "Lagotto Romagnolo",
-      "description": "The Lagotto Romagnolo is a charming and rare medium-sized breed with a curly, woolly coat that's low-shedding. Originally bred as a water retriever and truffle hunter, these dogs have a keen sense of smell and a friendly disposition. Their size is just right for households looking for a dog that’s lively without being overwhelming. Lagottos are known for their affectionate nature and intelligence, which makes training a rewarding experience. They enjoy both indoor family time and outdoor adventures, offering a versatile companion for a variety of lifestyles.",
-      "best_for": "Families and individuals wanting a unique, low-shedding medium dog",
-      "quirky_fact": "Lagottos have been used for centuries to hunt truffles in Italy’s forests."
+      "breed": "English Springer Spaniel",
+      "description": "The English Springer Spaniel, around 40 to 50 pounds, is easy to train, friendly and good with children, cats and other dogs, which is why it is a long-standing family favorite. It ranks below the first four only because energy is high: plan on 60 to 90 minutes of daily exercise, including off-lead running or retrieving in a safe area, plus some training to occupy its mind. Under-exercised Springers can become restless and noisy indoors. The medium, wavy coat sheds moderately and needs brushing a couple of times a week and trimming around the ears and feet. Those long ears also need weekly cleaning. Springers are affectionate and want to be with their people, so they handle long hours alone poorly.",
+      "best_for": "Active families wanting an affectionate, easy-to-train outdoor companion",
+      "quirky_fact": "The name comes from the breed's original job of springing, or flushing, game birds from cover for hunters.",
+      "skip_if": "You can't give 60 to 90 minutes of exercise or the dog will often be alone"
     },
     {
       "rank": 4,
-      "breed": "Brittany",
-      "description": "Brittanys are spirited, agile dogs that fit beautifully into the medium size range. With their expressive eyes and compact, athletic build, they are born to run and explore. Originally bred as bird dogs, Brittanys have an enthusiastic and friendly personality that makes them great companions for active families. They balance energy with affection, often forming strong bonds with their people. Their coat is relatively easy to maintain, and their size makes them manageable for both city and country living. If you're looking for a dog that’s both a playful partner and a gentle companion, the Brittany could be a great fit.",
-      "best_for": "Active families and outdoor enthusiasts seeking a lively dog",
-      "quirky_fact": "Brittanys are known for their distinctive “pointing” stance when they find game."
+      "breed": "American Water Spaniel",
+      "description": "The American Water Spaniel is a 25 to 45 pound hunting dog with a curly, water-resistant coat and medium energy. An hour of daily activity, ideally including swimming or retrieving, keeps it content. It is friendly, loyal and good with children, cats and other dogs, and it bonds closely with its family. Training is moderate: willing, but it can be sensitive and sometimes reserved with strangers, so early socialization helps. The coat sheds moderately and needs weekly brushing to prevent tangles, plus a good dry after swims to avoid a damp-dog smell. Barking is moderate, usually as an alert. Lifespan is a little shorter than some others here, about 10 to 12 years. It suits outdoorsy families near water who want a compact retriever.",
+      "best_for": "Outdoorsy families near water wanting a compact, loyal retriever",
+      "quirky_fact": "The American Water Spaniel is the state dog of Wisconsin, where it was developed to retrieve from small boats.",
+      "skip_if": "You want a dog that stays dry and clean on outings"
     },
     {
       "rank": 3,
-      "breed": "American Water Spaniel",
-      "description": "The American Water Spaniel is a versatile medium-sized breed known for its adaptability and friendly nature. With a curly or wavy coat that's low-shedding, these spaniels are well-suited for families looking for a dog that enjoys water and outdoor activities. They have a sturdy, athletic build that supports their energetic spirit and eagerness to please. This breed is affectionate without being overly demanding, making them solid companions for various household types. Their history as hunting dogs means they enjoy mental challenges and active play, providing an engaging relationship for their owners.",
-      "best_for": "Active families who enjoy outdoor activities and water sports",
-      "quirky_fact": "They are the only breed native to Wisconsin and were bred for hunting in water."
+      "breed": "Field Spaniel",
+      "description": "The Field Spaniel is a quieter, less common relative of the Cocker and Springer, weighing about 35 to 50 pounds. Energy is medium, so a daily hour of walking, fetch or swimming is usually enough, and it tends to be calm indoors once exercised. It is gentle, friendly and good with children, cats and other dogs, which makes it an easy household dog. Training is moderate; Field Spaniels are sensitive and respond best to calm, reward-based methods rather than harsh corrections. The medium, wavy coat sheds moderately and needs brushing once or twice a week plus trimming around the ears and feet. Long ears need regular checks for infection. Because the breed is rare, expect to wait for a puppy from a reputable breeder.",
+      "best_for": "Families wanting a gentle, mid-energy spaniel that is calm indoors",
+      "quirky_fact": "Field Spaniels came close to disappearing in the mid-twentieth century before breeders rebuilt the population.",
+      "skip_if": "You need a puppy soon or prefer firm, quick training"
     },
     {
       "rank": 2,
-      "breed": "Field Spaniel",
-      "description": "Field Spaniels are an elegant and somewhat rare medium-sized breed known for their gentle temperament and striking, glossy coats. They have a balanced, athletic build that suits their history as hunting companions, but they also thrive as loving family dogs. Field Spaniels are affectionate and calm, making them a great fit for households that want a medium-sized dog with a mellow but playful personality. Their coat requires regular grooming to keep it looking lush, and their friendly nature often makes them get along well with children and other pets.",
-      "best_for": "Families wanting a calm, affectionate medium-sized dog",
-      "quirky_fact": "Field Spaniels were once overshadowed by other spaniel breeds but have made a charming comeback."
+      "breed": "Lagotto Romagnolo",
+      "description": "The Lagotto Romagnolo is a 24 to 35 pound Italian water dog with medium energy, a dense curly coat that sheds little, and a long lifespan of 14 to 16 years. A long daily walk plus a sniffing game or short training session meets its needs. Lagottos are affectionate and good with children, cats and other dogs. The coat is the main commitment: brush to the skin every week or two to stop mats and plan a full trim a few times a year. Training is moderate; Lagottos are clever but easily distracted by scents, and a bored one may dig. Barking is moderate. It is a good fit for owners who want a sociable, mid-energy dog and don't mind regular grooming appointments.",
+      "best_for": "Owners wanting a low-shedding, affectionate dog with manageable energy",
+      "quirky_fact": "Lagottos are the traditional truffle-hunting dogs of Italy and are still used for that work.",
+      "skip_if": "You want a wash-and-go coat or a perfect lawn"
     },
     {
       "rank": 1,
-      "breed": "Australian Cattle Dog",
-      "description": "Australian Cattle Dogs are robust, medium-sized dogs with a strong work ethic and loyal nature. Known for their intelligence and boundless energy, they excel in active households that can provide plenty of physical and mental stimulation. They have a distinctive speckled or mottled coat that is short and low-shedding, perfect for those mindful of grooming. Though historically bred to herd cattle over long distances, Australian Cattle Dogs also make devoted companions who thrive on challenges and companionship. Their size strikes a great balance—big enough for tough work, but still manageable for many families.",
-      "best_for": "Active owners who want a smart, energetic, and loyal companion",
-      "quirky_fact": "Australian Cattle Dogs are known for their unique \"heel nipping\" herding style."
+      "breed": "Standard Schnauzer",
+      "description": "The Standard Schnauzer, about 30 to 50 pounds, earns the top spot because it combines medium energy, easy training and a low-shedding coat. A brisk daily walk of 45 to 60 minutes plus a training session or puzzle toy keeps it settled, and it learns house rules quickly. It is good with children, cats and other dogs, especially when raised with them, and it often lives 13 to 16 years. The wiry coat sheds lightly but needs weekly brushing, a beard wipe after meals, and clipping or hand-stripping every few months. The main trade-off is watchfulness: Schnauzers bark at strangers and unusual sounds, which makes them good alarms but means teaching a quiet cue early, especially in attached housing.",
+      "best_for": "Families wanting a trainable, low-shedding medium dog with moderate energy",
+      "quirky_fact": "The Standard Schnauzer is the original Schnauzer size, and the Miniature and Giant Schnauzers were developed from it.",
+      "skip_if": "You want a silent dog or can't keep up with coat trims"
     }
   ],
   "pin_headlines": [
@@ -79,7 +89,7 @@
     "Discover the Best Medium Dogs for Your Lifestyle",
     "Medium-Sized Dogs That Fit Any Home",
     "Ideal Medium Dog Breeds for Outdoor Lovers",
-    "Versatile Medium Dogs You’ll Love",
+    "Versatile Medium Dogs You\u2019ll Love",
     "Medium Breeds with Big Personalities",
     "Friendly Medium-Sized Dogs to Know",
     "Energetic Medium Dogs for Active Owners",
@@ -88,21 +98,30 @@
   ],
   "faqs": [
     {
-      "question": "What factors should I consider when choosing a medium-sized dog breed from this list?",
-      "answer": "Consider your lifestyle, activity level, grooming preferences, and living space. For example, Australian Shepherds and Australian Cattle Dogs are highly energetic and need lots of exercise, while Beagles are more adaptable but can be vocal. Also, think about grooming needs—Lagotto Romagnolos require regular coat care, whereas Standard Schnauzers have low-shedding coats."
+      "question": "What size counts as a medium dog?",
+      "answer": "Most people mean dogs of roughly 25 to 60 pounds and about 17 to 23 inches at the shoulder, though breed clubs and landlords draw the line differently. Check your lease or building rules for the exact weight limit, and remember that a puppy's adult weight is only an estimate, so look at both parents if you can."
     },
     {
-      "question": "Are these medium-sized breeds generally good with children and families?",
-      "answer": "Yes, most breeds on this list are known for being family-friendly. English Springer Spaniels, Brittanys, and Beagles tend to be affectionate and playful with kids. However, some breeds like the Australian Cattle Dog may be more protective or energetic, so early socialization and training are important to ensure a good fit in a family setting."
+      "question": "Which medium dog is the calmest?",
+      "answer": "On this list, the Standard Schnauzer, Lagotto Romagnolo, Field Spaniel and American Water Spaniel are rated medium rather than high for energy. They still need a solid daily walk and some play or training, but they settle more easily indoors than the Australian Shepherd, Brittany, Toller or Australian Cattle Dog, which are bred for long working days."
     },
     {
-      "question": "How much daily exercise do these medium-sized dogs typically need?",
-      "answer": "Most medium-sized breeds on this list require at least an hour of exercise daily. High-energy breeds like the Australian Shepherd and Nova Scotia Duck Tolling Retriever benefit from vigorous activities such as running or agility training. Others, like the Field Spaniel and American Water Spaniel, enjoy moderate walks and playtime but still need consistent activity to stay healthy and happy."
+      "question": "Which medium dogs shed the least?",
+      "answer": "The Standard Schnauzer and Lagotto Romagnolo are the two low-shedding breeds here. The Schnauzer has a wiry coat that needs clipping or hand-stripping a few times a year, and the Lagotto has dense curls that need regular trims. No dog is allergen-free, but less loose hair makes cleaning easier. The rest of the list sheds at a moderate level."
     },
     {
-      "question": "Which breeds on this list are best for people with mild allergies?",
-      "answer": "While no dog is completely hypoallergenic, breeds like the Lagotto Romagnolo and Standard Schnauzer have coats that shed less and produce fewer allergens. These breeds often suit people with mild allergies better than others like the Beagle or Australian Shepherd, which shed more. Regular grooming and cleaning also help reduce allergens in your home."
+      "question": "Are medium dogs good for apartments?",
+      "answer": "Some are, if the building allows their weight. Moderate-energy breeds that are not big barkers, such as the Field Spaniel or Lagotto, adjust well with daily walks. High-energy herders like the Australian Shepherd and Australian Cattle Dog, and the vocal Beagle, are harder in shared buildings because boredom and noise show up quickly."
+    },
+    {
+      "question": "Which medium dogs are good with cats?",
+      "answer": "According to our breed data, every breed on this list except the Australian Cattle Dog is generally good with cats. Individual dogs still vary, so introduce them slowly and supervise early meetings. Hunting breeds such as the Beagle, Brittany and spaniels may chase cats outdoors even when they accept the family cat inside."
     }
   ],
-  "updated_at": "2026-05-29"
+  "updated_at": "2026-10-19",
+  "seo_title": "Best Medium Dog Breeds for Families (2026 Guide)",
+  "answer": "The Standard Schnauzer, Lagotto Romagnolo and Field Spaniel lead this list of medium dogs because they combine moderate energy with good manners around children, cats and other dogs. The deciding factor for most households is daily exercise, so match the breed's energy to the time you really have.",
+  "method": "We filtered a 150-breed dataset for medium-sized breeds, then ordered them by energy level, trainability, compatibility with children, cats and other dogs, and barking, putting the easiest all-round household fits first.",
+  "author": "Elena Marsh",
+  "upgraded_at": "2026-10-19"
 }
