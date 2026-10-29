@@ -1,61 +1,68 @@
 {
   "topic_slug": "most-affectionate-breeds",
   "topic_title": "Top 7 Most Affectionate Dog Breeds",
-  "intro": "If you're looking for a dog that thrives on human connection and shows love in every glance and nuzzle, these breeds are known for their affectionate nature. They’re the kind of dogs who’ll happily settle by your side, follow you around the house, and light up when you come home. From gentle giants to petite companions, these breeds have a reputation for forming strong bonds with their families and expressing their devotion openly. Whether you want a dog to cuddle during movie nights or one that adores being part of family activities, this list highlights breeds that truly shine in their love for people.",
+  "intro": "Affection in dogs usually means attachment, and attachment has a cost. The breeds that follow you from room to room are also the ones most likely to struggle when the house is empty for a full workday. Before choosing, be honest about how many hours a dog would spend alone and how much exercise you can give, because the list ranges from small lap dogs to large sporting breeds that need over an hour a day. Also check how each breed gets along with children and cats if you have them.",
   "picks": [
     {
-      "rank": 7,
-      "breed": "Boston Terrier",
-      "description": "Boston Terriers are charming little dogs that pack a big personality into a compact frame. Known as the \"American Gentleman,\" their expressive eyes and friendly nature make them a joy to be around. They’re incredibly people-oriented and thrive on human interaction, often following their owners from room to room. Boston Terriers are playful and alert yet gentle, making them wonderful companions for families and individuals alike. Their affectionate nature shows in their eagerness to be near you, and they tend to get along well with children and other pets. Plus, their relatively low exercise needs mean they’re happy with a mix of playtime and cuddles indoors.",
-      "best_for": "Apartment dwellers and families seeking a loving, adaptable companion",
-      "quirky_fact": "Despite their tuxedo-like markings, Boston Terriers are known for their goofy and affectionate personalities."
-    },
-    {
-      "rank": 6,
-      "breed": "French Bulldog",
-      "description": "French Bulldogs have captured hearts with their unique bat-like ears and sweet disposition. These dogs are incredibly affectionate and love to be the center of attention in their households. They’re known for bonding closely with their people and often form strong attachments to one or two family members. Frenchies enjoy snuggling and will happily curl up on laps or next to you on the couch. Their playful spirit is balanced with a calm demeanor, making them excellent companions for many lifestyles. Because they thrive on attention, they’re happiest when involved in family activities and can be quite the conversationalist with their expressive faces and charming antics.",
-      "best_for": "Those wanting a low-energy, affectionate indoor companion",
-      "quirky_fact": "French Bulldogs can’t swim but make up for it with plenty of cuddles!"
-    },
-    {
-      "rank": 5,
-      "breed": "Cavalier King Charles Spaniel",
-      "description": "The Cavalier King Charles Spaniel is the epitome of a loving companion. With their soulful eyes and silky coats, they exude warmth and tenderness. These dogs are known for their unwavering devotion and eagerness to be near their humans at all times. Cavaliers are gentle, friendly, and get along famously with kids, other dogs, and even cats. They adore lap time and are happiest when included in family events, making them fantastic for people wanting a dog that truly feels like a best friend. Their affectionate nature is matched by a playful side, so they bring both comfort and fun wherever they go.",
-      "best_for": "Families and individuals seeking a gentle, devoted cuddle buddy",
-      "quirky_fact": "Cavaliers love to \"talk\" back with soft whines and happy sighs when you chat with them."
-    },
-    {
-      "rank": 4,
-      "breed": "Labrador Retriever",
-      "description": "Labrador Retrievers are synonymous with friendly and outgoing personalities. They’re not just affectionate—they’re exuberantly loving, eager to please, and often happiest when they’re right by your side. Labs are known for their patience and gentle nature, making them fantastic with children and adults alike. Their strong desire to connect with people means they thrive on companionship and enjoy participating in family activities, from hikes to lazy afternoons on the couch. Labs express their affection openly through wagging tails, enthusiastic greetings, and a readiness to snuggle up after a long day of play.",
-      "best_for": "Active families wanting a loyal, affectionate companion",
-      "quirky_fact": "Labradors often \"smile\" with their mouths open wide when happy."
-    },
-    {
-      "rank": 3,
-      "breed": "Golden Retriever",
-      "description": "Golden Retrievers are a classic example of warmth and affection wrapped in a shiny coat. They’re famously friendly, patient, and eager to shower their families with love. These dogs have a natural gift for bonding deeply with people and are known to be reliable, gentle, and incredibly tolerant companions. Goldens are happiest when included in every part of family life, whether that’s playing fetch, going for walks, or simply relaxing together. Their expressive eyes and wagging tails are constant reminders of their loving nature. If you want a dog that greets you like the most important person in the world every day, a Golden Retriever fits the bill.",
-      "best_for": "Families and individuals seeking a reliable, loving companion",
-      "quirky_fact": "Golden Retrievers often \"lean\" into you to share affection, almost like a warm hug."
+      "rank": 1,
+      "breed": "Havanese",
+      "description": "The Havanese is affection in a small, easy-to-manage package. It is gentle, friendly and playful, wants to be wherever its people are, and the data rates it good with children, cats and other dogs, so it fits most households. Training is easy because it is eager to please and responds well to food and praise. Medium energy means 30 to 45 minutes of walks and games a day is enough, which suits apartments. The long, silky coat sheds little but needs daily brushing if kept long; many owners book a short trim every six to eight weeks instead. The trade-off for all that devotion is that Havanese cope poorly with long days alone. With a lifespan of around 14 to 16 years, it is a long-term companion.",
+      "best_for": "Households where someone is home most days and wants a lap dog",
+      "quirky_fact": "Havanese are sometimes nicknamed Velcro dogs because they shadow their owners from room to room.",
+      "skip_if": "Everyone is out for full workdays or nobody will keep up with brushing"
     },
     {
       "rank": 2,
       "breed": "Vizsla",
-      "description": "Vizslas are affectionate and energetic dogs known for forming incredibly close bonds with their owners. Sometimes called \"Velcro dogs,\" they love to be near their people and can be quite the shadow, following you from room to room. Their loyalty is unmatched, and they’re happiest when included in daily activities, whether it’s a run, hike, or quiet time at home. Vizslas have a gentle and sensitive side, expressing affection through soft eyes, gentle nudges, and lots of cuddling. Their blend of athleticism and sweetness makes them a wonderful fit for active individuals who crave a devoted companion.",
-      "best_for": "Active owners wanting a loving, high-energy partner",
-      "quirky_fact": "Vizslas are known to \"lean\" on their owners for comfort, showing their deep trust."
+      "description": "The Vizsla is one of the most physically affectionate large breeds: it leans on people, sleeps as close as it is allowed, and follows its owner everywhere. That closeness comes with very high energy. A Vizsla needs at least an hour of hard exercise a day, such as running, off-lead play in a safe area or retrieving, plus training games, or it becomes restless and destructive. It trains easily and is rated good with children and other dogs, but the data rates it not good with cats, because of its hunting instincts. The short, smooth coat sheds little and needs only a weekly wipe with a rubber brush. It barks at a medium level and does not cope well with long hours alone. Lifespan is around 10 to 14 years.",
+      "best_for": "Runners and active families wanting a close, hands-on companion dog",
+      "quirky_fact": "The Vizsla has almost no undercoat, so it feels the cold quickly and many owners use a dog coat in winter.",
+      "skip_if": "You have a cat, live a quiet indoor life or work long hours away"
     },
     {
-      "rank": 1,
-      "breed": "Havanese",
-      "description": "The Havanese is a small dog with a huge heart, celebrated for its affectionate and people-loving nature. They thrive on human companionship and often form lifelong bonds with their families. Havanese dogs are known to be incredibly expressive, greeting you with bright eyes and wagging tails that never quit. Their gentle temperament and eagerness to please make them fantastic for households that want a dog who’s always ready for a cuddle session or to join in on family fun. Despite their small size, they have a big personality and a knack for making everyone feel loved and included.",
-      "best_for": "Anyone seeking a devoted, expressive companion with a big heart",
-      "quirky_fact": "Havanese dogs often \"sing\" or chatter softly when they’re excited or happy."
+      "rank": 3,
+      "breed": "Golden Retriever",
+      "description": "The Golden Retriever pairs warmth toward everyone with one of the steadiest temperaments of any large breed, which is why it is a common choice for families and assistance work. Goldens are affectionate, loyal, friendly and playful, train easily, and the data rates them good with children, cats and other dogs. The commitment is time and hair. They need an hour or more of exercise a day, ideally including swimming or fetch, and they stay puppyish for the first two or three years. The medium-length double coat sheds heavily, especially in spring and autumn, and needs brushing two or three times a week. Goldens want to be part of family life and do poorly kept outside or alone all day. Lifespan is about 10 to 12 years.",
+      "best_for": "Active families with children and other pets",
+      "quirky_fact": "Goldens are known for carrying objects around the house in their mouths, often bringing a toy or shoe to greet people at the door.",
+      "skip_if": "You cannot handle heavy shedding or give an hour of daily exercise"
+    },
+    {
+      "rank": 4,
+      "breed": "Labrador Retriever",
+      "description": "The Labrador Retriever shows affection through enthusiasm: it greets everyone as a friend, wants to join every activity, and is rated good with children, cats and other dogs. Labs are intelligent and easy to train, and food motivation makes them quick learners. They are also strong, high-energy dogs that need at least an hour of exercise a day, and young Labs can knock over small children and pull hard on the lead without training. The short double coat needs little grooming beyond weekly brushing, but it sheds heavily, particularly twice a year. Labs tend to gain weight easily, so measure meals and count treats. Compared with the Golden Retriever, the Lab is a little more boisterous and lower maintenance to groom. Lifespan is about 10 to 12 years.",
+      "best_for": "Outdoor-minded families wanting a friendly, trainable all-rounder",
+      "quirky_fact": "Labradors have a dense, water-resistant coat and a thick otter-like tail that helps them steer when swimming.",
+      "skip_if": "You want a calm indoor dog or cannot manage a strong, bouncy adolescent"
+    },
+    {
+      "rank": 5,
+      "breed": "Cavalier King Charles Spaniel",
+      "description": "The Cavalier King Charles Spaniel was bred as a companion, and it shows: it is gentle, calm and affectionate, and it is happiest on a lap or beside you on the sofa. The data rates it good with children, cats and other dogs, and it is rated low for barking, which makes it one of the easiest affectionate breeds for apartments and shared buildings. Training is easy, and 30 to 45 minutes of walks and play a day is enough. The silky coat sheds moderately and needs brushing a few times a week, with attention to the ears. Cavaliers struggle if left alone for long periods. The breed is prone to heart and neurological conditions, so choose a breeder who health-tests parents and plan for vet costs.",
+      "best_for": "Apartment dwellers and seniors home often who want a quiet lap dog",
+      "quirky_fact": "Cavaliers were named after King Charles II of England, who was known for keeping several of these spaniels at court.",
+      "skip_if": "You work long hours away or cannot budget for possible heart care"
+    },
+    {
+      "rank": 6,
+      "breed": "French Bulldog",
+      "description": "The French Bulldog is affectionate in a relaxed, comic way: it likes to be near you and on your lap, but it is not as clingy as the Havanese or Cavalier, so it tends to handle some time alone a little better. Frenchies are playful and friendly, and the data rates them good with children, cats and other dogs. They rarely bark, need only 30 to 45 minutes of gentle exercise a day, and the short coat needs little grooming beyond weekly brushing and cleaning face folds. Training is moderate because they can be stubborn. The flat face is the main trade-off: Frenchies snore, overheat easily and can have breathing, spine and skin problems. Keep walks short in hot weather and choose a health-focused breeder.",
+      "best_for": "City dwellers wanting a quiet, cuddly, low-exercise dog",
+      "quirky_fact": "Frenchies generally cannot swim because of their heavy front ends, so pools and lake trips need close supervision.",
+      "skip_if": "You live somewhere hot without air conditioning or cannot budget for vet bills"
+    },
+    {
+      "rank": 7,
+      "breed": "Boston Terrier",
+      "description": "The Boston Terrier is friendly, gentle and playful, and it bonds closely with its family while staying small and easy to manage. The data rates it good with children, cats and other dogs, and it trains easily, which makes it a good choice for first-time owners. Medium energy means 30 to 45 minutes of walks and play a day is enough, so it suits apartments, and the short, smooth coat sheds little and needs only weekly brushing. Bostons are alert and will bark at a medium level, usually to announce visitors. Like the French Bulldog, the short muzzle means they overheat easily and can snore, and their prominent eyes are prone to injury. It ranks seventh here because it is more of a playful friend than a lap dog.",
+      "best_for": "First-time owners wanting a small, sociable, low-grooming dog",
+      "quirky_fact": "The Boston Terrier's black-and-white markings earned it the nickname the American Gentleman, as if it were wearing a tuxedo.",
+      "skip_if": "You live in a hot climate or want a dog that stays quiet at the door"
     }
   ],
   "pin_headlines": [
     "Top 7 Dog Breeds Known for Unconditional Affection",
-    "Meet the Most Loving Dog Breeds You’ll Adore",
+    "Meet the Most Loving Dog Breeds You\u2019ll Adore",
     "Dogs That Love You Back: Most Affectionate Breeds",
     "7 Breeds That Crave Cuddles and Company",
     "Which Dog Breed Shows the Most Love?",
@@ -67,21 +74,30 @@
   ],
   "faqs": [
     {
-      "question": "Which dog breed from this list is best for families with young children?",
-      "answer": "Golden Retrievers and Labrador Retrievers are excellent choices for families with young kids. They’re known for their gentle nature, patience, and playful energy, making them great companions for children of all ages."
+      "question": "What is the most affectionate dog breed?",
+      "answer": "Among the breeds here, the Havanese is the most consistently affectionate: it is small, gentle, friendly with everyone and happiest in a lap or at your feet. The Vizsla is just as attached but far more energetic, and the Golden Retriever combines affection with an easy, steady temperament. Individual dogs vary, so meet the parents or the dog itself when you can."
     },
     {
-      "question": "Are these affectionate breeds suitable for apartment living?",
-      "answer": "Yes, some breeds like the French Bulldog, Boston Terrier, and Cavalier King Charles Spaniel adapt well to apartment living due to their smaller size and moderate exercise needs. Larger breeds like the Golden Retriever need more space and daily activity to stay happy."
+      "question": "Which affectionate dogs can be left alone?",
+      "answer": "None of the breeds on this list enjoy long hours alone, because their affection comes from wanting company. The French Bulldog and Boston Terrier tend to cope a little better than the Havanese, Vizsla or Cavalier. For a full workday, plan a midday walk, a dog walker or daycare, and build up alone time slowly from puppyhood."
     },
     {
-      "question": "How much daily exercise do these affectionate breeds typically require?",
-      "answer": "Exercise needs vary: Vizslas and Retrievers need about an hour or more of daily activity to stay healthy and happy. Smaller breeds like the Havanese and French Bulldog require less intense exercise, around 30 minutes to an hour, including walks and playtime."
+      "question": "What is the most affectionate small dog?",
+      "answer": "The Havanese and the Cavalier King Charles Spaniel are the most affectionate small breeds here. Both are gentle, easy to train and good with children, cats and other dogs. The Cavalier barks less, which helps in apartments, while the Havanese sheds less. Both want company most of the day, so they suit households where someone is often home."
     },
     {
-      "question": "Do these affectionate breeds tend to have separation anxiety?",
-      "answer": "Many affectionate breeds, especially Vizslas, Havanese, and Cavaliers, can be prone to separation anxiety if left alone too long. They thrive on companionship and benefit from gradual training to build independence or having interactive toys when you’re away."
+      "question": "Are affectionate dogs good with children?",
+      "answer": "Every breed on this list is rated good with children in the data, but size changes the picture. Large, bouncy breeds such as the Labrador, Golden Retriever and Vizsla can knock over toddlers during play, while toy-sized dogs can be hurt by rough handling. Supervise early meetings and teach children to let the dog approach them."
+    },
+    {
+      "question": "Do affectionate breeds get separation anxiety?",
+      "answer": "People-focused breeds are more prone to stress when left alone, which can show as barking, chewing or pacing. Prevent it by practising short absences from the start, giving exercise before you leave, offering a puzzle toy, and keeping departures low-key. If a dog already panics when alone, a vet or qualified behaviour professional can help."
     }
   ],
-  "updated_at": "2026-05-29"
+  "updated_at": "2026-10-29",
+  "seo_title": "Most Affectionate Dog Breeds: 7 Loving Picks (2026)",
+  "answer": "The Havanese, Vizsla and Golden Retriever are the most affectionate breeds here, each known for staying close to its people. The deciding factor is time: the more affectionate the breed, the less it copes with being left alone, so match the dog to your daily schedule.",
+  "method": "We filtered a 150-breed dataset for breeds whose temperament includes affectionate, friendly or gentle traits and that get along with children, then ordered them by how strongly people-focused each breed is, with size and care needs as tie-breakers.",
+  "author": "Elena Marsh",
+  "upgraded_at": "2026-10-29"
 }
