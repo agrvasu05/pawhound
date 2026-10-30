@@ -528,17 +528,19 @@ function pinSkipReason(e, rec) {
   if (DEAD_TYPES.has(rec.type)) return `${rec.type} format gets no clicks`;
   if (OFF_NICHE.test(text)) return 'beauty, off-niche';
   if (!require('../scripts/season').inSeason(text)) return 'out of season';
-  // 30 Oct 2026: the account is a dog account now; non-dog products stay on
-  // Gumroad but are not pinned.
-  if (!/dog|pupp|\bpets?\b|canine/i.test(text)) return 'not a dog product (account is dog-only)';
   return null;
 }
 
 // Fixed shop boards (all already exist on the account); no new boards.
-function shopBoardFor(rec) {
-  if (rec.type === 'wall-art' || rec.type === 'coloring') return { name: 'Dog Wall Art Printables', description: '' };
-  if (rec.type === 'bundle') return { name: 'Dog Lover Printable Bundles', description: '' };
-  return { name: 'Gifts for Dog Lovers', description: '' };
+function shopBoardFor(rec, e) {
+  const dog = /dog|pupp|\bpets?\b|canine/i.test(`${e.slug} ${rec.title || ''}`);
+  if (dog) {
+    if (rec.type === 'wall-art' || rec.type === 'coloring') return { name: 'Dog Wall Art Printables', description: '' };
+    if (rec.type === 'bundle') return { name: 'Dog Lover Printable Bundles', description: '' };
+    return { name: 'Gifts for Dog Lovers', description: '' };
+  }
+  if (rec.type === 'planner') return { name: 'Printable Planners & Trackers', description: '' };
+  return { name: 'Printable Wall Art', description: '' };
 }
 
 // Drip-post pending pins: up to maxPerRun, at most 1 per product per day.
@@ -606,7 +608,7 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     try {
       const scene = (rec.type === 'wall-art' || rec.type === 'bundle') ? 'wall' : 'desk';
       await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent, scene }, tmpPin);
-      const board = shopBoardFor(rec);
+      const board = shopBoardFor(rec, e);
       const boardId = await pinGetOrCreateBoard(board.name, board.description);
       let url;
       if (useVideo) {

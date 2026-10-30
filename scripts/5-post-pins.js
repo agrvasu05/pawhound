@@ -94,13 +94,24 @@ async function refreshToken() {
   console.log('✓ Token refreshed.');
 }
 
-// Account identity (reset 30 Oct 2026): ONE cluster, dog breeds and dog-friendly
-// homes. The mixed account (dogs, decor, kids' crafts, bedazzling, finance
-// printables) got ~10 impressions per pin for four months because Pinterest
-// could not tell who it was for. Only dog guides and pet-friendly home guides
-// are pinned now; everything else stays on the site but off Pinterest.
+// Account themes (30 Oct 2026, from the 90-day top-pins table): every pin that
+// earned reach was a specific, in-season home or occasion search (bedazzled
+// light switch covers, a Halloween costume guide, mom birthday cards, cubicle
+// decor); no dog breed guide made the top 30. Three related themes, each on its
+// own boards: holidays & occasions (in season), home & DIY decor, and dogs
+// (capped at one pin per run). Beauty and non-holiday fashion are not pinned.
 const PET_HOME = /\b(pets?|dogs?|pups?|puppy|puppies|canine)\b/i;
-const isOnCluster = (a) => isDogArticle(a) || PET_HOME.test(String(a.topic_slug || '').replace(/[-_]+/g, ' '));
+const HOLIDAY_SEASONS = new Set(['halloween', 'thanksgiving', 'christmas', 'new-year', 'valentines', 'easter', 'mothers-day', 'fathers-day', 'fourth-of-july', 'st-patricks']);
+function themeOf(a) {
+  const text = `${a.topic_slug || ''} ${a.topic_title || ''}`;
+  const niche = String(a.niche || 'dogs').toLowerCase();
+  if (niche === 'beauty') return null;
+  if (isDogArticle(a) || PET_HOME.test(text.replace(/[-_]+/g, ' '))) return 'dogs';
+  const season = require('./season').seasonOf(text);
+  if (season && HOLIDAY_SEASONS.has(season.name)) return 'holiday';
+  if (niche === 'fashion') return null;
+  return 'home';
+}
 const isDogArticle = (a) => !a.niche || a.niche === 'dogs';
 
 const NICHE_BOARDS = {
@@ -163,15 +174,38 @@ async function ensureBoard(name, description, key, boardsTracker) {
   return res.body.id;
 }
 
-// Fixed board set (30 Oct 2026). Every pin goes to one of the existing dog
-// boards below; the poster never creates a new board. (The old keyword-board
-// rotation opened ~180 boards, most with a single pin.)
+// Fixed board set (30 Oct 2026): every pin goes to an EXISTING board picked by
+// theme + topic; the poster never creates boards (the old keyword rotation
+// opened ~180, most with one pin). Keys are content/pinterest-boards.json keys.
+const THEME_BOARDS = {
+  holiday: [
+    [/halloween|costume|spooky|witch|ghost/i, 'kw:halloween decor'],
+    [/christmas|xmas|holiday|santa|advent|ornament|stocking|new.?year|winter/i, 'kw:christmas & holiday decor ideas'],
+    [/thanksgiving|friendsgiving|fall|autumn|harvest|pumpkin/i, 'kw:fall home decor'],
+    [/./, 'kw:home party decor ideas'],
+  ],
+  home: [
+    [/office|desk|cubicle|workspace|work.?from.?home/i, 'kw:home office decor'],
+    [/organi[sz]|storage|declutter|clean|pantry|closet|kitchen/i, 'kw:home organization'],
+    [/bedroom|teen|nursery|\bbed\b/i, 'kw:bedroom decor ideas'],
+    [/apartment|rental|renter|dorm|studio|small.?space|tiny/i, 'kw:apartment decor ideas'],
+    [/diy|bedazzl|bling|sparkl|rhinestone|glitter|craft|paint|handmade|makeover/i, 'kw:diy home decor'],
+    [/./, 'kw:home decor & cozy living ideas'],
+  ],
+};
 async function getOrCreateBoard(article, boardsTracker) {
-  const topic = isDogArticle(article) ? dogTopicBoard(article) : null;
-  const key = topic ? `kw:${topic.name.toLowerCase()}` : 'dogs-home';
+  const text = `${article.topic_slug} ${article.topic_title}`.replace(/[-_]+/g, ' ');
+  const theme = themeOf(article);
+  let key;
+  if (theme === 'dogs') {
+    const topic = isDogArticle(article) ? dogTopicBoard(article) : null;
+    key = topic ? `kw:${topic.name.toLowerCase()}` : 'dogs-home';
+  } else {
+    key = (THEME_BOARDS[theme] || THEME_BOARDS.home).find(([re]) => re.test(text))[1];
+  }
   if (boardsTracker[key]) return boardsTracker[key];
-  if (topic) return ensureBoard(topic.name, topic.description, key, boardsTracker);
-  return ensureBoard(NICHE_BOARDS.dogs.name, NICHE_BOARDS.dogs.description, key, boardsTracker);
+  console.error(`  ✗ board "${key}" is not in pinterest-boards.json; not creating boards — skipping`);
+  return null;
 }
 
 // ── Build pin queue ───────────────────────────────────────────────────────────
@@ -194,7 +228,8 @@ function buildQueue(tracker) {
     const slug = article.topic_slug;
     if (redirected[slug]) continue; // duplicate guide, 301s to its canonical
     const dog = isDogArticle(article);
-    if (!isOnCluster(article)) continue;
+    const theme = themeOf(article);
+    if (!theme) continue;
     if (onlyArg && !slug.includes(onlyArg)) continue;
     if (slugsPostedRecently.has(slug)) continue;
     if (!Array.isArray(article.pin_headlines) || !article.pin_headlines.length) continue;
@@ -215,12 +250,14 @@ function buildQueue(tracker) {
     const videoOpen = !tracker[`${slug}/video-1.mp4`] && !!tracker[`${slug}/pin-1.png`];
     if (!nextStatic && !videoOpen) continue;
     const item = (pinFile) => ({ key: `${slug}/${pinFile}`, slug, article, pinFile, isNew, isVideo: pinFile.endsWith('.mp4'), dog });
-    queue.push({ ...item(nextStatic || 'video-1.mp4'), video: videoOpen && nextStatic ? item('video-1.mp4') : null });
+    queue.push({ ...item(nextStatic || 'video-1.mp4'), theme, video: videoOpen && nextStatic ? { ...item('video-1.mp4'), theme } : null });
   }
   const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
-  // Upgraded guides (the only ones offered to Google) go first, then fresh, then the rest.
+  // In-season holiday guides first (they earn the reach), then home, then dogs;
+  // within a theme, never-pinned guides first.
   const ordered = [...shuffle(queue.filter((q) => q.isNew)), ...shuffle(queue.filter((q) => !q.isNew))];
-  return [...ordered.filter((q) => q.article.upgraded_at), ...ordered.filter((q) => !q.article.upgraded_at)];
+  const rank = { holiday: 0, home: 1, dogs: 2 };
+  return ordered.sort((a, b) => rank[a.theme] - rank[b.theme]);
 }
 
 function corePhrase(title) { return title.replace(/^top\s+\d+\s+/i, '').trim(); }
@@ -343,10 +380,11 @@ async function postPin(pin, boardId, m) {
 
   // Fill the run: cap dog guides, prefer fresh articles (queue is already ordered).
   const toPost = [];
-  let videos = 0;
-  const MAX_VIDEO_PER_RUN = 1;
+  let videos = 0, dogs = 0;
+  const MAX_VIDEO_PER_RUN = 1, MAX_DOG_PER_RUN = 1;
   for (const q of queue) {
     if (toPost.length >= PINS_PER_RUN) break;
+    if (q.theme === 'dogs') { if (dogs >= MAX_DOG_PER_RUN) continue; dogs++; }
     // One video per run at most; otherwise the guide's next static pin.
     let pick = q;
     if (q.video && videos < MAX_VIDEO_PER_RUN) pick = q.video;
