@@ -9,6 +9,21 @@ encodes — see "WHERE ENCODED" notes per rule.
 > now 6–10 fresh pins/day across two peak windows; rule 1's text sizes are
 > enforced by `scripts/pin-renderer.js` (≥ 56px headlines, ≤ 3 lines).
 
+## 30 Oct 2026 reset: one cluster, dogs
+
+Evidence: impressions were flat for four months (1,336 in July, 1,407 on 12 Oct, 1,328 on 26 Oct) despite 5–7 pins a day. The business hub showed 1.12k impressions in 30 days, 866 of them from ONE pin (a Michael Jackson Halloween costume guide); the other ~340 pins earned ~10 impressions each, 0 saves, 0 followers. The domain is claimed and there is no account warning, so this is identity, not a penalty: the account mixed dog breeds, cozy decor, kids' crafts, back-to-school, bedazzling and finance printables, and opened a new board for almost every pin (~180 boards).
+
+Decision: the account is a **dog account** (dog breeds + dog-friendly homes + dog printables). Every indexable page on the site is a dog guide, the Amazon gear is dog gear and most shop products are dog products.
+
+Encoded:
+- `scripts/5-post-pins.js`: only dog guides and pet-friendly home guides are pinned (`isOnCluster`); no dog cap; every pin goes to one of six existing dog boards; boards are looked up across all pages before any create.
+- `products/lib.js`: shop pins are dog products only, on three existing boards (Dog Wall Art Printables, Dog Lover Printable Bundles, Gifts for Dog Lovers); the shop poster never creates a board.
+- Volume: 2 guide pins per window + up to 2 shop pins a day (~6/day) while the account rebuilds.
+
+Not done (needs the owner): hiding the ~170 off-cluster boards (set to secret, reversible), and the profile name, bio and category.
+
+Exit condition: if impressions per pin are still ~10 after four weeks of a clean dog-only account (late Nov 2026), the account is probably held back and starting a fresh dog-only account is the owner's call.
+
 ## Oct 2026 corrections (audit of 12 Oct 2026)
 
 Account, last 30 days: 1,407 impressions, 0 saves, 9 outbound clicks. What was wrong and what changed:

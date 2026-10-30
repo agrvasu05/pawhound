@@ -86,7 +86,7 @@ jobs:
       - name: Post content pins
         id: pinterest
         if: steps.guard.outputs.ok == 'true'
-        run: node scripts/5-post-pins.js --max=3
+        run: node scripts/5-post-pins.js --max=2   # 2 per window while the dog-only account rebuilds (Oct 2026)
         env:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}

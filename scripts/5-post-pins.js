@@ -39,10 +39,6 @@ const SITE_URL = 'https://valuefindsdaily.com';
 // runs a day, every day. With the product drip that lands at 6–8 fresh pins a
 // day — well under the 10/day spam line and far above the 0/day of Aug–Oct.
 const PINS_PER_RUN = parseInt(process.argv.find((a) => a.startsWith('--max='))?.split('=')[1] || '3', 10);
-// Dog-breed guides earned 43% of all outbound clicks in the audit and sell the
-// dog wall art, but they are off the home/cozy cluster — allow at most one per
-// run so the account identity stays "cozy home" while the clicks keep coming.
-const MAX_DOG_PER_RUN = 1;
 const TRACKER_PATH = path.join(process.cwd(), 'content', 'posted-pins.json');
 const BOARDS_PATH = path.join(process.cwd(), 'content', 'pinterest-boards.json');
 
@@ -98,10 +94,13 @@ async function refreshToken() {
   console.log('✓ Token refreshed.');
 }
 
-// Which article niches are allowed to be pinned. Home/cozy/decor is the account
-// identity; dogs are allowed at a capped share (see MAX_DOG_PER_RUN); beauty and
-// fashion never get pinned (they earned impressions but zero clicks and no sales).
-const ON_NICHE = /(home|cozy|cosy|decor|interior|room|bedroom|kitchen|living|entryway|apartment|rental|small.?space|storage|declutter|clean|organi[sz]|plant|garden|nook|nest|farmhouse|boho|minimalist|printable|planner|checklist)/i;
+// Account identity (reset 30 Oct 2026): ONE cluster, dog breeds and dog-friendly
+// homes. The mixed account (dogs, decor, kids' crafts, bedazzling, finance
+// printables) got ~10 impressions per pin for four months because Pinterest
+// could not tell who it was for. Only dog guides and pet-friendly home guides
+// are pinned now; everything else stays on the site but off Pinterest.
+const PET_HOME = /\b(pets?|dogs?|pups?|puppy|puppies|canine)\b/i;
+const isOnCluster = (a) => isDogArticle(a) || PET_HOME.test(String(a.topic_slug || '').replace(/[-_]+/g, ' '));
 const isDogArticle = (a) => !a.niche || a.niche === 'dogs';
 
 const NICHE_BOARDS = {
@@ -140,7 +139,16 @@ const dogTopicBoard = (article) => DOG_TOPIC_BOARDS.find((b) => b.test.test(`${a
 async function ensureBoard(name, description, key, boardsTracker) {
   if (boardsTracker[key]) return boardsTracker[key];
   if (DRY) { boardsTracker[key] = `dry-${key}`; return boardsTracker[key]; }
-  console.log(`  Ensuring board: "${name}"...`);
+  // Look the board up first (all pages) so a fixed board is never duplicated.
+  let bookmark = '';
+  for (let page = 0; page < 20; page++) {
+    const list = await api('GET', `/v5/boards?page_size=250${bookmark ? `&bookmark=${encodeURIComponent(bookmark)}` : ''}`);
+    const found = (list.body.items || []).find((b) => b.name.toLowerCase() === name.toLowerCase());
+    if (found) { boardsTracker[key] = found.id; return found.id; }
+    bookmark = list.body.bookmark;
+    if (!bookmark) break;
+  }
+  console.log(`  Creating board: "${name}"...`);
   const res = await api('POST', '/v5/boards', { name, description, privacy: 'PUBLIC' });
   if (res.status === 401) throw new Error('Unauthorized — re-run pinterest-auth.js');
   if (res.status !== 201 && res.status !== 200) {
@@ -155,24 +163,15 @@ async function ensureBoard(name, description, key, boardsTracker) {
   return res.body.id;
 }
 
-// Pin each article's pins to its KEYWORD-named boards (from the trend brief),
-// rotating across them; legacy articles fall back to the broad niche board.
-async function getOrCreateBoard(article, boardsTracker, rotationIdx = 0) {
-  const kwBoards = (article.boards || []).filter(Boolean);
-  if (kwBoards.length && !isDogArticle(article)) {
-    const name = kwBoards[rotationIdx % kwBoards.length].slice(0, 50);
-    const phrase = corePhrase(article.topic_title);
-    const desc = `${name} — hand-picked ${article.niche || ''} ideas and guides. ${phrase}: tap any pin for the full list with photos and details.`
-      .replace(/\s+/g, ' ').trim().slice(0, 480);
-    return ensureBoard(name, desc, `kw:${name.toLowerCase()}`, boardsTracker);
-  }
-  if (isDogArticle(article)) {
-    const topic = dogTopicBoard(article);
-    if (topic) return ensureBoard(topic.name, topic.description, `kw:${topic.name.toLowerCase()}`, boardsTracker);
-  }
-  const nicheKey = isDogArticle(article) ? 'dogs' : 'home';
-  const board = NICHE_BOARDS[nicheKey];
-  return ensureBoard(board.name, board.description, nicheKey === 'dogs' ? 'dogs-home' : nicheKey, boardsTracker);
+// Fixed board set (30 Oct 2026). Every pin goes to one of the existing dog
+// boards below; the poster never creates a new board. (The old keyword-board
+// rotation opened ~180 boards, most with a single pin.)
+async function getOrCreateBoard(article, boardsTracker) {
+  const topic = isDogArticle(article) ? dogTopicBoard(article) : null;
+  const key = topic ? `kw:${topic.name.toLowerCase()}` : 'dogs-home';
+  if (boardsTracker[key]) return boardsTracker[key];
+  if (topic) return ensureBoard(topic.name, topic.description, key, boardsTracker);
+  return ensureBoard(NICHE_BOARDS.dogs.name, NICHE_BOARDS.dogs.description, key, boardsTracker);
 }
 
 // ── Build pin queue ───────────────────────────────────────────────────────────
@@ -195,7 +194,7 @@ function buildQueue(tracker) {
     const slug = article.topic_slug;
     if (redirected[slug]) continue; // duplicate guide, 301s to its canonical
     const dog = isDogArticle(article);
-    if (!dog && !(article.niche && ON_NICHE.test(article.niche))) continue;
+    if (!isOnCluster(article)) continue;
     if (onlyArg && !slug.includes(onlyArg)) continue;
     if (slugsPostedRecently.has(slug)) continue;
     if (!Array.isArray(article.pin_headlines) || !article.pin_headlines.length) continue;
@@ -344,11 +343,10 @@ async function postPin(pin, boardId, m) {
 
   // Fill the run: cap dog guides, prefer fresh articles (queue is already ordered).
   const toPost = [];
-  let dogs = 0, videos = 0;
+  let videos = 0;
   const MAX_VIDEO_PER_RUN = 1;
   for (const q of queue) {
     if (toPost.length >= PINS_PER_RUN) break;
-    if (q.dog) { if (dogs >= MAX_DOG_PER_RUN) continue; dogs++; }
     // One video per run at most; otherwise the guide's next static pin.
     let pick = q;
     if (q.video && videos < MAX_VIDEO_PER_RUN) pick = q.video;
@@ -362,8 +360,7 @@ async function postPin(pin, boardId, m) {
   for (const pin of toPost) {
     try {
       if (!DRY && !(await isLive(`${SITE_URL}/${pin.slug}`))) { console.log(`  ↷ ${pin.slug}: page not live yet — skipping`); continue; }
-      const postedCount = Object.keys(tracker).filter((k) => k.startsWith(pin.slug + '/') && tracker[k].posted_at).length;
-      const boardId = await getOrCreateBoard(pin.article, boardsTracker, postedCount);
+      const boardId = await getOrCreateBoard(pin.article, boardsTracker);
       if (!boardId) continue;
       const m = await materialize(pin, tmpDir);
       console.log(`${DRY ? '(dry) ' : ''}Posting: ${pin.article.topic_title} — ${pin.pinFile} [${m.template}]${pin.isVideo ? ' (video)' : ''}`);

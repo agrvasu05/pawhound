@@ -383,9 +383,17 @@ async function pinRefresh() {
 const boardCache = {};
 async function pinGetOrCreateBoard(name, description) {
   if (boardCache[name]) return boardCache[name];
-  const list = await pinApi('GET', '/v5/boards?page_size=100');
-  const match = (list.body.items || []).find((b) => b.name === name);
-  if (match) return (boardCache[name] = match.id);
+  // Page through every board (the account has ~180) and match case-insensitively.
+  let bookmark = '';
+  for (let page = 0; page < 20; page++) {
+    const list = await pinApi('GET', `/v5/boards?page_size=250${bookmark ? `&bookmark=${encodeURIComponent(bookmark)}` : ''}`);
+    const match = (list.body.items || []).find((b) => b.name.toLowerCase() === name.toLowerCase());
+    if (match) return (boardCache[name] = match.id);
+    bookmark = list.body.bookmark;
+    if (!bookmark) break;
+  }
+  // Fixed board set since 30 Oct 2026: never open a new board from the shop poster.
+  if (!process.env.ALLOW_NEW_BOARDS) throw new Error(`Board "${name}" not found and new boards are disabled`);
   const res = await pinApi('POST', '/v5/boards', { name, description, privacy: 'PUBLIC' });
   if (res.status !== 201 && res.status !== 200) throw new Error('Board error: ' + JSON.stringify(res.body));
   return (boardCache[name] = res.body.id);
@@ -520,7 +528,17 @@ function pinSkipReason(e, rec) {
   if (DEAD_TYPES.has(rec.type)) return `${rec.type} format gets no clicks`;
   if (OFF_NICHE.test(text)) return 'beauty, off-niche';
   if (!require('../scripts/season').inSeason(text)) return 'out of season';
+  // 30 Oct 2026: the account is a dog account now; non-dog products stay on
+  // Gumroad but are not pinned.
+  if (!/dog|pupp|\bpets?\b|canine/i.test(text)) return 'not a dog product (account is dog-only)';
   return null;
+}
+
+// Fixed shop boards (all already exist on the account); no new boards.
+function shopBoardFor(rec) {
+  if (rec.type === 'wall-art' || rec.type === 'coloring') return { name: 'Dog Wall Art Printables', description: '' };
+  if (rec.type === 'bundle') return { name: 'Dog Lover Printable Bundles', description: '' };
+  return { name: 'Gifts for Dog Lovers', description: '' };
 }
 
 // Drip-post pending pins: up to maxPerRun, at most 1 per product per day.
@@ -588,7 +606,8 @@ async function postQueue({ maxPerRun = 5 } = {}) {
     try {
       const scene = (rec.type === 'wall-art' || rec.type === 'bundle') ? 'wall' : 'desk';
       await renderShopPin({ images, headline: e.headline, subhead: e.subhead, price: e.price, accent: e.accent, scene }, tmpPin);
-      const boardId = await pinGetOrCreateBoard(e.board.name, e.board.description);
+      const board = shopBoardFor(rec);
+      const boardId = await pinGetOrCreateBoard(board.name, board.description);
       let url;
       if (useVideo) {
         await renderKenBurnsFromImage({ imagePath: tmpPin, outPath: tmpVideo, coverPath: tmpCover });
