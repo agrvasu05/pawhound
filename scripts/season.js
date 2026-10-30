@@ -23,7 +23,7 @@ const RULES = [
   { name: 'back-to-school', re: /back[\s-]*to[\s-]*school|\bdorm\b|college[\s-]*(dorm|room|essentials|checklist)|first[\s-]*day[\s-]*of[\s-]*school/, windows: [['06-15', '09-10']] },
   { name: 'summer', re: /summer|pool[\s-]*party/, windows: [['04-10', '08-20']] },
   { name: 'spring', re: /spring/, windows: [['02-01', '05-20']] },
-  { name: 'halloween', re: /halloween|spooky|jack[\s-]*o[\s-]*lantern|\bwitch|\bghost|haunted|trick[\s-]*or[\s-]*treat/, windows: [['08-25', '10-29']] },
+  { name: 'halloween', re: /halloween|spooky|jack[\s-]*o[\s-]*lantern|\bwitch|\bghost|haunted|trick[\s-]*or[\s-]*treat|trunk[\s-]*or[\s-]*treat|\bmummy\b|pumpkin[\s-]*(paint|carv|stencil)|(paint|carv)\w*[\s-]*pumpkin|costume/, windows: [['08-25', '10-29']] },
   { name: 'thanksgiving', re: /thanksgiving|friendsgiving/, windows: [['09-20', '11-26']] },
   { name: 'christmas', re: /christmas|xmas|holiday|santa|advent|stocking|ornament|gingerbread|nativity/, windows: [['10-01', '12-24']] },
   { name: 'new-year', re: /new[\s-]*year/, windows: [['11-20', '01-10']] },
