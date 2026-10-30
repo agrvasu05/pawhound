@@ -1,0 +1,46 @@
+name: Fetch photos for new guides
+
+# When a guide is added or changed, download Pexels photos for any pick that
+# has none yet (scripts/3-fetch-images.js only fetches missing ones) and commit
+# them. The commit is pushed with GITHUB_TOKEN, which does not re-trigger
+# Actions (no loop), but Cloudflare Pages still builds it, so the photos go live.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['content/articles/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-images
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Download missing photos
+        run: node scripts/3-fetch-images.js
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      - name: Commit photos
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add public/images/breeds
+          git diff --cached --quiet && { echo "No new photos."; exit 0; }
+          git commit -m "Add photos for new guides"
+          git pull --rebase --autostash
+          git push

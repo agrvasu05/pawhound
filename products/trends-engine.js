@@ -40,6 +40,9 @@ function api(method, endpoint) {
 const INTERESTS = {
   home_decor: 'home decor',
   diy_and_crafts: 'home',
+  // Oct 2026: holidays & occasions are one of the three account themes (the
+  // best-performing pins were in-season occasion searches).
+  event_planning: 'holidays',
 };
 const DOG_RE = /\b(dog|dogs|puppy|puppies|pet|pets|cat|cats|kitten)\b/i;
 
@@ -116,6 +119,17 @@ async function buildBriefs(top) {
   console.log('Pulling Pinterest Trends across niches...');
   const trends = await pullTrends();
   console.log(`  ${trends.length} candidate keywords`);
+
+  // --raw (Oct 2026): save the keywords only; no LLM step. Claude picks topics
+  // from content/trend-keywords.json and writes the guides itself.
+  if (process.argv.includes('--raw')) {
+    const out = { generated_at: new Date().toISOString(), region: 'US', keywords: trends.slice(0, 150) };
+    fs.writeFileSync(path.join(process.cwd(), 'content', 'trend-keywords.json'), JSON.stringify(out, null, 2) + '\n');
+    const by = {}; for (const t of out.keywords) by[t.niche] = (by[t.niche] || 0) + 1;
+    console.log('Saved content/trend-keywords.json', JSON.stringify(by));
+    out.keywords.slice(0, 25).forEach((t) => console.log(`  [${t.niche}] ${t.keyword}  vol ${t.pop}  MoM ${t.mom}%`));
+    return;
+  }
 
   const briefTargets = trends.slice(0, 22);
   console.log(`Writing briefs for top ${briefTargets.length}...`);

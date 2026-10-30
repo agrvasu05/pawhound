@@ -1,0 +1,46 @@
+name: Trend keywords (daily)
+
+# Saves Pinterest's trending US keywords (home decor, DIY, events/holidays) to
+# content/trend-keywords.json. No AI step: the daily Claude writer task picks an
+# in-season topic from this list and writes the guide. Runs ~14 h before the
+# 10:04 IST writer so GitHub's cron lag (4–6 h seen in Oct 2026) doesn't matter.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 14 * * *'   # 14:30 UTC = 20:00 IST
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trend-keywords
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Pull trending keywords
+        run: node products/trends-engine.js --raw
+        env:
+          PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
+          PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+      - name: Commit keywords
+        run: |
+          git config user.name "PawHound Bot"
+          git config user.email "bot@valuefindsdaily.com"
+          git add content/trend-keywords.json
+          git diff --cached --quiet || git commit -m "Update trend keywords [skip netlify] [CI Skip]"
+          git pull --rebase --autostash
+          git push
