@@ -9,20 +9,21 @@ encodes — see "WHERE ENCODED" notes per rule.
 > now 6–10 fresh pins/day across two peak windows; rule 1's text sizes are
 > enforced by `scripts/pin-renderer.js` (≥ 56px headlines, ≤ 3 lines).
 
-## 30 Oct 2026 reset: one cluster, dogs
+## 30 Oct 2026 reset: three themes + the trend engine back on
 
-Evidence: impressions were flat for four months (1,336 in July, 1,407 on 12 Oct, 1,328 on 26 Oct) despite 5–7 pins a day. The business hub showed 1.12k impressions in 30 days, 866 of them from ONE pin (a Michael Jackson Halloween costume guide); the other ~340 pins earned ~10 impressions each, 0 saves, 0 followers. The domain is claimed and there is no account warning, so this is identity, not a penalty: the account mixed dog breeds, cozy decor, kids' crafts, back-to-school, bedazzling and finance printables, and opened a new board for almost every pin (~180 boards).
+Evidence: impressions flat for four months (1,336 in July, 1,407 on 12 Oct, 1,328 on 26 Oct). The 90-day top-pins table (analytics.pinterest.com) shows every pin that earned reach was a specific, in-season home or occasion search: Michael Jackson Halloween costume guide 2,183, bedazzled light switch covers 130, bedazzled chargers 113, printable mom birthday cards 89, summer nails 82 (no clicks), cubicle decor 45, pet-safe plants 45. No dog breed guide made the top 30. The domain is claimed and there is no account warning.
 
-Decision: the account is a **dog account** (dog breeds + dog-friendly homes + dog printables). Every indexable page on the site is a dog guide, the Amazon gear is dog gear and most shop products are dog products.
+Root cause: those guides came from the trend engine (Pinterest Trends API + an LLM), which stopped on 17 Aug when the paid AI ran out. Since then only old guides and dog guides were pinned. A dog-only reset was tried for a few hours on 30 Oct and reverted: the data says dogs are the weakest theme.
 
 Encoded:
-- `scripts/5-post-pins.js`: only dog guides and pet-friendly home guides are pinned (`isOnCluster`); no dog cap; every pin goes to one of six existing dog boards; boards are looked up across all pages before any create.
-- `products/lib.js`: shop pins are dog products only, on three existing boards (Dog Wall Art Printables, Dog Lover Printable Bundles, Gifts for Dog Lovers); the shop poster never creates a board.
-- Volume: 2 guide pins per window + up to 2 shop pins a day (~6/day) while the account rebuilds.
+- Themes (`themeOf` in scripts/5-post-pins.js): holidays & occasions (in season), home & DIY decor, dogs (max one per run). Beauty and non-holiday fashion are not pinned. Queue order: holiday, home, dogs.
+- Boards: every pin goes to an existing board by theme + topic (`THEME_BOARDS`, dog topic boards); the poster never creates boards. Shop pins go to five existing boards.
+- Trend engine without paid AI: `trends-engine.js --raw` (workflow "Trend keywords (daily)") saves trending keywords for home decor, DIY and event planning; the Claude writer task picks with `scripts/trend-pick.py` and writes 2 new guides a day (content/TREND_GUIDE.md) plus 1 upgrade; "Fetch photos for new guides" downloads Pexels photos on push.
+- Volume: 2 guide pins per window + up to 2 shop pins a day.
 
-Not done (needs the owner): hiding the ~170 off-cluster boards (set to secret, reversible), and the profile name, bio and category.
+Not done (needs the owner): hiding off-theme boards (beauty, back-to-school, Father's Day, graduation), profile bio and category.
 
-Exit condition: if impressions per pin are still ~10 after four weeks of a clean dog-only account (late Nov 2026), the account is probably held back and starting a fresh dog-only account is the owner's call.
+Exit condition: if impressions per pin are still ~10 on 27 Nov 2026 after four weeks of in-season trend guides, the account may be held back; a fresh account is the owner's call.
 
 ## Oct 2026 corrections (audit of 12 Oct 2026)
 
