@@ -1,244 +1,217 @@
 {
-  "generated_at": "2026-10-30T19:31:59.849Z",
+  "generated_at": "2026-10-31T18:40:23.356Z",
   "region": "US",
   "keywords": [
     {
-      "keyword": "biblical trunk or treat ideas",
-      "niche": "holidays",
+      "keyword": "barbie life in the dream house",
+      "niche": "home decor",
       "pop": 88,
-      "mom": 1500,
+      "mom": 400,
       "yoy": 300,
       "rising": true,
       "score": 198
     },
     {
+      "keyword": "biblical trunk or treat ideas",
+      "niche": "holidays",
+      "pop": 87,
+      "mom": 1500,
+      "yoy": 300,
+      "rising": true,
+      "score": 197
+    },
+    {
       "keyword": "living room inspo ideas",
       "niche": "home decor",
-      "pop": 94,
+      "pop": 96,
       "mom": 300,
       "yoy": 10001,
       "rising": false,
-      "score": 194
-    },
-    {
-      "keyword": "barbie life in the dream house",
-      "niche": "home decor",
-      "pop": 83,
-      "mom": 300,
-      "yoy": 300,
-      "rising": true,
-      "score": 193
+      "score": 196
     },
     {
       "keyword": "painting pumpkins ideas diy",
       "niche": "home decor",
-      "pop": 82,
-      "mom": 700,
+      "pop": 85,
+      "mom": 600,
       "yoy": -70,
       "rising": true,
-      "score": 192
+      "score": 195
     },
     {
       "keyword": "halloween crafts for kids",
       "niche": "home",
-      "pop": 92,
+      "pop": 93,
       "mom": 300,
       "yoy": 20,
       "rising": false,
-      "score": 192
+      "score": 193
+    },
+    {
+      "keyword": "paint pumpkins",
+      "niche": "home decor",
+      "pop": 78,
+      "mom": 400,
+      "yoy": -60,
+      "rising": true,
+      "score": 188
     },
     {
       "keyword": "painting pumpkins",
       "niche": "home",
-      "pop": 86,
+      "pop": 88,
       "mom": 500,
       "yoy": -40,
+      "rising": false,
+      "score": 188
+    },
+    {
+      "keyword": "top gunner outfit halloween",
+      "niche": "holidays",
+      "pop": 77,
+      "mom": 10001,
+      "yoy": 10001,
+      "rising": true,
+      "score": 187
+    },
+    {
+      "keyword": "room on the broom",
+      "niche": "home decor",
+      "pop": 76,
+      "mom": 300,
+      "yoy": 10,
+      "rising": true,
+      "score": 186
+    },
+    {
+      "keyword": "pumpkin decorating ideas",
+      "niche": "home",
+      "pop": 86,
+      "mom": 400,
+      "yoy": 20,
       "rising": false,
       "score": 186
     },
     {
       "keyword": "mermaid halloween costumes",
       "niche": "home",
-      "pop": 84,
+      "pop": 86,
       "mom": 400,
       "yoy": 30,
       "rising": false,
-      "score": 184
+      "score": 186
     },
     {
       "keyword": "halloween banner",
       "niche": "home",
-      "pop": 84,
+      "pop": 85,
       "mom": 300,
       "yoy": 60,
       "rising": false,
-      "score": 184
-    },
-    {
-      "keyword": "paint pumpkins",
-      "niche": "home decor",
-      "pop": 73,
-      "mom": 400,
-      "yoy": -60,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "top gunner outfit halloween",
-      "niche": "holidays",
-      "pop": 73,
-      "mom": 10001,
-      "yoy": 10001,
-      "rising": true,
-      "score": 183
-    },
-    {
-      "keyword": "senior night posters",
-      "niche": "holidays",
-      "pop": 83,
-      "mom": 300,
-      "yoy": 10,
-      "rising": false,
-      "score": 183
-    },
-    {
-      "keyword": "christmas decorations ideas 2026",
-      "niche": "home decor",
-      "pop": 72,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 182
-    },
-    {
-      "keyword": "pumpkin painting ideas snoopy",
-      "niche": "holidays",
-      "pop": 72,
-      "mom": 1000,
-      "yoy": 10,
-      "rising": true,
-      "score": 182
-    },
-    {
-      "keyword": "cupid halloween costume",
-      "niche": "holidays",
-      "pop": 82,
-      "mom": 300,
-      "yoy": 100,
-      "rising": false,
-      "score": 182
-    },
-    {
-      "keyword": "room on the broom",
-      "niche": "home decor",
-      "pop": 71,
-      "mom": 300,
-      "yoy": 10,
-      "rising": true,
-      "score": 181
+      "score": 185
     },
     {
       "keyword": "harry potter pumpkin painting",
       "niche": "holidays",
-      "pop": 71,
-      "mom": 1500,
+      "pop": 74,
+      "mom": 1000,
       "yoy": 0,
+      "rising": true,
+      "score": 184
+    },
+    {
+      "keyword": "pumpkins painting ideas",
+      "niche": "home",
+      "pop": 73,
+      "mom": 1500,
+      "yoy": -8,
+      "rising": false,
+      "score": 183
+    },
+    {
+      "keyword": "costco trunk or treat ideas",
+      "niche": "home decor",
+      "pop": 71,
+      "mom": 500,
+      "yoy": 200,
       "rising": true,
       "score": 181
     },
     {
-      "keyword": "trick or treat table ideas outside",
+      "keyword": "christmas decorations ideas 2026",
       "niche": "home decor",
-      "pop": 70,
+      "pop": 71,
       "mom": 300,
-      "yoy": 300,
+      "yoy": 10001,
       "rising": true,
-      "score": 180
-    },
-    {
-      "keyword": "pumpkin decorating ideas",
-      "niche": "home",
-      "pop": 80,
-      "mom": 500,
-      "yoy": 20,
-      "rising": false,
-      "score": 180
+      "score": 181
     },
     {
       "keyword": "pumpkin decor ideas",
       "niche": "home decor",
-      "pop": 69,
-      "mom": 400,
+      "pop": 70,
+      "mom": 300,
       "yoy": 200,
       "rising": true,
-      "score": 179
+      "score": 180
     },
     {
-      "keyword": "cute simple pumpkin painting ideas",
-      "niche": "home",
-      "pop": 69,
-      "mom": 8000,
-      "yoy": 100,
+      "keyword": "trick or treat table ideas outside",
+      "niche": "home decor",
+      "pop": 68,
+      "mom": 300,
+      "yoy": 200,
       "rising": true,
-      "score": 179
+      "score": 178
     },
     {
       "keyword": "pumpkin painting",
       "niche": "home",
-      "pop": 79,
+      "pop": 78,
       "mom": 600,
       "yoy": -20,
       "rising": false,
-      "score": 179
+      "score": 178
     },
     {
-      "keyword": "nightmare before christmas pumpkin paint",
-      "niche": "holidays",
-      "pop": 69,
-      "mom": 1500,
-      "yoy": -10,
-      "rising": false,
-      "score": 179
-    },
-    {
-      "keyword": "coraline pumpkin painting",
+      "keyword": "pumpkin painting ideas easy",
       "niche": "home",
       "pop": 68,
-      "mom": 2000,
-      "yoy": 80,
+      "mom": 1500,
+      "yoy": 2,
       "rising": false,
       "score": 178
     },
     {
-      "keyword": "halloween appetizers for party",
-      "niche": "holidays",
-      "pop": 68,
-      "mom": 1500,
-      "yoy": 40,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "ghost pumpkin painting",
-      "niche": "holidays",
-      "pop": 68,
-      "mom": 1500,
-      "yoy": -10,
-      "rising": true,
-      "score": 178
-    },
-    {
-      "keyword": "easy halloween appetizers for a party",
-      "niche": "holidays",
+      "keyword": "cute simple pumpkin painting ideas",
+      "niche": "home",
       "pop": 67,
-      "mom": 1000,
-      "yoy": 200,
+      "mom": 8000,
+      "yoy": 100,
       "rising": true,
       "score": 177
     },
     {
       "keyword": "pumpkin painting ideas funny",
       "niche": "home",
+      "pop": 67,
+      "mom": 2000,
+      "yoy": 20,
+      "rising": true,
+      "score": 177
+    },
+    {
+      "keyword": "painted pumpkins",
+      "niche": "home",
+      "pop": 77,
+      "mom": 500,
+      "yoy": -50,
+      "rising": false,
+      "score": 177
+    },
+    {
+      "keyword": "pumpkin carving stencils free",
+      "niche": "home",
       "pop": 66,
       "mom": 2500,
       "yoy": 20,
@@ -246,85 +219,94 @@
       "score": 176
     },
     {
-      "keyword": "pumpkin painting ideas easy",
+      "keyword": "stitch pumpkin painting",
       "niche": "home",
-      "pop": 66,
-      "mom": 2000,
-      "yoy": -3,
-      "rising": true,
-      "score": 176
-    },
-    {
-      "keyword": "costco trunk or treat ideas",
-      "niche": "home decor",
       "pop": 65,
-      "mom": 500,
-      "yoy": 200,
-      "rising": true,
+      "mom": 2000,
+      "yoy": -60,
+      "rising": false,
       "score": 175
     },
     {
       "keyword": "mad scientist costume woman",
-      "niche": "home",
+      "niche": "holidays",
       "pop": 65,
-      "mom": 2000,
+      "mom": 1500,
       "yoy": 8000,
       "rising": true,
       "score": 175
     },
     {
-      "keyword": "playboi bunny costume halloween",
+      "keyword": "unicorn pumpkin painting",
       "niche": "holidays",
       "pop": 65,
       "mom": 1500,
-      "yoy": 10001,
+      "yoy": 30,
       "rising": true,
       "score": 175
     },
     {
-      "keyword": "pumpkin carving stencils free",
-      "niche": "home",
+      "keyword": "halloween appetizers for party",
+      "niche": "holidays",
+      "pop": 65,
+      "mom": 1500,
+      "yoy": 40,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "painting pumpkins ideas diy girly",
+      "niche": "home decor",
       "pop": 64,
-      "mom": 2500,
-      "yoy": 30,
+      "mom": 1500,
+      "yoy": -60,
       "rising": true,
       "score": 174
     },
     {
       "keyword": "outdoor christmas decor ideas",
       "niche": "home decor",
-      "pop": 63,
-      "mom": 500,
+      "pop": 64,
+      "mom": 400,
       "yoy": 600,
       "rising": true,
-      "score": 173
+      "score": 174
+    },
+    {
+      "keyword": "pumpkin painting ideas contest",
+      "niche": "home",
+      "pop": 64,
+      "mom": 2000,
+      "yoy": 400,
+      "rising": true,
+      "score": 174
     },
     {
       "keyword": "easy pumpkin painting ideas",
       "niche": "home",
-      "pop": 63,
+      "pop": 64,
       "mom": 2000,
       "yoy": -40,
       "rising": true,
-      "score": 173
+      "score": 174
     },
     {
-      "keyword": "unicorn pumpkin painting",
+      "keyword": "cute pumpkin painting ideas",
+      "niche": "home",
+      "pop": 74,
+      "mom": 1000,
+      "yoy": -2,
+      "rising": false,
+      "score": 174
+    },
+    {
+      "keyword": "playboi bunny costume halloween",
       "niche": "holidays",
-      "pop": 63,
+      "pop": 64,
       "mom": 1500,
-      "yoy": 30,
+      "yoy": 10001,
       "rising": true,
-      "score": 173
-    },
-    {
-      "keyword": "painting pumpkins ideas diy girly",
-      "niche": "home decor",
-      "pop": 62,
-      "mom": 1500,
-      "yoy": -60,
-      "rising": true,
-      "score": 172
+      "score": 174
     },
     {
       "keyword": "christmas tree ideas 2026",
@@ -336,39 +318,21 @@
       "score": 172
     },
     {
-      "keyword": "pumpkin painting designs easy",
-      "niche": "home",
-      "pop": 62,
-      "mom": 3500,
-      "yoy": -40,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "stitch pumpkin painting",
-      "niche": "home",
-      "pop": 62,
-      "mom": 2000,
-      "yoy": -60,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "cute pumpkin painting ideas",
-      "niche": "home",
-      "pop": 72,
-      "mom": 1000,
-      "yoy": -2,
-      "rising": false,
-      "score": 172
-    },
-    {
-      "keyword": "jack skellington pumpkin painting",
+      "keyword": "spongebob pumpkin painting",
       "niche": "home",
       "pop": 62,
       "mom": 2000,
       "yoy": 20,
-      "rising": false,
+      "rising": true,
+      "score": 172
+    },
+    {
+      "keyword": "sally pumpkin painting",
+      "niche": "home",
+      "pop": 62,
+      "mom": 2000,
+      "yoy": -9,
+      "rising": true,
       "score": 172
     },
     {
@@ -381,56 +345,74 @@
       "score": 171
     },
     {
-      "keyword": "winnie the pooh pumpkin",
-      "niche": "holidays",
-      "pop": 61,
+      "keyword": "mini pumpkin painting ideas",
+      "niche": "home",
+      "pop": 71,
       "mom": 1000,
-      "yoy": -8,
-      "rising": true,
+      "yoy": 30,
+      "rising": false,
       "score": 171
     },
     {
-      "keyword": "christmas decorations 2026",
-      "niche": "home decor",
-      "pop": 60,
-      "mom": 300,
-      "yoy": 10001,
-      "rising": true,
-      "score": 170
+      "keyword": "funny pumpkin painting ideas",
+      "niche": "home",
+      "pop": 61,
+      "mom": 1500,
+      "yoy": -30,
+      "rising": false,
+      "score": 171
     },
     {
-      "keyword": "pumpkin painting ideas contest",
+      "keyword": "simple pumpkin painting ideas",
       "niche": "home",
-      "pop": 60,
-      "mom": 2000,
-      "yoy": 400,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "spongebob pumpkin painting",
-      "niche": "home",
-      "pop": 60,
-      "mom": 2000,
+      "pop": 61,
+      "mom": 1500,
       "yoy": 20,
+      "rising": false,
+      "score": 171
+    },
+    {
+      "keyword": "pumpkin painting designs easy",
+      "niche": "home",
+      "pop": 60,
+      "mom": 3500,
+      "yoy": -40,
       "rising": true,
       "score": 170
     },
     {
-      "keyword": "sally pumpkin painting",
+      "keyword": "easy painted pumpkin ideas",
       "niche": "home",
       "pop": 60,
       "mom": 2000,
-      "yoy": -8,
+      "yoy": -20,
       "rising": true,
       "score": 170
     },
     {
-      "keyword": "mini pumpkin painting ideas",
+      "keyword": "minion pumpkin",
+      "niche": "home",
+      "pop": 60,
+      "mom": 2000,
+      "yoy": -10,
+      "rising": true,
+      "score": 170
+    },
+    {
+      "keyword": "painted pumpkin",
       "niche": "home",
       "pop": 70,
-      "mom": 1000,
-      "yoy": 30,
+      "mom": 800,
+      "yoy": 20,
+      "rising": false,
+      "score": 170
+    },
+    {
+      "keyword": "coraline pumpkin",
+      "niche": "home",
+      "pop": 60,
+      "mom": 1500,
+      "yoy": 70,
       "rising": false,
       "score": 170
     },
@@ -438,7 +420,7 @@
       "keyword": "frankenstein pumpkin",
       "niche": "holidays",
       "pop": 60,
-      "mom": 1500,
+      "mom": 1000,
       "yoy": -30,
       "rising": true,
       "score": 170
@@ -450,60 +432,6 @@
       "mom": 2500,
       "yoy": 20,
       "rising": true,
-      "score": 169
-    },
-    {
-      "keyword": "easy painted pumpkin ideas",
-      "niche": "home",
-      "pop": 59,
-      "mom": 2000,
-      "yoy": -20,
-      "rising": true,
-      "score": 169
-    },
-    {
-      "keyword": "minion pumpkin",
-      "niche": "home",
-      "pop": 59,
-      "mom": 2000,
-      "yoy": -10,
-      "rising": true,
-      "score": 169
-    },
-    {
-      "keyword": "coraline pumpkin",
-      "niche": "home",
-      "pop": 59,
-      "mom": 2000,
-      "yoy": 60,
-      "rising": true,
-      "score": 169
-    },
-    {
-      "keyword": "simple pumpkin painting ideas",
-      "niche": "home",
-      "pop": 59,
-      "mom": 2000,
-      "yoy": 20,
-      "rising": true,
-      "score": 169
-    },
-    {
-      "keyword": "painted pumpkin",
-      "niche": "home",
-      "pop": 69,
-      "mom": 800,
-      "yoy": 20,
-      "rising": false,
-      "score": 169
-    },
-    {
-      "keyword": "funny pumpkin painting ideas",
-      "niche": "home",
-      "pop": 59,
-      "mom": 2000,
-      "yoy": -30,
-      "rising": false,
       "score": 169
     },
     {
@@ -534,57 +462,57 @@
       "score": 169
     },
     {
-      "keyword": "grinch pumpkin",
+      "keyword": "lorax pumpkin",
       "niche": "holidays",
       "pop": 59,
-      "mom": 1000,
-      "yoy": -40,
-      "rising": false,
+      "mom": 1500,
+      "yoy": -60,
+      "rising": true,
       "score": 169
     },
     {
-      "keyword": "whimsy christmas decor",
+      "keyword": "christmas decorations 2026",
       "niche": "home decor",
       "pop": 58,
-      "mom": 900,
-      "yoy": 2000,
+      "mom": 300,
+      "yoy": 10001,
       "rising": true,
       "score": 168
     },
     {
       "keyword": "painted pumpkin ideas easy",
       "niche": "home",
-      "pop": 57,
+      "pop": 58,
       "mom": 2000,
       "yoy": 60,
       "rising": true,
-      "score": 167
+      "score": 168
     },
     {
       "keyword": "halloween pumpkin painting ideas",
       "niche": "home",
-      "pop": 57,
+      "pop": 58,
       "mom": 2000,
-      "yoy": 70,
+      "yoy": 80,
       "rising": true,
-      "score": 167
+      "score": 168
     },
     {
       "keyword": "pumpkin painting ideas",
       "niche": "home",
-      "pop": 67,
-      "mom": 1500,
+      "pop": 68,
+      "mom": 1000,
       "yoy": 20,
       "rising": false,
-      "score": 167
+      "score": 168
     },
     {
-      "keyword": "painted pumpkins",
-      "niche": "home",
-      "pop": 67,
-      "mom": 500,
-      "yoy": -50,
-      "rising": false,
+      "keyword": "whimsy christmas decor",
+      "niche": "home decor",
+      "pop": 57,
+      "mom": 900,
+      "yoy": 2000,
+      "rising": true,
       "score": 167
     },
     {
@@ -606,83 +534,74 @@
       "score": 166
     },
     {
-      "keyword": "pennywise pumpkin",
+      "keyword": "unicorn pumpkin",
       "niche": "holidays",
       "pop": 56,
       "mom": 1500,
-      "yoy": -20,
-      "rising": false,
+      "yoy": 10,
+      "rising": true,
       "score": 166
-    },
-    {
-      "keyword": "pumpkin carving face",
-      "niche": "home",
-      "pop": 55,
-      "mom": 2000,
-      "yoy": 2,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "pumpkin carve",
-      "niche": "home",
-      "pop": 55,
-      "mom": 2000,
-      "yoy": 20,
-      "rising": true,
-      "score": 165
     },
     {
       "keyword": "vampire halloween costume",
       "niche": "holidays",
-      "pop": 65,
+      "pop": 66,
       "mom": 300,
       "yoy": 50,
       "rising": false,
-      "score": 165
+      "score": 166
     },
     {
       "keyword": "vampire costume women",
       "niche": "holidays",
-      "pop": 65,
+      "pop": 66,
       "mom": 400,
       "yoy": 100,
       "rising": false,
-      "score": 165
-    },
-    {
-      "keyword": "pumpkin face carving",
-      "niche": "home",
-      "pop": 54,
-      "mom": 2000,
-      "yoy": 90,
-      "rising": true,
-      "score": 164
+      "score": 166
     },
     {
       "keyword": "painting pumpkin ideas",
       "niche": "home",
-      "pop": 64,
+      "pop": 65,
       "mom": 1500,
       "yoy": 60,
       "rising": false,
-      "score": 164
+      "score": 165
     },
     {
-      "keyword": "halloween coloring pages",
-      "niche": "home",
-      "pop": 97,
-      "mom": 200,
+      "keyword": "halloween good morning",
+      "niche": "holidays",
+      "pop": 55,
+      "mom": 1500,
       "yoy": 10,
-      "rising": false,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "pumpkin carving face",
+      "niche": "home",
+      "pop": 54,
+      "mom": 2000,
+      "yoy": 3,
+      "rising": true,
       "score": 164
     },
     {
-      "keyword": "unicorn pumpkin",
+      "keyword": "pumpkin carve",
+      "niche": "home",
+      "pop": 54,
+      "mom": 2000,
+      "yoy": 20,
+      "rising": true,
+      "score": 164
+    },
+    {
+      "keyword": "jack skellington pumpkin",
       "niche": "holidays",
       "pop": 54,
       "mom": 1500,
-      "yoy": 9,
+      "yoy": -30,
       "rising": true,
       "score": 164
     },
@@ -696,15 +615,6 @@
       "score": 164
     },
     {
-      "keyword": "batman pumpkin",
-      "niche": "holidays",
-      "pop": 54,
-      "mom": 1000,
-      "yoy": -30,
-      "rising": true,
-      "score": 164
-    },
-    {
       "keyword": "dalmatian costume",
       "niche": "holidays",
       "pop": 64,
@@ -712,6 +622,15 @@
       "yoy": 100,
       "rising": false,
       "score": 164
+    },
+    {
+      "keyword": "christmas outdoor decor ideas",
+      "niche": "home decor",
+      "pop": 53,
+      "mom": 300,
+      "yoy": 200,
+      "rising": true,
+      "score": 163
     },
     {
       "keyword": "jack skellington pumpkin carving",
@@ -723,48 +642,48 @@
       "score": 163
     },
     {
+      "keyword": "captain save a ho costume",
+      "niche": "home",
+      "pop": 53,
+      "mom": 2000,
+      "yoy": 5000,
+      "rising": true,
+      "score": 163
+    },
+    {
+      "keyword": "painted pumpkin ideas",
+      "niche": "home",
+      "pop": 63,
+      "mom": 1500,
+      "yoy": 60,
+      "rising": false,
+      "score": 163
+    },
+    {
+      "keyword": "pumpkin carving faces",
+      "niche": "home",
+      "pop": 53,
+      "mom": 1500,
+      "yoy": 20,
+      "rising": false,
+      "score": 163
+    },
+    {
       "keyword": "joker pumpkin painting",
       "niche": "holidays",
       "pop": 53,
-      "mom": 2500,
+      "mom": 2000,
       "yoy": -20,
       "rising": false,
       "score": 163
     },
     {
-      "keyword": "spongebob pumpkin carving",
-      "niche": "home",
-      "pop": 52,
-      "mom": 2500,
-      "yoy": -3,
-      "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "minion costume",
-      "niche": "home",
-      "pop": 62,
-      "mom": 300,
-      "yoy": 200,
-      "rising": false,
-      "score": 162
-    },
-    {
-      "keyword": "jack skellington pumpkin",
+      "keyword": "mike wazowski pumpkin",
       "niche": "holidays",
       "pop": 52,
-      "mom": 1500,
+      "mom": 2000,
       "yoy": -30,
       "rising": true,
-      "score": 162
-    },
-    {
-      "keyword": "halloween food ideas",
-      "niche": "holidays",
-      "pop": 62,
-      "mom": 400,
-      "yoy": 50,
-      "rising": false,
       "score": 162
     },
     {
@@ -773,6 +692,15 @@
       "pop": 62,
       "mom": 300,
       "yoy": 40,
+      "rising": false,
+      "score": 162
+    },
+    {
+      "keyword": "halloween drinks",
+      "niche": "holidays",
+      "pop": 62,
+      "mom": 300,
+      "yoy": -6,
       "rising": false,
       "score": 162
     },
@@ -786,110 +714,92 @@
       "score": 161
     },
     {
-      "keyword": "captain save a ho costume",
+      "keyword": "dia de los muertos pumpkin ideas",
       "niche": "home",
       "pop": 51,
-      "mom": 2000,
-      "yoy": 4500,
+      "mom": 2500,
+      "yoy": 20,
       "rising": true,
       "score": 161
     },
     {
-      "keyword": "painted pumpkin ideas",
+      "keyword": "spongebob pumpkin carving",
       "niche": "home",
-      "pop": 61,
-      "mom": 1500,
-      "yoy": 60,
+      "pop": 51,
+      "mom": 2500,
+      "yoy": -4,
+      "rising": true,
+      "score": 161
+    },
+    {
+      "keyword": "halloween coloring pages",
+      "niche": "home",
+      "pop": 95,
+      "mom": 200,
+      "yoy": 10,
       "rising": false,
       "score": 161
     },
     {
-      "keyword": "mike wazowski pumpkin",
-      "niche": "holidays",
-      "pop": 51,
-      "mom": 2000,
-      "yoy": -30,
-      "rising": true,
+      "keyword": "minion costume",
+      "niche": "home",
+      "pop": 61,
+      "mom": 300,
+      "yoy": 200,
+      "rising": false,
       "score": 161
     },
     {
-      "keyword": "dia de los muertos pumpkin ideas",
-      "niche": "home",
-      "pop": 50,
-      "mom": 3000,
-      "yoy": 30,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "minecraft pumpkin carving",
-      "niche": "home",
-      "pop": 50,
-      "mom": 3000,
-      "yoy": 1,
-      "rising": true,
-      "score": 160
+      "keyword": "bunny costume",
+      "niche": "holidays",
+      "pop": 61,
+      "mom": 300,
+      "yoy": 6,
+      "rising": false,
+      "score": 161
     },
     {
       "keyword": "pumpkin carving stencils",
       "niche": "home",
       "pop": 50,
-      "mom": 2500,
+      "mom": 2000,
       "yoy": 2,
       "rising": true,
       "score": 160
     },
     {
-      "keyword": "clever pumpkin carving ideas",
-      "niche": "home",
-      "pop": 50,
-      "mom": 2000,
-      "yoy": -40,
-      "rising": true,
-      "score": 160
-    },
-    {
-      "keyword": "pumpkin carving ghost",
-      "niche": "home",
-      "pop": 50,
-      "mom": 4000,
-      "yoy": -10,
+      "keyword": "halloween food ideas",
+      "niche": "holidays",
+      "pop": 60,
+      "mom": 400,
+      "yoy": 50,
       "rising": false,
       "score": 160
     },
     {
-      "keyword": "trunk or treat ideas for cars",
-      "niche": "holidays",
-      "pop": 94,
-      "mom": 200,
-      "yoy": -10,
-      "rising": false,
-      "score": 160
-    },
-    {
-      "keyword": "christmas outdoor decor ideas",
-      "niche": "home decor",
-      "pop": 49,
-      "mom": 300,
-      "yoy": 100,
-      "rising": true,
-      "score": 159
-    },
-    {
-      "keyword": "pumpkin carving stencil",
+      "keyword": "minecraft pumpkin carving",
       "niche": "home",
       "pop": 49,
-      "mom": 2500,
-      "yoy": 10,
+      "mom": 3000,
+      "yoy": 0,
       "rising": true,
       "score": 159
     },
     {
-      "keyword": "genie halloween costumes",
-      "niche": "holidays",
-      "pop": 93,
+      "keyword": "white rabbit costume",
+      "niche": "home",
+      "pop": 92,
       "mom": 200,
-      "yoy": 100,
+      "yoy": 30,
+      "rising": false,
+      "score": 159
+    },
+    {
+      "keyword": "deer costume",
+      "niche": "holidays",
+      "pop": 59,
+      "mom": 500,
+      "yoy": -2,
       "rising": false,
       "score": 159
     },
@@ -897,27 +807,36 @@
       "keyword": "spider pumpkin carving",
       "niche": "home",
       "pop": 48,
-      "mom": 3000,
-      "yoy": -6,
+      "mom": 3500,
+      "yoy": -7,
       "rising": true,
       "score": 158
     },
     {
-      "keyword": "easy pumpkin painting ideas simple",
+      "keyword": "creative pumpkin carving",
       "niche": "home",
       "pop": 48,
-      "mom": 2000,
+      "mom": 2500,
       "yoy": -70,
       "rising": true,
       "score": 158
     },
     {
-      "keyword": "coraline costume",
+      "keyword": "pumpkin carving stencil",
       "niche": "home",
-      "pop": 91,
-      "mom": 200,
-      "yoy": 40,
-      "rising": false,
+      "pop": 48,
+      "mom": 2500,
+      "yoy": 10,
+      "rising": true,
+      "score": 158
+    },
+    {
+      "keyword": "clever pumpkin carving ideas",
+      "niche": "home",
+      "pop": 48,
+      "mom": 2000,
+      "yoy": -40,
+      "rising": true,
       "score": 158
     },
     {
@@ -926,60 +845,15 @@
       "pop": 48,
       "mom": 2000,
       "yoy": -20,
-      "rising": false,
+      "rising": true,
       "score": 158
     },
     {
-      "keyword": "deer costume",
-      "niche": "holidays",
-      "pop": 58,
-      "mom": 500,
-      "yoy": -3,
-      "rising": false,
-      "score": 158
-    },
-    {
-      "keyword": "minion pumpkin carving",
-      "niche": "home",
-      "pop": 47,
-      "mom": 4000,
-      "yoy": 10,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "harry potter pumpkin carving",
+      "keyword": "pumpkin carving template",
       "niche": "home",
       "pop": 47,
       "mom": 2000,
-      "yoy": -10,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "pumpkin carving ideas for kids",
-      "niche": "home",
-      "pop": 47,
-      "mom": 2000,
-      "yoy": 100,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "unicorn pumpkin carving",
-      "niche": "home",
-      "pop": 47,
-      "mom": 3000,
-      "yoy": 40,
-      "rising": false,
-      "score": 157
-    },
-    {
-      "keyword": "pumpkin carving designs creative",
-      "niche": "home",
-      "pop": 47,
-      "mom": 2500,
-      "yoy": -30,
+      "yoy": 20,
       "rising": false,
       "score": 157
     },
@@ -987,17 +861,8 @@
       "keyword": "clown pumpkin carving",
       "niche": "holidays",
       "pop": 47,
-      "mom": 3500,
+      "mom": 3000,
       "yoy": 10,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "mummy hotdogs",
-      "niche": "holidays",
-      "pop": 47,
-      "mom": 1000,
-      "yoy": 40,
       "rising": true,
       "score": 157
     },
@@ -1011,13 +876,13 @@
       "score": 157
     },
     {
-      "keyword": "bunny costume",
-      "niche": "holidays",
-      "pop": 57,
-      "mom": 300,
-      "yoy": 1,
-      "rising": false,
-      "score": 157
+      "keyword": "minion pumpkin carving",
+      "niche": "home",
+      "pop": 46,
+      "mom": 4000,
+      "yoy": 10,
+      "rising": true,
+      "score": 156
     },
     {
       "keyword": "pumpkin carving ideas coraline",
@@ -1029,12 +894,12 @@
       "score": 156
     },
     {
-      "keyword": "white rabbit costume",
+      "keyword": "unicorn pumpkin carving",
       "niche": "home",
-      "pop": 89,
-      "mom": 200,
+      "pop": 46,
+      "mom": 3000,
       "yoy": 30,
-      "rising": false,
+      "rising": true,
       "score": 156
     },
     {
@@ -1042,8 +907,26 @@
       "niche": "home",
       "pop": 46,
       "mom": 3000,
-      "yoy": 5,
-      "rising": false,
+      "yoy": 0,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "harry potter pumpkin carving",
+      "niche": "home",
+      "pop": 46,
+      "mom": 2500,
+      "yoy": -10,
+      "rising": true,
+      "score": 156
+    },
+    {
+      "keyword": "pumpkin carving ideas for kids",
+      "niche": "home",
+      "pop": 46,
+      "mom": 2000,
+      "yoy": 100,
+      "rising": true,
       "score": 156
     },
     {
@@ -1056,31 +939,31 @@
       "score": 156
     },
     {
-      "keyword": "bluey pumpkin carving",
+      "keyword": "how to make pumpkin seeds",
       "niche": "home",
       "pop": 46,
-      "mom": 2000,
-      "yoy": -50,
+      "mom": 2500,
+      "yoy": -30,
       "rising": false,
       "score": 156
     },
     {
-      "keyword": "lorax pumpkin",
+      "keyword": "simple vampire costume",
       "niche": "holidays",
       "pop": 46,
       "mom": 1500,
-      "yoy": -60,
+      "yoy": 1,
       "rising": true,
       "score": 156
     },
     {
-      "keyword": "last minute trunk or treat ideas",
-      "niche": "home",
-      "pop": 45,
-      "mom": 10001,
-      "yoy": -40,
+      "keyword": "easy womens halloween costumes",
+      "niche": "holidays",
+      "pop": 46,
+      "mom": 1000,
+      "yoy": -20,
       "rising": true,
-      "score": 155
+      "score": 156
     },
     {
       "keyword": "ghost pumpkin carving",
@@ -1092,12 +975,21 @@
       "score": 155
     },
     {
-      "keyword": "halloween veggie tray ideas",
-      "niche": "holidays",
+      "keyword": "bluey pumpkin carving",
+      "niche": "home",
       "pop": 45,
-      "mom": 1500,
-      "yoy": -2,
+      "mom": 2000,
+      "yoy": -50,
       "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "pumpkin carving designs creative",
+      "niche": "home",
+      "pop": 45,
+      "mom": 2500,
+      "yoy": -30,
+      "rising": false,
       "score": 155
     },
     {
@@ -1110,19 +1002,19 @@
       "score": 155
     },
     {
-      "keyword": "black cat costume",
-      "niche": "holidays",
-      "pop": 55,
-      "mom": 400,
-      "yoy": 70,
-      "rising": false,
-      "score": 155
+      "keyword": "last minute trunk or treat ideas",
+      "niche": "home",
+      "pop": 44,
+      "mom": 10001,
+      "yoy": -30,
+      "rising": true,
+      "score": 154
     },
     {
       "keyword": "carving pumpkins ideas",
       "niche": "home",
       "pop": 44,
-      "mom": 5000,
+      "mom": 4500,
       "yoy": 20,
       "rising": true,
       "score": 154
@@ -1140,17 +1032,17 @@
       "keyword": "witch pumpkin carving",
       "niche": "home",
       "pop": 44,
-      "mom": 3000,
+      "mom": 3500,
       "yoy": -20,
       "rising": true,
       "score": 154
     },
     {
-      "keyword": "pumpkin carving template printable",
+      "keyword": "pumpkin painting idea",
       "niche": "home",
       "pop": 44,
-      "mom": 2000,
-      "yoy": 700,
+      "mom": 2500,
+      "yoy": 200,
       "rising": true,
       "score": 154
     },
@@ -1164,84 +1056,111 @@
       "score": 154
     },
     {
-      "keyword": "pumpkin carving ideas stencils",
-      "niche": "home",
-      "pop": 44,
-      "mom": 2500,
-      "yoy": -40,
-      "rising": false,
-      "score": 154
-    },
-    {
-      "keyword": "halloween good morning",
+      "keyword": "halloween veggie tray ideas",
       "niche": "holidays",
       "pop": 44,
       "mom": 1500,
-      "yoy": 10,
+      "yoy": -2,
       "rising": true,
       "score": 154
     },
     {
-      "keyword": "easy halloween dessert",
+      "keyword": "joker costume",
       "niche": "holidays",
-      "pop": 44,
-      "mom": 1500,
-      "yoy": 30,
+      "pop": 54,
+      "mom": 300,
+      "yoy": -30,
       "rising": false,
       "score": 154
     },
     {
-      "keyword": "easy costumes women",
+      "keyword": "black cat costume",
       "niche": "holidays",
+      "pop": 54,
+      "mom": 400,
+      "yoy": 70,
+      "rising": false,
+      "score": 154
+    },
+    {
+      "keyword": "pumpkin carving ideas stencils",
+      "niche": "home",
       "pop": 43,
-      "mom": 1500,
-      "yoy": 100,
+      "mom": 2500,
+      "yoy": -40,
       "rising": true,
       "score": 153
     },
     {
-      "keyword": "pumpkin painting idea",
+      "keyword": "pumpkin carving stencils templates",
       "niche": "home",
-      "pop": 42,
+      "pop": 43,
       "mom": 2500,
-      "yoy": 200,
+      "yoy": -70,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "pumpkin carving template printable",
+      "niche": "home",
+      "pop": 43,
+      "mom": 2000,
+      "yoy": 700,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "easy halloween dessert",
+      "niche": "holidays",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": 40,
+      "rising": false,
+      "score": 153
+    },
+    {
+      "keyword": "lady bugs halloween costume",
+      "niche": "holidays",
+      "pop": 42,
+      "mom": 7500,
+      "yoy": 10001,
       "rising": true,
       "score": 152
     },
     {
-      "keyword": "halloween appetizers",
+      "keyword": "easy costumes women",
       "niche": "holidays",
-      "pop": 52,
-      "mom": 700,
-      "yoy": -30,
+      "pop": 42,
+      "mom": 1500,
+      "yoy": 100,
+      "rising": true,
+      "score": 152
+    },
+    {
+      "keyword": "easy at home costumes",
+      "niche": "holidays",
+      "pop": 42,
+      "mom": 1500,
+      "yoy": 50,
       "rising": false,
       "score": 152
     },
     {
-      "keyword": "simple vampire costume",
+      "keyword": "cupid halloween costume",
       "niche": "holidays",
-      "pop": 41,
-      "mom": 1500,
-      "yoy": 0,
-      "rising": true,
+      "pop": 85,
+      "mom": 200,
+      "yoy": 100,
+      "rising": false,
       "score": 151
     },
     {
-      "keyword": "easy womens halloween costumes",
+      "keyword": "halloween appetizers",
       "niche": "holidays",
-      "pop": 41,
-      "mom": 1000,
-      "yoy": -20,
-      "rising": true,
-      "score": 151
-    },
-    {
-      "keyword": "playboi bunny costumes",
-      "niche": "holidays",
-      "pop": 41,
-      "mom": 1000,
-      "yoy": 5500,
-      "rising": true,
+      "pop": 51,
+      "mom": 700,
+      "yoy": -30,
+      "rising": false,
       "score": 151
     },
     {
@@ -1249,36 +1168,72 @@
       "niche": "home",
       "pop": 40,
       "mom": 2500,
-      "yoy": 90,
+      "yoy": 100,
       "rising": true,
       "score": 150
     },
     {
-      "keyword": "how to make pumpkin seeds",
+      "keyword": "easy diy costume",
       "niche": "home",
+      "pop": 40,
+      "mom": 1500,
+      "yoy": 30,
+      "rising": false,
+      "score": 150
+    },
+    {
+      "keyword": "cheetah costume",
+      "niche": "holidays",
+      "pop": 50,
+      "mom": 400,
+      "yoy": -10,
+      "rising": false,
+      "score": 150
+    },
+    {
+      "keyword": "refresh my living room",
+      "niche": "home decor",
       "pop": 39,
-      "mom": 2500,
-      "yoy": -30,
+      "mom": 1500,
+      "yoy": 10001,
+      "rising": true,
+      "score": 149
+    },
+    {
+      "keyword": "old money christmas decor",
+      "niche": "home decor",
+      "pop": 39,
+      "mom": 400,
+      "yoy": 90,
       "rising": false,
       "score": 149
     },
     {
-      "keyword": "easy diy costume",
+      "keyword": "easy vampire costume",
       "niche": "holidays",
       "pop": 39,
       "mom": 1500,
-      "yoy": 20,
+      "yoy": 6,
       "rising": true,
       "score": 149
     },
     {
-      "keyword": "pumpkin carving stencils templates",
-      "niche": "home",
-      "pop": 38,
-      "mom": 2500,
-      "yoy": -70,
-      "rising": true,
-      "score": 148
+      "keyword": "race car driver costume",
+      "niche": "holidays",
+      "pop": 82,
+      "mom": 200,
+      "yoy": 20,
+      "rising": false,
+      "score": 149
+    },
+    {
+      "keyword": "quick halloween costumes for women",
+      "niche": "holidays",
+      "pop": 39,
+      "mom": 3000,
+      "yoy": 50,
+      "rising": false,
+      "score": 149
     },
     {
       "keyword": "queen of hearts costume",
@@ -1290,13 +1245,13 @@
       "score": 148
     },
     {
-      "keyword": "refresh my living room",
-      "niche": "home decor",
-      "pop": 37,
-      "mom": 1500,
-      "yoy": 10001,
+      "keyword": "jack o lantern ideas",
+      "niche": "holidays",
+      "pop": 38,
+      "mom": 3000,
+      "yoy": 40,
       "rising": true,
-      "score": 147
+      "score": 148
     },
     {
       "keyword": "pumpkin house",
@@ -1308,7 +1263,7 @@
       "score": 147
     },
     {
-      "keyword": "jack o lantern ideas",
+      "keyword": "easy men’s halloween costume",
       "niche": "holidays",
       "pop": 37,
       "mom": 2500,
@@ -1317,29 +1272,20 @@
       "score": 147
     },
     {
-      "keyword": "creative pumpkin carving",
-      "niche": "home",
-      "pop": 36,
-      "mom": 2500,
-      "yoy": -70,
-      "rising": true,
-      "score": 146
-    },
-    {
       "keyword": "easy couples costume",
       "niche": "holidays",
-      "pop": 36,
+      "pop": 37,
       "mom": 1500,
       "yoy": 100,
       "rising": true,
-      "score": 146
+      "score": 147
     },
     {
-      "keyword": "race car driver costume",
-      "niche": "holidays",
-      "pop": 80,
-      "mom": 200,
-      "yoy": 20,
+      "keyword": "diy halloween costumes",
+      "niche": "home",
+      "pop": 46,
+      "mom": 600,
+      "yoy": -9,
       "rising": false,
       "score": 146
     },
@@ -1347,10 +1293,64 @@
       "keyword": "easy men halloween costumes",
       "niche": "holidays",
       "pop": 36,
-      "mom": 2500,
+      "mom": 3000,
       "yoy": 90,
       "rising": false,
       "score": 146
+    },
+    {
+      "keyword": "red and white christmas tree ideas",
+      "niche": "home decor",
+      "pop": 35,
+      "mom": 300,
+      "yoy": 60,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "diy christmas decor ideas",
+      "niche": "home decor",
+      "pop": 68,
+      "mom": 200,
+      "yoy": 300,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "easy halloween costumes diy",
+      "niche": "home",
+      "pop": 35,
+      "mom": 2000,
+      "yoy": 80,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "ladybug costume",
+      "niche": "holidays",
+      "pop": 79,
+      "mom": 200,
+      "yoy": 10,
+      "rising": false,
+      "score": 145
+    },
+    {
+      "keyword": "easy last minute costumes",
+      "niche": "home",
+      "pop": 34,
+      "mom": 2000,
+      "yoy": 100,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "good morning halloween",
+      "niche": "holidays",
+      "pop": 34,
+      "mom": 1500,
+      "yoy": -20,
+      "rising": true,
+      "score": 144
     }
   ]
 }
