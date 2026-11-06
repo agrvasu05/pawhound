@@ -1,136 +1,167 @@
 {
-  "intro": "Creating a home that welcomes your furry friends without sacrificing style can be a delightful challenge. Whether you have a playful pup or a curious cat, selecting the right decor items and arranging your space thoughtfully can make all the difference. From durable rugs that handle muddy paws to washable slipcovers and built-in pet nooks, these ideas help you craft a cozy, beautiful living space that’s safe and comfortable for your pets. Let’s explore practical and chic options to keep your home looking great and your pets feeling loved.",
+  "intro": "Decorating with a dog in the house comes down to three things: what gets dirty, what gets knocked over, and what gets chewed. Fabrics a dog lies on need removable, machine-washable covers. Hard floors need grip, especially for older dogs whose joints slip. Breakables belong above tail height. Beyond that, choose colors close to your dog's coat, since fur shows least on a matching shade. None of this means giving up a pleasant room; it means picking materials that clean in minutes rather than ones that need careful handling.",
   "picks": [
     {
-      "rank": 12,
-      "breed": "Indoor Pet Gate with Stylish Design",
-      "image_query": "modern indoor pet gate",
-      "description": "Instead of traditional bulky barriers, opt for an indoor pet gate crafted from sleek wood or metal with a modern finish. These gates keep curious pups out of off-limit rooms while blending seamlessly with your home's decor. Look for gates that latch securely but are easy for adults to open, making daily use hassle-free. Some designs feature extendable panels to fit wide doorways or staircases, giving you flexible control over your pet’s roaming areas without the eyesore of plastic barriers.",
-      "best_for": "Homes needing pet-safe room dividers",
-      "quirky_fact": "Some pet gates double as bookshelf units, adding storage space while keeping pets contained."
-    },
-    {
-      "rank": 11,
-      "breed": "Washable Sofa Slipcovers in Neutral Tones",
-      "image_query": "washable sofa slipcover neutral",
-      "description": "Choose sofa slipcovers made from machine-washable fabrics like cotton or polyester blends in soft neutral shades. These covers protect your upholstery from fur, dirt, and occasional accidents, and you can pop them in the washer whenever needed for quick cleanup. Slipcovers with a snug fit and a bit of stretch stay in place even when your dog jumps up. Plus, neutral colors hide light stains better and adapt to seasonal decor changes easily.",
-      "best_for": "Pet owners wanting easy-to-clean furniture",
-      "quirky_fact": "Some slipcovers feature water-resistant coatings that repel spills and pet oils."
-    },
-    {
-      "rank": 10,
-      "breed": "Durable Indoor/Outdoor Area Rugs",
-      "image_query": "durable indoor outdoor rug",
-      "description": "Invest in an indoor/outdoor rug made from polypropylene or other synthetic fibers that resist stains, moisture, and wear. These rugs provide a comfortable spot for pets to lounge and play while standing up to muddy paws and spilled water bowls. Choose rugs with low pile to avoid trapping fur and dirt, and pick colors or patterns that camouflage pet hair. Their easy maintenance—usually vacuum and hose-off cleaning—makes them perfect for high-traffic pet areas like entryways and kitchens.",
-      "best_for": "High-traffic pet-friendly flooring",
-      "quirky_fact": "Many durable rugs are also UV resistant, preventing color fade in sunny rooms where pets love to nap."
-    },
-    {
-      "rank": 9,
-      "breed": "Pet-Friendly Indoor Plants in Protective Pots",
-      "image_query": "indoor plants pet safe",
-      "description": "Bring greenery into your home with non-toxic, pet-safe indoor plants like spider plants, Boston ferns, or ponytail palms. Use protective ceramic or heavy pots with drainage trays to keep curious pets from knocking them over or digging in the soil. Placing plants on elevated stands or shelves out of reach preserves your décor and keeps pets safe. Plants not only enrich your air quality but also add a lively touch that both you and your pets can enjoy.",
-      "best_for": "Pet owners wanting safe greenery indoors",
-      "quirky_fact": "Spider plants are safe and can actually help repel certain household bugs, making your home fresher for everyone."
-    },
-    {
-      "rank": 8,
-      "breed": "Built-In Pet Nook with Cushioned Daybed",
-      "image_query": "built in pet nook",
-      "description": "Create a dedicated pet nook by building a recessed cubby into a wall or under a staircase, complete with a plush daybed or cushion. This cozy hideaway provides pets a private resting place that feels secure without interrupting your home’s flow. Customize the space with durable fabrics and washable covers in colors that complement your interior style. Adding a small shelf for toys or treats nearby keeps essentials organized and accessible.",
-      "best_for": "Homes with pets needing personal spaces",
-      "quirky_fact": "Some pet nooks include built-in lighting or ventilation to keep the space comfortable year-round."
-    },
-    {
-      "rank": 7,
-      "breed": "Stain-Resistant Upholstered Chairs",
-      "image_query": "stain resistant upholstered chair",
-      "description": "Choose chairs upholstered in stain-resistant fabrics like Crypton or Sunbrella, which repel liquids and resist odors. These materials make it easier to clean accidental messes while maintaining a soft, inviting texture. Opt for roomy seats with low arms so pets can hop up comfortably alongside you. Neutral or patterned fabric hides fur and minor stains, keeping your living area looking fresh even when your pets are frequent loungers.",
-      "best_for": "Pet owners wanting stylish, durable seating",
-      "quirky_fact": "Crypton fabrics are antimicrobial, helping to reduce pet-related odors over time."
-    },
-    {
-      "rank": 6,
-      "breed": "Wall-Mounted Pet Feeding Station",
-      "image_query": "wall mounted pet feeder",
-      "description": "Save floor space and reduce mess with a wall-mounted pet feeding station. These units hold food and water bowls securely at a comfortable height, minimizing spills and discouraging pets from dragging bowls around. Some designs incorporate storage compartments for food bags and utensils, blending function with streamlined style. Mount near a water-resistant mat to protect your floor from drips and clean up spills easily.",
-      "best_for": "Compact homes with active eaters",
-      "quirky_fact": "Elevated feeders can aid digestion and reduce strain on older pets’ necks."
-    },
-    {
-      "rank": 5,
-      "breed": "Durable Leather or Faux Leather Pet-Friendly Sofa",
-      "image_query": "leather pet friendly sofa",
-      "description": "Leather and high-quality faux leather sofas offer a durable surface resistant to claws and easy to wipe clean. Unlike delicate fabrics, leather can handle occasional pet hair and dirt with minimal upkeep. Choose sofas with tight seams and sturdy frames to withstand pet activity, and add washable throw blankets for extra protection and comfort. The smooth surface discourages fur accumulation and is less likely to trap odors, making it a practical yet stylish furniture choice.",
-      "best_for": "Owners wanting easy-clean, long-lasting sofas",
-      "quirky_fact": "Natural leather develops a unique patina over time, even with pet use, giving your sofa character."
-    },
-    {
-      "rank": 4,
-      "breed": "Pet-Friendly Throw Blankets with Tightly Woven Fibers",
-      "image_query": "pet friendly throw blanket",
-      "description": "Keep cozy with throw blankets made from tightly woven fibers like microfiber or fleece that resist snagging and hold up well to pet claws and teeth. These blankets provide a soft spot for pets on beds or couches and are easy to wash regularly. Look for throws with subtle patterns or darker colors to camouflage fur and stains between washes. Perfect for chilly evenings, they double as protective covers for your favorite furniture pieces.",
-      "best_for": "Adding comfort and protection to furniture",
-      "quirky_fact": "Microfiber throws dry quickly after washing, so they’re ready for pets in no time."
-    },
-    {
-      "rank": 3,
-      "breed": "Corner Wall Shelves to Keep Fragile Decor Out of Reach",
-      "image_query": "corner wall shelves",
-      "description": "Install corner wall shelves high enough to keep breakable items away from playful pets but still visible to you. These shelves make good use of often overlooked spaces and allow you to display plants, photos, or collectibles safely. Choose sturdy shelves with secure mounting hardware to resist accidental bumps. This simple adjustment helps protect both your decor and pets while enhancing your room’s visual interest.",
-      "best_for": "Pet owners wanting to protect fragile items",
-      "quirky_fact": "Using corner shelves can create extra storage without sacrificing floor space for pet play areas."
+      "rank": 1,
+      "breed": "Washable Memory Foam Pet Bed with Removable Cover",
+      "image_query": "washable memory foam pet bed",
+      "description": "A dedicated bed is the single item that keeps a dog off the sofa most, and memory foam supports joints in a way that cheap fiber-filled beds do not, which matters more as a dog ages. The key detail for a tidy home is a zip-off, machine-washable cover; fur, drool and dirt build up fast, and a bed that can only be spot-cleaned starts to smell within months. Look for a waterproof liner between foam and cover so accidents do not soak into the foam. Pick a cover color near your dog's coat and a size that lets the dog stretch out fully. Bolster beds suit dogs that curl or lean; flat orthopedic mattresses suit dogs that sprawl. The trade-off is cost: good memory foam beds cost more than basic cushions, but they hold their shape much longer.",
+      "best_for": "Every dog home, and especially older or larger dogs with sore joints",
+      "quirky_fact": "Many dogs pick a bed placed near where the family sits over one in a quiet back room.",
+      "skip_if": "Your dog shreds beds, in which case a chew-resistant cot is a better buy",
+      "product_name": "Furhaven Orthopedic Memory Foam Dog Bed with Removable Washable Cover"
     },
     {
       "rank": 2,
       "breed": "Pet-Safe Non-Slip Mats with Machine-Washable Covers",
       "image_query": "non slip pet mat washable",
-      "description": "Lay down non-slip mats designed specifically for pets, featuring durable, textured bottoms to prevent sliding on hardwood or tile floors. These mats cushion joints and provide a stable spot for pets to rest and eat. Opt for mats with removable, machine-washable covers made of breathable fabrics that resist odors and stains. Their compact size lets you place one in multiple rooms, ensuring your pet always has a comfortable, secure place.",
-      "best_for": "Providing safe, comfy pet resting spots",
-      "quirky_fact": "Some mats double as cooling pads, helping pets stay comfortable in warmer months."
+      "description": "Hard floors look clean, but they are slippery for dogs, particularly seniors and large breeds whose back legs can splay out on polished wood or tile. Washable non-slip mats placed along the routes your dog takes, by the water bowl, the back door and the bottom of the stairs, give grip where it is needed without carpeting the whole room. A rubber backing keeps the mat itself from sliding. Mats by the door also catch mud and water from paws, protecting the rest of the floor. Choose ones that go in a home washing machine and dry fast, and keep a spare so one is always down while the other is washing. The trade-off is look: a row of mats can make a room feel cluttered, so choose plain, low-profile designs in a color close to the floor.",
+      "best_for": "Homes with hardwood, tile or laminate and older or large dogs",
+      "quirky_fact": "Trimming the fur between a dog's paw pads also improves grip on smooth floors.",
+      "skip_if": "Your floors are already fully carpeted, where extra mats only add tripping edges",
+      "product_name": "Gorilla Grip Absorbent Machine Washable Door Mat"
     },
     {
-      "rank": 1,
-      "breed": "Washable Memory Foam Pet Bed with Removable Cover",
-      "image_query": "washable memory foam pet bed",
-      "description": "Invest in a memory foam pet bed featuring a removable, machine-washable cover made from durable, stain-resistant fabric. The memory foam cushions your pet’s joints, making it especially great for older dogs or long-napping cats. A washable cover simplifies cleaning fur, dirt, and spills, keeping the bed hygienic and fresh. Look for beds with non-slip bottoms to keep them in place on smooth floors, and pick neutral tones that blend with your home’s color palette.",
-      "best_for": "Comfort and cleanliness for all pets",
-      "quirky_fact": "Memory foam beds retain heat, providing cozy warmth during chilly nights."
+      "rank": 3,
+      "breed": "Corner Wall Shelves to Keep Fragile Decor Out of Reach",
+      "image_query": "corner wall shelves",
+      "description": "A wagging tail at coffee-table height clears breakables off low surfaces in seconds, so moving fragile decor onto wall shelves protects both the objects and the dog. Corner shelves use space that usually sits empty and keep vases, frames and candles well above tail and nose height. For a medium or large dog, the lowest shelf should be at least four feet off the floor. Floating corner shelves look clean and need only a few screws; tiered corner units hold more but take more wall. Anchor them into studs or use the right wall anchors, since a shelf that pulls loose is worse than no shelf. The trade-off is that renters may need permission to drill; adhesive shelves exist but only hold light items, not glass or ceramics.",
+      "best_for": "Homes with tall or bouncy dogs and low tables full of breakables",
+      "quirky_fact": "Corners are often the least-used wall space in a room, so shelves there rarely crowd furniture.",
+      "skip_if": "You rent and cannot drill, and your decor is too heavy for adhesive shelves",
+      "product_name": "Greenco 5 Tier Corner Floating Wall Shelves"
+    },
+    {
+      "rank": 4,
+      "breed": "Pet-Friendly Throw Blankets with Tightly Woven Fibers",
+      "image_query": "pet friendly throw blanket",
+      "description": "A throw laid over the dog's favorite spot on the sofa takes most of the fur and dirt, and washing a blanket is far easier than cleaning upholstery. Tightly woven fabrics such as microfiber, fleece or cotton canvas resist snagging from claws, while loose knits and chunky weaves catch nails and pull. Waterproof throws with a liquid barrier layer protect against drool, wet fur after walks and accidents. Pick a color close to your dog's coat so fur blends in between washes. Keeping two throws means one is always clean. The downside is that throws slide on leather and smooth fabrics when a dog jumps on, so tuck the edge behind the cushion or choose one with a grippy back.",
+      "best_for": "Dogs allowed on the sofa or bed",
+      "quirky_fact": "Fur clings more to smooth fleece than to tightly woven cotton, which releases hair in the wash more easily.",
+      "skip_if": "Your dog chews fabric, since loose blankets can be swallowed in pieces",
+      "product_name": "PetAmi Waterproof Dog Blanket for Couch"
+    },
+    {
+      "rank": 5,
+      "breed": "Durable Leather or Faux Leather Pet-Friendly Sofa",
+      "image_query": "leather pet friendly sofa",
+      "description": "Leather sofas are among the easiest to keep clean with a dog: fur does not cling, it wipes off with a damp cloth, and spills sit on the surface long enough to blot. Full-grain and distressed leathers hide light scratches well, and marks often blend into the finish over time. Quality faux leather is cheaper but varies: cheaper bonded leather can peel, so look for polyurethane or performance faux leather with a good warranty. Claws can still leave marks, especially from dogs that dig before lying down, so keep nails trimmed and put a throw on the favorite spot. Leather can feel cold in winter and warm in summer, which some dogs dislike. The trade-off is price and permanence: a sofa is a big purchase, so this suits people replacing one anyway rather than starting a pet-proofing project.",
+      "best_for": "Households replacing a sofa that want fur and drool to wipe off",
+      "quirky_fact": "Distressed or aniline leather tends to hide scratches better than leather with a shiny protective coating.",
+      "skip_if": "Your dog digs or nests on furniture, which scratches even durable leather",
+      "product_name": "Zinus Benton Faux Leather Sofa"
+    },
+    {
+      "rank": 6,
+      "breed": "Wall-Mounted Pet Feeding Station",
+      "image_query": "wall mounted pet feeder",
+      "description": "A wall-mounted or raised feeding station keeps bowls in one fixed place, lifts them off the floor so they are not pushed around, and frees floor space in small kitchens. Raised bowls are easier for tall dogs and older dogs with stiff necks. Choose stainless steel bowls that lift out for washing, and a tray or mat underneath to catch splashes from enthusiastic drinkers. Fold-down wall feeders save the most space, while freestanding raised stations need no drilling. Set the height so the bowl rim sits around your dog's lower chest. One caution: for deep-chested breeds at risk of bloat, ask your vet about bowl height, as advice varies. The trade-off is that a wall unit is a fixed fitting, so it suits homeowners more than renters.",
+      "best_for": "Tall or senior dogs and kitchens short on floor space",
+      "quirky_fact": "Stainless steel bowls hold fewer scratches, where bacteria can collect, than plastic bowls.",
+      "skip_if": "You rent and cannot drill, or your vet advises floor-level feeding",
+      "product_name": "Neater Feeder Deluxe Elevated Dog Bowls"
+    },
+    {
+      "rank": 7,
+      "breed": "Stain-Resistant Upholstered Chairs",
+      "image_query": "stain resistant upholstered chair",
+      "description": "Performance fabrics such as Crypton and Sunbrella are woven or treated so liquids bead on the surface instead of soaking in, which gives time to blot drool, water from a wet coat or a muddy paw print. They also resist odors better than standard cotton or linen upholstery. An accent chair in one of these fabrics lets a dog-owning home keep a soft, fabric seat without constant worry. Tightly woven, flat textures resist claw pulls better than loop or boucl\u00e9 textures, which can snag. Medium tones such as gray, taupe or heather hide both light and dark fur. The trade-off is cost: performance-fabric chairs usually cost more than standard ones, and stain resistance does not mean stain-proof, so spills still need prompt blotting.",
+      "best_for": "Living rooms that want soft fabric seating dogs can share",
+      "quirky_fact": "Sunbrella fabric was first developed for outdoor awnings before it moved indoors.",
+      "skip_if": "Your dog scratches or chews furniture, since no fabric resists determined claws",
+      "product_name": "Sunbrella Performance Fabric Accent Chair"
+    },
+    {
+      "rank": 8,
+      "breed": "Built-In Pet Nook with Cushioned Daybed",
+      "image_query": "built in pet nook",
+      "description": "A pet nook built into the space under the stairs, a window seat or a lower kitchen cabinet gives a dog its own den-like retreat and keeps the bed out of walkways. Dogs often settle better in a partly enclosed spot, especially during visitors or noise. A simple version is a removed cabinet door with a cushion inside; a fuller version is a framed opening with a fitted washable mattress. Size the opening so the dog can turn around and lie stretched out, and leave ventilation at the back. Use a cushion with a zip-off cover so it can be washed. The trade-off is effort and permanence: building in a nook is a carpentry project, and it will not suit a dog that grows much larger or a home you plan to leave soon.",
+      "best_for": "Homeowners with unused space under stairs or in low cabinets",
+      "quirky_fact": "Many dogs naturally choose sheltered spots like under desks, which a built-in nook imitates.",
+      "skip_if": "You rent, or your puppy will still grow much larger",
+      "product_name": "Furhaven Quilted Dog Crate Mat with Washable Cover"
+    },
+    {
+      "rank": 9,
+      "breed": "Pet-Friendly Indoor Plants in Protective Pots",
+      "image_query": "indoor plants pet safe",
+      "description": "Houseplants make a room feel lived in, and several common ones are listed as non-toxic to dogs by the ASPCA, including spider plants, Boston ferns, ponytail palms and parlor palms. Even safe plants can cause stomach upset if a dog eats a lot, and soil gets dug up and tracked across floors, so pot choice matters. Heavy ceramic or concrete pots resist tipping, and a pot taller than the dog's nose height, or a plant stand, keeps leaves out of reach. A layer of large pebbles on top of the soil discourages digging. Avoid toxic plants such as sago palm, pothos, philodendron and dieffenbachia entirely. The trade-off is that tall stands and heavy pots take floor space, and puppies may still chew low leaves, so hanging planters suit small rooms better.",
+      "best_for": "Plant lovers with dogs that sniff and dig around pots",
+      "quirky_fact": "Spider plants produce small plantlets on long stems, which hang well from shelves out of a dog's reach.",
+      "skip_if": "Your dog eats any greenery it can reach, safe or not",
+      "product_name": "Costa Farms Spider Plant in Ceramic Pot"
+    },
+    {
+      "rank": 10,
+      "breed": "Durable Indoor/Outdoor Area Rugs",
+      "image_query": "durable indoor outdoor rug",
+      "description": "Indoor/outdoor rugs made from polypropylene are built to handle weather, which makes them well suited to muddy paws, water spills and the occasional accident indoors. They resist staining, dry quickly and can be hosed down or scrubbed outside if needed. Flatweave versions do not trap fur deeply, so a quick vacuum lifts most hair. Patterns and mid tones hide wear better than solid light colors. Add a non-slip rug pad so the rug does not slide when a dog runs over it. The trade-off is feel: polypropylene is firmer and less soft underfoot than wool, so it suits entries, kitchens and dining areas more than spots where people sit on the floor.",
+      "best_for": "Entryways, kitchens and dining rooms that see muddy paws",
+      "quirky_fact": "Polypropylene fibers absorb almost no water, which is why these rugs dry quickly.",
+      "skip_if": "You want a soft, plush rug to sit on in the living room",
+      "product_name": "Nourison Indoor Outdoor Area Rug 5 x 7 ft"
+    },
+    {
+      "rank": 11,
+      "breed": "Washable Sofa Slipcovers in Neutral Tones",
+      "image_query": "washable sofa slipcover neutral",
+      "description": "A fitted slipcover protects an existing sofa from fur, drool and paw prints, and can be pulled off and washed when it gets dirty, which costs far less than replacing upholstery. Stretch slipcovers in polyester-spandex blends fit snugly and look neater than loose throw-style covers. Neutral tones such as oatmeal, gray or taupe hide fur on most dogs; pick the shade closest to your dog's coat. Look for covers with elastic straps or foam tuck-in sticks that keep the fabric from shifting when a dog jumps on. The downside is fit: slipcovers rarely look as crisp as original upholstery, especially on sofas with unusual arms or deep cushions, so measure carefully before ordering.",
+      "best_for": "Owners keeping a fabric sofa they want to protect from fur",
+      "quirky_fact": "Separate cushion covers let you wash the most-used seat without stripping the whole sofa.",
+      "skip_if": "Your sofa has an unusual shape that standard slipcovers will not fit",
+      "product_name": "SureFit Stretch Sofa Slipcover"
+    },
+    {
+      "rank": 12,
+      "breed": "Indoor Pet Gate with Stylish Design",
+      "image_query": "modern indoor pet gate",
+      "description": "An indoor gate keeps a dog out of the kitchen while cooking, away from the stairs, or in a safe area during the day, and wood or metal gates in a furniture-style finish fit into a room better than plastic baby gates. Pressure-mounted gates need no drilling but should not be used at the top of stairs; hardware-mounted gates are sturdier and safer there. Freestanding gates fold and move between rooms. Check the height against your dog: small breeds need narrow bar spacing, while large or jumping breeds need a taller gate. A walk-through door saves stepping over it many times a day. The trade-off is that gates are a fixed obstacle for people too, so they suit doorways rather than open paths.",
+      "best_for": "Keeping dogs out of kitchens, stairs or rooms with valuables",
+      "quirky_fact": "Pressure-mounted gates are best for doorways, not stair tops, where a push can dislodge them.",
+      "skip_if": "Your dog jumps or climbs over gates of standard height",
+      "product_name": "Carlson Extra Wide Walk Through Pet Gate"
     }
   ],
   "pin_headlines": [
-    "10 Pet-Friendly Decor Ideas Dogs and Cats Adore",
-    "Stylish Decor That Survives Pet Life",
-    "Durable and Washable Home Decor for Pet Owners",
-    "Cozy Spaces Pets Will Actually Use",
-    "Pet-Proof Your Home with These Decor Tips",
-    "Washable Fabrics Perfect for Homes with Pets",
-    "Creating Safe and Chic Areas for Your Pets",
-    "Protect Your Furniture from Pet Wear and Tear",
-    "Easy-Clean Rugs and Furniture for Pet Homes",
-    "Designing a Pet-Friendly Yet Stylish Living Room"
+    "Pet-Friendly Home Decor: 12 Ideas Dogs Love",
+    "Pet-Friendly Home Decor That Survives Muddy Paws",
+    "Pet-Friendly Decor Ideas for Small Apartments",
+    "Pet-Proof Living Room With Washable Fabrics",
+    "Dog-Friendly Home Decor That Still Looks Good",
+    "Pet-Friendly Rugs and Sofas That Clean Easily",
+    "Pet-Friendly Home Ideas for Dog Owners",
+    "Stylish Dog Corner Ideas for Any Home"
   ],
   "faqs": [
     {
-      "question": "What fabrics are best for furniture in a pet-friendly home?",
-      "answer": "Look for tightly woven fabrics like microfiber, Crypton, or leather that resist snagging, stains, and odors. These fabrics are easier to clean and stand up well to pet hair and claws, helping your furniture stay in good shape longer."
+      "question": "What is the most pet-friendly sofa material?",
+      "answer": "Leather and tightly woven synthetics such as microfiber and performance fabrics are the easiest to keep clean. Fur wipes or vacuums off them, and spills sit on the surface long enough to blot. Loose weaves, linen and velvet trap hair, and loops in boucl\u00e9 or textured fabrics can be pulled by claws. Whatever the fabric, a washable throw over the dog's favorite spot takes most of the wear."
     },
     {
-      "question": "How can I protect my rugs from pet hair and stains?",
-      "answer": "Choose indoor/outdoor rugs made of synthetic fibers like polypropylene that resist stains and are easy to clean. Low-pile rugs trap less hair, and patterned designs help camouflage fur and dirt between cleanings."
+      "question": "What rug is best for a house with a dog?",
+      "answer": "Low-pile or flatweave rugs in polypropylene or other synthetic fibers handle accidents and muddy paws best, because they resist stains and dry quickly. Washable rugs that go in a home machine are easiest of all for small rooms. Avoid high pile, shag and natural fibers like jute or sisal, which hold odors and stain. A non-slip pad underneath keeps the rug from sliding when a dog runs over it."
     },
     {
-      "question": "Are there safe plants I can have around pets?",
-      "answer": "Yes, plants like spider plants, Boston ferns, and ponytail palms are non-toxic to dogs and cats. Always keep potted plants on elevated surfaces to prevent digging and accidental ingestion."
+      "question": "Which houseplants are safe for dogs?",
+      "answer": "Spider plants, Boston ferns, ponytail palms, parlor palms and calatheas are commonly listed as non-toxic to dogs and cats by the ASPCA. Even safe plants can upset a stomach if eaten in quantity, so heavy pots or raised stands still help. Avoid sago palms, lilies for cat households, and pothos, philodendron and dieffenbachia, which are toxic. Check the ASPCA plant list before buying anything new."
     },
     {
-      "question": "What’s the easiest way to keep pet beds clean?",
-      "answer": "Select pet beds with removable, machine-washable covers made from durable fabrics. Regular washing helps remove fur, dirt, and odors, keeping your pet’s resting area fresh and hygienic."
+      "question": "How do I keep dog hair off furniture?",
+      "answer": "Regular brushing removes loose fur before it reaches the sofa, so it does more than any cover. Beyond that, use washable throws or slipcovers on favorite spots, pick fabric colors close to your dog's coat, and keep a rubber pet hair brush or lint roller nearby. A robot vacuum running daily keeps floors manageable during heavy shedding seasons."
+    },
+    {
+      "question": "How do I stop my dog slipping on hardwood floors?",
+      "answer": "Lay runners or washable non-slip mats along the paths your dog uses most, such as from the bed to the water bowl and the door. Keep nails trimmed short and the fur between paw pads tidy, since both reduce grip. Older dogs and dogs with joint problems benefit most, as slips can cause strains. Rubber-backed mats work better than rugs with no backing at all."
     }
   ],
   "topic_slug": "10-pet-friendly-home-decor-ideas-pups-will-love",
   "niche": "home",
   "item_noun": "ideas",
   "topic_title": "Top 12 Pet-Friendly Home Decor Ideas Pups Will Love",
-  "updated_at": "2026-05-30"
+  "updated_at": "2026-11-06",
+  "seo_title": "Pet-Friendly Home Decor 2026: 12 Ideas for Dog Owners",
+  "answer": "Start with a washable memory foam bed, then non-slip washable mats on hard floors, then corner shelves that lift fragile decor out of reach. The deciding factor is cleaning: anything a dog lies on, walks over or brushes past should be washable or wipeable.",
+  "method": "Ideas were chosen for how easily each one cleans, how well it holds up to claws and fur, cost, and how widely the product type is sold, then ordered by how many dog households each would help.",
+  "author": "Elena Marsh",
+  "upgraded_at": "2026-11-06"
 }
