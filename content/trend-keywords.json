@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T23:29:57.790Z",
+  "generated_at": "2026-11-10T20:56:12.931Z",
   "region": "US",
   "keywords": [
     {
@@ -359,15 +359,6 @@
       "pop": 54,
       "mom": 300,
       "yoy": -10,
-      "rising": false,
-      "score": 154
-    },
-    {
-      "keyword": "november preschool activities",
-      "niche": "home",
-      "pop": 44,
-      "mom": 1500,
-      "yoy": 20,
       "rising": false,
       "score": 154
     },
@@ -1006,7 +997,7 @@
       "niche": "home decor",
       "pop": 34,
       "mom": 700,
-      "yoy": 10,
+      "yoy": 9,
       "rising": false,
       "score": 144
     },
@@ -1119,15 +1110,6 @@
       "score": 142
     },
     {
-      "keyword": "ralph lauren christmas tree",
-      "niche": "home decor",
-      "pop": 41,
-      "mom": 300,
-      "yoy": -20,
-      "rising": false,
-      "score": 141
-    },
-    {
       "keyword": "turkey craft",
       "niche": "home",
       "pop": 31,
@@ -1215,6 +1197,15 @@
       "mom": 600,
       "yoy": -30,
       "rising": true,
+      "score": 140
+    },
+    {
+      "keyword": "ralph lauren christmas tree",
+      "niche": "home decor",
+      "pop": 40,
+      "mom": 300,
+      "yoy": -20,
+      "rising": false,
       "score": 140
     },
     {
@@ -1351,6 +1342,15 @@
       "yoy": 60,
       "rising": true,
       "score": 139
+    },
+    {
+      "keyword": "living room christmas decor",
+      "niche": "home decor",
+      "pop": 28,
+      "mom": 600,
+      "yoy": -30,
+      "rising": true,
+      "score": 138
     }
   ]
 }
