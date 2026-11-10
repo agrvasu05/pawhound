@@ -1,154 +1,180 @@
 {
-  "intro": "If you're on the lookout for inspiring things to DIY that can instantly add warmth and personality to your living space, you're in the right place. A cozy home makeover doesn't have to break the bank or require professional help. With a few crafty projects, you can transform your space into a snug sanctuary that's uniquely yours. From soft textiles to charming decor accents, these DIY-friendly ideas are perfect for anyone looking to refresh their home with hands-on creativity in 2026.",
+  "intro": "The best DIY projects for a cozy home are the ones you actually finish. That means a short supply list, no power tools, and a result that looks good even on a first attempt. Kits help because they bundle the right amount of material and a pattern, so you aren't buying a whole spool of rope for one wall hanging. Before choosing, think about where the finished piece will go, how much mess you can make at home, and if you want a quick afternoon project or one to work on over several winter evenings.",
   "item_noun": "DIY projects",
   "picks": [
     {
       "rank": 1,
-      "breed": "Macramé Wall Hanging Kit",
-      "image_query": "macramé wall hanging kit",
-      "description": "Macramé wall hangings bring an effortlessly boho vibe and texture to any room, making them ideal for cozy corners or blank walls. This kit includes all the cotton cords, wooden dowels, and beads you need, plus easy-to-follow instructions perfect for beginners. Crafting your own wall decor also adds a personal touch that store-bought items can't match, and the neutral tones blend seamlessly with warm, earthy palettes popular in 2026.",
-      "best_for": "boho lovers and beginners wanting a stylish wall accent",
-      "quirky_fact": "Try adding dried flowers or fairy lights woven through your finished piece for an extra cozy glow.",
-      "shop_query": "macramé wall hanging kit DIY beginner set"
+      "breed": "Macram\u00e9 Wall Hanging Kit",
+      "image_query": "macram\u00e9 wall hanging kit",
+      "description": "Macram\u00e9 is the best first project on this list because most beginner wall hangings use only a few knots, mainly the lark's head, square knot and half hitch, and the rope is forgiving: a wrong knot unties in seconds. A kit includes cotton cord, a wooden dowel and a printed or video pattern, and a small hanging of about 12 by 24 inches takes a beginner one to three evenings. You need only scissors and a hook or clothes rail to hang the work while knotting. The finished piece adds soft texture to a bare wall, which is what makes a room feel warmer in winter. The trade-off is that cheap kits sometimes include thin, stiff cord that frays, so look for 3mm or 4mm single-strand cotton, which is easier to comb into fringe.",
+      "best_for": "First-time crafters who want a finished wall piece in a weekend",
+      "quirky_fact": "Macram\u00e9 knotting was used by sailors to decorate ship fittings and pass time on long voyages.",
+      "shop_query": "macram\u00e9 wall hanging kit DIY beginner set",
+      "skip_if": "You want something practical to use daily rather than wall decor",
+      "product_name": "Macrame Wall Hanging Kit for Beginners with 3mm Cotton Cord"
     },
     {
       "rank": 2,
       "breed": "Soy Wax Candle Making Kit",
       "image_query": "soy wax candle making kit",
-      "description": "Nothing says cozy like the flicker of candlelight paired with a soothing scent. A soy wax candle making kit lets you create custom candles tailored to your favorite aromas—from lavender to vanilla chai. These kits typically include soy wax, wicks, fragrance oils, and containers, so you can easily craft candles that complement your home's vibe. Plus, making your own candles is a relaxing activity that results in beautiful, functional decor.",
-      "best_for": "scent lovers and DIY enthusiasts seeking ambiance",
-      "quirky_fact": "Experiment with layering different colored waxes in the same container for a stylish ombré effect.",
-      "shop_query": "soy wax candle making kit with fragrances"
+      "description": "A soy candle kit lets you make several scented candles in one afternoon, and the finished candles are one of the most-used cozy items in a home through the winter. Most kits include soy wax flakes, cotton wicks, wick stickers, a pouring pitcher, fragrance oils and tins or jars. You melt the wax in a pitcher set in a pan of water, add fragrance at the temperature the kit gives, and pour. Soy wax cleans up with hot soapy water, which makes it easier than paraffin for a first try. The trade-offs are patience and safety: hot wax needs a clear counter and full attention, and candles should cure for about two days before they burn with full scent. The tops can also crack or sink, which a heat gun or a second thin pour fixes.",
+      "best_for": "People who burn candles often or want to make batches of gifts",
+      "quirky_fact": "Soy wax has a lower melting point than paraffin, which is why soy candles often form a full melt pool across the jar.",
+      "shop_query": "soy wax candle making kit with fragrances",
+      "skip_if": "Young children or pets will be in the kitchen while you pour",
+      "product_name": "Soy Candle Making Kit with Fragrance Oils and Tins"
     },
     {
       "rank": 3,
       "breed": "Chunky Knit Blanket Kit",
       "image_query": "chunky knit blanket kit",
-      "description": "A chunky knit blanket is the ultimate cozy accessory for any living room or bedroom. With a DIY kit, you can create one yourself using oversized yarn and large knitting needles—no prior experience needed. These blankets add instant texture and warmth, perfect for curling up with a book or movie. They also make thoughtful handmade gifts that show care and craftsmanship.",
-      "best_for": "anyone wanting a tactile, inviting blanket without fuss",
-      "quirky_fact": "Use arm knitting techniques to finish a blanket in just a few hours.",
-      "shop_query": "chunky knit blanket DIY kit large yarn"
+      "description": "A chunky knit blanket is the coziest project here and needs no needles at all: most kits use jumbo chenille yarn that you hand-knit or loop with your fingers. A throw of about 40 by 50 inches usually takes three to five hours for a beginner, often in one long evening in front of the TV. The thick yarn makes each stitch easy to see, so mistakes are simple to spot and pull back. The finished blanket is heavy and soft, which is exactly what most people want on a sofa in winter. The trade-offs are cost, since a full throw needs several large skeins, and care: chenille can shed at first, and loose loops snag on rings, pet claws and zippers, so it suits adult homes better than ones with a cat that kneads.",
+      "best_for": "Anyone wanting a cozy throw finished in a single evening",
+      "quirky_fact": "Hand-knitting with jumbo yarn uses your arms or fingers as the needles, so no tools are needed at all.",
+      "shop_query": "chunky knit blanket DIY kit large yarn",
+      "skip_if": "You have a cat that kneads or claws at blankets",
+      "product_name": "Jumbo Chenille Yarn for Chunky Knit Blanket"
     },
     {
       "rank": 4,
-      "breed": "Wooden Plant Stand Kit",
-      "image_query": "wooden plant stand kit",
-      "description": "Elevate your greenery with a handmade wooden plant stand that fits perfectly in your space. This DIY kit provides pre-cut wood pieces, screws, and detailed plans, making it easy to assemble even if you’re new to woodworking. A stylish plant stand not only organizes your pots but also adds natural warmth that complements cozy interiors. Choose wood finishes that match your furniture for a cohesive look.",
-      "best_for": "plant parents and small space organizers",
-      "quirky_fact": "Stain your plant stand with warm tones like walnut or honey for a rustic feel.",
-      "shop_query": "wooden plant stand DIY assembly kit"
+      "breed": "Terracotta Pot Painting Set",
+      "image_query": "terracotta pot painting set",
+      "description": "Painting terracotta pots is the quickest win on this list: you can paint two or three pots in an hour, and the results look good even with simple stripes, dots or color-blocked rims. A set includes small clay pots, acrylic paints and brushes, and better ones include a sealer. Seal the inside and outside before planting, since bare terracotta wicks water through the clay and can make acrylic paint peel. Painted pots work for herbs on a kitchen windowsill, small succulents or as holders for pens and makeup brushes. The trade-off is that unsealed pots used outdoors fade quickly, so keep them indoors or use a waterproof outdoor varnish. It is also one of the best projects for doing with kids, since mistakes paint over easily once the first coat dries.",
+      "best_for": "Plant owners and families wanting a one-hour craft with kids",
+      "quirky_fact": "Terracotta is porous, which lets soil breathe and dry out faster, so many plant owners prefer it for succulents.",
+      "shop_query": "terracotta pot painting kit with paints brushes",
+      "skip_if": "You don't keep plants and want decor with more visual impact",
+      "product_name": "Terracotta Pot Painting Kit with Acrylic Paints"
     },
     {
       "rank": 5,
-      "breed": "Fabric Covered Storage Bins",
-      "image_query": "fabric covered storage bins",
-      "description": "Keep clutter at bay with chic fabric-covered storage bins you can customize yourself. These DIY kits include sturdy bin frames and a selection of high-quality fabrics in cozy patterns like plaid or soft neutrals. Creating your own bins helps match storage solutions to your decor style, making organization visually appealing. Perfect for bedrooms, living rooms, or craft rooms, these bins keep essentials tidy without sacrificing warmth.",
-      "best_for": "organizers who want stylish and functional bins",
-      "quirky_fact": "Add personalized labels or monograms to the fabric for a unique touch.",
-      "shop_query": "fabric covered storage bin DIY kit"
+      "breed": "DIY Lavender Sachet Kit",
+      "image_query": "DIY lavender sachet kit",
+      "description": "Lavender sachets are small fabric bags filled with dried lavender, and they freshen drawers, closets and shoe racks for months. A kit includes pre-cut cotton or linen squares, dried lavender buds, ribbon and simple sewing instructions; many use drawstring bags so no sewing is needed at all. A batch of ten takes about an hour and makes cheap stocking stuffers or teacher gifts. Squeezing a sachet now and then releases more scent, and adding a few drops of lavender oil revives it once it fades. The trade-off is that the scent is strong for some people and doesn't do much in a large room, so sachets suit drawers and closets rather than open spaces. Keep dried lavender away from cats and dogs, which can get sick if they eat it.",
+      "best_for": "Gift makers and anyone wanting fresher drawers and closets",
+      "quirky_fact": "Dried lavender keeps its scent longest when stored away from light and heat.",
+      "shop_query": "DIY lavender sachet making kit sewing",
+      "skip_if": "Someone in your home dislikes floral scents or you have pets that chew fabric",
+      "product_name": "Dried Lavender Buds and Drawstring Sachet Bags Set"
     },
     {
       "rank": 6,
-      "breed": "Terracotta Pot Painting Set",
-      "image_query": "terracotta pot painting set",
-      "description": "Give your plants a fresh, artistic look with a terracotta pot painting set. This set typically includes paints, brushes, and sealants designed for outdoor durability. Hand-painted pots add personality and color while showcasing your DIY skills. They’re an affordable way to brighten window sills, shelves, or patios, and make plant care feel even more special.",
-      "best_for": "gardeners and art lovers seeking personalization",
-      "quirky_fact": "Use stencils to create consistent patterns and simplify painting.",
-      "shop_query": "terracotta pot painting kit with paints brushes"
+      "breed": "Wooden Plant Stand Kit",
+      "image_query": "wooden plant stand kit",
+      "description": "A plant stand kit gives you a sturdy piece of furniture with almost no woodworking: pieces arrive cut and drilled, and assembly needs a screwdriver and, if you want, sandpaper and a stain. A mid-century style stand that lifts a pot 10 to 20 inches off the floor takes about an hour to put together and stain. Raising plants to window height gives them more light in short winter days and fills an empty corner. The trade-offs are that the finished size limits pot choice, so measure your planter's base before buying, and that staining adds drying time and fumes, so do it near an open window or outside. Put a saucer under any pot on the stand, since water spills will mark unsealed wood. It is a good project for people who prefer building to crafting.",
+      "best_for": "Plant owners who want a practical build with only a screwdriver",
+      "quirky_fact": "Many houseplants lean toward the light, so rotating a pot a quarter turn each week keeps it growing straight.",
+      "shop_query": "wooden plant stand DIY assembly kit",
+      "skip_if": "You don't have floor space or want a craft rather than furniture",
+      "product_name": "Mid Century Wooden Plant Stand Kit Unfinished"
     },
     {
       "rank": 7,
-      "breed": "Fabric Dyeing Starter Kit",
-      "image_query": "fabric dyeing starter kit",
-      "description": "Transform plain textiles into cozy statement pieces with a fabric dyeing starter kit. These kits include dyes, gloves, and instructions for techniques like tie-dye or ombré effects. Use them on pillow covers, curtains, or scarves to infuse your home with customized color and pattern. It’s a creative way to refresh old fabrics or add seasonal accents with ease.",
-      "best_for": "crafters looking to update textiles with bold color",
-      "quirky_fact": "Try natural dyeing using ingredients like avocado pits or turmeric for eco-friendly results.",
-      "shop_query": "fabric dyeing starter kit tie-dye supplies"
+      "breed": "Fabric Covered Storage Bins",
+      "image_query": "fabric covered storage bins",
+      "description": "Covering plain storage bins or sturdy boxes in your own fabric is a cozy, practical way to hide clutter on open shelves, and it lets you match bins to a room's colors. A spray adhesive or fabric glue, a cardboard or plastic bin, and about a yard of cotton fabric per bin are all you need, and kits bundle the frames and fabric together. Each bin takes about 30 to 45 minutes once you get the hang of folding corners neatly. Medium-weight cotton or canvas is easiest; thin fabric shows glue through, and heavy upholstery fabric is hard to fold. The trade-off is that fabric-covered cardboard doesn't handle damp, so keep these bins out of bathrooms and basements, and that wrinkle-free corners take a few tries to get right.",
+      "best_for": "Renters with open shelving who want tidy, matching storage",
+      "quirky_fact": "Ironing fabric before gluing it to a box is the step most often skipped, and it is what makes corners look crisp.",
+      "shop_query": "fabric covered storage bin DIY kit",
+      "skip_if": "You need storage for a damp bathroom, basement or garage",
+      "product_name": "Collapsible Fabric Storage Bins 11 inch Cube"
     },
     {
       "rank": 8,
       "breed": "DIY Felt Garland Kit",
       "image_query": "DIY felt garland kit",
-      "description": "Add playful charm to your space with a DIY felt garland kit. These kits come with colorful felt shapes, string, and assembly instructions to create garlands for mantels, doorways, or shelves. Felt’s soft texture and vibrant hues bring a cozy, handcrafted vibe suitable for all seasons or celebrations. Plus, garlands are lightweight and easy to change out as your decor evolves.",
-      "best_for": "decor lovers who enjoy seasonal or personalized touches",
-      "quirky_fact": "Mix shapes and colors to tailor your garland to different rooms or holidays.",
-      "shop_query": "DIY felt garland craft kit"
+      "description": "A felt garland is a simple project that works for any season: you string pre-cut felt balls, stars, leaves or hearts on a cord with a large needle and hang it across a shelf, mantel, window or child's room. A six-foot garland takes about an hour, and kits include enough felt pieces, thread and a needle. Felt doesn't fray, so no sewing skills are needed, and kids can help with the threading. In November and December it works as a holiday garland with felt balls in red, white and green. The trade-off is that felt pieces collect dust and pet hair over time, so it suits places you can reach to shake out. The finished garland is light, so a removable adhesive hook at each end holds it.",
+      "best_for": "Families wanting a quick, kid-friendly seasonal decoration",
+      "quirky_fact": "Wool felt balls are made by rolling loose wool in warm soapy water until the fibers lock together.",
+      "shop_query": "DIY felt garland craft kit",
+      "skip_if": "You want a grown-up, minimal look or have pets that shed heavily",
+      "product_name": "Felt Ball Garland Kit with Needle and Thread"
     },
     {
       "rank": 9,
       "breed": "Personalized Wooden Coasters Kit",
       "image_query": "personalized wooden coasters kit",
-      "description": "Protect your surfaces in style with a personalized wooden coaster kit. These kits include unfinished wood pieces, paints, and stencils to customize coasters with initials, patterns, or quotes. Handmade coasters add a warm, rustic element to coffee tables or desks and make great gifts. Crafting them yourself ensures a unique set that perfectly matches your home’s cozy aesthetic.",
-      "best_for": "hosts and crafters wanting functional decor",
-      "quirky_fact": "Seal your finished coasters with a waterproof varnish to enhance durability.",
-      "shop_query": "personalized wooden coaster DIY kit painting"
+      "description": "A coaster kit gives you blank wooden rounds, paint pens or acrylics and sometimes stencils, so you can paint initials, simple patterns or seasonal designs. A set of four takes about an hour to paint, then needs a water-resistant sealer such as polyurethane or a resin coat, which needs a day to cure. Coasters are one of the easiest DIY projects to give as gifts, since a personalized set feels thoughtful but takes little time. The trade-off is durability: if the sealer is skipped or applied thinly, condensation from a cold glass will lift the paint within weeks. Felt or cork backing on the bottom stops coasters scratching tables. Wood-burning pens are a more permanent option once you are comfortable with the shapes.",
+      "best_for": "Gift makers who want a quick, personalized set to give away",
+      "quirky_fact": "Condensation from a cold drink is what leaves white rings on wood finishes, which is the main job of a coaster.",
+      "shop_query": "personalized wooden coaster DIY kit painting",
+      "skip_if": "You won't take the time to seal them properly",
+      "product_name": "Unfinished Wooden Coasters with Paint Pens Kit"
     },
     {
       "rank": 10,
       "breed": "Woven Wall Basket Kit",
       "image_query": "woven wall basket kit",
-      "description": "Create texture and dimension with a woven wall basket kit that lets you craft stylish woven art pieces. These kits provide natural fibers like raffia or seagrass along with frames and weaving instructions. Woven baskets add earthy, tactile interest to your walls and complement cozy, nature-inspired decor themes. Plus, weaving is a meditative craft that yields stunning visual results.",
-      "best_for": "nature lovers and art enthusiasts",
-      "quirky_fact": "Layer baskets of different sizes for an eye-catching gallery wall.",
-      "shop_query": "woven wall basket DIY kit natural fibers"
+      "description": "Woven wall baskets are flat, shallow seagrass or raffia baskets hung in a group on a wall, and they add warm, natural texture to a big empty space. Kits supply the fibers, a base and instructions; the coiling method wraps fiber around a core and stitches each row to the last, so it needs patience more than skill. One small basket can take several hours, which makes this a project for winter evenings rather than an afternoon. The finished baskets are light and hang on a single small nail each. The trade-off is time: a full wall grouping of five or seven baskets takes many sessions, so many people mix one handmade basket with a few store-bought ones. Wear the included gloves or wrap fingertips, since seagrass can be rough on hands.",
+      "best_for": "Patient crafters who want natural texture on a large bare wall",
+      "quirky_fact": "Coiled basketry is among the oldest weaving methods and is still used to make baskets in many parts of Africa and Asia.",
+      "shop_query": "woven wall basket DIY kit natural fibers",
+      "skip_if": "You want a project you can finish in one sitting",
+      "product_name": "Seagrass Coil Basket Weaving Kit"
     },
     {
       "rank": 11,
-      "breed": "DIY Lavender Sachet Kit",
-      "image_query": "DIY lavender sachet kit",
-      "description": "Bring calming scents to drawers, closets, or bedrooms with a DIY lavender sachet kit. These include fabric pieces, dried lavender, ribbon, and sewing instructions. Handmade sachets keep your linens fresh and add a subtle aromatherapy touch to your home. They’re small but impactful accents that contribute to an inviting atmosphere and make charming gifts.",
-      "best_for": "aromatherapy fans and simple sewing projects",
-      "quirky_fact": "Mix dried lavender with other herbs like rosemary or mint for unique scents.",
-      "shop_query": "DIY lavender sachet making kit sewing"
+      "breed": "Fabric Dyeing Starter Kit",
+      "image_query": "fabric dyeing starter kit",
+      "description": "A fabric dyeing kit lets you refresh plain cotton pillowcases, throw covers, tea towels or curtains with tie-dye or shibori patterns, giving old textiles a second life rather than replacing them. Kits include squeeze bottles of dye, rubber bands, gloves and instructions; you soak the fabric, fold or bind it, apply dye, then let it set for 6 to 24 hours before rinsing. Natural fibers such as cotton and linen take dye best, while polyester barely takes most kit dyes. It ranks lower because of mess: dye can stain counters, grout and sinks, so it is best done outside or on a covered table. Colors also bleed in the first few washes, so wash dyed pieces alone in cold water until the water runs clear.",
+      "best_for": "People with a yard or balcony who want to refresh old textiles",
+      "quirky_fact": "Shibori is a Japanese resist-dyeing method that folds, twists or clamps fabric so parts of it don't take the dye.",
+      "shop_query": "fabric dyeing starter kit tie-dye supplies",
+      "skip_if": "You only have a small indoor kitchen or white grout you want to keep",
+      "product_name": "Tie Dye Kit with Fiber Reactive Dye and Gloves"
     },
     {
       "rank": 12,
       "breed": "Natural Fiber Rug Braiding Kit",
       "image_query": "natural fiber rug braiding kit",
-      "description": "Upgrade floors with a natural fiber rug braiding kit that lets you craft cozy, textured area rugs. These kits come with jute or cotton ropes and instructions to braid durable rugs that add warmth to hardwood or tile floors. Handmade rugs are a sustainable choice that inject character and softness into any room, perfect for living areas or entryways.",
-      "best_for": "DIYers wanting natural, rustic floor coverings",
-      "quirky_fact": "Create circular or oval rugs by carefully joining braided strips as you go.",
-      "shop_query": "natural fiber rug braiding DIY kit jute cotton"
+      "description": "A braided rug is the most ambitious project on this list: you braid long strands of jute or cotton rope and coil and stitch the braid into a flat round or oval. The result is a soft, natural rug for a bathroom, entry or bedside, and it lasts for years. A small 2 by 3 foot rug can still take a beginner several evenings, and keeping the coil flat as it grows takes practice; a rug that cups or ripples is the most common early problem. The kit provides rope, a large needle and instructions, but you also need lots of floor or table space to lay the braid out. Jute rugs shed fibers at first and don't suit damp floors, so cotton rope is the better choice for bathrooms.",
+      "best_for": "Experienced crafters wanting a big, lasting project for winter",
+      "quirky_fact": "Braided rugs were traditionally made from worn-out clothing strips, so nothing in the household went to waste.",
+      "shop_query": "natural fiber rug braiding DIY kit jute cotton",
+      "skip_if": "You are new to crafts or want something finished this weekend",
+      "product_name": "Jute Rope Braided Rug Kit"
     }
   ],
   "pin_headlines": [
-    "14 Things to DIY for a Cozy Home Makeover",
-    "Top 14 DIY Projects for a Warm Home in 2026",
-    "14 Easy Things to DIY to Make Your Home Cozy",
-    "Cozy Home Makeover: 14 DIY Ideas You’ll Love",
-    "14 DIY Decor Projects for a Snug Living Space",
-    "14 Things to DIY That Add Instant Warmth to Any Room",
-    "DIY Your Way to a Cozy Home: 14 Must-Try Ideas",
-    "14 Creative DIY Ideas for a Cozy 2026 Home",
-    "14 Things to DIY for Small Space Cozy Living",
-    "14 Charming DIY Home Projects to Try This Year"
+    "Things to DIY: 12 Cozy Home Projects",
+    "Things to DIY This Winter for a Cozy Home",
+    "DIY Home Projects: 12 Kits for Beginners",
+    "Things to DIY With Yarn, Wax and Wood",
+    "Cozy DIY Ideas for Long Winter Weekends",
+    "Things to DIY in One Afternoon",
+    "DIY Decor Kits That Make Good Gifts",
+    "Things to DIY for Small Apartments"
   ],
   "faqs": [
     {
-      "question": "What are some beginner-friendly things to DIY for home decor?",
-      "answer": "Beginner-friendly DIY projects include making macramé wall hangings, painting terracotta pots, or assembling wooden plant stands. These kits come with easy instructions and require minimal tools, making them perfect for those new to crafting."
+      "question": "What is the easiest thing to DIY for home decor?",
+      "answer": "Painting terracotta pots and making a felt garland are the easiest projects here, since they need no special skill and finish in an hour or two. Of the more impressive projects, a beginner macram\u00e9 wall hanging is a good next step: it uses only three or four knots, and a kit includes the rope, a dowel and a pattern, so there is little to go wrong."
     },
     {
-      "question": "How can DIY projects make my home cozier?",
-      "answer": "DIY projects add personal touches and unique textures that store-bought items often lack. Creating items like chunky knit blankets or scented candles infuses warmth, comfort, and personality into your living space."
+      "question": "Which DIY projects make good homemade gifts?",
+      "answer": "Soy candles, lavender sachets, painted coasters and small macram\u00e9 hangings all make good gifts, since one kit can produce several pieces. Candles need about 48 hours to cure before they burn well, so start them at least a few days ahead. Wrap sachets in tissue to keep the scent strong, and seal painted coasters with a water-resistant finish so they survive wet mugs."
     },
     {
-      "question": "Where can I find materials for home DIY projects?",
-      "answer": "Materials and kits for home DIY projects are widely available online on platforms like Etsy, Amazon, and craft specialty stores. Searching for specific project kits or materials ensures you get everything you need in one place."
+      "question": "Are DIY kits worth it compared with buying supplies separately?",
+      "answer": "For a first project, usually yes. A kit gives you the right amount of each material and a pattern sized for it, so you don't end up with leftover rope, wax or yarn you may never use. Once you know you enjoy a craft, buying supplies in bulk is often cheaper per piece, and lets you choose your own colors and sizes."
     },
     {
-      "question": "Are DIY home makeover projects time-consuming?",
-      "answer": "DIY projects vary in time commitment. Some, like making lavender sachets or painting pots, can be completed in under an hour, while others like knitting blankets or braiding rugs may take longer. Choose projects that fit your schedule and skill level."
+      "question": "Which DIY projects are safe to do in a small apartment?",
+      "answer": "Knitting, macram\u00e9, felt garlands, sachets and pot painting make little mess and need no ventilation, so they suit small apartments. Candle making involves melting wax on a stove and pouring hot liquid, so it needs a clear counter and attention. Fabric dyeing can stain sinks, counters and grout, so cover surfaces well or do it outside, and wear the gloves included in most kits."
     }
   ],
   "topic_slug": "things-to-diy",
-  "topic_title": "14 Things to DIY for a Cozy Home Makeover in 2026",
+  "topic_title": "12 Things to DIY for a Cozy Home Makeover in 2026",
   "niche": "home",
   "keyword": "things to diy",
   "boards": [
     "DIY Home Projects",
     "Cozy Living Ideas"
   ],
-  "author": "the Value Finds Daily Editorial Team",
-  "updated_at": "2026-07-15"
+  "author": "Elena Marsh",
+  "updated_at": "2026-11-10",
+  "seo_title": "Things to DIY 2026: 12 Cozy Home Projects for Beginners",
+  "answer": "A macram\u00e9 wall hanging, a soy candle kit and a chunky knit blanket are the best things to DIY here for a cozier home. Each needs few tools, finishes in a weekend or less, and leaves you with something you will use every day. The deciding factor is how much skill and time a project needs before it looks good.",
+  "method": "Picked from Pinterest's trending searches for things to DIY at home, then ordered by how beginner-friendly each project is, how long it takes, how much mess and how many tools it needs, and how much the finished piece gets used. No kits were bought or tried for this guide.",
+  "upgraded_at": "2026-11-10"
 }
