@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:56:12.931Z",
+  "generated_at": "2026-11-11T21:29:15.350Z",
   "region": "US",
   "keywords": [
     {
@@ -232,7 +232,7 @@
       "niche": "holidays",
       "pop": 54,
       "mom": 10001,
-      "yoy": 40,
+      "yoy": 30,
       "rising": true,
       "score": 164
     },
@@ -359,6 +359,15 @@
       "pop": 54,
       "mom": 300,
       "yoy": -10,
+      "rising": false,
+      "score": 154
+    },
+    {
+      "keyword": "november preschool activities",
+      "niche": "home",
+      "pop": 44,
+      "mom": 1500,
+      "yoy": 20,
       "rising": false,
       "score": 154
     },
@@ -1087,7 +1096,7 @@
       "niche": "home",
       "pop": 33,
       "mom": 1000,
-      "yoy": 1,
+      "yoy": 0,
       "rising": false,
       "score": 143
     },
@@ -1342,15 +1351,6 @@
       "yoy": 60,
       "rising": true,
       "score": 139
-    },
-    {
-      "keyword": "living room christmas decor",
-      "niche": "home decor",
-      "pop": 28,
-      "mom": 600,
-      "yoy": -30,
-      "rising": true,
-      "score": 138
     }
   ]
 }
