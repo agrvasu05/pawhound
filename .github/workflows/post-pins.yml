@@ -58,9 +58,9 @@ jobs:
           if [ -f "$STAMP" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
             echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Window already posted today ($STAMP) — skipping."; exit 0
           fi
-          mkdir -p content/.post-stamps && touch "$STAMP"
-          # keep only the last 14 days of stamps
-          ls -1 content/.post-stamps | sort | head -n -40 | sed 's#^#content/.post-stamps/#' | xargs -r rm -f
+          # The stamp itself is written by "Claim window" below, after setup has
+          # succeeded, so a failed setup leaves the window free for the next hourly run.
+          echo "stamp=$STAMP" >> "$GITHUB_OUTPUT"
           echo "ok=true" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-node@v4
@@ -68,11 +68,30 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Puppeteer system dependencies
+      # 13 Nov 2026: `apt-get install chromium-browser` (a snap wrapper) failed three
+      # windows in a row when the snap store / apt mirror was unreachable. Use the
+      # browser already on the runner image and only fall back to apt (with retries).
+      - name: Find a browser for Puppeteer
         if: steps.guard.outputs.ok == 'true'
         run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
+          find_browser() {
+            for b in google-chrome google-chrome-stable chromium-browser chromium; do
+              if command -v "$b" >/dev/null 2>&1; then command -v "$b"; return 0; fi
+            done
+            return 1
+          }
+          BROWSER=$(find_browser || true)
+          if [ -z "$BROWSER" ]; then
+            for i in 1 2 3; do
+              if sudo apt-get update && sudo apt-get install -y chromium-browser; then break; fi
+              echo "apt attempt $i failed; retrying in 20s"; sleep 20
+            done
+            BROWSER=$(find_browser || true)
+          fi
+          if [ -z "$BROWSER" ]; then echo "No browser available for Puppeteer"; exit 1; fi
+          echo "Using browser: $BROWSER"
+          "$BROWSER" --version || true
+          echo "PUPPETEER_EXECUTABLE_PATH=$BROWSER" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         if: steps.guard.outputs.ok == 'true'
@@ -81,6 +100,14 @@ jobs:
       - name: Sync latest content
         if: steps.guard.outputs.ok == 'true'
         run: git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
+
+      # Setup worked: claim this window now (once per window per day).
+      - name: Claim window
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          mkdir -p content/.post-stamps && touch "${{ steps.guard.outputs.stamp }}"
+          # keep only the last 14 days of stamps
+          ls -1 content/.post-stamps | sort | head -n -40 | sed 's#^#content/.post-stamps/#' | xargs -r rm -f
 
       # 1) Content (article) pins — rendered at post time, up to 3/run, ≤1 dog guide
       - name: Post content pins
@@ -91,7 +118,6 @@ jobs:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
       # Rotate the Pinterest refresh token if the poster returned a new one.
       # PINTEREST_PAT must be a GitHub token with repo scope (see OPERATIONS.md);
@@ -111,7 +137,6 @@ jobs:
           PINTEREST_CLIENT_ID: ${{ secrets.PINTEREST_CLIENT_ID }}
           PINTEREST_CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
       # 3) Board hygiene: delete EMPTY off-niche boards only (never ones with pins)
       - name: Board hygiene
