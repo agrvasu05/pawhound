@@ -155,5 +155,11 @@ jobs:
           git config user.email "bot@valuefindsdaily.com"
           git add content/posted-pins.json content/pinterest-boards.json content/pin-queue.json content/.post-stamps
           git diff --cached --quiet || git commit -m "Update pin trackers [skip netlify] [CI Skip]"
-          git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
-          git push
+          # 13 Nov 2026: a one-off GitHub "Internal Server Error" on push failed a run;
+          # retry so posted-pin records aren't lost.
+          for i in 1 2 3; do
+            git pull --rebase --autostash || { node products/merge-queue.js && GIT_EDITOR=true git rebase --continue; }
+            if git push; then exit 0; fi
+            echo "push attempt $i failed; retrying in 15s"; sleep 15
+          done
+          exit 1
