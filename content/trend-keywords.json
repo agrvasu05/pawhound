@@ -1,139 +1,220 @@
 {
-  "generated_at": "2026-11-18T22:11:03.034Z",
+  "generated_at": "2026-11-19T22:20:25.879Z",
   "region": "US",
   "keywords": [
     {
-      "keyword": "beaded tinsel",
-      "niche": "home",
-      "pop": 80,
-      "mom": 10001,
-      "yoy": 10001,
-      "rising": true,
-      "score": 190
-    },
-    {
       "keyword": "kitchen christmas decor",
       "niche": "home decor",
-      "pop": 63,
+      "pop": 67,
       "mom": 900,
       "yoy": 30,
       "rising": true,
-      "score": 173
+      "score": 177
     },
     {
-      "keyword": "red and white christmas tree ideas",
+      "keyword": "christmas decor crafts",
       "niche": "home decor",
-      "pop": 63,
+      "pop": 65,
       "mom": 800,
-      "yoy": 100,
+      "yoy": -5,
       "rising": true,
-      "score": 173
+      "score": 175
     },
     {
       "keyword": "christmas office decor ideas",
       "niche": "home decor",
-      "pop": 63,
+      "pop": 65,
       "mom": 800,
-      "yoy": 400,
+      "yoy": 500,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "red and white christmas tree ideas",
+      "niche": "home decor",
+      "pop": 65,
+      "mom": 800,
+      "yoy": 100,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "christmas tree decor 2026",
+      "niche": "home decor",
+      "pop": 65,
+      "mom": 700,
+      "yoy": 8000,
+      "rising": true,
+      "score": 175
+    },
+    {
+      "keyword": "living room christmas decor",
+      "niche": "home decor",
+      "pop": 64,
+      "mom": 900,
+      "yoy": -30,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "christmas bathroom decor",
+      "niche": "home decor",
+      "pop": 64,
+      "mom": 800,
+      "yoy": -20,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "christmas door decorating ideas",
+      "niche": "home decor",
+      "pop": 64,
+      "mom": 700,
+      "yoy": 300,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "thankful crafts for kids",
+      "niche": "home",
+      "pop": 64,
+      "mom": 1000,
+      "yoy": 50,
+      "rising": true,
+      "score": 174
+    },
+    {
+      "keyword": "christmas hallway ideas",
+      "niche": "home decor",
+      "pop": 63,
+      "mom": 1000,
+      "yoy": 600,
+      "rising": true,
+      "score": 173
+    },
+    {
+      "keyword": "kitchen island christmas decor",
+      "niche": "home decor",
+      "pop": 63,
+      "mom": 1000,
+      "yoy": 80,
       "rising": true,
       "score": 173
     },
     {
       "keyword": "christmas table decor ideas",
       "niche": "home decor",
-      "pop": 62,
+      "pop": 63,
       "mom": 1000,
       "yoy": 300,
       "rising": true,
-      "score": 172
+      "score": 173
     },
     {
       "keyword": "indoor christmas decor ideas",
       "niche": "home decor",
-      "pop": 62,
+      "pop": 63,
       "mom": 1000,
       "yoy": 300,
       "rising": true,
-      "score": 172
+      "score": 173
     },
     {
-      "keyword": "christmas tree decor 2026",
+      "keyword": "cozy christmas wallpaper",
       "niche": "home decor",
       "pop": 62,
-      "mom": 700,
-      "yoy": 8500,
+      "mom": 2000,
+      "yoy": 60,
       "rising": true,
       "score": 172
-    },
-    {
-      "keyword": "christmas paper chains",
-      "niche": "home",
-      "pop": 62,
-      "mom": 1000,
-      "yoy": 100,
-      "rising": true,
-      "score": 172
-    },
-    {
-      "keyword": "kitchen island christmas decor",
-      "niche": "home decor",
-      "pop": 61,
-      "mom": 1000,
-      "yoy": 90,
-      "rising": true,
-      "score": 171
-    },
-    {
-      "keyword": "living room christmas decor",
-      "niche": "home decor",
-      "pop": 61,
-      "mom": 900,
-      "yoy": -30,
-      "rising": true,
-      "score": 171
-    },
-    {
-      "keyword": "christmas decor crafts",
-      "niche": "home decor",
-      "pop": 61,
-      "mom": 800,
-      "yoy": -4,
-      "rising": true,
-      "score": 171
     },
     {
       "keyword": "bathroom christmas decor",
       "niche": "home decor",
-      "pop": 60,
-      "mom": 1000,
+      "pop": 62,
+      "mom": 1500,
       "yoy": -10,
       "rising": true,
-      "score": 170
+      "score": 172
     },
     {
-      "keyword": "christmas hallway ideas",
+      "keyword": "pilgrim crafts for kids",
+      "niche": "home",
+      "pop": 62,
+      "mom": 2000,
+      "yoy": 200,
+      "rising": true,
+      "score": 172
+    },
+    {
+      "keyword": "tv stand christmas decor",
+      "niche": "home decor",
+      "pop": 61,
+      "mom": 1500,
+      "yoy": -40,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "christmas ribbon garland",
+      "niche": "home decor",
+      "pop": 61,
+      "mom": 1000,
+      "yoy": 300,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "christmas entryway table decor",
+      "niche": "home decor",
+      "pop": 61,
+      "mom": 900,
+      "yoy": -8,
+      "rising": true,
+      "score": 171
+    },
+    {
+      "keyword": "christmas mirror",
+      "niche": "home decor",
+      "pop": 61,
+      "mom": 1000,
+      "yoy": 30,
+      "rising": false,
+      "score": 171
+    },
+    {
+      "keyword": "whimsy christmas decor",
       "niche": "home decor",
       "pop": 60,
       "mom": 1000,
-      "yoy": 600,
+      "yoy": 2500,
       "rising": true,
       "score": 170
     },
     {
-      "keyword": "christmas bathroom decor",
-      "niche": "home decor",
-      "pop": 60,
-      "mom": 800,
-      "yoy": -20,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "christmas mantle",
+      "keyword": "christmas window painting ideas",
       "niche": "home decor",
       "pop": 60,
       "mom": 700,
-      "yoy": -3,
+      "yoy": 70,
+      "rising": true,
+      "score": 170
+    },
+    {
+      "keyword": "christmas tree ideas 2026",
+      "niche": "home decor",
+      "pop": 70,
+      "mom": 600,
+      "yoy": 10001,
+      "rising": false,
+      "score": 170
+    },
+    {
+      "keyword": "thanksgiving coloring pages for kids",
+      "niche": "home",
+      "pop": 60,
+      "mom": 2000,
+      "yoy": 40,
       "rising": true,
       "score": 170
     },
@@ -141,287 +222,314 @@
       "keyword": "thanksgiving preschool activities",
       "niche": "home",
       "pop": 60,
-      "mom": 1000,
-      "yoy": -5,
+      "mom": 1500,
+      "yoy": 1,
       "rising": true,
       "score": 170
     },
     {
-      "keyword": "christmas mirror",
+      "keyword": "tension rod garland",
       "niche": "home decor",
       "pop": 59,
-      "mom": 1000,
-      "yoy": 30,
-      "rising": false,
-      "score": 169
-    },
-    {
-      "keyword": "kitchen christmas decor ideas",
-      "niche": "home decor",
-      "pop": 58,
-      "mom": 1500,
-      "yoy": 70,
-      "rising": true,
-      "score": 168
-    },
-    {
-      "keyword": "christmas entryway table decor",
-      "niche": "home decor",
-      "pop": 58,
-      "mom": 900,
-      "yoy": -9,
-      "rising": true,
-      "score": 168
-    },
-    {
-      "keyword": "christmas coffee table decor",
-      "niche": "home decor",
-      "pop": 57,
       "mom": 1500,
       "yoy": -20,
       "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "hallway christmas decorating ideas",
-      "niche": "home decor",
-      "pop": 57,
-      "mom": 900,
-      "yoy": -10,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "christmas tree ideas 2026",
-      "niche": "home decor",
-      "pop": 67,
-      "mom": 600,
-      "yoy": 10001,
-      "rising": false,
-      "score": 167
-    },
-    {
-      "keyword": "window christmas decor",
-      "niche": "home decor",
-      "pop": 57,
-      "mom": 1500,
-      "yoy": 40,
-      "rising": false,
-      "score": 167
-    },
-    {
-      "keyword": "thanksgiving potluck dishes",
-      "niche": "holidays",
-      "pop": 57,
-      "mom": 1500,
-      "yoy": 100,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "grinch nail ideas",
-      "niche": "holidays",
-      "pop": 57,
-      "mom": 1500,
-      "yoy": 800,
-      "rising": true,
-      "score": 167
-    },
-    {
-      "keyword": "cozy christmas wallpaper",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 2000,
-      "yoy": 60,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "tv stand christmas decor",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 1500,
-      "yoy": -40,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "whimsy christmas decor",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 1500,
-      "yoy": 2500,
-      "rising": true,
-      "score": 166
+      "score": 169
     },
     {
       "keyword": "christmas cabinet ideas",
       "niche": "home decor",
-      "pop": 56,
+      "pop": 59,
       "mom": 1000,
       "yoy": 2000,
       "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "cozy christmas kitchen",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 1000,
-      "yoy": 50,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "christmas ribbon garland",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 1000,
-      "yoy": 300,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "above cabinet christmas decor",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 900,
-      "yoy": -1,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "christmas window painting ideas",
-      "niche": "home decor",
-      "pop": 56,
-      "mom": 700,
-      "yoy": 70,
-      "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "disguise a turkey project",
-      "niche": "home",
-      "pop": 56,
-      "mom": 3000,
-      "yoy": -30,
-      "rising": true,
-      "score": 166
+      "score": 169
     },
     {
       "keyword": "thanksgiving placemats preschool craft",
       "niche": "home",
-      "pop": 56,
+      "pop": 59,
       "mom": 1500,
-      "yoy": 60,
+      "yoy": 70,
       "rising": true,
-      "score": 166
+      "score": 169
     },
     {
       "keyword": "turkey template",
       "niche": "home",
-      "pop": 56,
-      "mom": 1000,
-      "yoy": 10,
+      "pop": 59,
+      "mom": 1500,
+      "yoy": 20,
       "rising": true,
-      "score": 166
-    },
-    {
-      "keyword": "christmas mirror decor",
-      "niche": "home decor",
-      "pop": 55,
-      "mom": 1000,
-      "yoy": 10,
-      "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "mantel christmas decor",
-      "niche": "home decor",
-      "pop": 55,
-      "mom": 1000,
-      "yoy": 60,
-      "rising": false,
-      "score": 165
-    },
-    {
-      "keyword": "turkey craft",
-      "niche": "home",
-      "pop": 55,
-      "mom": 2000,
-      "yoy": 3,
-      "rising": true,
-      "score": 165
+      "score": 169
     },
     {
       "keyword": "christmas paper chain",
       "niche": "home",
-      "pop": 55,
+      "pop": 59,
       "mom": 1000,
       "yoy": 90,
       "rising": true,
-      "score": 165
-    },
-    {
-      "keyword": "thanksgiving coloring",
-      "niche": "home",
-      "pop": 55,
-      "mom": 1500,
-      "yoy": 50,
-      "rising": false,
-      "score": 165
+      "score": 169
     },
     {
       "keyword": "snowman door",
       "niche": "home decor",
-      "pop": 54,
-      "mom": 2000,
+      "pop": 58,
+      "mom": 2500,
       "yoy": 100,
       "rising": true,
-      "score": 164
+      "score": 168
     },
     {
-      "keyword": "tension rod garland",
+      "keyword": "cozy christmas kitchen",
       "niche": "home decor",
-      "pop": 54,
+      "pop": 58,
+      "mom": 1000,
+      "yoy": 50,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "christmas mirror decor",
+      "niche": "home decor",
+      "pop": 58,
+      "mom": 1000,
+      "yoy": 10,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "thanksgiving coloring",
+      "niche": "home",
+      "pop": 58,
+      "mom": 2000,
+      "yoy": 70,
+      "rising": false,
+      "score": 168
+    },
+    {
+      "keyword": "thanksgiving potluck dishes",
+      "niche": "holidays",
+      "pop": 58,
       "mom": 1500,
+      "yoy": 100,
+      "rising": true,
+      "score": 168
+    },
+    {
+      "keyword": "hallway christmas decor",
+      "niche": "home decor",
+      "pop": 57,
+      "mom": 1000,
       "yoy": -20,
       "rising": true,
-      "score": 164
+      "score": 167
     },
     {
-      "keyword": "christmas shelf styling",
+      "keyword": "above cabinet christmas decor",
       "niche": "home decor",
-      "pop": 54,
-      "mom": 1000,
-      "yoy": -4,
+      "pop": 57,
+      "mom": 900,
+      "yoy": -3,
       "rising": true,
-      "score": 164
+      "score": 167
+    },
+    {
+      "keyword": "mantle garland",
+      "niche": "home decor",
+      "pop": 57,
+      "mom": 1000,
+      "yoy": 5,
+      "rising": false,
+      "score": 167
     },
     {
       "keyword": "90s christmas aesthetic",
       "niche": "holidays",
-      "pop": 64,
+      "pop": 67,
       "mom": 400,
       "yoy": 40,
       "rising": false,
+      "score": 167
+    },
+    {
+      "keyword": "christmas coffee table decor",
+      "niche": "home decor",
+      "pop": 56,
+      "mom": 1500,
+      "yoy": -20,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "christmas shelf styling",
+      "niche": "home decor",
+      "pop": 56,
+      "mom": 1000,
+      "yoy": -2,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "turkey project",
+      "niche": "home",
+      "pop": 56,
+      "mom": 6500,
+      "yoy": 80,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "thanksgiving coloring sheets",
+      "niche": "home",
+      "pop": 56,
+      "mom": 2000,
+      "yoy": 20,
+      "rising": true,
+      "score": 166
+    },
+    {
+      "keyword": "paper chains christmas",
+      "niche": "home",
+      "pop": 56,
+      "mom": 1500,
+      "yoy": 2,
+      "rising": false,
+      "score": 166
+    },
+    {
+      "keyword": "anthropologie christmas",
+      "niche": "home decor",
+      "pop": 55,
+      "mom": 900,
+      "yoy": 40,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "christmas wallpaper home screen",
+      "niche": "home decor",
+      "pop": 55,
+      "mom": 4500,
+      "yoy": 0,
+      "rising": false,
+      "score": 165
+    },
+    {
+      "keyword": "turkey disguised",
+      "niche": "home",
+      "pop": 55,
+      "mom": 10000,
+      "yoy": 500,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "disguise a turkey princess",
+      "niche": "home",
+      "pop": 55,
+      "mom": 10001,
+      "yoy": -20,
+      "rising": false,
+      "score": 165
+    },
+    {
+      "keyword": "easy thanksgiving crafts for toddlers",
+      "niche": "home",
+      "pop": 55,
+      "mom": 2000,
+      "yoy": -20,
+      "rising": false,
+      "score": 165
+    },
+    {
+      "keyword": "veterans day cards",
+      "niche": "holidays",
+      "pop": 55,
+      "mom": 1500,
+      "yoy": 30,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "friendsgiving ideas food",
+      "niche": "holidays",
+      "pop": 55,
+      "mom": 1500,
+      "yoy": 50,
+      "rising": true,
+      "score": 165
+    },
+    {
+      "keyword": "friendsgiving",
+      "niche": "holidays",
+      "pop": 65,
+      "mom": 400,
+      "yoy": 20,
+      "rising": false,
+      "score": 165
+    },
+    {
+      "keyword": "christmas snoopy pfp",
+      "niche": "holidays",
+      "pop": 55,
+      "mom": 2500,
+      "yoy": -7,
+      "rising": false,
+      "score": 165
+    },
+    {
+      "keyword": "christmas shelf decor",
+      "niche": "home decor",
+      "pop": 54,
+      "mom": 900,
+      "yoy": -40,
+      "rising": true,
+      "score": 164
+    },
+    {
+      "keyword": "winter planters front porches",
+      "niche": "home decor",
+      "pop": 54,
+      "mom": 700,
+      "yoy": -20,
+      "rising": true,
       "score": 164
     },
     {
       "keyword": "ralph lauren christmas tree",
       "niche": "home decor",
-      "pop": 63,
+      "pop": 64,
       "mom": 500,
       "yoy": -7,
       "rising": false,
-      "score": 163
+      "score": 164
     },
     {
-      "keyword": "mantle garland",
+      "keyword": "thanksgiving coloring page",
+      "niche": "home",
+      "pop": 54,
+      "mom": 2000,
+      "yoy": 90,
+      "rising": false,
+      "score": 164
+    },
+    {
+      "keyword": "wurstfest outfit",
+      "niche": "holidays",
+      "pop": 54,
+      "mom": 1500,
+      "yoy": 30,
+      "rising": true,
+      "score": 164
+    },
+    {
+      "keyword": "mantel christmas decor",
       "niche": "home decor",
       "pop": 53,
       "mom": 1000,
-      "yoy": 6,
+      "yoy": 60,
       "rising": false,
       "score": 163
     },
@@ -435,146 +543,137 @@
       "score": 163
     },
     {
-      "keyword": "thanksgiving coloring sheets",
-      "niche": "home",
-      "pop": 53,
-      "mom": 2000,
-      "yoy": 10,
-      "rising": true,
-      "score": 163
-    },
-    {
-      "keyword": "thanksgiving coloring page",
+      "keyword": "turkey cut out",
       "niche": "home",
       "pop": 53,
       "mom": 1500,
-      "yoy": 70,
+      "yoy": -3,
       "rising": false,
       "score": 163
     },
     {
-      "keyword": "friendsgiving",
+      "keyword": "friendsgiving ideas",
       "niche": "holidays",
       "pop": 63,
-      "mom": 400,
-      "yoy": 20,
+      "mom": 800,
+      "yoy": 80,
       "rising": false,
       "score": 163
     },
     {
-      "keyword": "turkey disguise project ideas",
-      "niche": "home",
+      "keyword": "fireplace garland",
+      "niche": "home decor",
       "pop": 52,
-      "mom": 10001,
-      "yoy": 10,
+      "mom": 900,
+      "yoy": -10,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "veterans day crafts for kids preschool",
+      "keyword": "veterans day crafts for kids",
       "niche": "home",
       "pop": 52,
-      "mom": 2000,
-      "yoy": -30,
+      "mom": 2500,
+      "yoy": 7,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "turkey project",
-      "niche": "home",
-      "pop": 52,
-      "mom": 6500,
-      "yoy": 80,
-      "rising": false,
-      "score": 162
-    },
-    {
-      "keyword": "easy thanksgiving crafts for toddlers",
+      "keyword": "beaded felt ornaments diy",
       "niche": "home",
       "pop": 52,
       "mom": 2000,
-      "yoy": -20,
-      "rising": false,
+      "yoy": 1000,
+      "rising": true,
       "score": 162
     },
     {
-      "keyword": "friendsgiving ideas food",
-      "niche": "holidays",
+      "keyword": "veterans day crafts for toddlers",
+      "niche": "home",
       "pop": 52,
       "mom": 1500,
-      "yoy": 50,
+      "yoy": 40,
       "rising": true,
       "score": 162
     },
     {
-      "keyword": "hallway christmas decor",
+      "keyword": "thanksgiving banner painted",
+      "niche": "home",
+      "pop": 52,
+      "mom": 1000,
+      "yoy": 30,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "stair garland",
       "niche": "home decor",
       "pop": 51,
       "mom": 1000,
-      "yoy": -20,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "turkey disguised",
-      "niche": "home",
-      "pop": 51,
-      "mom": 10001,
-      "yoy": 500,
-      "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "paper chains christmas",
-      "niche": "home",
-      "pop": 51,
-      "mom": 1500,
-      "yoy": 1,
+      "yoy": 8,
       "rising": false,
       "score": 161
     },
     {
-      "keyword": "anthropologie christmas",
+      "keyword": "dining table christmas decor",
+      "niche": "home decor",
+      "pop": 50,
+      "mom": 1000,
+      "yoy": -20,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "tinsel christmas tree",
       "niche": "home decor",
       "pop": 50,
       "mom": 900,
+      "yoy": -20,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "thanksgiving toddler crafts",
+      "niche": "home",
+      "pop": 50,
+      "mom": 1500,
+      "yoy": -10,
+      "rising": true,
+      "score": 160
+    },
+    {
+      "keyword": "thanksgiving keepsake crafts for kids",
+      "niche": "home",
+      "pop": 50,
+      "mom": 1500,
       "yoy": 40,
       "rising": true,
       "score": 160
     },
     {
-      "keyword": "christmas shelf decor",
-      "niche": "home decor",
+      "keyword": "preschool thanksgiving crafts",
+      "niche": "home",
       "pop": 50,
-      "mom": 800,
-      "yoy": -40,
+      "mom": 1500,
+      "yoy": -20,
       "rising": true,
       "score": 160
     },
     {
-      "keyword": "christmas island decor",
-      "niche": "home decor",
-      "pop": 50,
-      "mom": 1000,
-      "yoy": -40,
-      "rising": false,
-      "score": 160
-    },
-    {
-      "keyword": "beaded felt ornaments diy",
-      "niche": "home",
+      "keyword": "christmas wallpaper grinch",
+      "niche": "holidays",
       "pop": 50,
       "mom": 2000,
-      "yoy": 1000,
+      "yoy": 1,
       "rising": true,
       "score": 160
     },
     {
-      "keyword": "thanksgiving banner painted",
-      "niche": "home",
+      "keyword": "veterans day card",
+      "niche": "holidays",
       "pop": 50,
-      "mom": 1000,
-      "yoy": 20,
+      "mom": 2000,
+      "yoy": 40,
       "rising": true,
       "score": 160
     },
@@ -588,29 +687,20 @@
       "score": 160
     },
     {
-      "keyword": "friendsgiving ideas",
-      "niche": "holidays",
-      "pop": 60,
-      "mom": 700,
-      "yoy": 80,
-      "rising": false,
-      "score": 160
-    },
-    {
-      "keyword": "dining table christmas decor",
+      "keyword": "pink xmas",
       "niche": "home decor",
       "pop": 49,
-      "mom": 1000,
-      "yoy": -20,
+      "mom": 800,
+      "yoy": 40,
       "rising": true,
       "score": 159
     },
     {
-      "keyword": "hallway christmas lights",
+      "keyword": "christmas window drawing",
       "niche": "home decor",
       "pop": 49,
       "mom": 1500,
-      "yoy": -20,
+      "yoy": 200,
       "rising": false,
       "score": 159
     },
@@ -619,88 +709,88 @@
       "niche": "home decor",
       "pop": 49,
       "mom": 1000,
-      "yoy": 5,
+      "yoy": 6,
       "rising": false,
       "score": 159
-    },
-    {
-      "keyword": "stair garland",
-      "niche": "home decor",
-      "pop": 49,
-      "mom": 1000,
-      "yoy": 8,
-      "rising": false,
-      "score": 159
-    },
-    {
-      "keyword": "disguise a turkey princess",
-      "niche": "home",
-      "pop": 49,
-      "mom": 10001,
-      "yoy": -20,
-      "rising": false,
-      "score": 159
-    },
-    {
-      "keyword": "holiday starbucks drinks",
-      "niche": "holidays",
-      "pop": 49,
-      "mom": 5000,
-      "yoy": -30,
-      "rising": false,
-      "score": 159
-    },
-    {
-      "keyword": "tinsel christmas tree",
-      "niche": "home decor",
-      "pop": 48,
-      "mom": 900,
-      "yoy": -10,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "thanksgiving toddler crafts",
-      "niche": "home",
-      "pop": 48,
-      "mom": 1500,
-      "yoy": -20,
-      "rising": true,
-      "score": 158
-    },
-    {
-      "keyword": "turkey cut out",
-      "niche": "home",
-      "pop": 48,
-      "mom": 1500,
-      "yoy": -10,
-      "rising": false,
-      "score": 158
     },
     {
       "keyword": "christmas tree tinsel",
       "niche": "home decor",
-      "pop": 47,
+      "pop": 49,
       "mom": 1000,
       "yoy": -10,
       "rising": false,
-      "score": 157
-    },
-    {
-      "keyword": "disques a turkey project ideas",
-      "niche": "home",
-      "pop": 47,
-      "mom": 9000,
-      "yoy": 1000,
-      "rising": true,
-      "score": 157
+      "score": 159
     },
     {
       "keyword": "turkey handprint craft",
       "niche": "home",
-      "pop": 47,
+      "pop": 49,
       "mom": 1500,
-      "yoy": 100,
+      "yoy": 200,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "hide a turkey project ideas",
+      "niche": "home",
+      "pop": 49,
+      "mom": 10001,
+      "yoy": 10,
+      "rising": false,
+      "score": 159
+    },
+    {
+      "keyword": "friendsgiving banner ideas",
+      "niche": "holidays",
+      "pop": 49,
+      "mom": 2000,
+      "yoy": 1000,
+      "rising": true,
+      "score": 159
+    },
+    {
+      "keyword": "hallway christmas lights",
+      "niche": "home decor",
+      "pop": 48,
+      "mom": 1500,
+      "yoy": -20,
+      "rising": false,
+      "score": 158
+    },
+    {
+      "keyword": "turkey printable",
+      "niche": "home",
+      "pop": 48,
+      "mom": 2000,
+      "yoy": 20,
+      "rising": false,
+      "score": 158
+    },
+    {
+      "keyword": "thanksgiving word search",
+      "niche": "holidays",
+      "pop": 48,
+      "mom": 2000,
+      "yoy": 50,
+      "rising": false,
+      "score": 158
+    },
+    {
+      "keyword": "kitchen table christmas decor",
+      "niche": "home decor",
+      "pop": 47,
+      "mom": 2000,
+      "yoy": -30,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "how to disguise a turkey project ideas",
+      "niche": "home",
+      "pop": 47,
+      "mom": 10001,
+      "yoy": 9,
       "rising": true,
       "score": 157
     },
@@ -708,46 +798,55 @@
       "keyword": "hand turkey ideas",
       "niche": "home",
       "pop": 47,
+      "mom": 1500,
+      "yoy": 200,
+      "rising": true,
+      "score": 157
+    },
+    {
+      "keyword": "paper chain christmas",
+      "niche": "home",
+      "pop": 47,
       "mom": 1000,
-      "yoy": 100,
+      "yoy": -4,
       "rising": true,
       "score": 157
     },
     {
-      "keyword": "friendsgiving banner ideas",
+      "keyword": "thanksgiving crafts for kids",
+      "niche": "home",
+      "pop": 57,
+      "mom": 1000,
+      "yoy": 10,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "disguise a turkey template free",
+      "niche": "home",
+      "pop": 47,
+      "mom": 2500,
+      "yoy": -20,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "i am thankful for printable",
+      "niche": "home",
+      "pop": 47,
+      "mom": 1500,
+      "yoy": 10,
+      "rising": false,
+      "score": 157
+    },
+    {
+      "keyword": "friends giving banner",
       "niche": "holidays",
       "pop": 47,
       "mom": 1500,
-      "yoy": 1000,
+      "yoy": 200,
       "rising": true,
       "score": 157
-    },
-    {
-      "keyword": "wurstfest outfit",
-      "niche": "holidays",
-      "pop": 47,
-      "mom": 1500,
-      "yoy": 30,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "veterans day poster",
-      "niche": "holidays",
-      "pop": 47,
-      "mom": 1500,
-      "yoy": -30,
-      "rising": true,
-      "score": 157
-    },
-    {
-      "keyword": "pink xmas",
-      "niche": "home decor",
-      "pop": 46,
-      "mom": 800,
-      "yoy": 30,
-      "rising": true,
-      "score": 156
     },
     {
       "keyword": "christmas coffee table decor trays",
@@ -759,29 +858,11 @@
       "score": 156
     },
     {
-      "keyword": "christmas window drawing",
-      "niche": "home decor",
-      "pop": 46,
-      "mom": 1000,
-      "yoy": 200,
-      "rising": false,
-      "score": 156
-    },
-    {
-      "keyword": "hide a turkey project ideas",
+      "keyword": "thanksgiving art projects for kids",
       "niche": "home",
       "pop": 46,
-      "mom": 10001,
-      "yoy": 8,
-      "rising": false,
-      "score": 156
-    },
-    {
-      "keyword": "friends giving banner",
-      "niche": "holidays",
-      "pop": 46,
-      "mom": 1500,
-      "yoy": 200,
+      "mom": 2500,
+      "yoy": -20,
       "rising": true,
       "score": 156
     },
@@ -795,16 +876,16 @@
       "score": 156
     },
     {
-      "keyword": "thanksgiving word search",
+      "keyword": "christmas letter board ideas",
       "niche": "holidays",
       "pop": 46,
-      "mom": 1500,
-      "yoy": 30,
+      "mom": 7500,
+      "yoy": 100,
       "rising": false,
       "score": 156
     },
     {
-      "keyword": "kitchen table christmas decor",
+      "keyword": "cabinet bows christmas",
       "niche": "home decor",
       "pop": 45,
       "mom": 2000,
@@ -813,12 +894,39 @@
       "score": 155
     },
     {
-      "keyword": "disguise a turkey template free",
+      "keyword": "disguise a turkey spiderman",
       "niche": "home",
       "pop": 45,
-      "mom": 2000,
-      "yoy": -30,
-      "rising": false,
+      "mom": 10001,
+      "yoy": 2,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "turkey disguise project",
+      "niche": "home",
+      "pop": 45,
+      "mom": 10001,
+      "yoy": -6,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "hide the turkey ideas",
+      "niche": "home",
+      "pop": 45,
+      "mom": 10001,
+      "yoy": 1000,
+      "rising": true,
+      "score": 155
+    },
+    {
+      "keyword": "gingerbread house outline",
+      "niche": "home",
+      "pop": 45,
+      "mom": 1500,
+      "yoy": 1000,
+      "rising": true,
       "score": 155
     },
     {
@@ -826,237 +934,174 @@
       "niche": "home",
       "pop": 45,
       "mom": 1500,
-      "yoy": 70,
+      "yoy": 80,
       "rising": false,
       "score": 155
     },
     {
-      "keyword": "veterans day cards",
+      "keyword": "christmas wallpaper snoopy",
       "niche": "holidays",
       "pop": 45,
-      "mom": 1500,
-      "yoy": 30,
-      "rising": true,
-      "score": 155
-    },
-    {
-      "keyword": "thanksgiving cookies royal icing",
-      "niche": "holidays",
-      "pop": 45,
-      "mom": 1500,
-      "yoy": -20,
-      "rising": false,
-      "score": 155
-    },
-    {
-      "keyword": "stocking hanging ideas",
-      "niche": "home decor",
-      "pop": 44,
-      "mom": 1000,
-      "yoy": 60,
-      "rising": true,
-      "score": 154
-    },
-    {
-      "keyword": "christmas lights in hallway",
-      "niche": "home decor",
-      "pop": 44,
       "mom": 2000,
       "yoy": -20,
-      "rising": false,
-      "score": 154
-    },
-    {
-      "keyword": "how to disguise a turkey project ideas",
-      "niche": "home",
-      "pop": 44,
-      "mom": 10001,
-      "yoy": 10,
       "rising": true,
-      "score": 154
+      "score": 155
     },
     {
       "keyword": "balloons over broadway activities",
       "niche": "home",
       "pop": 44,
-      "mom": 2000,
-      "yoy": 100,
-      "rising": false,
+      "mom": 2500,
+      "yoy": 200,
+      "rising": true,
       "score": 154
     },
     {
-      "keyword": "christmas tree cheesecake",
-      "niche": "holidays",
+      "keyword": "thanksgiving coloring pages",
+      "niche": "home",
       "pop": 44,
       "mom": 1500,
-      "yoy": 70,
-      "rising": false,
-      "score": 154
-    },
-    {
-      "keyword": "cabinet bows christmas",
-      "niche": "home decor",
-      "pop": 43,
-      "mom": 1500,
-      "yoy": -30,
-      "rising": false,
-      "score": 153
-    },
-    {
-      "keyword": "turkey disguise project",
-      "niche": "home",
-      "pop": 43,
-      "mom": 10001,
-      "yoy": -9,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "gingerbread house outline",
-      "niche": "home",
-      "pop": 43,
-      "mom": 1500,
-      "yoy": 1000,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "preschool thanksgiving crafts",
-      "niche": "home",
-      "pop": 43,
-      "mom": 1000,
-      "yoy": -20,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "whimsical holiday",
-      "niche": "home",
-      "pop": 43,
-      "mom": 1000,
-      "yoy": 8500,
-      "rising": true,
-      "score": 153
-    },
-    {
-      "keyword": "thanksgiving crafts for kids",
-      "niche": "home",
-      "pop": 53,
-      "mom": 900,
       "yoy": 5,
-      "rising": false,
-      "score": 153
-    },
-    {
-      "keyword": "thanksgiving table",
-      "niche": "home decor",
-      "pop": 52,
-      "mom": 400,
-      "yoy": 20,
-      "rising": false,
-      "score": 152
-    },
-    {
-      "keyword": "thanksgiving activity sheets",
-      "niche": "home",
-      "pop": 42,
-      "mom": 2000,
-      "yoy": 70,
-      "rising": false,
-      "score": 152
+      "rising": true,
+      "score": 154
     },
     {
       "keyword": "hand turkeys",
       "niche": "home",
-      "pop": 42,
+      "pop": 44,
       "mom": 1500,
+      "yoy": 30,
+      "rising": false,
+      "score": 154
+    },
+    {
+      "keyword": "stocking hanging ideas",
+      "niche": "home decor",
+      "pop": 43,
+      "mom": 1000,
+      "yoy": 60,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "christmas door",
+      "niche": "home decor",
+      "pop": 43,
+      "mom": 800,
+      "yoy": 10,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "fireplace christmas decor ideas",
+      "niche": "home decor",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": -40,
+      "rising": false,
+      "score": 153
+    },
+    {
+      "keyword": "balloons over broadway",
+      "niche": "holidays",
+      "pop": 43,
+      "mom": 2500,
+      "yoy": -1,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "thanksgiving appetizers ideas",
+      "niche": "holidays",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": 4000,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "thanksgiving potluck ideas",
+      "niche": "holidays",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": -10,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "friendsgiving banners",
+      "niche": "holidays",
+      "pop": 43,
+      "mom": 1500,
+      "yoy": 60,
+      "rising": true,
+      "score": 153
+    },
+    {
+      "keyword": "winter window art",
+      "niche": "home decor",
+      "pop": 42,
+      "mom": 2000,
+      "yoy": 300,
+      "rising": false,
+      "score": 152
+    },
+    {
+      "keyword": "turkey coloring pages",
+      "niche": "home",
+      "pop": 42,
+      "mom": 2500,
+      "yoy": -4,
+      "rising": true,
+      "score": 152
+    },
+    {
+      "keyword": "turkey coloring",
+      "niche": "home",
+      "pop": 42,
+      "mom": 2000,
       "yoy": 30,
       "rising": false,
       "score": 152
     },
     {
-      "keyword": "veterans day card",
-      "niche": "holidays",
-      "pop": 42,
-      "mom": 2000,
-      "yoy": 40,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "thanksgiving appetizers ideas",
-      "niche": "holidays",
-      "pop": 42,
-      "mom": 1500,
-      "yoy": 3500,
-      "rising": true,
-      "score": 152
-    },
-    {
-      "keyword": "winter window art",
+      "keyword": "ceiling christmas decor",
       "niche": "home decor",
       "pop": 41,
-      "mom": 2000,
-      "yoy": 200,
+      "mom": 1500,
+      "yoy": -40,
       "rising": false,
       "score": 151
     },
     {
-      "keyword": "hide the turkey ideas",
-      "niche": "home",
-      "pop": 41,
-      "mom": 10001,
-      "yoy": 1000,
-      "rising": true,
-      "score": 151
-    },
-    {
-      "keyword": "veterans day crafts for kids",
+      "keyword": "thanksgiving activity sheets",
       "niche": "home",
       "pop": 41,
       "mom": 2500,
-      "yoy": 6,
+      "yoy": 70,
       "rising": true,
       "score": 151
     },
     {
-      "keyword": "paper chain christmas",
-      "niche": "home",
-      "pop": 41,
-      "mom": 1000,
-      "yoy": -3,
+      "keyword": "christmas tree inspo 2026",
+      "niche": "home decor",
+      "pop": 40,
+      "mom": 2500,
+      "yoy": 10001,
       "rising": true,
-      "score": 151
+      "score": 150
     },
     {
-      "keyword": "disguise a turkey spiderman",
-      "niche": "home",
-      "pop": 41,
-      "mom": 10001,
-      "yoy": 4,
+      "keyword": "thanksgiving table",
+      "niche": "home decor",
+      "pop": 50,
+      "mom": 400,
+      "yoy": 30,
       "rising": false,
-      "score": 151
+      "score": 150
     },
     {
-      "keyword": "i am thankful for printable",
-      "niche": "home",
-      "pop": 41,
-      "mom": 1500,
-      "yoy": 3,
-      "rising": false,
-      "score": 151
-    },
-    {
-      "keyword": "thanksgiving charcuterie board ideas",
-      "niche": "holidays",
-      "pop": 41,
-      "mom": 1000,
-      "yoy": 40,
-      "rising": true,
-      "score": 151
-    },
-    {
-      "keyword": "dining room table christmas decor",
+      "keyword": "kitchen window christmas decor",
       "niche": "home decor",
       "pop": 40,
       "mom": 1000,
@@ -1065,20 +1110,11 @@
       "score": 150
     },
     {
-      "keyword": "thanksgiving art projects for kids",
-      "niche": "home",
-      "pop": 40,
-      "mom": 2500,
-      "yoy": -20,
-      "rising": true,
-      "score": 150
-    },
-    {
-      "keyword": "veterans day crafts for toddlers",
+      "keyword": "toddler thanksgiving crafts",
       "niche": "home",
       "pop": 40,
       "mom": 1500,
-      "yoy": 40,
+      "yoy": -10,
       "rising": true,
       "score": 150
     },
@@ -1087,79 +1123,34 @@
       "niche": "home",
       "pop": 40,
       "mom": 1500,
-      "yoy": 60,
+      "yoy": 70,
       "rising": true,
       "score": 150
     },
     {
-      "keyword": "friendsgiving banners",
-      "niche": "holidays",
-      "pop": 40,
-      "mom": 1500,
-      "yoy": 60,
-      "rising": true,
+      "keyword": "carving pumpkins ideas",
+      "niche": "home",
+      "pop": 50,
+      "mom": 300,
+      "yoy": 40,
+      "rising": false,
       "score": 150
     },
     {
-      "keyword": "christmas tree inspo 2026",
-      "niche": "home decor",
-      "pop": 39,
-      "mom": 2500,
-      "yoy": 10001,
-      "rising": true,
-      "score": 149
-    },
-    {
-      "keyword": "turkey coloring",
+      "keyword": "turkey hand",
       "niche": "home",
       "pop": 39,
-      "mom": 2000,
-      "yoy": 20,
-      "rising": false,
-      "score": 149
-    },
-    {
-      "keyword": "christmas letter board ideas",
-      "niche": "holidays",
-      "pop": 39,
-      "mom": 7000,
-      "yoy": 100,
-      "rising": false,
-      "score": 149
-    },
-    {
-      "keyword": "fireplace christmas decor ideas",
-      "niche": "home decor",
-      "pop": 38,
-      "mom": 1000,
-      "yoy": -40,
-      "rising": false,
-      "score": 148
-    },
-    {
-      "keyword": "kitchen cabinet christmas decor",
-      "niche": "home decor",
-      "pop": 38,
-      "mom": 1000,
-      "yoy": -30,
-      "rising": false,
-      "score": 148
-    },
-    {
-      "keyword": "turkey coloring pages",
-      "niche": "home",
-      "pop": 38,
-      "mom": 2000,
-      "yoy": -10,
-      "rising": true,
-      "score": 148
-    },
-    {
-      "keyword": "toddler thanksgiving crafts",
-      "niche": "home",
-      "pop": 38,
       "mom": 1500,
-      "yoy": -20,
+      "yoy": 40,
+      "rising": true,
+      "score": 149
+    },
+    {
+      "keyword": "christmas window decorations",
+      "niche": "home decor",
+      "pop": 38,
+      "mom": 800,
+      "yoy": -50,
       "rising": true,
       "score": 148
     },
@@ -1173,111 +1164,156 @@
       "score": 148
     },
     {
-      "keyword": "christmas door",
-      "niche": "home decor",
-      "pop": 37,
-      "mom": 700,
-      "yoy": 10,
-      "rising": true,
-      "score": 147
-    },
-    {
-      "keyword": "kitchen window christmas decor",
-      "niche": "home decor",
-      "pop": 37,
-      "mom": 1000,
-      "yoy": -30,
-      "rising": false,
-      "score": 147
-    },
-    {
-      "keyword": "christmas window decorations",
-      "niche": "home decor",
-      "pop": 36,
-      "mom": 800,
-      "yoy": -40,
-      "rising": true,
-      "score": 146
-    },
-    {
-      "keyword": "turkey hand",
-      "niche": "home",
-      "pop": 36,
-      "mom": 1000,
-      "yoy": 30,
-      "rising": true,
-      "score": 146
-    },
-    {
-      "keyword": "carving pumpkins ideas",
-      "niche": "home",
-      "pop": 46,
-      "mom": 400,
-      "yoy": 40,
-      "rising": false,
-      "score": 146
-    },
-    {
-      "keyword": "balloons over broadway",
+      "keyword": "christmas wallpaper christian",
       "niche": "holidays",
-      "pop": 36,
+      "pop": 38,
       "mom": 2000,
-      "yoy": -9,
-      "rising": true,
-      "score": 146
-    },
-    {
-      "keyword": "thanksgiving potluck ideas",
-      "niche": "holidays",
-      "pop": 36,
-      "mom": 1000,
-      "yoy": -20,
-      "rising": true,
-      "score": 146
+      "yoy": -10,
+      "rising": false,
+      "score": 148
     },
     {
       "keyword": "garland on mantle",
       "niche": "home decor",
-      "pop": 35,
+      "pop": 37,
       "mom": 1500,
       "yoy": -6,
       "rising": true,
-      "score": 145
+      "score": 147
+    },
+    {
+      "keyword": "classroom christmas decor",
+      "niche": "home decor",
+      "pop": 37,
+      "mom": 1000,
+      "yoy": 3,
+      "rising": false,
+      "score": 147
+    },
+    {
+      "keyword": "dining room christmas decor",
+      "niche": "home decor",
+      "pop": 37,
+      "mom": 1000,
+      "yoy": -40,
+      "rising": false,
+      "score": 147
     },
     {
       "keyword": "thanksgiving jokes for kids",
       "niche": "holidays",
-      "pop": 35,
+      "pop": 37,
       "mom": 2000,
-      "yoy": -10,
+      "yoy": -8,
       "rising": false,
-      "score": 145
+      "score": 147
     },
     {
-      "keyword": "friendsgiving food ideas easy",
-      "niche": "holidays",
-      "pop": 35,
-      "mom": 1500,
+      "keyword": "turkey crafts for kids",
+      "niche": "home",
+      "pop": 36,
+      "mom": 2000,
       "yoy": -20,
+      "rising": true,
+      "score": 146
+    },
+    {
+      "keyword": "jack o lantern ideas",
+      "niche": "holidays",
+      "pop": 46,
+      "mom": 600,
+      "yoy": 100,
       "rising": false,
+      "score": 146
+    },
+    {
+      "keyword": "office christmas decorations",
+      "niche": "home decor",
+      "pop": 35,
+      "mom": 700,
+      "yoy": -30,
+      "rising": true,
       "score": 145
     },
     {
       "keyword": "cardboard christmas decorations",
       "niche": "home decor",
-      "pop": 34,
+      "pop": 35,
       "mom": 1000,
       "yoy": -30,
       "rising": false,
-      "score": 144
+      "score": 145
+    },
+    {
+      "keyword": "friendsgiving dessert ideas",
+      "niche": "holidays",
+      "pop": 35,
+      "mom": 1500,
+      "yoy": -20,
+      "rising": true,
+      "score": 145
+    },
+    {
+      "keyword": "friendsgiving poster",
+      "niche": "holidays",
+      "pop": 35,
+      "mom": 1500,
+      "yoy": 70,
+      "rising": true,
+      "score": 145
     },
     {
       "keyword": "coffee table christmas decor",
       "niche": "home decor",
-      "pop": 33,
+      "pop": 34,
       "mom": 1500,
       "yoy": -40,
       "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "snoopy christmas wallpaper",
+      "niche": "holidays",
+      "pop": 34,
+      "mom": 2000,
+      "yoy": -10,
+      "rising": true,
+      "score": 144
+    },
+    {
+      "keyword": "spooky christmas wallpaper",
+      "niche": "holidays",
+      "pop": 34,
+      "mom": 3000,
+      "yoy": -7,
+      "rising": false,
+      "score": 144
+    },
+    {
+      "keyword": "harry potter christmas wallpaper",
+      "niche": "holidays",
+      "pop": 34,
+      "mom": 2000,
+      "yoy": -10,
+      "rising": false,
+      "score": 144
+    },
+    {
+      "keyword": "life size gingerbread house diy",
+      "niche": "home decor",
+      "pop": 33,
+      "mom": 2000,
+      "yoy": -70,
+      "rising": true,
+      "score": 143
+    },
+    {
+      "keyword": "easy disguise a turkey project",
+      "niche": "home",
+      "pop": 33,
+      "mom": 10001,
+      "yoy": -60,
+      "rising": false,
       "score": 143
     },
     {
@@ -1285,72 +1321,36 @@
       "niche": "home",
       "pop": 33,
       "mom": 2500,
-      "yoy": 2,
+      "yoy": 0,
       "rising": false,
       "score": 143
     },
     {
-      "keyword": "friendsgiving poster",
+      "keyword": "blue christmas wallpaper",
       "niche": "holidays",
       "pop": 33,
-      "mom": 1000,
-      "yoy": 70,
+      "mom": 1500,
+      "yoy": -20,
       "rising": true,
       "score": 143
-    },
-    {
-      "keyword": "christmas wallpaper christian",
-      "niche": "holidays",
-      "pop": 33,
-      "mom": 2000,
-      "yoy": -10,
-      "rising": false,
-      "score": 143
-    },
-    {
-      "keyword": "life size gingerbread house diy",
-      "niche": "home decor",
-      "pop": 32,
-      "mom": 2500,
-      "yoy": -80,
-      "rising": true,
-      "score": 142
-    },
-    {
-      "keyword": "christmas tree ribbon ideas",
-      "niche": "home",
-      "pop": 32,
-      "mom": 1000,
-      "yoy": 10,
-      "rising": true,
-      "score": 142
-    },
-    {
-      "keyword": "jack o lantern ideas",
-      "niche": "holidays",
-      "pop": 42,
-      "mom": 700,
-      "yoy": 100,
-      "rising": false,
-      "score": 142
     },
     {
       "keyword": "pink christmas wallpaper iphone",
       "niche": "holidays",
-      "pop": 32,
+      "pop": 33,
       "mom": 3500,
-      "yoy": -5,
-      "rising": false,
-      "score": 142
-    },
-    {
-      "keyword": "spooky christmas wallpaper",
-      "niche": "holidays",
-      "pop": 32,
-      "mom": 3000,
       "yoy": -6,
       "rising": false,
-      "score": 142
+      "score": 143
+    },
+    {
+      "keyword": "snoopy christmas pfp",
+      "niche": "holidays",
+      "pop": 33,
+      "mom": 2000,
+      "yoy": -40,
+      "rising": false,
+      "score": 143
     }
   ]
 }
