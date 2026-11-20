@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:20:25.879Z",
+  "generated_at": "2026-11-20T21:53:59.486Z",
   "region": "US",
   "keywords": [
     {
@@ -25,7 +25,7 @@
       "niche": "home decor",
       "pop": 65,
       "mom": 800,
-      "yoy": 500,
+      "yoy": 400,
       "rising": true,
       "score": 175
     },
@@ -529,17 +529,8 @@
       "niche": "home decor",
       "pop": 53,
       "mom": 1000,
-      "yoy": 60,
+      "yoy": 50,
       "rising": false,
-      "score": 163
-    },
-    {
-      "keyword": "disguise a turkey unicorn",
-      "niche": "home",
-      "pop": 53,
-      "mom": 10001,
-      "yoy": 0,
-      "rising": true,
       "score": 163
     },
     {
@@ -566,6 +557,15 @@
       "pop": 52,
       "mom": 900,
       "yoy": -10,
+      "rising": true,
+      "score": 162
+    },
+    {
+      "keyword": "disguise a turkey unicorn",
+      "niche": "home",
+      "pop": 52,
+      "mom": 10001,
+      "yoy": 0,
       "rising": true,
       "score": 162
     },
@@ -646,7 +646,7 @@
       "niche": "home",
       "pop": 50,
       "mom": 1500,
-      "yoy": 40,
+      "yoy": 30,
       "rising": true,
       "score": 160
     },
@@ -1308,15 +1308,6 @@
       "score": 143
     },
     {
-      "keyword": "easy disguise a turkey project",
-      "niche": "home",
-      "pop": 33,
-      "mom": 10001,
-      "yoy": -60,
-      "rising": false,
-      "score": 143
-    },
-    {
       "keyword": "ribbon on tree",
       "niche": "home",
       "pop": 33,
@@ -1351,6 +1342,15 @@
       "yoy": -40,
       "rising": false,
       "score": 143
+    },
+    {
+      "keyword": "christmas window art",
+      "niche": "home decor",
+      "pop": 32,
+      "mom": 1000,
+      "yoy": -30,
+      "rising": true,
+      "score": 142
     }
   ]
 }
