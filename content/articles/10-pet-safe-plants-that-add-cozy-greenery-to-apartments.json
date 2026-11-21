@@ -1,93 +1,113 @@
 {
-  "intro": "Bringing a bit of greenery into your apartment can make your space feel cozier and more alive, especially when you have pets running around. But not all plants are safe for your furry friends — some can cause unpleasant reactions or worse. Luckily, there are plenty of lush, pet-friendly plants that thrive indoors, brighten small spaces, and pose no toxic threat to cats or dogs. From trailing vines to compact leafy wonders, these green companions add natural charm without worry. Whether you’re a first-time plant parent or a seasoned green thumb, here are 10 pet-safe plants that make cozy, vibrant additions to any apartment.",
+  "intro": "Two things decide which plant works in an apartment with pets: how much light your windows give, and how determined your cat or dog is to chew leaves. Non-toxic means a plant is not known to poison cats or dogs, but any plant eaten in quantity can still cause vomiting or loose stools, and fertilizer or leaf-shine sprays add their own risks. Most apartments have medium or low light, so plants that cope away from the window rank higher here. Hanging planters and high shelves protect both the plant and the pet.",
   "picks": [
     {
-      "rank": 10,
-      "breed": "Boston Fern",
-      "image_query": "boston fern indoor",
-      "description": "The Boston Fern is a classic houseplant known for its feathery, arching fronds that create a lush, textured look. It thrives in indirect light and high humidity, making it ideal for bathrooms or kitchens with good natural light. This fern’s vibrant green color adds a soft, natural touch that makes any room feel fresher. Plus, it’s safe for both cats and dogs, so you won’t have to worry about your pets nibbling on its delicate leaves. Regular misting keeps the fronds looking their best, and it benefits from slightly moist soil, so it’s perfect if you enjoy a bit of routine care.",
-      "best_for": "Bathrooms or kitchens with humidity",
-      "quirky_fact": "Boston Ferns love a daily misting—they thrive with a little extra humidity."
-    },
-    {
-      "rank": 9,
-      "breed": "Parlor Palm",
-      "image_query": "parlor palm indoor",
-      "description": "The Parlor Palm brings a tropical vibe without taking up too much floor space, thanks to its slender, arching fronds. It’s one of the easiest palms to care for indoors and tolerates low light better than many others. Its gentle, feathery leaves create a calming atmosphere, perfect for cozy reading nooks or living rooms. Pet owners appreciate that it’s non-toxic to both cats and dogs, so curious paws won’t get hurt. Water it moderately and let the top inch of soil dry out between waterings to keep it happy and thriving.",
-      "best_for": "Low-light living rooms or corners",
-      "quirky_fact": "Parlor Palms can grow slowly over time but stay manageable as apartment companions."
-    },
-    {
-      "rank": 8,
-      "breed": "Prayer Plant",
-      "image_query": "prayer plant indoor",
-      "description": "The Prayer Plant is named for its unique habit of folding its leaves upward at night, resembling hands in prayer. Its striking foliage features bold patterns of deep greens, purples, and light stripes that add a pop of color and interest indoors. This plant prefers medium to low indirect light and evenly moist soil, making it perfect for cozy apartments with moderate sunlight. Since it’s safe for pets, it’s a great option for households where four-legged friends might get curious. Plus, its dynamic leaf movements add a little personality to your green collection.",
-      "best_for": "Medium-light windowsills or tabletops",
-      "quirky_fact": "The Prayer Plant literally 'prays' by folding its leaves at night—a soothing sight!"
-    },
-    {
-      "rank": 7,
+      "rank": 1,
       "breed": "Spider Plant",
       "image_query": "spider plant indoor",
-      "description": "Spider Plants are energetic, easy-care houseplants featuring long, arching leaves striped with white or pale green. They thrive in bright, indirect light but are surprisingly tolerant of lower light levels, making them versatile apartment companions. One fun feature is their tiny 'spiderettes'—small baby plants that dangle from the mother plant—that you can propagate or leave as a natural decoration. Crucially, Spider Plants are non-toxic to pets, so your cats or dogs can safely explore their trailing leaves without danger. Water them when the soil feels dry to the touch for best results.",
-      "best_for": "Bright windows or hanging baskets",
-      "quirky_fact": "Spider Plant babies can be easily propagated to grow new plants or swapped with friends."
-    },
-    {
-      "rank": 6,
-      "breed": "Cast Iron Plant",
-      "image_query": "cast iron plant indoor",
-      "description": "The Cast Iron Plant is a sturdy, low-maintenance beauty with long, dark green leaves that add sleek texture to any room. True to its name, this plant is nearly indestructible, tolerating low light and irregular watering schedules — great for busy or forgetful plant owners. Its slow growth habit means it won’t quickly outgrow your space, perfect for apartments. And it’s completely safe for pets, so your cats or dogs can roam freely without risks. Place it in a shaded corner or hallway to bring subtle greenery without fuss.",
-      "best_for": "Low-light corners or shade",
-      "quirky_fact": "Cast Iron Plants are nearly indestructible, perfect for beginners or busy lifestyles."
-    },
-    {
-      "rank": 5,
-      "breed": "Peperomia",
-      "image_query": "peperomia indoor",
-      "description": "Peperomia is a diverse genus with many compact varieties that feature thick, textured leaves in colors ranging from deep green to silver or even burgundy. Its small size makes it ideal for tabletops, desks, or shelves in tight apartments. Peperomias prefer bright, indirect light and only need watering when the soil is dry, making them forgiving for new plant parents. Most importantly, they’re non-toxic to pets, so your cats or dogs can safely enjoy the greenery. Their waxy, ornamental leaves add a modern, stylish touch that fits well with contemporary home decor.",
-      "best_for": "Small spaces like desks or shelves",
-      "quirky_fact": "Peperomia leaves often feel like soft rubber, adding a unique tactile element."
-    },
-    {
-      "rank": 4,
-      "breed": "Calathea",
-      "image_query": "calathea indoor",
-      "description": "Calathea plants are conversation starters with their bold, graphic leaves patterned in stripes, spots, or feathery designs. These tropical beauties prefer medium to low indirect light and high humidity, making them perfect for cozy, shaded corners or bathrooms with natural light. Calatheas are pet-safe, so your furry friends can explore without toxic worries. They do appreciate consistent moisture and benefit from a weekly misting session. Their colorful foliage injects life and artistry into your apartment's green collection, making every glance a delight.",
-      "best_for": "Shaded corners with humidity",
-      "quirky_fact": "Calathea leaves often fold up at night, showing a whole new pattern underneath."
-    },
-    {
-      "rank": 3,
-      "breed": "Mosaic Plant (Fittonia)",
-      "image_query": "fittonia indoor",
-      "description": "The Mosaic Plant, or Fittonia, is a petite marvel with delicate leaves veined in bright pinks, reds, or whites that instantly brighten any shelf or terrarium. It thrives in indirect, moderate light and loves humidity, making it perfect for bathrooms or kitchens. Its low-growing habit means it fits perfectly on small tables or inside glass terrariums. Fittonia is completely safe for pets, so no worries if your curious cats decide to inspect it. Its vibrant, mosaic-like leaf patterns add color and cheer to even the smallest apartments.",
-      "best_for": "Terrariums or humid spots",
-      "quirky_fact": "Fittonia leaves can 'faint' and droop when thirsty, a clear watering signal."
+      "description": "The Spider Plant is the easiest plant here to keep alive, which is why it ranks first. It grows in bright or medium indirect light, forgives a missed watering because its thick roots store moisture, and reaches about a foot tall with arching striped leaves that hang two feet or more. Water when the top inch of soil is dry, roughly once a week in most apartments. Mature plants send out long stems with baby plantlets that can be rooted in water for free new plants. The ASPCA lists it as non-toxic to cats and dogs. Its one weakness is brown leaf tips, usually caused by dry air or by fluoride and salts in tap water, so use filtered or rested water if the tips bother you.",
+      "best_for": "Beginners who want a forgiving hanging plant in medium light",
+      "quirky_fact": "The baby plantlets root in a glass of water within a couple of weeks, so one plant can fill a whole apartment over time.",
+      "skip_if": "Your cat chews dangling leaves and you have nowhere high to hang a pot",
+      "product_name": "Live Spider Plant in 6 Inch Hanging Pot"
     },
     {
       "rank": 2,
-      "breed": "Bird’s Nest Fern",
-      "image_query": "birds nest fern indoor",
-      "description": "The Bird’s Nest Fern features bright, wavy fronds that radiate outward in a rosette shape, creating a lush centerpiece in any room. It thrives in medium to low indirect light and prefers consistent moisture, but be careful not to overwater. This fern is a pet-friendly option that adds a tropical touch without taking up too much space. Its bold green leaves contrast beautifully against white or neutral walls, perfect for making a statement in your cozy apartment. Place it on a plant stand or shelf where it can catch some indirect light and flourish.",
-      "best_for": "Medium-light spots and plant stands",
-      "quirky_fact": "Bird’s Nest Ferns like their crowns to be moist but never soggy—water the soil, not the center."
+      "breed": "Parlor Palm",
+      "image_query": "parlor palm indoor",
+      "description": "The Parlor Palm gives the look of a small indoor tree without needing a sunny window. It tolerates low to medium indirect light, grows slowly, and usually stays between two and four feet tall indoors, so it suits a floor corner beside a sofa or desk. Water when the top inch of soil dries, and ease off in winter, because soggy soil causes more trouble than dryness. Direct sun scorches the thin fronds. The ASPCA lists it as non-toxic to cats and dogs. Dry air can bring spider mites, which show up as fine speckling on the leaves, so wipe or rinse the fronds every few weeks. Growth is slow enough that buying the size you want makes more sense than waiting for a small one to fill out.",
+      "best_for": "A dim corner that needs height without a sunny window",
+      "quirky_fact": "The Parlor Palm earned its name as a popular houseplant in Victorian parlors, which were often dim.",
+      "skip_if": "You want fast growth or have a cat that shreds feathery fronds",
+      "product_name": "Live Parlor Palm (Chamaedorea Elegans) 6 Inch Pot"
     },
     {
-      "rank": 1,
+      "rank": 3,
+      "breed": "Cast Iron Plant",
+      "image_query": "cast iron plant indoor",
+      "description": "The Cast Iron Plant survives conditions that finish off most houseplants: deep shade, dry air, cool drafts and weeks without water. Its long, dark green leaves grow straight up from the soil to about two feet, giving a tidy vertical shape that fits a narrow hallway or the far side of a room from the window. Water only when the top two inches of soil are dry, and keep it out of direct sun, which bleaches the leaves. The ASPCA lists it as non-toxic to cats and dogs. The trade-off is speed. It may add only a few leaves a year, and it costs more than faster plants of the same size. The stiff, leathery leaves also hold little appeal for most cats.",
+      "best_for": "North-facing rooms and people who forget to water",
+      "quirky_fact": "Wiping the broad leaves with a damp cloth every month or so removes dust and helps the plant use what little light it gets.",
+      "skip_if": "You want quick, visible growth or a low price for a large plant",
+      "product_name": "Live Cast Iron Plant (Aspidistra Elatior) 6 Inch Pot"
+    },
+    {
+      "rank": 4,
+      "breed": "Peperomia",
+      "image_query": "peperomia indoor",
+      "description": "Peperomias are small, slow plants that rarely outgrow a six-inch pot, so they fit windowsills, desks and bookshelves where floor space is tight. The thick leaves hold water much like a succulent, so they prefer to dry out between waterings, every week or two, and overwatering is the usual cause of failure. Medium to bright indirect light keeps them compact. The ASPCA lists several species as non-toxic to cats and dogs, including the Baby Rubber Plant (Peperomia obtusifolia) and the ripple peperomias (Peperomia caperata). Peperomia is a large genus, so check the species on the label against the database. Shapes vary widely, from glossy round leaves to deeply ridged ones, which makes it easy to collect a few without them looking alike.",
+      "best_for": "Desks, shelves and windowsills with limited space",
+      "quirky_fact": "Peperomia belongs to the pepper family, the same plant family as the vine that produces black pepper.",
+      "skip_if": "You tend to overwater, since soggy soil rots the roots quickly",
+      "product_name": "Live Baby Rubber Plant Peperomia Obtusifolia 4 Inch Pot"
+    },
+    {
+      "rank": 5,
       "breed": "African Violet",
       "image_query": "african violet indoor",
-      "description": "African Violets are small, charming houseplants prized for their velvety leaves and delicate clusters of violet, pink, or white flowers that bloom repeatedly throughout the year. Perfect for apartments, they thrive on windowsills with bright, indirect light and moderate humidity. Their compact size means they fit easily on desks, shelves, or bathroom counters, adding a cozy splash of color. Best of all, African Violets are non-toxic to pets, so your cats and dogs can safely share your indoor garden. They prefer to be watered from the bottom to avoid leaf spots, making care both easy and rewarding.",
-      "best_for": "Bright windowsills and small spaces",
-      "quirky_fact": "Water African Violets from the bottom to keep their fuzzy leaves healthy and spot-free."
+      "description": "The African Violet is the only plant on this list grown mainly for flowers, and it can bloom several times a year indoors in purple, pink or white. It stays under six inches tall and about eight to twelve inches wide, small enough for a kitchen windowsill. Give it bright indirect light, such as an east window, and water from the bottom by standing the pot in a saucer of room-temperature water for twenty minutes. Cold water on the fuzzy leaves leaves pale spots. The ASPCA lists it as non-toxic to cats and dogs. It needs more attention than the plants ranked above: without enough light it stops flowering, and wet crowns rot. Self-watering violet pots take most of the guesswork out of the routine.",
+      "best_for": "Bright windowsills where you want flowers instead of foliage",
+      "quirky_fact": "A single healthy leaf with its stem placed in moist potting mix can grow into a whole new African Violet.",
+      "skip_if": "Your apartment has only dim, north-facing light and no room for a grow lamp",
+      "product_name": "Live African Violet Plant 4 Inch Pot"
+    },
+    {
+      "rank": 6,
+      "breed": "Prayer Plant",
+      "image_query": "prayer plant indoor",
+      "description": "The Prayer Plant stays low and wide, around a foot tall, with oval leaves marked in green, cream and red veins, which makes it a good tabletop or shelf plant. Its leaves lie flat by day and fold upward in the evening, a movement you can see over the course of an hour. It likes medium indirect light, evenly moist soil and more humidity than most apartments have in winter, so a pebble tray or a spot near other plants helps. The ASPCA lists Prayer Plant as non-toxic to cats and dogs. Crisp brown leaf edges are the usual complaint and point to dry air or minerals in tap water. It is less fussy than Calathea, its close relative, which is why it ranks one place higher.",
+      "best_for": "Shelves and side tables in medium light",
+      "quirky_fact": "The evening leaf folding follows a daily rhythm and continues for a while even if the plant is kept in constant light.",
+      "skip_if": "Your heating keeps the air very dry all winter",
+      "product_name": "Live Red Prayer Plant (Maranta) 4 Inch Pot"
+    },
+    {
+      "rank": 7,
+      "breed": "Calathea",
+      "image_query": "calathea indoor",
+      "description": "Calatheas are grown for their leaves, which come striped, spotted or feathered in greens, silvers and deep purple undersides, and a medium plant of one to two feet makes a strong feature on a stand. They are also the most demanding foliage plants here. They want steady warmth, medium indirect light, soil that stays lightly moist and humid air, and they react to tap water minerals, cold drafts and dry heat with curled or brown-edged leaves. Distilled or rain water and a small humidifier solve most problems. The ASPCA lists Calathea species as non-toxic to cats and dogs. Choose it for looks, knowing that a few imperfect leaves are normal in an ordinary apartment, and trim damaged ones at the base.",
+      "best_for": "Plant owners willing to manage humidity for dramatic leaves",
+      "quirky_fact": "Many plants sold as Calathea have been reclassified by botanists under the name Goeppertia, so labels may show either.",
+      "skip_if": "You want a plant that copes with neglect and dry heated rooms",
+      "product_name": "Live Calathea Rattlesnake Plant 6 Inch Pot"
+    },
+    {
+      "rank": 8,
+      "breed": "Boston Fern",
+      "image_query": "boston fern indoor",
+      "description": "The Boston Fern is a full, feathery plant with arching fronds that can spread two to three feet, so it looks best in a hanging basket or on a plant stand where it has room. The ASPCA lists it as non-toxic to cats and dogs, which sets it apart from some other plants sold as ferns, such as asparagus fern, that are toxic. It needs bright indirect light, soil that never dries out fully and high humidity. A bright bathroom is the classic spot. In dry rooms it sheds small leaflets steadily, which means regular sweeping. Water when the surface starts to feel dry, often twice a week in summer. It ranks low for apartments because of its thirst, spread and mess, not because of any safety concern.",
+      "best_for": "Bright, humid bathrooms and hanging baskets out of reach",
+      "quirky_fact": "A Boston Fern that has dried out can often be revived by cutting the fronds back to a couple of inches and watering steadily.",
+      "skip_if": "Your rooms are dry and you dislike sweeping up fallen leaflets",
+      "product_name": "Live Boston Fern in 8 Inch Hanging Basket"
+    },
+    {
+      "rank": 9,
+      "breed": "Mosaic Plant (Fittonia)",
+      "image_query": "fittonia indoor",
+      "description": "The Mosaic Plant, sold as Fittonia or Nerve Plant, is a creeping plant only three to six inches tall with small leaves netted in white, pink or red veins. The ASPCA lists Nerve Plant (Fittonia) as non-toxic to cats and dogs. It is famous for collapsing when thirsty, with every leaf going limp, then standing back up within hours of watering. That makes its needs obvious, but repeated wilting weakens it. It wants constant light moisture, low to medium indirect light and high humidity, conditions that are far easier to provide inside a glass terrarium or cloche than on an open shelf. A closed container also keeps it away from pets entirely. In open air in a heated apartment it often struggles, which is why it ranks ninth.",
+      "best_for": "Terrariums and glass cloches on a desk or shelf",
+      "quirky_fact": "The common name Nerve Plant comes from the fine contrasting veins that cover every leaf.",
+      "skip_if": "You travel often, since it wilts after only a few dry days",
+      "product_name": "Live Fittonia Nerve Plant 4 Inch Pot"
+    },
+    {
+      "rank": 10,
+      "breed": "Bird\u2019s Nest Fern",
+      "image_query": "birds nest fern indoor",
+      "description": "The Bird's Nest Fern has broad, glossy, wavy fronds that rise from a central rosette, a very different look from the lacy ferns, and it typically reaches one to two feet across indoors. It handles medium to low indirect light and likes humidity, so kitchens and bathrooms suit it. Water the soil around the edge of the pot, not into the center of the rosette, where standing water causes rot. It ranks last for one reason: unlike the other nine plants, it has no entry in the ASPCA plant database, so we could not confirm its status there. It is commonly sold as pet friendly, but if your pet is a committed plant chewer, ask your vet or choose one of the listed plants above.",
+      "best_for": "Humid kitchens and bathrooms in homes where pets ignore plants",
+      "quirky_fact": "In the wild, Bird's Nest Ferns grow perched on tree trunks and branches, catching falling leaves in their central rosette.",
+      "skip_if": "Your cat or dog regularly eats plants and you want a confirmed listing",
+      "product_name": "Live Bird's Nest Fern (Asplenium Nidus) 6 Inch Pot"
     }
   ],
   "pin_headlines": [
-    "10 Pet-Safe Plants Perfect for Cozy Apartments",
+    "Pet-Safe Plants for Apartments: 10 Easy Picks",
     "Brighten Your Space With These Pet-Friendly Plants",
-    "Greenery That’s Safe for Cats and Dogs",
+    "Greenery That\u2019s Safe for Cats and Dogs",
     "Best Indoor Plants for Pet Owners",
-    "Cozy Apartment Plants Pets Can’t Harm",
+    "Cozy Apartment Plants Pets Can\u2019t Harm",
     "Low-Maintenance Pet-Safe Houseplants",
     "Add Life Without Worrying About Pets",
     "Beautiful Non-Toxic Plants for Small Spaces",
@@ -97,24 +117,33 @@
   "faqs": [
     {
       "question": "Are spider plants really safe for cats and dogs?",
-      "answer": "Yes, spider plants are non-toxic to both cats and dogs. While some pets might be attracted to their arching leaves and baby plantlets, spider plants won’t cause poisoning or severe reactions. However, eating large quantities could cause mild stomach upset, so it’s best to keep an eye on curious pets."
+      "answer": "The ASPCA lists the Spider Plant as non-toxic to both cats and dogs. Cats are often drawn to the long dangling leaves and may chew them, and eating a lot of any plant can cause mild vomiting or an upset stomach. If your cat treats it as a snack, hang the plant out of reach so both the cat and the plant stay in good shape."
     },
     {
-      "question": "How often should I water a Boston Fern indoors?",
-      "answer": "Boston Ferns prefer consistently moist soil but not soggy. Aim to water when the top inch of soil feels dry, which is usually about once or twice a week depending on humidity. Misting the fronds daily also helps keep humidity levels high and fronds looking lush."
+      "question": "Does non-toxic mean my pet can eat the plant?",
+      "answer": "No. Non-toxic means the plant is not known to contain compounds that poison cats or dogs. Chewed leaves can still irritate the stomach, and potting soil, fertilizer and pest sprays are separate hazards. If a pet eats a large amount of any plant or shows repeated vomiting, drooling or lethargy, call your vet or an animal poison control line."
     },
     {
-      "question": "Can African Violets survive in low-light apartments?",
-      "answer": "African Violets prefer bright, indirect light and may struggle to bloom in very low light. Placing them near east or north-facing windows or under artificial grow lights can help them thrive and flower regularly even in apartments with less natural sunlight."
+      "question": "Which pet-safe plants grow in low light?",
+      "answer": "The Cast Iron Plant and Parlor Palm are the most tolerant of dim rooms and north-facing windows on this list, and the Spider Plant copes with medium light. Low light slows growth, so water less often than you would in a bright spot. No houseplant survives in a windowless room without a grow light."
     },
     {
-      "question": "Is the Cast Iron Plant truly low maintenance?",
-      "answer": "Absolutely. The Cast Iron Plant is known for tolerating low light, irregular watering, and general neglect better than most houseplants. It’s a great choice for beginners or those with busy schedules, as it doesn’t require frequent care to stay healthy."
+      "question": "Which common houseplants are toxic to cats and dogs?",
+      "answer": "Several popular apartment plants are on the ASPCA's toxic list, including pothos, philodendron, snake plant, peace lily, aloe and sago palm. True lilies are especially dangerous to cats. Check the exact plant name against the ASPCA database before buying, because common names overlap and shop labels are often vague."
+    },
+    {
+      "question": "How do I stop my cat from chewing houseplants?",
+      "answer": "Put plants where the cat cannot reach, such as in hanging planters or on wall shelves with no nearby launch point. Offer a pot of cat grass as an allowed alternative, since many cats chew plants for the texture. Cover bare soil with large pebbles to discourage digging, and avoid deterrent sprays unless the label says they are safe for pets."
     }
   ],
   "topic_slug": "10-pet-safe-plants-that-add-cozy-greenery-to-apartments",
   "niche": "home",
   "item_noun": "ideas",
   "topic_title": "Top 10 Pet-Safe Plants That Add Cozy Greenery To Apartments",
-  "updated_at": "2026-06-01"
+  "updated_at": "2026-11-21",
+  "seo_title": "10 Pet-Safe Plants for Apartments (2026 Guide)",
+  "answer": "The Spider Plant, Parlor Palm and Cast Iron Plant are the best pet-safe plants for apartments here, because all three tolerate low light and missed waterings. The deciding factor is light: match the plant to the brightest spot you can actually give it, and remember that non-toxic does not mean a pet can eat it freely.",
+  "method": "We checked each plant against the ASPCA's toxic and non-toxic plant database in November 2026: nine of the ten are listed there as non-toxic to cats and dogs, and the Bird's Nest Fern, which has no ASPCA entry, is ranked last for that reason. The rest are ordered by how well they tolerate low apartment light and irregular watering.",
+  "author": "Elena Marsh",
+  "upgraded_at": "2026-11-21"
 }
