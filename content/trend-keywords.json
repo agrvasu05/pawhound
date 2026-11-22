@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T20:37:34.942Z",
+  "generated_at": "2026-11-22T20:47:14.772Z",
   "region": "US",
   "keywords": [
     {
@@ -23,11 +23,11 @@
     {
       "keyword": "thanks giving crafts for preschool",
       "niche": "home",
-      "pop": 70,
+      "pop": 69,
       "mom": 1500,
       "yoy": 200,
       "rising": true,
-      "score": 180
+      "score": 179
     },
     {
       "keyword": "christmas hallway ideas",
@@ -246,11 +246,20 @@
       "score": 172
     },
     {
+      "keyword": "cozy christmas kitchen",
+      "niche": "home decor",
+      "pop": 61,
+      "mom": 1000,
+      "yoy": 50,
+      "rising": true,
+      "score": 171
+    },
+    {
       "keyword": "turkey activities preschool",
       "niche": "home",
       "pop": 61,
       "mom": 1500,
-      "yoy": 5,
+      "yoy": 4,
       "rising": false,
       "score": 171
     },
@@ -260,15 +269,6 @@
       "pop": 60,
       "mom": 1500,
       "yoy": -20,
-      "rising": true,
-      "score": 170
-    },
-    {
-      "keyword": "cozy christmas kitchen",
-      "niche": "home decor",
-      "pop": 60,
-      "mom": 1000,
-      "yoy": 50,
       "rising": true,
       "score": 170
     },
@@ -466,7 +466,7 @@
       "niche": "holidays",
       "pop": 56,
       "mom": 3000,
-      "yoy": 6,
+      "yoy": 5,
       "rising": false,
       "score": 166
     },
@@ -549,6 +549,15 @@
       "mom": 1500,
       "yoy": 1000,
       "rising": true,
+      "score": 164
+    },
+    {
+      "keyword": "turkey art projects for kids",
+      "niche": "home",
+      "pop": 54,
+      "mom": 1500,
+      "yoy": -40,
+      "rising": false,
       "score": 164
     },
     {
@@ -675,15 +684,6 @@
       "mom": 1500,
       "yoy": -20,
       "rising": true,
-      "score": 161
-    },
-    {
-      "keyword": "disguise a turkey template free",
-      "niche": "home",
-      "pop": 51,
-      "mom": 2500,
-      "yoy": -20,
-      "rising": false,
       "score": 161
     },
     {
@@ -1092,15 +1092,6 @@
       "score": 152
     },
     {
-      "keyword": "office christmas decorations",
-      "niche": "home decor",
-      "pop": 41,
-      "mom": 800,
-      "yoy": -30,
-      "rising": true,
-      "score": 151
-    },
-    {
       "keyword": "thanksgiving activity sheets",
       "niche": "home",
       "pop": 41,
@@ -1146,20 +1137,20 @@
       "score": 151
     },
     {
-      "keyword": "thanksgiving jokes for kids",
-      "niche": "holidays",
-      "pop": 41,
-      "mom": 2000,
-      "yoy": -7,
-      "rising": false,
-      "score": 151
-    },
-    {
       "keyword": "garland on mantle",
       "niche": "home decor",
       "pop": 40,
       "mom": 2000,
       "yoy": -6,
+      "rising": true,
+      "score": 150
+    },
+    {
+      "keyword": "office christmas decorations",
+      "niche": "home decor",
+      "pop": 40,
+      "mom": 800,
+      "yoy": -30,
       "rising": true,
       "score": 150
     },
@@ -1218,15 +1209,6 @@
       "score": 149
     },
     {
-      "keyword": "spooky christmas wallpaper",
-      "niche": "holidays",
-      "pop": 39,
-      "mom": 3000,
-      "yoy": -9,
-      "rising": false,
-      "score": 149
-    },
-    {
       "keyword": "christmas window decorations",
       "niche": "home decor",
       "pop": 38,
@@ -1260,6 +1242,15 @@
       "mom": 1500,
       "yoy": 70,
       "rising": true,
+      "score": 148
+    },
+    {
+      "keyword": "spooky christmas wallpaper",
+      "niche": "holidays",
+      "pop": 38,
+      "mom": 3000,
+      "yoy": -9,
+      "rising": false,
       "score": 148
     },
     {
@@ -1350,6 +1341,15 @@
       "mom": 2500,
       "yoy": -1,
       "rising": false,
+      "score": 144
+    },
+    {
+      "keyword": "snoopy christmas wallpaper",
+      "niche": "holidays",
+      "pop": 34,
+      "mom": 2000,
+      "yoy": -10,
+      "rising": true,
       "score": 144
     }
   ]
